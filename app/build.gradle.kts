@@ -10,7 +10,7 @@ android {
         targetSdk = 35
         versionCode = 2
         versionName = "1.1"
-        testInstrumentationRunner = "android.test.InstrumentationTestRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -19,4 +19,9 @@ android {
     lint { abortOnError = true }
 }
 kotlin { compilerOptions { jvmTarget.set(JvmTarget.JVM_17) } }
-dependencies { testImplementation("junit:junit:4.13.2") }
+dependencies {
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    androidTestImplementation("androidx.test:core:1.6.1")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+}
