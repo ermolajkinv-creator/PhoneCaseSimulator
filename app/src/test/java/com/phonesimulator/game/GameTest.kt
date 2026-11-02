@@ -97,6 +97,21 @@ class GameTest {
         assertTrue(Economy.BONUS >= CaseKind.CLASSIC.cost)
         assertEquals(777, Progress.restore(777, "0,5").coins)
     }
+    @Test fun povertyGiftChecksAllPurchasesAndCannotRepeatWhileAffordable() {
+        val listing = Listing("cheap", 0, 0, 500)
+        val poor = Progress(0, listOf(5))
+        assertTrue(poor.canReceiveGift(listOf(listing)))
+        val rescued = poor.receiveGift(listOf(listing))
+        assertEquals(Economy.BONUS, rescued.coins)
+        assertEquals(poor.owned, rescued.owned)
+        assertFalse(rescued.canReceiveGift(listOf(listing)))
+        assertEquals(rescued, rescued.receiveGift(listOf(listing)))
+        assertFalse(Progress(500).canReceiveGift(listOf(listing)))
+        assertFalse(Progress(CaseKind.CLASSIC.cost).canReceiveGift(emptyList()))
+        assertTrue(Progress(500, purchased = setOf("cheap")).canReceiveGift(listOf(listing)))
+        assertTrue(Progress(499).canReceiveGift(listOf(listing)))
+        assertEquals(Progress(500), Progress(500).receiveGift(listOf(listing)))
+    }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
 }

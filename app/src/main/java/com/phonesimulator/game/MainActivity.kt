@@ -143,7 +143,16 @@ class MainActivity : Activity() {
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
         label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
+        if (title != "Открываем кейс…" && progress.canReceiveGift(currentListings())) {
+            label("Не хватает ни на кейс, ни на телефон? Забери подарок и продолжай!", 16f, mint)
+            button("Получить подарок · ${Economy.BONUS} ₽") {
+                val next = progress.receiveGift(currentListings())
+                if (persist(next)) render()
+            }
+        }
     }
+
+    private fun currentListings() = Market.listings(System.currentTimeMillis() / 86_400_000L)
 
     private fun card(index: Int, count: Int? = null, parent: LinearLayout = root) {
         val phone = Catalog.phones[index]

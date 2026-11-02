@@ -173,6 +173,13 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         require(firmwareName in Workshop.options(Catalog.phones[model]))
         return copy(firmware = firmware + (model to firmwareName))
     }
+    fun canReceiveGift(listings: List<Listing>): Boolean =
+        coins < CaseKind.entries.minOf { it.cost } &&
+            listings.none { it.id !in purchased && it.price <= coins }
+
+    fun receiveGift(listings: List<Listing>): Progress =
+        if (canReceiveGift(listings)) copy(coins = credit(Economy.BONUS)) else this
+
     fun bonus() = copy(coins = credit(Economy.BONUS))
     private fun credit(amount: Int) = (coins.toLong() + amount).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
     companion object {

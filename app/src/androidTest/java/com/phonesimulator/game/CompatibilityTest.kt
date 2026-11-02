@@ -167,6 +167,21 @@ class CompatibilityTest {
             assertEquals("Заводская", ProgressStore(context).load().firmware[4])
         }
     }
+    @Test fun povertyGiftPersistsAndDisappears() {
+        val store = ProgressStore(context)
+        assertTrue(store.save(Progress(0, listOf(5))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Получить подарок · ${Economy.BONUS} ₽")
+            assertEquals(Economy.BONUS, store.load().coins)
+            assertEquals(listOf(5), store.load().owned)
+            scenario.recreate()
+            assertEquals(Economy.BONUS, ProgressStore(context).load().coins)
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>()
+                    .any { it.text.toString().startsWith("Получить подарок") })
+            }
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()
