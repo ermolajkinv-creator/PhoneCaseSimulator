@@ -410,6 +410,8 @@ class MainActivity : Activity() {
     }
 
     private fun profile() {
+        val earned = progress.badges + Progression.goals(progress)
+        if (earned != progress.badges) persist(progress.copy(badges = earned))
         screen("Профиль")
         label(progress.nickname, 27f)
         val input = searchField("Имя игрока", progress.nickname) { }
