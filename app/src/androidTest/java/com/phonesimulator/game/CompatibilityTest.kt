@@ -51,6 +51,27 @@ class CompatibilityTest {
             assertText(scenario, "Коллекция")
         }
     }
+    @Test fun animationCompletesAndBackgroundKeepsReward() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Открыть кейс · 100 монет")
+            val deadline = android.os.SystemClock.uptimeMillis() + 6000
+            var revealed = false
+            while (!revealed && android.os.SystemClock.uptimeMillis() < deadline) {
+                scenario.onActivity { activity ->
+                    revealed = views(activity.window.decorView).filterIsInstance<TextView>()
+                        .any { it.text.toString() == "Новый телефон!" }
+                }
+                if (!revealed) android.os.SystemClock.sleep(100)
+            }
+            assertTrue("Animation did not reveal the saved phone", revealed)
+            click(scenario, "Ещё кейс · 100 монет")
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
+            assertText(scenario, "Новый телефон!")
+            assertEquals(ProgressStore(context).load().coins, 800)
+            assertEquals(ProgressStore(context).load().owned.size, 2)
+        }
+    }
     @Test fun shopAndEmptyCollection() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Магазин")
