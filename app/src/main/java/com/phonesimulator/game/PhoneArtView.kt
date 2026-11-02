@@ -28,7 +28,7 @@ class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
             canvas.drawBitmap(it,null,RectF((width-w)/2,(height-h)/2,(width+w)/2,(height+h)/2),paint)
             return
         }
-        canvas.save();canvas.translate(width/2f,height/2f);canvas.scale(height/160f,height/160f)
+        canvas.save();canvas.translate(width/2f,height/2f);canvas.scale(minOf(height/160f,width/170f),minOf(height/160f,width/170f))
         val n=phone.name
         val iphone=n.startsWith("iPhone")
         val pixel=n.contains("Pixel")

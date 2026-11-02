@@ -35,7 +35,12 @@ class MainActivity : Activity() {
     private var selectedPhone = 0
     private var wikiQuery = ""
     private var adminUnlocked = false
-    private val ink = Color.rgb(33, 38, 91)
+    private var balanceLabel: TextView? = null
+    private var catalogQuery = ""
+    private var favoritesOnly = false
+    private var upgradeSource = -1
+    private var upgradeTarget = -1
+    private val ink = Color.rgb(10, 14, 20)
     private val muted = Color.rgb(221, 216, 245)
     private val mint = Color.rgb(246, 232, 255)
 
@@ -47,11 +52,19 @@ class MainActivity : Activity() {
         reward = savedInstanceState?.getInt("reward", -1) ?: -1
         selectedPhone = savedInstanceState?.getInt("selectedPhone", 0)?.coerceIn(Catalog.phones.indices) ?: 0
         wikiQuery = savedInstanceState?.getString("wikiQuery").orEmpty()
+        catalogQuery = savedInstanceState?.getString("catalogQuery").orEmpty()
+        favoritesOnly = savedInstanceState?.getBoolean("favoritesOnly") ?: false
+        upgradeSource = savedInstanceState?.getInt("upgradeSource", -1) ?: -1
+        upgradeTarget = savedInstanceState?.getInt("upgradeTarget", -1) ?: -1
         render()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putString("page", page)
+        outState.putString("catalogQuery", catalogQuery)
+        outState.putBoolean("favoritesOnly", favoritesOnly)
+        outState.putInt("upgradeSource", upgradeSource)
+        outState.putInt("upgradeTarget", upgradeTarget)
         outState.putInt("selectedPhone", selectedPhone)
         outState.putString("wikiQuery", wikiQuery)
         outState.putInt("reward", reward)
@@ -70,7 +83,7 @@ class MainActivity : Activity() {
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
     private fun shape(color: Int = Color.WHITE, accent: Int = Color.WHITE) = GradientDrawable(
         GradientDrawable.Orientation.TL_BR,
-        intArrayOf(0x62FFFFFF, 0x18FFFFFF, 0x36D8EFFF)
+        intArrayOf(0xFF343940.toInt(), 0xEE141821.toInt(), 0xEE20232E.toInt())
     ).apply {
         cornerRadius = dp(34).toFloat()
         setStroke(dp(1), Color.argb(150, Color.red(accent), Color.green(accent), Color.blue(accent)))
@@ -104,7 +117,7 @@ class MainActivity : Activity() {
     private fun screen(title: String) {
         val scroll = ScrollView(this).apply {
             background = GradientDrawable(GradientDrawable.Orientation.BL_TR,
-                intArrayOf(0xFF173F85.toInt(), 0xFF54428B.toInt(), 0xFF9B4D82.toInt()))
+                intArrayOf(0xFF050608.toInt(), 0xFF101624.toInt(), 0xFF050608.toInt()))
             isFillViewport = true
         }
         val container = LinearLayout(this).apply {
@@ -125,7 +138,27 @@ class MainActivity : Activity() {
             }
         }
         scroll.addView(container)
-        scroll.setOnApplyWindowInsetsListener { view, insets ->
+        val frame = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setBackgroundColor(ink) }
+        frame.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
+        val dock = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL; background = shape()
+            setPadding(dp(4), dp(4), dp(4), dp(4))
+        }
+        listOf("Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
+            "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").forEach { (name, route) ->
+            dock.addView(Button(this).apply {
+                text = name; textSize = 10f; isAllCaps = false
+                minWidth = 0; minimumWidth = 0; setPadding(dp(2),0,dp(2),0)
+                setTextColor(if (page == route || page == "home" && route == "catalog") 0xFF95B6FF.toInt() else muted)
+                background = if (page == route) shape() else null
+                setOnClickListener { navigate(route) }
+                contentDescription = "Раздел $name"
+            }, LinearLayout.LayoutParams(0, dp(60), 1f))
+        }
+        frame.addView(dock, LinearLayout.LayoutParams(-1,-2).apply {
+            setMargins(dp(6),dp(4),dp(6),dp(4))
+        })
+        frame.setOnApplyWindowInsetsListener { view, insets ->
             if (android.os.Build.VERSION.SDK_INT >= 30) {
                 val safe = insets.getInsets(WindowInsets.Type.systemBars() or WindowInsets.Type.displayCutout())
                 view.setPadding(safe.left, safe.top, safe.right, safe.bottom)
@@ -136,13 +169,13 @@ class MainActivity : Activity() {
             }
             insets
         }
-        setContentView(scroll)
-        scroll.requestApplyInsets()
+        setContentView(frame)
+        frame.requestApplyInsets()
         label("P H O N E   L A B", 14f, mint).apply {
             letterSpacing = 0.14f
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
-        label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
+        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
         if (title != "Открываем кейс…" && progress.giftCooldownRemaining() > 0L) {
             val countdown = label("", 16f, muted)
             countdown.post(object : Runnable {
@@ -181,7 +214,11 @@ class MainActivity : Activity() {
         }
         panel.addView(PhoneArtView(this, phone), LinearLayout.LayoutParams(-1, dp(156)))
         label(phone.rarity.title.uppercase(), 12f, phone.rarity.accent, panel)
-        label(phone.name, 23f, parent = panel).setTypeface(null, Typeface.BOLD)
+        label(phone.name, 20f, parent = panel).setTypeface(null, Typeface.BOLD)
+        label("${phone.price} ₽", 20f, parent = panel)
+        button(if (index in progress.favorites) "♥ В избранном" else "♡ В избранное", panel) {
+            if (persist(progress.toggleFavorite(index))) render()
+        }
         label("Шанс ${phone.tickets / 10.0}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
             14f, muted, panel)
         button("О телефоне", panel) { selectedPhone = index; navigate("details") }
@@ -191,17 +228,23 @@ class MainActivity : Activity() {
     }
 
     private fun persist(next: Progress): Boolean {
-        if (!store.save(next)) {
+        val decorated = next.copy(badges = next.badges + Progression.goals(next))
+        if (!store.save(decorated)) {
             Toast.makeText(this, "Не удалось сохранить прогресс. Повторите попытку.", Toast.LENGTH_LONG).show()
             return false
         }
-        progress = next
+        progress = decorated
         return true
     }
 
-    private fun navigate(destination: String) { page = destination; render() }
+    private fun navigate(destination: String) { animator?.cancel(); animator = null; page = destination; render() }
     private fun render() {
         when (page) {
+            "catalog" -> catalog()
+            "clicker" -> clicker()
+            "upgrade" -> upgrader()
+            "profile" -> profile()
+            "daily" -> daily()
             "workshop" -> workshop()
             "cases" -> cases()
             "market" -> market()
@@ -215,9 +258,7 @@ class MainActivity : Activity() {
                     button("Посмотреть и продать б/у") { navigate("market") }
                 }
                 if (progress.owned.isEmpty() && progress.used.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
-                progress.owned.groupingBy { it }.eachCount().toSortedMap().forEach { (index, count) ->
-                    card(index, count)
-                }
+                phoneGrid(progress.owned.distinct().sorted(), root, true)
                 button("На главную") { navigate("home") }
             }
             "shop" -> {
@@ -244,6 +285,8 @@ class MainActivity : Activity() {
             }
             else -> {
                 screen("Открой свой следующий")
+                button("Ежедневная награда") { navigate("daily") }
+                button("Каталог телефонов") { navigate("catalog") }
                 label("Каждый кейс — новый шанс", 22f)
                 card(5)
                 label("Samsung Z Fold 8 Ultra\nУльтралегендарный · 1 из 1000", 17f, muted)
@@ -262,6 +305,139 @@ class MainActivity : Activity() {
                 }
             }
         }
+    }
+
+    private fun phoneGrid(models: List<Int>, target: LinearLayout, inventory: Boolean = false) {
+        models.chunked(2).forEach { pair ->
+            val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
+            target.addView(row, LinearLayout.LayoutParams(-1,-2))
+            pair.forEach { index ->
+                val cell = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+                row.addView(cell, LinearLayout.LayoutParams(0,-2,1f).apply { setMargins(dp(3),0,dp(3),0) })
+                card(index, if (inventory) progress.owned.count { it == index } else null, cell)
+            }
+            if (pair.size == 1) row.addView(View(this), LinearLayout.LayoutParams(0,1,1f))
+        }
+    }
+
+    private fun catalog() {
+        screen("Каталог телефонов")
+        button("Ежедневная награда") { navigate("daily") }
+        button(if (favoritesOnly) "Показать все" else "Только избранное") { favoritesOnly = !favoritesOnly; render() }
+        lateinit var list: LinearLayout
+        fun refresh() {
+            list.removeAllViews()
+            val matches = Catalog.phones.indices.filter { index ->
+                Catalog.phones[index].name.contains(catalogQuery.trim(), true) && (!favoritesOnly || index in progress.favorites)
+            }
+            if (matches.isEmpty()) label("Ничего не найдено", parent = list)
+            phoneGrid(matches, list)
+        }
+        searchField("Поиск телефонов", catalogQuery) { catalogQuery = it; refresh() }
+        list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; root.addView(this) }
+        refresh()
+        button("Википедия телефонов") { navigate("wiki") }
+        button("На главную") { navigate("home") }
+    }
+
+    private fun daily() {
+        screen("Ежедневная награда")
+        val day = System.currentTimeMillis() / Progression.DAY_MS
+        val nextStreak = if (day == progress.lastDailyDay+1) (progress.dailyStreak+1).coerceAtMost(7) else 1
+        label("Серия: ${progress.dailyStreak} / 7 дней", 23f)
+        label("Один раз за календарный день UTC. Пропуск дня сбрасывает серию. Это отдельная ежедневная награда; подарок сохраняет перезарядку 10 минут.", 15f, muted)
+        if (day <= progress.lastDailyDay) label("Сегодня награда уже получена")
+        else button("Забрать награду · ${Progression.dailyReward(nextStreak)} ₽") {
+            if (persist(progress.claimDaily(System.currentTimeMillis()/Progression.DAY_MS))) render()
+        }
+        (1..7).forEach { infoRow("День $it", "${Progression.dailyReward(it)} ₽") }
+        button("На главную") { navigate("home") }
+    }
+
+    private fun clicker() {
+        screen("Кликер")
+        label("Нажимай и получай +10 ₽", 24f)
+        val score = label("Нажатий: ${progress.clicks}", 20f)
+        button("◉ +10 ₽") {
+            if (persist(progress.clickCoin())) {
+                score.text = "Нажатий: ${progress.clicks}"
+                balanceLabel?.text = "◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов"
+            }
+        }.apply {
+            textSize = 28f; setTextColor(0xFF795600.toInt())
+            layoutParams = LinearLayout.LayoutParams(dp(200),dp(200)).apply {
+                gravity = Gravity.CENTER_HORIZONTAL; topMargin = dp(24); bottomMargin = dp(24)
+            }
+            background = GradientDrawable(GradientDrawable.Orientation.TL_BR,
+                intArrayOf(0xFFFFED91.toInt(),0xFFFFBD27.toInt())).apply { shape = GradientDrawable.OVAL }
+        }
+        label("Доход сохраняется после каждого нажатия. Автоклик не начисляет деньги в фоне.", 15f, muted)
+        button("На главную") { navigate("home") }
+    }
+
+    private fun upgrader() {
+        screen("Апгрейдер")
+        label("Обмен с риском: исходный телефон расходуется при любом результате. Денег не списываем. Ultra здесь получить нельзя.", 15f, muted)
+        val targets = if (upgradeSource in progress.owned) Catalog.phones.indices.filter {
+            it != 5 && Catalog.phones[it].price > Catalog.phones[upgradeSource].price
+        }.sortedBy { Catalog.phones[it].price } else emptyList()
+        if (targets.isNotEmpty()) {
+            if (upgradeTarget !in targets) upgradeTarget = targets.first()
+            val panel = glassPanel()
+            infoRow("Исходный", Catalog.phones[upgradeSource].name, panel)
+            infoRow("Цель", Catalog.phones[upgradeTarget].name, panel)
+            val chance = progress.upgradeChance(upgradeSource, upgradeTarget)
+            label("Шанс: ${chance/10.0}%", 30f, parent = panel)
+            button("Попробовать улучшить", panel) {
+                if (upgradeSource in progress.owned) {
+                    val (next, won) = progress.upgrade(upgradeSource, upgradeTarget, Random.nextInt(1000))
+                    if (persist(next)) {
+                        upgradeSource = -1; upgradeTarget = -1
+                        render()
+                        Toast.makeText(this, if (won) "Улучшение успешно!" else "Неудача: исходный телефон израсходован", Toast.LENGTH_LONG).show()
+                    }
+                }
+            }
+            label("Выбери цель", 22f)
+            targets.forEach { target -> button("Цель: ${Catalog.phones[target].name}") { upgradeTarget = target; render() } }
+        } else label("Выбери телефон ниже. Нужна модель с более дорогой доступной целью.", 17f, muted)
+        label("Твои телефоны из кейсов", 23f)
+        progress.owned.distinct().forEach { source ->
+            button("Выбрать ${Catalog.phones[source].name}") { upgradeSource = source; upgradeTarget = -1; render() }
+        }
+        if (progress.owned.isEmpty()) label("Для апгрейда нужен телефон из кейса или админ-панели.", 16f, muted)
+        button("На главную") { navigate("home") }
+    }
+
+    private fun profile() {
+        screen("Профиль")
+        label(progress.nickname, 27f)
+        val input = searchField("Имя игрока", progress.nickname) { }
+        button("Сохранить имя") {
+            val name = input.text.toString().trim().take(24).ifBlank { "Коллекционер" }
+            if (persist(progress.copy(nickname = name))) render()
+        }
+        val all = progress.owned + progress.used.map { it.phone }
+        val panel = glassPanel()
+        infoRow("Баланс", "${progress.coins} ₽", panel)
+        infoRow("В коллекции", all.size.toString(), panel)
+        infoRow("Разных моделей", all.toSet().size.toString(), panel)
+        infoRow("Избранных", progress.favorites.size.toString(), panel)
+        infoRow("Кейсов с версии 2.6", progress.casesOpened.toString(), panel)
+        infoRow("Нажатий", progress.clicks.toString(), panel)
+        Rarity.entries.forEach { rarity ->
+            infoRow(rarity.title, all.count { Catalog.phones[it].rarity == rarity }.toString(), panel)
+            panel.addView(android.widget.ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal).apply {
+                max = all.size.coerceAtLeast(1)
+                progress = all.count { Catalog.phones[it].rarity == rarity }
+                progressTintList = ColorStateList.valueOf(rarity.accent)
+            }, LinearLayout.LayoutParams(-1, dp(10)))
+        }
+        label("Достижения", 24f)
+        val unlocked = progress.badges + Progression.goals(progress)
+        Progression.goalNames.forEach { (id, title) -> label((if(id in unlocked) "✓ " else "○ ")+title, 18f) }
+        button("Админ-панель") { navigate("admin") }
+        button("На главную") { navigate("home") }
     }
 
     private fun glassPanel(): LinearLayout = LinearLayout(this).apply {

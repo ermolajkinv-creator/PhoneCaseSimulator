@@ -103,7 +103,7 @@ class CompatibilityTest {
             click(scenario, "Взять Samsung Z Fold 8 Ultra")
             click(scenario, "Взять Sony Xperia 1 VI")
             click(scenario, "Взять OnePlus 15")
-            assertEquals(Progress(Economy.START_BALANCE, listOf(5, 23, 24)), ProgressStore(context).load())
+            assertEquals(Progress(Economy.START_BALANCE, listOf(5, 23, 24), badges = setOf("first", "ultra")), ProgressStore(context).load())
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Вход по паролю")
@@ -205,6 +205,45 @@ class CompatibilityTest {
             assertEquals(received.lastGiftAt, ProgressStore(context).load().lastGiftAt)
         }
     }
+    @Test fun dailyClickerProfileAndFavoritesPersist() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Ежедневная награда")
+            click(scenario, "Забрать награду · ${Economy.BONUS} ₽")
+            assertText(scenario, "Сегодня награда уже получена")
+            click(scenario, "Кликер")
+            click(scenario, "◉ +10 ₽")
+            assertEquals(Economy.START_BALANCE + Economy.BONUS + 10, ProgressStore(context).load().coins)
+            click(scenario, "Каталог")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("Nokia 3310")
+            }
+            click(scenario, "♡ В избранное")
+            assertEquals(setOf(0), ProgressStore(context).load().favorites)
+            click(scenario, "Профиль")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("Игрок")
+            }
+            click(scenario, "Сохранить имя")
+            scenario.recreate()
+            assertText(scenario, "Игрок")
+            assertEquals(1, ProgressStore(context).load().clicks)
+            assertEquals(setOf(0), ProgressStore(context).load().favorites)
+        }
+    }
+    @Test fun upgradeConsumesOnlyOnePhoneAndPreservesCash() {
+        assertTrue(ProgressStore(context).save(Progress(777, listOf(0,0))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Апгрейд")
+            click(scenario, "Выбрать Nokia 3310")
+            click(scenario, "Попробовать улучшить")
+            val loaded = ProgressStore(context).load()
+            assertEquals(777, loaded.coins)
+            assertTrue(loaded.owned.size in 1..2)
+            assertEquals(1, loaded.owned.count { it == 0 })
+            scenario.recreate()
+            assertText(scenario, "Апгрейдер")
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()
@@ -212,7 +251,7 @@ class CompatibilityTest {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Коллекция")
             click(scenario, "Продать один · ${Catalog.phones[5].price} ₽")
-            assertEquals(Progress(777 + Catalog.phones[5].price, listOf(0, 5)), ProgressStore(context).load())
+            assertEquals(Progress(777 + Catalog.phones[5].price, listOf(0, 5), badges = setOf("first", "ultra")), ProgressStore(context).load())
             scenario.recreate()
             assertText(scenario, "Коллекция")
         }

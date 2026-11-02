@@ -137,11 +137,15 @@ object Catalog {
 }
 
 data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int> = emptyList(),
-                    val used: List<UsedPhone> = emptyList(), val purchased: Set<String> = emptySet(), val firmware: Map<Int, String> = emptyMap(), val lastGiftAt: Long = 0L) {
+                    val used: List<UsedPhone> = emptyList(), val purchased: Set<String> = emptySet(), val firmware: Map<Int, String> = emptyMap(), val lastGiftAt: Long = 0L,
+                    val favorites: Set<Int> = emptySet(), val nickname: String = "Коллекционер",
+                    val clicks: Int = 0, val casesOpened: Int = 0,
+                    val lastDailyDay: Long = -1L, val dailyStreak: Int = 0,
+                    val badges: Set<String> = emptySet()) {
     fun open(ticket: Int): Pair<Progress, Int>? {
         if (coins < Catalog.CASE_PRICE) return null
         val phone = Catalog.roll(ticket)
-        return copy(coins = coins - Catalog.CASE_PRICE, owned = owned + phone) to phone
+        return copy(coins = coins - Catalog.CASE_PRICE, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
     }
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
@@ -166,12 +170,37 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
     fun openCase(kind: CaseKind, ticket: Int): Pair<Progress, Int>? {
         if (coins < kind.cost) return null
         val phone = kind.roll(ticket)
-        return copy(coins = coins - kind.cost, owned = owned + phone) to phone
+        return copy(coins = coins - kind.cost, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
     }
     fun tune(model: Int, firmwareName: String): Progress {
         require(model in owned || used.any { it.phone == model }) { "Телефона нет в коллекции" }
         require(firmwareName in Workshop.options(Catalog.phones[model]))
         return copy(firmware = firmware + (model to firmwareName))
+    }
+    fun toggleFavorite(model: Int): Progress {
+        require(model in Catalog.phones.indices)
+        return copy(favorites = if (model in favorites) favorites - model else favorites + model)
+    }
+    fun clickCoin(): Progress = copy(coins = credit(Progression.CLICK_REWARD),
+        clicks = (clicks.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
+    fun claimDaily(day: Long): Progress {
+        require(day >= 0L)
+        if (day <= lastDailyDay) return this
+        val streak = if (day == lastDailyDay + 1L) (dailyStreak+1).coerceAtMost(7) else 1
+        return copy(coins = credit(Progression.dailyReward(streak)), lastDailyDay = day, dailyStreak = streak)
+    }
+    fun upgradeChance(source: Int, target: Int): Int {
+        require(source in owned && target in Catalog.phones.indices && target != 5)
+        require(Catalog.phones[target].price > Catalog.phones[source].price)
+        return (Catalog.phones[source].price.toLong()*750/Catalog.phones[target].price).toInt().coerceIn(1,750)
+    }
+    fun upgrade(source: Int, target: Int, ticket: Int): Pair<Progress, Boolean> {
+        require(ticket in 0..999)
+        val chance = upgradeChance(source, target)
+        val inventory = owned.toMutableList().apply { remove(source) }
+        val won = ticket < chance
+        if (won) inventory.add(target)
+        return copy(owned = inventory) to won
     }
     fun giftCooldownRemaining(now: Long = System.currentTimeMillis()): Long =
         if (lastGiftAt == 0L) 0L else (Economy.GIFT_COOLDOWN - (now - lastGiftAt)).coerceIn(0L, Economy.GIFT_COOLDOWN)

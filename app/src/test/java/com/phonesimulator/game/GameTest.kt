@@ -22,7 +22,7 @@ class GameTest {
         assertEquals(listOf(phone), next.owned)
         assertEquals(5, phone)
         assertNull(next.open(0))
-        assertEquals(Progress(Catalog.phones[5].price), next.sell(5))
+        assertEquals(Progress(Catalog.phones[5].price, casesOpened = 1), next.sell(5))
         assertEquals(next, next.sell(0))
     }
     @Test fun legacySaveAndMalformedIndices() {
@@ -129,6 +129,30 @@ class GameTest {
         val shop = Progress(0).bonus(time).copy(coins = 0)
         assertFalse(shop.canReceiveGift(emptyList(), time + 1))
     }
+    @Test fun dailyClickerFavoritesAndUpgradeRules() {
+        val start = Progress(1000, listOf(0,0))
+        val day1 = start.claimDaily(100)
+        assertEquals(1000 + Economy.BONUS, day1.coins)
+        assertEquals(day1, day1.claimDaily(100))
+        assertEquals(day1, day1.claimDaily(99))
+        val day2 = day1.claimDaily(101)
+        assertEquals(2, day2.dailyStreak)
+        assertEquals(day2.coins + Economy.BONUS, day2.claimDaily(103).coins)
+        assertEquals(1, day2.claimDaily(103).dailyStreak)
+        assertEquals(Progress(1010, listOf(0,0), clicks = 1), start.clickCoin())
+        assertTrue(0 in start.toggleFavorite(0).favorites)
+        assertEquals(start, start.toggleFavorite(0).toggleFavorite(0))
+        val chance = start.upgradeChance(0, 1)
+        val outcomes = (0..999).map { start.upgrade(0,1,it) }
+        assertEquals(chance, outcomes.count { it.second })
+        assertEquals(listOf(0,1), outcomes.first().first.owned)
+        assertEquals(listOf(0), outcomes.last().first.owned)
+        assertTrue(outcomes.all { it.first.coins == start.coins })
+        assertTrue("clicks" in Progression.goals(start.copy(clicks = 100)))
+        assertTrue("ultra" in Progression.goals(Progress(owned = listOf(5))))
+    }
+    @Test(expected = IllegalArgumentException::class)
+    fun cannotUpgradeToUltra() { Progress(owned = listOf(0)).upgrade(0,5,0) }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
 }

@@ -8,8 +8,8 @@ android {
         applicationId = "com.phonesimulator.game"
         minSdk = 26
         targetSdk = 35
-        versionCode = 9
-        versionName = "2.5.3"
+        versionCode = 10
+        versionName = "2.6"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
