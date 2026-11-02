@@ -112,6 +112,23 @@ class GameTest {
         assertTrue(Progress(499).canReceiveGift(listOf(listing)))
         assertEquals(Progress(500), Progress(500).receiveGift(listOf(listing)))
     }
+    @Test fun sharedGiftCooldownHasExactBoundaryAndCannotBeBypassed() {
+        val time = 1_000_000L
+        val first = Progress(0).receiveGift(emptyList(), time)
+        assertEquals(time, first.lastGiftAt)
+        val spent = first.copy(coins = 0)
+        assertEquals(Economy.GIFT_COOLDOWN, spent.giftCooldownRemaining(time))
+        assertEquals(1L, spent.giftCooldownRemaining(time + Economy.GIFT_COOLDOWN - 1))
+        assertFalse(spent.canReceiveGift(emptyList(), time + 1))
+        assertEquals(spent, spent.receiveGift(emptyList(), time + 1))
+        assertEquals(spent, spent.bonus(time + 1))
+        assertTrue(spent.canReceiveGift(emptyList(), time + Economy.GIFT_COOLDOWN))
+        assertEquals(Economy.BONUS, spent.receiveGift(emptyList(), time + Economy.GIFT_COOLDOWN).coins)
+        assertEquals(Economy.GIFT_COOLDOWN, spent.giftCooldownRemaining(time - 1000))
+        assertEquals(0L, Progress.restore(1000, "").giftCooldownRemaining(time))
+        val shop = Progress(0).bonus(time).copy(coins = 0)
+        assertFalse(shop.canReceiveGift(emptyList(), time + 1))
+    }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
 }

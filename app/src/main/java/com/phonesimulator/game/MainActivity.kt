@@ -143,6 +143,20 @@ class MainActivity : Activity() {
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
         label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
+        if (title != "Открываем кейс…" && progress.giftCooldownRemaining() > 0L) {
+            val countdown = label("", 16f, muted)
+            countdown.post(object : Runnable {
+                override fun run() {
+                    if (!countdown.isAttachedToWindow || isDestroyed || isFinishing) return
+                    val remaining = progress.giftCooldownRemaining()
+                    if (remaining == 0L) { render(); return }
+                    val seconds = (remaining + 999L) / 1000L
+                    countdown.text = String.format(java.util.Locale.ROOT,
+                        "Подарок через %02d:%02d", seconds / 60L, seconds % 60L)
+                    countdown.postDelayed(this, 1000L)
+                }
+            })
+        }
         if (title != "Открываем кейс…" && progress.canReceiveGift(currentListings())) {
             label("Не хватает ни на кейс, ни на телефон? Забери подарок и продолжай!", 16f, mint)
             button("Получить подарок · ${Economy.BONUS} ₽") {
@@ -211,7 +225,12 @@ class MainActivity : Activity() {
                 label("Пополняй запас и продолжай коллекцию", 22f)
                 label("Бонус покрывает один классический кейс. Уже накопленный баланс сохранён.", 15f, muted)
                 label("Бесплатные ${Economy.BONUS} ₽. Без рекламы и покупок за реальные деньги.", color = muted)
-                button("Получить ${Economy.BONUS} ₽") { if (persist(progress.bonus())) render() }
+                button("Получить ${Economy.BONUS} ₽") {
+                    if (progress.giftCooldownRemaining() > 0L) {
+                        Toast.makeText(this, "Подарок ещё перезаряжается", Toast.LENGTH_SHORT).show()
+                    } else if (persist(progress.bonus())) render()
+                }
+                label("Общая перезарядка подарка и бонуса — 10 минут.", 15f, muted)
                 button("На главную") { navigate("home") }
             }
             "result" -> {

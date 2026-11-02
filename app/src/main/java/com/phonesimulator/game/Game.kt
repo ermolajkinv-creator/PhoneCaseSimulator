@@ -137,7 +137,7 @@ object Catalog {
 }
 
 data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int> = emptyList(),
-                    val used: List<UsedPhone> = emptyList(), val purchased: Set<String> = emptySet(), val firmware: Map<Int, String> = emptyMap()) {
+                    val used: List<UsedPhone> = emptyList(), val purchased: Set<String> = emptySet(), val firmware: Map<Int, String> = emptyMap(), val lastGiftAt: Long = 0L) {
     fun open(ticket: Int): Pair<Progress, Int>? {
         if (coins < Catalog.CASE_PRICE) return null
         val phone = Catalog.roll(ticket)
@@ -173,14 +173,19 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         require(firmwareName in Workshop.options(Catalog.phones[model]))
         return copy(firmware = firmware + (model to firmwareName))
     }
-    fun canReceiveGift(listings: List<Listing>): Boolean =
-        coins < CaseKind.entries.minOf { it.cost } &&
+    fun giftCooldownRemaining(now: Long = System.currentTimeMillis()): Long =
+        if (lastGiftAt == 0L) 0L else (Economy.GIFT_COOLDOWN - (now - lastGiftAt)).coerceIn(0L, Economy.GIFT_COOLDOWN)
+
+    fun canReceiveGift(listings: List<Listing>, now: Long = System.currentTimeMillis()): Boolean =
+        giftCooldownRemaining(now) == 0L && coins < CaseKind.entries.minOf { it.cost } &&
             listings.none { it.id !in purchased && it.price <= coins }
 
-    fun receiveGift(listings: List<Listing>): Progress =
-        if (canReceiveGift(listings)) copy(coins = credit(Economy.BONUS)) else this
+    fun receiveGift(listings: List<Listing>, now: Long = System.currentTimeMillis()): Progress =
+        if (canReceiveGift(listings, now)) bonus(now) else this
 
-    fun bonus() = copy(coins = credit(Economy.BONUS))
+    // Both free-money entry points share the same persisted cooldown.
+    fun bonus(now: Long = System.currentTimeMillis()): Progress =
+        if (giftCooldownRemaining(now) == 0L) copy(coins = credit(Economy.BONUS), lastGiftAt = now) else this
     private fun credit(amount: Int) = (coins.toLong() + amount).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
     companion object {
         fun restore(coins: Int, saved: String) = Progress(

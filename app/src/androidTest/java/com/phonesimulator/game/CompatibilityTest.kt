@@ -182,6 +182,29 @@ class CompatibilityTest {
             }
         }
     }
+    @Test fun giftCooldownSurvivesRelaunchAndBlocksShopBonus() {
+        val store = ProgressStore(context)
+        assertTrue(store.save(Progress(0)))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Получить подарок · ${Economy.BONUS} ₽")
+        }
+        val received = ProgressStore(context).load()
+        assertTrue(received.lastGiftAt > 0L)
+        // Simulate spending all money, then relaunch a fresh Activity/store.
+        assertTrue(store.save(received.copy(coins = 0)))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            assertTrue(ProgressStore(context).load().giftCooldownRemaining() > 0L)
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>()
+                    .any { it.text.toString().startsWith("Получить подарок") })
+            }
+            click(scenario, "Магазин")
+            click(scenario, "Получить ${Economy.BONUS} ₽")
+            assertEquals(0, ProgressStore(context).load().coins)
+            scenario.recreate()
+            assertEquals(received.lastGiftAt, ProgressStore(context).load().lastGiftAt)
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

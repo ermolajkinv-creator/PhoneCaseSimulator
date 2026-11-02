@@ -15,6 +15,7 @@ class ProgressStore(context: Context) {
                 UsedPhone(phone, condition) else null
         }
         return Progress.restore(coins, owned).copy(used = used,
+            lastGiftAt = prefs.getLong("lastGiftAt", 0L).coerceAtLeast(0L),
             purchased = prefs.getStringSet("purchased", emptySet()).orEmpty().toSet(),
             firmware = prefs.getString("firmware", "").orEmpty().split(';').mapNotNull {
                 val parts = it.split(':', limit = 2)
@@ -26,6 +27,7 @@ class ProgressStore(context: Context) {
     // Persist payment and reward together before starting the cosmetic animation.
     fun save(progress: Progress): Boolean = prefs.edit()
         .putInt("coins", progress.coins)
+        .putLong("lastGiftAt", progress.lastGiftAt)
         .putString("firmware", progress.firmware.entries.joinToString(";") { "${it.key}:${it.value}" })
         .putString("used", progress.used.joinToString(";") { "${it.phone}:${it.condition}" })
         .putStringSet("purchased", progress.purchased)

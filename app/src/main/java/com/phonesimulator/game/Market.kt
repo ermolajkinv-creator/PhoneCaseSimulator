@@ -41,6 +41,7 @@ enum class CaseKind(val title: String, val minimum: Rarity) {
 }
 
 object Economy {
+    const val GIFT_COOLDOWN = 10 * 60 * 1000L
     const val START_BALANCE = 62000
     const val BONUS = 31000
 }
