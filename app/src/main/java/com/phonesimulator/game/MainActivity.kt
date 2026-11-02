@@ -117,6 +117,13 @@ class MainActivity : Activity() {
         }
         container.addView(root, LinearLayout.LayoutParams(
             minOf(resources.displayMetrics.widthPixels, dp(640)), -2))
+        container.addOnLayoutChangeListener { _, left, _, right, _, _, _, _, _ ->
+            val available = (right - left).coerceAtLeast(0)
+            val targetWidth = minOf(available, dp(640))
+            if (targetWidth > 0 && root.layoutParams.width != targetWidth) {
+                root.layoutParams = root.layoutParams.apply { width = targetWidth }
+            }
+        }
         scroll.addView(container)
         scroll.setOnApplyWindowInsetsListener { view, insets ->
             if (android.os.Build.VERSION.SDK_INT >= 30) {
@@ -310,7 +317,7 @@ class MainActivity : Activity() {
         if (!adminUnlocked) {
             label("Вход по паролю", 22f)
             val input = searchField("Пароль администратора") { }
-            input.id = 1001
+            input.id = R.id.admin_password
             input.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
             input.isSaveEnabled = false
             val error = label("", 15f, muted).apply { accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE }

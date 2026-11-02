@@ -89,7 +89,7 @@ class CompatibilityTest {
             assertText(scenario, "Неверный пароль")
             assertEquals(Progress(), ProgressStore(context).load())
             scenario.onActivity { activity ->
-                activity.findViewById<android.widget.EditText>(1001).setText("Prism-8426")
+                activity.findViewById<android.widget.EditText>(R.id.admin_password).setText("Prism-8426")
             }
             click(scenario, "Войти")
             click(scenario, "Взять Samsung Z Fold 8 Ultra")
