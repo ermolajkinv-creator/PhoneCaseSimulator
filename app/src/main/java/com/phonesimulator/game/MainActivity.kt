@@ -126,11 +126,7 @@ class MainActivity : Activity() {
                 topMargin = dp(16); bottomMargin = dp(12)
             })
         }
-        label("▣", 60f, phone.rarity.accent, panel).apply {
-            gravity = Gravity.CENTER
-            setShadowLayer(dp(16).toFloat(), 0f, 0f, phone.rarity.accent)
-            importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
-        }
+        panel.addView(PhoneArtView(this, phone), LinearLayout.LayoutParams(-1, dp(156)))
         label(phone.rarity.title.uppercase(), 12f, phone.rarity.accent, panel)
         label(phone.name, 23f, parent = panel).setTypeface(null, Typeface.BOLD)
         label("Шанс ${phone.tickets / 10.0}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
