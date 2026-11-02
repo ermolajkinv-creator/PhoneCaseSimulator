@@ -240,6 +240,7 @@ class MainActivity : Activity() {
     private fun navigate(destination: String) { animator?.cancel(); animator = null; page = destination; render() }
     private fun render() {
         when (page) {
+            "clients" -> clients()
             "quests" -> quests()
             "catalog" -> catalog()
             "clicker" -> clicker()
@@ -296,6 +297,7 @@ class MainActivity : Activity() {
                 button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
+                button("Клиенты и сервис") { navigate("clients") }
                 button("Мастерская · прошивки") { navigate("workshop") }
                 button("Все кейсы · 4 вида") { navigate("cases") }
                 button("Авито · рынок б/у") { navigate("market") }
@@ -413,6 +415,64 @@ class MainActivity : Activity() {
         button("На главную") { navigate("home") }
     }
 
+    private fun clients() {
+        val now = System.currentTimeMillis()
+        val synced = progress.syncClients(now)
+        if (synced != progress) persist(synced)
+        screen("Клиенты и сервис")
+        label("Клиенты — игровые персонажи. Их устройства не попадают в твою коллекцию. Один заказ одновременно; новый посетитель каждые 2 минуты, очередь до 3 предложений.", 15f, muted)
+        infoRow("Уровень сервиса", "${progress.workshopLevel}/5")
+        infoRow("Репутация", progress.reputation.toString())
+        if (progress.workshopLevel < 5) {
+            val cost = Clients.upgradeCosts[progress.workshopLevel-1]
+            val rep = Clients.reputationRequired[progress.workshopLevel-1]
+            button("Улучшить сервис · $cost ₽ · репутация $rep") {
+                val next = progress.improveWorkshop()
+                if (next == progress) Toast.makeText(this, "Недостаточно денег или репутации", Toast.LENGTH_SHORT).show()
+                else if (persist(next)) render()
+            }
+        }
+        label("Уровень 2: кастомные прошивки. Уровень 3: джейлбрейк. Развитие ускоряет работу и повышает оплату.", 15f, muted)
+        val job = progress.clientJob
+        if (job != null) {
+            val panel = glassPanel()
+            label("В работе: ${job.offer.customer}", 22f, parent = panel)
+            label("${Catalog.phones[job.offer.phone].name} · ${job.offer.kind.title}", 17f, parent = panel)
+            val status = label("", 20f, mint, panel)
+            val complete = button("Выдать телефон · ${job.offer.reward} ₽", panel) {
+                if (persist(progress.finishClient(System.currentTimeMillis()))) render()
+            }
+            status.post(object : Runnable {
+                override fun run() {
+                    if (!status.isAttachedToWindow || isDestroyed || isFinishing) return
+                    val remaining = (job.readyAt-System.currentTimeMillis()).coerceAtLeast(0L)
+                    status.text = if (remaining == 0L) "Работа завершена" else "Осталось ${(remaining+999)/1000} с"
+                    complete.isEnabled = remaining == 0L
+                    if (remaining > 0) status.postDelayed(this, 1000)
+                }
+            })
+        }
+        label("Посетители", 24f)
+        progress.clientOffers(now).forEach { offer ->
+            val panel = glassPanel()
+            label("${offer.customer} · ${Catalog.phones[offer.phone].name}", 22f, parent = panel)
+            label(offer.kind.title, 18f, parent = panel)
+            infoRow("Детали, списание сразу", "${offer.cost} ₽", panel)
+            infoRow("Оплата при выдаче", "${offer.reward} ₽", panel)
+            infoRow("Чистый доход", "${offer.reward-offer.cost} ₽", panel)
+            infoRow("Работа", "${offer.seconds} с", panel)
+            if (progress.workshopLevel < offer.kind.level) label("Нужен уровень ${offer.kind.level}", 16f, muted, panel)
+            else if (job == null) button("Принять: ${offer.customer} · ${offer.kind.title}", panel) {
+                val next = progress.acceptClient(offer.slot, System.currentTimeMillis())
+                if (next.clientJob == null) Toast.makeText(this, "Заказ недоступен или не хватает денег на детали", Toast.LENGTH_SHORT).show()
+                else if (persist(next)) render()
+            }
+        }
+        button("Обновить посетителей") { render() }
+        button("Прошивки и джейлбрейк") { navigate("workshop") }
+        button("На главную") { navigate("home") }
+    }
+
     private fun quests() {
         val day = System.currentTimeMillis()/Progression.DAY_MS
         val ready = progress.forQuestDay(day)
@@ -453,6 +513,9 @@ class MainActivity : Activity() {
         infoRow("Избранных", progress.favorites.size.toString(), panel)
         infoRow("Кейсов с версии 2.6", progress.casesOpened.toString(), panel)
         infoRow("Нажатий", progress.clicks.toString(), panel)
+        infoRow("Клиентов обслужено", progress.servicesCompleted.toString(), panel)
+        infoRow("Репутация", progress.reputation.toString(), panel)
+        button("Клиенты и сервис") { navigate("clients") }
         Rarity.entries.forEach { rarity ->
             infoRow(rarity.title, all.count { Catalog.phones[it].rarity == rarity }.toString(), panel)
             panel.addView(android.widget.ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal).apply {
@@ -611,6 +674,7 @@ class MainActivity : Activity() {
 
     private fun workshop() {
         screen("Прошивки и джейлбрейк")
+        button("Клиенты и сервис") { navigate("clients") }
         label("Игровая симуляция: действия не прошивают настоящий телефон. Доступность реального кастома и джейлбрейка зависит от модели, загрузчика и версии ОС.", 15f, muted)
         label("Профиль применяется к вашим экземплярам выбранной модели.", 14f, muted)
         button("На главную") { navigate("home") }

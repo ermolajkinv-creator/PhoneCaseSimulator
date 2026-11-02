@@ -143,7 +143,10 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
                     val lastDailyDay: Long = -1L, val dailyStreak: Int = 0,
                     val badges: Set<String> = emptySet(), val questDay: Long = -1L,
                     val questClicks: Int = 0, val questCases: Int = 0,
-                    val claimedQuests: Set<String> = emptySet()) {
+                    val claimedQuests: Set<String> = emptySet(),
+                    val workshopLevel: Int = 1, val reputation: Int = 0, val servicesCompleted: Int = 0,
+                    val serviceSlot: Long = -1L, val servicedSlots: Set<Long> = emptySet(),
+                    val clientJob: ClientJob? = null) {
     fun open(ticket: Int): Pair<Progress, Int>? = openCase(CaseKind.CLASSIC, ticket)
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
@@ -221,6 +224,39 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         val won = ticket < chance
         if (won) inventory.add(target)
         return copy(owned = inventory) to won
+    }
+    fun syncClients(now: Long): Progress {
+        require(now >= 0)
+        val slot = maxOf(serviceSlot, now / Clients.INTERVAL)
+        return copy(serviceSlot = slot, servicedSlots = servicedSlots.filter { it >= slot-2 }.toSet())
+    }
+    fun clientOffers(now: Long): List<ClientOffer> {
+        val slot = maxOf(serviceSlot, now / Clients.INTERVAL)
+        if (now / Clients.INTERVAL < serviceSlot) return emptyList()
+        return ((slot-2).coerceAtLeast(0)..slot).filter { it !in servicedSlots && it != clientJob?.offer?.slot }
+            .map { Clients.offer(it, workshopLevel) }
+    }
+    fun acceptClient(slot: Long, now: Long): Progress {
+        val ready = syncClients(now)
+        if (ready.clientJob != null) return ready
+        val offer = ready.clientOffers(now).firstOrNull { it.slot == slot } ?: return ready
+        if (workshopLevel < offer.kind.level || coins < offer.cost) return ready
+        return ready.copy(coins = coins-offer.cost, clientJob = ClientJob(offer, now+offer.seconds*1000L))
+    }
+    fun finishClient(now: Long): Progress {
+        val ready = syncClients(now)
+        val job = ready.clientJob ?: return ready
+        if (now < job.readyAt) return ready
+        return ready.copy(coins = ready.credit(job.offer.reward), clientJob = null,
+            servicedSlots = ready.servicedSlots + job.offer.slot,
+            reputation = (reputation.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
+            servicesCompleted = (servicesCompleted.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
+    }
+    fun improveWorkshop(): Progress {
+        if (workshopLevel >= 5) return this
+        val cost = Clients.upgradeCosts[workshopLevel-1]
+        if (coins < cost || reputation < Clients.reputationRequired[workshopLevel-1]) return this
+        return copy(coins = coins-cost, workshopLevel = workshopLevel+1)
     }
     fun giftCooldownRemaining(now: Long = System.currentTimeMillis()): Long =
         if (lastGiftAt == 0L) 0L else (Economy.GIFT_COOLDOWN - (now - lastGiftAt)).coerceIn(0L, Economy.GIFT_COOLDOWN)

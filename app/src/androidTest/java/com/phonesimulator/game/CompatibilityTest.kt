@@ -272,6 +272,31 @@ class CompatibilityTest {
             assertText(scenario, "Сначала получи телефон в коллекцию.")
         }
     }
+    @Test fun clientJobSurvivesRestartAndPaysOnlyOnce() {
+        val now = System.currentTimeMillis()
+        val slot = now/Clients.INTERVAL
+        val phone = 1
+        val job = ClientJob(ClientOffer(slot, phone, ServiceKind.SETUP, 0, 1500, 20), now-1000)
+        val start = Progress(100, listOf(5), clientJob = job, serviceSlot = slot)
+        assertTrue(ProgressStore(context).save(start))
+        assertEquals(job, ProgressStore(context).load().clientJob)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Клиенты и сервис")
+            click(scenario, "Выдать телефон · 1500 ₽")
+            val result = ProgressStore(context).load()
+            assertEquals(1600, result.coins)
+            assertEquals(listOf(5), result.owned)
+            assertEquals(1, result.reputation)
+            assertNull(result.clientJob)
+            scenario.recreate()
+            assertEquals(1600, ProgressStore(context).load().coins)
+            assertEquals(1, ProgressStore(context).load().servicesCompleted)
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>()
+                    .any { it.text.toString().startsWith("Выдать телефон") })
+            }
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

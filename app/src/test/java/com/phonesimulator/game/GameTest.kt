@@ -168,6 +168,37 @@ class GameTest {
         repeat(3) { cases = cases.openCase(CaseKind.CLASSIC, 0, 100)!!.first }
         assertEquals(10000, cases.claimQuest("cases",100).coins)
     }
+    @Test fun clientsAreTimedIdempotentAndSeparateFromInventory() {
+        val start = Progress(50000, listOf(5))
+        val offer = Clients.offer(0, 1)
+        val accepted = start.acceptClient(0, 0)
+        val job = accepted.clientJob!!
+        assertEquals(start.coins-offer.cost, accepted.coins)
+        assertEquals(accepted, accepted.acceptClient(0, 1))
+        assertEquals(accepted.coins, accepted.finishClient(job.readyAt-1).coins)
+        val done = accepted.finishClient(job.readyAt)
+        assertEquals(accepted.coins+offer.reward, done.coins)
+        assertEquals(start.owned, done.owned)
+        assertEquals(start.firmware, done.firmware)
+        assertEquals(1, done.reputation)
+        assertEquals(1, done.servicesCompleted)
+        assertNull(done.clientJob)
+        assertEquals(done, done.finishClient(job.readyAt))
+        assertNull(done.acceptClient(0, job.readyAt).clientJob)
+        assertNull(Progress(0).acceptClient(0,0).clientJob)
+        assertNull(start.acceptClient(2,2*Clients.INTERVAL).clientJob)
+        assertNull(start.acceptClient(3,3*Clients.INTERVAL).clientJob)
+        assertEquals(3, Progress().clientOffers(10*Clients.INTERVAL).size)
+        val future = Progress().syncClients(100*Clients.INTERVAL)
+        assertTrue(future.clientOffers(0).isEmpty())
+        assertEquals(100L, future.syncClients(0).serviceSlot)
+        assertEquals(2, Progress(50000, reputation = 3).improveWorkshop().workshopLevel)
+        assertEquals(40000, Progress(50000, reputation = 3).improveWorkshop().coins)
+        assertEquals(1, Progress(50000).improveWorkshop().workshopLevel)
+        assertEquals(5, Progress(50000, workshopLevel = 5, reputation = 100).improveWorkshop().workshopLevel)
+        assertTrue(Catalog.phones[Clients.offer(3,3).phone].name.startsWith("iPhone"))
+        assertTrue("LineageOS (симуляция)" in Workshop.options(Catalog.phones[Clients.offer(2,2).phone]))
+    }
     @Test(expected = IllegalArgumentException::class)
     fun cannotUpgradeToUltra() { Progress(owned = listOf(0)).upgrade(0,5,0) }
     @Test(expected = IllegalArgumentException::class)
