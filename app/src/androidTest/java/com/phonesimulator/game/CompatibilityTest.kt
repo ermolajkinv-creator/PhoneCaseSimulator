@@ -82,6 +82,51 @@ class CompatibilityTest {
             assertText(scenario, "Первый телефон ждёт в кейсе.")
         }
     }
+    @Test fun adminRequiresPasswordGrantsAndLocks() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Админ-панель")
+            click(scenario, "Войти")
+            assertText(scenario, "Неверный пароль")
+            assertEquals(Progress(), ProgressStore(context).load())
+            scenario.onActivity { activity ->
+                activity.findViewById<android.widget.EditText>(1001).setText("Prism-8426")
+            }
+            click(scenario, "Войти")
+            click(scenario, "Взять Samsung Z Fold 8 Ultra")
+            click(scenario, "Взять Sony Xperia 1 VI")
+            assertEquals(Progress(1000, listOf(5, 23)), ProgressStore(context).load())
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
+            assertText(scenario, "Вход по паролю")
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>()
+                    .any { it.text.toString().startsWith("Взять ") })
+            }
+            scenario.recreate()
+            assertText(scenario, "Вход по паролю")
+        }
+    }
+    @Test fun wikiSearchAndDetails() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Википедия телефонов · 24 моделей")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>()
+                    .first().setText("Pixel 4")
+            }
+            click(scenario, "Google Pixel 4\nРедкий · 2.5%")
+            assertText(scenario, "Snapdragon 855")
+            assertText(scenario, "Android 10 при выпуске")
+            scenario.recreate()
+            assertText(scenario, "Snapdragon 855")
+            click(scenario, "Википедия телефонов")
+            scenario.onActivity { activity ->
+                val input = views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first()
+                assertEquals("Pixel 4", input.text.toString())
+                input.setText("no-such-phone")
+            }
+            assertText(scenario, "Ничего не найдено")
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,99,broken").commit()

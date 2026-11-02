@@ -29,6 +29,26 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE).bonus().coins)
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
+    @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
+        assertEquals(24, Catalog.phones.size)
+        assertEquals(1000, Catalog.phones.sumOf { it.tickets })
+        val original = Progress(777, listOf(0, 5, 5))
+        var granted = original
+        Catalog.phones.indices.forEach { granted = granted.grant(it) }
+        assertEquals(777, granted.coins)
+        assertEquals(original.owned + Catalog.phones.indices.toList(), granted.owned)
+        assertEquals(granted, Progress.restore(granted.coins, granted.owned.joinToString(",")))
+        Catalog.phones.forEach {
+            assertTrue(it.chip.isNotBlank() && it.display.isNotBlank() && it.system.isNotBlank())
+            assertTrue(it.description.isNotBlank())
+        }
+    }
+    @Test fun adminPasswordCheck() {
+        assertFalse(AdminAccess.accepts(""))
+        assertFalse(AdminAccess.accepts("wrong-password"))
+        assertFalse(AdminAccess.accepts("prism-8426"))
+        assertTrue(AdminAccess.accepts("Prism-8426"))
+    }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
 }
