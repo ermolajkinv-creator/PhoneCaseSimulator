@@ -37,7 +37,15 @@ class CompatibilityTest {
     @Test fun openSaveRecreateAndRelaunch() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Открыть кейс · 100 монет")
-            click(scenario, "Показать телефон")
+            scenario.onActivity { activity ->
+                // A busy emulator may finish the animation before this callback runs.
+                // Both the skip control and an already revealed reward are valid states.
+                val all = views(activity.window.decorView)
+                val reveal = all.filterIsInstance<Button>().firstOrNull { it.text.toString() == "Показать телефон" }
+                if (reveal != null) assertTrue(reveal.performClick())
+                else assertTrue("Expected the completed case reveal", all.filterIsInstance<TextView>()
+                    .any { it.text.toString() == "Новый телефон!" })
+            }
             assertText(scenario, "Новый телефон!")
             assertEquals(900, ProgressStore(context).load().coins)
             assertEquals(1, ProgressStore(context).load().owned.size)
