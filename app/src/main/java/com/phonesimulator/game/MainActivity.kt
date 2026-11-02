@@ -142,7 +142,7 @@ class MainActivity : Activity() {
             letterSpacing = 0.14f
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
-        label("◈ ${progress.coins} монет  ·  ${progress.owned.size} телефонов", 16f, muted)
+        label("◈ ${progress.coins} монет  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
     }
 
     private fun card(index: Int, count: Int? = null, parent: LinearLayout = root) {
