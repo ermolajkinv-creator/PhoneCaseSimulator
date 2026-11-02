@@ -15,11 +15,18 @@ class ProgressStore(context: Context) {
                 UsedPhone(phone, condition) else null
         }
         return Progress.restore(coins, owned).copy(used = used,
-            purchased = prefs.getStringSet("purchased", emptySet()).orEmpty().toSet())
+            purchased = prefs.getStringSet("purchased", emptySet()).orEmpty().toSet(),
+            firmware = prefs.getString("firmware", "").orEmpty().split(';').mapNotNull {
+                val parts = it.split(':', limit = 2)
+                val model = parts.firstOrNull()?.toIntOrNull()
+                val rom = parts.getOrNull(1)
+                if (model != null && model in Catalog.phones.indices && rom in Workshop.options(Catalog.phones[model])) model to rom!! else null
+            }.toMap())
     }
     // Persist payment and reward together before starting the cosmetic animation.
     fun save(progress: Progress): Boolean = prefs.edit()
         .putInt("coins", progress.coins)
+        .putString("firmware", progress.firmware.entries.joinToString(";") { "${it.key}:${it.value}" })
         .putString("used", progress.used.joinToString(";") { "${it.phone}:${it.condition}" })
         .putStringSet("purchased", progress.purchased)
         .putString("owned", progress.owned.joinToString(","))

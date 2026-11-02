@@ -142,7 +142,7 @@ class MainActivity : Activity() {
             letterSpacing = 0.14f
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
-        label("◈ ${progress.coins} монет  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
+        label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
     }
 
     private fun card(index: Int, count: Int? = null, parent: LinearLayout = root) {
@@ -162,7 +162,7 @@ class MainActivity : Activity() {
         label("Шанс ${phone.tickets / 10.0}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
             14f, muted, panel)
         button("О телефоне", panel) { selectedPhone = index; navigate("details") }
-        if (count != null) button("Продать один · ${phone.price} монет", panel) {
+        if (count != null) button("Продать один · ${phone.price} ₽", panel) {
             if (persist(progress.sell(index))) render()
         }
     }
@@ -179,6 +179,7 @@ class MainActivity : Activity() {
     private fun navigate(destination: String) { page = destination; render() }
     private fun render() {
         when (page) {
+            "workshop" -> workshop()
             "cases" -> cases()
             "market" -> market()
             "wiki" -> wiki()
@@ -199,8 +200,8 @@ class MainActivity : Activity() {
             "shop" -> {
                 screen("Магазин")
                 label("Пополняй запас и продолжай коллекцию", 22f)
-                label("Бесплатные 500 монет. Без рекламы и покупок за реальные деньги.", color = muted)
-                button("Получить 500 монет") { if (persist(progress.bonus())) render() }
+                label("Бесплатные 500 ₽. Без рекламы и покупок за реальные деньги.", color = muted)
+                button("Получить 500 ₽") { if (persist(progress.bonus())) render() }
                 button("На главную") { navigate("home") }
             }
             "result" -> {
@@ -208,7 +209,7 @@ class MainActivity : Activity() {
                 screen("Новый телефон!")
                 card(reward)
                 label("Телефон уже сохранён в коллекции.", 15f, muted)
-                button("Ещё кейс · 100 монет") { openCase() }
+                button("Ещё кейс · 100 ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("На главную") { navigate("home") }
             }
@@ -217,9 +218,10 @@ class MainActivity : Activity() {
                 label("Каждый кейс — новый шанс", 22f)
                 card(5)
                 label("Samsung Z Fold 8 Ultra\nУльтралегендарный · 1 из 1000", 17f, muted)
-                button("Открыть кейс · 100 монет") { openCase() }
+                button("Открыть кейс · 100 ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
+                button("Мастерская · прошивки") { navigate("workshop") }
                 button("Все кейсы · 4 вида") { navigate("cases") }
                 button("Авито · рынок б/у") { navigate("market") }
                 button("Википедия телефонов · ${Catalog.phones.size} моделей") { navigate("wiki") }
@@ -312,7 +314,9 @@ class MainActivity : Activity() {
         infoRow("Чипсет", phone.chip, panel)
         infoRow("Дисплей", phone.display, panel)
         infoRow("Система", phone.system, panel)
-        infoRow("Цена продажи", "${phone.price} монет", panel)
+        infoRow("Оценка РФ · ₽", phone.price.toString(), panel)
+        infoRow("Прошивка в игре", progress.firmware[selectedPhone] ?: "Заводская", panel)
+        label("Цены — офлайн-ориентиры рынка РФ, не текущие предложения магазинов. Год/память/состояние влияют на реальную цену.", 13f, muted, panel)
         infoRow("В коллекции", (progress.owned.count { it == selectedPhone } + progress.used.count { it.phone == selectedPhone }).toString(), panel)
         label(phone.description, 17f, parent = panel)
         label("Справочник офлайн. Данные относятся к указанной версии модели и системе при выпуске; региональные варианты могут отличаться.", 13f, muted)
@@ -356,13 +360,35 @@ class MainActivity : Activity() {
         button("На главную") { navigate("home") }
     }
 
+    private fun workshop() {
+        screen("Мастерская 2.5")
+        label("Игровая симуляция: действия не прошивают настоящий телефон. Доступность реального кастома и джейлбрейка зависит от модели, загрузчика и версии ОС.", 15f, muted)
+        label("Профиль применяется к вашим экземплярам выбранной модели.", 14f, muted)
+        button("На главную") { navigate("home") }
+        val models = (progress.owned + progress.used.map { it.phone }).distinct()
+        if (models.isEmpty()) label("Сначала получи телефон в коллекцию.")
+        models.forEach { index ->
+            val phone = Catalog.phones[index]
+            val panel = glassPanel()
+            label(phone.name, 22f, parent = panel)
+            infoRow("Установлено", progress.firmware[index] ?: "Заводская", panel)
+            val options = Workshop.options(phone)
+            if (options.size == 1) label("Для этой платформы доступна только заводская система.", 15f, muted, panel)
+            options.forEach { rom ->
+                button("Установить $rom · ${phone.name}", panel) {
+                    if (persist(progress.tune(index, rom))) render()
+                }
+            }
+        }
+    }
+
     private fun cases() {
         screen("Кейсы 2.0")
         label("В каждом кейсе Z Fold 8 Ultra — 0,1%. Остальные модели зависят от типа кейса.", 16f, muted)
         CaseKind.entries.forEach { kind ->
             val panel = glassPanel()
             label(kind.title, 24f, parent = panel)
-            label("От редкости: ${kind.minimum.title} · ${kind.cost} монет", 16f, muted, panel)
+            label("От редкости: ${kind.minimum.title} · ${kind.cost} ₽", 16f, muted, panel)
             val pool = if (kind == CaseKind.CLASSIC) Catalog.phones.indices.toList()
                 else Catalog.phones.indices.filter { Catalog.phones[it].rarity.ordinal >= kind.minimum.ordinal }
             label("Моделей: ${pool.size}. Шансы:", 14f, muted, panel)
@@ -378,7 +404,7 @@ class MainActivity : Activity() {
 
     private fun market() {
         screen("Авито · рынок б/у")
-        label("Внутриигровая площадка, не связана с сервисом Avito. Только игровые монеты.", 14f, muted)
+        label("Внутриигровая площадка, не связана с сервисом Avito. Только игровые ₽ы.", 14f, muted)
         button("На главную") { navigate("home") }
         label("Объявления дня", 24f)
         val day = System.currentTimeMillis() / 86_400_000L
@@ -386,11 +412,11 @@ class MainActivity : Activity() {
             val panel = glassPanel()
             label(Catalog.phones[listing.phone].name, 21f, parent = panel)
             infoRow("Состояние", Market.conditions[listing.condition], panel)
-            infoRow("Цена", "${listing.price} монет", panel)
+            infoRow("Цена", "${listing.price} ₽", panel)
             if (listing.id in progress.purchased) label("Уже куплено", 16f, muted, panel)
             else button("Купить · ${listing.price}", panel) {
                 val next = progress.buy(listing)
-                if (next == null) Toast.makeText(this, "Недостаточно монет или лот уже куплен", Toast.LENGTH_SHORT).show()
+                if (next == null) Toast.makeText(this, "Недостаточно ₽ или лот уже куплен", Toast.LENGTH_SHORT).show()
                 else if (persist(next)) render()
             }
         }
@@ -416,7 +442,7 @@ class MainActivity : Activity() {
         if (animator != null) return
         val result = progress.openCase(kind, Random.nextInt(1000))
         if (result == null) {
-            Toast.makeText(this, "Недостаточно монет — загляни в магазин", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Недостаточно ₽ — загляни в магазин", Toast.LENGTH_SHORT).show()
             return
         }
         if (!persist(result.first)) return

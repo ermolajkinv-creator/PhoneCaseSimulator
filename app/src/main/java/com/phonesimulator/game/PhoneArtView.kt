@@ -1,65 +1,91 @@
 package com.phonesimulator.game
 
 import android.content.Context
-import android.graphics.Canvas
-import android.graphics.LinearGradient
-import android.graphics.Paint
-import android.graphics.RectF
-import android.graphics.Shader
+import android.graphics.*
 import android.view.View
 
-/** Vector phone artwork stays crisp on large and foldable screens; no image downloads. */
+/** Offline stylized illustrations: camera layouts and form factors distinguish families. */
 class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
-    private val photo = if (phone.rarity == Rarity.ULTRA)
-        context.assets.open("fold8-ultra.jpg").use { android.graphics.BitmapFactory.decodeStream(it) } else null
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
-    init {
-        importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO
-        minimumHeight = (156 * resources.displayMetrics.density).toInt()
+    private val photo = if (phone.rarity == Rarity.ULTRA)
+        context.assets.open("fold8-ultra.jpg").use { BitmapFactory.decodeStream(it) } else null
+    init { importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO }
+    private fun box(c: Canvas, x: Float, y: Float, w: Float, h: Float, color: Int, radius: Float = 7f) {
+        paint.shader = null; paint.color = color
+        c.drawRoundRect(RectF(x,y,x+w,y+h),radius,radius,paint)
+    }
+    private fun lens(c: Canvas, x: Float, y: Float, radius: Float = 7f) {
+        paint.color = 0xFF656971.toInt(); c.drawCircle(x,y,radius+1.5f,paint)
+        paint.color = 0xFF10151D.toInt(); c.drawCircle(x,y,radius,paint)
+        paint.color = 0xFF253D59.toInt(); c.drawCircle(x,y,radius*0.55f,paint)
+        paint.color = 0xFF96BAC9.toInt(); c.drawCircle(x-2,y-2,1.5f,paint)
     }
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        photo?.let { bitmap ->
-            val scale = minOf(width.toFloat() / bitmap.width, height.toFloat() / bitmap.height)
-            val w = bitmap.width * scale
-            val h = bitmap.height * scale
-            canvas.drawBitmap(bitmap, null, RectF((width-w)/2, (height-h)/2, (width+w)/2, (height+h)/2), paint)
+        photo?.let {
+            val scale = minOf(width.toFloat()/it.width,height.toFloat()/it.height)
+            val w=it.width*scale; val h=it.height*scale
+            canvas.drawBitmap(it,null,RectF((width-w)/2,(height-h)/2,(width+w)/2,(height+h)/2),paint)
             return
         }
-        val unit = height / 160f
-        canvas.save()
-        canvas.translate(width / 2f, height / 2f)
-        canvas.scale(unit, unit)
-        val folded = phone.name.contains("Fold", ignoreCase = true)
-        val halfWidth = if (folded) 57f else 35f
-        paint.shader = null
-        paint.color = phone.rarity.accent
-        paint.alpha = 22
-        canvas.drawOval(RectF(-90f, 52f, 90f, 72f), paint)
-        paint.alpha = 255
-        paint.shader = LinearGradient(-halfWidth, -64f, halfWidth, 64f,
-            intArrayOf(phone.rarity.accent, 0xFF151E35.toInt()), null, Shader.TileMode.CLAMP)
-        canvas.drawRoundRect(RectF(-halfWidth, -66f, halfWidth, 66f), 12f, 12f, paint)
-        paint.shader = null
-        paint.color = 0xFF0B1123.toInt()
-        canvas.drawRoundRect(RectF(-halfWidth + 3f, -63f, halfWidth - 3f, 63f), 10f, 10f, paint)
-        paint.shader = LinearGradient(-halfWidth, -55f, halfWidth, 55f,
-            intArrayOf(0xFF182748.toInt(), phone.rarity.accent, 0xFF293255.toInt()),
-            floatArrayOf(0f, 0.55f, 1f), Shader.TileMode.CLAMP)
-        canvas.drawRoundRect(RectF(-halfWidth + 7f, -56f, halfWidth - 7f, 54f), 7f, 7f, paint)
-        paint.shader = null
-        paint.color = 0xFF0B1123.toInt()
-        canvas.drawRoundRect(RectF(-12f, -59f, 12f, -52f), 4f, 4f, paint)
-        if (folded) {
-            paint.strokeWidth = 2f
-            paint.alpha = 95
-            canvas.drawLine(0f, -56f, 0f, 54f, paint)
-            paint.alpha = 255
+        canvas.save();canvas.translate(width/2f,height/2f);canvas.scale(height/160f,height/160f)
+        val n=phone.name
+        val iphone=n.startsWith("iPhone")
+        val pixel=n.contains("Pixel")
+        val fold=n.contains("Fold")
+        val flip=n.contains("Flip")
+        val nokia=n=="Nokia 3310"
+        val tones=intArrayOf(0xFFCCC4B9.toInt(),0xFF334A47.toInt(),0xFF333544.toInt(),0xFFC6BACE.toInt())
+        val body=if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
+        box(canvas,-76f,-64f,64f,128f,body,if(n.contains("Ultra")) 3f else 10f)
+        when {
+            nokia -> {
+                box(canvas,-65f,-48f,42f,38f,0xFF9EA98A.toInt(),3f)
+                for(row in 0..3) for(col in 0..2) box(canvas,-64f+col*14,-1f+row*13,11f,8f,0xFFBEC3C9.toInt(),3f)
+            }
+            pixel && (n == "Google Pixel 4" || n == "Google Pixel 5") -> {
+                box(canvas,-72f,-59f,32f,32f,0xFF20252B.toInt())
+                lens(canvas,-62f,-49f,5f);lens(canvas,-49f,-37f,5f)
+            }
+            pixel -> {
+                box(canvas,-76f,-45f,64f,24f,0xFF7F898D.toInt(),if(n.contains("9")||n.contains("10"))12f else 1f)
+                box(canvas,-69f,-41f,44f,16f,0xFF171E25.toInt(),9f)
+                lens(canvas,-60f,-33f,5f);lens(canvas,-46f,-33f,5f)
+                if(n.contains("Pro")) lens(canvas,-32f,-33f,5f)
+            }
+            iphone -> {
+                val pro=n.contains("Pro")
+                box(canvas,-72f,-59f,if(n.contains("17 Pro"))56f else 34f,37f,0xFFA6A3A0.toInt(),8f)
+                lens(canvas,-61f,-49f);lens(canvas,if(pro)-61f else -43f,-32f)
+                if(pro) lens(canvas,-43f,-41f)
+            }
+            n.contains("Galaxy") && !flip && !fold -> {
+                lens(canvas,-65f,-49f);lens(canvas,-65f,-29f);lens(canvas,-65f,-9f)
+                if(n.contains("Ultra")) {lens(canvas,-46f,-41f,4f);lens(canvas,-46f,-23f,4f)}
+            }
+            n.contains("Magic") || n.contains("OnePlus 12") || n.contains("OnePlus 13") || n.contains("Xiaomi 14 Ultra") -> {
+                paint.color=0xFF353A40.toInt();canvas.drawCircle(-44f,-35f,23f,paint)
+                lens(canvas,-53f,-43f);lens(canvas,-35f,-43f);lens(canvas,-44f,-25f)
+            }
+            else -> {
+                box(canvas,-72f,-59f,35f,41f,0xFF343B44.toInt())
+                lens(canvas,-62f,-48f);lens(canvas,-48f,-31f)
+                if(n.contains("Nothing")) {
+                    paint.color=Color.WHITE;paint.style=Paint.Style.STROKE;paint.strokeWidth=2f
+                    canvas.drawCircle(-44f,5f,17f,paint);canvas.drawLine(-44f,27f,-44f,49f,paint);paint.style=Paint.Style.FILL
+                }
+            }
         }
-        paint.color = 0xFFFFFFFF.toInt()
-        paint.alpha = 180
-        canvas.drawRoundRect(RectF(-12f, 58f, 12f, 60f), 1f, 1f, paint)
-        paint.alpha = 255
+        val fw=if(fold)82f else 61f
+        box(canvas,-5f,-64f,fw,128f,0xFF171B23.toInt(),if(fold)4f else 9f)
+        paint.shader=LinearGradient(0f,-60f,fw,55f,intArrayOf(body,0xFF212D4C.toInt(),phone.rarity.accent),null,Shader.TileMode.CLAMP)
+        canvas.drawRoundRect(RectF(-1f,-60f,fw-9f,60f),5f,5f,paint);paint.shader=null
+        if(iphone) box(canvas,14f,-57f,22f,6f,Color.BLACK,5f)
+        else {paint.color=Color.BLACK;canvas.drawCircle(fw/2-5,-54f,2f,paint)}
+        if(fold||flip) {
+            paint.color=0x88656C78.toInt();paint.strokeWidth=1f
+            if(fold) canvas.drawLine(35f,-60f,35f,60f,paint) else canvas.drawLine(0f,0f,fw-9f,0f,paint)
+        }
         canvas.restore()
     }
 }

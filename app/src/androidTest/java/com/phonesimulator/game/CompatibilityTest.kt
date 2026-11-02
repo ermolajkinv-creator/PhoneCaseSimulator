@@ -36,7 +36,7 @@ class CompatibilityTest {
     }
     @Test fun openSaveRecreateAndRelaunch() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Открыть кейс · 100 монет")
+            click(scenario, "Открыть кейс · 100 ₽")
             scenario.onActivity { activity ->
                 // A busy emulator may finish the animation before this callback runs.
                 // Both the skip control and an already revealed reward are valid states.
@@ -61,7 +61,7 @@ class CompatibilityTest {
     }
     @Test fun animationCompletesAndBackgroundKeepsReward() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Открыть кейс · 100 монет")
+            click(scenario, "Открыть кейс · 100 ₽")
             val deadline = android.os.SystemClock.uptimeMillis() + 6000
             var revealed = false
             while (!revealed && android.os.SystemClock.uptimeMillis() < deadline) {
@@ -72,7 +72,7 @@ class CompatibilityTest {
                 if (!revealed) android.os.SystemClock.sleep(100)
             }
             assertTrue("Animation did not reveal the saved phone", revealed)
-            click(scenario, "Ещё кейс · 100 монет")
+            click(scenario, "Ещё кейс · 100 ₽")
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Новый телефон!")
@@ -83,7 +83,7 @@ class CompatibilityTest {
     @Test fun shopAndEmptyCollection() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Магазин")
-            click(scenario, "Получить 500 монет")
+            click(scenario, "Получить 500 ₽")
             assertEquals(1500, ProgressStore(context).load().coins)
             click(scenario, "На главную")
             click(scenario, "Коллекция")
@@ -152,14 +152,29 @@ class CompatibilityTest {
             assertText(scenario, "Премиум")
         }
     }
+    @Test fun workshopPersistsAcrossRecreation() {
+        val store = ProgressStore(context)
+        assertTrue(store.save(Progress(777, listOf(1, 4))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Мастерская · прошивки")
+            click(scenario, "Установить LineageOS (симуляция) · Redmi Note 10S")
+            click(scenario, "Установить Джейлбрейк (симуляция) · iPhone 17 Pro")
+            scenario.recreate()
+            assertText(scenario, "Джейлбрейк (симуляция)")
+            assertEquals(777, ProgressStore(context).load().coins)
+            assertEquals("LineageOS (симуляция)", ProgressStore(context).load().firmware[1])
+            click(scenario, "Установить Заводская · iPhone 17 Pro")
+            assertEquals("Заводская", ProgressStore(context).load().firmware[4])
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()
         assertEquals(Progress(777, listOf(0, 5, 5)), ProgressStore(context).load())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Коллекция")
-            click(scenario, "Продать один · 25000 монет")
-            assertEquals(Progress(25777, listOf(0, 5)), ProgressStore(context).load())
+            click(scenario, "Продать один · ${Catalog.phones[5].price} ₽")
+            assertEquals(Progress(777 + Catalog.phones[5].price, listOf(0, 5)), ProgressStore(context).load())
             scenario.recreate()
             assertText(scenario, "Коллекция")
         }

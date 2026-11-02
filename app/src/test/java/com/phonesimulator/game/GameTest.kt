@@ -22,7 +22,7 @@ class GameTest {
         assertEquals(listOf(phone), next.owned)
         assertEquals(5, phone)
         assertNull(next.open(0))
-        assertEquals(Progress(25000), next.sell(5))
+        assertEquals(Progress(Catalog.phones[5].price), next.sell(5))
         assertEquals(next, next.sell(0))
     }
     @Test fun legacySaveAndMalformedIndices() {
@@ -72,6 +72,18 @@ class GameTest {
         assertEquals(Market.listings(10), Market.listings(10))
         assertEquals(12, Market.listings(10).map { it.id }.toSet().size)
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
+    }
+    @Test fun firmwareAndConcreteCatalog() {
+        assertEquals(100, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
+        assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
+        assertTrue(Catalog.phones.all { it.price in 1000..300000 })
+        assertTrue("Джейлбрейк (симуляция)" in Workshop.options(Catalog.phones[4]))
+        assertFalse("LineageOS (симуляция)" in Workshop.options(Catalog.phones[4]))
+        assertEquals(listOf("Заводская"), Workshop.options(Catalog.phones[0]))
+        val state = Progress(777, listOf(1, 4)).tune(1, "LineageOS (симуляция)")
+        assertEquals(777, state.coins)
+        assertEquals("LineageOS (симуляция)", state.firmware[1])
     }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
