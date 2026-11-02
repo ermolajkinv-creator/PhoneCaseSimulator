@@ -13,7 +13,7 @@ enum class Rarity(val title: String, val accent: Int) {
 data class Phone(val name: String, val price: Int, val rarity: Rarity, val tickets: Int,
                  val chip: String, val display: String, val system: String, val description: String)
 object Catalog {
-    const val CASE_PRICE = 100
+    val CASE_PRICE: Int get() = CaseKind.CLASSIC.cost
     private val entries = listOf(
         Phone("Nokia 3310", 2000, Rarity.COMMON, 120, "Кнопочная платформа", "Монохромный LCD", "Nokia OS", "Классика 2000 года: компактный корпус, сменные панели и Snake."),
         Phone("Redmi Note 10S", 12000, Rarity.UNCOMMON, 60, "MediaTek Helio G95", "6,43″ AMOLED", "Android 11 / MIUI при выпуске", "Redmi Note 10S: модель 2021 года с камерой 64 Мп и зарядкой 33 Вт."),
@@ -136,7 +136,7 @@ object Catalog {
     }
 }
 
-data class Progress(val coins: Int = 1000, val owned: List<Int> = emptyList(),
+data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int> = emptyList(),
                     val used: List<UsedPhone> = emptyList(), val purchased: Set<String> = emptySet(), val firmware: Map<Int, String> = emptyMap()) {
     fun open(ticket: Int): Pair<Progress, Int>? {
         if (coins < Catalog.CASE_PRICE) return null
@@ -173,7 +173,7 @@ data class Progress(val coins: Int = 1000, val owned: List<Int> = emptyList(),
         require(firmwareName in Workshop.options(Catalog.phones[model]))
         return copy(firmware = firmware + (model to firmwareName))
     }
-    fun bonus() = copy(coins = credit(500))
+    fun bonus() = copy(coins = credit(Economy.BONUS))
     private fun credit(amount: Int) = (coins.toLong() + amount).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
     companion object {
         fun restore(coins: Int, saved: String) = Progress(

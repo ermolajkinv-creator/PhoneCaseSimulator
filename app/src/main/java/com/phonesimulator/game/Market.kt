@@ -20,11 +20,16 @@ object Market {
         }
     }
 }
-enum class CaseKind(val title: String, val cost: Int, val minimum: Rarity) {
-    CLASSIC("Классический", 100, Rarity.COMMON),
-    STREET("Уличный", 250, Rarity.UNCOMMON),
-    FLAGSHIP("Флагманский", 900, Rarity.RARE),
-    PREMIUM("Премиум", 2500, Rarity.EPIC);
+enum class CaseKind(val title: String, val minimum: Rarity) {
+    CLASSIC("Классический", Rarity.COMMON),
+    STREET("Уличный", Rarity.UNCOMMON),
+    FLAGSHIP("Флагманский", Rarity.RARE),
+    PREMIUM("Премиум", Rarity.EPIC);
+    // Price is 115% of the exact expected sale value, rounded up to 1,000 ₽.
+    val cost: Int by lazy {
+        val total = (0..999).sumOf { Catalog.phones[roll(it)].price.toLong() }
+        ((total * 115 + 99_999_999L) / 100_000_000L * 1000L).toInt()
+    }
     fun roll(ticket: Int): Int {
         require(ticket in 0..999)
         if (this == CLASSIC) return Catalog.roll(ticket)
@@ -33,4 +38,9 @@ enum class CaseKind(val title: String, val cost: Int, val minimum: Rarity) {
         val pool = Catalog.phones.indices.filter { it != 5 && Catalog.phones[it].rarity.ordinal >= minimum.ordinal }
         return pool[ticket % pool.size]
     }
+}
+
+object Economy {
+    const val START_BALANCE = 62000
+    const val BONUS = 31000
 }

@@ -17,7 +17,7 @@ class GameTest {
         assertEquals("Samsung Z Fold 8 Ultra", Catalog.phones[5].name)
     }
     @Test fun paymentAndRewardAreOneTransaction() {
-        val (next, phone) = Progress(100).open(999)!!
+        val (next, phone) = Progress(CaseKind.CLASSIC.cost).open(999)!!
         assertEquals(0, next.coins)
         assertEquals(listOf(phone), next.owned)
         assertEquals(5, phone)
@@ -84,6 +84,18 @@ class GameTest {
         val state = Progress(777, listOf(1, 4)).tune(1, "LineageOS (симуляция)")
         assertEquals(777, state.coins)
         assertEquals("LineageOS (симуляция)", state.firmware[1])
+    }
+    @Test fun economyTracksExactRewards() {
+        assertEquals(listOf(31000, 45000, 55000, 97000), CaseKind.entries.map { it.cost })
+        CaseKind.entries.forEach { kind ->
+            val expected = (0..999).sumOf { Catalog.phones[kind.roll(it)].price.toLong() } / 1000.0
+            assertTrue(kind.cost >= expected * 1.15)
+            assertTrue(kind.cost < expected * 1.15 + 1000)
+            assertNull(Progress(kind.cost - 1).openCase(kind, 999))
+        }
+        assertTrue(Economy.START_BALANCE >= 2 * CaseKind.CLASSIC.cost)
+        assertTrue(Economy.BONUS >= CaseKind.CLASSIC.cost)
+        assertEquals(777, Progress.restore(777, "0,5").coins)
     }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }

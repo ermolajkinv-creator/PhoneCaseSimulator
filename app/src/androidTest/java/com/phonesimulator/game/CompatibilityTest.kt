@@ -36,7 +36,7 @@ class CompatibilityTest {
     }
     @Test fun openSaveRecreateAndRelaunch() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Открыть кейс · 100 ₽")
+            click(scenario, "Открыть кейс · ${CaseKind.CLASSIC.cost} ₽")
             scenario.onActivity { activity ->
                 // A busy emulator may finish the animation before this callback runs.
                 // Both the skip control and an already revealed reward are valid states.
@@ -47,11 +47,11 @@ class CompatibilityTest {
                     .any { it.text.toString() == "Новый телефон!" })
             }
             assertText(scenario, "Новый телефон!")
-            assertEquals(900, ProgressStore(context).load().coins)
+            assertEquals(Economy.START_BALANCE - CaseKind.CLASSIC.cost, ProgressStore(context).load().coins)
             assertEquals(1, ProgressStore(context).load().owned.size)
             scenario.recreate()
             assertText(scenario, "Новый телефон!")
-            assertEquals(900, ProgressStore(context).load().coins)
+            assertEquals(Economy.START_BALANCE - CaseKind.CLASSIC.cost, ProgressStore(context).load().coins)
         }
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             assertEquals(1, ProgressStore(context).load().owned.size)
@@ -61,7 +61,7 @@ class CompatibilityTest {
     }
     @Test fun animationCompletesAndBackgroundKeepsReward() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Открыть кейс · 100 ₽")
+            click(scenario, "Открыть кейс · ${CaseKind.CLASSIC.cost} ₽")
             val deadline = android.os.SystemClock.uptimeMillis() + 6000
             var revealed = false
             while (!revealed && android.os.SystemClock.uptimeMillis() < deadline) {
@@ -72,19 +72,19 @@ class CompatibilityTest {
                 if (!revealed) android.os.SystemClock.sleep(100)
             }
             assertTrue("Animation did not reveal the saved phone", revealed)
-            click(scenario, "Ещё кейс · 100 ₽")
+            click(scenario, "Ещё кейс · ${CaseKind.CLASSIC.cost} ₽")
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Новый телефон!")
-            assertEquals(ProgressStore(context).load().coins, 800)
+            assertEquals(ProgressStore(context).load().coins, Economy.START_BALANCE - 2 * CaseKind.CLASSIC.cost)
             assertEquals(ProgressStore(context).load().owned.size, 2)
         }
     }
     @Test fun shopAndEmptyCollection() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Магазин")
-            click(scenario, "Получить 500 ₽")
-            assertEquals(1500, ProgressStore(context).load().coins)
+            click(scenario, "Получить ${Economy.BONUS} ₽")
+            assertEquals(Economy.START_BALANCE + Economy.BONUS, ProgressStore(context).load().coins)
             click(scenario, "На главную")
             click(scenario, "Коллекция")
             assertText(scenario, "Первый телефон ждёт в кейсе.")
@@ -103,7 +103,7 @@ class CompatibilityTest {
             click(scenario, "Взять Samsung Z Fold 8 Ultra")
             click(scenario, "Взять Sony Xperia 1 VI")
             click(scenario, "Взять OnePlus 15")
-            assertEquals(Progress(1000, listOf(5, 23, 24)), ProgressStore(context).load())
+            assertEquals(Progress(Economy.START_BALANCE, listOf(5, 23, 24)), ProgressStore(context).load())
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Вход по паролю")

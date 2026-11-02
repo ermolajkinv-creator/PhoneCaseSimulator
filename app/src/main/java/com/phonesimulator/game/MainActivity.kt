@@ -200,8 +200,9 @@ class MainActivity : Activity() {
             "shop" -> {
                 screen("Магазин")
                 label("Пополняй запас и продолжай коллекцию", 22f)
-                label("Бесплатные 500 ₽. Без рекламы и покупок за реальные деньги.", color = muted)
-                button("Получить 500 ₽") { if (persist(progress.bonus())) render() }
+                label("Бонус покрывает один классический кейс. Уже накопленный баланс сохранён.", 15f, muted)
+                label("Бесплатные ${Economy.BONUS} ₽. Без рекламы и покупок за реальные деньги.", color = muted)
+                button("Получить ${Economy.BONUS} ₽") { if (persist(progress.bonus())) render() }
                 button("На главную") { navigate("home") }
             }
             "result" -> {
@@ -209,7 +210,7 @@ class MainActivity : Activity() {
                 screen("Новый телефон!")
                 card(reward)
                 label("Телефон уже сохранён в коллекции.", 15f, muted)
-                button("Ещё кейс · 100 ₽") { openCase() }
+                button("Ещё кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("На главную") { navigate("home") }
             }
@@ -218,7 +219,7 @@ class MainActivity : Activity() {
                 label("Каждый кейс — новый шанс", 22f)
                 card(5)
                 label("Samsung Z Fold 8 Ultra\nУльтралегендарный · 1 из 1000", 17f, muted)
-                button("Открыть кейс · 100 ₽") { openCase() }
+                button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
                 button("Мастерская · прошивки") { navigate("workshop") }
@@ -383,7 +384,7 @@ class MainActivity : Activity() {
     }
 
     private fun cases() {
-        screen("Кейсы 2.0")
+        screen("Кейсы 2.5")
         label("В каждом кейсе Z Fold 8 Ultra — 0,1%. Остальные модели зависят от типа кейса.", 16f, muted)
         CaseKind.entries.forEach { kind ->
             val panel = glassPanel()

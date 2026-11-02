@@ -5,7 +5,7 @@ import android.content.Context
 class ProgressStore(context: Context) {
     private val prefs = context.getSharedPreferences("game", Context.MODE_PRIVATE)
     fun load(): Progress {
-        val coins = try { prefs.getInt("coins", 1000) } catch (_: ClassCastException) { 1000 }
+        val coins = try { prefs.getInt("coins", Economy.START_BALANCE) } catch (_: ClassCastException) { Economy.START_BALANCE }
         val owned = try { prefs.getString("owned", "").orEmpty() } catch (_: ClassCastException) { "" }
         val used = prefs.getString("used", "").orEmpty().split(';').mapNotNull { entry ->
             val parts = entry.split(':')
