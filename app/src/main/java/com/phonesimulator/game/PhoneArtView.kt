@@ -10,6 +10,8 @@ import android.view.View
 
 /** Vector phone artwork stays crisp on large and foldable screens; no image downloads. */
 class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
+    private val photo = if (phone.rarity == Rarity.ULTRA)
+        context.assets.open("fold8-ultra.jpg").use { android.graphics.BitmapFactory.decodeStream(it) } else null
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     init {
         importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO
@@ -17,6 +19,13 @@ class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
     }
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        photo?.let { bitmap ->
+            val scale = minOf(width.toFloat() / bitmap.width, height.toFloat() / bitmap.height)
+            val w = bitmap.width * scale
+            val h = bitmap.height * scale
+            canvas.drawBitmap(bitmap, null, RectF((width-w)/2, (height-h)/2, (width+w)/2, (height+h)/2), paint)
+            return
+        }
         val unit = height / 160f
         canvas.save()
         canvas.translate(width / 2f, height / 2f)

@@ -70,10 +70,10 @@ class MainActivity : Activity() {
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
     private fun shape(color: Int = Color.WHITE, accent: Int = Color.WHITE) = GradientDrawable(
         GradientDrawable.Orientation.TL_BR,
-        intArrayOf(Color.argb(46, Color.red(color), Color.green(color), Color.blue(color)), 0x16FFFFFF)
+        intArrayOf(0x62FFFFFF, 0x18FFFFFF, 0x36D8EFFF)
     ).apply {
-        cornerRadius = dp(30).toFloat()
-        setStroke(dp(1), Color.argb(80, Color.red(accent), Color.green(accent), Color.blue(accent)))
+        cornerRadius = dp(34).toFloat()
+        setStroke(dp(1), Color.argb(150, Color.red(accent), Color.green(accent), Color.blue(accent)))
     }
 
     private fun label(text: String, size: Float = 18f, color: Int = Color.WHITE,
@@ -179,12 +179,18 @@ class MainActivity : Activity() {
     private fun navigate(destination: String) { page = destination; render() }
     private fun render() {
         when (page) {
+            "cases" -> cases()
+            "market" -> market()
             "wiki" -> wiki()
             "details" -> details()
             "admin" -> admin()
             "collection" -> {
                 screen("Коллекция")
-                if (progress.owned.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
+                if (progress.used.isNotEmpty()) {
+                    label("Б/у телефонов: ${progress.used.size}", 18f)
+                    button("Посмотреть и продать б/у") { navigate("market") }
+                }
+                if (progress.owned.isEmpty() && progress.used.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
                 progress.owned.groupingBy { it }.eachCount().toSortedMap().forEach { (index, count) ->
                     card(index, count)
                 }
@@ -214,6 +220,8 @@ class MainActivity : Activity() {
                 button("Открыть кейс · 100 монет") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
+                button("Все кейсы · 4 вида") { navigate("cases") }
+                button("Авито · рынок б/у") { navigate("market") }
                 button("Википедия телефонов · ${Catalog.phones.size} моделей") { navigate("wiki") }
                 button("Админ-панель") { navigate("admin") }
                 label("Шансы по редкостям", 21f)
@@ -300,12 +308,12 @@ class MainActivity : Activity() {
         panel.addView(PhoneArtView(this, phone), LinearLayout.LayoutParams(-1, dp(190)))
         infoRow("Устройство", phone.name, panel)
         infoRow("Редкость", phone.rarity.title, panel)
-        infoRow("Шанс в кейсе", "${phone.tickets / 10.0}%", panel)
+        infoRow("Шанс в классическом", "${phone.tickets / 10.0}%", panel)
         infoRow("Чипсет", phone.chip, panel)
         infoRow("Дисплей", phone.display, panel)
         infoRow("Система", phone.system, panel)
         infoRow("Цена продажи", "${phone.price} монет", panel)
-        infoRow("В коллекции", progress.owned.count { it == selectedPhone }.toString(), panel)
+        infoRow("В коллекции", (progress.owned.count { it == selectedPhone } + progress.used.count { it.phone == selectedPhone }).toString(), panel)
         label(phone.description, 17f, parent = panel)
         label("Справочник офлайн. Данные относятся к указанной версии модели и системе при выпуске; региональные варианты могут отличаться.", 13f, muted)
         button("Википедия телефонов") { navigate("wiki") }
@@ -348,9 +356,65 @@ class MainActivity : Activity() {
         button("На главную") { navigate("home") }
     }
 
-    private fun openCase() {
+    private fun cases() {
+        screen("Кейсы 2.0")
+        label("В каждом кейсе Z Fold 8 Ultra — 0,1%. Остальные модели зависят от типа кейса.", 16f, muted)
+        CaseKind.entries.forEach { kind ->
+            val panel = glassPanel()
+            label(kind.title, 24f, parent = panel)
+            label("От редкости: ${kind.minimum.title} · ${kind.cost} монет", 16f, muted, panel)
+            val pool = if (kind == CaseKind.CLASSIC) Catalog.phones.indices.toList()
+                else Catalog.phones.indices.filter { Catalog.phones[it].rarity.ordinal >= kind.minimum.ordinal }
+            label("Моделей: ${pool.size}. Шансы:", 14f, muted, panel)
+            val chances = (0..999).map(kind::roll).groupingBy { it }.eachCount()
+            Rarity.entries.forEach { rarity ->
+                val total = chances.filterKeys { Catalog.phones[it].rarity == rarity }.values.sum()
+                if (total > 0) label("${rarity.title}: ${total / 10.0}%", 14f, rarity.accent, panel)
+            }
+            button("Открыть ${kind.title} · ${kind.cost}", panel) { openCase(kind) }
+        }
+        button("На главную") { navigate("home") }
+    }
+
+    private fun market() {
+        screen("Авито · рынок б/у")
+        label("Внутриигровая площадка, не связана с сервисом Avito. Только игровые монеты.", 14f, muted)
+        button("На главную") { navigate("home") }
+        label("Объявления дня", 24f)
+        val day = System.currentTimeMillis() / 86_400_000L
+        Market.listings(day).forEach { listing ->
+            val panel = glassPanel()
+            label(Catalog.phones[listing.phone].name, 21f, parent = panel)
+            infoRow("Состояние", Market.conditions[listing.condition], panel)
+            infoRow("Цена", "${listing.price} монет", panel)
+            if (listing.id in progress.purchased) label("Уже куплено", 16f, muted, panel)
+            else button("Купить · ${listing.price}", panel) {
+                val next = progress.buy(listing)
+                if (next == null) Toast.makeText(this, "Недостаточно монет или лот уже куплен", Toast.LENGTH_SHORT).show()
+                else if (persist(next)) render()
+            }
+        }
+        label("Продать б/у телефон", 24f)
+        if (progress.used.isEmpty()) label("Купленные б/у телефоны появятся здесь.", 16f, muted)
+        progress.used.forEachIndexed { index, item ->
+            val panel = glassPanel()
+            label(Catalog.phones[item.phone].name, 21f, parent = panel)
+            infoRow("Состояние", Market.conditions[item.condition], panel)
+            button("Продать б/у · ${Market.price(item.phone, item.condition)}", panel) {
+                if (persist(progress.sellUsed(index))) render()
+            }
+        }
+        label("Продать телефон из кейса", 24f)
+        progress.owned.distinct().forEach { index ->
+            button("Продать ${Catalog.phones[index].name} · ${Catalog.phones[index].price}") {
+                if (persist(progress.sell(index))) render()
+            }
+        }
+    }
+
+    private fun openCase(kind: CaseKind = CaseKind.CLASSIC) {
         if (animator != null) return
-        val result = progress.open(Random.nextInt(1000))
+        val result = progress.openCase(kind, Random.nextInt(1000))
         if (result == null) {
             Toast.makeText(this, "Недостаточно монет — загляни в магазин", Toast.LENGTH_SHORT).show()
             return

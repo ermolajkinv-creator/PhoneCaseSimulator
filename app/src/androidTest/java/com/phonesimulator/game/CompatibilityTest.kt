@@ -117,12 +117,12 @@ class CompatibilityTest {
     }
     @Test fun wikiSearchAndDetails() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Википедия телефонов · 40 моделей")
+            click(scenario, "Википедия телефонов · 100 моделей")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>()
                     .first().setText("Pixel 4")
             }
-            click(scenario, "Google Pixel 4\nРедкий · 2.5%")
+            click(scenario, "Google Pixel 4\nРедкий · ${Catalog.phones[12].tickets / 10.0}%")
             assertText(scenario, "Snapdragon 855")
             assertText(scenario, "Android 10 при выпуске")
             scenario.recreate()
@@ -136,9 +136,25 @@ class CompatibilityTest {
             assertText(scenario, "Ничего не найдено")
         }
     }
+    @Test fun marketPersistenceAndNewCases() {
+        val store = ProgressStore(context)
+        val listing = Listing("saved-test", 42, 2, 100)
+        val bought = Progress().buy(listing)!!
+        assertTrue(store.save(bought))
+        assertEquals(bought, ProgressStore(context).load())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Авито · рынок б/у")
+            assertText(scenario, "Хорошее")
+            click(scenario, "Продать б/у · ${Market.price(42, 2)}")
+            assertTrue(ProgressStore(context).load().used.isEmpty())
+            click(scenario, "На главную")
+            click(scenario, "Все кейсы · 4 вида")
+            assertText(scenario, "Премиум")
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
-            .putString("owned", "0,5,5,99,broken").commit()
+            .putString("owned", "0,5,5,999,broken").commit()
         assertEquals(Progress(777, listOf(0, 5, 5)), ProgressStore(context).load())
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Коллекция")

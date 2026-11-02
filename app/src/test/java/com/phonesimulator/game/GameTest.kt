@@ -12,7 +12,7 @@ class GameTest {
         assertFalse(Catalog.phones[5].description.contains("Вымышленная"))
         assertEquals("OnePlus 15", Catalog.phones[24].name)
         assertEquals(Rarity.LEGENDARY, Catalog.phones[24].rarity)
-        assertEquals(2, counts[24])
+        assertEquals(Catalog.phones[24].tickets, counts[24])
         assertEquals(Rarity.ULTRA, Catalog.phones[5].rarity)
         assertEquals("Samsung Z Fold 8 Ultra", Catalog.phones[5].name)
     }
@@ -27,7 +27,7 @@ class GameTest {
     }
     @Test fun legacySaveAndMalformedIndices() {
         assertEquals(Progress(700, listOf(0, 5, 5)), Progress.restore(700, "0,5,5"))
-        assertEquals(Progress(0, listOf(2)), Progress.restore(-1, "bad,-1,99,2,"))
+        assertEquals(Progress(0, listOf(2)), Progress.restore(-1, "bad,-1,999,2,"))
         assertEquals(Progress(1000), Progress.restore(1000, ""))
     }
     @Test fun coinsNeverOverflow() {
@@ -35,7 +35,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(40, Catalog.phones.size)
+        assertEquals(100, Catalog.phones.size)
         assertEquals(1000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
@@ -53,6 +53,25 @@ class GameTest {
         assertFalse(AdminAccess.accepts("wrong-password"))
         assertFalse(AdminAccess.accepts("prism-8426"))
         assertTrue(AdminAccess.accepts("Prism-8426"))
+    }
+    @Test fun allCasesAndMarketTransactions() {
+        CaseKind.entries.forEach { kind ->
+            val results = (0..999).map(kind::roll)
+            assertEquals(1, results.count { it == 5 })
+            assertTrue(results.all { Catalog.phones[it].rarity.ordinal >= kind.minimum.ordinal })
+            assertNull(Progress(0).openCase(kind, 0))
+            assertEquals(0, Progress(kind.cost).openCase(kind, 999)!!.first.coins)
+        }
+        val listing = Listing("test", 1, 1, 80)
+        val bought = Progress(100).buy(listing)!!
+        assertEquals(20, bought.coins)
+        assertEquals(listOf(UsedPhone(1, 1)), bought.used)
+        assertNull(bought.buy(listing))
+        assertEquals(20 + Market.price(1, 1), bought.sellUsed(0).coins)
+        assertTrue(bought.sellUsed(0).used.isEmpty())
+        assertEquals(Market.listings(10), Market.listings(10))
+        assertEquals(12, Market.listings(10).map { it.id }.toSet().size)
+        assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test(expected = IllegalArgumentException::class)
     fun rejectsInvalidTicket() { Catalog.roll(1000) }
