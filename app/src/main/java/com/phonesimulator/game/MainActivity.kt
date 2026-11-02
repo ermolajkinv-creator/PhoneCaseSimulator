@@ -452,6 +452,18 @@ class MainActivity : Activity() {
                 }
             })
         }
+        val arrivals = label("", 16f, muted)
+        val renderedSlot = now / Clients.INTERVAL
+        arrivals.post(object : Runnable {
+            override fun run() {
+                if (!arrivals.isAttachedToWindow || isDestroyed || isFinishing) return
+                val time = System.currentTimeMillis()
+                if (time / Clients.INTERVAL > renderedSlot) { render(); return }
+                val left = (((renderedSlot+1)*Clients.INTERVAL-time).coerceAtLeast(0L)+999)/1000
+                arrivals.text = String.format(java.util.Locale.ROOT, "Новый посетитель через %02d:%02d", left/60, left%60)
+                arrivals.postDelayed(this, 1000)
+            }
+        })
         label("Посетители", 24f)
         progress.clientOffers(now).forEach { offer ->
             val panel = glassPanel()
