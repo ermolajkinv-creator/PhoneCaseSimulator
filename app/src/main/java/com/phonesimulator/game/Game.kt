@@ -141,12 +141,10 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
                     val favorites: Set<Int> = emptySet(), val nickname: String = "Коллекционер",
                     val clicks: Int = 0, val casesOpened: Int = 0,
                     val lastDailyDay: Long = -1L, val dailyStreak: Int = 0,
-                    val badges: Set<String> = emptySet()) {
-    fun open(ticket: Int): Pair<Progress, Int>? {
-        if (coins < Catalog.CASE_PRICE) return null
-        val phone = Catalog.roll(ticket)
-        return copy(coins = coins - Catalog.CASE_PRICE, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
-    }
+                    val badges: Set<String> = emptySet(), val questDay: Long = -1L,
+                    val questClicks: Int = 0, val questCases: Int = 0,
+                    val claimedQuests: Set<String> = emptySet()) {
+    fun open(ticket: Int): Pair<Progress, Int>? = openCase(CaseKind.CLASSIC, ticket)
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
         val next = owned.toMutableList().apply { remove(index) }
@@ -167,10 +165,10 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         return copy(coins = credit(Market.price(item.phone, item.condition)),
             used = used.filterIndexed { i, _ -> i != position })
     }
-    fun openCase(kind: CaseKind, ticket: Int): Pair<Progress, Int>? {
+    fun openCase(kind: CaseKind, ticket: Int, day: Long = System.currentTimeMillis()/Progression.DAY_MS): Pair<Progress, Int>? {
         if (coins < kind.cost) return null
         val phone = kind.roll(ticket)
-        return copy(coins = coins - kind.cost, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
+        return forQuestDay(day).copy(questCases = (forQuestDay(day).questCases+1).coerceAtMost(3), coins = coins - kind.cost, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
     }
     fun tune(model: Int, firmwareName: String): Progress {
         require(model in owned || used.any { it.phone == model }) { "Телефона нет в коллекции" }
@@ -181,8 +179,30 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         require(model in Catalog.phones.indices)
         return copy(favorites = if (model in favorites) favorites - model else favorites + model)
     }
-    fun clickCoin(): Progress = copy(coins = credit(Progression.CLICK_REWARD),
-        clicks = (clicks.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
+    fun clickCoin(day: Long = System.currentTimeMillis()/Progression.DAY_MS): Progress {
+        val ready = forQuestDay(day)
+        return ready.copy(coins = credit(Progression.CLICK_REWARD),
+            clicks = (clicks.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
+            questClicks = (ready.questClicks+1).coerceAtMost(100))
+    }
+    fun adminCredit(amount: Long): Progress {
+        require(amount in 1L..Int.MAX_VALUE.toLong())
+        return copy(coins = credit(amount.toInt()))
+    }
+    fun forQuestDay(day: Long): Progress {
+        require(day >= 0)
+        return if (day > questDay) copy(questDay = day, questClicks = 0, questCases = 0, claimedQuests = emptySet()) else this
+    }
+    fun claimQuest(id: String, day: Long): Progress {
+        val ready = forQuestDay(day)
+        if (day != ready.questDay || id in ready.claimedQuests) return ready
+        val reward = when {
+            id == "clicks" && ready.questClicks >= 100 -> 5000
+            id == "cases" && ready.questCases >= 3 -> 10000
+            else -> return ready
+        }
+        return ready.copy(coins = ready.credit(reward), claimedQuests = ready.claimedQuests + id)
+    }
     fun claimDaily(day: Long): Progress {
         require(day >= 0L)
         if (day <= lastDailyDay) return this

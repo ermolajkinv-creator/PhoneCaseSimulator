@@ -19,6 +19,10 @@ class ProgressStore(context: Context) {
             nickname = prefs.getString("nickname", "Коллекционер").orEmpty().take(24).ifBlank { "Коллекционер" },
             clicks = prefs.getInt("clicks", 0).coerceAtLeast(0),
             casesOpened = prefs.getInt("casesOpened", 0).coerceAtLeast(0),
+            questDay = prefs.getLong("questDay", -1L),
+            questClicks = prefs.getInt("questClicks", 0).coerceIn(0,100),
+            questCases = prefs.getInt("questCases", 0).coerceIn(0,3),
+            claimedQuests = prefs.getStringSet("claimedQuests", emptySet()).orEmpty().toSet(),
             lastDailyDay = prefs.getLong("lastDailyDay", -1L), dailyStreak = prefs.getInt("dailyStreak", 0).coerceIn(0,7),
             badges = prefs.getStringSet("badges", emptySet()).orEmpty().toSet(),
             lastGiftAt = prefs.getLong("lastGiftAt", 0L).coerceAtLeast(0L),
@@ -33,6 +37,10 @@ class ProgressStore(context: Context) {
     // Persist payment and reward together before starting the cosmetic animation.
     fun save(progress: Progress): Boolean = prefs.edit()
         .putInt("coins", progress.coins)
+        .putLong("questDay", progress.questDay)
+        .putInt("questClicks", progress.questClicks)
+        .putInt("questCases", progress.questCases)
+        .putStringSet("claimedQuests", progress.claimedQuests)
         .putStringSet("favorites", progress.favorites.map { it.toString() }.toSet())
         .putString("nickname", progress.nickname.take(24))
         .putInt("clicks", progress.clicks)

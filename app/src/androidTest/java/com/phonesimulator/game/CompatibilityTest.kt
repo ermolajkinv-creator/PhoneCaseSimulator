@@ -244,6 +244,34 @@ class CompatibilityTest {
             assertText(scenario, "Апгрейдер")
         }
     }
+    @Test fun adminMoneyAndQuestRewardPersistence() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Админ-панель")
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>().any { it.text == "Максимум денег" })
+                activity.findViewById<android.widget.EditText>(R.id.admin_password).setText("Prism-8426")
+            }
+            click(scenario, "Войти")
+            scenario.onActivity { it.findViewById<android.widget.EditText>(R.id.admin_money).setText("12345") }
+            click(scenario, "Выдать сумму")
+            assertEquals(Economy.START_BALANCE+12345, ProgressStore(context).load().coins)
+            click(scenario, "Максимум денег")
+            assertEquals(Int.MAX_VALUE, ProgressStore(context).load().coins)
+        }
+        val day = System.currentTimeMillis()/Progression.DAY_MS
+        assertTrue(ProgressStore(context).save(Progress(0, questDay = day, questClicks = 100)))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Ежедневные задания")
+            click(scenario, "Забрать задание: clicks")
+            scenario.recreate()
+            assertEquals(5000, ProgressStore(context).load().coins)
+            assertEquals(setOf("clicks"), ProgressStore(context).load().claimedQuests)
+            assertEquals(0L, ProgressStore(context).load().lastGiftAt)
+            click(scenario, "Инвентарь")
+            click(scenario, "Прошивки и джейлбрейк")
+            assertText(scenario, "Сначала получи телефон в коллекцию.")
+        }
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

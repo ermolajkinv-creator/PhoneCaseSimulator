@@ -240,6 +240,7 @@ class MainActivity : Activity() {
     private fun navigate(destination: String) { animator?.cancel(); animator = null; page = destination; render() }
     private fun render() {
         when (page) {
+            "quests" -> quests()
             "catalog" -> catalog()
             "clicker" -> clicker()
             "upgrade" -> upgrader()
@@ -253,6 +254,7 @@ class MainActivity : Activity() {
             "admin" -> admin()
             "collection" -> {
                 screen("Коллекция")
+                button("Прошивки и джейлбрейк") { navigate("workshop") }
                 if (progress.used.isNotEmpty()) {
                     label("Б/у телефонов: ${progress.used.size}", 18f)
                     button("Посмотреть и продать б/у") { navigate("market") }
@@ -285,6 +287,7 @@ class MainActivity : Activity() {
             }
             else -> {
                 screen("Открой свой следующий")
+                button("Ежедневные задания") { navigate("quests") }
                 button("Ежедневная награда") { navigate("daily") }
                 button("Каталог телефонов") { navigate("catalog") }
                 label("Каждый кейс — новый шанс", 22f)
@@ -344,6 +347,7 @@ class MainActivity : Activity() {
         screen("Ежедневная награда")
         val day = System.currentTimeMillis() / Progression.DAY_MS
         val nextStreak = if (day == progress.lastDailyDay+1) (progress.dailyStreak+1).coerceAtMost(7) else 1
+        button("Ежедневные задания") { navigate("quests") }
         label("Серия: ${progress.dailyStreak} / 7 дней", 23f)
         label("Один раз за календарный день UTC. Пропуск дня сбрасывает серию. Это отдельная ежедневная награда; подарок сохраняет перезарядку 10 минут.", 15f, muted)
         if (day <= progress.lastDailyDay) label("Сегодня награда уже получена")
@@ -406,6 +410,28 @@ class MainActivity : Activity() {
             button("Выбрать ${Catalog.phones[source].name}") { upgradeSource = source; upgradeTarget = -1; render() }
         }
         if (progress.owned.isEmpty()) label("Для апгрейда нужен телефон из кейса или админ-панели.", 16f, muted)
+        button("На главную") { navigate("home") }
+    }
+
+    private fun quests() {
+        val day = System.currentTimeMillis()/Progression.DAY_MS
+        val ready = progress.forQuestDay(day)
+        if (ready != progress) persist(ready)
+        screen("Ежедневные задания")
+        label("Сброс — в полночь UTC. Каждая награда выдаётся один раз за день. Перезарядка подарка остаётся 10 минут.", 15f, muted)
+        listOf(Triple("clicks", "Сделать 100 кликов", "${progress.questClicks}/100 · 5 000 ₽"),
+            Triple("cases", "Открыть 3 кейса", "${progress.questCases}/3 · 10 000 ₽")).forEach { (id, title, detail) ->
+            val panel = glassPanel()
+            label(title, 22f, parent = panel)
+            label(detail, 17f, muted, panel)
+            if (id in progress.claimedQuests) label("Награда получена", 16f, muted, panel)
+            else button("Забрать задание: $id", panel) {
+                val next = progress.claimQuest(id, System.currentTimeMillis()/Progression.DAY_MS)
+                if (next.coins == progress.coins) Toast.makeText(this, "Сначала выполни задание", Toast.LENGTH_SHORT).show()
+                else if (persist(next)) render()
+            }
+        }
+        button("Кликер") { navigate("clicker") }
         button("На главную") { navigate("home") }
     }
 
@@ -527,6 +553,7 @@ class MainActivity : Activity() {
         infoRow("В коллекции", (progress.owned.count { it == selectedPhone } + progress.used.count { it.phone == selectedPhone }).toString(), panel)
         label(phone.description, 17f, parent = panel)
         label("Справочник офлайн. Данные относятся к указанной версии модели и системе при выпуске; региональные варианты могут отличаться.", 13f, muted)
+        button("Прошивки и джейлбрейк") { navigate("workshop") }
         button("Википедия телефонов") { navigate("wiki") }
         button("На главную") { navigate("home") }
     }
@@ -555,6 +582,21 @@ class MainActivity : Activity() {
         } else {
             label("Выбери любой телефон — он появится в коллекции бесплатно.", 17f, muted)
             button("Заблокировать панель") { adminUnlocked = false; render() }
+            label("Выдать деньги", 24f)
+            val amount = searchField("Сумма от 1 до 2147483647") { }
+            amount.inputType = InputType.TYPE_CLASS_NUMBER
+            amount.id = R.id.admin_money
+            amount.filters = arrayOf(android.text.InputFilter.LengthFilter(10))
+            val moneyError = label("Максимальный баланс: 2 147 483 647 ₽", 14f, muted)
+            button("Выдать сумму") {
+                val value = amount.text.toString().toLongOrNull()
+                if (!adminUnlocked) return@button
+                if (value == null || value !in 1L..Int.MAX_VALUE.toLong()) moneyError.text = "Введите сумму от 1 до 2147483647"
+                else if (persist(progress.adminCredit(value))) render()
+            }
+            button("Максимум денег") {
+                if (adminUnlocked && persist(progress.adminCredit(Int.MAX_VALUE.toLong()))) render()
+            }
             Catalog.phones.forEachIndexed { index, phone ->
                 button("Взять ${phone.name}") {
                     if (adminUnlocked && persist(progress.grant(index))) {
@@ -568,7 +610,7 @@ class MainActivity : Activity() {
     }
 
     private fun workshop() {
-        screen("Мастерская 2.5")
+        screen("Прошивки и джейлбрейк")
         label("Игровая симуляция: действия не прошивают настоящий телефон. Доступность реального кастома и джейлбрейка зависит от модели, загрузчика и версии ОС.", 15f, muted)
         label("Профиль применяется к вашим экземплярам выбранной модели.", 14f, muted)
         button("На главную") { navigate("home") }

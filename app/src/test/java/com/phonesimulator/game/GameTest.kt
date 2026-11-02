@@ -22,7 +22,7 @@ class GameTest {
         assertEquals(listOf(phone), next.owned)
         assertEquals(5, phone)
         assertNull(next.open(0))
-        assertEquals(Progress(Catalog.phones[5].price, casesOpened = 1), next.sell(5))
+        assertEquals(Catalog.phones[5].price, next.sell(5).coins)
         assertEquals(next, next.sell(0))
     }
     @Test fun legacySaveAndMalformedIndices() {
@@ -139,7 +139,7 @@ class GameTest {
         assertEquals(2, day2.dailyStreak)
         assertEquals(day2.coins + Economy.BONUS, day2.claimDaily(103).coins)
         assertEquals(1, day2.claimDaily(103).dailyStreak)
-        assertEquals(Progress(1010, listOf(0,0), clicks = 1), start.clickCoin())
+        assertEquals(Progress(1010, listOf(0,0), clicks = 1, questDay = 100, questClicks = 1), start.clickCoin(100))
         assertTrue(0 in start.toggleFavorite(0).favorites)
         assertEquals(start, start.toggleFavorite(0).toggleFavorite(0))
         val chance = start.upgradeChance(0, 1)
@@ -150,6 +150,23 @@ class GameTest {
         assertTrue(outcomes.all { it.first.coins == start.coins })
         assertTrue("clicks" in Progression.goals(start.copy(clicks = 100)))
         assertTrue("ultra" in Progression.goals(Progress(owned = listOf(5))))
+    }
+    @Test fun adminMoneyAndDailyQuests() {
+        assertEquals(Int.MAX_VALUE, Progress(777).adminCredit(Int.MAX_VALUE.toLong()).coins)
+        assertEquals(877, Progress(777).adminCredit(100).coins)
+        var state = Progress(0)
+        repeat(100) { state = state.clickCoin(100) }
+        val claimed = state.claimQuest("clicks", 100)
+        assertEquals(6000, claimed.coins)
+        assertEquals(claimed, claimed.claimQuest("clicks", 100))
+        assertEquals(claimed, claimed.claimQuest("cases", 100))
+        val tomorrow = claimed.forQuestDay(101)
+        assertEquals(0, tomorrow.questClicks)
+        assertTrue(tomorrow.claimedQuests.isEmpty())
+        assertEquals(tomorrow, tomorrow.claimQuest("clicks", 100))
+        var cases = Progress(3 * CaseKind.CLASSIC.cost)
+        repeat(3) { cases = cases.openCase(CaseKind.CLASSIC, 0, 100)!!.first }
+        assertEquals(10000, cases.claimQuest("cases",100).coins)
     }
     @Test(expected = IllegalArgumentException::class)
     fun cannotUpgradeToUltra() { Progress(owned = listOf(0)).upgrade(0,5,0) }
