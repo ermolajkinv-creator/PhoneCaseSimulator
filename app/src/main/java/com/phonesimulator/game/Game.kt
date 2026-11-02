@@ -115,11 +115,12 @@ object Catalog {
         Phone("Motorola Edge 40", 25000, Rarity.COMMON, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель Motorola Edge 40. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены."),
         Phone("ASUS Zenfone 10", 45000, Rarity.UNCOMMON, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель ASUS Zenfone 10. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены."),
         Phone("OPPO Reno10", 25000, Rarity.RARE, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель OPPO Reno10. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены.")
-    )
+    ) + AdditionalPhones.entries
     val phones: List<Phone> = entries.map { phone ->
         val budget = mapOf(Rarity.COMMON to 500, Rarity.UNCOMMON to 280, Rarity.RARE to 150,
             Rarity.EPIC to 58, Rarity.LEGENDARY to 11, Rarity.ULTRA to 1).getValue(phone.rarity)
         val peers = entries.filter { it.rarity == phone.rarity }
+        require(peers.size <= budget) { "Not enough drop tickets for ${phone.rarity}" }
         val position = peers.indexOf(phone)
         phone.copy(tickets = budget / peers.size + if (position < budget % peers.size) 1 else 0)
     }

@@ -32,8 +32,8 @@ class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
         val n=phone.name
         val iphone=n.startsWith("iPhone")
         val pixel=n.contains("Pixel")
-        val fold=n.contains("Fold")
-        val flip=n.contains("Flip")
+        val flip=n.contains("Flip") || n.contains("Razr")
+        val fold=n.contains("Fold") || (n.startsWith("OPPO Find N") && !flip)
         val nokia=n=="Nokia 3310"
         val tones=intArrayOf(0xFFCCC4B9.toInt(),0xFF334A47.toInt(),0xFF333544.toInt(),0xFFC6BACE.toInt())
         val body=if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]

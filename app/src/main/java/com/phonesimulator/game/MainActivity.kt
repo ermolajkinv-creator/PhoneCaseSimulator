@@ -269,7 +269,7 @@ class MainActivity : Activity() {
                     button("Посмотреть и продать б/у") { navigate("market") }
                 }
                 if (progress.owned.isEmpty() && progress.used.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
-                phoneGrid(progress.owned.distinct().sorted(), root, true)
+                pagedPhones(progress.owned.distinct().sorted(), root) { phoneGrid(it, root, true) }
                 button("На главную") { navigate("home") }
             }
             "shop" -> {
@@ -334,8 +334,23 @@ class MainActivity : Activity() {
         }
     }
 
+    /** Build a small batch of views at a time, including when searching 500 models. */
+    private fun pagedPhones(models: List<Int>, parent: LinearLayout, renderPage: (List<Int>) -> Unit) {
+        var shown = 0
+        var more: Button? = null
+        fun nextPage() {
+            more?.let { parent.removeView(it) }
+            val page = models.drop(shown).take(32)
+            renderPage(page)
+            shown += page.size
+            more = if (shown < models.size) button("Показать ещё · $shown из ${models.size}", parent) { nextPage() } else null
+        }
+        nextPage()
+    }
+
     private fun catalog() {
         screen("Каталог телефонов")
+        label("${Catalog.phones.size} моделей в коллекции игры", 16f, muted)
         button("Ежедневная награда") { navigate("daily") }
         button(if (favoritesOnly) "Показать все" else "Только избранное") { favoritesOnly = !favoritesOnly; render() }
         lateinit var list: LinearLayout
@@ -345,7 +360,7 @@ class MainActivity : Activity() {
                 Catalog.phones[index].name.contains(catalogQuery.trim(), true) && (!favoritesOnly || index in progress.favorites)
             }
             if (matches.isEmpty()) label("Ничего не найдено", parent = list)
-            phoneGrid(matches, list)
+            pagedPhones(matches, list) { phoneGrid(it, list) }
         }
         searchField("Поиск телефонов", catalogQuery) { catalogQuery = it; refresh() }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; root.addView(this) }
@@ -722,12 +737,12 @@ class MainActivity : Activity() {
                 "${p.name} ${p.rarity.title} ${p.chip} ${p.system}".contains(query.trim(), ignoreCase = true)
             }
             if (matches.isEmpty()) label("Ничего не найдено", parent = list)
-            matches.forEach { index ->
+            pagedPhones(matches, list) { page -> page.forEach { index ->
                 val phone = Catalog.phones[index]
                 button("${phone.name}\n${phone.rarity.title} · ${phone.tickets / 10.0}%", list) {
                     selectedPhone = index; navigate("details")
                 }
-            }
+            } }
         }
         searchField("Поиск модели, чипа или системы", wikiQuery) { wikiQuery = it; refresh(it) }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; root.addView(this) }
@@ -795,14 +810,24 @@ class MainActivity : Activity() {
             button("Максимум денег") {
                 if (adminUnlocked && persist(progress.adminCredit(Int.MAX_VALUE.toLong()))) render()
             }
-            Catalog.phones.forEachIndexed { index, phone ->
-                button("Взять ${phone.name}") {
-                    if (adminUnlocked && persist(progress.grant(index))) {
-                        Toast.makeText(this, "${phone.name} добавлен в коллекцию", Toast.LENGTH_SHORT).show()
-                        render()
+            lateinit var phones: LinearLayout
+            fun refreshPhones(query: String) {
+                phones.removeAllViews()
+                val matches = Catalog.phones.indices.filter { Catalog.phones[it].name.contains(query.trim(), true) }
+                if (matches.isEmpty()) label("Ничего не найдено", parent = phones)
+                pagedPhones(matches, phones) { page -> page.forEach { index ->
+                    val phone = Catalog.phones[index]
+                    button("Взять ${phone.name}", phones) {
+                        if (adminUnlocked && persist(progress.grant(index))) {
+                            Toast.makeText(this, "${phone.name} добавлен в коллекцию", Toast.LENGTH_SHORT).show()
+                            render()
+                        }
                     }
-                }
+                } }
             }
+            searchField("Найти телефон для выдачи") { refreshPhones(it) }
+            phones = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; root.addView(this) }
+            refreshPhones("")
         }
         button("На главную") { navigate("home") }
     }

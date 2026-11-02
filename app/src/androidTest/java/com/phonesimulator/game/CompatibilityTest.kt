@@ -117,7 +117,7 @@ class CompatibilityTest {
     }
     @Test fun wikiSearchAndDetails() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Википедия телефонов · 100 моделей")
+            click(scenario, "Википедия телефонов · ${Catalog.phones.size} моделей")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>()
                     .first().setText("Pixel 4")
@@ -324,6 +324,35 @@ class CompatibilityTest {
             awardsClaimed=setOf("first"),ledger=listOf(CashEvent(100,99,"Продажа")),idleAt=500)
         assertEquals(raw,ExpansionCodec.decode(ExpansionCodec.encode(raw)))
     }
+    @Test fun expandedCatalogSearchPurchaseAndPersistence() {
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Каталог телефонов")
+            assertText(scenario, "Показать ещё · 32 из 500")
+            scenario.onActivity { activity ->
+                assertEquals(32, views(activity.window.decorView).filterIsInstance<Button>()
+                    .count { it.text.toString() == "О телефоне" })
+            }
+            click(scenario, "Показать ещё · 32 из 500")
+            assertText(scenario, "Показать ещё · 64 из 500")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
+            }
+            click(scenario, "Купить новый · ${ExpansionRules.newPrice(499)} ₽")
+            assertEquals(listOf(499), ProgressStore(context).load().owned)
+            scenario.recreate()
+            assertEquals(listOf(499), ProgressStore(context).load().owned)
+            click(scenario, "На главную")
+            click(scenario, "Википедия телефонов · 500 моделей")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
+            }
+            val phone = Catalog.phones[499]
+            click(scenario, "${phone.name}\n${phone.rarity.title} · ${phone.tickets / 10.0}%")
+            assertText(scenario, "Snapdragon 8 Gen 1")
+            assertText(scenario, "Android 12 при выпуске")
+        }
+    }
+
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

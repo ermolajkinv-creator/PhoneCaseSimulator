@@ -35,7 +35,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(100, Catalog.phones.size)
+        assertEquals(500, Catalog.phones.size)
         assertEquals(1000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
@@ -74,7 +74,7 @@ class GameTest {
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test fun firmwareAndConcreteCatalog() {
-        assertEquals(100, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals(500, Catalog.phones.map { it.name }.toSet().size)
         assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
         assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
         assertTrue(Catalog.phones.all { it.price in 1000..300000 })
@@ -86,7 +86,7 @@ class GameTest {
         assertEquals("LineageOS (симуляция)", state.firmware[1])
     }
     @Test fun economyTracksExactRewards() {
-        assertEquals(listOf(31000, 45000, 55000, 97000), CaseKind.entries.map { it.cost })
+        assertEquals(listOf(25000, 39000, 54000, 91000), CaseKind.entries.map { it.cost })
         CaseKind.entries.forEach { kind ->
             val expected = (0..999).sumOf { Catalog.phones[kind.roll(it)].price.toLong() } / 1000.0
             assertTrue(kind.cost >= expected * 1.15)
@@ -97,6 +97,27 @@ class GameTest {
         assertTrue(Economy.BONUS >= CaseKind.CLASSIC.cost)
         assertEquals(777, Progress.restore(777, "0,5").coins)
     }
+    @Test fun fiveHundredModelsAreReachableAndLegacyPositionsAreStable() {
+        val legacy = Catalog.phones.take(100).joinToString("\n") { it.name }
+        val digest = java.security.MessageDigest.getInstance("SHA-256").digest(legacy.toByteArray(Charsets.UTF_8))
+            .joinToString("") { "%02x".format(it) }
+        assertEquals("c8ebfe1e02638fca15c6bd6ee3272b47eb688f2c50c83be7ddad606994fcdee3", digest)
+        assertEquals("Samsung Galaxy S", Catalog.phones[100].name)
+        assertEquals("ZTE Axon 40 Ultra", Catalog.phones[499].name)
+        assertEquals(Catalog.phones.indices.toSet(), (0..999).map(Catalog::roll).toSet())
+        assertTrue(Catalog.phones.all { it.tickets > 0 })
+        assertEquals(listOf(5), Catalog.phones.indices.filter { Catalog.phones[it].rarity == Rarity.ULTRA })
+        val owned = listOf(0, 5, 99, 100, 499, 499)
+        assertEquals(owned, Progress.restore(777, owned.joinToString(",")).owned)
+        for (model in 100..499) {
+            val bought = Progress(Int.MAX_VALUE).buyNew(model)
+            assertEquals(listOf(model), bought.owned)
+            assertTrue(bought.coins < Int.MAX_VALUE)
+            val platform = Workshop.options(Catalog.phones[model])
+            assertEquals(Catalog.phones[model].name.startsWith("iPhone"), "Джейлбрейк (симуляция)" in platform)
+        }
+    }
+
     @Test fun povertyGiftChecksAllPurchasesAndCannotRepeatWhileAffordable() {
         val listing = Listing("cheap", 0, 0, 500)
         val poor = Progress(0, listOf(5))

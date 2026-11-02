@@ -16,7 +16,8 @@ object Market {
             val phone = random.nextInt(Catalog.phones.size)
             val condition = random.nextInt(conditions.size)
             val quote = price(phone, condition)
-            Listing("$day-$slot", phone, condition, (quote.toLong() * random.nextInt(85, 121) / 100).toInt().coerceAtLeast(1))
+            // A catalog expansion may change the seeded model. Never reuse another model's negotiated quote.
+            Listing("$day-$slot-$phone-$condition", phone, condition, (quote.toLong() * random.nextInt(85, 121) / 100).toInt().coerceAtLeast(1))
         }
     }
 }
