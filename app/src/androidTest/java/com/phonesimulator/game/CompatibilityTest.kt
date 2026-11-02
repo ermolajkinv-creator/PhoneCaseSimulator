@@ -262,7 +262,7 @@ class CompatibilityTest {
         assertTrue(ProgressStore(context).save(Progress(0, questDay = day, questClicks = 100)))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Ежедневные задания")
-            click(scenario, "Забрать задание: clicks")
+            click(scenario, "Забрать награду за клики")
             scenario.recreate()
             assertEquals(5000, ProgressStore(context).load().coins)
             assertEquals(setOf("clicks"), ProgressStore(context).load().claimedQuests)

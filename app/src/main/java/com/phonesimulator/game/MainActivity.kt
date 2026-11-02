@@ -425,9 +425,9 @@ class MainActivity : Activity() {
             label(title, 22f, parent = panel)
             label(detail, 17f, muted, panel)
             if (id in progress.claimedQuests) label("Награда получена", 16f, muted, panel)
-            else button("Забрать задание: $id", panel) {
+            else button(if (id == "clicks") "Забрать награду за клики" else "Забрать награду за кейсы", panel) {
                 val next = progress.claimQuest(id, System.currentTimeMillis()/Progression.DAY_MS)
-                if (next.coins == progress.coins) Toast.makeText(this, "Сначала выполни задание", Toast.LENGTH_SHORT).show()
+                if (id !in next.claimedQuests || next == progress) Toast.makeText(this, "Сначала выполни задание", Toast.LENGTH_SHORT).show()
                 else if (persist(next)) render()
             }
         }
