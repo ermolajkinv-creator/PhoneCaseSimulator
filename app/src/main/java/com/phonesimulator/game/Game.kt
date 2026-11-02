@@ -146,7 +146,7 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
                     val claimedQuests: Set<String> = emptySet(),
                     val workshopLevel: Int = 1, val reputation: Int = 0, val servicesCompleted: Int = 0,
                     val serviceSlot: Long = -1L, val servicedSlots: Set<Long> = emptySet(),
-                    val clientJob: ClientJob? = null) {
+                    val clientJob: ClientJob? = null, val expansion: Expansion = Expansion()) {
     fun open(ticket: Int): Pair<Progress, Int>? = openCase(CaseKind.CLASSIC, ticket)
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
@@ -263,7 +263,7 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
 
     fun canReceiveGift(listings: List<Listing>, now: Long = System.currentTimeMillis()): Boolean =
         giftCooldownRemaining(now) == 0L && coins < CaseKind.entries.minOf { it.cost } &&
-            listings.none { it.id !in purchased && it.price <= coins }
+            listings.none { it.id !in purchased && askPrice(it) <= coins }
 
     fun receiveGift(listings: List<Listing>, now: Long = System.currentTimeMillis()): Progress =
         if (canReceiveGift(listings, now)) bonus(now) else this

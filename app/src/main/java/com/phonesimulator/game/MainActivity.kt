@@ -221,14 +221,20 @@ class MainActivity : Activity() {
         }
         label("Шанс ${phone.tickets / 10.0}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
             14f, muted, panel)
+        if(index != 5) button("Купить новый · ${ExpansionRules.newPrice(index)} ₽", panel) {
+            val next = progress.buyNew(index)
+            if(next == progress) Toast.makeText(this,"Недостаточно денег",Toast.LENGTH_SHORT).show()
+            else if(persist(next,"Покупка нового телефона")) render()
+        }
         button("О телефоне", panel) { selectedPhone = index; navigate("details") }
         if (count != null) button("Продать один · ${phone.price} ₽", panel) {
             if (persist(progress.sell(index))) render()
         }
     }
 
-    private fun persist(next: Progress): Boolean {
-        val decorated = next.copy(badges = next.badges + Progression.goals(next))
+    private fun persist(next: Progress, reason: String = "Игровая операция"): Boolean {
+        val decorated = next.copy(badges = next.badges + Progression.goals(next),
+            expansion = next.expansion.record(progress, next, System.currentTimeMillis(), reason))
         if (!store.save(decorated)) {
             Toast.makeText(this, "Не удалось сохранить прогресс. Повторите попытку.", Toast.LENGTH_LONG).show()
             return false
@@ -240,6 +246,8 @@ class MainActivity : Activity() {
     private fun navigate(destination: String) { animator?.cancel(); animator = null; page = destination; render() }
     private fun render() {
         when (page) {
+            "expansion" -> expansionHub()
+            "contracts" -> contracts()
             "clients" -> clients()
             "quests" -> quests()
             "catalog" -> catalog()
@@ -297,6 +305,7 @@ class MainActivity : Activity() {
                 button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
+                button("Новое в 3.0") { navigate("expansion") }
                 button("Клиенты и сервис") { navigate("clients") }
                 button("Мастерская · прошивки") { navigate("workshop") }
                 button("Все кейсы · 4 вида") { navigate("cases") }
@@ -415,6 +424,119 @@ class MainActivity : Activity() {
         button("На главную") { navigate("home") }
     }
 
+    private fun expansionHub() {
+        screen("Новое в 3.0")
+        label("1 · Магазин новых телефонов",24f)
+        label("Новые аппараты стоят 110% базовой оценки. Ultra напрямую не продаётся.",15f,muted)
+        button("Магазин новых телефонов") { navigate("catalog") }
+        label("2 · Торг и 3 · Реставрация",24f)
+        label("Одна попытка скидки 15% на объявление, шанс 60%. Свои б/у телефоны можно ремонтировать до следующего состояния.",15f,muted)
+        button("Торг и ремонт на рынке") { navigate("market") }
+        label("4 · Награды за достижения",24f)
+        Progression.goalNames.forEach { (id,title) ->
+            val panel=glassPanel()
+            label("$title · ${ExpansionRules.awardPrices.getValue(id)} ₽",18f,parent=panel)
+            when {
+                id in progress.expansion.awardsClaimed -> label("Награда получена",15f,muted,panel)
+                id in (progress.badges+Progression.goals(progress)) -> button("Забрать награду: $title",panel) {
+                    if(persist(progress.claimAward(id),"Награда за достижение")) render()
+                }
+                else -> label("Сначала выполни достижение",15f,muted,panel)
+            }
+        }
+        label("5 · Контракты обмена",24f)
+        button("Открыть контракты") { navigate("contracts") }
+        label("6 · Заказ на закупку",24f)
+        val day=System.currentTimeMillis()/Progression.DAY_MS
+        val wanted=ExpansionRules.deliveryModel(day)
+        label("Нужен новый ${Catalog.phones[wanted].name}. Оплата ${ExpansionRules.deliveryPrice(day)} ₽. Один заказ за день UTC; б/у не подходит.",16f)
+        if(day<=progress.expansion.deliveryDay) label("Заказ дня выполнен",16f,muted)
+        else button("Передать телефон по заказу") {
+            val next=progress.deliver(day)
+            if(next==progress) Toast.makeText(this,"Нужной модели нет в коллекции новых телефонов",Toast.LENGTH_SHORT).show()
+            else if(persist(next,"Заказ на закупку")) render()
+        }
+        label("7 · Доход сервисного центра",24f)
+        label("${progress.workshopLevel*100} ₽ за полную минуту, максимум за 2 часа. Начисление начинается после активации. После сбора отсчёт идёт заново; используется текущий уровень сервиса.",15f,muted)
+        button(if(progress.expansion.idleAt==0L) "Активировать доход сервиса" else "Забрать доход сервиса") {
+            val next=progress.claimIdle(System.currentTimeMillis())
+            if(next==progress) Toast.makeText(this,"Ещё не прошла полная минута",Toast.LENGTH_SHORT).show()
+            else if(persist(next,"Доход сервиса")) render()
+        }
+        label("8 · Сейф",24f)
+        infoRow("В сейфе", "${progress.expansion.vault} ₽")
+        label("Отдельное хранение без процентов. Лимит кошелька и сейфа — по 2 147 483 647 ₽.",14f,muted)
+        val amount=searchField("Сумма перевода") { }
+        amount.id=R.id.vault_money;amount.inputType=InputType.TYPE_CLASS_NUMBER
+        amount.filters=arrayOf(android.text.InputFilter.LengthFilter(10))
+        fun transfer(deposit: Boolean) {
+            val value=amount.text.toString().toLongOrNull()
+            if(value==null || value !in 1L..Int.MAX_VALUE.toLong()) {
+                Toast.makeText(this,"Введите положительную сумму до 2147483647",Toast.LENGTH_SHORT).show();return
+            }
+            val next=if(deposit) progress.moveToVault(value.toInt()) else progress.withdrawVault(value.toInt())
+            if(next==progress) Toast.makeText(this,"Недостаточно средств или достигнут лимит",Toast.LENGTH_SHORT).show()
+            else if(persist(next,"Перевод в сейф")) render()
+        }
+        button("Положить в сейф") { transfer(true) }
+        button("Забрать из сейфа") { transfer(false) }
+        label("9 · Финансы",24f)
+        label("Движение денег с версии 3.0. Переводы в сейф не считаются заработком. Стоимость коллекции сюда не включена.",14f,muted)
+        infoRow("Всего получено", "${progress.expansion.income} ₽")
+        infoRow("Всего потрачено", "${progress.expansion.expenses} ₽")
+        progress.expansion.ledger.asReversed().forEach { event ->
+            label("${android.text.format.DateFormat.format("dd.MM HH:mm",event.at)} · ${event.title} · ${if(event.amount>0) "+" else ""}${event.amount} ₽",13f,muted)
+        }
+        label("10 · Локальная резервная копия",24f)
+        label("Одна копия внутри приложения. Удаление его данных удалит и копию. Восстановление заменяет деньги и коллекцию; таймер подарка и отметки ограниченных наград не откатываются.",14f,muted)
+        val at=store.backupTime()
+        label(if(at==0L) "Копии пока нет" else "Копия: ${android.text.format.DateFormat.format("dd.MM.yyyy HH:mm",at)}",15f)
+        button("Создать резервную копию") {
+            android.app.AlertDialog.Builder(this).setTitle("Сохранить копию?")
+                .setMessage("Предыдущая локальная копия будет заменена текущим прогрессом.")
+                .setNegativeButton("Отмена",null).setPositiveButton("Сохранить") { _,_ ->
+                    val saved=store.createBackup()
+                    Toast.makeText(this,if(saved) "Копия сохранена" else "Не удалось сохранить",Toast.LENGTH_SHORT).show()
+                    render()
+                }.show()
+        }
+        if(at>0L) button("Восстановить резервную копию") {
+            android.app.AlertDialog.Builder(this).setTitle("Восстановить прогресс?")
+                .setMessage("Текущие деньги, коллекция и настройки будут заменены локальной копией. Отметки выданных ограниченных наград сохранятся.")
+                .setNegativeButton("Отмена",null).setPositiveButton("Восстановить") { _,_ ->
+                    if(store.restoreBackup()) { progress=store.load();render() }
+                    else Toast.makeText(this,"Копия недоступна или повреждена",Toast.LENGTH_SHORT).show()
+                }.show()
+        }
+        button("На главную") { navigate("home") }
+    }
+
+    private fun contracts() {
+        screen("Контракты обмена")
+        label("Три новых телефона одной редкости → один случайный следующей редкости. Используются первые три подходящих экземпляра, б/у не расходуется. Источники исчезнут. Ultra исключена.",15f,muted)
+        Rarity.entries.filter { it.ordinal<Rarity.LEGENDARY.ordinal }.forEach { rarity ->
+            val panel=glassPanel()
+            label("${rarity.title} → ${Rarity.entries[rarity.ordinal+1].title}",21f,parent=panel)
+            val inputs=progress.contractInputs(rarity)
+            label("Подходящих: ${inputs.size}/3",16f,parent=panel)
+            inputs.forEach { label(Catalog.phones[it.value].name,15f,muted,panel) }
+            if(inputs.size==3) {
+                val fee=progress.contractFee(rarity)
+                label("Доплата: $fee ₽. Рассчитана по средней цене награды, чтобы избежать бесконечной выгодной перепродажи.",14f,muted,panel)
+                button("Заключить контракт: ${rarity.title}",panel) {
+                    android.app.AlertDialog.Builder(this).setTitle("Подтвердить обмен")
+                        .setMessage("Будут израсходованы: ${inputs.joinToString { Catalog.phones[it.value].name }}. Доплата $fee ₽. Вернуть исходные телефоны нельзя.")
+                        .setNegativeButton("Отмена",null).setPositiveButton("Обменять") { _,_ ->
+                            val next=progress.contract(rarity,Random.nextInt(1000))
+                            if(next==progress) Toast.makeText(this,"Не хватает денег или телефонов",Toast.LENGTH_SHORT).show()
+                            else if(persist(next,"Контракт обмена")) render()
+                        }.show()
+                }
+            }
+        }
+        button("Новое в 3.0") { navigate("expansion") }
+    }
+
     private fun clients() {
         val now = System.currentTimeMillis()
         val synced = progress.syncClients(now)
@@ -511,6 +633,7 @@ class MainActivity : Activity() {
         val earned = progress.badges + Progression.goals(progress)
         if (earned != progress.badges) persist(progress.copy(badges = earned))
         screen("Профиль")
+        button("Новое в 3.0") { navigate("expansion") }
         label(progress.nickname, 27f)
         val input = searchField("Имя игрока", progress.nickname) { }
         button("Сохранить имя") {
@@ -739,10 +862,17 @@ class MainActivity : Activity() {
             infoRow("Состояние", Market.conditions[listing.condition], panel)
             infoRow("Цена", "${listing.price} ₽", panel)
             if (listing.id in progress.purchased) label("Уже куплено", 16f, muted, panel)
-            else button("Купить · ${listing.price}", panel) {
-                val next = progress.buy(listing)
+            else {
+                if(listing.id !in progress.expansion.negotiated) button("Предложить скидку 15%", panel) {
+                    if(persist(progress.bargain(listing,Random.nextInt(100)),"Торг")) render()
+                }
+                if(listing.id in progress.expansion.negotiated && listing.id !in progress.expansion.discounts) label("Продавец отказался от скидки",15f,muted,panel)
+                if(listing.id in progress.expansion.discounts) label("Цена после торга: ${progress.askPrice(listing)} ₽",16f,parent=panel)
+                button("Купить · ${progress.askPrice(listing)}", panel) {
+                val next = progress.buy(listing.copy(price=progress.askPrice(listing)))
                 if (next == null) Toast.makeText(this, "Недостаточно ₽ или лот уже куплен", Toast.LENGTH_SHORT).show()
-                else if (persist(next)) render()
+                else if (persist(next,"Покупка б/у телефона")) render()
+                }
             }
         }
         label("Продать б/у телефон", 24f)
@@ -751,6 +881,13 @@ class MainActivity : Activity() {
             val panel = glassPanel()
             label(Catalog.phones[item.phone].name, 21f, parent = panel)
             infoRow("Состояние", Market.conditions[item.condition], panel)
+            if(item.condition<3) button("Ремонт до следующего состояния · ${progress.repairPrice(index)} ₽",panel) {
+                if(index in progress.used.indices && progress.used[index]==item) {
+                    val next=progress.repairUsed(index)
+                    if(next==progress) Toast.makeText(this,"Недостаточно денег на ремонт",Toast.LENGTH_SHORT).show()
+                    else if(persist(next,"Ремонт б/у")) render()
+                }
+            }
             button("Продать б/у · ${Market.price(item.phone, item.condition)}", panel) {
                 if (persist(progress.sellUsed(index))) render()
             }

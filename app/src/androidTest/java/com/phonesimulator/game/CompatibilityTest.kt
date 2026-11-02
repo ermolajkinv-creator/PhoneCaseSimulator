@@ -95,7 +95,7 @@ class CompatibilityTest {
             click(scenario, "Админ-панель")
             click(scenario, "Войти")
             assertText(scenario, "Неверный пароль")
-            assertEquals(Progress(), ProgressStore(context).load())
+            assertEquals(Progress(), ProgressStore(context).load().copy(expansion = Expansion()))
             scenario.onActivity { activity ->
                 activity.findViewById<android.widget.EditText>(R.id.admin_password).setText("Prism-8426")
             }
@@ -103,7 +103,7 @@ class CompatibilityTest {
             click(scenario, "Взять Samsung Z Fold 8 Ultra")
             click(scenario, "Взять Sony Xperia 1 VI")
             click(scenario, "Взять OnePlus 15")
-            assertEquals(Progress(Economy.START_BALANCE, listOf(5, 23, 24), badges = setOf("first", "ultra")), ProgressStore(context).load())
+            assertEquals(Progress(Economy.START_BALANCE, listOf(5, 23, 24), badges = setOf("first", "ultra")), ProgressStore(context).load().copy(expansion = Expansion()))
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Вход по паролю")
@@ -141,7 +141,7 @@ class CompatibilityTest {
         val listing = Listing("saved-test", 42, 2, 100)
         val bought = Progress().buy(listing)!!
         assertTrue(store.save(bought))
-        assertEquals(bought, ProgressStore(context).load())
+        assertEquals(bought, ProgressStore(context).load().copy(expansion = Expansion()))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Авито · рынок б/у")
             assertText(scenario, "Хорошее")
@@ -297,14 +297,41 @@ class CompatibilityTest {
             }
         }
     }
+    @Test fun versionThreeVaultAndLocalBackup() {
+        assertTrue(ProgressStore(context).save(Progress(50000, listOf(0))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Новое в 3.0")
+            scenario.onActivity { it.findViewById<android.widget.EditText>(R.id.vault_money).setText("1000") }
+            click(scenario, "Положить в сейф")
+            val stored=ProgressStore(context).load()
+            assertEquals(49000,stored.coins)
+            assertEquals(1000,stored.expansion.vault)
+            assertEquals(0L,stored.expansion.income)
+            assertEquals(0L,stored.expansion.expenses)
+            scenario.recreate()
+            assertEquals(1000,ProgressStore(context).load().expansion.vault)
+        }
+        val store=ProgressStore(context)
+        assertTrue(store.createBackup())
+        val baseline=store.load()
+        val changed=baseline.copy(coins=0,lastGiftAt=System.currentTimeMillis())
+        assertTrue(store.save(changed))
+        assertTrue(store.restoreBackup())
+        assertEquals(49000,store.load().coins)
+        assertEquals(1000,store.load().expansion.vault)
+        assertEquals(changed.lastGiftAt,store.load().lastGiftAt)
+        val raw=Expansion(vault=123,income=456,negotiated=setOf("a"),discounts=mapOf("a" to 50),
+            awardsClaimed=setOf("first"),ledger=listOf(CashEvent(100,99,"Продажа")),idleAt=500)
+        assertEquals(raw,ExpansionCodec.decode(ExpansionCodec.encode(raw)))
+    }
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()
-        assertEquals(Progress(777, listOf(0, 5, 5)), ProgressStore(context).load())
+        assertEquals(Progress(777, listOf(0, 5, 5)), ProgressStore(context).load().copy(expansion = Expansion()))
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Коллекция")
             click(scenario, "Продать один · ${Catalog.phones[5].price} ₽")
-            assertEquals(Progress(777 + Catalog.phones[5].price, listOf(0, 5), badges = setOf("first", "ultra")), ProgressStore(context).load())
+            assertEquals(Progress(777 + Catalog.phones[5].price, listOf(0, 5), badges = setOf("first", "ultra")), ProgressStore(context).load().copy(expansion = Expansion()))
             scenario.recreate()
             assertText(scenario, "Коллекция")
         }
