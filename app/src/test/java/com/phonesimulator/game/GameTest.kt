@@ -8,6 +8,11 @@ class GameTest {
         val counts = (0..999).map(Catalog::roll).groupingBy { it }.eachCount()
         Catalog.phones.forEachIndexed { index, phone -> assertEquals(phone.tickets, counts[index]) }
         assertEquals(1, counts[5])
+        assertTrue(Catalog.phones[5].description.contains("2026"))
+        assertFalse(Catalog.phones[5].description.contains("Вымышленная"))
+        assertEquals("OnePlus 15", Catalog.phones[24].name)
+        assertEquals(Rarity.LEGENDARY, Catalog.phones[24].rarity)
+        assertEquals(2, counts[24])
         assertEquals(Rarity.ULTRA, Catalog.phones[5].rarity)
         assertEquals("Samsung Z Fold 8 Ultra", Catalog.phones[5].name)
     }
@@ -30,7 +35,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(24, Catalog.phones.size)
+        assertEquals(40, Catalog.phones.size)
         assertEquals(1000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original

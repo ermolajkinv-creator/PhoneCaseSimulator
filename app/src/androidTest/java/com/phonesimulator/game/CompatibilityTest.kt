@@ -94,7 +94,8 @@ class CompatibilityTest {
             click(scenario, "Войти")
             click(scenario, "Взять Samsung Z Fold 8 Ultra")
             click(scenario, "Взять Sony Xperia 1 VI")
-            assertEquals(Progress(1000, listOf(5, 23)), ProgressStore(context).load())
+            click(scenario, "Взять OnePlus 15")
+            assertEquals(Progress(1000, listOf(5, 23, 24)), ProgressStore(context).load())
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
             scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
             assertText(scenario, "Вход по паролю")
@@ -108,7 +109,7 @@ class CompatibilityTest {
     }
     @Test fun wikiSearchAndDetails() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Википедия телефонов · 24 моделей")
+            click(scenario, "Википедия телефонов · 40 моделей")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>()
                     .first().setText("Pixel 4")

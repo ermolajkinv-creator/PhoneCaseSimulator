@@ -21,7 +21,7 @@ class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
         canvas.save()
         canvas.translate(width / 2f, height / 2f)
         canvas.scale(unit, unit)
-        val folded = phone.rarity == Rarity.ULTRA
+        val folded = phone.name.contains("Fold", ignoreCase = true)
         val halfWidth = if (folded) 57f else 35f
         paint.shader = null
         paint.color = phone.rarity.accent
