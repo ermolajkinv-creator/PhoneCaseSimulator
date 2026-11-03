@@ -26,8 +26,11 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
     fun zoomBy(factor: Float) { zoom=(zoom*factor).coerceIn(0.6f,2.4f);invalidate() }
     fun reset() { yaw=25f;pitch=-8f;zoom=1f;invalidate() }
     private fun texture(isFront: Boolean): Bitmap {
-        val bitmap=Bitmap.createBitmap(256,512,Bitmap.Config.ARGB_8888)
+        val tablet=item.phone.formFactor==FormFactor.TABLET
+        val bitmap=Bitmap.createBitmap(256,if(tablet)384 else 512,Bitmap.Config.ARGB_8888)
+        val textureHeight=bitmap.height.toFloat()
         val c=Canvas(bitmap);val p=Paint(Paint.ANTI_ALIAS_FLAG)
+        c.scale(1f,textureHeight/512f)
         if(isFront) {
             if(item.phone.name=="Nokia 3310") {
                 c.drawColor(0xFF3A4150.toInt());p.color=0xFF9FAE83.toInt();c.drawRoundRect(25f,55f,231f,250f,12f,12f,p)
@@ -36,9 +39,11 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             } else {
                 p.shader=LinearGradient(0f,0f,256f,512f,intArrayOf(bodyColor,0xFF172248.toInt(),0xFF090F1B.toInt()),null,Shader.TileMode.CLAMP)
                 c.drawRect(0f,0f,256f,512f,p);p.shader=null;p.color=Color.WHITE;p.textSize=48f;c.drawText("12:00",60f,110f,p)
-                p.textSize=14f;c.drawText("Phone OS",92f,140f,p)
+                p.textSize=14f;c.drawText(if(item.phone.isApple) (if(tablet) "iPadOS" else "iOS") else "Android",92f,140f,p)
                 for(row in 0..2)for(col in 0..2){p.color=VirtualApps.colors[(row*3+col+style.wallpaper)%6];c.drawRoundRect(28f+col*78,230f+row*73,76f+col*78,278f+row*73,10f,10f,p)}
-                p.color=Color.BLACK;c.drawRoundRect(95f,10f,161f,23f,9f,9f,p)
+                p.color=Color.BLACK
+                if(tablet) { p.style=Paint.Style.STROKE;p.strokeWidth=16f;c.drawRect(0f,0f,256f,512f,p);p.style=Paint.Style.FILL }
+                else c.drawRoundRect(95f,10f,161f,23f,9f,9f,p)
             }
         } else {
             c.drawColor(bodyColor)
@@ -56,6 +61,9 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
                 p.color=0xFFDBDEE2.toInt();c.drawCircle(128f,120f,85f,p);p.color=Color.BLACK
                 c.drawCircle(99f,95f,20f,p);c.drawCircle(157f,95f,20f,p)
                 p.style=Paint.Style.STROKE;p.strokeWidth=7f;c.drawArc(RectF(76f,105f,180f,175f),0f,180f,false,p);p.style=Paint.Style.FILL
+            } else if(tablet) {
+                val lenses=if(item.phone.name.contains("S9 FE"))2 else 1
+                for(i in 0 until lenses){p.color=0xFF848D9A.toInt();c.drawCircle(25f,30f+i*30f,11f,p);p.color=0xFF071222.toInt();c.drawCircle(25f,30f+i*30f,8f,p)}
             } else if(item.phone.name!="Nokia 3310") {
                 p.color=0xFF242A34.toInt();c.drawRoundRect(14f,18f,110f,145f,16f,16f,p)
                 for(i in 0..2){p.color=0xFF848D9A.toInt();c.drawCircle(45f,43f+i*40,15f,p);p.color=0xFF071222.toInt();c.drawCircle(45f,43f+i*40,11f,p)}
@@ -79,7 +87,7 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val a=Math.toRadians(yaw.toDouble());val b=Math.toRadians(pitch.toDouble())
-        val wide=if(item.phone.name.contains("Fold") || item.phone.name.startsWith("OPPO Find N")) 0.85 else 0.52
+        val wide=if(item.phone.formFactor==FormFactor.TABLET) { if(item.phone.isApple)0.695 else 0.625 } else if(item.phone.name.contains("Fold") || item.phone.name.startsWith("OPPO Find N")) 0.85 else 0.52
         val points=listOf(doubleArrayOf(-wide,-1.0,-0.07),doubleArrayOf(wide,-1.0,-0.07),doubleArrayOf(wide,1.0,-0.07),doubleArrayOf(-wide,1.0,-0.07),
             doubleArrayOf(-wide,-1.0,0.07),doubleArrayOf(wide,-1.0,0.07),doubleArrayOf(wide,1.0,0.07),doubleArrayOf(-wide,1.0,0.07)).map {
             val x=it[0]*cos(a)+it[2]*sin(a);val z=-it[0]*sin(a)+it[2]*cos(a)
@@ -94,7 +102,7 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             paint.shader=null;paint.color=if(face.index<2) bodyColor else 0xFF485362.toInt();paint.style=Paint.Style.FILL;canvas.drawPath(path,paint)
             if(face.index<2){
                 val bitmap=if(face.index==1) front else back
-                val src=floatArrayOf(0f,0f,256f,0f,256f,512f,0f,512f)
+                val src=floatArrayOf(0f,0f,bitmap.width.toFloat(),0f,bitmap.width.toFloat(),bitmap.height.toFloat(),0f,bitmap.height.toFloat())
                 val dst=positions.flatMap { listOf(it.x,it.y) }.toFloatArray();val matrix=Matrix()
                 if(matrix.setPolyToPoly(src,0,dst,0,4)){canvas.save();canvas.clipPath(path);canvas.drawBitmap(bitmap,matrix,paint);canvas.restore()}
             }

@@ -126,8 +126,27 @@ class WorldCompatibilityTest {
         assertEquals(after.world.miner.activeMs,ProgressStore(context).load().world.miner.activeMs)
         assertEquals(state.coins,after.coins)
     }
+    @Test fun newTabletsUseCorrectPlatformsAndSurviveRestart(){
+        var state=Progress(1_000_000)
+        for(model in 501..503)state=state.buyNew(model)
+        assertTrue(ProgressStore(context).save(state))
+        ActivityScenario.launch(MainActivity::class.java).use { s->
+            hub(s);click(s,"📱 Экземпляры и виртуальная ОС")
+            click(s,"Открыть экран · iPad Air 11-inch (M3)")
+            click(s,"⚙ Настройки")
+            shown(s,"Установить: Джейлбрейк (симуляция)")
+            s.onActivity { activity->
+                assertFalse(views(activity.window.decorView).filterIsInstance<TextView>().any { it.text.toString()=="Установить: LineageOS (симуляция)" })
+            }
+            s.recreate()
+            assertEquals(listOf(501,502,503),ProgressStore(context).load().owned)
+            click(s,"Главное");hub(s);click(s,"📱 Экземпляры и виртуальная ОС")
+            click(s,"Открыть экран · Samsung Galaxy Tab S9 FE+");click(s,"⚙ Настройки")
+            shown(s,"Установить: LineageOS (симуляция)")
+        }
+    }
     @Test fun visualWorldFlows(){
-        var state=Progress(2_000_000,listOf(0,1,4,5,24,500)).identifyPhones()
+        var state=Progress(2_000_000,listOf(0,1,4,5,24,500,501,502,503)).identifyPhones()
         val key=state.devices().first().key
         state=state.updateVirtualProfile(key,VirtualProfile(apps=setOf("snake","gallery","messages","wallet","clicker")))
         assertTrue(ProgressStore(context).save(state))
@@ -142,7 +161,7 @@ class WorldCompatibilityTest {
                 }
             }
             click(s,"Главное")
-            assertEquals(6,ProgressStore(context).load().owned.size)
+            assertEquals(9,ProgressStore(context).load().owned.size)
         }
     }
 }

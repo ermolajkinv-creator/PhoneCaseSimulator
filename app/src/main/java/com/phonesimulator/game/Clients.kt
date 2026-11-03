@@ -2,7 +2,7 @@ package com.phonesimulator.game
 
 enum class ServiceKind(val title: String, val level: Int, val seconds: Int) {
     REPAIR("Ремонт экрана", 1, 30), SETUP("Настройка телефона", 1, 20),
-    ROM("Кастомная прошивка Android", 2, 45), JAILBREAK("Джейлбрейк iPhone", 3, 60)
+    ROM("Кастомная прошивка Android", 2, 45), JAILBREAK("Джейлбрейк iPhone / iPad", 3, 60)
 }
 data class ClientOffer(val slot: Long, val phone: Int, val kind: ServiceKind, val cost: Int, val reward: Int, val seconds: Int) {
     val customer: String get() = listOf("Алексей", "Мария", "Денис", "Анна", "Тимур", "Елена")[(slot % 6).toInt()]
@@ -20,7 +20,7 @@ object Clients {
         val candidates = Catalog.phones.indices.filter {
             when (kind) {
                 ServiceKind.ROM -> "LineageOS (симуляция)" in Workshop.options(Catalog.phones[it])
-                ServiceKind.JAILBREAK -> Catalog.phones[it].name.startsWith("iPhone")
+                ServiceKind.JAILBREAK -> Catalog.phones[it].isApple
                 else -> true
             }
         }

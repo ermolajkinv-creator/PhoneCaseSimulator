@@ -40,6 +40,20 @@ class PhoneArtView(context: Context, private val phone: Phone,private val colorO
         val nokia=n=="Nokia 3310"
         val tones=intArrayOf(0xFFCCC4B9.toInt(),0xFF334A47.toInt(),0xFF333544.toInt(),0xFFC6BACE.toInt())
         val body=if(colorOverride!=0)colorOverride else if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
+        if(phone.formFactor==FormFactor.TABLET) {
+            // Front and rear at tablet aspect ratios; cameras stay in the bezel.
+            box(canvas,-81f,-58f,79f,116f,body,6f)
+            lens(canvas,-72f,-48f,4f)
+            if(n.contains("S9 FE")) lens(canvas,-72f,-36f,4f)
+            box(canvas,0f,-58f,81f,116f,0xFF171B23.toInt(),6f)
+            paint.shader=LinearGradient(4f,-52f,76f,53f,intArrayOf(body,0xFF243661.toInt(),phone.rarity.accent),null,Shader.TileMode.CLAMP)
+            canvas.drawRoundRect(RectF(5f,-51f,76f,51f),3f,3f,paint);paint.shader=null
+            paint.color=0xFF546476.toInt();canvas.drawCircle(3f,0f,1.2f,paint)
+            paint.color=0x885B6878.toInt();paint.textSize=7f;paint.textAlign=Paint.Align.CENTER
+            canvas.drawText(if(phone.isApple) "iPad" else if(n.startsWith("Samsung")) "SAMSUNG" else "BLACKVIEW",-42f,40f,paint)
+            paint.textAlign=Paint.Align.LEFT
+            canvas.restore();return
+        }
         box(canvas,-76f,-64f,64f,128f,body,if(n.contains("Ultra")) 3f else 10f)
         when {
             nokia -> {

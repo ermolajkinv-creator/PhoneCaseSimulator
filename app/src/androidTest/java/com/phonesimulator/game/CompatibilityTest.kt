@@ -328,13 +328,13 @@ class CompatibilityTest {
     @Test fun expandedCatalogSearchPurchaseAndPersistence() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Каталог телефонов")
-            assertText(scenario, "Показать ещё · 32 из 501")
+            assertText(scenario, "Показать ещё · 32 из ${Catalog.phones.size}")
             scenario.onActivity { activity ->
                 assertEquals(32, views(activity.window.decorView).filterIsInstance<Button>()
                     .count { it.text.toString() == "О телефоне" })
             }
-            click(scenario, "Показать ещё · 32 из 501")
-            assertText(scenario, "Показать ещё · 64 из 501")
+            click(scenario, "Показать ещё · 32 из ${Catalog.phones.size}")
+            assertText(scenario, "Показать ещё · 64 из ${Catalog.phones.size}")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
             }
@@ -343,7 +343,7 @@ class CompatibilityTest {
             scenario.recreate()
             assertEquals(listOf(499), ProgressStore(context).load().owned)
             click(scenario, "На главную")
-            click(scenario, "Википедия телефонов · 501 модель")
+            click(scenario, "Википедия телефонов · ${Catalog.modelCountLabel}")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
             }
@@ -426,7 +426,7 @@ class CompatibilityTest {
             assertText(scenario, "Палас улыбашкэ")
             assertText(scenario, "Ежедневные задания")
             assertText(scenario, "Клиенты и сервис")
-            click(scenario, "Википедия телефонов · 501 модель")
+            click(scenario, "Википедия телефонов · ${Catalog.modelCountLabel}")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("Палас улыбашкэ")
             }

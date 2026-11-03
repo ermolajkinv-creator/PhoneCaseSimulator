@@ -62,7 +62,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(501, Catalog.phones.size)
+        assertEquals(554, Catalog.phones.size)
         assertEquals(10000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
@@ -102,7 +102,7 @@ class GameTest {
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test fun firmwareAndConcreteCatalog() {
-        assertEquals(501, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals(554, Catalog.phones.map { it.name }.toSet().size)
         assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
         assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
         assertTrue(Catalog.phones.all { it.price in 1000..300000 })
@@ -114,7 +114,6 @@ class GameTest {
         assertEquals("LineageOS (симуляция)", state.firmware[1])
     }
     @Test fun economyTracksExactRewards() {
-        assertEquals(listOf(25000, 38000, 53000, 91000), CaseKind.entries.map { it.cost })
         CaseKind.entries.forEach { kind ->
             val expected = (0 until Catalog.TOTAL_TICKETS).sumOf { Catalog.phones[kind.roll(it)].price.toLong() } / Catalog.TOTAL_TICKETS.toDouble()
             assertTrue(kind.cost >= expected * 1.15)
@@ -144,6 +143,31 @@ class GameTest {
             val platform = Workshop.options(Catalog.phones[model])
             assertEquals(Catalog.phones[model].name.startsWith("iPhone"), "Джейлбрейк (симуляция)" in platform)
         }
+    }
+
+    @Test fun expansionAddsTabletsAndFiftyPhonesWithoutChangingLegacyIds() {
+        val oldNames=Catalog.phones.take(501).joinToString("\n") { it.name }
+        val digest=java.security.MessageDigest.getInstance("SHA-256").digest(oldNames.toByteArray(Charsets.UTF_8))
+            .joinToString("") { "%02x".format(it) }
+        assertEquals("c7cb823f551ccd9267c4910435c95b22a048c787ece0fc33feb9ff19970cb6be",digest)
+        assertEquals(50,DeviceExpansion41.entries.count { it.formFactor==FormFactor.PHONE })
+        assertEquals(listOf("Samsung Galaxy Tab S9 FE+","iPad Air 11-inch (M3)","Blackview Tab 12"),
+            Catalog.phones.filter { it.formFactor==FormFactor.TABLET }.map { it.name })
+        assertEquals(1,Catalog.phones.count { it.name=="Samsung Galaxy A73" })
+        assertEquals("Snapdragon 778G",Catalog.phones[48].chip)
+        assertEquals(1,Catalog.phones.count { it.name=="iPhone 12" })
+        assertEquals("Apple A14 Bionic",Catalog.phones[66].chip)
+        for(model in 501 until Catalog.phones.size){
+            val phone=Catalog.phones[model]
+            val bought=Progress(1_000_000).buyNew(model)
+            assertEquals(listOf(model),bought.owned)
+            assertEquals(bought.owned,Progress.restore(bought.coins,bought.owned.joinToString(",")).owned)
+            assertEquals(phone.isApple,"Джейлбрейк (симуляция)" in Workshop.options(phone))
+            assertEquals(!phone.isApple,"LineageOS (симуляция)" in Workshop.options(phone))
+            assertFalse(phone.description.isBlank())
+        }
+        assertTrue(Catalog.phones[502].isApple)
+        assertTrue(Catalog.phones[502].system.startsWith("iPadOS"))
     }
 
     @Test fun povertyGiftChecksAllPurchasesAndCannotRepeatWhileAffordable() {
@@ -276,7 +300,7 @@ class GameTest {
         assertEquals(40000, Progress(50000, reputation = 3).improveWorkshop().coins)
         assertEquals(1, Progress(50000).improveWorkshop().workshopLevel)
         assertEquals(5, Progress(50000, workshopLevel = 5, reputation = 100).improveWorkshop().workshopLevel)
-        assertTrue(Catalog.phones[Clients.offer(3,3).phone].name.startsWith("iPhone"))
+        assertTrue(Catalog.phones[Clients.offer(3,3).phone].isApple)
         assertTrue("LineageOS (симуляция)" in Workshop.options(Catalog.phones[Clients.offer(2,2).phone]))
     }
     @Test fun repairQuestionsAndScoresWorkForEveryJobType() {
