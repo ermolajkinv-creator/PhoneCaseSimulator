@@ -12,6 +12,7 @@ object WorldCodec {
     fun encode(w: WorldData): String {
         if(w==WorldData()) return ""
         return JSONObject().apply {
+            put("empire",JSONObject().put("values",JSONObject(w.empire.values)).put("journal",JSONArray(w.empire.journal)))
             put("traits",JSONArray().apply { w.traits.forEach { put(trait(it)) } });put("serial",w.serial)
             put("profiles",JSONObject().apply { w.profiles.forEach { (key,p) ->
                 put(key,JSONObject().put("apps",strings(p.apps)).put("color",p.color).put("wallpaper",p.wallpaper)
@@ -82,10 +83,16 @@ object WorldCodec {
         val maxId=(traits.map { it.uid }+products.map { it.id }+auctions.map { it.id }+auctions.map { it.device.traits.uid }).maxOrNull() ?: 0L
         val serial=maxOf(j.optLong("serial",1).coerceAtLeast(1),if(maxId<Long.MAX_VALUE) maxId+1 else Long.MAX_VALUE)
         val miner=j.optJSONObject("miner") ?: JSONObject()
+        val empireJson=j.optJSONObject("empire") ?: JSONObject()
+        val empireValues=empireJson.optJSONObject("values") ?: JSONObject()
+        val empireLog=empireJson.optJSONArray("journal") ?: JSONArray()
+        val empire=Empire(empireValues.keys().asSequence().take(64).filter { it.matches(Regex("[a-zA-Z]{1,24}")) }
+            .associateWith { empireValues.optLong(it,0).coerceIn(0,10_000_000_000_000L) },
+            (maxOf(0,empireLog.length()-40) until empireLog.length()).map { empireLog.optString(it).take(200) })
         WorldData(traits,serial,profiles,j.optInt("tokens",0).coerceAtLeast(0),readStrings(j,"albums",20),readStrings(j,"skins"),
             auctions.filter { it.id !in settled },settled,company,Miner(miner.optString("key","").take(80),miner.optLong("activeMs",0).coerceIn(0,1800000)),
             j.optLong("battleAt",0).coerceAtLeast(0),j.optInt("wins",0).coerceAtLeast(0),j.optInt("losses",0).coerceAtLeast(0),
-            readStrings(j,"codes",20),readStrings(j,"seasonalSkins",200),j.optLong("revision",0).coerceAtLeast(0))
+            readStrings(j,"codes",20),readStrings(j,"seasonalSkins",200),j.optLong("revision",0).coerceAtLeast(0),empire)
     } catch (_: Exception) { WorldData() }
 
     fun restore(snapshot: WorldData,current: WorldData): WorldData {

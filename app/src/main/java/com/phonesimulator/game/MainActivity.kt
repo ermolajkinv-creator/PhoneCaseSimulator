@@ -202,7 +202,7 @@ class MainActivity : Activity() {
             orientation = LinearLayout.HORIZONTAL; background = shape()
             setPadding(dp(4), dp(4), dp(4), dp(4))
         }
-        listOf("Главное" to "home", "Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
+        listOf("Главное" to "home", "Новое" to "new", "Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
             "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").forEach { (name, route) ->
             dock.addView(Button(this).apply {
                 text = name; textSize = if(resources.displayMetrics.widthPixels/resources.displayMetrics.density<360)9f else 10f; isAllCaps = false
@@ -323,6 +323,7 @@ class MainActivity : Activity() {
 
     private fun navigate(destination: String) { animator?.cancel(); animator = null;worldScreens.beforeNavigate(); page = destination; render() }
     private fun render() {
+        if(page=="new" || page.startsWith("new_")){EmpireScreens.render(this,page);return}
         if(page.startsWith("world_")){worldScreens.render(page);return}
         when (page) {
             "expansion" -> expansionHub()
@@ -388,6 +389,7 @@ class MainActivity : Activity() {
                 button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
+                button("Новое в 4.5 · 25 функций") { navigate("new") }
                 button("Новое в 3.0") { navigate("expansion") }
                 button("Мир телефонов 4.0") { navigate("world_hub") }
                 button("Клиенты и сервис") { navigate("clients") }
