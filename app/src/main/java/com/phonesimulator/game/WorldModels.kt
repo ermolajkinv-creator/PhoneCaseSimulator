@@ -39,7 +39,7 @@ data class WorldData(val traits: List<PhoneTraits> = emptyList(), val serial: Lo
     val auctions: List<AuctionLot> = emptyList(), val settledLots: Set<Long> = emptySet(),
     val company: Company = Company(), val miner: Miner = Miner(),
     val lastBattleAt: Long = 0L, val npcWins: Int = 0, val npcLosses: Int = 0,
-    val codes: Set<String> = emptySet(), val seasonalSkins: Set<String> = emptySet(), val economyRevision: Long = 0L, val empire: Empire = Empire())
+    val codes: Set<String> = emptySet(), val seasonalSkins: Set<String> = emptySet(), val economyRevision: Long = 0L, val empire: Empire = Empire(), val look: AppLook = AppLook())
 fun WorldData.bumpEconomy()=copy(economyRevision=if(economyRevision==Long.MAX_VALUE) Long.MAX_VALUE else economyRevision+1)
 
 fun Progress.traitsAt(position: Int): PhoneTraits = world.traits.getOrNull(position) ?: PhoneTraits()

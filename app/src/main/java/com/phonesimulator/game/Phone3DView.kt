@@ -93,7 +93,7 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             val x=it[0]*cos(a)+it[2]*sin(a);val z=-it[0]*sin(a)+it[2]*cos(a)
             doubleArrayOf(x,it[1]*cos(b)-z*sin(b),it[1]*sin(b)+z*cos(b))
         }
-        val pulse=if(style.animation=="pulse") 1f+sin(System.currentTimeMillis()/500.0).toFloat()*0.025f else 1f
+        val pulse=if(GameMotion.full(context) && style.animation=="pulse") 1f+sin(System.currentTimeMillis()/500.0).toFloat()*0.025f else 1f
         val size=minOf(width/2.4f,height/2.7f)*zoom*pulse
         fun project(i: Int): PointF { val p=points[i];val perspective=4.0/(4.0-p[2]);return PointF(width/2f+(p[0]*perspective*size).toFloat(),height/2f+(p[1]*perspective*size).toFloat()) }
         val faces=listOf(listOf(1,0,3,2),listOf(4,5,6,7),listOf(0,1,5,4),listOf(1,2,6,5),listOf(2,3,7,6),listOf(3,0,4,7))
@@ -108,10 +108,10 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             }
             paint.style=Paint.Style.STROKE;paint.strokeWidth=2f;paint.color=0xFFAEBACD.toInt();canvas.drawPath(path,paint);paint.style=Paint.Style.FILL
         }
-        if(style.animation=="sparkle"){
+        if(GameMotion.full(context) && style.animation=="sparkle"){
             paint.color=0xFFFFE599.toInt();for(i in 0..9){val phase=System.currentTimeMillis()/400.0+i*1.7
                 canvas.drawCircle(width/2f+sin(phase).toFloat()*width*0.35f,height/2f+cos(phase*0.8).toFloat()*height*0.35f,2f+sin(phase).toFloat(),paint)}
         }
-        if(style.animation in listOf("pulse","sparkle") && isAttachedToWindow && windowVisibility==VISIBLE) postInvalidateOnAnimation()
+        if(GameMotion.full(context) && style.animation in listOf("pulse","sparkle") && isAttachedToWindow && windowVisibility==VISIBLE) postInvalidateOnAnimation()
     }
 }

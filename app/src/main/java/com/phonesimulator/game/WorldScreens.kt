@@ -29,13 +29,13 @@ internal class WorldScreens(val host: MainActivity) {
     var duelId=0L
     var duelResult=""
     var npcResult=""
-    val light=0xFFDCDFF5.toInt()
+    val light get()=host.look.muted
     fun text(value: String,size: Float=17f,parent: LinearLayout=root,color: Int=Color.WHITE)=host.label(value,size,color,parent)
     fun button(value: String,parent: LinearLayout=root,action: ()->Unit)=host.button(value,parent,action)
     fun panel()=host.glassPanel()
     fun begin(title: String){host.screen(title)}
     fun go(route: String)=host.worldGo(route)
-    fun back(){button("Мир телефонов 4.0"){go("world_hub")};button("Главное меню"){go("home")}}
+    fun back(){button("Мир телефонов"){go("world_hub")};button("Главное меню"){go("home")}}
     fun toast(value: String){Toast.makeText(host,value,Toast.LENGTH_SHORT).show()}
     fun input(hint: String,value: String="",parent: LinearLayout=root,numeric: Boolean=false): EditText = EditText(host).apply {
         this.hint=hint;setText(value);setTextColor(Color.WHITE);setHintTextColor(light);isSingleLine=true
@@ -108,7 +108,7 @@ internal class WorldScreens(val host: MainActivity) {
         }
     }
     fun hub(){
-        begin("Мир телефонов 4.0")
+        begin("Мир телефонов")
         text("Новые возможности для коллекции. Все деньги виртуальные; игра работает офлайн.",parent=root,color=light)
         listOf("📱 Экземпляры и виртуальная ОС" to "world_inventory","🏆 Рейтинг коллекционеров" to "world_rank",
             "📈 Биржа смартфонов" to "world_exchange","🛠 Ремонт и мутации" to "world_inventory",
@@ -121,7 +121,7 @@ internal class WorldScreens(val host: MainActivity) {
     }
     fun deviceCard(item: DeviceSnapshot,parent: LinearLayout=root,actions: Boolean=true){
         val box=LinearLayout(host).apply { orientation=LinearLayout.VERTICAL;setPadding(16,12,16,12)
-            background=android.graphics.drawable.GradientDrawable().apply{setColor(0xFF171F31.toInt());setStroke(2,item.traits.mutation.accent);cornerRadius=24f};parent.addView(this) }
+            background=host.themedPanel(if(item.traits.mutation==Mutation.NORMAL)item.phone.rarity.accent else item.traits.mutation.accent);parent.addView(this) }
         text(item.phone.name,22f,box);text("${item.phone.rarity.title} · ${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",16f,box,item.traits.mutation.accent)
         text("Оценка: ${item.value} ₽",18f,box)
         val color=p.virtualProfile(item.key).color.let { if(it!=0)it else if(item.traits.mutation!=Mutation.NORMAL)item.traits.mutation.accent else item.company?.color ?: 0 }

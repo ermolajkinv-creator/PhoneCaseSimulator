@@ -64,8 +64,8 @@ internal fun WorldScreens.phoneHome(){
         if(route!=null)icon(VirtualApps.titles[app].orEmpty()){go(route)}
     }
     if(profile.apps.isEmpty())text("Доступны базовые настройки. Новые приложения открываются в магазине внутри настроек.",16f,frame,ink)
-    if(profile.animation=="pulse")frame.animate().alpha(0.65f).setDuration(250).withEndAction {frame.animate().alpha(1f).setDuration(250).start()}.start()
-    if(profile.animation=="sparkle"){
+    if(GameMotion.full(host) && profile.animation=="pulse")frame.animate().alpha(0.65f).setDuration(250).withEndAction {frame.animate().alpha(1f).setDuration(250).start()}.start()
+    if(GameMotion.full(host) && profile.animation=="sparkle"){
         val stars=text("✦  ✧  ✦  ✧  ✦",24f,frame,ink)
         fun twinkle(){if(!stars.isAttachedToWindow)return;stars.animate().alpha(0.25f).setDuration(650).withEndAction {
             if(stars.isAttachedToWindow)stars.animate().alpha(1f).setDuration(650).withEndAction{twinkle()}.start() }.start()}

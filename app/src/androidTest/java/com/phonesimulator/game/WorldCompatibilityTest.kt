@@ -26,7 +26,7 @@ class WorldCompatibilityTest {
     private fun shown(s: ActivityScenario<MainActivity>,text: String){s.onActivity { activity->
         assertTrue("Missing: $text",views(activity.window.decorView).filterIsInstance<TextView>().any { it.text.toString()==text })
     }}
-    private fun hub(s: ActivityScenario<MainActivity>){click(s,"Мир телефонов 4.0")}
+    private fun hub(s: ActivityScenario<MainActivity>){click(s,"Мир телефонов")}
 
     @Test fun virtualPhoneAppsStylesSnakeAnd3dPersist(){
         val start=Progress(200000,listOf(0,1)).identifyPhones();val key=start.devices()[0].key
@@ -152,7 +152,7 @@ class WorldCompatibilityTest {
         state=state.updateVirtualProfile(key,VirtualProfile(apps=setOf("snake","gallery","messages","wallet","clicker")))
         assertTrue(ProgressStore(context).save(state))
         ActivityScenario.launch(MainActivity::class.java).use { s->
-            hub(s);shown(s,"Мир телефонов 4.0")
+            hub(s);shown(s,"Мир телефонов")
             click(s,"📱 Экземпляры и виртуальная ОС");click(s,"Открыть экран · Nokia 3310")
             shown(s,"NOKIA • МЕНЮ");click(s,"3D-просмотр");click(s,"Повернуть на 90°")
             s.onActivity { activity->

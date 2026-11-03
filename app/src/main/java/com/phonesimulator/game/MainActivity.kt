@@ -50,6 +50,15 @@ class MainActivity : Activity() {
     private val miningTick = object : Runnable {
         override fun run() { updateMining();miningHandler.postDelayed(this,1000L) }
     }
+    internal val look: AppLook get() = progress.world.look.valid()
+    internal fun themedPanel(accent:Int=look.accentColor)=look.panel(resources.displayMetrics.density,accent)
+    internal fun applyLook(next:AppLook){
+        val scroll=root.parent?.parent as? ScrollView
+        val y=scroll?.scrollY ?: 0
+        if(!persist(progress.copy(world=progress.world.copy(look=next.valid())),"Оформление игры"))return
+        render()
+        (root.parent?.parent as? ScrollView)?.let { it.post { it.scrollTo(0,y) } }
+    }
     internal val gameState: Progress get() = progress
     internal val worldRoot: LinearLayout get() = root
     internal val currentRoute: String get() = page
@@ -72,9 +81,9 @@ class MainActivity : Activity() {
         }
         miningStamp=now
     }
-    private val ink = Color.rgb(10, 14, 20)
-    private val muted = Color.rgb(221, 216, 245)
-    private val mint = Color.rgb(246, 232, 255)
+    private val ink get() = look.base
+    private val muted get() = look.muted
+    private val mint get() = look.accentColor
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -138,18 +147,13 @@ class MainActivity : Activity() {
     }
 
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
-    private fun shape(color: Int = Color.WHITE, accent: Int = Color.WHITE) = GradientDrawable(
-        GradientDrawable.Orientation.TL_BR,
-        intArrayOf(0xFF343940.toInt(), 0xEE141821.toInt(), 0xEE20232E.toInt())
-    ).apply {
-        cornerRadius = dp(34).toFloat()
-        setStroke(dp(1), Color.argb(150, Color.red(accent), Color.green(accent), Color.blue(accent)))
-    }
+    private fun shape(color: Int = Color.WHITE, accent: Int = look.accentColor) =
+        look.panel(resources.displayMetrics.density,accent,strong=color!=Color.WHITE)
 
     internal fun label(text: String, size: Float = 18f, color: Int = Color.WHITE,
                       parent: LinearLayout = root): TextView = TextView(this).apply {
         this.text = text
-        textSize = size
+        textSize = size*look.textScale
         setTextColor(color)
         setPadding(dp(8), dp(10), dp(8), dp(10))
         parent.addView(this, LinearLayout.LayoutParams(-1, -2))
@@ -158,15 +162,15 @@ class MainActivity : Activity() {
     internal fun button(text: String, parent: LinearLayout = root, action: () -> Unit): Button =
         Button(this).apply {
             this.text = text
-            textSize = 16f
+            textSize = 16f*look.textScale
             isAllCaps = false
             setTextColor(Color.WHITE)
             setTypeface(null, Typeface.BOLD)
             background = RippleDrawable(ColorStateList.valueOf(0x40FFFFFF), shape(), shape())
-            minHeight = dp(56)
+            minHeight = dp(52)
             setPadding(dp(16), dp(12), dp(16), dp(12))
             parent.addView(this, LinearLayout.LayoutParams(-1, -2).apply {
-                topMargin = dp(10); bottomMargin = dp(6)
+                topMargin = dp(7); bottomMargin = dp(5)
             })
             GameMotion.press(this)
             setOnClickListener { action() }
@@ -174,8 +178,7 @@ class MainActivity : Activity() {
 
     internal fun screen(title: String,compact: Boolean=false) {
         val scroll = ScrollView(this).apply {
-            background = GradientDrawable(GradientDrawable.Orientation.BL_TR,
-                intArrayOf(0xFF050608.toInt(), 0xFF101624.toInt(), 0xFF050608.toInt()))
+            background = look.backdrop()
             isFillViewport = true
         }
         val container = LinearLayout(this).apply {
@@ -184,7 +187,7 @@ class MainActivity : Activity() {
         }
         root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(dp(20), dp(18), dp(20), dp(24))
+            setPadding(dp(18), dp(16), dp(18), dp(24))
         }
         container.addView(root, LinearLayout.LayoutParams(
             minOf(resources.displayMetrics.widthPixels, dp(640)), -2))
@@ -208,10 +211,13 @@ class MainActivity : Activity() {
             dock.addView(row,LinearLayout.LayoutParams(-1,-2))
             tabs.forEach { (name, route) ->
             row.addView(Button(this).apply {
-                text = name; textSize = 12f; isAllCaps = false
+                text = name; textSize = 12f*look.textScale; isAllCaps = false
                 minWidth = 0; minimumWidth = 0; setPadding(dp(2),0,dp(2),0)
-                setTextColor(if (page == route) 0xFF95B6FF.toInt() else muted)
-                background = if (page == route) shape() else null
+                val selected=page==route || (route=="new" && page.startsWith("new_")) ||
+                    (route=="profile" && page=="appearance") || (route=="cases" && page in listOf("result","world_batch"))
+                setTextColor(if(selected) look.accentColor else muted)
+                background=if(selected)look.panel(resources.displayMetrics.density,strong=true) else null
+                GameMotion.press(this)
                 setOnClickListener { navigate(route) }
                 contentDescription = "Раздел $name"
             }, LinearLayout.LayoutParams(0, dp(48), 1f))
@@ -234,11 +240,14 @@ class MainActivity : Activity() {
         setContentView(frame)
         frame.requestApplyInsets()
         GameMotion.enter(root)
-        if(!compact)label("P H O N E   L A B", 14f, mint).apply {
+        if(!compact)label("PHONE LAB  /  4.5.1", 12f, mint).apply {
             letterSpacing = 0.14f
         }
-        label(title, if(compact)22f else 30f).setTypeface(null, Typeface.BOLD)
-        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", if(compact)13f else 16f, muted)
+        label(title, if(compact)22f else 28f).setTypeface(null, Typeface.BOLD)
+        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", if(compact)13f else 16f, muted).apply {
+            background=look.panel(resources.displayMetrics.density)
+            setPadding(dp(12),dp(10),dp(12),dp(10))
+        }
         if(pendingCoinsDelta!=0L){
             val delta=pendingCoinsDelta;pendingCoinsDelta=0L
             val feedback=label(if(delta>0)"+ $delta ₽" else "− ${-delta} ₽",16f,if(delta>0)0xFF7CE8BB.toInt() else 0xFFFFBF8B.toInt())
@@ -327,6 +336,7 @@ class MainActivity : Activity() {
 
     private fun navigate(destination: String) { animator?.cancel(); animator = null;worldScreens.beforeNavigate(); page = destination; render() }
     private fun render() {
+        if(page=="appearance"){AppearanceScreen.render(this);return}
         if(page=="new" || page.startsWith("new_")){EmpireScreens.render(this,page);return}
         if(page.startsWith("world_")){worldScreens.render(page);return}
         when (page) {
@@ -387,15 +397,16 @@ class MainActivity : Activity() {
                 button("Ежедневные задания") { navigate("quests") }
                 button("Ежедневная награда") { navigate("daily") }
                 button("Каталог телефонов") { navigate("catalog") }
+                button("Оформление игры") { navigate("appearance") }
+                button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 label("Каждый кейс — новый шанс", 22f)
                 phoneGrid(Catalog.ultraIndices, root)
                 label("Fold 8 Ultra — 0,1% · Палас улыбашкэ — 0,15%", 17f, muted)
-                button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
                 button("Новое в 4.5 · 25 функций") { navigate("new") }
                 button("Новое в 3.0") { navigate("expansion") }
-                button("Мир телефонов 4.0") { navigate("world_hub") }
+                button("Мир телефонов") { navigate("world_hub") }
                 button("Клиенты и сервис") { navigate("clients") }
                 button("Мини-игра ремонта") { navigate("repair") }
                 button("Мастерская · прошивки") { navigate("workshop") }
@@ -806,8 +817,9 @@ class MainActivity : Activity() {
         val earned = progress.badges + Progression.goals(progress)
         if (earned != progress.badges) persist(progress.copy(badges = earned))
         screen("Профиль")
+        button("Оформление игры") { navigate("appearance") }
         button("Новое в 3.0") { navigate("expansion") }
-        button("Мир телефонов 4.0") { navigate("world_hub") }
+        button("Мир телефонов") { navigate("world_hub") }
         button("Игроки на этом телефоне") { navigate("world_players") }
         label(progress.nickname, 27f)
         val input = searchField("Имя игрока", progress.nickname) { }
@@ -1114,7 +1126,7 @@ class MainActivity : Activity() {
     internal fun finishOpening(){animator?.end()}
     internal fun playCaseOpening(reel: CaseOpeningView,onFrame: (Float)->Unit={},onReveal: ()->Unit){
         animator?.cancel();animator=null
-        if(!GameMotion.enabled()){onReveal();return}
+        if(!GameMotion.full(this)){onReveal();return}
         animator=ValueAnimator.ofFloat(0f,1f).apply {
             duration=2400L;interpolator=DecelerateInterpolator(1.4f)
             addUpdateListener { val fraction=it.animatedValue as Float;reel.progress=fraction;onFrame(fraction) }

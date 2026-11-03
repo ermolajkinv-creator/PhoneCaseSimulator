@@ -16,7 +16,7 @@ internal class RewardBurstView(context: Context,private val rarity: Rarity): Vie
     init { tag="reward-burst";importantForAccessibility=IMPORTANT_FOR_ACCESSIBILITY_NO }
     override fun onAttachedToWindow(){super.onAttachedToWindow();start()}
     private fun start(){
-        if(!GameMotion.enabled() || windowVisibility!=VISIBLE || animation!=null)return
+        if(!GameMotion.full(context) || windowVisibility!=VISIBLE || animation!=null)return
         animation=ValueAnimator.ofFloat(0f,1f).apply {
             duration=1100L
             addUpdateListener { phase=it.animatedValue as Float;invalidate() }
