@@ -30,7 +30,7 @@ private fun appearance(item: DeviceSnapshot,profile: VirtualProfile): String {
 internal fun WorldScreens.phoneHome(){
     val item=requirePhone() ?: return
     val profile=p.virtualProfile(item.key);val theme=appearance(item,profile)
-    begin("Экран · ${item.phone.name}")
+    host.screen("Экран · ${item.phone.name}",compact=true)
     val frame=LinearLayout(host).apply {
         orientation=LinearLayout.VERTICAL;setPadding(20,20,20,20)
         background=GradientDrawable(GradientDrawable.Orientation.TL_BR,when(theme){
@@ -118,7 +118,7 @@ internal fun WorldScreens.gallery(){
     (0..5).forEach { wall->button("Обои ${wall+1}"){update(p.customize(item.key,"wallpaper",wall.toString()),"Обои")} }
     text("Темы и скины",22f)
     val names=mapOf("default" to "По умолчанию","pda" to "Классический КПК","retro" to "Пиксельный монохром","holo" to "Ранний Android","ios" to "Ранний iOS","galaxy" to "Галактика","glitch" to "Сбой","rainbow" to "Радуга","engineer" to "Мастер сервиса")
-    (listOf("default","pda","retro","holo","ios","galaxy")+p.world.skins+p.world.seasonalSkins).distinct().forEach { theme ->
+    (VirtualApps.themes+p.world.skins+p.world.seasonalSkins).distinct().forEach { theme ->
         button("Тема: ${names[theme] ?: theme}"){update(p.customize(item.key,"theme",theme),"Оформление телефона")}
     }
     text("Анимация",22f)
@@ -188,10 +188,20 @@ internal fun WorldScreens.snakeGame(){
 }
 internal fun WorldScreens.preview(){
     val item=requirePhone() ?: return
-    begin("3D · ${item.phone.name}")
-    text("Процедурная стилизованная 3D-модель: тяни пальцем для вращения на 360°, двумя пальцами меняй масштаб. Это не фотограмметрия точного корпуса.",16f,color=light)
+    host.screen("3D · ${item.phone.name}",compact=true)
+    text("Стилизованная 3D-модель. Вращай пальцем, масштабируй двумя. Не точная копия корпуса.",14f,color=light)
     val viewer=Phone3DView(host,item,p.virtualProfile(item.key)).apply {tag="phone3d"}
-    root.addView(viewer,LinearLayout.LayoutParams(-1,(380*host.resources.displayMetrics.density).toInt()))
-    button("Повернуть на 90°"){viewer.rotate()};button("Приблизить"){viewer.zoomBy(1.2f)};button("Отдалить"){viewer.zoomBy(0.8f)};button("Сбросить камеру"){viewer.reset()}
+    val density=host.resources.displayMetrics.density
+    fun controls(first: String,second: String,a: ()->Unit,b: ()->Unit){
+        val row=LinearLayout(host).apply { orientation=LinearLayout.HORIZONTAL;root.addView(this) }
+        listOf(first to a,second to b).forEach { (label,action)->button(label,row,action).apply{
+            textSize=12f;setPadding((4*density).toInt(),0,(4*density).toInt(),0)
+            layoutParams=LinearLayout.LayoutParams(0,(48*density).toInt(),1f).apply{setMargins(2,4,2,4)}
+        }}
+    }
+    controls("Повернуть на 90°","Сбросить камеру",{viewer.rotate()},{viewer.reset()})
+    controls("Приблизить","Отдалить",{viewer.zoomBy(1.2f)},{viewer.zoomBy(0.8f)})
+    val height=(host.resources.displayMetrics.heightPixels/density*0.37f).coerceIn(200f,340f)
+    root.addView(viewer,LinearLayout.LayoutParams(-1,(height*density).toInt()))
     button("Экран телефона"){go("world_phone")};back()
 }

@@ -135,6 +135,12 @@ class WorldCompatibilityTest {
             hub(s);shown(s,"Мир телефонов 4.0")
             click(s,"📱 Экземпляры и виртуальная ОС");click(s,"Открыть экран · Nokia 3310")
             shown(s,"NOKIA • МЕНЮ");click(s,"3D-просмотр");click(s,"Повернуть на 90°")
+            s.onActivity { activity->
+                for(label in listOf("Повернуть на 90°","Сбросить камеру","Приблизить","Отдалить")){
+                    val button=views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString()==label }
+                    assertTrue("Camera control must be visible: $label",button.getGlobalVisibleRect(android.graphics.Rect()))
+                }
+            }
             click(s,"Главное")
             assertEquals(6,ProgressStore(context).load().owned.size)
         }

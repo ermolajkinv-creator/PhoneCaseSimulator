@@ -90,6 +90,7 @@ class WorldTest {
         assertEquals(paid.coins,token.coins);assertEquals(0,token.world.appTokens)
         assertTrue("gallery" in token.virtualProfile(b).apps)
         assertEquals(token,token.customize(a,"theme","glitch"))
+        assertEquals(token,token.customize(a,"theme","retro"))
         val colored=token.customize(b,"color","2")
         assertEquals(VirtualApps.colors[2],colored.virtualProfile(b).color)
         assertEquals(colored,colored.customize(b,"color","2"))

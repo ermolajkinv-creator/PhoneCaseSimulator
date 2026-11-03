@@ -36,7 +36,7 @@ object VirtualApps {
     val prices = linkedMapOf("snake" to 3000,"clicker" to 2000,"wallet" to 10000,"messages" to 1000,"gallery" to 2000)
     val titles = mapOf("snake" to "Змейка","clicker" to "Кликер","wallet" to "Крипто-кошелёк","messages" to "Сообщения","gallery" to "Галерея")
     val colors = listOf(0xFFC4C7D0.toInt(),0xFF67B7A4.toInt(),0xFFBB8DF3.toInt(),0xFFEB9B50.toInt(),0xFF5188D8.toInt(),0xFFF18FB0.toInt())
-    val themes = listOf("default","pda","retro","holo","ios","galaxy","glitch","rainbow")
+    val themes = listOf("default","pda","holo","ios","galaxy")
     val animations = listOf("none","pulse","sparkle")
 }
 object AuctionRules {
@@ -150,7 +150,7 @@ fun Progress.customize(key: String,kind: String,value: String): Progress {
     val next=when(kind) {
         "color" -> { val i=value.toIntOrNull() ?: return this; if(i !in VirtualApps.colors.indices) return this;profile.copy(color=VirtualApps.colors[i]) }
         "wallpaper" -> { val i=value.toIntOrNull() ?: return this;if(i !in 0..5) return this;profile.copy(wallpaper=i) }
-        "theme" -> { if(value !in listOf("default","pda","retro","holo","ios","galaxy") && value !in world.skins && value !in world.seasonalSkins) return this;profile.copy(theme=value) }
+        "theme" -> { if(value !in VirtualApps.themes && value !in world.skins && value !in world.seasonalSkins) return this;profile.copy(theme=value) }
         "animation" -> { if(value !in VirtualApps.animations) return this;profile.copy(animation=value) }
         else -> return this
     }

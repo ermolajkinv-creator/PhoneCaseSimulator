@@ -169,7 +169,7 @@ class MainActivity : Activity() {
             setOnClickListener { action() }
         }
 
-    internal fun screen(title: String) {
+    internal fun screen(title: String,compact: Boolean=false) {
         val scroll = ScrollView(this).apply {
             background = GradientDrawable(GradientDrawable.Orientation.BL_TR,
                 intArrayOf(0xFF050608.toInt(), 0xFF101624.toInt(), 0xFF050608.toInt()))
@@ -202,7 +202,7 @@ class MainActivity : Activity() {
         listOf("Главное" to "home", "Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
             "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").forEach { (name, route) ->
             dock.addView(Button(this).apply {
-                text = name; textSize = 10f; isAllCaps = false
+                text = name; textSize = if(resources.displayMetrics.widthPixels/resources.displayMetrics.density<360)9f else 10f; isAllCaps = false
                 minWidth = 0; minimumWidth = 0; setPadding(dp(2),0,dp(2),0)
                 setTextColor(if (page == route) 0xFF95B6FF.toInt() else muted)
                 background = if (page == route) shape() else null
@@ -226,11 +226,11 @@ class MainActivity : Activity() {
         }
         setContentView(frame)
         frame.requestApplyInsets()
-        label("P H O N E   L A B", 14f, mint).apply {
+        if(!compact)label("P H O N E   L A B", 14f, mint).apply {
             letterSpacing = 0.14f
         }
-        label(title, 30f).setTypeface(null, Typeface.BOLD)
-        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", 16f, muted)
+        label(title, if(compact)22f else 30f).setTypeface(null, Typeface.BOLD)
+        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", if(compact)13f else 16f, muted)
         if (title != "Открываем кейс…" && progress.giftCooldownRemaining() > 0L) {
             val countdown = label("", 16f, muted)
             countdown.post(object : Runnable {
@@ -509,6 +509,8 @@ class MainActivity : Activity() {
             if (upgradeTarget !in targets) upgradeTarget = targets.first()
             val panel = glassPanel()
             infoRow("Исходный", Catalog.phones[upgradeSource].name, panel)
+            val source=DeviceSnapshot(upgradeSource,progress.traitsAt(progress.owned.indexOf(upgradeSource)))
+            infoRow("Будет израсходован", "${source.traits.mutation.title} · ${Market.conditions[source.traits.condition]} · ${source.value} ₽", panel)
             infoRow("Цель", Catalog.phones[upgradeTarget].name, panel)
             val chance = progress.upgradeChance(upgradeSource, upgradeTarget)
             label("Шанс: ${chance/10.0}%", 30f, parent = panel)
