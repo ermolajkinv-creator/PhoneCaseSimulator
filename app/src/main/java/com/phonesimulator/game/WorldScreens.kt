@@ -43,7 +43,7 @@ internal class WorldScreens(val host: MainActivity) {
         filters=arrayOf(android.text.InputFilter.LengthFilter(60));parent.addView(this,LinearLayout.LayoutParams(-1,-2))
     }
     fun update(next: Progress,reason: String,redraw: Boolean=true): Boolean {
-        if(next==p){toast("Действие недоступно: проверь деньги, условия или таймер");return false}
+        if(next==p){toast("Действие недоступно: проверь баланс, место в кошельке, условия или таймер");return false}
         if(!host.worldWrite(next,reason))return false
         if(redraw)go(host.currentRoute)
         return true

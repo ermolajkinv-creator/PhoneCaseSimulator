@@ -91,5 +91,6 @@ fun Progress.money(delta: Long): Progress = copy(coins=when {
 },
     world=if(delta!=0L)world.bumpEconomy() else world)
 fun Progress.virtualProfile(key: String) = world.profiles[key] ?: VirtualProfile()
+fun Progress.canCredit(amount: Long)=amount>=0L && amount<=Int.MAX_VALUE.toLong()-coins
 fun Progress.updateVirtualProfile(key: String, value: VirtualProfile): Progress =
     copy(world=world.copy(profiles=world.profiles+(key to value)).bumpEconomy())

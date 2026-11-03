@@ -181,6 +181,20 @@ class WorldTest {
         val next=played.fightNpc(key,2,now+60000,10).first
         assertEquals(2,next.world.npcWins+next.world.npcLosses)
     }
+    @Test fun fullWalletDoesNotConsumeItemsOrOneTimePayouts() {
+        val full=phone().copy(coins=Int.MAX_VALUE)
+        val key=full.devices().first().key
+        assertEquals(full,full.sellDevice(key))
+        assertEquals(full,full.sellStock(key,StockMarket.slot(now),now))
+        val album=Progress(Int.MAX_VALUE,listOf(0,1,6,7))
+        assertEquals(album,album.claimAlbum("start"))
+        val listed=phone().listAuction(key,80,now)
+        val lot=listed.world.auctions.first()
+        val capped=listed.copy(coins=Int.MAX_VALUE)
+        assertEquals(capped,capped.settleAuction(lot.id,lot.endsAt))
+        assertEquals(Int.MAX_VALUE,full.money(Long.MAX_VALUE).coins)
+        assertEquals(0,full.money(Long.MIN_VALUE).coins)
+    }
     @Test fun snakeGrowsAndDetectsWallAndSelfCollisions() {
         val s=SnakeState(listOf(210,209,208),food=211)
         assertEquals(s,s.turn(3))

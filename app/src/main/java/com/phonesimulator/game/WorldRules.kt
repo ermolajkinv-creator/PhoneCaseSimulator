@@ -103,10 +103,12 @@ fun Progress.buyStock(model: Int, expectedSlot: Long, now: Long): Progress {
 fun Progress.sellStock(key: String,expectedSlot: Long,now: Long): Progress {
     val item=device(key) ?: return this
     if(StockMarket.slot(now)!=expectedSlot) return this
+    if(!canCredit(StockMarket.sellPrice(item,now).toLong())) return this
     return removeDevice(key).money(StockMarket.sellPrice(item,now).toLong())
 }
 fun Progress.sellDevice(key: String): Progress {
     val item=device(key) ?: return this
+    if(!canCredit(item.value.toLong())) return this
     return removeDevice(key).money(item.value.toLong())
 }
 fun Progress.repairOwnedPrice(position: Int): Int {
@@ -130,7 +132,7 @@ fun Progress.repairDevice(key: String): Progress {
 fun Progress.claimAlbum(id: String): Progress {
     val album=Albums.all.firstOrNull { it.id==id } ?: return this
     val collection=(owned+used.map { it.phone }).toSet()
-    if(id in world.albums || !collection.containsAll(album.models)) return this
+    if(id in world.albums || !collection.containsAll(album.models) || !canCredit(album.reward.toLong())) return this
     return money(album.reward.toLong()).copy(world=world.copy(albums=world.albums+id,skins=world.skins+"album:$id",
         appTokens=(world.appTokens.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()).bumpEconomy())
 }
@@ -176,8 +178,9 @@ fun Progress.listAuction(key: String,reservePercent: Int,now: Long): Progress {
 fun Progress.settleAuction(id: Long,now: Long): Progress {
     val lot=world.auctions.firstOrNull { it.id==id } ?: return this
     if(now<lot.endsAt || id in world.settledLots) return this
-    val next=copy(world=world.copy(auctions=world.auctions.filter { it.id!=id },settledLots=(world.settledLots+id).sorted().takeLast(200).toSet()).bumpEconomy())
     val bid=AuctionRules.bid(lot,now)
+    if(bid>0 && !canCredit(bid.toLong())) return this
+    val next=copy(world=world.copy(auctions=world.auctions.filter { it.id!=id },settledLots=(world.settledLots+id).sorted().takeLast(200).toSet()).bumpEconomy())
     return if(bid==0) next.returnDevice(lot.device) else next.money(bid.toLong())
 }
 fun Progress.createCompany(name: String): Progress {
@@ -228,11 +231,13 @@ fun Progress.claimMining(): Progress {
     if(device(world.miner.key)==null) return this
     val minutes=world.miner.activeMs/60000
     if(minutes==0L) return this
+    if(!canCredit(minutes*minerRate())) return this
     return money(minutes*minerRate()).copy(world=world.copy(miner=world.miner.copy(activeMs=world.miner.activeMs%60000)).bumpEconomy())
 }
 fun Progress.redeemCode(raw: String): Progress {
     val code=raw.trim().uppercase(java.util.Locale.ROOT)
     if(code in world.codes) return this
+    if(code=="MAST3R" && !canCredit(5000L)) return this
     val models=(owned+used.map { it.phone }).toSet()
     val skin=when {
         code=="PRISM-RETRO" && 0 in models -> "retro"

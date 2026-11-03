@@ -61,8 +61,8 @@ class WorldCompatibilityTest {
         val product=CompanyPhone(900,"QA One",2,VirtualApps.colors[0])
         val companyWorld=state.world.copy(company=Company("QA",2,produced=1,phones=listOf(product)))
         assertEquals(companyWorld,WorldCodec.decode(WorldCodec.encode(companyWorld)))
-        val lot=AuctionLot(950,DeviceSnapshot(-1,PhoneTraits(uid=900),company=product),10000,now,now+120000,12000)
-        val auctionWorld=state.world.copy(auctions=listOf(lot))
+        val fixtureLot=AuctionLot(950,DeviceSnapshot(-1,PhoneTraits(uid=900),company=product),10000,now,now+120000,12000)
+        val auctionWorld=state.world.copy(auctions=listOf(fixtureLot))
         assertEquals(auctionWorld,WorldCodec.decode(WorldCodec.encode(auctionWorld)))
         assertTrue(ProgressStore(context).save(state));assertEquals(state,ProgressStore(context).load())
         val fee=state.repairOwnedPrice(0);val key=state.devices()[0].key
