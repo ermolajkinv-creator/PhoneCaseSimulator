@@ -53,6 +53,7 @@ internal fun WorldScreens.phoneHome(){
     text(when(theme){"mono","retro"->"NOKIA • МЕНЮ";"pda"->"▦ Пуск · Phone Mobile";"ios"->"Виртуальный iPhone OS";"holo"->"Виртуальный Android Classic";else->"Phone OS"},25f,frame,ink)
     if(theme=="galaxy" || theme.startsWith("season:") || theme.startsWith("album:") || theme=="engineer")text("✦ ${theme.replace("season:","Сезон ").replace("album:","Набор ")}",16f,frame,ink)
     text("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",15f,frame,ink)
+    if(profile.firmware.isNotBlank())text(profile.firmware,14f,frame,ink)
     fun icon(title: String,action: ()->Unit){button(title,frame,action).apply {
         if(mono){setTextColor(Color.BLACK);typeface=Typeface.MONOSPACE;background=GradientDrawable().apply {setColor(0xFFB8C59A.toInt());setStroke(2,Color.BLACK);cornerRadius=0f}}
         if(theme=="ios")background=GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,intArrayOf(0xFF647B96.toInt(),0xFF263C58.toInt())).apply {cornerRadius=18f;setStroke(1,Color.WHITE)}
@@ -79,10 +80,19 @@ internal fun WorldScreens.phoneSettings(){
     text("Чип: ${item.phone.chip}\nДисплей: ${item.phone.display}\nПлатформа: ${item.phone.system}",17f)
     text("Мутация: ${item.traits.mutation.title}\nСостояние: ${Market.conditions[item.traits.condition]}\nЭкземпляр: ${item.key}",17f)
     button("Магазин приложений"){go("world_store")}
-    button("Прослушать моно-рингтон"){playRingtone()}
+    val ring=text("Рингтон ${p.virtualProfile(item.key).ringtone+1}",18f)
+    for(tune in 0..2)button("Рингтон ${tune+1}: выбрать и прослушать"){
+        val profile=p.virtualProfile(item.key)
+        if(profile.ringtone!=tune && !host.worldWrite(p.updateVirtualProfile(item.key,profile.copy(ringtone=tune)),"Рингтон экземпляра"))return@button
+        ring.text="Рингтон ${tune+1}";playRingtone(tune)
+    }
     text("Один синтезированный голос, без загрузки файлов и без системных разрешений.",14f,color=light)
     if("gallery" in p.virtualProfile(item.key).apps)button("Оформление телефона"){go("world_gallery")}
-    button("Прошивки и джейлбрейк в игре"){go("workshop")}
+    text("Система этого экземпляра: ${p.virtualProfile(item.key).firmware.ifBlank { p.firmware[item.model] ?: "Заводская" }}",18f)
+    Workshop.options(item.phone).forEach { firmware->button("Установить: $firmware"){
+        update(p.flashVirtualPhone(item.key,firmware),"Виртуальная система экземпляра")
+    }}
+    text("Это симуляция. Старые настройки мастерской служат общим значением модели, а выбор здесь применяется только к этому экземпляру.",14f,color=light)
     button("Экран телефона"){go("world_phone")};back()
 }
 internal fun WorldScreens.appStore(){

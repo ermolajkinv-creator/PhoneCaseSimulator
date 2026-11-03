@@ -55,8 +55,15 @@ class WorldCompatibilityTest {
     @Test fun serializedMutationsRepairAndBackupDoNotDuplicateEscrow(){
         val now=System.currentTimeMillis()
         var state=Progress(1_000_000).appendPhone(1,PhoneTraits(Mutation.DIAMOND,1)).identifyPhones()
+        state=state.updateVirtualProfile(state.devices()[0].key,VirtualProfile(apps=setOf("gallery"),firmware="LineageOS (симуляция)"))
         state=state.copy(used=listOf(UsedPhone(42,2,Mutation.GLITCH,500)),world=state.world.copy(serial=1000,appTokens=2))
         assertEquals(state.world,WorldCodec.decode(WorldCodec.encode(state.world)))
+        val product=CompanyPhone(900,"QA One",2,VirtualApps.colors[0])
+        val companyWorld=state.world.copy(company=Company("QA",2,produced=1,phones=listOf(product)))
+        assertEquals(companyWorld,WorldCodec.decode(WorldCodec.encode(companyWorld)))
+        val lot=AuctionLot(950,DeviceSnapshot(-1,PhoneTraits(uid=900),company=product),10000,now,now+120000,12000)
+        val auctionWorld=state.world.copy(auctions=listOf(lot))
+        assertEquals(auctionWorld,WorldCodec.decode(WorldCodec.encode(auctionWorld)))
         assertTrue(ProgressStore(context).save(state));assertEquals(state,ProgressStore(context).load())
         val fee=state.repairOwnedPrice(0);val key=state.devices()[0].key
         ActivityScenario.launch(MainActivity::class.java).use { s->
@@ -100,9 +107,9 @@ class WorldCompatibilityTest {
             hub(s);click(s,"👥 Игроки на этом телефоне");click(s,"Играть: Первый")
             assertEquals("main",LocalProfiles.active(context));assertEquals(50000,ProgressStore(context).load().coins)
             hub(s);click(s,"⚔ Битвы и дуэли с другом");click(s,"Дуэль с другом на одном телефоне")
-            click(s,"Друг: Друг");click(s,"Первый игрок: Nokia 3310 · Обычный");click(s,"Первый игрок: Разгон")
+            click(s,"Друг: Друг");click(s,"Первый игрок: Nokia 3310 · Стандарт");click(s,"Первый игрок: Разгон")
             shown(s,"Передай телефон: Друг");click(s,"Второй игрок готов")
-            click(s,"Второй игрок: Redmi Note 10S · Обычный");click(s,"Второй игрок: Энергосбережение")
+            click(s,"Второй игрок: Redmi Note 10S · Стандарт");click(s,"Второй игрок: Энергосбережение")
             assertEquals(1,book.duels().size);s.recreate();assertEquals(1,book.duels().size)
         }
         assertEquals(50000,ProgressStore(context,"main").load().coins)

@@ -155,6 +155,12 @@ fun Progress.customize(key: String,kind: String,value: String): Progress {
     if(next==profile || coins<1000) return this
     return money(-1000L).updateVirtualProfile(key,next)
 }
+fun Progress.flashVirtualPhone(key: String,firmware: String): Progress {
+    val item=device(key) ?: return this
+    val profile=virtualProfile(key)
+    if(firmware !in Workshop.options(item.phone) || profile.firmware==firmware) return this
+    return updateVirtualProfile(key,profile.copy(firmware=firmware))
+}
 fun Progress.listAuction(key: String,reservePercent: Int,now: Long): Progress {
     require(reservePercent in listOf(80,100,120) && now>=0)
     val item=device(key) ?: return this

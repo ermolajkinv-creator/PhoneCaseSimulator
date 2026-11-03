@@ -74,7 +74,7 @@ internal class WorldScreens(val host: MainActivity) {
         snake=null;stopSound()
     }
     fun stopSound(){ringtone.stop()}
-    fun playRingtone(){ringtone.play()}
+    fun playRingtone(tune: Int=0){ringtone.play(tune)}
     fun saveState(bundle: Bundle){
         snake?.let { snakeSnapshot=it.snapshot();snakeSavedKey=snakeKey };stopSound()
         bundle.putString("worldKey",selectedKey);bundle.putString("worldQuery",query)
@@ -122,7 +122,7 @@ internal class WorldScreens(val host: MainActivity) {
     fun deviceCard(item: DeviceSnapshot,parent: LinearLayout=root,actions: Boolean=true){
         val box=LinearLayout(host).apply { orientation=LinearLayout.VERTICAL;setPadding(16,12,16,12)
             background=android.graphics.drawable.GradientDrawable().apply{setColor(0xFF171F31.toInt());setStroke(2,item.traits.mutation.accent);cornerRadius=24f};parent.addView(this) }
-        text(item.phone.name,22f,box);text("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",16f,box,item.traits.mutation.accent)
+        text(item.phone.name,22f,box);text("${item.phone.rarity.title} · ${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",16f,box,item.traits.mutation.accent)
         text("Оценка: ${item.value} ₽",18f,box)
         val color=p.virtualProfile(item.key).color.let { if(it!=0)it else if(item.traits.mutation!=Mutation.NORMAL)item.traits.mutation.accent else item.company?.color ?: 0 }
         box.addView(PhoneArtView(host,item.phone,color),LinearLayout.LayoutParams(-1,host.resources.displayMetrics.density.times(150).toInt()))

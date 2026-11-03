@@ -230,7 +230,7 @@ class MainActivity : Activity() {
             letterSpacing = 0.14f
         }
         label(title, 30f).setTypeface(null, Typeface.BOLD)
-        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов", 16f, muted)
+        balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", 16f, muted)
         if (title != "Открываем кейс…" && progress.giftCooldownRemaining() > 0L) {
             val countdown = label("", 16f, muted)
             countdown.post(object : Runnable {
@@ -338,7 +338,8 @@ class MainActivity : Activity() {
                     label("Б/у телефонов: ${progress.used.size}", 18f)
                     button("Посмотреть и продать б/у") { navigate("market") }
                 }
-                if (progress.owned.isEmpty() && progress.used.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
+                if(progress.world.company.phones.isNotEmpty())button("Смартфоны компании: ${progress.world.company.phones.size}"){navigate("world_company")}
+                if (progress.owned.isEmpty() && progress.used.isEmpty() && progress.world.company.phones.isEmpty()) label("Первый телефон ждёт в кейсе.", color = muted)
                 pagedPhones(progress.owned.distinct().sorted(), root) { phoneGrid(it, root, true) }
                 button("На главную") { navigate("home") }
             }
@@ -475,7 +476,7 @@ class MainActivity : Activity() {
             val next = progress.clickCoin(now / Progression.DAY_MS, now)
             if (next != progress && persist(next, "Кликер")) {
                 score.text = "Нажатий: ${progress.clicks}"
-                balanceLabel?.text = "◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов"
+                balanceLabel?.text = "◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов"
             }
             updatePause()
         }.apply {
@@ -786,17 +787,19 @@ class MainActivity : Activity() {
         if (earned != progress.badges) persist(progress.copy(badges = earned))
         screen("Профиль")
         button("Новое в 3.0") { navigate("expansion") }
+        button("Мир телефонов 4.0") { navigate("world_hub") }
+        button("Игроки на этом телефоне") { navigate("world_players") }
         label(progress.nickname, 27f)
         val input = searchField("Имя игрока", progress.nickname) { }
         button("Сохранить имя") {
             val name = input.text.toString().trim().take(24).ifBlank { "Коллекционер" }
             if (persist(progress.copy(nickname = name))) render()
         }
-        val all = progress.owned + progress.used.map { it.phone }
+        val devices = progress.devices()
         val panel = glassPanel()
         infoRow("Баланс", "${progress.coins} ₽", panel)
-        infoRow("В коллекции", all.size.toString(), panel)
-        infoRow("Разных моделей", all.toSet().size.toString(), panel)
+        infoRow("В коллекции", devices.size.toString(), panel)
+        infoRow("Разных моделей", devices.map { it.phone.name }.toSet().size.toString(), panel)
         infoRow("Избранных", progress.favorites.size.toString(), panel)
         infoRow("Кейсов с версии 2.6", progress.casesOpened.toString(), panel)
         infoRow("Нажатий", progress.clicks.toString(), panel)
@@ -804,10 +807,10 @@ class MainActivity : Activity() {
         infoRow("Репутация", progress.reputation.toString(), panel)
         button("Клиенты и сервис") { navigate("clients") }
         Rarity.entries.forEach { rarity ->
-            infoRow(rarity.title, all.count { Catalog.phones[it].rarity == rarity }.toString(), panel)
+            infoRow(rarity.title, devices.count { it.phone.rarity == rarity }.toString(), panel)
             panel.addView(android.widget.ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal).apply {
-                max = all.size.coerceAtLeast(1)
-                progress = all.count { Catalog.phones[it].rarity == rarity }
+                max = devices.size.coerceAtLeast(1)
+                progress = devices.count { it.phone.rarity == rarity }
                 progressTintList = ColorStateList.valueOf(rarity.accent)
             }, LinearLayout.LayoutParams(-1, dp(10)))
         }

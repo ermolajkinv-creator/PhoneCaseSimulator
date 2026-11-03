@@ -12,11 +12,16 @@ class RingtonePreview {
     private var audio: AudioTrack?=null
     private val handler=Handler(Looper.getMainLooper())
     private val release=Runnable { stop() }
-    fun play() {
+    fun play(tune: Int=0) {
+        require(tune in 0..2)
         stop()
         runCatching {
             val rate=22050
-            val notes=listOf(659.25,587.33,369.99,415.30,554.37,493.88,293.66,329.63)
+            val notes=when(tune){
+                1->listOf(523.25,659.25,783.99,1046.50,783.99,659.25,523.25,392.0)
+                2->listOf(880.0,659.25,880.0,659.25,739.99,587.33,739.99,587.33)
+                else->listOf(659.25,587.33,369.99,415.30,554.37,493.88,293.66,329.63)
+            }
             val samples=ShortArray(rate*2)
             samples.indices.forEach { i ->
                 val note=i/(rate/4);val position=i%(rate/4)

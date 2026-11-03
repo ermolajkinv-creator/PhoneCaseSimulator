@@ -59,6 +59,7 @@ internal fun WorldScreens.battles(){
         val a=Battles.stats(own);val b=Battles.stats(opponent)
         text("Игровая мощность: ${a.power} / ${b.power}\nИгровая камера: ${a.camera} / ${b.camera}\nИгровая автономность: ${a.battery} / ${b.battery}",18f)
         text("Чипы: ${own.phone.chip} / ${opponent.phone.chip}",15f,color=light)
+        text("Экраны: ${own.phone.display} / ${opponent.phone.display}\nПлатформы при выпуске: ${own.phone.system} / ${opponent.phone.system}",15f,color=light)
         Battles.tactics.forEachIndexed { tactic,title->button("Тактика: $title"){
             val time=System.currentTimeMillis()
             if(Battles.opponent(time).model!=opponent.model){toast("Соперник сменился, обновляю");go("world_battles");return@button}

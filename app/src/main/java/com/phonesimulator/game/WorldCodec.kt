@@ -15,7 +15,7 @@ object WorldCodec {
             put("traits",JSONArray().apply { w.traits.forEach { put(trait(it)) } });put("serial",w.serial)
             put("profiles",JSONObject().apply { w.profiles.forEach { (key,p) ->
                 put(key,JSONObject().put("apps",strings(p.apps)).put("color",p.color).put("wallpaper",p.wallpaper)
-                    .put("theme",p.theme).put("animation",p.animation).put("bestSnake",p.bestSnake))
+                    .put("theme",p.theme).put("animation",p.animation).put("bestSnake",p.bestSnake).put("firmware",p.firmware).put("ringtone",p.ringtone))
             } })
             put("tokens",w.appTokens);put("albums",strings(w.albums));put("skins",strings(w.skins))
             put("codes",strings(w.codes));put("seasonalSkins",strings(w.seasonalSkins))
@@ -62,7 +62,7 @@ object WorldCodec {
             val v=p.optJSONObject(key) ?: return@mapNotNull null
             key to VirtualProfile(readStrings(v,"apps",5).filter { it in VirtualApps.prices }.toSet(),v.optInt("color",0),
                 v.optInt("wallpaper",0).coerceIn(0,5),v.optString("theme","default").take(80),
-                v.optString("animation","none").take(20),v.optInt("bestSnake",0).coerceIn(0,10000))
+                v.optString("animation","none").take(20),v.optInt("bestSnake",0).coerceIn(0,10000),v.optString("firmware","").take(80),v.optInt("ringtone",0).coerceIn(0,2))
         }.toMap()
         val c=j.optJSONObject("company") ?: JSONObject()
         val companyArray=c.optJSONArray("phones") ?: JSONArray()

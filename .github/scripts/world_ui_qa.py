@@ -74,6 +74,13 @@ def screenshot(name):
 
 
 try:
+    # connectedDebugAndroidTest may uninstall both packages during cleanup.
+    for apk in (pathlib.Path("app/build/outputs/apk/debug/app-debug.apk"),
+                pathlib.Path("app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk")):
+        if not apk.is_file():
+            raise RuntimeError("APK missing before visual QA: " + str(apk))
+        adb("install", "-r", str(apk))
+    (OUT / "instrumentation.txt").write_text(adb("shell", "pm", "list", "instrumentation"))
     # The selected instrumentation scenario prepares deterministic, test-only saved data.
     result = adb("shell", "am", "instrument", "-w", "-e", "class",
                  PACKAGE + ".WorldCompatibilityTest#visualWorldFlows",

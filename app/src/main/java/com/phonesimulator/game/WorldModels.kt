@@ -1,7 +1,7 @@
 package com.phonesimulator.game
 
 enum class Mutation(val title: String, val percent: Int, val accent: Int) {
-    NORMAL("Обычный",100,0xFF9CAEC9.toInt()), GOLD("Gold",120,0xFFFFCF54.toInt()),
+    NORMAL("Стандарт",100,0xFF9CAEC9.toInt()), GOLD("Gold",120,0xFFFFCF54.toInt()),
     DIAMOND("Diamond",140,0xFF8BEAFF.toInt()), GALAXY("Galaxy",160,0xFFB094FF.toInt()),
     GLITCH("Glitch",180,0xFF5AFFC8.toInt()), RAINBOW("Rainbow",220,0xFFFF88D6.toInt());
     companion object {
@@ -14,7 +14,8 @@ enum class Mutation(val title: String, val percent: Int, val accent: Int) {
 }
 data class PhoneTraits(val mutation: Mutation = Mutation.NORMAL, val condition: Int = 3, val uid: Long = 0L)
 data class VirtualProfile(val apps: Set<String> = emptySet(), val color: Int = 0, val wallpaper: Int = 0,
-                          val theme: String = "default", val animation: String = "none", val bestSnake: Int = 0)
+                          val theme: String = "default", val animation: String = "none", val bestSnake: Int = 0,
+                          val firmware: String = "",val ringtone: Int = 0)
 data class CompanyPhone(val id: Long, val name: String, val level: Int, val color: Int)
 data class Company(val name: String = "", val level: Int = 0, val readyAt: Long = 0L,
                    val produced: Int = 0, val phones: List<CompanyPhone> = emptyList(),
