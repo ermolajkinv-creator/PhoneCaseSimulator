@@ -32,6 +32,7 @@ class MainActivity : Activity() {
     private var page = "home"
     private var reward = -1
     private var animator: ValueAnimator? = null
+    private var pendingCoinsDelta=0L
     private var selectedPhone = 0
     private var wikiQuery = ""
     private var adminUnlocked = false
@@ -122,7 +123,8 @@ class MainActivity : Activity() {
         animator = null
         adminUnlocked = false
         worldScreens.stopSound()
-        if (page == "result" || page == "admin") render()
+        if(page=="world_batch")worldScreens.revealed=true
+        if (page == "result" || page == "admin" || page=="world_batch") render()
     }
 
     override fun onResume() {
@@ -166,6 +168,7 @@ class MainActivity : Activity() {
             parent.addView(this, LinearLayout.LayoutParams(-1, -2).apply {
                 topMargin = dp(10); bottomMargin = dp(6)
             })
+            GameMotion.press(this)
             setOnClickListener { action() }
         }
 
@@ -226,11 +229,17 @@ class MainActivity : Activity() {
         }
         setContentView(frame)
         frame.requestApplyInsets()
+        GameMotion.enter(root)
         if(!compact)label("P H O N E   L A B", 14f, mint).apply {
             letterSpacing = 0.14f
         }
         label(title, if(compact)22f else 30f).setTypeface(null, Typeface.BOLD)
         balanceLabel = label("◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size + progress.world.company.phones.size} телефонов", if(compact)13f else 16f, muted)
+        if(pendingCoinsDelta!=0L){
+            val delta=pendingCoinsDelta;pendingCoinsDelta=0L
+            val feedback=label(if(delta>0)"+ $delta ₽" else "− ${-delta} ₽",16f,if(delta>0)0xFF7CE8BB.toInt() else 0xFFFFBF8B.toInt())
+            GameMotion.enter(feedback,pop=true)
+        }
         if (title != "Открываем кейс…" && progress.giftCooldownRemaining() > 0L) {
             val countdown = label("", 16f, muted)
             countdown.post(object : Runnable {
@@ -256,7 +265,7 @@ class MainActivity : Activity() {
 
     private fun currentListings() = Market.listings(System.currentTimeMillis() / 86_400_000L)
 
-    private fun card(index: Int, count: Int? = null, parent: LinearLayout = root,traitsOverride: PhoneTraits?=null) {
+    private fun card(index: Int, count: Int? = null, parent: LinearLayout = root,traitsOverride: PhoneTraits?=null,celebrate: Boolean=false) {
         val phone = Catalog.phones[index]
         val position=progress.owned.indexOf(index)
         val item=if(traitsOverride!=null)DeviceSnapshot(index,traitsOverride) else if(position>=0)DeviceSnapshot(index,progress.traitsAt(position)) else null
@@ -273,6 +282,7 @@ class MainActivity : Activity() {
         val color=item?.let { val custom=progress.virtualProfile(it.key).color
             if(custom!=0)custom else if(it.traits.mutation!=Mutation.NORMAL)it.traits.mutation.accent else 0 } ?: 0
         panel.addView(PhoneArtView(this, phone,color), LinearLayout.LayoutParams(-1, dp(156)))
+        if(celebrate)GameMotion.enter(panel,100L,pop=true)
         label(phone.rarity.title.uppercase(), 12f, phone.rarity.accent, panel)
         label(phone.name, 20f, parent = panel).setTypeface(null, Typeface.BOLD)
         label("$displayPrice ₽", 20f, parent = panel)
@@ -306,6 +316,7 @@ class MainActivity : Activity() {
             Toast.makeText(this, "Не удалось сохранить прогресс. Повторите попытку.", Toast.LENGTH_LONG).show()
             return false
         }
+        if(decorated.coins!=progress.coins)pendingCoinsDelta=decorated.coins.toLong()-progress.coins.toLong()
         progress = decorated
         return true
     }
@@ -359,7 +370,8 @@ class MainActivity : Activity() {
             "result" -> {
                 if (reward !in Catalog.phones.indices) { navigate("home"); return }
                 screen("Новый телефон!")
-                card(reward,traitsOverride=rewardTraits)
+                root.addView(RewardBurstView(this,Catalog.phones[reward].rarity),LinearLayout.LayoutParams(-1,dp(64)))
+                card(reward,traitsOverride=rewardTraits,celebrate=true)
                 label("Телефон уже сохранён в коллекции.", 15f, muted)
                 button("Ещё кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
@@ -1081,30 +1093,31 @@ class MainActivity : Activity() {
         rewardTraits=progress.traitsAt(progress.owned.lastIndex)
         page = "result"
         screen("Открываем кейс…")
-        val crate = label("▣", 100f, mint).apply {
-            gravity = Gravity.CENTER
-            setShadowLayer(dp(24).toFloat(), 0f, 0f, mint)
-            importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+        val reel=CaseOpeningView(this,reward)
+        root.addView(reel,LinearLayout.LayoutParams(-1,dp(250)))
+        val ticker=label("Открываем кейс…",20f).apply {
+            gravity=Gravity.CENTER;accessibilityLiveRegion=View.ACCESSIBILITY_LIVE_REGION_POLITE
         }
-        val ticker = label("Загрузка неонового кейса", 22f).apply {
-            gravity = Gravity.CENTER
-            accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE
-        }
-        button("Показать телефон") { animator?.end() }
-        animator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 1800
-            interpolator = DecelerateInterpolator()
-            addUpdateListener {
-                val fraction = it.animatedValue as Float
-                crate.rotation = kotlin.math.sin(fraction * 40f) * (1f - fraction) * 12f
-                crate.scaleX = 1f + fraction * 0.15f
-                crate.scaleY = crate.scaleX
-                ticker.text = listOf("Сканируем кейс…", "Ловим неоновый сигнал…", "Телефон найден!")[(fraction * 2.99f).toInt()]
-            }
-            addListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animation: Animator) {
-                    animator = null
-                    if (!isDestroyed && !isFinishing) render()
+        label("Результат уже сохранён. Лента не меняет шанс выпадения.",14f,muted)
+        button("Показать телефон") { finishOpening() }
+        playCaseOpening(reel,{ fraction ->
+            ticker.text=when { fraction<0.2f->"Открываем замки…";fraction<0.75f->"Ищем телефон…";else->"Телефон найден!" }
+        }){if(page=="result")render()}
+    }
+
+    internal fun finishOpening(){animator?.end()}
+    internal fun playCaseOpening(reel: CaseOpeningView,onFrame: (Float)->Unit={},onReveal: ()->Unit){
+        animator?.cancel();animator=null
+        if(!GameMotion.enabled()){onReveal();return}
+        animator=ValueAnimator.ofFloat(0f,1f).apply {
+            duration=2400L;interpolator=DecelerateInterpolator(1.4f)
+            addUpdateListener { val fraction=it.animatedValue as Float;reel.progress=fraction;onFrame(fraction) }
+            addListener(object: AnimatorListenerAdapter(){
+                private var cancelled=false
+                override fun onAnimationCancel(animation: Animator){cancelled=true}
+                override fun onAnimationEnd(animation: Animator){
+                    animator=null
+                    if(!cancelled && !isDestroyed && !isFinishing)onReveal()
                 }
             })
         }

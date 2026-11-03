@@ -48,10 +48,10 @@ def find(root, value, clickable=True, contains=False):
     return None
 
 
-def tap(value, name):
+def tap(value, name, contains=False):
     for attempt in range(9):
         root = tree(name + "-" + str(attempt))
-        node = find(root, value)
+        node = find(root, value, contains=contains)
         if node is not None:
             x1, y1, x2, y2 = bounds(node)
             adb("shell", "input", "tap", str((x1 + x2) // 2), str((y1 + y2) // 2))
@@ -72,6 +72,8 @@ def screenshot(name):
     (OUT / (name + ".png")).write_bytes(adb("exec-out", "screencap", "-p", binary=True))
     tree(name)
 
+
+original_scale = adb("shell", "settings", "get", "global", "animator_duration_scale").strip()
 
 try:
     # connectedDebugAndroidTest may uninstall both packages during cleanup.
@@ -125,9 +127,33 @@ try:
     screenshot("ipad-3d-front")
     tap("Повернуть на 90°", "ipad-rotate-target")
     screenshot("ipad-3d-side")
+    tap("Главное", "case-home-target")
+    tap("Открыть кейс ·", "case-open-target", contains=True)
+    screenshot("case-reel")
+    time.sleep(2.5)
+    screenshot("case-result")
+    tap("Кейсы", "batch-cases-target")
+    tap("Открыть 3 × Классический ·", "batch-open-target", contains=True)
+    screenshot("batch-reel")
+    time.sleep(2.5)
+    screenshot("batch-result")
+    # Check the same paid flow with the user's system animation preference disabled.
+    adb("shell", "settings", "put", "global", "animator_duration_scale", "0")
+    adb("shell", "am", "force-stop", PACKAGE)
+    adb("shell", "am", "start", "-n", activity)
+    time.sleep(1)
+    tap("Открыть кейс ·", "reduced-motion-open", contains=True)
+    root = tree("reduced-motion-result")
+    if find(root, "Показать телефон") is not None or find(root, "Новый телефон!", clickable=False) is None:
+        raise RuntimeError("Reduced-motion opening must reveal immediately")
+    screenshot("reduced-motion-result")
     crashes = adb("logcat", "-b", "crash", "-d")
     if PACKAGE in crashes and "FATAL EXCEPTION" in crashes:
         raise RuntimeError("Application crash captured in logcat")
     print("QA visual flow completed on", SERIAL, flush=True)
 finally:
+    if original_scale == "null":
+        adb("shell", "settings", "delete", "global", "animator_duration_scale")
+    else:
+        adb("shell", "settings", "put", "global", "animator_duration_scale", original_scale)
     (OUT / "crash-logcat.txt").write_text(adb("logcat", "-b", "crash", "-d"), encoding="utf-8")

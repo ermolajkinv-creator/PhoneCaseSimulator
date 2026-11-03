@@ -145,14 +145,22 @@ internal fun WorldScreens.season(){
 }
 internal fun WorldScreens.batch(){
     begin(if(revealed) "Результат открытия ×${drops.size}" else "Открываем ×${drops.size}")
-    if(!revealed){
-        val crate=text("▣   ✦   ▣",52f);crate.animate().scaleX(1.15f).scaleY(1.15f).setDuration(700).start()
+    if(!revealed && drops.isNotEmpty()){
+        val reel=CaseOpeningView(host,drops.first().model,drops.size)
+        root.addView(reel,LinearLayout.LayoutParams(-1,(250*host.resources.displayMetrics.density).toInt()))
         text("Оплата и телефоны уже сохранены. Все открытия независимы, гарантии Ultra нет.",color=light)
-        button("Показать результат"){revealed=true;go("world_batch")}
-        crate.postDelayed({if(crate.isAttachedToWindow && host.currentRoute=="world_batch" && !revealed){revealed=true;go("world_batch")}},1800L)
+        button("Показать результат"){host.finishOpening()}
+        back()
+        host.playCaseOpening(reel){if(host.currentRoute=="world_batch" && !revealed){revealed=true;go("world_batch")}}
     } else {
-        drops.forEach { deviceCard(it,actions=p.device(it.key)!=null) }
+        val best=drops.maxByOrNull { it.phone.rarity.ordinal }
+        if(best!=null)root.addView(RewardBurstView(host,best.phone.rarity),LinearLayout.LayoutParams(-1,(64*host.resources.displayMetrics.density).toInt()))
+        drops.forEachIndexed { index,item ->
+            val before=root.childCount
+            deviceCard(item,actions=p.device(item.key)!=null)
+            if(index<10)GameMotion.enter(root.getChildAt(before),(index*45).toLong(),pop=true)
+        }
         text("Результаты сохранены в коллекции. Мутации: ${drops.joinToString { it.traits.mutation.title }}",16f,color=light)
-        button("Экземпляры"){go("world_inventory")};button("Кейсы"){go("cases")}
-    };back()
+        button("Экземпляры"){go("world_inventory")};button("Кейсы"){go("cases")};back()
+    }
 }

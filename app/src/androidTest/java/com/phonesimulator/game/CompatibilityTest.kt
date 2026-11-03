@@ -35,6 +35,32 @@ class CompatibilityTest {
                 .any { it.text.toString() == text })
         }
     }
+    @Test fun leavingAndBackgroundingTheReelNeverRepeatsPaymentOrReward() {
+        val store=ProgressStore(context)
+        assertTrue(store.save(Progress(200000)))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            scenario.onActivity { activity ->
+                val open=views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString()=="Открыть кейс · ${CaseKind.CLASSIC.cost} ₽" }
+                open.performClick()
+                if(GameMotion.enabled())assertTrue(views(activity.window.decorView).any { it.tag=="case-reel" })
+                assertEquals(1,store.load().owned.size)
+                views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString()=="Главное" }.performClick()
+            }
+            android.os.SystemClock.sleep(2600L)
+            assertText(scenario,"Главное")
+            assertEquals(200000-CaseKind.CLASSIC.cost,store.load().coins)
+            assertEquals(1,store.load().owned.size)
+            click(scenario,"Открыть кейс · ${CaseKind.CLASSIC.cost} ₽")
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.CREATED)
+            scenario.moveToState(androidx.lifecycle.Lifecycle.State.RESUMED)
+            assertText(scenario,"Новый телефон!")
+            assertEquals(200000-2*CaseKind.CLASSIC.cost,store.load().coins)
+            assertEquals(2,store.load().owned.size)
+            scenario.recreate()
+            assertEquals(2,store.load().owned.size)
+        }
+    }
+
     @Test fun openSaveRecreateAndRelaunch() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Открыть кейс · ${CaseKind.CLASSIC.cost} ₽")
