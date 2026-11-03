@@ -197,7 +197,7 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         if (position !in used.indices) return this
         val item = used[position]
         return copy(coins = credit(DeviceSnapshot(item.phone,PhoneTraits(item.mutation,item.condition,item.uid),true).value),
-            used = used.filterIndexed { i, _ -> i != position })
+            used = used.filterIndexed { i, _ -> i != position },world=if(item.uid>0)world.bumpEconomy() else world)
     }
     fun openCase(kind: CaseKind, ticket: Int, day: Long = System.currentTimeMillis()/Progression.DAY_MS,
                  mutationTicket: Int = 0, conditionTicket: Int = 9999,lootTicket: Int = 0): Pair<Progress, Int>? {

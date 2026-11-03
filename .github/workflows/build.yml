@@ -97,9 +97,13 @@ jobs:
           target: google_apis
           arch: x86_64
           disable-animations: false
-          script: gradle --no-daemon --stacktrace connectedDebugAndroidTest
+          script: |
+            gradle --no-daemon --stacktrace connectedDebugAndroidTest
+            if [ '${{ matrix.api }}' = '35' ]; then python3 .github/scripts/world_ui_qa.py; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: compatibility-api-${{ matrix.api }}
-          path: app/build/reports/androidTests/
+          path: |
+            app/build/reports/androidTests/
+            app/build/reports/world-qa/

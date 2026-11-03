@@ -270,7 +270,9 @@ class MainActivity : Activity() {
                 topMargin = dp(16); bottomMargin = dp(12)
             })
         }
-        panel.addView(PhoneArtView(this, phone,item?.let { progress.virtualProfile(it.key).color } ?: 0), LinearLayout.LayoutParams(-1, dp(156)))
+        val color=item?.let { val custom=progress.virtualProfile(it.key).color
+            if(custom!=0)custom else if(it.traits.mutation!=Mutation.NORMAL)it.traits.mutation.accent else 0 } ?: 0
+        panel.addView(PhoneArtView(this, phone,color), LinearLayout.LayoutParams(-1, dp(156)))
         label(phone.rarity.title.uppercase(), 12f, phone.rarity.accent, panel)
         label(phone.name, 20f, parent = panel).setTypeface(null, Typeface.BOLD)
         label("$displayPrice ₽", 20f, parent = panel)
@@ -296,7 +298,9 @@ class MainActivity : Activity() {
     }
 
     private fun persist(next: Progress, reason: String = "Игровая операция"): Boolean {
-        val decorated = next.copy(badges = next.badges + Progression.goals(next),
+        val revision=if(next.coins!=progress.coins && (next.world!=WorldData() || progress.world!=WorldData()) && next.world.economyRevision<=progress.world.economyRevision)
+            next.world.bumpEconomy() else next.world
+        val decorated = next.copy(badges = next.badges + Progression.goals(next),world=revision,
             expansion = next.expansion.record(progress, next, System.currentTimeMillis(), reason))
         if (!store.save(decorated)) {
             Toast.makeText(this, "Не удалось сохранить прогресс. Повторите попытку.", Toast.LENGTH_LONG).show()

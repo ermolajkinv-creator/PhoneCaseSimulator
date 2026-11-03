@@ -27,7 +27,7 @@ object WorldCodec {
                 .put("productionLevel",c.productionLevel).put("series",c.series)
                 .put("phones",JSONArray().apply { c.phones.forEach { put(companyPhone(it)) } }))
             put("miner",JSONObject().put("key",w.miner.key).put("activeMs",w.miner.activeMs))
-            put("battleAt",w.lastBattleAt);put("wins",w.npcWins);put("losses",w.npcLosses)
+            put("battleAt",w.lastBattleAt);put("wins",w.npcWins);put("losses",w.npcLosses);put("revision",w.economyRevision)
         }.toString()
     }
     private fun readStrings(j: JSONObject,key: String,limit: Int=1000): Set<String> {
@@ -85,13 +85,17 @@ object WorldCodec {
         WorldData(traits,serial,profiles,j.optInt("tokens",0).coerceAtLeast(0),readStrings(j,"albums",20),readStrings(j,"skins"),
             auctions.filter { it.id !in settled },settled,company,Miner(miner.optString("key","").take(80),miner.optLong("activeMs",0).coerceIn(0,1800000)),
             j.optLong("battleAt",0).coerceAtLeast(0),j.optInt("wins",0).coerceAtLeast(0),j.optInt("losses",0).coerceAtLeast(0),
-            readStrings(j,"codes",20),readStrings(j,"seasonalSkins",200))
+            readStrings(j,"codes",20),readStrings(j,"seasonalSkins",200),j.optLong("revision",0).coerceAtLeast(0))
     } catch (_: Exception) { WorldData() }
 
-    fun restore(snapshot: WorldData,current: WorldData): WorldData = snapshot.copy(
+    fun restore(snapshot: WorldData,current: WorldData): WorldData {
+        val live=if(current.economyRevision>=snapshot.economyRevision)current else snapshot
+        val base=if(current.economyRevision>snapshot.economyRevision)current else snapshot
+        return base.copy(
         serial=maxOf(snapshot.serial,current.serial),albums=snapshot.albums+current.albums,skins=snapshot.skins+current.skins,
         codes=snapshot.codes+current.codes,seasonalSkins=snapshot.seasonalSkins+current.seasonalSkins,
-        auctions=current.auctions,settledLots=(snapshot.settledLots+current.settledLots).sorted().takeLast(200).toSet(),
-        company=current.company,miner=current.miner,lastBattleAt=maxOf(snapshot.lastBattleAt,current.lastBattleAt),
+        auctions=live.auctions,settledLots=(snapshot.settledLots+current.settledLots).sorted().takeLast(200).toSet(),
+        company=live.company,miner=live.miner,lastBattleAt=maxOf(snapshot.lastBattleAt,current.lastBattleAt),
         npcWins=maxOf(snapshot.npcWins,current.npcWins),npcLosses=maxOf(snapshot.npcLosses,current.npcLosses))
+    }
 }

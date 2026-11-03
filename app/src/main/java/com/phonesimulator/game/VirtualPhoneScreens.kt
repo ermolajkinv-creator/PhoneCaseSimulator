@@ -39,8 +39,10 @@ internal fun WorldScreens.phoneHome(){
             "ios"->intArrayOf(0xFFCFD5DE.toInt(),0xFF8996A8.toInt())
             "holo"->intArrayOf(0xFF10151D.toInt(),0xFF17374B.toInt())
             "glitch"->intArrayOf(0xFF00392C.toInt(),0xFF25143F.toInt())
+            "galaxy"->intArrayOf(0xFF513680.toInt(),0xFF111936.toInt())
+            "engineer"->intArrayOf(0xFF4F6666.toInt(),0xFF122C32.toInt())
             "rainbow"->intArrayOf(0xFF913B64.toInt(),0xFF3B407B.toInt(),0xFF246C61.toInt())
-            else->intArrayOf(VirtualApps.colors[profile.wallpaper],0xFF131B38.toInt())
+            else->intArrayOf(VirtualApps.colors[if(theme.startsWith("season:") || theme.startsWith("album:"))Math.floorMod(theme.hashCode(),6) else profile.wallpaper],0xFF131B38.toInt())
         }).apply { cornerRadius=32f }
         root.addView(this,LinearLayout.LayoutParams(-1,-2))
     }
@@ -49,6 +51,7 @@ internal fun WorldScreens.phoneHome(){
     val clock=SimpleDateFormat("HH:mm",Locale.getDefault()).format(Date())
     text("▰ 100%     $clock     ▂▄▆",15f,frame,ink).apply { if(mono)typeface=Typeface.MONOSPACE }
     text(when(theme){"mono","retro"->"NOKIA • МЕНЮ";"pda"->"▦ Пуск · Phone Mobile";"ios"->"Виртуальный iPhone OS";"holo"->"Виртуальный Android Classic";else->"Phone OS"},25f,frame,ink)
+    if(theme=="galaxy" || theme.startsWith("season:") || theme.startsWith("album:") || theme=="engineer")text("✦ ${theme.replace("season:","Сезон ").replace("album:","Набор ")}",16f,frame,ink)
     text("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",15f,frame,ink)
     fun icon(title: String,action: ()->Unit){button(title,frame,action).apply {
         if(mono){setTextColor(Color.BLACK);typeface=Typeface.MONOSPACE;background=GradientDrawable().apply {setColor(0xFFB8C59A.toInt());setStroke(2,Color.BLACK);cornerRadius=0f}}
@@ -61,7 +64,12 @@ internal fun WorldScreens.phoneHome(){
     }
     if(profile.apps.isEmpty())text("Доступны базовые настройки. Новые приложения открываются в магазине внутри настроек.",16f,frame,ink)
     if(profile.animation=="pulse")frame.animate().alpha(0.65f).setDuration(250).withEndAction {frame.animate().alpha(1f).setDuration(250).start()}.start()
-    if(profile.animation=="sparkle")text("✦  ✧  ✦  ✧  ✦",24f,frame,ink)
+    if(profile.animation=="sparkle"){
+        val stars=text("✦  ✧  ✦  ✧  ✦",24f,frame,ink)
+        fun twinkle(){if(!stars.isAttachedToWindow)return;stars.animate().alpha(0.25f).setDuration(650).withEndAction {
+            if(stars.isAttachedToWindow)stars.animate().alpha(1f).setDuration(650).withEndAction{twinkle()}.start() }.start()}
+        stars.post{twinkle()}
+    }
     button("3D-просмотр"){go("world_3d")};button("Инвентарь экземпляров"){go("world_inventory")};back()
 }
 internal fun WorldScreens.phoneSettings(){

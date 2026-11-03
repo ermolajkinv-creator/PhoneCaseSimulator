@@ -42,6 +42,16 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             }
         } else {
             c.drawColor(bodyColor)
+            if(item.traits.mutation==Mutation.RAINBOW || style.theme=="rainbow"){
+                p.shader=LinearGradient(0f,0f,256f,512f,intArrayOf(0xFFF38FB1.toInt(),0xFFFFD878.toInt(),0xFF70D6B8.toInt(),0xFF719FFF.toInt(),0xFFB08CF6.toInt()),null,Shader.TileMode.CLAMP)
+                c.drawRect(0f,0f,256f,512f,p);p.shader=null
+            }
+            if(item.traits.mutation==Mutation.GALAXY || style.theme=="galaxy"){
+                p.color=Color.WHITE;for(i in 0..35)c.drawCircle(((i*47)%250+3).toFloat(),((i*83)%500+5).toFloat(),if(i%4==0)2.5f else 1.2f,p)
+            }
+            if(item.traits.mutation==Mutation.GLITCH || style.theme=="glitch"){
+                p.color=0xAA8BFFDA.toInt();for(i in 0..8)c.drawRect((i*29%180).toFloat(),(i*59+15).toFloat(),(i*29%180+70).toFloat(),(i*59+22).toFloat(),p)
+            }
             if(item.model==Catalog.PALAS) {
                 p.color=0xFFDBDEE2.toInt();c.drawCircle(128f,120f,85f,p);p.color=Color.BLACK
                 c.drawCircle(99f,95f,20f,p);c.drawCircle(157f,95f,20f,p)
@@ -90,6 +100,10 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             }
             paint.style=Paint.Style.STROKE;paint.strokeWidth=2f;paint.color=0xFFAEBACD.toInt();canvas.drawPath(path,paint);paint.style=Paint.Style.FILL
         }
-        if(style.animation=="pulse" && isAttachedToWindow && windowVisibility==VISIBLE) postInvalidateOnAnimation()
+        if(style.animation=="sparkle"){
+            paint.color=0xFFFFE599.toInt();for(i in 0..9){val phase=System.currentTimeMillis()/400.0+i*1.7
+                canvas.drawCircle(width/2f+sin(phase).toFloat()*width*0.35f,height/2f+cos(phase*0.8).toFloat()*height*0.35f,2f+sin(phase).toFloat(),paint)}
+        }
+        if(style.animation in listOf("pulse","sparkle") && isAttachedToWindow && windowVisibility==VISIBLE) postInvalidateOnAnimation()
     }
 }

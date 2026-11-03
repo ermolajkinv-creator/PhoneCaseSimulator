@@ -132,7 +132,7 @@ fun Progress.claimAlbum(id: String): Progress {
     val collection=(owned+used.map { it.phone }).toSet()
     if(id in world.albums || !collection.containsAll(album.models)) return this
     return money(album.reward.toLong()).copy(world=world.copy(albums=world.albums+id,skins=world.skins+"album:$id",
-        appTokens=(world.appTokens.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()))
+        appTokens=(world.appTokens.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()).bumpEconomy())
 }
 fun Progress.unlockApp(key: String,app: String,useToken: Boolean): Progress {
     if(device(key)==null) return this
@@ -170,27 +170,27 @@ fun Progress.listAuction(key: String,reservePercent: Int,now: Long): Progress {
 fun Progress.settleAuction(id: Long,now: Long): Progress {
     val lot=world.auctions.firstOrNull { it.id==id } ?: return this
     if(now<lot.endsAt || id in world.settledLots) return this
-    val next=copy(world=world.copy(auctions=world.auctions.filter { it.id!=id },settledLots=(world.settledLots+id).sorted().takeLast(200).toSet()))
+    val next=copy(world=world.copy(auctions=world.auctions.filter { it.id!=id },settledLots=(world.settledLots+id).sorted().takeLast(200).toSet()).bumpEconomy())
     val bid=AuctionRules.bid(lot,now)
     return if(bid==0) next.returnDevice(lot.device) else next.money(bid.toLong())
 }
 fun Progress.createCompany(name: String): Progress {
     val clean=name.trim().take(24)
     if(clean.length<2 || world.company.level>0 || coins<30000) return this
-    return money(-30000L).copy(world=world.copy(company=Company(name=clean,level=1)))
+    return money(-30000L).copy(world=world.copy(company=Company(name=clean,level=1)).bumpEconomy())
 }
 fun Progress.upgradeCompany(): Progress {
     val company=world.company
     val cost=company.level*25000
     if(company.level !in 1..4 || coins<cost) return this
-    return money(-cost.toLong()).copy(world=world.copy(company=company.copy(level=company.level+1)))
+    return money(-cost.toLong()).copy(world=world.copy(company=company.copy(level=company.level+1)).bumpEconomy())
 }
 fun Progress.startProduction(now: Long): Progress {
     require(now>=0)
     val c=world.company
     val cost=5000+c.level*1000
     if(c.level==0 || c.readyAt>0 || c.phones.size>=20 || c.produced==Int.MAX_VALUE || coins<cost) return this
-    return money(-cost.toLong()).copy(world=world.copy(company=c.copy(readyAt=now+120000L,productionLevel=c.level)))
+    return money(-cost.toLong()).copy(world=world.copy(company=c.copy(readyAt=now+120000L,productionLevel=c.level)).bumpEconomy())
 }
 fun Progress.collectProduction(now: Long): Progress {
     val c=world.company
@@ -198,7 +198,7 @@ fun Progress.collectProduction(now: Long): Progress {
     if(c.produced==Int.MAX_VALUE) return this
     val product=CompanyPhone(world.serial,"${c.name} ${c.series} ${c.produced+1}",c.productionLevel.coerceIn(1,5),VirtualApps.colors[(c.produced)%VirtualApps.colors.size])
     return copy(world=world.copy(serial=world.serial+1,company=c.copy(readyAt=0,productionLevel=0,
-        produced=(c.produced+1).coerceAtMost(Int.MAX_VALUE),phones=c.phones+product)))
+        produced=(c.produced+1).coerceAtMost(Int.MAX_VALUE),phones=c.phones+product)).bumpEconomy())
 }
 fun Progress.renameSeries(name: String): Progress {
     val clean=name.trim().take(20)
@@ -222,7 +222,7 @@ fun Progress.claimMining(): Progress {
     if(device(world.miner.key)==null) return this
     val minutes=world.miner.activeMs/60000
     if(minutes==0L) return this
-    return money(minutes*minerRate()).copy(world=world.copy(miner=world.miner.copy(activeMs=world.miner.activeMs%60000)))
+    return money(minutes*minerRate()).copy(world=world.copy(miner=world.miner.copy(activeMs=world.miner.activeMs%60000)).bumpEconomy())
 }
 fun Progress.redeemCode(raw: String): Progress {
     val code=raw.trim().uppercase(java.util.Locale.ROOT)
@@ -234,7 +234,7 @@ fun Progress.redeemCode(raw: String): Progress {
         code=="MAST3R" && servicesCompleted>=3 -> "engineer"
         else -> return this
     }
-    return money(if(code=="MAST3R") 5000 else 0).copy(world=world.copy(codes=world.codes+code,skins=world.skins+skin))
+    return money(if(code=="MAST3R") 5000 else 0).copy(world=world.copy(codes=world.codes+code,skins=world.skins+skin).bumpEconomy())
 }
 fun Progress.fightNpc(key: String,tactic: Int,now: Long,ticket: Int): Pair<Progress,String> {
     require(tactic in 0..2 && ticket in 0..9999 && now>=0)
@@ -247,7 +247,7 @@ fun Progress.fightNpc(key: String,tactic: Int,now: Long,ticket: Int): Pair<Progr
     val won=a>=b
     val changed=money(if(won) 1000 else 0).copy(world=world.copy(lastBattleAt=now.coerceAtLeast(1),
         npcWins=(world.npcWins.toLong()+if(won) 1 else 0).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
-        npcLosses=(world.npcLosses.toLong()+if(won) 0 else 1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()))
+        npcLosses=(world.npcLosses.toLong()+if(won) 0 else 1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()).bumpEconomy())
     return changed to "${if(won) "Победа! +1000 ₽" else "Победил виртуальный соперник"}\n${own.phone.name} против ${npc.phone.name}\nИгровые очки: $a / $b"
 }
 fun Progress.openMany(kind: CaseKind,count: Int,tickets: List<Int>,mutations: List<Int>,conditions: List<Int>,day: Long,
@@ -261,7 +261,9 @@ fun Progress.openMany(kind: CaseKind,count: Int,tickets: List<Int>,mutations: Li
         next=next.openCase(kind,tickets[i],day,mutations[i],conditions[i],loots[i])!!.first
         drops+=DeviceSnapshot(next.owned.last(),next.traitsAt(next.owned.lastIndex))
     }
-    return next to drops
+    val identified=next.identifyPhones()
+    return identified.copy(world=identified.world.bumpEconomy()) to
+        (identified.owned.size-count until identified.owned.size).map { DeviceSnapshot(identified.owned[it],identified.traitsAt(it)) }
 }
 fun Progress.openSeasonal(expectedId: String,ticket: Int,mutation: Int,condition: Int,now: Long): Pair<Progress,DeviceSnapshot>? {
     require(ticket in 0..9999 && mutation in 0..9999 && condition in 0..9999)
@@ -271,6 +273,7 @@ fun Progress.openSeasonal(expectedId: String,ticket: Int,mutation: Int,condition
     val trait=PhoneTraits(Mutation.roll(mutation),when { condition<1000->1;condition<3000->2;else->3 })
     val ready=forQuestDay(now/Progression.DAY_MS)
     val next=ready.money(-season.cost.toLong()).copy(casesOpened=(casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
-        questCases=(ready.questCases+1).coerceAtMost(3),world=world.copy(seasonalSkins=world.seasonalSkins+season.skin)).appendPhone(model,trait)
-    return next to DeviceSnapshot(model,next.traitsAt(next.owned.lastIndex))
+        questCases=(ready.questCases+1).coerceAtMost(3),world=world.copy(seasonalSkins=world.seasonalSkins+season.skin).bumpEconomy()).appendPhone(model,trait)
+    val identified=next.identifyPhones()
+    return identified to DeviceSnapshot(model,identified.traitsAt(identified.owned.lastIndex))
 }

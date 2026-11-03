@@ -38,7 +38,8 @@ data class WorldData(val traits: List<PhoneTraits> = emptyList(), val serial: Lo
     val auctions: List<AuctionLot> = emptyList(), val settledLots: Set<Long> = emptySet(),
     val company: Company = Company(), val miner: Miner = Miner(),
     val lastBattleAt: Long = 0L, val npcWins: Int = 0, val npcLosses: Int = 0,
-    val codes: Set<String> = emptySet(), val seasonalSkins: Set<String> = emptySet())
+    val codes: Set<String> = emptySet(), val seasonalSkins: Set<String> = emptySet(), val economyRevision: Long = 0L)
+fun WorldData.bumpEconomy()=copy(economyRevision=if(economyRevision==Long.MAX_VALUE) Long.MAX_VALUE else economyRevision+1)
 
 fun Progress.traitsAt(position: Int): PhoneTraits = world.traits.getOrNull(position) ?: PhoneTraits()
 private fun compactTraits(traits: List<PhoneTraits>) = if (traits.all { it == PhoneTraits() }) emptyList() else traits
@@ -52,11 +53,13 @@ fun Progress.appendPhone(model: Int, traits: PhoneTraits = PhoneTraits()): Progr
     if (needsId && world.serial == Long.MAX_VALUE) return this
     val assigned = if (needsId) traits.copy(uid = world.serial) else traits
     val next = replaceOwned(owned + model, owned.indices.map(::traitsAt) + assigned)
-    return if (needsId) next.copy(world = next.world.copy(serial = world.serial+1)) else next
+    return if (needsId) next.copy(world = next.world.copy(serial = world.serial+1).bumpEconomy())
+        else if(traits!=PhoneTraits()) next.copy(world=next.world.bumpEconomy()) else next
 }
 fun Progress.removePhoneAt(position: Int): Progress {
     if (position !in owned.indices) return this
-    return replaceOwned(owned.filterIndexed { i,_ -> i != position }, owned.indices.filter { it != position }.map(::traitsAt))
+    val next=replaceOwned(owned.filterIndexed { i,_ -> i != position }, owned.indices.filter { it != position }.map(::traitsAt))
+    return if(traitsAt(position).uid>0L) next.copy(world=next.world.bumpEconomy()) else next
 }
 fun Progress.identifyPhones(): Progress {
     var serial = world.serial
@@ -72,8 +75,8 @@ fun Progress.device(key: String): DeviceSnapshot? = devices().firstOrNull { it.k
 fun Progress.removeDevice(key: String): Progress {
     val item = device(key) ?: return this
     item.company?.let { companyPhone -> return copy(world=world.copy(company=world.company.copy(
-        phones=world.company.phones.filter { it.id != companyPhone.id }))) }
-    return if(item.used) copy(used=used.filter { it.uid != item.traits.uid })
+        phones=world.company.phones.filter { it.id != companyPhone.id })).bumpEconomy()) }
+    return if(item.used) copy(used=used.filter { it.uid != item.traits.uid },world=world.bumpEconomy())
         else removePhoneAt(owned.indices.first { traitsAt(it).uid == item.traits.uid })
 }
 fun Progress.returnDevice(item: DeviceSnapshot): Progress = when {
@@ -81,7 +84,11 @@ fun Progress.returnDevice(item: DeviceSnapshot): Progress = when {
     item.used -> copy(used=used+UsedPhone(item.model,item.traits.condition,item.traits.mutation,item.traits.uid))
     else -> appendPhone(item.model,item.traits)
 }
-fun Progress.money(delta: Long): Progress = copy(coins=(coins.toLong()+delta).coerceIn(0L,Int.MAX_VALUE.toLong()).toInt())
+fun Progress.money(delta: Long): Progress = copy(coins=when {
+    delta>Int.MAX_VALUE.toLong()->Int.MAX_VALUE;delta< -Int.MAX_VALUE.toLong()->0
+    else->(coins.toLong()+delta).coerceIn(0L,Int.MAX_VALUE.toLong()).toInt()
+},
+    world=if(delta!=0L)world.bumpEconomy() else world)
 fun Progress.virtualProfile(key: String) = world.profiles[key] ?: VirtualProfile()
 fun Progress.updateVirtualProfile(key: String, value: VirtualProfile): Progress =
-    copy(world=world.copy(profiles=world.profiles+(key to value)))
+    copy(world=world.copy(profiles=world.profiles+(key to value)).bumpEconomy())

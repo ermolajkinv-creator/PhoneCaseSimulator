@@ -66,7 +66,7 @@ internal class WorldScreens(val host: MainActivity) {
         if(result==null){toast("Недостаточно денег для всех $count кейсов");return}
         val identified=result.first.identifyPhones()
         if(!host.worldWrite(identified,"Мультиоткрытие ×$count"))return
-        drops=identified.owned.indices.takeLast(count).map { DeviceSnapshot(identified.owned[it],identified.traitsAt(it)) }
+        drops=(identified.owned.size-count until identified.owned.size).map { DeviceSnapshot(identified.owned[it],identified.traitsAt(it)) }
         revealed=false;go("world_batch")
     }
     fun beforeNavigate(){
@@ -120,10 +120,12 @@ internal class WorldScreens(val host: MainActivity) {
         button("Главное меню"){go("home")}
     }
     fun deviceCard(item: DeviceSnapshot,parent: LinearLayout=root,actions: Boolean=true){
-        val box=LinearLayout(host).apply { orientation=LinearLayout.VERTICAL;setPadding(16,12,16,12);parent.addView(this) }
+        val box=LinearLayout(host).apply { orientation=LinearLayout.VERTICAL;setPadding(16,12,16,12)
+            background=android.graphics.drawable.GradientDrawable().apply{setColor(0xFF171F31.toInt());setStroke(2,item.traits.mutation.accent);cornerRadius=24f};parent.addView(this) }
         text(item.phone.name,22f,box);text("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",16f,box,item.traits.mutation.accent)
         text("Оценка: ${item.value} ₽",18f,box)
-        box.addView(PhoneArtView(host,item.phone,p.virtualProfile(item.key).color),LinearLayout.LayoutParams(-1,host.resources.displayMetrics.density.times(150).toInt()))
+        val color=p.virtualProfile(item.key).color.let { if(it!=0)it else if(item.traits.mutation!=Mutation.NORMAL)item.traits.mutation.accent else item.company?.color ?: 0 }
+        box.addView(PhoneArtView(host,item.phone,color),LinearLayout.LayoutParams(-1,host.resources.displayMetrics.density.times(150).toInt()))
         if(actions){
             button("Открыть экран · ${item.phone.name}",box){selectedKey=item.key;go("world_phone")}
             button("3D · ${item.phone.name}",box){selectedKey=item.key;go("world_3d")}

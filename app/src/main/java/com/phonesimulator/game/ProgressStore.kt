@@ -142,9 +142,14 @@ class ProgressStore(context: Context,profileId: String = LocalProfiles.active(co
                 editor.putLong("questDay",before.questDay).putInt("questClicks",before.questClicks)
                     .putInt("questCases",before.questCases).putStringSet("claimedQuests",before.claimedQuests)
             }
-            val oldExtra=ExpansionCodec.decode(snapshot["expansion"]?.optString("value").orEmpty())
-            editor.putString("world",WorldCodec.encode(WorldCodec.restore(
-                WorldCodec.decode(snapshot["world"]?.optString("value").orEmpty()),before.world)))
+            val snapshotWorld=WorldCodec.decode(snapshot["world"]?.optString("value").orEmpty())
+            val newerEconomy=before.world.economyRevision>snapshotWorld.economyRevision
+            if(newerEconomy) {
+                editor.putInt("coins",before.coins).putString("owned",before.owned.joinToString(","))
+                    .putString("used",before.used.joinToString(";"){"${it.phone}:${it.condition}:${it.mutation.name}:${it.uid}"})
+            }
+            val oldExtra=if(newerEconomy) before.expansion else ExpansionCodec.decode(snapshot["expansion"]?.optString("value").orEmpty())
+            editor.putString("world",WorldCodec.encode(WorldCodec.restore(snapshotWorld,before.world)))
             editor.putString("expansion",ExpansionCodec.encode(oldExtra.copy(
                 awardsClaimed=oldExtra.awardsClaimed+before.expansion.awardsClaimed,
                 deliveryDay=maxOf(oldExtra.deliveryDay,before.expansion.deliveryDay),
