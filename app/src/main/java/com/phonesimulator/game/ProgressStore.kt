@@ -2,9 +2,10 @@ package com.phonesimulator.game
 
 import android.content.Context
 
-class ProgressStore(context: Context) {
-    private val backup = context.getSharedPreferences("game_backup", Context.MODE_PRIVATE)
-    private val prefs = context.getSharedPreferences("game", Context.MODE_PRIVATE)
+class ProgressStore(context: Context,profileId: String = LocalProfiles.active(context)) {
+    private val suffix=if(profileId=="main") "" else "_"+profileId.also { require(it.matches(Regex("p[0-9]+"))) }
+    private val backup = context.getSharedPreferences("game_backup$suffix", Context.MODE_PRIVATE)
+    private val prefs = context.getSharedPreferences("game$suffix", Context.MODE_PRIVATE)
     fun load(): Progress {
         val coins = try { prefs.getInt("coins", Economy.START_BALANCE) } catch (_: ClassCastException) { Economy.START_BALANCE }
         val owned = try { prefs.getString("owned", "").orEmpty() } catch (_: ClassCastException) { "" }
@@ -13,7 +14,9 @@ class ProgressStore(context: Context) {
             val phone = parts.getOrNull(0)?.toIntOrNull()
             val condition = parts.getOrNull(1)?.toIntOrNull()
             if (phone != null && phone in Catalog.phones.indices && condition != null && condition in 0..3)
-                UsedPhone(phone, condition) else null
+                UsedPhone(phone, condition,
+                    runCatching { Mutation.valueOf(parts.getOrNull(2).orEmpty()) }.getOrDefault(Mutation.NORMAL),
+                    parts.getOrNull(3)?.toLongOrNull()?.coerceAtLeast(0) ?: 0L) else null
         }
         val jobParts = prefs.getString("clientJob", "").orEmpty().split(',')
         val job = try {
@@ -30,6 +33,10 @@ class ProgressStore(context: Context) {
         } catch (_: RuntimeException) { null }
         return Progress.restore(coins, owned).copy(used = used,
             expansion = ExpansionCodec.decode(prefs.getString("expansion", "").orEmpty()),
+            world = WorldCodec.decode(prefs.getString("world", "").orEmpty()).let { w ->
+                val maxUsedId=used.maxOfOrNull { it.uid } ?: 0L
+                w.copy(serial=maxOf(w.serial,if(maxUsedId<Long.MAX_VALUE) maxUsedId+1 else Long.MAX_VALUE))
+            },
             workshopLevel = prefs.getInt("workshopLevel", 1).coerceIn(1,5),
             reputation = prefs.getInt("reputation", 0).coerceAtLeast(0),
             servicesCompleted = prefs.getInt("servicesCompleted", 0).coerceAtLeast(0),
@@ -63,6 +70,7 @@ class ProgressStore(context: Context) {
     fun save(progress: Progress): Boolean = prefs.edit()
         .putInt("coins", progress.coins)
         .putString("expansion", ExpansionCodec.encode(progress.expansion))
+        .putString("world", WorldCodec.encode(progress.world))
         .putInt("workshopLevel", progress.workshopLevel)
         .putInt("reputation", progress.reputation)
         .putInt("servicesCompleted", progress.servicesCompleted)
@@ -84,7 +92,7 @@ class ProgressStore(context: Context) {
         .putStringSet("badges", progress.badges)
         .putLong("lastGiftAt", progress.lastGiftAt)
         .putString("firmware", progress.firmware.entries.joinToString(";") { "${it.key}:${it.value}" })
-        .putString("used", progress.used.joinToString(";") { "${it.phone}:${it.condition}" })
+        .putString("used", progress.used.joinToString(";") { "${it.phone}:${it.condition}:${it.mutation.name}:${it.uid}" })
         .putStringSet("purchased", progress.purchased)
         .putString("owned", progress.owned.joinToString(","))
         .commit()
@@ -135,6 +143,8 @@ class ProgressStore(context: Context) {
                     .putInt("questCases",before.questCases).putStringSet("claimedQuests",before.claimedQuests)
             }
             val oldExtra=ExpansionCodec.decode(snapshot["expansion"]?.optString("value").orEmpty())
+            editor.putString("world",WorldCodec.encode(WorldCodec.restore(
+                WorldCodec.decode(snapshot["world"]?.optString("value").orEmpty()),before.world)))
             editor.putString("expansion",ExpansionCodec.encode(oldExtra.copy(
                 awardsClaimed=oldExtra.awardsClaimed+before.expansion.awardsClaimed,
                 deliveryDay=maxOf(oldExtra.deliveryDay,before.expansion.deliveryDay),

@@ -31,7 +31,7 @@ private fun Progress.addCash(amount: Int) = copy(coins=(coins.toLong()+amount).c
 fun Progress.buyNew(model: Int): Progress {
     require(model in Catalog.phones.indices)
     if (Catalog.isUltra(model) || coins < ExpansionRules.newPrice(model)) return this
-    return copy(coins=coins-ExpansionRules.newPrice(model), owned=owned+model)
+    return copy(coins=coins-ExpansionRules.newPrice(model)).appendPhone(model)
 }
 fun Progress.bargain(listing: Listing, ticket: Int): Progress {
     require(ticket in 0..99)
@@ -46,7 +46,7 @@ fun Progress.repairPrice(position: Int): Int {
     require(position in used.indices)
     val item=used[position]
     if (item.condition>=3) return 0
-    val difference=Market.price(item.phone,item.condition+1)-Market.price(item.phone,item.condition)
+    val difference=(Market.price(item.phone,item.condition+1)-Market.price(item.phone,item.condition)).toLong()*item.mutation.percent/100
     return ((difference.toLong()*70+99)/100).toInt().coerceAtLeast(1)
 }
 fun Progress.repairUsed(position: Int): Progress {
@@ -59,14 +59,16 @@ fun Progress.repairUsed(position: Int): Progress {
 fun Progress.claimAward(id: String): Progress {
     val reward=ExpansionRules.awardPrices[id] ?: return this
     if(id in expansion.awardsClaimed || id !in (badges+Progression.goals(this))) return this
-    return addCash(reward).copy(expansion=expansion.copy(awardsClaimed=expansion.awardsClaimed+id))
+    return addCash(reward).copy(expansion=expansion.copy(awardsClaimed=expansion.awardsClaimed+id),
+        world=world.copy(appTokens=(world.appTokens.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()))
 }
-fun Progress.contractInputs(rarity: Rarity) = owned.withIndex().filter { Catalog.phones[it.value].rarity==rarity }.take(3)
+fun Progress.contractInputs(rarity: Rarity) = owned.withIndex().filter {
+    Catalog.phones[it.value].rarity==rarity && traitsAt(it.index).mutation==Mutation.NORMAL && traitsAt(it.index).condition==3 }.take(3)
 fun Progress.contractFee(rarity: Rarity): Int {
     if(rarity.ordinal>=Rarity.LEGENDARY.ordinal || contractInputs(rarity).size<3) return 0
     val targets=Catalog.phones.filter { it.rarity.ordinal==rarity.ordinal+1 }
     val expected=targets.sumOf { it.price.toLong() }.toDouble()/targets.size
-    val source=contractInputs(rarity).sumOf { Catalog.phones[it.value].price.toLong() }
+    val source=contractInputs(rarity).sumOf { DeviceSnapshot(it.value,traitsAt(it.index)).value.toLong() }
     return (kotlin.math.ceil((expected*1.10-source).coerceAtLeast(0.0)/1000)*1000).toInt()
 }
 fun Progress.contract(rarity: Rarity, ticket: Int): Progress {
@@ -75,16 +77,15 @@ fun Progress.contract(rarity: Rarity, ticket: Int): Progress {
     val inputs=contractInputs(rarity)
     if(inputs.size<3 || coins<contractFee(rarity)) return this
     val targets=Catalog.phones.indices.filter { Catalog.phones[it].rarity.ordinal==rarity.ordinal+1 }
-    val inventory=owned.toMutableList()
-    inputs.map { it.index }.sortedDescending().forEach { inventory.removeAt(it) }
-    inventory.add(targets[ticket%targets.size])
-    return copy(coins=coins-contractFee(rarity),owned=inventory)
+    var next = copy(coins=coins-contractFee(rarity))
+    inputs.map { it.index }.sortedDescending().forEach { next = next.removePhoneAt(it) }
+    return next.appendPhone(targets[ticket%targets.size])
 }
 fun Progress.deliver(day: Long): Progress {
     val model=ExpansionRules.deliveryModel(day)
-    if(day<=expansion.deliveryDay || model !in owned) return this
-    val inventory=owned.toMutableList().apply { remove(model) }
-    return addCash(ExpansionRules.deliveryPrice(day)).copy(owned=inventory,expansion=expansion.copy(deliveryDay=day))
+    val position=owned.indices.firstOrNull { owned[it]==model && traitsAt(it).mutation==Mutation.NORMAL && traitsAt(it).condition==3 } ?: return this
+    if(day<=expansion.deliveryDay) return this
+    return removePhoneAt(position).addCash(ExpansionRules.deliveryPrice(day)).copy(expansion=expansion.copy(deliveryDay=day))
 }
 fun Progress.claimIdle(now: Long): Progress {
     require(now>0)

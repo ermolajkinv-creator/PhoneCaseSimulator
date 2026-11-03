@@ -176,16 +176,17 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
                     val workshopLevel: Int = 1, val reputation: Int = 0, val servicesCompleted: Int = 0,
                     val serviceSlot: Long = -1L, val servicedSlots: Set<Long> = emptySet(),
                     val clientJob: ClientJob? = null, val expansion: Expansion = Expansion(),
-                    val clickGuard: ClickGuard = ClickGuard()) {
+                    val clickGuard: ClickGuard = ClickGuard(), val world: WorldData = WorldData()) {
     fun open(ticket: Int): Pair<Progress, Int>? = openCase(CaseKind.CLASSIC, ticket)
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
-        val next = owned.toMutableList().apply { remove(index) }
-        return copy(coins = credit(Catalog.phones[index].price), owned = next)
+        val position = owned.indexOf(index)
+        val price = DeviceSnapshot(index,traitsAt(position)).value
+        return removePhoneAt(position).copy(coins = credit(price))
     }
     fun grant(index: Int): Progress {
         require(index in Catalog.phones.indices)
-        return copy(owned = owned + index)
+        return appendPhone(index)
     }
     fun buy(listing: Listing): Progress? {
         if (listing.id in purchased || coins < listing.price) return null
@@ -195,13 +196,21 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
     fun sellUsed(position: Int): Progress {
         if (position !in used.indices) return this
         val item = used[position]
-        return copy(coins = credit(Market.price(item.phone, item.condition)),
+        return copy(coins = credit(DeviceSnapshot(item.phone,PhoneTraits(item.mutation,item.condition,item.uid),true).value),
             used = used.filterIndexed { i, _ -> i != position })
     }
-    fun openCase(kind: CaseKind, ticket: Int, day: Long = System.currentTimeMillis()/Progression.DAY_MS): Pair<Progress, Int>? {
-        if (coins < kind.cost) return null
+    fun openCase(kind: CaseKind, ticket: Int, day: Long = System.currentTimeMillis()/Progression.DAY_MS,
+                 mutationTicket: Int = 0, conditionTicket: Int = 9999,lootTicket: Int = 0): Pair<Progress, Int>? {
+        require(mutationTicket in 0..9999 && conditionTicket in 0..9999 && lootTicket in 0..9999)
+        if (coins < kind.cost || world.serial == Long.MAX_VALUE) return null
         val phone = kind.roll(ticket)
-        return forQuestDay(day).copy(questCases = (forQuestDay(day).questCases+1).coerceAtMost(3), coins = coins - kind.cost, owned = owned + phone, casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()) to phone
+        val condition = when { conditionTicket < 1000 -> 1; conditionTicket < 3000 -> 2; else -> 3 }
+        val next = forQuestDay(day).copy(questCases = (forQuestDay(day).questCases+1).coerceAtMost(3), coins = coins - kind.cost,
+            casesOpened = (casesOpened.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
+            .appendPhone(phone,PhoneTraits(Mutation.roll(mutationTicket),condition))
+        val loot=if(lootTicket>=9500) 1 else 0
+        return next.copy(world=next.world.copy(appTokens=(next.world.appTokens.toLong()+loot).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
+            skins=if(mutationTicket>=9900) next.world.skins+"rainbow" else next.world.skins)) to phone
     }
     fun tune(model: Int, firmwareName: String): Progress {
         require(model in owned || used.any { it.phone == model }) { "Телефона нет в коллекции" }
@@ -247,16 +256,16 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
     }
     fun upgradeChance(source: Int, target: Int): Int {
         require(source in owned && target in Catalog.phones.indices && !Catalog.isUltra(target))
-        require(Catalog.phones[target].price > Catalog.phones[source].price)
-        return (Catalog.phones[source].price.toLong()*750/Catalog.phones[target].price).toInt().coerceIn(1,750)
+        val value=DeviceSnapshot(source,traitsAt(owned.indexOf(source))).value
+        require(Catalog.phones[target].price > value)
+        return (value.toLong()*750/Catalog.phones[target].price).toInt().coerceIn(1,750)
     }
     fun upgrade(source: Int, target: Int, ticket: Int): Pair<Progress, Boolean> {
         require(ticket in 0..999)
         val chance = upgradeChance(source, target)
-        val inventory = owned.toMutableList().apply { remove(source) }
         val won = ticket < chance
-        if (won) inventory.add(target)
-        return copy(owned = inventory) to won
+        val removed = removePhoneAt(owned.indexOf(source))
+        return (if (won) removed.appendPhone(target) else removed) to won
     }
     fun syncClients(now: Long): Progress {
         require(now >= 0)

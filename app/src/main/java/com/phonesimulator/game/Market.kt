@@ -2,7 +2,7 @@ package com.phonesimulator.game
 
 import kotlin.random.Random
 
-data class UsedPhone(val phone: Int, val condition: Int)
+data class UsedPhone(val phone: Int, val condition: Int, val mutation: Mutation = Mutation.NORMAL, val uid: Long = 0L)
 data class Listing(val id: String, val phone: Int, val condition: Int, val price: Int)
 object Market {
     val conditions = listOf("На запчасти", "С потёртостями", "Хорошее", "Как новый")
