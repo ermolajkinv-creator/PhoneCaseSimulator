@@ -353,6 +353,65 @@ class CompatibilityTest {
         }
     }
 
+    @Test fun clickerPausePersistsAndCountdownReenablesButton() {
+        val store = ProgressStore(context)
+        assertTrue(store.save(Progress(777)))
+        assertTrue(store.createBackup())
+        val now = System.currentTimeMillis()
+        var fast = store.load()
+        repeat(12) { fast = fast.clickCoin(now / Progression.DAY_MS, now) }
+        assertTrue(store.save(fast))
+        assertEquals(fast.clickGuard, ProgressStore(context).load().clickGuard)
+        fast = ProgressStore(context).load().clickCoin(now / Progression.DAY_MS, now)
+        assertTrue(store.save(fast))
+        val deadline = fast.clickGuard.blockedUntil
+        assertEquals(now + 30_000L, deadline)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Кликер")
+            scenario.onActivity { activity ->
+                val coin = views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString() == "◉ +10 ₽" }
+                assertFalse(coin.isEnabled)
+                coin.performClick() // Even a programmatic callback must not award cash while blocked.
+                assertTrue(views(activity.window.decorView).filterIsInstance<TextView>()
+                    .any { it.text.toString().startsWith("Слишком частые нажатия. Пауза:") })
+            }
+            assertEquals(fast.coins, store.load().coins)
+            assertEquals(12, store.load().clicks)
+            scenario.recreate()
+            assertEquals(deadline, store.load().clickGuard.blockedUntil)
+            click(scenario, "На главную")
+            click(scenario, "Кликер")
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString() == "◉ +10 ₽" }.isEnabled)
+            }
+        }
+        assertTrue(store.restoreBackup())
+        assertEquals(deadline, store.load().clickGuard.blockedUntil)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Кликер")
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString() == "◉ +10 ₽" }.isEnabled)
+            }
+        }
+        // Seed a short remaining duration; domain tests cover the exact 30-second deadline.
+        assertTrue(store.save(store.load().copy(clickGuard = ClickGuard(blockedUntil = System.currentTimeMillis() + 1200L))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Кликер")
+            var enabled = false
+            val timeout = android.os.SystemClock.uptimeMillis() + 5000L
+            while (!enabled && android.os.SystemClock.uptimeMillis() < timeout) {
+                scenario.onActivity { activity ->
+                    enabled = views(activity.window.decorView).filterIsInstance<Button>().first { it.text.toString() == "◉ +10 ₽" }.isEnabled
+                }
+                if (!enabled) android.os.SystemClock.sleep(100L)
+            }
+            assertTrue("Clicker should resume automatically", enabled)
+            val before = store.load().coins
+            click(scenario, "◉ +10 ₽")
+            assertEquals(before + 10, store.load().coins)
+        }
+    }
+
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

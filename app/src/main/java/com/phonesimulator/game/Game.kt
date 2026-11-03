@@ -147,7 +147,8 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
                     val claimedQuests: Set<String> = emptySet(),
                     val workshopLevel: Int = 1, val reputation: Int = 0, val servicesCompleted: Int = 0,
                     val serviceSlot: Long = -1L, val servicedSlots: Set<Long> = emptySet(),
-                    val clientJob: ClientJob? = null, val expansion: Expansion = Expansion()) {
+                    val clientJob: ClientJob? = null, val expansion: Expansion = Expansion(),
+                    val clickGuard: ClickGuard = ClickGuard()) {
     fun open(ticket: Int): Pair<Progress, Int>? = openCase(CaseKind.CLASSIC, ticket)
     fun sell(index: Int): Progress {
         if (index !in Catalog.phones.indices || index !in owned) return this
@@ -183,9 +184,12 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         require(model in Catalog.phones.indices)
         return copy(favorites = if (model in favorites) favorites - model else favorites + model)
     }
-    fun clickCoin(day: Long = System.currentTimeMillis()/Progression.DAY_MS): Progress {
+    fun clickCoin(day: Long = System.currentTimeMillis()/Progression.DAY_MS, now: Long = System.currentTimeMillis()): Progress {
+        val (guard, allowed) = clickGuard.tap(now)
+        if (!allowed) return if (guard == clickGuard) this else copy(clickGuard = guard)
         val ready = forQuestDay(day)
         return ready.copy(coins = credit(Progression.CLICK_REWARD),
+            clickGuard = guard,
             clicks = (clicks.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
             questClicks = (ready.questClicks+1).coerceAtMost(100))
     }

@@ -160,7 +160,8 @@ class GameTest {
         assertEquals(2, day2.dailyStreak)
         assertEquals(day2.coins + Economy.BONUS, day2.claimDaily(103).coins)
         assertEquals(1, day2.claimDaily(103).dailyStreak)
-        assertEquals(Progress(1010, listOf(0,0), clicks = 1, questDay = 100, questClicks = 1), start.clickCoin(100))
+        assertEquals(Progress(1010, listOf(0,0), clicks = 1, questDay = 100, questClicks = 1,
+            clickGuard = ClickGuard(listOf(1000L))), start.clickCoin(100, 1000L))
         assertTrue(0 in start.toggleFavorite(0).favorites)
         assertEquals(start, start.toggleFavorite(0).toggleFavorite(0))
         val chance = start.upgradeChance(0, 1)
@@ -176,7 +177,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(777).adminCredit(Int.MAX_VALUE.toLong()).coins)
         assertEquals(877, Progress(777).adminCredit(100).coins)
         var state = Progress(0)
-        repeat(100) { state = state.clickCoin(100) }
+        repeat(100) { state = state.clickCoin(100, 1000L + it * 200L) }
         val claimed = state.claimQuest("clicks", 100)
         assertEquals(6000, claimed.coins)
         assertEquals(claimed, claimed.claimQuest("clicks", 100))
@@ -189,6 +190,36 @@ class GameTest {
         repeat(3) { cases = cases.openCase(CaseKind.CLASSIC, 0, 100)!!.first }
         assertEquals(10000, cases.claimQuest("cases",100).coins)
     }
+    @Test fun clickerPauseHasSlidingWindowAndExactThirtySecondBoundary() {
+        var fast = Progress(500)
+        repeat(ClickGuard.MAX_TAPS) { fast = fast.clickCoin(100, 1000L + it * 70L) }
+        assertEquals(620, fast.coins)
+        assertEquals(12, fast.clicks)
+        assertEquals(12, fast.questClicks)
+        val blocked = fast.clickCoin(100, 1840L)
+        assertEquals(31_840L, blocked.clickGuard.blockedUntil)
+        assertEquals(30_000L, blocked.clickGuard.remaining(1840L))
+        assertEquals(fast.coins, blocked.coins)
+        assertEquals(fast.clicks, blocked.clicks)
+        assertEquals(fast.questClicks, blocked.questClicks)
+        repeat(100) { assertEquals(blocked, blocked.clickCoin(101, 1841L + it)) }
+        assertEquals(blocked, blocked.clickCoin(100, 31_839L))
+        val resumed = blocked.clickCoin(100, 31_840L)
+        assertEquals(630, resumed.coins)
+        assertEquals(13, resumed.clicks)
+        assertEquals(0L, resumed.clickGuard.blockedUntil)
+        var edge = Progress(0)
+        repeat(12) { edge = edge.clickCoin(100, 1000L) }
+        assertTrue(edge.clickCoin(100, 1999L).clickGuard.blockedUntil > 0L)
+        assertEquals(130, edge.clickCoin(100, 2000L).coins)
+        var normal = Progress(0)
+        repeat(100) { normal = normal.clickCoin(100, it * 200L) }
+        assertEquals(1000, normal.coins)
+        assertEquals(100, normal.clicks)
+        assertEquals(0L, normal.clickGuard.blockedUntil)
+        assertEquals(100, normal.questClicks)
+    }
+
     @Test fun clientsAreTimedIdempotentAndSeparateFromInventory() {
         val start = Progress(50000, listOf(5))
         val offer = Clients.offer(0, 1)

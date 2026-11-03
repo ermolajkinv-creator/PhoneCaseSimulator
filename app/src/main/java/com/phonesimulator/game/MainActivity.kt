@@ -388,11 +388,24 @@ class MainActivity : Activity() {
         screen("Кликер")
         label("Нажимай и получай +10 ₽", 24f)
         val score = label("Нажатий: ${progress.clicks}", 20f)
-        button("◉ +10 ₽") {
-            if (persist(progress.clickCoin())) {
+        val status = label("", 17f, muted).apply { accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE }
+        lateinit var coin: Button
+        fun updatePause() {
+            val remaining = progress.clickGuard.remaining(System.currentTimeMillis())
+            coin.isEnabled = remaining == 0L
+            coin.alpha = if (remaining > 0L) 0.45f else 1f
+            val message = if (remaining > 0L) "Слишком частые нажатия. Пауза: ${(remaining + 999L) / 1000L} с"
+                else "Кликер готов"
+            if (status.text.toString() != message) status.text = message
+        }
+        coin = button("◉ +10 ₽") {
+            val now = System.currentTimeMillis()
+            val next = progress.clickCoin(now / Progression.DAY_MS, now)
+            if (next != progress && persist(next, "Кликер")) {
                 score.text = "Нажатий: ${progress.clicks}"
                 balanceLabel?.text = "◈ ${progress.coins} ₽  ·  ${progress.owned.size + progress.used.size} телефонов"
             }
+            updatePause()
         }.apply {
             textSize = 28f; setTextColor(0xFF795600.toInt())
             layoutParams = LinearLayout.LayoutParams(dp(200),dp(200)).apply {
@@ -401,7 +414,15 @@ class MainActivity : Activity() {
             background = GradientDrawable(GradientDrawable.Orientation.TL_BR,
                 intArrayOf(0xFFFFED91.toInt(),0xFFFFBD27.toInt())).apply { shape = GradientDrawable.OVAL }
         }
-        label("Доход сохраняется после каждого нажатия. Автоклик не начисляет деньги в фоне.", 15f, muted)
+        updatePause()
+        status.post(object : Runnable {
+            override fun run() {
+                if (isDestroyed || !status.isAttachedToWindow) return
+                updatePause()
+                status.postDelayed(this, 250L)
+            }
+        })
+        label("Не больше 12 нажатий за любую секунду. Превышение — пауза 30 секунд без начислений. Пауза сохраняется при выходе из игры.", 15f, muted)
         button("На главную") { navigate("home") }
     }
 

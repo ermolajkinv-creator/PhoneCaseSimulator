@@ -38,6 +38,10 @@ class ProgressStore(context: Context) {
             favorites = prefs.getStringSet("favorites", emptySet()).orEmpty().mapNotNull { it.toIntOrNull() }.filter { it in Catalog.phones.indices }.toSet(),
             nickname = prefs.getString("nickname", "Коллекционер").orEmpty().take(24).ifBlank { "Коллекционер" },
             clicks = prefs.getInt("clicks", 0).coerceAtLeast(0),
+            clickGuard = ClickGuard(
+                prefs.getString("clickRecent", "").orEmpty().split(',').mapNotNull { it.toLongOrNull() }
+                    .filter { it >= 0L }.takeLast(ClickGuard.MAX_TAPS),
+                prefs.getLong("clickBlockedUntil", 0L).coerceAtLeast(0L)),
             casesOpened = prefs.getInt("casesOpened", 0).coerceAtLeast(0),
             questDay = prefs.getLong("questDay", -1L),
             questClicks = prefs.getInt("questClicks", 0).coerceIn(0,100),
@@ -71,6 +75,8 @@ class ProgressStore(context: Context) {
         .putStringSet("favorites", progress.favorites.map { it.toString() }.toSet())
         .putString("nickname", progress.nickname.take(24))
         .putInt("clicks", progress.clicks)
+        .putString("clickRecent", progress.clickGuard.recent.joinToString(","))
+        .putLong("clickBlockedUntil", progress.clickGuard.blockedUntil)
         .putInt("casesOpened", progress.casesOpened)
         .putLong("lastDailyDay", progress.lastDailyDay)
         .putInt("dailyStreak", progress.dailyStreak)
@@ -115,6 +121,9 @@ class ProgressStore(context: Context) {
             var restoredGift=0L
             for(i in 0 until a.length()) if(a.getJSONObject(i).getString("key")=="lastGiftAt") restoredGift=a.getJSONObject(i).getLong("value")
             editor.putLong("lastGiftAt",maxOf(before.lastGiftAt,restoredGift))
+            // A checkpoint must not clear an active clicker pause or its current detection window.
+            editor.putLong("clickBlockedUntil", before.clickGuard.blockedUntil)
+                .putString("clickRecent", before.clickGuard.recent.joinToString(","))
             val snapshot=(0 until a.length()).associate { a.getJSONObject(it).getString("key") to a.getJSONObject(it) }
             fun number(key: String, default: Long) = snapshot[key]?.optLong("value",default) ?: default
             if(before.lastDailyDay >= number("lastDailyDay",-1)) {
