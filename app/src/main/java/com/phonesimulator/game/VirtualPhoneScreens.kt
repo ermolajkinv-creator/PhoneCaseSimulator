@@ -50,7 +50,7 @@ internal fun WorldScreens.phoneHome(){
     val ink=if(mono)Color.BLACK else Color.WHITE
     val clock=SimpleDateFormat("HH:mm",Locale.getDefault()).format(Date())
     text("▰ 100%     $clock     ▂▄▆",15f,frame,ink).apply { if(mono)typeface=Typeface.MONOSPACE }
-    text(when(theme){"mono","retro"->"NOKIA • МЕНЮ";"pda"->"▦ Пуск · Phone Mobile";"ios"->"Виртуальный iPhone OS";"holo"->"Виртуальный Android Classic";else->"Phone OS"},25f,frame,ink)
+    text(when(theme){"mono","retro"->"NOKIA • МЕНЮ";"pda"->"▦ Пуск · Phone Mobile";"ios"->"Виртуальный iPhone OS";"holo"->"Виртуальный Android Classic";else->if(item.phone.system.startsWith("iPadOS")) "Виртуальный iPadOS" else "Phone OS"},25f,frame,ink)
     if(theme=="galaxy" || theme.startsWith("season:") || theme.startsWith("album:") || theme=="engineer")text("✦ ${theme.replace("season:","Сезон ").replace("album:","Набор ")}",16f,frame,ink)
     text("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",15f,frame,ink)
     if(profile.firmware.isNotBlank())text(profile.firmware,14f,frame,ink)

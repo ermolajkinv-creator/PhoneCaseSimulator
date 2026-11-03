@@ -133,6 +133,7 @@ class WorldCompatibilityTest {
         ActivityScenario.launch(MainActivity::class.java).use { s->
             hub(s);click(s,"📱 Экземпляры и виртуальная ОС")
             click(s,"Открыть экран · iPad Air 11-inch (M3)")
+            shown(s,"Виртуальный iPadOS")
             click(s,"⚙ Настройки")
             shown(s,"Установить: Джейлбрейк (симуляция)")
             s.onActivity { activity->
