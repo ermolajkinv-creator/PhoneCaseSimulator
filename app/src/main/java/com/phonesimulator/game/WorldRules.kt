@@ -46,8 +46,8 @@ object AuctionRules {
         val steps=((minOf(now,lot.endsAt)-lot.startedAt)/15_000L).coerceIn(1,8)
         return (lot.reserve + (lot.ceiling-lot.reserve).toLong()*steps/8).toInt()
     }
-    fun bidder(lot: AuctionLot, now: Long): String = listOf("Виртуальный Илья","Виртуальная Аня","Виртуальный Max","Виртуальный коллекционер")
-        [Math.floorMod(lot.id + now/15000L,4).toInt()]
+    fun bidder(lot: AuctionLot, now: Long): String = listOf("Виртуальный Илья","Виртуальная Аня","Виртуальный Max","Виртуальный коллекционер").get(
+        Math.floorMod(lot.id + now/15000L,4L).toInt())
 }
 data class Season(val id: String,val title: String,val endsAt: Long,val month: Int) {
     val skin: String get() = "season:$id"
@@ -105,6 +105,10 @@ fun Progress.sellStock(key: String,expectedSlot: Long,now: Long): Progress {
     if(StockMarket.slot(now)!=expectedSlot) return this
     return removeDevice(key).money(StockMarket.sellPrice(item,now).toLong())
 }
+fun Progress.sellDevice(key: String): Progress {
+    val item=device(key) ?: return this
+    return removeDevice(key).money(item.value.toLong())
+}
 fun Progress.repairOwnedPrice(position: Int): Int {
     if(position !in owned.indices) return 0
     val traits=traitsAt(position)
@@ -144,7 +148,7 @@ fun Progress.customize(key: String,kind: String,value: String): Progress {
     val next=when(kind) {
         "color" -> { val i=value.toIntOrNull() ?: return this; if(i !in VirtualApps.colors.indices) return this;profile.copy(color=VirtualApps.colors[i]) }
         "wallpaper" -> { val i=value.toIntOrNull() ?: return this;if(i !in 0..5) return this;profile.copy(wallpaper=i) }
-        "theme" -> { if(value !in VirtualApps.themes && value !in world.skins && value !in world.seasonalSkins) return this;profile.copy(theme=value) }
+        "theme" -> { if(value !in listOf("default","pda","retro","holo","ios","galaxy") && value !in world.skins && value !in world.seasonalSkins) return this;profile.copy(theme=value) }
         "animation" -> { if(value !in VirtualApps.animations) return this;profile.copy(animation=value) }
         else -> return this
     }
@@ -209,6 +213,7 @@ fun Progress.activateMiner(key: String): Progress {
 fun Progress.advanceMiner(activeMs: Long): Progress {
     require(activeMs>=0)
     val key=world.miner.key
+    if(key.isBlank()) return this
     if(device(key)==null || "wallet" !in virtualProfile(key).apps) return this
     return copy(world=world.copy(miner=world.miner.copy(activeMs=(world.miner.activeMs+activeMs.coerceAtMost(30000L)).coerceAtMost(1800000L))))
 }
@@ -245,14 +250,15 @@ fun Progress.fightNpc(key: String,tactic: Int,now: Long,ticket: Int): Pair<Progr
         npcLosses=(world.npcLosses.toLong()+if(won) 0 else 1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()))
     return changed to "${if(won) "Победа! +1000 ₽" else "Победил виртуальный соперник"}\n${own.phone.name} против ${npc.phone.name}\nИгровые очки: $a / $b"
 }
-fun Progress.openMany(kind: CaseKind,count: Int,tickets: List<Int>,mutations: List<Int>,conditions: List<Int>,day: Long): Pair<Progress,List<DeviceSnapshot>>? {
-    require(count in listOf(3,5,10) && tickets.size==count && mutations.size==count && conditions.size==count)
-    require(tickets.all { it in 0 until Catalog.TOTAL_TICKETS } && mutations.all { it in 0..9999 } && conditions.all { it in 0..9999 })
+fun Progress.openMany(kind: CaseKind,count: Int,tickets: List<Int>,mutations: List<Int>,conditions: List<Int>,day: Long,
+                      loots: List<Int> = List(count){0}): Pair<Progress,List<DeviceSnapshot>>? {
+    require(count in listOf(3,5,10) && tickets.size==count && mutations.size==count && conditions.size==count && loots.size==count)
+    require(tickets.all { it in 0 until Catalog.TOTAL_TICKETS } && mutations.all { it in 0..9999 } && conditions.all { it in 0..9999 } && loots.all { it in 0..9999 })
     if(coins.toLong()<kind.cost.toLong()*count || world.serial>Long.MAX_VALUE-count-1) return null
     var next=this
     val drops=mutableListOf<DeviceSnapshot>()
     for(i in 0 until count) {
-        next=next.openCase(kind,tickets[i],day,mutations[i],conditions[i])!!.first
+        next=next.openCase(kind,tickets[i],day,mutations[i],conditions[i],loots[i])!!.first
         drops+=DeviceSnapshot(next.owned.last(),next.traitsAt(next.owned.lastIndex))
     }
     return next to drops

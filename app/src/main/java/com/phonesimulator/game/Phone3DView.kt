@@ -78,7 +78,7 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
         val pulse=if(style.animation=="pulse") 1f+sin(System.currentTimeMillis()/500.0).toFloat()*0.025f else 1f
         val size=minOf(width/2.4f,height/2.7f)*zoom*pulse
         fun project(i: Int): PointF { val p=points[i];val perspective=4.0/(4.0-p[2]);return PointF(width/2f+(p[0]*perspective*size).toFloat(),height/2f+(p[1]*perspective*size).toFloat()) }
-        val faces=listOf(listOf(3,2,1,0),listOf(4,5,6,7),listOf(0,1,5,4),listOf(1,2,6,5),listOf(2,3,7,6),listOf(3,0,4,7))
+        val faces=listOf(listOf(1,0,3,2),listOf(4,5,6,7),listOf(0,1,5,4),listOf(1,2,6,5),listOf(2,3,7,6),listOf(3,0,4,7))
         faces.withIndex().sortedBy { face -> face.value.sumOf { points[it][2] } }.forEach { face ->
             val positions=face.value.map(::project);val path=Path().apply { moveTo(positions[0].x,positions[0].y);positions.drop(1).forEach { lineTo(it.x,it.y) };close() }
             paint.shader=null;paint.color=if(face.index<2) bodyColor else 0xFF485362.toInt();paint.style=Paint.Style.FILL;canvas.drawPath(path,paint)

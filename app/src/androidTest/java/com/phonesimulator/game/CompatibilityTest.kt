@@ -17,6 +17,7 @@ import org.junit.runner.RunWith
 class CompatibilityTest {
     private val context get() = InstrumentationRegistry.getInstrumentation().targetContext
     @Before fun resetProgress() {
+        context.getSharedPreferences("local_players",0).edit().clear().commit()
         context.getSharedPreferences("game", 0).edit().clear().commit()
     }
     private fun views(view: View): List<View> = listOf(view) +

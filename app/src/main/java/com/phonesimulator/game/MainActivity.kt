@@ -41,6 +41,36 @@ class MainActivity : Activity() {
     private var upgradeSource = -1
     private var upgradeTarget = -1
     private var repairPractice = RepairSession()
+    private lateinit var worldScreens: WorldScreens
+    private var rewardTraits = PhoneTraits()
+    private val miningHandler = android.os.Handler(android.os.Looper.getMainLooper())
+    private var miningStamp = 0L
+    private var miningSave = 0L
+    private val miningTick = object : Runnable {
+        override fun run() { updateMining();miningHandler.postDelayed(this,1000L) }
+    }
+    internal val gameState: Progress get() = progress
+    internal val worldRoot: LinearLayout get() = root
+    internal val currentRoute: String get() = page
+    internal fun worldWrite(next: Progress,reason: String) = persist(next,reason)
+    internal fun worldGo(route: String) = navigate(route)
+    internal fun switchPlayer(id: String) {
+        updateMining()
+        if(!store.save(progress) || !LocalProfiles(this).select(id)) return
+        animator?.cancel();animator=null;adminUnlocked=false;worldScreens.beforeNavigate()
+        store=ProgressStore(this,id);progress=store.load();worldScreens=WorldScreens(this)
+        reward=-1;selectedPhone=0;catalogQuery="";wikiQuery="";favoritesOnly=false
+        upgradeSource=-1;upgradeTarget=-1;repairPractice=RepairSession();page="home"
+        miningStamp=android.os.SystemClock.elapsedRealtime();miningSave=miningStamp;render()
+    }
+    private fun updateMining() {
+        val now=android.os.SystemClock.elapsedRealtime()
+        if(miningStamp>0 && progress.world.miner.key.isNotBlank()) {
+            progress=progress.advanceMiner((now-miningStamp).coerceAtLeast(0))
+            if(now-miningSave>=15000L){store.save(progress);miningSave=now}
+        }
+        miningStamp=now
+    }
     private val ink = Color.rgb(10, 14, 20)
     private val muted = Color.rgb(221, 216, 245)
     private val mint = Color.rgb(246, 232, 255)
@@ -49,8 +79,12 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         store = ProgressStore(this)
         progress = store.load()
+        worldScreens = WorldScreens(this)
+        worldScreens.restoreState(savedInstanceState)
         page = savedInstanceState?.getString("page") ?: "home"
         reward = savedInstanceState?.getInt("reward", -1) ?: -1
+        rewardTraits=PhoneTraits(runCatching { Mutation.valueOf(savedInstanceState?.getString("rewardMutation").orEmpty()) }.getOrDefault(Mutation.NORMAL),
+            (savedInstanceState?.getInt("rewardCondition",3) ?: 3).coerceIn(0,3),savedInstanceState?.getLong("rewardUid",0L) ?: 0L)
         selectedPhone = savedInstanceState?.getInt("selectedPhone", 0)?.coerceIn(Catalog.phones.indices) ?: 0
         wikiQuery = savedInstanceState?.getString("wikiQuery").orEmpty()
         catalogQuery = savedInstanceState?.getString("catalogQuery").orEmpty()
@@ -72,8 +106,12 @@ class MainActivity : Activity() {
         outState.putInt("selectedPhone", selectedPhone)
         outState.putString("wikiQuery", wikiQuery)
         outState.putInt("reward", reward)
+        outState.putString("rewardMutation",rewardTraits.mutation.name)
+        outState.putInt("rewardCondition",rewardTraits.condition)
+        outState.putLong("rewardUid",rewardTraits.uid)
         outState.putInt("repairStep", repairPractice.step)
         outState.putInt("repairMistakes", repairPractice.mistakes)
+        worldScreens.saveState(outState)
         super.onSaveInstanceState(outState)
     }
 
@@ -83,7 +121,18 @@ class MainActivity : Activity() {
         animator?.cancel()
         animator = null
         adminUnlocked = false
+        worldScreens.stopSound()
         if (page == "result" || page == "admin") render()
+    }
+
+    override fun onResume() {
+        super.onResume();miningStamp=android.os.SystemClock.elapsedRealtime();miningSave=miningStamp
+        miningHandler.removeCallbacks(miningTick);miningHandler.postDelayed(miningTick,1000L)
+    }
+    override fun onPause() {
+        updateMining();miningStamp=0L;miningHandler.removeCallbacks(miningTick)
+        if(progress.world.miner.key.isNotBlank()) store.save(progress)
+        super.onPause()
     }
 
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
@@ -95,7 +144,7 @@ class MainActivity : Activity() {
         setStroke(dp(1), Color.argb(150, Color.red(accent), Color.green(accent), Color.blue(accent)))
     }
 
-    private fun label(text: String, size: Float = 18f, color: Int = Color.WHITE,
+    internal fun label(text: String, size: Float = 18f, color: Int = Color.WHITE,
                       parent: LinearLayout = root): TextView = TextView(this).apply {
         this.text = text
         textSize = size
@@ -104,7 +153,7 @@ class MainActivity : Activity() {
         parent.addView(this, LinearLayout.LayoutParams(-1, -2))
     }
 
-    private fun button(text: String, parent: LinearLayout = root, action: () -> Unit): Button =
+    internal fun button(text: String, parent: LinearLayout = root, action: () -> Unit): Button =
         Button(this).apply {
             this.text = text
             textSize = 16f
@@ -120,7 +169,7 @@ class MainActivity : Activity() {
             setOnClickListener { action() }
         }
 
-    private fun screen(title: String) {
+    internal fun screen(title: String) {
         val scroll = ScrollView(this).apply {
             background = GradientDrawable(GradientDrawable.Orientation.BL_TR,
                 intArrayOf(0xFF050608.toInt(), 0xFF101624.toInt(), 0xFF050608.toInt()))
@@ -207,8 +256,11 @@ class MainActivity : Activity() {
 
     private fun currentListings() = Market.listings(System.currentTimeMillis() / 86_400_000L)
 
-    private fun card(index: Int, count: Int? = null, parent: LinearLayout = root) {
+    private fun card(index: Int, count: Int? = null, parent: LinearLayout = root,traitsOverride: PhoneTraits?=null) {
         val phone = Catalog.phones[index]
+        val position=progress.owned.indexOf(index)
+        val item=if(traitsOverride!=null)DeviceSnapshot(index,traitsOverride) else if(position>=0)DeviceSnapshot(index,progress.traitsAt(position)) else null
+        val displayPrice=if((count!=null || traitsOverride!=null) && item!=null)item.value else phone.price
         val panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(16), dp(16), dp(16), dp(16))
@@ -218,10 +270,11 @@ class MainActivity : Activity() {
                 topMargin = dp(16); bottomMargin = dp(12)
             })
         }
-        panel.addView(PhoneArtView(this, phone), LinearLayout.LayoutParams(-1, dp(156)))
+        panel.addView(PhoneArtView(this, phone,item?.let { progress.virtualProfile(it.key).color } ?: 0), LinearLayout.LayoutParams(-1, dp(156)))
         label(phone.rarity.title.uppercase(), 12f, phone.rarity.accent, panel)
         label(phone.name, 20f, parent = panel).setTypeface(null, Typeface.BOLD)
-        label("${phone.price} ₽", 20f, parent = panel)
+        label("$displayPrice ₽", 20f, parent = panel)
+        if((count!=null || traitsOverride!=null) && item!=null) label("${item.traits.mutation.title} · ${Market.conditions[item.traits.condition]}",14f,item.traits.mutation.accent,panel)
         button(if (index in progress.favorites) "♥ В избранном" else "♡ В избранное", panel) {
             if (persist(progress.toggleFavorite(index))) render()
         }
@@ -233,7 +286,11 @@ class MainActivity : Activity() {
             else if(persist(next,"Покупка нового телефона")) render()
         }
         button("О телефоне", panel) { selectedPhone = index; navigate("details") }
-        if (count != null) button("Продать один · ${phone.price} ₽", panel) {
+        if(index in progress.owned || progress.used.any { it.phone==index }) {
+            button("Открыть экран",panel){if(item!=null && item.traits.uid>0)worldScreens.openKey(item.key) else worldScreens.openModel(index)}
+            button("3D-просмотр",panel){if(item!=null && item.traits.uid>0)worldScreens.openKey(item.key,true) else worldScreens.openModel(index,true)}
+        }
+        if (count != null) button("Продать один · $displayPrice ₽", panel) {
             if (persist(progress.sell(index))) render()
         }
     }
@@ -249,8 +306,9 @@ class MainActivity : Activity() {
         return true
     }
 
-    private fun navigate(destination: String) { animator?.cancel(); animator = null; page = destination; render() }
+    private fun navigate(destination: String) { animator?.cancel(); animator = null;worldScreens.beforeNavigate(); page = destination; render() }
     private fun render() {
+        if(page.startsWith("world_")){worldScreens.render(page);return}
         when (page) {
             "expansion" -> expansionHub()
             "contracts" -> contracts()
@@ -271,6 +329,7 @@ class MainActivity : Activity() {
             "collection" -> {
                 screen("Коллекция")
                 button("Прошивки и джейлбрейк") { navigate("workshop") }
+                button("Экземпляры, мутации и ремонт") { navigate("world_inventory") }
                 if (progress.used.isNotEmpty()) {
                     label("Б/у телефонов: ${progress.used.size}", 18f)
                     button("Посмотреть и продать б/у") { navigate("market") }
@@ -295,7 +354,7 @@ class MainActivity : Activity() {
             "result" -> {
                 if (reward !in Catalog.phones.indices) { navigate("home"); return }
                 screen("Новый телефон!")
-                card(reward)
+                card(reward,traitsOverride=rewardTraits)
                 label("Телефон уже сохранён в коллекции.", 15f, muted)
                 button("Ещё кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
@@ -313,6 +372,7 @@ class MainActivity : Activity() {
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
                 button("Новое в 3.0") { navigate("expansion") }
+                button("Мир телефонов 4.0") { navigate("world_hub") }
                 button("Клиенты и сервис") { navigate("clients") }
                 button("Мини-игра ремонта") { navigate("repair") }
                 button("Мастерская · прошивки") { navigate("workshop") }
@@ -438,7 +498,7 @@ class MainActivity : Activity() {
         screen("Апгрейдер")
         label("Обмен с риском: исходный телефон расходуется при любом результате. Денег не списываем. Ultra здесь получить нельзя.", 15f, muted)
         val targets = if (upgradeSource in progress.owned) Catalog.phones.indices.filter {
-            !Catalog.isUltra(it) && Catalog.phones[it].price > Catalog.phones[upgradeSource].price
+            !Catalog.isUltra(it) && Catalog.phones[it].price > DeviceSnapshot(upgradeSource,progress.traitsAt(progress.owned.indexOf(upgradeSource))).value
         }.sortedBy { Catalog.phones[it].price } else emptyList()
         if (targets.isNotEmpty()) {
             if (upgradeTarget !in targets) upgradeTarget = targets.first()
@@ -754,7 +814,7 @@ class MainActivity : Activity() {
         button("На главную") { navigate("home") }
     }
 
-    private fun glassPanel(): LinearLayout = LinearLayout(this).apply {
+    internal fun glassPanel(): LinearLayout = LinearLayout(this).apply {
         orientation = LinearLayout.VERTICAL
         setPadding(dp(16), dp(16), dp(16), dp(16))
         background = shape()
@@ -944,6 +1004,7 @@ class MainActivity : Activity() {
                 if (total > 0) label("${rarity.title}: ${Catalog.percent(total)}%", 14f, rarity.accent, panel)
             }
             button("Открыть ${kind.title} · ${kind.cost}", panel) { openCase(kind) }
+            for(count in listOf(3,5,10))button("Открыть $count × ${kind.title} · ${kind.cost.toLong()*count} ₽",panel){worldScreens.openBatch(kind,count)}
         }
         button("На главную") { navigate("home") }
     }
@@ -1000,13 +1061,15 @@ class MainActivity : Activity() {
 
     private fun openCase(kind: CaseKind = CaseKind.CLASSIC) {
         if (animator != null) return
-        val result = progress.openCase(kind, Random.nextInt(Catalog.TOTAL_TICKETS))
+        val result = progress.openCase(kind, Random.nextInt(Catalog.TOTAL_TICKETS),
+            mutationTicket=Random.nextInt(10000),conditionTicket=Random.nextInt(10000),lootTicket=Random.nextInt(10000))
         if (result == null) {
             Toast.makeText(this, "Недостаточно ₽ — загляни в магазин", Toast.LENGTH_SHORT).show()
             return
         }
-        if (!persist(result.first)) return
+        if (!persist(result.first.identifyPhones())) return
         reward = result.second
+        rewardTraits=progress.traitsAt(progress.owned.lastIndex)
         page = "result"
         screen("Открываем кейс…")
         val crate = label("▣", 100f, mint).apply {

@@ -5,7 +5,7 @@ import android.graphics.*
 import android.view.View
 
 /** Offline stylized illustrations: camera layouts and form factors distinguish families. */
-class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
+class PhoneArtView(context: Context, private val phone: Phone,private val colorOverride: Int = 0) : View(context) {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val photo = when (phone.name) {
         "Samsung Z Fold 8 Ultra" -> "fold8-ultra.jpg"
@@ -39,7 +39,7 @@ class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
         val fold=n.contains("Fold") || (n.startsWith("OPPO Find N") && !flip)
         val nokia=n=="Nokia 3310"
         val tones=intArrayOf(0xFFCCC4B9.toInt(),0xFF334A47.toInt(),0xFF333544.toInt(),0xFFC6BACE.toInt())
-        val body=if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
+        val body=if(colorOverride!=0)colorOverride else if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
         box(canvas,-76f,-64f,64f,128f,body,if(n.contains("Ultra")) 3f else 10f)
         when {
             nokia -> {
