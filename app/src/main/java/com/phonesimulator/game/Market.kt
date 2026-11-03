@@ -26,17 +26,19 @@ enum class CaseKind(val title: String, val minimum: Rarity) {
     STREET("Уличный", Rarity.UNCOMMON),
     FLAGSHIP("Флагманский", Rarity.RARE),
     PREMIUM("Премиум", Rarity.EPIC);
+    private val pool: List<Int> by lazy {
+        Catalog.phones.indices.filter { !Catalog.isUltra(it) && Catalog.phones[it].rarity.ordinal >= minimum.ordinal }
+    }
     // Price is 115% of the exact expected sale value, rounded up to 1,000 ₽.
     val cost: Int by lazy {
-        val total = (0..999).sumOf { Catalog.phones[roll(it)].price.toLong() }
-        ((total * 115 + 99_999_999L) / 100_000_000L * 1000L).toInt()
+        val total = (0 until Catalog.TOTAL_TICKETS).sumOf { Catalog.phones[roll(it)].price.toLong() }
+        val denominator = Catalog.TOTAL_TICKETS * 100L * 1000L
+        ((total * 115 + denominator - 1) / denominator * 1000L).toInt()
     }
     fun roll(ticket: Int): Int {
-        require(ticket in 0..999)
+        require(ticket in 0 until Catalog.TOTAL_TICKETS)
         if (this == CLASSIC) return Catalog.roll(ticket)
-        // Ultra stays exactly one ticket out of 1000 in every case.
-        if (ticket == 999) return 5
-        val pool = Catalog.phones.indices.filter { it != 5 && Catalog.phones[it].rarity.ordinal >= minimum.ordinal }
+        Catalog.ultraDrop(ticket)?.let { return it }
         return pool[ticket % pool.size]
     }
 }

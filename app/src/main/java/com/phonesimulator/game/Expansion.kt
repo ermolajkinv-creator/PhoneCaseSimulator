@@ -22,7 +22,7 @@ object ExpansionRules {
     fun newPrice(model: Int) = ((Catalog.phones[model].price.toLong()*110+99)/100).toInt()
     fun deliveryModel(day: Long): Int {
         require(day >= 0)
-        val models = Catalog.phones.indices.filter { it != 5 }
+        val models = Catalog.phones.indices.filter { !Catalog.isUltra(it) }
         return models[(day % models.size).toInt()]
     }
     fun deliveryPrice(day: Long) = Catalog.phones[deliveryModel(day)].price*125/100+2500
@@ -30,7 +30,7 @@ object ExpansionRules {
 private fun Progress.addCash(amount: Int) = copy(coins=(coins.toLong()+amount).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
 fun Progress.buyNew(model: Int): Progress {
     require(model in Catalog.phones.indices)
-    if (model == 5 || coins < ExpansionRules.newPrice(model)) return this
+    if (Catalog.isUltra(model) || coins < ExpansionRules.newPrice(model)) return this
     return copy(coins=coins-ExpansionRules.newPrice(model), owned=owned+model)
 }
 fun Progress.bargain(listing: Listing, ticket: Int): Progress {

@@ -7,8 +7,11 @@ import android.view.View
 /** Offline stylized illustrations: camera layouts and form factors distinguish families. */
 class PhoneArtView(context: Context, private val phone: Phone) : View(context) {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
-    private val photo = if (phone.rarity == Rarity.ULTRA)
-        context.assets.open("fold8-ultra.jpg").use { BitmapFactory.decodeStream(it) } else null
+    private val photo = when (phone.name) {
+        "Samsung Z Fold 8 Ultra" -> "fold8-ultra.jpg"
+        "Палас улыбашкэ" -> "palas-smile.jpg"
+        else -> null
+    }?.let { path -> context.assets.open(path).use { BitmapFactory.decodeStream(it) } }
     init { importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO }
     private fun box(c: Canvas, x: Float, y: Float, w: Float, h: Float, color: Int, radius: Float = 7f) {
         paint.shader = null; paint.color = color

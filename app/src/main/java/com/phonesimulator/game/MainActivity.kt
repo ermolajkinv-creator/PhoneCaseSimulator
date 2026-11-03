@@ -144,12 +144,12 @@ class MainActivity : Activity() {
             orientation = LinearLayout.HORIZONTAL; background = shape()
             setPadding(dp(4), dp(4), dp(4), dp(4))
         }
-        listOf("Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
+        listOf("Главное" to "home", "Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
             "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").forEach { (name, route) ->
             dock.addView(Button(this).apply {
                 text = name; textSize = 10f; isAllCaps = false
                 minWidth = 0; minimumWidth = 0; setPadding(dp(2),0,dp(2),0)
-                setTextColor(if (page == route || page == "home" && route == "catalog") 0xFF95B6FF.toInt() else muted)
+                setTextColor(if (page == route) 0xFF95B6FF.toInt() else muted)
                 background = if (page == route) shape() else null
                 setOnClickListener { navigate(route) }
                 contentDescription = "Раздел $name"
@@ -219,9 +219,9 @@ class MainActivity : Activity() {
         button(if (index in progress.favorites) "♥ В избранном" else "♡ В избранное", panel) {
             if (persist(progress.toggleFavorite(index))) render()
         }
-        label("Шанс ${phone.tickets / 10.0}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
+        label("Шанс ${Catalog.percent(phone.tickets)}%" + (count?.let { "  ·  В коллекции: $it" } ?: ""),
             14f, muted, panel)
-        if(index != 5) button("Купить новый · ${ExpansionRules.newPrice(index)} ₽", panel) {
+        if(!Catalog.isUltra(index)) button("Купить новый · ${ExpansionRules.newPrice(index)} ₽", panel) {
             val next = progress.buyNew(index)
             if(next == progress) Toast.makeText(this,"Недостаточно денег",Toast.LENGTH_SHORT).show()
             else if(persist(next,"Покупка нового телефона")) render()
@@ -295,13 +295,13 @@ class MainActivity : Activity() {
                 button("На главную") { navigate("home") }
             }
             else -> {
-                screen("Открой свой следующий")
+                screen("Главное")
                 button("Ежедневные задания") { navigate("quests") }
                 button("Ежедневная награда") { navigate("daily") }
                 button("Каталог телефонов") { navigate("catalog") }
                 label("Каждый кейс — новый шанс", 22f)
-                card(5)
-                label("Samsung Z Fold 8 Ultra\nУльтралегендарный · 1 из 1000", 17f, muted)
+                phoneGrid(Catalog.ultraIndices, root)
+                label("Fold 8 Ultra — 0,1% · Палас улыбашкэ — 0,15%", 17f, muted)
                 button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
@@ -310,12 +310,12 @@ class MainActivity : Activity() {
                 button("Мастерская · прошивки") { navigate("workshop") }
                 button("Все кейсы · 4 вида") { navigate("cases") }
                 button("Авито · рынок б/у") { navigate("market") }
-                button("Википедия телефонов · ${Catalog.phones.size} моделей") { navigate("wiki") }
+                button("Википедия телефонов · ${Catalog.modelCountLabel}") { navigate("wiki") }
                 button("Админ-панель") { navigate("admin") }
                 label("Шансы по редкостям", 21f)
                 Rarity.entries.forEach { rarity ->
                     val tickets = Catalog.phones.filter { it.rarity == rarity }.sumOf { it.tickets }
-                    infoRow(rarity.title, "${tickets / 10.0}%")
+                    infoRow(rarity.title, "${Catalog.percent(tickets)}%")
                 }
             }
         }
@@ -350,7 +350,7 @@ class MainActivity : Activity() {
 
     private fun catalog() {
         screen("Каталог телефонов")
-        label("${Catalog.phones.size} моделей в коллекции игры", 16f, muted)
+        label("${Catalog.modelCountLabel} в коллекции игры", 16f, muted)
         button("Ежедневная награда") { navigate("daily") }
         button(if (favoritesOnly) "Показать все" else "Только избранное") { favoritesOnly = !favoritesOnly; render() }
         lateinit var list: LinearLayout
@@ -430,7 +430,7 @@ class MainActivity : Activity() {
         screen("Апгрейдер")
         label("Обмен с риском: исходный телефон расходуется при любом результате. Денег не списываем. Ultra здесь получить нельзя.", 15f, muted)
         val targets = if (upgradeSource in progress.owned) Catalog.phones.indices.filter {
-            it != 5 && Catalog.phones[it].price > Catalog.phones[upgradeSource].price
+            !Catalog.isUltra(it) && Catalog.phones[it].price > Catalog.phones[upgradeSource].price
         }.sortedBy { Catalog.phones[it].price } else emptyList()
         if (targets.isNotEmpty()) {
             if (upgradeTarget !in targets) upgradeTarget = targets.first()
@@ -748,7 +748,7 @@ class MainActivity : Activity() {
 
     private fun wiki() {
         screen("Википедия телефонов")
-        label("${Catalog.phones.size} моделей · характеристики и история", 16f, muted)
+        label("${Catalog.modelCountLabel} · характеристики и история", 16f, muted)
         button("На главную") { navigate("home") }
         lateinit var list: LinearLayout
         fun refresh(query: String) {
@@ -760,7 +760,7 @@ class MainActivity : Activity() {
             if (matches.isEmpty()) label("Ничего не найдено", parent = list)
             pagedPhones(matches, list) { page -> page.forEach { index ->
                 val phone = Catalog.phones[index]
-                button("${phone.name}\n${phone.rarity.title} · ${phone.tickets / 10.0}%", list) {
+                button("${phone.name}\n${phone.rarity.title} · ${Catalog.percent(phone.tickets)}%", list) {
                     selectedPhone = index; navigate("details")
                 }
             } }
@@ -777,7 +777,7 @@ class MainActivity : Activity() {
         panel.addView(PhoneArtView(this, phone), LinearLayout.LayoutParams(-1, dp(190)))
         infoRow("Устройство", phone.name, panel)
         infoRow("Редкость", phone.rarity.title, panel)
-        infoRow("Шанс в классическом", "${phone.tickets / 10.0}%", panel)
+        infoRow("Шанс в классическом", "${Catalog.percent(phone.tickets)}%", panel)
         infoRow("Чипсет", phone.chip, panel)
         infoRow("Дисплей", phone.display, panel)
         infoRow("Система", phone.system, panel)
@@ -877,8 +877,8 @@ class MainActivity : Activity() {
     }
 
     private fun cases() {
-        screen("Кейсы 2.5")
-        label("В каждом кейсе Z Fold 8 Ultra — 0,1%. Остальные модели зависят от типа кейса.", 16f, muted)
+        screen("Кейсы")
+        label("В каждом кейсе: Fold 8 Ultra — 0,1%, Палас улыбашкэ — 0,15%. Остальные модели зависят от типа кейса.", 16f, muted)
         CaseKind.entries.forEach { kind ->
             val panel = glassPanel()
             label(kind.title, 24f, parent = panel)
@@ -886,10 +886,10 @@ class MainActivity : Activity() {
             val pool = if (kind == CaseKind.CLASSIC) Catalog.phones.indices.toList()
                 else Catalog.phones.indices.filter { Catalog.phones[it].rarity.ordinal >= kind.minimum.ordinal }
             label("Моделей: ${pool.size}. Шансы:", 14f, muted, panel)
-            val chances = (0..999).map(kind::roll).groupingBy { it }.eachCount()
+            val chances = (0 until Catalog.TOTAL_TICKETS).map(kind::roll).groupingBy { it }.eachCount()
             Rarity.entries.forEach { rarity ->
                 val total = chances.filterKeys { Catalog.phones[it].rarity == rarity }.values.sum()
-                if (total > 0) label("${rarity.title}: ${total / 10.0}%", 14f, rarity.accent, panel)
+                if (total > 0) label("${rarity.title}: ${Catalog.percent(total)}%", 14f, rarity.accent, panel)
             }
             button("Открыть ${kind.title} · ${kind.cost}", panel) { openCase(kind) }
         }
@@ -948,7 +948,7 @@ class MainActivity : Activity() {
 
     private fun openCase(kind: CaseKind = CaseKind.CLASSIC) {
         if (animator != null) return
-        val result = progress.openCase(kind, Random.nextInt(1000))
+        val result = progress.openCase(kind, Random.nextInt(Catalog.TOTAL_TICKETS))
         if (result == null) {
             Toast.makeText(this, "Недостаточно ₽ — загляни в магазин", Toast.LENGTH_SHORT).show()
             return

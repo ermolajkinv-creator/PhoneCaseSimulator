@@ -5,9 +5,10 @@ import org.junit.Test
 
 class GameTest {
     @Test fun exactDropDistribution() {
-        val counts = (0..999).map(Catalog::roll).groupingBy { it }.eachCount()
+        val counts = (0 until Catalog.TOTAL_TICKETS).map(Catalog::roll).groupingBy { it }.eachCount()
         Catalog.phones.forEachIndexed { index, phone -> assertEquals(phone.tickets, counts[index]) }
-        assertEquals(1, counts[5])
+        assertEquals(10, counts[5])
+        assertEquals(15, counts[500])
         assertTrue(Catalog.phones[5].description.contains("2026"))
         assertFalse(Catalog.phones[5].description.contains("Вымышленная"))
         assertEquals("OnePlus 15", Catalog.phones[24].name)
@@ -16,8 +17,34 @@ class GameTest {
         assertEquals(Rarity.ULTRA, Catalog.phones[5].rarity)
         assertEquals("Samsung Z Fold 8 Ultra", Catalog.phones[5].name)
     }
+    @Test fun secondUltraHasExactOddsAndRespectsUltraRules() {
+        assertEquals("Палас улыбашкэ", Catalog.phones[500].name)
+        assertEquals(Rarity.ULTRA, Catalog.phones[500].rarity)
+        assertEquals(0.15, Catalog.percent(Catalog.phones[500].tickets), 0.0)
+        assertEquals(0.1, Catalog.percent(Catalog.phones[5].tickets), 0.0)
+        CaseKind.entries.forEach { kind ->
+            assertFalse(Catalog.isUltra(kind.roll(9974)))
+            assertEquals(500, kind.roll(9975))
+            assertEquals(500, kind.roll(9989))
+            assertEquals(5, kind.roll(9990))
+            assertEquals(5, kind.roll(9999))
+            val start = Progress(kind.cost, owned = listOf(0, 5))
+            val result = start.openCase(kind, 9975)!!
+            assertEquals(500, result.second)
+            assertEquals(listOf(0, 5, 500), result.first.owned)
+            assertEquals(0, result.first.coins)
+        }
+        val rich = Progress(Int.MAX_VALUE)
+        assertEquals(rich, rich.buyNew(500))
+        assertTrue(runCatching { Progress(owned = listOf(0)).upgrade(0,500,0) }.exceptionOrNull() is IllegalArgumentException)
+        assertTrue("ultra" in Progression.goals(Progress(owned = listOf(500))))
+        assertEquals(listOf("Заводская"), Workshop.options(Catalog.phones[500]))
+        assertEquals(listOf(0, 5, 499, 500), Progress.restore(777, "0,5,499,500").owned)
+        repeat(1000) { assertFalse(Catalog.isUltra(ExpansionRules.deliveryModel(it.toLong()))) }
+    }
+
     @Test fun paymentAndRewardAreOneTransaction() {
-        val (next, phone) = Progress(CaseKind.CLASSIC.cost).open(999)!!
+        val (next, phone) = Progress(CaseKind.CLASSIC.cost).open(9999)!!
         assertEquals(0, next.coins)
         assertEquals(listOf(phone), next.owned)
         assertEquals(5, phone)
@@ -35,8 +62,8 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(500, Catalog.phones.size)
-        assertEquals(1000, Catalog.phones.sumOf { it.tickets })
+        assertEquals(501, Catalog.phones.size)
+        assertEquals(10000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
         Catalog.phones.indices.forEach { granted = granted.grant(it) }
@@ -56,11 +83,12 @@ class GameTest {
     }
     @Test fun allCasesAndMarketTransactions() {
         CaseKind.entries.forEach { kind ->
-            val results = (0..999).map(kind::roll)
-            assertEquals(1, results.count { it == 5 })
+            val results = (0 until Catalog.TOTAL_TICKETS).map(kind::roll)
+            assertEquals(10, results.count { it == 5 })
+            assertEquals(15, results.count { it == 500 })
             assertTrue(results.all { Catalog.phones[it].rarity.ordinal >= kind.minimum.ordinal })
             assertNull(Progress(0).openCase(kind, 0))
-            assertEquals(0, Progress(kind.cost).openCase(kind, 999)!!.first.coins)
+            assertEquals(0, Progress(kind.cost).openCase(kind, 9999)!!.first.coins)
         }
         val listing = Listing("test", 1, 1, 80)
         val bought = Progress(100).buy(listing)!!
@@ -74,7 +102,7 @@ class GameTest {
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test fun firmwareAndConcreteCatalog() {
-        assertEquals(500, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals(501, Catalog.phones.map { it.name }.toSet().size)
         assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
         assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
         assertTrue(Catalog.phones.all { it.price in 1000..300000 })
@@ -86,12 +114,12 @@ class GameTest {
         assertEquals("LineageOS (симуляция)", state.firmware[1])
     }
     @Test fun economyTracksExactRewards() {
-        assertEquals(listOf(25000, 39000, 54000, 91000), CaseKind.entries.map { it.cost })
+        assertEquals(listOf(25000, 38000, 53000, 91000), CaseKind.entries.map { it.cost })
         CaseKind.entries.forEach { kind ->
-            val expected = (0..999).sumOf { Catalog.phones[kind.roll(it)].price.toLong() } / 1000.0
+            val expected = (0 until Catalog.TOTAL_TICKETS).sumOf { Catalog.phones[kind.roll(it)].price.toLong() } / Catalog.TOTAL_TICKETS.toDouble()
             assertTrue(kind.cost >= expected * 1.15)
             assertTrue(kind.cost < expected * 1.15 + 1000)
-            assertNull(Progress(kind.cost - 1).openCase(kind, 999))
+            assertNull(Progress(kind.cost - 1).openCase(kind, 9999))
         }
         assertTrue(Economy.START_BALANCE >= 2 * CaseKind.CLASSIC.cost)
         assertTrue(Economy.BONUS >= CaseKind.CLASSIC.cost)
@@ -104,9 +132,9 @@ class GameTest {
         assertEquals("c8ebfe1e02638fca15c6bd6ee3272b47eb688f2c50c83be7ddad606994fcdee3", digest)
         assertEquals("Samsung Galaxy S", Catalog.phones[100].name)
         assertEquals("ZTE Axon 40 Ultra", Catalog.phones[499].name)
-        assertEquals(Catalog.phones.indices.toSet(), (0..999).map(Catalog::roll).toSet())
+        assertEquals(Catalog.phones.indices.toSet(), (0 until Catalog.TOTAL_TICKETS).map(Catalog::roll).toSet())
         assertTrue(Catalog.phones.all { it.tickets > 0 })
-        assertEquals(listOf(5), Catalog.phones.indices.filter { Catalog.phones[it].rarity == Rarity.ULTRA })
+        assertEquals(listOf(5, 500), Catalog.phones.indices.filter { Catalog.phones[it].rarity == Rarity.ULTRA })
         val owned = listOf(0, 5, 99, 100, 499, 499)
         assertEquals(owned, Progress.restore(777, owned.joinToString(",")).owned)
         for (model in 100..499) {
@@ -296,5 +324,5 @@ class GameTest {
     @Test(expected = IllegalArgumentException::class)
     fun cannotUpgradeToUltra() { Progress(owned = listOf(0)).upgrade(0,5,0) }
     @Test(expected = IllegalArgumentException::class)
-    fun rejectsInvalidTicket() { Catalog.roll(1000) }
+    fun rejectsInvalidTicket() { Catalog.roll(10000) }
 }

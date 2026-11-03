@@ -13,7 +13,7 @@ object Progression {
             if (models.isNotEmpty()) add("first")
             if (models.size >= 10) add("ten")
             if (models.size >= 25) add("quarter")
-            if (5 in models) add("ultra")
+            if (models.any(Catalog::isUltra)) add("ultra")
             if (p.coins >= 1_000_000) add("million")
             if (p.clicks >= 100) add("clicks")
         }

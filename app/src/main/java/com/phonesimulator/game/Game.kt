@@ -115,25 +115,53 @@ object Catalog {
         Phone("Motorola Edge 40", 25000, Rarity.COMMON, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель Motorola Edge 40. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены."),
         Phone("ASUS Zenfone 10", 45000, Rarity.UNCOMMON, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель ASUS Zenfone 10. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены."),
         Phone("OPPO Reno10", 25000, Rarity.RARE, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель OPPO Reno10. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены.")
-    ) + AdditionalPhones.entries
-    val phones: List<Phone> = entries.map { phone ->
-        val budget = mapOf(Rarity.COMMON to 500, Rarity.UNCOMMON to 280, Rarity.RARE to 150,
-            Rarity.EPIC to 58, Rarity.LEGENDARY to 11, Rarity.ULTRA to 1).getValue(phone.rarity)
-        val peers = entries.filter { it.rarity == phone.rarity }
-        require(peers.size <= budget) { "Not enough drop tickets for ${phone.rarity}" }
-        val position = peers.indexOf(phone)
-        phone.copy(tickets = budget / peers.size + if (position < budget % peers.size) 1 else 0)
-    }
-    // One of exactly 1000 equally likely tickets is Ultra: 0.1%, in every case.
-    fun roll(ticket: Int): Int {
-        require(ticket in 0..999)
-        var edge = 0
-        phones.indices.filter { phones[it].rarity != Rarity.ULTRA }.plus(5).forEach { index ->
-            val phone = phones[index]
-            edge += phone.tickets
-            if (ticket < edge) return index
+    ) + AdditionalPhones.entries + Phone("Палас улыбашкэ", 35000, Rarity.ULTRA, 15,
+        "Коллекционный мем", "Улыбка на весь экран", "Игровая платформа",
+        "Палас улыбашкэ — особая игровая модель с широкой улыбкой. Второй ультралегендарный телефон: шанс 0,15% в каждом кейсе.")
+    const val TOTAL_TICKETS = 10_000
+    const val FOLD = 5
+    const val PALAS = 500
+    const val FOLD_TICKETS = 10
+    const val PALAS_TICKETS = 15
+    val ultraIndices = listOf(FOLD, PALAS)
+    val phones: List<Phone> = entries.mapIndexed { index, phone ->
+        val tickets = when (index) {
+            FOLD -> FOLD_TICKETS
+            PALAS -> PALAS_TICKETS
+            else -> {
+                // Preserve other rarity shares; the new 0.15% comes from Legendary (1.1% -> 0.95%).
+                val budget = mapOf(Rarity.COMMON to 5000, Rarity.UNCOMMON to 2800, Rarity.RARE to 1500,
+                    Rarity.EPIC to 580, Rarity.LEGENDARY to 95).getValue(phone.rarity)
+                val peers = entries.filter { it.rarity == phone.rarity }
+                require(peers.size <= budget) { "Not enough drop tickets for ${phone.rarity}" }
+                val position = peers.indexOf(phone)
+                budget / peers.size + if (position < budget % peers.size) 1 else 0
+            }
         }
-        error("Invalid drop table")
+        phone.copy(tickets = tickets)
+    }
+    fun isUltra(index: Int) = phones[index].rarity == Rarity.ULTRA
+    val modelCountLabel: String get() {
+        val count = phones.size
+        val noun = if (count % 100 in 11..14) "моделей" else when (count % 10) {
+            1 -> "модель"; 2, 3, 4 -> "модели"; else -> "моделей"
+        }
+        return "$count $noun"
+    }
+    fun percent(tickets: Int) = tickets * 100.0 / TOTAL_TICKETS
+    fun ultraDrop(ticket: Int): Int? = when {
+        ticket >= TOTAL_TICKETS - FOLD_TICKETS -> FOLD
+        ticket >= TOTAL_TICKETS - FOLD_TICKETS - PALAS_TICKETS -> PALAS
+        else -> null
+    }
+    private val dropTable = buildList {
+        (phones.indices.filter { !isUltra(it) } + listOf(PALAS, FOLD)).forEach { index ->
+            repeat(phones[index].tickets) { add(index) }
+        }
+    }.also { require(it.size == TOTAL_TICKETS) }
+    fun roll(ticket: Int): Int {
+        require(ticket in 0 until TOTAL_TICKETS)
+        return dropTable[ticket]
     }
 }
 
@@ -218,7 +246,7 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         return copy(coins = credit(Progression.dailyReward(streak)), lastDailyDay = day, dailyStreak = streak)
     }
     fun upgradeChance(source: Int, target: Int): Int {
-        require(source in owned && target in Catalog.phones.indices && target != 5)
+        require(source in owned && target in Catalog.phones.indices && !Catalog.isUltra(target))
         require(Catalog.phones[target].price > Catalog.phones[source].price)
         return (Catalog.phones[source].price.toLong()*750/Catalog.phones[target].price).toInt().coerceIn(1,750)
     }

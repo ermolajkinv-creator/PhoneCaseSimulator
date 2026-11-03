@@ -117,12 +117,12 @@ class CompatibilityTest {
     }
     @Test fun wikiSearchAndDetails() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
-            click(scenario, "Википедия телефонов · ${Catalog.phones.size} моделей")
+            click(scenario, "Википедия телефонов · ${Catalog.modelCountLabel}")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>()
                     .first().setText("Pixel 4")
             }
-            click(scenario, "Google Pixel 4\nРедкий · ${Catalog.phones[12].tickets / 10.0}%")
+            click(scenario, "Google Pixel 4\nРедкий · ${Catalog.percent(Catalog.phones[12].tickets)}%")
             assertText(scenario, "Snapdragon 855")
             assertText(scenario, "Android 10 при выпуске")
             scenario.recreate()
@@ -327,13 +327,13 @@ class CompatibilityTest {
     @Test fun expandedCatalogSearchPurchaseAndPersistence() {
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
             click(scenario, "Каталог телефонов")
-            assertText(scenario, "Показать ещё · 32 из 500")
+            assertText(scenario, "Показать ещё · 32 из 501")
             scenario.onActivity { activity ->
                 assertEquals(32, views(activity.window.decorView).filterIsInstance<Button>()
                     .count { it.text.toString() == "О телефоне" })
             }
-            click(scenario, "Показать ещё · 32 из 500")
-            assertText(scenario, "Показать ещё · 64 из 500")
+            click(scenario, "Показать ещё · 32 из 501")
+            assertText(scenario, "Показать ещё · 64 из 501")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
             }
@@ -342,12 +342,12 @@ class CompatibilityTest {
             scenario.recreate()
             assertEquals(listOf(499), ProgressStore(context).load().owned)
             click(scenario, "На главную")
-            click(scenario, "Википедия телефонов · 500 моделей")
+            click(scenario, "Википедия телефонов · 501 модель")
             scenario.onActivity { activity ->
                 views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("ZTE Axon 40 Ultra")
             }
             val phone = Catalog.phones[499]
-            click(scenario, "${phone.name}\n${phone.rarity.title} · ${phone.tickets / 10.0}%")
+            click(scenario, "${phone.name}\n${phone.rarity.title} · ${Catalog.percent(phone.tickets)}%")
             assertText(scenario, "Snapdragon 8 Gen 1")
             assertText(scenario, "Android 12 при выпуске")
         }
@@ -409,6 +409,38 @@ class CompatibilityTest {
             val before = store.load().coins
             click(scenario, "◉ +10 ₽")
             assertEquals(before + 10, store.load().coins)
+        }
+    }
+
+    @Test fun bothUltrasAreFeaturedAndHomeIsAlwaysAccessible() {
+        val store = ProgressStore(context)
+        assertTrue(store.save(Progress(777, listOf(5, 500))))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            assertText(scenario, "Samsung Z Fold 8 Ultra")
+            assertText(scenario, "Палас улыбашкэ")
+            assertText(scenario, "Шанс 0.1%")
+            assertText(scenario, "Шанс 0.15%")
+            click(scenario, "Каталог")
+            click(scenario, "Главное")
+            assertText(scenario, "Палас улыбашкэ")
+            assertText(scenario, "Ежедневные задания")
+            assertText(scenario, "Клиенты и сервис")
+            click(scenario, "Википедия телефонов · 501 модель")
+            scenario.onActivity { activity ->
+                views(activity.window.decorView).filterIsInstance<android.widget.EditText>().first().setText("Палас улыбашкэ")
+            }
+            click(scenario, "Палас улыбашкэ\nУльтралегендарный · 0.15%")
+            assertText(scenario, "Игровая платформа")
+            scenario.recreate()
+            assertText(scenario, "Игровая платформа")
+            click(scenario, "Главное")
+            assertText(scenario, "Палас улыбашкэ")
+            assertEquals(listOf(5, 500), store.load().owned)
+        }
+        context.assets.open("palas-smile.jpg").use {
+            val image = requireNotNull(android.graphics.BitmapFactory.decodeStream(it))
+            assertTrue(image.width > 0 && image.height > 0)
+            image.recycle()
         }
     }
 
