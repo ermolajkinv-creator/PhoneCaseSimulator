@@ -7,7 +7,9 @@ enum class ServiceKind(val title: String, val level: Int, val seconds: Int) {
 data class ClientOffer(val slot: Long, val phone: Int, val kind: ServiceKind, val cost: Int, val reward: Int, val seconds: Int) {
     val customer: String get() = listOf("Алексей", "Мария", "Денис", "Анна", "Тимур", "Елена")[(slot % 6).toInt()]
 }
-data class ClientJob(val offer: ClientOffer, val readyAt: Long)
+data class ClientJob(val offer: ClientOffer, val readyAt: Long, val repair: RepairSession = RepairSession()) {
+    val payout: Int get() = (offer.reward.toLong() + repair.bonus).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
+}
 object Clients {
     const val INTERVAL = 120_000L
     val upgradeCosts = listOf(10000,30000,60000,120000)

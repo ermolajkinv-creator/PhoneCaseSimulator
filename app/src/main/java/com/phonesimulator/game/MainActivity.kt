@@ -40,6 +40,7 @@ class MainActivity : Activity() {
     private var favoritesOnly = false
     private var upgradeSource = -1
     private var upgradeTarget = -1
+    private var repairPractice = RepairSession()
     private val ink = Color.rgb(10, 14, 20)
     private val muted = Color.rgb(221, 216, 245)
     private val mint = Color.rgb(246, 232, 255)
@@ -56,6 +57,9 @@ class MainActivity : Activity() {
         favoritesOnly = savedInstanceState?.getBoolean("favoritesOnly") ?: false
         upgradeSource = savedInstanceState?.getInt("upgradeSource", -1) ?: -1
         upgradeTarget = savedInstanceState?.getInt("upgradeTarget", -1) ?: -1
+        val practiceMistakes = (savedInstanceState?.getInt("repairMistakes", 0) ?: 0).coerceIn(0, 3)
+        val practiceStep = (savedInstanceState?.getInt("repairStep", 0) ?: 0).coerceIn(0, if (practiceMistakes == 3) 2 else 3)
+        repairPractice = RepairSession(practiceStep, practiceMistakes)
         render()
     }
 
@@ -68,6 +72,8 @@ class MainActivity : Activity() {
         outState.putInt("selectedPhone", selectedPhone)
         outState.putString("wikiQuery", wikiQuery)
         outState.putInt("reward", reward)
+        outState.putInt("repairStep", repairPractice.step)
+        outState.putInt("repairMistakes", repairPractice.mistakes)
         super.onSaveInstanceState(outState)
     }
 
@@ -258,6 +264,7 @@ class MainActivity : Activity() {
             "workshop" -> workshop()
             "cases" -> cases()
             "market" -> market()
+            "repair" -> repairGame()
             "wiki" -> wiki()
             "details" -> details()
             "admin" -> admin()
@@ -307,6 +314,7 @@ class MainActivity : Activity() {
                 button("Магазин") { navigate("shop") }
                 button("Новое в 3.0") { navigate("expansion") }
                 button("Клиенты и сервис") { navigate("clients") }
+                button("Мини-игра ремонта") { navigate("repair") }
                 button("Мастерская · прошивки") { navigate("workshop") }
                 button("Все кейсы · 4 вида") { navigate("cases") }
                 button("Авито · рынок б/у") { navigate("market") }
@@ -596,8 +604,10 @@ class MainActivity : Activity() {
             val panel = glassPanel()
             label("В работе: ${job.offer.customer}", 22f, parent = panel)
             label("${Catalog.phones[job.offer.phone].name} · ${job.offer.kind.title}", 17f, parent = panel)
+            label("Бонус за диагностику: ${job.repair.bonus} ₽", 16f, muted, panel)
+            button("Мини-игра ремонта", panel) { navigate("repair") }
             val status = label("", 20f, mint, panel)
-            val complete = button("Выдать телефон · ${job.offer.reward} ₽", panel) {
+            val complete = button("Выдать телефон · ${job.payout} ₽", panel) {
                 if (persist(progress.finishClient(System.currentTimeMillis()))) render()
             }
             status.post(object : Runnable {
@@ -640,6 +650,48 @@ class MainActivity : Activity() {
         }
         button("Обновить посетителей") { render() }
         button("Прошивки и джейлбрейк") { navigate("workshop") }
+        button("На главную") { navigate("home") }
+    }
+
+    private fun repairGame() {
+        screen("Мини-игра ремонта")
+        val job = progress.clientJob
+        val session = job?.repair ?: repairPractice
+        val kind = job?.offer?.kind ?: ServiceKind.REPAIR
+        val seed = job?.offer?.slot ?: 0L
+        val panel = glassPanel()
+        label(if (job == null) "Тренировка · Redmi Note 10S" else "Заказ: ${Catalog.phones[job.offer.phone].name}", 22f, parent = panel)
+        label(if (job == null) "Тренировка бесплатна и не выдаёт деньги. Для доплаты прими заказ клиента в сервисе."
+            else "${kind.title}. Бонус за успех: 500 ₽ без ошибок, 300 ₽ с одной, 100 ₽ с двумя. Выплата вместе с заказом.", 16f, muted, panel)
+        label("Это игровая симуляция, не инструкция по ремонту настоящего устройства.", 14f, muted, panel)
+        label("Проверок пройдено: ${session.step}/3 · Ошибки: ${session.mistakes}/3", 18f, parent = panel)
+        if (session.done) {
+            label(if (session.step == 3) "Ремонт выполнен · ${"★".repeat(session.stars)}${"☆".repeat(3-session.stars)}"
+                else "Три ошибки. Бонус за диагностику не получен.", 22f, mint, panel)
+            if (job == null) button("Новая тренировка", panel) { repairPractice = RepairSession(); render() }
+            else label("Доплата при выдаче: ${session.bonus} ₽. Основная оплата заказа сохранена.", 17f, muted, panel)
+        } else {
+            val question = RepairGame.question(kind, session.step, seed)
+            label("Этап ${session.step+1} / 3", 20f, parent = panel)
+            label(question.symptom, 20f, parent = panel)
+            question.choices.forEachIndexed { choice, text ->
+                button(text, panel) {
+                    val changed = if (job == null) {
+                        if (progress.clientJob != null || repairPractice != session) return@button
+                        repairPractice = session.answer(kind, seed, choice)
+                        true
+                    } else {
+                        val next = progress.answerRepair(job.offer.slot, session, choice)
+                        next != progress && persist(next, "Диагностика телефона")
+                    }
+                    if (changed) {
+                        Toast.makeText(this, if (choice == question.answer) "Верно!" else "Ошибка. Попробуй другой вариант.", Toast.LENGTH_SHORT).show()
+                        render()
+                    }
+                }
+            }
+        }
+        button("Клиенты и сервис") { navigate("clients") }
         button("На главную") { navigate("home") }
     }
 

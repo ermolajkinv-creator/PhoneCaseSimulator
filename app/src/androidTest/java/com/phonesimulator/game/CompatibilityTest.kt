@@ -444,6 +444,71 @@ class CompatibilityTest {
         }
     }
 
+    @Test fun repairPracticeSurvivesRotationWithoutPaying() {
+        assertTrue(ProgressStore(context).save(Progress(777)))
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Мини-игра ремонта")
+            assertText(scenario, "Тренировка · Redmi Note 10S")
+            val first = RepairGame.question(ServiceKind.REPAIR, 0, 0)
+            click(scenario, first.choices[first.answer])
+            scenario.recreate()
+            assertText(scenario, "Проверок пройдено: 1/3 · Ошибки: 0/3")
+            for (step in 1..2) {
+                val q = RepairGame.question(ServiceKind.REPAIR, step, 0)
+                click(scenario, q.choices[q.answer])
+            }
+            assertText(scenario, "Ремонт выполнен · ★★★")
+            assertEquals(777, ProgressStore(context).load().coins)
+            assertNull(ProgressStore(context).load().clientJob)
+            click(scenario, "Новая тренировка")
+            assertText(scenario, "Проверок пройдено: 0/3 · Ошибки: 0/3")
+        }
+    }
+
+    @Test fun clientRepairBonusPersistsAndCannotBeReissued() {
+        val store = ProgressStore(context)
+        val now = System.currentTimeMillis()
+        val slot = now / Clients.INTERVAL
+        val offer = ClientOffer(slot, 1, ServiceKind.SETUP, 0, 1500, 20)
+        // The previous seven-field job format still loads with an untouched repair round.
+        context.getSharedPreferences("game", 0).edit().putString("clientJob", "$slot,1,SETUP,0,1500,20,${now-1000}").commit()
+        assertEquals(RepairSession(), store.load().clientJob!!.repair)
+        assertTrue(store.save(Progress(700, listOf(5), clientJob = ClientJob(offer, now-1000), serviceSlot = slot)))
+        assertTrue(store.createBackup())
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Мини-игра ремонта")
+            val q = RepairGame.question(offer.kind, 0, slot)
+            click(scenario, q.choices[q.answer])
+            scenario.recreate()
+            assertEquals(RepairSession(1,0), store.load().clientJob!!.repair)
+        }
+        assertTrue(store.restoreBackup())
+        assertEquals(RepairSession(1,0), store.load().clientJob!!.repair)
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            click(scenario, "Мини-игра ремонта")
+            for (step in 1..2) {
+                val q = RepairGame.question(offer.kind, step, slot)
+                click(scenario, q.choices[q.answer])
+            }
+            assertEquals(700, store.load().coins)
+            assertEquals(500, store.load().clientJob!!.repair.bonus)
+            click(scenario, "Клиенты и сервис")
+            click(scenario, "Выдать телефон · 2000 ₽")
+            assertEquals(2700, store.load().coins)
+            assertEquals(1, store.load().servicesCompleted)
+            assertNull(store.load().clientJob)
+            scenario.recreate()
+            scenario.onActivity { activity ->
+                assertFalse(views(activity.window.decorView).filterIsInstance<Button>()
+                    .any { it.text.toString().startsWith("Выдать телефон") })
+            }
+        }
+        assertTrue(store.restoreBackup())
+        assertNull(store.load().clientJob)
+        val restored = store.load()
+        assertEquals(restored.coins, restored.finishClient(System.currentTimeMillis()).coins)
+    }
+
     @Test fun legacySaveAndDuplicateSale() {
         context.getSharedPreferences("game", 0).edit().putInt("coins", 777)
             .putString("owned", "0,5,5,999,broken").commit()

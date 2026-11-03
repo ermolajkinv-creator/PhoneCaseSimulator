@@ -279,6 +279,71 @@ class GameTest {
         assertTrue(Catalog.phones[Clients.offer(3,3).phone].name.startsWith("iPhone"))
         assertTrue("LineageOS (симуляция)" in Workshop.options(Catalog.phones[Clients.offer(2,2).phone]))
     }
+    @Test fun repairQuestionsAndScoresWorkForEveryJobType() {
+        ServiceKind.entries.forEach { kind ->
+            for (seed in 0L..5L) {
+                for (errors in 0..2) {
+                    var session = RepairSession()
+                    repeat(errors) {
+                        val q = RepairGame.question(kind, session.step, seed)
+                        session = session.answer(kind, seed, (q.answer + 1) % 3)
+                    }
+                    repeat(3) {
+                        val q = RepairGame.question(kind, session.step, seed)
+                        assertEquals(3, q.choices.toSet().size)
+                        assertTrue(q.symptom.isNotBlank())
+                        assertTrue(q.answer in 0..2)
+                        session = session.answer(kind, seed, q.answer)
+                    }
+                    assertTrue(session.done)
+                    assertEquals(3 - errors, session.stars)
+                    assertEquals(listOf(500, 300, 100)[errors], session.bonus)
+                    assertEquals(session, session.answer(kind, seed, 0))
+                }
+                var failed = RepairSession()
+                repeat(3) {
+                    val q = RepairGame.question(kind, failed.step, seed)
+                    failed = failed.answer(kind, seed, (q.answer + 1) % 3)
+                }
+                assertTrue(failed.done)
+                assertEquals(0, failed.bonus)
+                assertEquals(0, failed.stars)
+                assertEquals(failed, failed.answer(kind, seed, 0))
+            }
+        }
+        assertTrue(runCatching { RepairSession(3, 3) }.exceptionOrNull() is IllegalArgumentException)
+    }
+
+    @Test fun repairBonusIsDeferredAndCannotBeCollectedTwice() {
+        val offer = ClientOffer(0, 1, ServiceKind.REPAIR, 0, 1500, 30)
+        val original = Progress(700, listOf(5), clientJob = ClientJob(offer, 30000), serviceSlot = 0)
+        val expected = original.clientJob!!.repair
+        val first = original.answerRepair(0, expected, RepairGame.question(offer.kind,0,0).answer)
+        assertEquals(1, first.clientJob!!.repair.step)
+        assertEquals(700, first.coins)
+        assertEquals(first, first.answerRepair(0, expected, 0))
+        assertEquals(first, first.answerRepair(1, first.clientJob!!.repair, 0))
+        var solved = first
+        repeat(2) {
+            val session = solved.clientJob!!.repair
+            solved = solved.answerRepair(0, session, RepairGame.question(offer.kind, session.step, 0).answer)
+        }
+        assertEquals(500, solved.clientJob!!.repair.bonus)
+        assertEquals(700, solved.finishClient(29999).coins)
+        val paid = solved.finishClient(30000)
+        assertEquals(2700, paid.coins)
+        assertEquals(listOf(5), paid.owned)
+        assertEquals(1, paid.servicesCompleted)
+        assertEquals(paid, paid.finishClient(30000))
+        assertEquals(paid, paid.answerRepair(0, expected, 0))
+        val failed = original.copy(clientJob = original.clientJob!!.copy(repair = RepairSession(mistakes = 3)))
+        assertEquals(2200, failed.finishClient(30000).coins)
+        val huge = original.copy(coins = Int.MAX_VALUE - 1,
+            clientJob = ClientJob(offer.copy(reward = Int.MAX_VALUE), 30000, RepairSession(3,0)))
+        assertEquals(Int.MAX_VALUE, huge.clientJob!!.payout)
+        assertEquals(Int.MAX_VALUE, huge.finishClient(30000).coins)
+    }
+
     @Test fun versionThreeTradingAwardsContractsAndSafe() {
         val rich=Progress(1_000_000)
         val bought=rich.buyNew(0)

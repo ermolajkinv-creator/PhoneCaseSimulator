@@ -25,7 +25,8 @@ class ProgressStore(context: Context) {
             val seconds = jobParts[5].toInt()
             val at = jobParts[6].toLong()
             if (slot >= 0 && phone in Catalog.phones.indices && cost >= 0 && reward >= cost && seconds in 10..60 && at >= 0)
-                ClientJob(ClientOffer(slot, phone, kind, cost, reward, seconds), at) else null
+                ClientJob(ClientOffer(slot, phone, kind, cost, reward, seconds), at,
+                    RepairSession(jobParts.getOrNull(7)?.toIntOrNull() ?: 0, jobParts.getOrNull(8)?.toIntOrNull() ?: 0)) else null
         } catch (_: RuntimeException) { null }
         return Progress.restore(coins, owned).copy(used = used,
             expansion = ExpansionCodec.decode(prefs.getString("expansion", "").orEmpty()),
@@ -67,7 +68,7 @@ class ProgressStore(context: Context) {
         .putInt("servicesCompleted", progress.servicesCompleted)
         .putLong("serviceSlot", progress.serviceSlot)
         .putStringSet("servicedSlots", progress.servicedSlots.map { it.toString() }.toSet())
-        .putString("clientJob", progress.clientJob?.let { "${it.offer.slot},${it.offer.phone},${it.offer.kind.name},${it.offer.cost},${it.offer.reward},${it.offer.seconds},${it.readyAt}" }.orEmpty())
+        .putString("clientJob", progress.clientJob?.let { "${it.offer.slot},${it.offer.phone},${it.offer.kind.name},${it.offer.cost},${it.offer.reward},${it.offer.seconds},${it.readyAt},${it.repair.step},${it.repair.mistakes}" }.orEmpty())
         .putLong("questDay", progress.questDay)
         .putInt("questClicks", progress.questClicks)
         .putInt("questCases", progress.questCases)
@@ -147,7 +148,13 @@ class ProgressStore(context: Context) {
                 (before.servicedSlots+(0 until oldSlots.length()).mapNotNull { oldSlots.optString(it).toLongOrNull() })
                     .filter { it>=maxSlot-2 }.map { it.toString() }.toSet())
             val oldJobSlot=snapshot["clientJob"]?.optString("value").orEmpty().substringBefore(',').toLongOrNull()
+            val currentJob = before.clientJob
             if(oldJobSlot!=null && (oldJobSlot in before.servicedSlots || oldJobSlot<maxSlot-2)) editor.putString("clientJob","")
+            else if (oldJobSlot != null && currentJob != null && oldJobSlot == currentJob.offer.slot) {
+                val original = snapshot["clientJob"]?.optString("value").orEmpty().split(',').take(7)
+                val repair = currentJob.repair
+                editor.putString("clientJob", (original + listOf(repair.step.toString(), repair.mistakes.toString())).joinToString(","))
+            }
             editor.commit()
         } catch (_: Exception) { false }
     }

@@ -280,7 +280,7 @@ data class Progress(val coins: Int = Economy.START_BALANCE, val owned: List<Int>
         val ready = syncClients(now)
         val job = ready.clientJob ?: return ready
         if (now < job.readyAt) return ready
-        return ready.copy(coins = ready.credit(job.offer.reward), clientJob = null,
+        return ready.copy(coins = ready.credit(job.payout), clientJob = null,
             servicedSlots = ready.servicedSlots + job.offer.slot,
             reputation = (reputation.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt(),
             servicesCompleted = (servicesCompleted.toLong()+1).coerceAtMost(Int.MAX_VALUE.toLong()).toInt())
