@@ -199,19 +199,23 @@ class MainActivity : Activity() {
         val frame = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setBackgroundColor(ink) }
         frame.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         val dock = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL; background = shape()
+            orientation = LinearLayout.VERTICAL; background = shape()
             setPadding(dp(4), dp(4), dp(4), dp(4))
         }
         listOf("Главное" to "home", "Новое" to "new", "Каталог" to "catalog", "Кейсы" to "cases", "Инвентарь" to "collection",
-            "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").forEach { (name, route) ->
-            dock.addView(Button(this).apply {
-                text = name; textSize = if(resources.displayMetrics.widthPixels/resources.displayMetrics.density<360)9f else 10f; isAllCaps = false
+            "Кликер" to "clicker", "Апгрейд" to "upgrade", "Профиль" to "profile").chunked(4).forEach { tabs ->
+            val row=LinearLayout(this).apply { orientation=LinearLayout.HORIZONTAL }
+            dock.addView(row,LinearLayout.LayoutParams(-1,-2))
+            tabs.forEach { (name, route) ->
+            row.addView(Button(this).apply {
+                text = name; textSize = 12f; isAllCaps = false
                 minWidth = 0; minimumWidth = 0; setPadding(dp(2),0,dp(2),0)
                 setTextColor(if (page == route) 0xFF95B6FF.toInt() else muted)
                 background = if (page == route) shape() else null
                 setOnClickListener { navigate(route) }
                 contentDescription = "Раздел $name"
-            }, LinearLayout.LayoutParams(0, dp(60), 1f))
+            }, LinearLayout.LayoutParams(0, dp(48), 1f))
+            }
         }
         frame.addView(dock, LinearLayout.LayoutParams(-1,-2).apply {
             setMargins(dp(6),dp(4),dp(6),dp(4))
