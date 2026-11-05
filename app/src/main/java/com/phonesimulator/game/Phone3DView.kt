@@ -18,7 +18,7 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
     private val scale=ScaleGestureDetector(context,object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
         override fun onScale(detector: ScaleGestureDetector): Boolean { zoomBy(detector.scaleFactor);return true }
     })
-    private val bodyColor=if(style.color!=0) style.color else if(item.company!=null) item.company.color else item.traits.mutation.accent
+    private val bodyColor=if(style.color!=0) style.color else if(item.company!=null) item.company.color else if(item.model==Catalog.BURMALDO && item.traits.mutation==Mutation.NORMAL)0xFFAD88DC.toInt() else item.traits.mutation.accent
     private val front=texture(true)
     private val back=texture(false)
     init { contentDescription="Объёмный ${item.phone.name}. Вращение пальцем и масштабирование двумя пальцами." }
@@ -57,7 +57,9 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             if(item.traits.mutation==Mutation.GLITCH || style.theme=="glitch"){
                 p.color=0xAA8BFFDA.toInt();for(i in 0..8)c.drawRect((i*29%180).toFloat(),(i*59+15).toFloat(),(i*29%180+70).toFloat(),(i*59+22).toFloat(),p)
             }
-            if(item.model==Catalog.PALAS) {
+            if(item.model==Catalog.BURMALDO) {
+                BurmaldoArt.face(c,RectF(12f,24f,244f,335f))
+            } else if(item.model==Catalog.PALAS) {
                 p.color=0xFFDBDEE2.toInt();c.drawCircle(128f,120f,85f,p);p.color=Color.BLACK
                 c.drawCircle(99f,95f,20f,p);c.drawCircle(157f,95f,20f,p)
                 p.style=Paint.Style.STROKE;p.strokeWidth=7f;c.drawArc(RectF(76f,105f,180f,175f),0f,180f,false,p);p.style=Paint.Style.FILL

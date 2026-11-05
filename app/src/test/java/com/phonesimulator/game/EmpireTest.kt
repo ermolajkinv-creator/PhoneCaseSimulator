@@ -7,7 +7,7 @@ class EmpireTest {
         assertEquals(25,EmpireFeature.entries.size)
         val poor=Progress(0)
         for(f in listOf(EmpireFeature.ROOM,EmpireFeature.TOOLS,EmpireFeature.PARCEL,EmpireFeature.PARTS,EmpireFeature.STAFF,EmpireFeature.WARRANTY))assertEquals(poor,act(poor,f))
-        assertEquals(554,Catalog.phones.size)
+        assertEquals(555,Catalog.phones.size)
     }
     @Test fun diagnosisRepairPartsAndRewardsAreOneTransaction(){
         var p=act(Progress(20000),EmpireFeature.PARTS)

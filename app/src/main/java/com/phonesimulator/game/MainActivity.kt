@@ -240,7 +240,7 @@ class MainActivity : Activity() {
         setContentView(frame)
         frame.requestApplyInsets()
         GameMotion.enter(root)
-        if(!compact)label("PHONE LAB  /  4.5.1", 12f, mint).apply {
+        if(!compact)label("PHONE LAB  /  4.5.2", 12f, mint).apply {
             letterSpacing = 0.14f
         }
         label(title, if(compact)22f else 28f).setTypeface(null, Typeface.BOLD)

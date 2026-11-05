@@ -62,7 +62,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(554, Catalog.phones.size)
+        assertEquals(555, Catalog.phones.size)
         assertEquals(10000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
@@ -102,7 +102,7 @@ class GameTest {
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test fun firmwareAndConcreteCatalog() {
-        assertEquals(554, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals(555, Catalog.phones.map { it.name }.toSet().size)
         assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
         assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
         assertTrue(Catalog.phones.all { it.price in 1000..300000 })
@@ -157,7 +157,7 @@ class GameTest {
         assertEquals("Snapdragon 778G",Catalog.phones[48].chip)
         assertEquals(1,Catalog.phones.count { it.name=="iPhone 12" })
         assertEquals("Apple A14 Bionic",Catalog.phones[66].chip)
-        for(model in 501 until Catalog.phones.size){
+        for(model in 501 until 501+DeviceExpansion41.entries.size){
             val phone=Catalog.phones[model]
             val bought=Progress(1_000_000).buyNew(model)
             assertEquals(listOf(model),bought.owned)

@@ -39,7 +39,7 @@ class PhoneArtView(context: Context, private val phone: Phone,private val colorO
         val fold=n.contains("Fold") || (n.startsWith("OPPO Find N") && !flip)
         val nokia=n=="Nokia 3310"
         val tones=intArrayOf(0xFFCCC4B9.toInt(),0xFF334A47.toInt(),0xFF333544.toInt(),0xFFC6BACE.toInt())
-        val body=if(colorOverride!=0)colorOverride else if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
+        val body=if(colorOverride!=0)colorOverride else if(n=="Бурмалдофон") 0xFFAD88DC.toInt() else if(n.contains("17 Pro")) 0xFFD78C54.toInt() else tones[(n.hashCode() and Int.MAX_VALUE)%tones.size]
         if(phone.formFactor==FormFactor.TABLET) {
             // Front and rear at tablet aspect ratios; cameras stay in the bezel.
             box(canvas,-81f,-58f,79f,116f,body,6f)
@@ -56,6 +56,7 @@ class PhoneArtView(context: Context, private val phone: Phone,private val colorO
         }
         box(canvas,-76f,-64f,64f,128f,body,if(n.contains("Ultra")) 3f else 10f)
         when {
+            n=="Бурмалдофон" -> BurmaldoArt.face(canvas,RectF(-74f,-59f,-14f,42f))
             nokia -> {
                 box(canvas,-65f,-48f,42f,38f,0xFF9EA98A.toInt(),3f)
                 for(row in 0..3) for(col in 0..2) box(canvas,-64f+col*14,-1f+row*13,11f,8f,0xFFBEC3C9.toInt(),3f)
