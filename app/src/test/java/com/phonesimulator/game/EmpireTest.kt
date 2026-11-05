@@ -7,7 +7,7 @@ class EmpireTest {
         assertEquals(25,EmpireFeature.entries.size)
         val poor=Progress(0)
         for(f in listOf(EmpireFeature.ROOM,EmpireFeature.TOOLS,EmpireFeature.PARCEL,EmpireFeature.PARTS,EmpireFeature.STAFF,EmpireFeature.WARRANTY))assertEquals(poor,act(poor,f))
-        assertEquals(555,Catalog.phones.size)
+        assertEquals(556,Catalog.phones.size)
     }
     @Test fun diagnosisRepairPartsAndRewardsAreOneTransaction(){
         var p=act(Progress(20000),EmpireFeature.PARTS)
@@ -43,7 +43,7 @@ class EmpireTest {
     }
     @Test fun protectedPhonesAndDailyRewardsCannotBeDuplicated(){
         val ultra=Progress(10000,listOf(5,500));assertEquals(ultra,act(ultra,EmpireFeature.RECYCLE,0))
-        val donor=Progress(10000,listOf(0));val recycled=act(donor,EmpireFeature.RECYCLE,0)
+        val donor=Progress(10000,listOf(100));val recycled=act(donor,EmpireFeature.RECYCLE,0)
         assertTrue(recycled.owned.isEmpty());assertEquals(3L,recycled.world.empire["parts"])
         assertEquals(recycled,act(recycled,EmpireFeature.RECYCLE,0))
         val start=act(Progress(20000),EmpireFeature.DAILY)

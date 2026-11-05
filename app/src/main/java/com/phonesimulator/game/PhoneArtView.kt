@@ -10,6 +10,7 @@ class PhoneArtView(context: Context, private val phone: Phone,private val colorO
     private val photo = when (phone.name) {
         "Samsung Z Fold 8 Ultra" -> "fold8-ultra.jpg"
         "Палас улыбашкэ" -> "palas-smile.jpg"
+        "ТелИфон" -> "telifon.jpg"
         else -> null
     }?.let { path -> context.assets.open(path).use { BitmapFactory.decodeStream(it) } }
     init { importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO }

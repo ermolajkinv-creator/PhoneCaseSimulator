@@ -57,7 +57,14 @@ class Phone3DView(context: Context,private val item: DeviceSnapshot,private val 
             if(item.traits.mutation==Mutation.GLITCH || style.theme=="glitch"){
                 p.color=0xAA8BFFDA.toInt();for(i in 0..8)c.drawRect((i*29%180).toFloat(),(i*59+15).toFloat(),(i*29%180+70).toFloat(),(i*59+22).toFloat(),p)
             }
-            if(item.model==Catalog.BURMALDO) {
+            if(item.model==Catalog.TELIFON) {
+                context.assets.open("telifon.jpg").use { stream ->
+                    val photo=BitmapFactory.decodeStream(stream)
+                    val h=232f*photo.height/photo.width
+                    c.drawBitmap(photo,null,RectF(12f,110f,244f,110f+h),p)
+                    photo.recycle()
+                }
+            } else if(item.model==Catalog.BURMALDO) {
                 BurmaldoArt.face(c,RectF(12f,24f,244f,335f))
             } else if(item.model==Catalog.PALAS) {
                 p.color=0xFFDBDEE2.toInt();c.drawCircle(128f,120f,85f,p);p.color=Color.BLACK

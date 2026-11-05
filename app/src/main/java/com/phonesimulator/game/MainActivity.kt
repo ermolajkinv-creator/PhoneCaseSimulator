@@ -240,7 +240,7 @@ class MainActivity : Activity() {
         setContentView(frame)
         frame.requestApplyInsets()
         GameMotion.enter(root)
-        if(!compact)label("PHONE LAB  /  4.5.2", 12f, mint).apply {
+        if(!compact)label("PHONE LAB  /  4.5.3", 12f, mint).apply {
             letterSpacing = 0.14f
         }
         label(title, if(compact)22f else 28f).setTypeface(null, Typeface.BOLD)
@@ -399,14 +399,14 @@ class MainActivity : Activity() {
                 button("Каталог телефонов") { navigate("catalog") }
                 button("Оформление игры") { navigate("appearance") }
                 button("Открыть кейс · ${CaseKind.CLASSIC.cost} ₽") { openCase() }
+                button("Мир телефонов") { navigate("world_hub") }
                 label("Каждый кейс — новый шанс", 22f)
                 phoneGrid(Catalog.ultraIndices, root)
-                label("Fold 8 Ultra — 0,1% · Палас улыбашкэ — 0,15%", 17f, muted)
+                label("Палас улыбашкэ — 0,15% · остальные Ultra — по 0,1%", 17f, muted)
                 button("Коллекция") { navigate("collection") }
                 button("Магазин") { navigate("shop") }
                 button("Новое в 4.5 · 25 функций") { navigate("new") }
                 button("Новое в 3.0") { navigate("expansion") }
-                button("Мир телефонов") { navigate("world_hub") }
                 button("Клиенты и сервис") { navigate("clients") }
                 button("Мини-игра ремонта") { navigate("repair") }
                 button("Мастерская · прошивки") { navigate("workshop") }
@@ -1029,7 +1029,7 @@ class MainActivity : Activity() {
 
     private fun cases() {
         screen("Кейсы")
-        label("В каждом кейсе: Fold 8 Ultra — 0,1%, Палас улыбашкэ — 0,15%. Остальные модели зависят от типа кейса.", 16f, muted)
+        label("В каждом кейсе: Палас улыбашкэ — 0,15%; Fold 8 Ultra, Nokia 3310, Бурмалдофон и ТелИфон — по 0,1%. Остальные модели зависят от типа кейса.", 16f, muted)
         CaseKind.entries.forEach { kind ->
             val panel = glassPanel()
             label(kind.title, 24f, parent = panel)

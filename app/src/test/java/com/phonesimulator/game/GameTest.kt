@@ -23,7 +23,7 @@ class GameTest {
         assertEquals(0.15, Catalog.percent(Catalog.phones[500].tickets), 0.0)
         assertEquals(0.1, Catalog.percent(Catalog.phones[5].tickets), 0.0)
         CaseKind.entries.forEach { kind ->
-            assertFalse(Catalog.isUltra(kind.roll(9974)))
+            assertFalse(Catalog.isUltra(kind.roll(9944)))
             assertEquals(500, kind.roll(9975))
             assertEquals(500, kind.roll(9989))
             assertEquals(5, kind.roll(9990))
@@ -62,7 +62,7 @@ class GameTest {
         assertEquals(Int.MAX_VALUE, Progress(Int.MAX_VALUE, listOf(5)).sell(5).coins)
     }
     @Test fun expandedCatalogAndAdminGrantPreserveProgress() {
-        assertEquals(555, Catalog.phones.size)
+        assertEquals(556, Catalog.phones.size)
         assertEquals(10000, Catalog.phones.sumOf { it.tickets })
         val original = Progress(777, listOf(0, 5, 5))
         var granted = original
@@ -102,7 +102,7 @@ class GameTest {
         assertTrue(Market.price(1, 0) < Market.price(1, 3))
     }
     @Test fun firmwareAndConcreteCatalog() {
-        assertEquals(555, Catalog.phones.map { it.name }.toSet().size)
+        assertEquals(556, Catalog.phones.map { it.name }.toSet().size)
         assertEquals("iPhone 17 Pro", Catalog.phones[4].name)
         assertEquals("Google Pixel 10 Pro", Catalog.phones[2].name)
         assertTrue(Catalog.phones.all { it.price in 1000..300000 })
@@ -133,7 +133,7 @@ class GameTest {
         assertEquals("ZTE Axon 40 Ultra", Catalog.phones[499].name)
         assertEquals(Catalog.phones.indices.toSet(), (0 until Catalog.TOTAL_TICKETS).map(Catalog::roll).toSet())
         assertTrue(Catalog.phones.all { it.tickets > 0 })
-        assertEquals(listOf(5, 500), Catalog.phones.indices.filter { Catalog.phones[it].rarity == Rarity.ULTRA })
+        assertEquals(listOf(0, 5, 500, 554, 555), Catalog.phones.indices.filter { Catalog.phones[it].rarity == Rarity.ULTRA })
         val owned = listOf(0, 5, 99, 100, 499, 499)
         assertEquals(owned, Progress.restore(777, owned.joinToString(",")).owned)
         for (model in 100..499) {
@@ -370,9 +370,9 @@ class GameTest {
 
     @Test fun versionThreeTradingAwardsContractsAndSafe() {
         val rich=Progress(1_000_000)
-        val bought=rich.buyNew(0)
-        assertEquals(listOf(0),bought.owned)
-        assertEquals(rich.coins-ExpansionRules.newPrice(0),bought.coins)
+        val bought=rich.buyNew(100)
+        assertEquals(listOf(100),bought.owned)
+        assertEquals(rich.coins-ExpansionRules.newPrice(100),bought.coins)
         assertEquals(rich,rich.buyNew(5))
         val lot=Listing("x",0,0,500)
         val discounted=rich.bargain(lot,0)
@@ -387,7 +387,7 @@ class GameTest {
         val award=Progress(0,listOf(0)).claimAward("first")
         assertEquals(1000,award.coins)
         assertEquals(award,award.claimAward("first"))
-        val inputs=Progress(100000,listOf(0,0,0))
+        val inputs=Progress(100000,listOf(100,100,100))
         val exchanged=inputs.contract(Rarity.COMMON,0)
         assertEquals(1,exchanged.owned.size)
         assertEquals(Rarity.UNCOMMON,Catalog.phones[exchanged.owned.single()].rarity)
@@ -396,7 +396,7 @@ class GameTest {
         assertEquals(rich,vault.withdrawVault(1000))
         assertEquals(0L,vault.expansion.record(rich,vault,100,"Сейф").income)
         val ledger=bought.expansion.record(rich,bought,100,"Покупка")
-        assertEquals(ExpansionRules.newPrice(0).toLong(),ledger.expenses)
+        assertEquals(ExpansionRules.newPrice(100).toLong(),ledger.expenses)
         val day=100L;val wanted=ExpansionRules.deliveryModel(day)
         val delivered=Progress(0,listOf(wanted)).deliver(day)
         assertEquals(ExpansionRules.deliveryPrice(day),delivered.coins)

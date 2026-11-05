@@ -132,7 +132,7 @@ internal fun WorldScreens.season(){
     begin("Сезонное событие")
     val now=System.currentTimeMillis();val season=Seasons.current(now)
     text(season.title,27f);text("Сезон ${season.id}. До завершения ${(season.endsAt-now)/86400000} дн. Смена в полночь UTC первого числа.",17f,color=light)
-    text("Ограниченный сезонный кейс: ${season.cost} ₽. В каждом открытии Fold 0,1%, Палас 0,15%; остальные — из сезонной подборки.",18f)
+    text("Ограниченный сезонный кейс: ${season.cost} ₽. В каждом открытии Палас 0,15%; Fold, Nokia 3310, Бурмалдофон и ТелИфон — по 0,1%. Остальные — из сезонной подборки.",18f)
     text("Первое открытие этого сезона навсегда разблокирует его оформление. Оно остаётся доступным в галерее после смены события.",17f,color=light)
     if(season.skin in p.world.seasonalSkins)text("Оформление этого сезона уже получено")
     button("Открыть сезонный кейс · ${season.cost} ₽"){

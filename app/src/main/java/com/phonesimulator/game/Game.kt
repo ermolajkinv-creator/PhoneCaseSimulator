@@ -21,7 +21,7 @@ data class Phone(val name: String, val price: Int, val rarity: Rarity, val ticke
 object Catalog {
     val CASE_PRICE: Int get() = CaseKind.CLASSIC.cost
     private val entries = listOf(
-        Phone("Nokia 3310", 2000, Rarity.COMMON, 120, "Кнопочная платформа", "Монохромный LCD", "Nokia OS", "Классика 2000 года: компактный корпус, сменные панели и Snake."),
+        Phone("Nokia 3310", 2000, Rarity.ULTRA, 120, "Кнопочная платформа", "Монохромный LCD", "Nokia OS", "Классика 2000 года: компактный корпус, сменные панели и Snake."),
         Phone("Redmi Note 10S", 12000, Rarity.UNCOMMON, 60, "MediaTek Helio G95", "6,43″ AMOLED", "Android 11 / MIUI при выпуске", "Redmi Note 10S: модель 2021 года с камерой 64 Мп и зарядкой 33 Вт."),
         Phone("Google Pixel 10 Pro", 85000, Rarity.RARE, 20, "Google Tensor G5", "6,3″ OLED · 120 Гц", "Android 16 при выпуске", "Google Pixel 10 Pro: конкретная флагманская модель Pixel."),
         Phone("Samsung Galaxy S25 Ultra", 95000, Rarity.EPIC, 10, "Snapdragon 8 Elite for Galaxy", "6,9″ AMOLED", "Android 15 / One UI при выпуске", "Samsung Galaxy S25 Ultra с S Pen."),
@@ -123,23 +123,30 @@ object Catalog {
         Phone("OPPO Reno10", 25000, Rarity.RARE, 1, "Данные уточняются", "Данные уточняются", "Версия зависит от обновлений", "Коллекционная модель OPPO Reno10. Комплектация и характеристики могут зависеть от рынка. Подробные технические данные пока не внесены.")
     ) + AdditionalPhones.entries + Phone("Палас улыбашкэ", 35000, Rarity.ULTRA, 15,
         "Коллекционный мем", "Улыбка на весь экран", "Игровая платформа",
-        "Палас улыбашкэ — особая игровая модель с широкой улыбкой. Второй ультралегендарный телефон: шанс 0,15% в каждом кейсе.") + DeviceExpansion41.entries + Phone("Бурмалдофон", 42000, Rarity.EPIC, 1,
+        "Палас улыбашкэ — особая игровая модель с широкой улыбкой. Второй ультралегендарный телефон: шанс 0,15% в каждом кейсе.") + DeviceExpansion41.entries + Phone("Бурмалдофон", 42000, Rarity.ULTRA, 1,
         "Бурмалдо Core", "Экран хорошего настроения", "Игровая платформа",
-        "Бурмалдофон — вымышленный мемный телефон с двумя глазами-камерами, нахмуренными бровями и широкой улыбкой. Эпическая модель коллекции Phone Lab; характеристики и цена игровые.")
+        "Бурмалдофон — вымышленный мемный телефон с двумя глазами-камерами, нахмуренными бровями и широкой улыбкой. Ультралегендарная модель коллекции Phone Lab; характеристики и цена игровые.") + Phone("ТелИфон", 50000, Rarity.ULTRA, 10,
+        "Живые клешни", "Взгляд из подземелья", "Игровая платформа",
+        "ТелИфон — коллекционный мем по фотографии телифона, паукообразного с клешнями. Ультралегендарный гость Phone Lab: шанс 0,1% в каждом кейсе. Характеристики и цена игровые.")
     const val TOTAL_TICKETS = 10_000
+    const val NOKIA = 0
+    const val TELIFON = 555
     const val FOLD = 5
     const val PALAS = 500
     const val BURMALDO = 554
     const val FOLD_TICKETS = 10
     const val PALAS_TICKETS = 15
-    val ultraIndices = listOf(FOLD, PALAS)
+    val ultraIndices = listOf(FOLD, PALAS, NOKIA, BURMALDO, TELIFON)
+    // Keep the existing Palas/Fold ticket boundaries stable.
+    private val ultraDropOrder = listOf(NOKIA, BURMALDO, TELIFON, PALAS, FOLD)
     val phones: List<Phone> = entries.mapIndexed { index, phone ->
         val tickets = when (index) {
             FOLD -> FOLD_TICKETS
             PALAS -> PALAS_TICKETS
+            NOKIA, BURMALDO, TELIFON -> 10
             else -> {
-                // Preserve other rarity shares; the new 0.15% comes from Legendary (1.1% -> 0.95%).
-                val budget = mapOf(Rarity.COMMON to 5000, Rarity.UNCOMMON to 2800, Rarity.RARE to 1500,
+                // Three new Ultras use 0.3% of the common share.
+                val budget = mapOf(Rarity.COMMON to 4970, Rarity.UNCOMMON to 2800, Rarity.RARE to 1500,
                     Rarity.EPIC to 580, Rarity.LEGENDARY to 95).getValue(phone.rarity)
                 val peers = entries.filter { it.rarity == phone.rarity }
                 require(peers.size <= budget) { "Not enough drop tickets for ${phone.rarity}" }
@@ -158,13 +165,17 @@ object Catalog {
         return "$count $noun"
     }
     fun percent(tickets: Int) = tickets * 100.0 / TOTAL_TICKETS
-    fun ultraDrop(ticket: Int): Int? = when {
-        ticket >= TOTAL_TICKETS - FOLD_TICKETS -> FOLD
-        ticket >= TOTAL_TICKETS - FOLD_TICKETS - PALAS_TICKETS -> PALAS
-        else -> null
+    fun ultraDrop(ticket: Int): Int? {
+        require(ticket in 0 until TOTAL_TICKETS)
+        var boundary = TOTAL_TICKETS
+        for (index in ultraDropOrder.asReversed()) {
+            boundary -= phones[index].tickets
+            if (ticket >= boundary) return index
+        }
+        return null
     }
     private val dropTable = buildList {
-        (phones.indices.filter { !isUltra(it) } + listOf(PALAS, FOLD)).forEach { index ->
+        (phones.indices.filter { !isUltra(it) } + ultraDropOrder).forEach { index ->
             repeat(phones[index].tickets) { add(index) }
         }
     }.also { require(it.size == TOTAL_TICKETS) }
