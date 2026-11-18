@@ -54,7 +54,7 @@ fun updateAdminModels() {
 
 fun settings(): String {
     if (!adminIsOpen) return title("Настройки", "") +
-        """<button class="settings-entry" data-act="admin-open"><span>Админ-панель<small>Монеты и коллекция</small></span><span aria-hidden="true">→</span></button>""" +
+        """<button class="settings-entry" data-act="admin-open"><span>Админ-панель<small>Рубли и коллекция</small></span><span aria-hidden="true">→</span></button>""" +
         btn("settings-memory", "???", "settings-entry mystery-entry")
     val heading = btn("admin-back", "← Настройки", "back-link") + title("Админ-панель", "")
     if (!unlocked) return heading + """
@@ -67,10 +67,10 @@ fun settings(): String {
     return heading + """
         <div class="admin-grid">
           <form class="side settings-form" id="admin-credit">
-            <h2>Монеты</h2>
-            <label for="admin-amount">Сколько начислить</label>
+            <h2>Игровые рубли</h2>
+            <label for="admin-amount">Сумма в рублях</label>
             <input id="admin-amount" type="text" inputmode="numeric" pattern="[0-9]+" maxlength="10" value="1000" required>
-            <button type="submit" class="action">Начислить монеты</button>
+            <button type="submit" class="action">Начислить рубли</button>
             <p id="credit-result" class="hint" role="status"></p>
           </form>
           <form class="side settings-form" id="admin-grant">
@@ -96,19 +96,19 @@ fun adminAction(action: String) {
         "admin-unlock" -> if (adminIsOpen && !unlocked) checkPassword()
         "admin-credit" -> if (unlocked) {
             val value = document.getElementById("admin-amount").value as String
-            val amount = value.toIntOrNull()
-            if (amount == null || amount <= 0 || amount > Int.MAX_VALUE - coins) {
-                val room = Int.MAX_VALUE - coins
-                val message = if (room == 0) "Баланс уже максимальный." else "Введи целую сумму от 1 до $room."
+            val amount = value.toLongOrNull()
+            if (amount == null || amount <= 0 || amount > Long.MAX_VALUE - coins) {
+                val room = Long.MAX_VALUE - coins
+                val message = if (room == 0L) "Баланс уже максимальный." else "Введи целую сумму от 1 до ${minOf(room, 9_999_999_999L)}."
                 status("credit-result", message)
                 return
             }
-            creditCoins(amount)
+            creditRubles(amount)
             save()
             val wallet = document.querySelector(".wallet")
-            wallet.innerHTML = coin() + coins.toString()
-            wallet.setAttribute("aria-label", "Баланс: $coins монет")
-            status("credit-result", "Начислено $amount. Баланс — $coins." + saveNotice())
+            wallet.textContent = rubles(coins)
+            wallet.setAttribute("aria-label", "Баланс: ${rubles(coins)}")
+            status("credit-result", "Начислено ${rubles(amount)}. Баланс — ${rubles(coins)}." + saveNotice())
         }
         "admin-grant" -> if (unlocked) {
             val model = document.getElementById("admin-model")

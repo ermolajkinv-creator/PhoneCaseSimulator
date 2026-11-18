@@ -20,7 +20,8 @@ private var casePage = 0
 private var albumPage = 0
 private var searchText = ""
 const val saveKey = "signal.collection.v1"
-var coins = 250
+private val rublesPerOldCoin = cases.first().cost / 100
+var coins = 250L * rublesPerOldCoin
 var opened = 0
 val owned = mutableSetOf<Int>()
 var tab = 0
@@ -37,22 +38,24 @@ fun restore() {
     try {
         val raw = window.localStorage.getItem(saveKey) as? String ?: return
         val fields = raw.split("|")
-        if (fields.size != 3) return
-        val money = fields[0].toIntOrNull() ?: return
+        val legacy = fields.size == 3
+        if (!legacy && (fields.size != 4 || fields[3] != "RUB")) return
+        val money = fields[0].toLongOrNull() ?: return
+        if (legacy && money > Int.MAX_VALUE) return
         val total = fields[1].toIntOrNull() ?: return
         if (money < 0 || total < 0) return
-        coins = money
+        coins = if (legacy) money * rublesPerOldCoin else money
         opened = total
         owned.addAll(fields[2].split(",").mapNotNull { it.toIntOrNull() }.filter { it in phones.indices })
+        if (legacy) save()
     } catch (_: Throwable) { storageWarning = true }
 }
 fun save() {
-    try { window.localStorage.setItem(saveKey, listOf(coins, opened, owned.joinToString(",")).joinToString("|")) }
+    try { window.localStorage.setItem(saveKey, listOf(coins, opened, owned.joinToString(","), "RUB").joinToString("|")) }
     catch (_: Throwable) { storageWarning = true }
 }
 fun art(name: String): String = window.signalArt[name] as String
 fun icon(i: Int) = """<span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24">${icons[i]}</svg></span>"""
-fun coin() = """<i class="coin" aria-hidden="true"></i>"""
 fun rarity(phone: Phone): String {
     val extra = if (phone.foldable && phone.tier != foldableTier) " · Раскладушки" else ""
     return """<span class="rar r${phone.tier}"><i class="swatch"></i>${tiers[phone.tier]}$extra</span>"""
@@ -67,7 +70,7 @@ fun header(): String {
     val nav = labels.mapIndexed { i, label ->
         """<button class="${if (i == tab) "sel" else ""}" aria-current="${if (i == tab) "page" else "false"}" data-act="tab-$i">${icon(i)}$label</button>"""
     }.joinToString("")
-    return """<header><div class="wrap bar"><div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал</div><nav aria-label="Разделы">$nav</nav><div class="wallet" aria-label="Баланс: $coins монет">${coin()}$coins</div></div></header>"""
+    return """<header><div class="wrap bar"><div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал</div><nav aria-label="Разделы">$nav</nav><div class="wallet" aria-label="Баланс: ${rubles(coins)}">${rubles(coins)}</div></div></header>"""
 }
 fun title(name: String, desc: String) =
     """<div class="title"><div><h1>$name</h1><p class="sub">$desc</p></div></div>"""
@@ -75,7 +78,7 @@ fun title(name: String, desc: String) =
 fun cards(ids: List<Int>): String = ids.joinToString("", prefix = "<div class='grid'>", postfix = "</div>") { id ->
     val p = phones[id]
     val check = if (id in owned) """<span class="ownership" aria-label="В коллекции">✓</span>""" else ""
-    """<button class="albumcard r${p.tier}" data-act="phone-$id"><div class="thumb"><span class="num">№ ${number(id)}</span>$check<img class="phone" decoding="async" src="${art("phone$id")}" alt=""></div><div class="cardbody"><b>${p.name}</b>${rarity(p)}</div></button>"""
+    """<button class="albumcard r${p.tier}" data-act="phone-$id"><div class="thumb"><span class="num">№ ${number(id)}</span>$check<img class="phone" decoding="async" src="${art("phone$id")}" alt=""></div><div class="cardbody"><b>${p.name}</b>${rarity(p)}<small class="model-price">${rubles(p.price)}</small></div></button>"""
 }
 private val tierTitles = listOf("Старые", "Обычные", "Редкие", "Эпические", "Легендарные", "Флагманские", "Раскладушки", "Эксклюзивные", "Мифические", "Ультраредкие")
 private fun tierPicker(selected: Int): String {
@@ -93,8 +96,8 @@ fun showcase(): String {
         oddsRow(i, phones[phonesByTier[i].single()].name.removePrefix("Samsung ").removePrefix("Apple "))
     }
     val buy = if (coins >= c.cost)
-        btn("open","Открыть кейс <span class='price'>${coin()}${c.cost}</span>")
-    else btn("tab-2","Заработать монеты →") + """<p class="hint">Цена — ${c.cost}. Не хватает ${c.cost - coins} монет.</p>"""
+        btn("open","Открыть кейс <span class='price'>${rubles(c.cost)}</span>")
+    else btn("tab-2","В мастерскую →") + """<p class="hint">Цена — ${rubles(c.cost)}. Не хватает ${rubles(c.cost - coins)}.</p>"""
     val dots = cases.indices.joinToString("") { "<i class='${if (it == currentCase) "on" else ""}'></i>" }
     return title("Кейсы", "Открывай кейсы и собери все ${phones.size} моделей.") +
         """<div class="showcase"><section class="hero theme$currentCase"><div class="casehead"><span class="tag">Кейс ${number(currentCase)} / 03</span><h2>${c.name}</h2></div><div class="artbox"><i class="corner c1"></i><i class="corner c2"></i><img class="caseart" src="${art("case$currentCase")}" alt="Пиксельный кейс ${c.name}"></div><div class="switch"><button class="arrow" data-act="prev" aria-label="Предыдущий кейс">←</button><div class="dots">$dots</div><button class="arrow" data-act="next" aria-label="Следующий кейс">→</button></div></section><section class="side"><h3>Шансы выпадения</h3><div class="odds">$odds</div><details class="exclusive-odds"><summary>Три редчайшие модели</summary><div class="odds">$exclusiveOdds</div></details><div class="buybox">$buy</div></section></div>
@@ -153,7 +156,7 @@ fun album(): String {
 }
 fun workshop(): String {
     val content = if (job.isEmpty()) {
-        """<div class="screen"><p>СЕРВИСНЫЙ ТЕРМИНАЛ</p><strong>+80</strong><p>МОНЕТ ЗА РЕМОНТ</p></div>""" + btn("start", "Принять заказ")
+        """<div class="screen"><p>СЕРВИСНЫЙ ТЕРМИНАЛ</p><strong>+${rubles(repairPay)}</strong><p>ЗА РЕМОНТ ПРОШИВКИ</p></div>""" + btn("start", "Принять заказ")
     } else {
         val keypad = (1..9).joinToString("") { btn("key-$it", it.toString(), "key") }
         """<div class="screen"><p>СЕРВИСНЫЙ КОД</p><strong>$job</strong><p>ВВОД • ${entry.padEnd(4, '·')}</p></div><div class="pad">$keypad</div>"""
@@ -174,7 +177,7 @@ fun showPhone(id: Int, reward: String? = null) {
         """<p class="rank r${p.tier}">№ $rank по редкости · ${chanceText(cases[currentCase].tickets[p.tier])} в любом кейсе</p>"""
     } else ""
     val text = reward ?: ((if (id in owned) "В твоей коллекции. " else "Пока нет в коллекции. ") + p.note)
-    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>$text</p><small class="credit">${p.year} · ${p.credit}</small>${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
+    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.year} · ${p.credit}</small>${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
 }
 private fun showIphoneMemory() {
     val id = phones.indexOfFirst { it.name == "Apple iPhone 12" }
@@ -205,8 +208,8 @@ fun closeModal() {
     if (previousFocus != null && previousFocus != document.body && previousFocus.isConnected == true) previousFocus.focus()
     else document.querySelector("[data-act='open'],[data-act='tab-2'].action")?.focus()
 }
-fun creditCoins(amount: Int): Int {
-    val credited = amount.coerceAtMost(Int.MAX_VALUE - coins)
+fun creditRubles(amount: Long): Long {
+    val credited = amount.coerceAtMost(Long.MAX_VALUE - coins)
     coins += credited
     return credited
 }
@@ -214,14 +217,13 @@ fun openCase() {
     val c = cases[currentCase]
     if (coins < c.cost) return
     val id = c.drawPhone()
-    val tier = phones[id].tier
     coins -= c.cost
     opened++
     val message = if (owned.add(id)) {
         if (owned.size == phones.size) "Последняя модель! Ты собрал все ${phones.size} моделей." else "Новая модель! Модель добавлена в твой альбом."
     } else {
-        val credit = creditCoins(refunds[tier])
-        "Такая модель уже есть. За повтор начислено $credit монет."
+        val credit = creditRubles(phones[id].tradeIn.toLong())
+        "Такая модель уже есть. Выкуп повтора принёс ${rubles(credit)}."
     }
     save()
     render()
@@ -234,10 +236,10 @@ fun enterDigit(digit: String) {
         entry = ""
         jobMessage = "Неверная цифра. Введи код с начала."
     } else if (next == job) {
-        val credit = creditCoins(80)
+        val credit = creditRubles(repairPay.toLong())
         job = ""
         entry = ""
-        jobMessage = "Прошивка восстановлена. Получено $credit монет!"
+        jobMessage = "Прошивка восстановлена. Получено ${rubles(credit)}!"
         save()
     } else {
         entry = next

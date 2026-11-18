@@ -10,7 +10,7 @@ android {
         applicationId = "games.signal.collection"
         minSdk = 23
         targetSdk = 32
-        versionCode = 13
-        versionName = "1.7.1"
+        versionCode = 14
+        versionName = "1.8.0"
     }
 }
