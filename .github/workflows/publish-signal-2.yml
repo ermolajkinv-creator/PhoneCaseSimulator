@@ -1,0 +1,41 @@
+name: Publish Signal 2.0.0
+on:
+  push:
+    branches: [signal-release-v2.0.0]
+    paths: [.github/workflows/publish-signal-2.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify source and signed package, then publish update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          cat "$GITHUB_WORKSPACE"/distribution/bundle-* > source.bundle
+          cat "$GITHUB_WORKSPACE"/distribution/apk-* > update.zst
+          echo 'ab636c8b9c9a989050c37ef2bfe6c57fd65582b92c05abdb291ab238cb18e1ec  source.bundle' | sha256sum -c
+          echo '2a41a81d454aa03ae45dbfb754a4d6dac6af4a38f80c4884602605f532abd3aa  update.zst' | sha256sum -c
+          gh release download v1.9.0 -p Signal-20000.apk --repo "$GITHUB_REPOSITORY"
+          zstd -q -d --long=28 --patch-from=Signal-20000.apk update.zst -o Signal-2.0.0.apk
+          echo 'b0604fa2b7f62e0c45b0d3bdbdb09f1f47f40bb1b50a0c5cccfcdb5776655212  Signal-2.0.0.apk' | sha256sum -c
+          cd "$GITHUB_WORKSPACE"
+          git bundle verify "$RUNNER_TEMP/source.bundle"
+          git fetch "$RUNNER_TEMP/source.bundle" HEAD
+          source_commit=$(git rev-parse FETCH_HEAD)
+          test "$source_commit" = '117029f50936daf55af8a3b04b943bd9e4684743'
+          git push --atomic origin "$source_commit:refs/heads/main" "$source_commit:refs/tags/v2.0.0"
+          if ! gh release view v2.0.0 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create v2.0.0 --draft --verify-tag --title 'Сигнал 2.0.0 — Субфлагманы' --notes-file distribution/notes.md
+          fi
+          if ! gh release view v2.0.0 --json assets --jq '.assets[].name' | grep -Fxq Signal-2.0.0.apk; then
+            gh release upload v2.0.0 "$RUNNER_TEMP/Signal-2.0.0.apk"
+          fi
+          gh release edit v2.0.0 --draft=false --latest
+          gh release view v2.0.0 --json assets,isDraft --jq 'select(.isDraft == false) | .assets[] | select(.name == "Signal-2.0.0.apk") | .size' | grep -Fxq '152595576'
