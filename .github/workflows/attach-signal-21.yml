@@ -1,0 +1,23 @@
+name: Attach Signal 2.1.0
+on:
+  push:
+    branches: [signal-release-v2.1.0]
+    paths: [.github/workflows/attach-signal-21.yml]
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and publish signed APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/distribution/update.zst" -o update.zst
+          echo '0f7281d38333a88737c58c4c0241e9f4e2764890829405c055b9a0a8971429bc  update.zst' | sha256sum -c
+          gh release download v2.0.0 -p Signal-2.0.0.apk --repo "$GITHUB_REPOSITORY"
+          zstd -q -d --long=28 --patch-from=Signal-2.0.0.apk update.zst -o Signal-2.1.0.apk
+          echo 'efd9b1f487ce1730f7a38e17e9bb09a1c9e5fb0186a3a3b292b32e61d0de68e3  Signal-2.1.0.apk' | sha256sum -c
+          gh release upload v2.1.0 Signal-2.1.0.apk --repo "$GITHUB_REPOSITORY"
+          gh release edit v2.1.0 --draft=false --latest --repo "$GITHUB_REPOSITORY"
