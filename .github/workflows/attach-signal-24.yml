@@ -1,0 +1,27 @@
+name: Publish Signal 2.4.0
+on:
+  push:
+    branches: [signal-release-v2.4.0]
+    paths: [.github/workflows/attach-signal-24.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and attach the signed offline update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for part in update-000 update-001 update-002 update-003; do
+            curl -fsSL --retry 3 "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/distribution/$part" -o "$part"
+          done
+          cat update-* > update.zst
+          gh release download v2.3.0 -p Signal-2.3.0.apk --repo "$GITHUB_REPOSITORY"
+          zstd -q -d --long=30 --patch-from=Signal-2.3.0.apk update.zst -o Signal-2.4.0.apk
+          echo 'f1f607710a61c5fbf7c8cfee1d01a2ca977150d99b4a38c25c4668de02bed9f6  Signal-2.4.0.apk' | sha256sum -c
+          curl -fsSL --retry 3 "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/distribution/Signal-2.4.0-light.apk" -o Signal-2.4.0-light.apk
+          echo '1fa9ce3efac8d818c0154c7fe142e392f4ea8420785b5fcf0054f857f9e1a96e  Signal-2.4.0-light.apk' | sha256sum -c
+          gh release upload v2.4.0 Signal-2.4.0.apk Signal-2.4.0-light.apk --repo "$GITHUB_REPOSITORY"
+          gh release edit v2.4.0 --draft=false --latest --repo "$GITHUB_REPOSITORY"
