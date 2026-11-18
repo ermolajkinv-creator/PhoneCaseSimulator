@@ -16,8 +16,8 @@ fun rubles(amount: Int): String = rubles(amount.toLong())
 val phonesByTier = tiers.indices.map { tier -> phones.indices.filter { phones[it].tier == tier } }
 
 // Each ticket has the same probability. Within a tier, all models are equally likely.
-class Case(val name: String, markupPercent: Int, ordinaryTickets: List<Int>) {
-    val tickets = ordinaryTickets + listOf(12, 10, 5)
+class Case(val name: String, val cost: Int, ordinaryTickets: List<Int>) {
+    val tickets = ordinaryTickets + listOf(3, 2, 1)
 
     init {
         require(tickets.size == tiers.size && tickets.sum() == ticketsPerCase)
@@ -26,14 +26,6 @@ class Case(val name: String, markupPercent: Int, ordinaryTickets: List<Int>) {
         require(ordinaryTickets.indices.all { i ->
             phonesByTier[i].isNotEmpty() && ordinaryTickets[i] > tickets[firstExclusiveTier] * phonesByTier[i].size
         })
-    }
-
-    // One phone per box. Price the contents by the actual draw probabilities.
-    val cost: Int = run {
-        val expectedValue = tickets.indices.sumOf { i ->
-            phonesByTier[i].map { phones[it].price }.average() * tickets[i] / ticketsPerCase
-        }
-        kotlin.math.ceil(expectedValue * markupPercent / 100 / 500).toInt() * 500
     }
 
     fun tierFor(ticket: Int): Int {
@@ -49,9 +41,9 @@ class Case(val name: String, markupPercent: Int, ordinaryTickets: List<Int>) {
 }
 
 val cases = listOf(
-    Case("Классика", 102, listOf(16_611, 48_372, 22_913, 6_074, 805, 3_237, 1_961)),
-    Case("Полигон", 110, listOf(13_010, 40_540, 27_704, 10_876, 2_485, 3_357, 2_001)),
-    Case("Золотой фонд", 118, listOf(10_809, 39_139, 21_312, 16_068, 7_287, 3_357, 2_001))
+    Case("Классика", 19_000, listOf(25_213, 51_671, 16_019, 3_517, 344, 2_028, 1_202)),
+    Case("Полигон", 22_500, listOf(23_772, 48_538, 17_936, 5_438, 1_016, 2_076, 1_218)),
+    Case("Золотой фонд", 25_000, listOf(22_892, 47_977, 15_379, 7_515, 2_937, 2_076, 1_218))
 )
 
 fun chanceText(tickets: Int): String {

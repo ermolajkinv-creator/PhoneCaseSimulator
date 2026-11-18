@@ -33,10 +33,17 @@ class MainActivity : Activity() {
             blockNetworkLoads = true
         }
         val origin = "https://signal.invalid/"
+        val photoPath = Regex("""/art/(?:phone\d+\.webp|case\d+\.png|memory-wave\.png)""")
         game.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? {
                 if (request.url.toString() == origin) {
                     return WebResourceResponse("text/html", "UTF-8", assets.open("index.html"))
+                }
+                val uri = request.url
+                val path = uri.path.orEmpty()
+                if (uri.scheme == "https" && uri.host == "signal.invalid" && photoPath.matches(path)) {
+                    val mime = if (path.endsWith(".webp")) "image/webp" else "image/png"
+                    return WebResourceResponse(mime, null, assets.open(path.removePrefix("/")))
                 }
                 return super.shouldInterceptRequest(view, request)
             }

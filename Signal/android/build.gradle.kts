@@ -6,11 +6,14 @@ plugins {
 android {
     namespace = "games.signal.collection"
     compileSdk = 35
+    if (providers.gradleProperty("compactArt").orNull == "true") {
+        sourceSets.getByName("main").assets.setSrcDirs(listOf(layout.buildDirectory.dir("compact-assets")))
+    }
     defaultConfig {
         applicationId = "games.signal.collection"
         minSdk = 23
         targetSdk = 32
-        versionCode = 14
-        versionName = "1.8.0"
+        versionCode = 15
+        versionName = "1.9.0"
     }
 }

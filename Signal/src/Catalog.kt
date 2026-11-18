@@ -416,4 +416,4 @@ val phones = listOf(
     Phone("Xiaomi POCO X2", 1, "Экран — 6,7″. Чип — Snapdragon 730G SM7150-AB.", 2020, "PhoneArena", 8_700),
     Phone("Xiaomi Redmi 9C", 1, "Экран — 6,5″. Чип — MediaTek Helio G35 MT6765G.", 2020, "PhoneArena", 3_100),
     Phone("ZTE Axon 11", 1, "Экран — 6,5″. Чип — Snapdragon 765G.", 2020, "PhoneArena", 13_900),
-) + additionalPhones() + expandedPhones()
+) + additionalPhones() + expandedPhones() + archivePhones(signalCatalog)
