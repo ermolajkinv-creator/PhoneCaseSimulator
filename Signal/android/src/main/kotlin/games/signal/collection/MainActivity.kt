@@ -9,6 +9,10 @@ import android.webkit.WebView
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebViewClient
+import java.io.File
+import java.io.FileNotFoundException
+import java.io.IOException
+import java.net.URL
 
 class MainActivity : Activity() {
     private lateinit var game: WebView
@@ -32,6 +36,14 @@ class MainActivity : Activity() {
             allowContentAccess = false
             blockNetworkLoads = true
         }
+        val photoCache = try {
+            val hashes = assets.open("photo-hashes.bin").use { it.readBytes() }
+            val version = packageManager.getPackageInfo(packageName, 0).versionName
+            val source = URL("https://raw.githubusercontent.com/ermolajkinv-creator/PhoneCaseSimulator/v$version/Signal/android/src/main/assets/art/")
+            PhotoCache(File(cacheDir, "phone-pictures"), source, hashes)
+        } catch (_: FileNotFoundException) {
+            null
+        }
         val origin = "https://signal.invalid/"
         val photoPath = Regex("""/art/(?:phone\d+\.webp|case\d+\.png|memory-wave\.png)""")
         game.webViewClient = object : WebViewClient() {
@@ -43,7 +55,20 @@ class MainActivity : Activity() {
                 val path = uri.path.orEmpty()
                 if (uri.scheme == "https" && uri.host == "signal.invalid" && photoPath.matches(path)) {
                     val mime = if (path.endsWith(".webp")) "image/webp" else "image/png"
-                    return WebResourceResponse(mime, null, assets.open(path.removePrefix("/")))
+                    val stream = try {
+                        assets.open(path.removePrefix("/"))
+                    } catch (_: FileNotFoundException) {
+                        val id = path.removePrefix("/art/phone").removeSuffix(".webp").toIntOrNull()
+                        if (id == null || photoCache == null) return null
+                        try {
+                            photoCache.open(id)
+                        } catch (_: IOException) {
+                            val message = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160"><g fill="#544e45" text-anchor="middle" font-family="sans-serif"><text x="100" y="72" font-size="16">Фото недоступно</text><text x="100" y="96" font-size="11">Проверь интернет и открой</text><text x="100" y="112" font-size="11">карточку ещё раз</text></g></svg>"""
+                            return WebResourceResponse("image/svg+xml", "UTF-8", 200, "OK",
+                                mapOf("Cache-Control" to "no-store"), message.byteInputStream())
+                        }
+                    }
+                    return WebResourceResponse(mime, null, stream)
                 }
                 return super.shouldInterceptRequest(view, request)
             }

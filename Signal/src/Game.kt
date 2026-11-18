@@ -92,7 +92,7 @@ fun title(name: String, desc: String) =
 fun cards(ids: List<Int>): String = ids.joinToString("", prefix = "<div class='grid'>", postfix = "</div>") { id ->
     val p = phones[id]
     val check = if (id in owned) """<span class="ownership" aria-label="В коллекции">✓</span>""" else ""
-    """<button class="albumcard r${p.tier}" data-act="phone-$id"><div class="thumb"><span class="num">№ ${number(id)}</span>$check<img class="phone" decoding="async" src="${art("phone$id")}" alt=""></div><div class="cardbody"><b>${p.name}</b>${rarity(p)}<small class="model-price">${rubles(p.price)}</small></div></button>"""
+    """<button class="albumcard r${p.tier}" data-act="phone-$id"><div class="thumb"><span class="num">№ ${number(id)}</span>$check<img class="phone" loading="lazy" decoding="async" src="${art("phone$id")}" alt=""></div><div class="cardbody"><b>${p.name}</b>${rarity(p)}<small class="model-price">${rubles(p.price)}</small></div></button>"""
 }
 private val tierTitles = listOf("Старые", "Обычные", "Редкие", "Эпические", "Легендарные", "Субфлагманы", "Флагманские", "Раскладушки", "Эксклюзивные", "Мифические", "Ультраредкие")
 private fun tierPicker(selected: Int): String {
@@ -113,16 +113,18 @@ fun showcase(): String {
         btn("open","Открыть кейс <span class='price'>${rubles(c.cost)}</span>")
     else btn("tab-2","В мастерскую →") + """<p class="hint">Цена — ${rubles(c.cost)}. Не хватает ${rubles(c.cost - coins)}.</p>"""
     val dots = cases.indices.joinToString("") { "<i class='${if (it == currentCase) "on" else ""}'></i>" }
+    val models = if (caseTier < 0) ordered else ordered.filter { phones[it].matchesTier(caseTier) }
     return title("Кейсы", "Открывай кейсы и собери все ${phones.size} моделей.") +
         """<div class="showcase"><section class="hero theme$currentCase"><div class="casehead"><span class="tag">Кейс ${number(currentCase)} / 03</span><h2>${c.name}</h2></div><div class="artbox"><i class="corner c1"></i><i class="corner c2"></i><img class="caseart" src="${art("case$currentCase")}" alt="Пиксельный кейс ${c.name}"></div><div class="switch"><button class="arrow" data-act="prev" aria-label="Предыдущий кейс">←</button><div class="dots">$dots</div><button class="arrow" data-act="next" aria-label="Следующий кейс">→</button></div></section><section class="side"><h3>Шансы выпадения</h3><div class="odds">$odds</div><details class="exclusive-odds"><summary>Три редчайшие модели</summary><div class="odds">$exclusiveOdds</div></details><div class="buybox">$buy</div></section></div>
-        ${historyPanel()}<section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${phones.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(ordered.filter { phones[it].matchesTier(caseTier) }, casePage)}</section>"""
+        ${historyPanel()}<section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${phones.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(models, casePage)}</section>"""
 }
 fun catalogPage(ids: List<Int>, page: Int): String {
     if (ids.isEmpty()) return """<p class="empty">Телефонов по этому запросу нет.</p>"""
     val total = (ids.size + pageSize - 1) / pageSize
     val index = page.coerceIn(0, total - 1)
     val pager = if (total <= 1) "" else """<div class="pager"><button class="arrow" data-act="page-prev" aria-label="Предыдущая страница" ${if (index == 0) "disabled" else ""}>←</button><span class="count">${index + 1} / $total</span><button class="arrow" data-act="page-next" aria-label="Следующая страница" ${if (index + 1 == total) "disabled" else ""}>→</button></div>"""
-    val groups = ids.drop(index * pageSize).take(pageSize).groupBy { phones[it].tier }
+    val first = index * pageSize
+    val groups = ids.subList(first, minOf(first + pageSize, ids.size)).groupBy { phones[it].tier }
     return groups.entries.joinToString("", prefix = """<div class="tier-groups">""", postfix = "</div>") { (tier, members) ->
         val single = if (phonesByTier[tier].size == 1) " solo-tier" else ""
         """<section class="tier-group r$tier$single"><h3><i class="swatch"></i>${tierTitles[tier]}</h3>${cards(members)}</section>"""
@@ -161,7 +163,8 @@ fun matchingPhones(text: String): List<Int> {
     }
 }
 fun albumResults(): String {
-    val ids = matchingPhones(searchText).filter {
+    val matches = matchingPhones(searchText)
+    val ids = if (filter == 0 && albumTier < 0) matches else matches.filter {
         (when (filter) { 1 -> it in owned; 2 -> it !in owned; 3 -> it in wishes; else -> true }) && phones[it].matchesTier(albumTier)
     }
     if (ids.isEmpty() && searchText.isBlank() && albumTier < 0) {
