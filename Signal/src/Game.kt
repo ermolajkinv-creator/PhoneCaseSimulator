@@ -117,17 +117,25 @@ fun catalogPage(ids: List<Int>, page: Int): String {
 }
 fun searchable(name: String) = name.lowercase().replace("+", "plus").filter { it.isLetterOrDigit() }
 private val searchNames = phones.map { searchable(it.name) }
+private val digitRuns = Regex("""\d+""")
 private val searchAliases = mapOf("редми" to "redmi", "ноут" to "note", "нот" to "note", "про" to "pro", "макс" to "max", "сяоми" to "xiaomi")
 fun matchingPhones(text: String): List<Int> {
     if (text.isBlank()) return ordered
+    val serial = text.trim().removePrefix("№").removePrefix("#").trim()
+    val albumNumber = serial.toIntOrNull()
+    if (serial != text.trim() && albumNumber != null) {
+        return if (albumNumber in 1..phones.size) listOf(albumNumber - 1) else emptyList()
+    }
     val words = text.lowercase().trim().split(Regex("\\s+"))
     val year = words.firstOrNull { it.length == 4 && it.toIntOrNull() in 1980..2099 }
     val terms = words.filterNot { it == year }.map { searchable(searchAliases[it] ?: it) }
+    val modelDigits = terms.filter { term -> term.isNotEmpty() && term.all { it.isDigit() } }
     val query = terms.joinToString("")
     val matches = ordered.filter {
         val phone = phones[it]
         val name = searchNames[it]
-        (year == null || phone.year.toString() == year) && (name.contains(query) || terms.all { name.contains(it) })
+        (year == null || phone.year.toString() == year) && (name.contains(query) || terms.all { name.contains(it) }) &&
+            modelDigits.all { digits -> digitRuns.findAll(name).any { it.value == digits } }
     }
     if (query.isEmpty()) return matches
     return matches.sortedBy { id ->
@@ -158,7 +166,7 @@ fun album(): String {
         btn("filter-$i", name, "filter " + if (i == filter) "active" else "")
     }.joinToString("")
     val desc = if (owned.size == phones.size) "Коллекция собрана целиком!" else "Собрано ${owned.size} из ${phones.size} моделей."
-    return title("Альбом", desc) + """<div class="meter"><i style="width:${100 * owned.size / phones.size}%"></i></div><input type="search" id="search" class="search" placeholder="Название телефона или год" aria-label="Найти телефон"><div class="filters">$filters</div>${tierPicker(albumTier)}<div id="results">${albumResults()}</div>"""
+    return title("Альбом", desc) + """<div class="meter"><i style="width:${100 * owned.size / phones.size}%"></i></div><input type="search" id="search" class="search" placeholder="Название, год или № карточки" aria-label="Найти телефон"><div class="filters">$filters</div>${tierPicker(albumTier)}<div id="results">${albumResults()}</div>"""
 }
 fun workshop(): String {
     val content = if (job.isEmpty()) {
@@ -182,8 +190,11 @@ fun showPhone(id: Int, reward: String? = null) {
         val rank = tiers.size - p.tier
         """<p class="rank r${p.tier}">№ $rank по редкости · ${chanceText(cases[currentCase].tickets[p.tier])} в любом кейсе</p>"""
     } else ""
+    val related = if (p.name in listOf("Xiaomi Redmi Note 8", "Xiaomi Redmi Note 8 2019", "Xiaomi Redmi Note 8 2021")) {
+        btn("note8-pro", "Открыть Redmi Note 8 Pro →", "related-phone")
+    } else ""
     val text = reward ?: ((if (id in owned) "В твоей коллекции. " else "Пока нет в коллекции. ") + p.note)
-    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.yearLabel} · ${p.credit}</small>${wishButton(id)}${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
+    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.yearLabel} · ${p.credit}</small>$related${wishButton(id)}${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
 }
 private fun showIphoneMemory() {
     val id = phones.indexOfFirst { it.name == "Apple iPhone 12" }
@@ -267,6 +278,7 @@ fun dispatch(action: String) {
         when {
             action == "close" -> closeModal()
             action == "skip-spin" -> revealSpin()
+            action == "note8-pro" -> showPhone(phones.indexOfFirst { it.name == "Xiaomi Redmi Note 8 Pro" })
             action.startsWith("wish-") -> {
                 val id = action.substringAfter('-').toInt()
                 if (!wishes.remove(id)) wishes.add(id)

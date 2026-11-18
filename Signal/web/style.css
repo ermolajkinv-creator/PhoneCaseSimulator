@@ -47,3 +47,4 @@ main{padding-top:36px!important;padding-bottom:55px!important}.title{display:fle
 @keyframes reel-spin{from{transform:translateX(-56px)}to{transform:translateX(var(--stop))}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 @media(prefers-reduced-motion:reduce){.reel-track,.modal{animation:none}}
+.related-phone{display:block;margin:0 0 14px;padding:0;border:0;background:transparent;color:var(--ink);font-weight:650;text-decoration:underline;text-underline-offset:3px}
