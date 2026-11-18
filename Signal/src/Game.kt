@@ -24,7 +24,8 @@ private const val rublesPerOldCoin = 190
 var coins = 47_500L
 var opened = 0
 val owned = mutableSetOf<Int>()
-var tab = 0
+private const val mainMenu = -1
+var tab = mainMenu
 var currentCase = 0
 var filter = 0
 var job = ""
@@ -67,11 +68,23 @@ fun number(i: Int) = (i + 1).toString().padStart(2, '0')
 fun btn(action: String, label: String, css: String = "action") =
     """<button class="$css" data-act="$action">$label</button>"""
 
+private fun menuScreen() = """
+    <main class="menu-screen">
+      <div class="menu-content">
+        <p class="menu-caption">Главное меню</p>
+        <h1><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал</h1>
+        <button class="menu-case" data-act="tab-0" aria-label="Кейсы">
+          <span class="menu-art"><img src="${art("case0")}" alt=""></span>
+          <span class="menu-label">Кейсы <span aria-hidden="true">→</span></span>
+        </button>
+      </div>
+    </main>"""
+
 fun header(): String {
     val nav = labels.mapIndexed { i, label ->
         """<button class="${if (i == tab) "sel" else ""}" aria-current="${if (i == tab) "page" else "false"}" data-act="tab-$i">${icon(i)}$label</button>"""
     }.joinToString("")
-    return """<header><div class="wrap bar"><div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал</div><nav aria-label="Разделы">$nav</nav><div class="wallet" aria-label="Баланс: ${rubles(coins)}">${rubles(coins)}</div></div></header>"""
+    return """<header><div class="wrap bar"><button class="brand menu-back" data-act="menu" aria-label="В главное меню" title="Главное меню"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал <small>В меню</small></button><nav aria-label="Разделы">$nav</nav><div class="wallet" aria-label="Баланс: ${rubles(coins)}">${rubles(coins)}</div></div></header>"""
 }
 fun title(name: String, desc: String) =
     """<div class="title"><div><h1>$name</h1><p class="sub">$desc</p></div></div>"""
@@ -179,6 +192,10 @@ fun workshop(): String {
         """<section class="servicebox"><h2>Ремонт прошивки</h2><p class="sub">Введи четырёхзначный код с дисплея.</p>$content<p class="hint" role="status">$jobMessage</p></section>"""
 }
 fun render() {
+    if (tab == mainMenu) {
+        document.getElementById("app").innerHTML = menuScreen()
+        return
+    }
     val view = when (tab) { 1 -> album(); 2 -> workshop(); 3 -> settings(); else -> showcase() }
     val warning = if (storageWarning) """<p class="hint">Хранилище недоступно. Прогресс сохранится только до закрытия игры.</p>""" else ""
     document.getElementById("app").innerHTML = header() + """<main class="wrap">$view$warning</main>"""
@@ -295,6 +312,7 @@ fun dispatch(action: String) {
         return
     }
     when {
+        action == "menu" -> navigate(mainMenu)
         action == "settings-memory" && tab == 3 && !adminIsOpen -> showIphoneMemory()
         action.startsWith("admin-") && tab == 3 -> adminAction(action)
         action == "open" -> openCase()
@@ -361,7 +379,9 @@ fun main() {
         when {
             modalOpen -> { closeModal(); true }
             tab == 3 && adminIsOpen -> { navigate(3); true }
-            tab != 0 -> { navigate(0); true }
+            tab == mainMenu -> false
+            tab == 0 -> { navigate(mainMenu); true }
+            tab in labels.indices -> { navigate(0); true }
             else -> false
         }
     }

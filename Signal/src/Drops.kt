@@ -2,7 +2,8 @@ package signal
 
 import kotlin.random.Random
 
-const val ticketsPerCase = 1_000_000
+// A tenfold increase keeps the three individual prizes strictly rarest in large albums.
+val ticketsPerCase: Int get() = if (phones.size <= 65_000) 1_000_000 else 10_000_000
 const val oldTier = 0
 // The original card files and archive use stable catalogue codes.
 const val catalogFoldableTier = 6
@@ -63,7 +64,7 @@ val cases = listOf(
 
 fun chanceText(tickets: Int): String {
     val perPercent = ticketsPerCase / 100
-    val fraction = (tickets % perPercent).toString().padStart(4, '0').trimEnd('0')
+    val fraction = (tickets % perPercent).toString().padStart(perPercent.toString().length - 1, '0').trimEnd('0')
     val whole = tickets / perPercent
     return if (fraction.isEmpty()) "$whole%" else "$whole,$fraction%"
 }
