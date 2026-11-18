@@ -29,7 +29,7 @@ android {
         applicationId = "games.signal.collection"
         minSdk = 23
         targetSdk = 32
-        versionCode = 21
-        versionName = "2.5.0"
+        versionCode = 22
+        versionName = "2.5.1"
     }
 }

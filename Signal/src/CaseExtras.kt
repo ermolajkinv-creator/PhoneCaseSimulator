@@ -13,14 +13,14 @@ fun recordDrop(id: Int, case: Int, isNew: Boolean) {
 fun encodeHistory() = history.joinToString(",") { "${it.phone}:${it.case}:${if (it.isNew) 1 else 0}" }
 
 fun restoreExtras(savedWishes: String, savedHistory: String) {
-    wishes.addAll(savedWishes.split(',').mapNotNull { it.toIntOrNull() }.filter { it in phones.indices })
+    wishes.addAll(savedWishes.split(',').mapNotNull { it.toIntOrNull() }.filter { it in phones.indices }.map(::canonicalId))
     for (entry in savedHistory.split(',').take(historyLimit)) {
         val f = entry.split(':')
         if (f.size != 3) continue
         val id = f[0].toIntOrNull() ?: continue
         val case = f[1].toIntOrNull() ?: continue
         if (id in phones.indices && case in cases.indices && f[2] in listOf("0", "1"))
-            history.add(Drop(id, case, f[2] == "1"))
+            history.add(Drop(canonicalId(id), case, f[2] == "1"))
     }
 }
 

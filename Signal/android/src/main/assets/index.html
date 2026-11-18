@@ -619,6 +619,9 @@ if (typeof String.prototype.endsWith === 'undefined') {
     }
     return tmp;
   }
+  function distinct(_this__u8e3s4) {
+    return toList(toMutableSet(_this__u8e3s4));
+  }
   function single_1(_this__u8e3s4) {
     if (isInterface(_this__u8e3s4, KtList))
       return single_0(_this__u8e3s4);
@@ -690,6 +693,15 @@ if (typeof String.prototype.endsWith === 'undefined') {
       return toMutableList(_this__u8e3s4);
     return toCollection_0(_this__u8e3s4, ArrayList_init_$Create$());
   }
+  function toMutableSet(_this__u8e3s4) {
+    var tmp;
+    if (isInterface(_this__u8e3s4, Collection)) {
+      tmp = LinkedHashSet_init_$Create$_0(_this__u8e3s4);
+    } else {
+      tmp = toCollection_0(_this__u8e3s4, LinkedHashSet_init_$Create$());
+    }
+    return tmp;
+  }
   function last_0(_this__u8e3s4) {
     if (_this__u8e3s4.isEmpty_y1axqb_k$())
       throw NoSuchElementException_init_$Create$_0('List is empty.');
@@ -744,7 +756,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
           tmp = setOf(tmp_0);
           break;
         default:
-          tmp = toCollection_0(_this__u8e3s4, LinkedHashSet_init_$Create$_0(mapCapacity(_this__u8e3s4.get_size_woubt6_k$())));
+          tmp = toCollection_0(_this__u8e3s4, LinkedHashSet_init_$Create$_1(mapCapacity(_this__u8e3s4.get_size_woubt6_k$())));
           break;
       }
       return tmp;
@@ -2818,7 +2830,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
     return HashMap_init_$Init$_0(objectCreate(protoOf(HashMap)));
   }
   function HashMap_init_$Init$_1(initialCapacity, loadFactor, $this) {
-    HashMap_init_$Init$(InternalHashMap_init_$Create$_0(initialCapacity, loadFactor), $this);
+    HashMap_init_$Init$(InternalHashMap_init_$Create$_1(initialCapacity, loadFactor), $this);
     return $this;
   }
   function HashMap_init_$Init$_2(initialCapacity, $this) {
@@ -2913,16 +2925,25 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function HashSet_init_$Create$() {
     return HashSet_init_$Init$_0(objectCreate(protoOf(HashSet)));
   }
-  function HashSet_init_$Init$_1(initialCapacity, loadFactor, $this) {
-    HashSet_init_$Init$(InternalHashMap_init_$Create$_0(initialCapacity, loadFactor), $this);
+  function HashSet_init_$Init$_1(elements, $this) {
+    HashSet_init_$Init$(InternalHashMap_init_$Create$_0(elements.get_size_woubt6_k$()), $this);
+    var _iterator__ex2g4s = elements.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
+      $this.internalMap_1.put_4fpzoq_k$(element, true);
+    }
     return $this;
   }
-  function HashSet_init_$Init$_2(initialCapacity, $this) {
-    HashSet_init_$Init$_1(initialCapacity, 1.0, $this);
+  function HashSet_init_$Init$_2(initialCapacity, loadFactor, $this) {
+    HashSet_init_$Init$(InternalHashMap_init_$Create$_1(initialCapacity, loadFactor), $this);
+    return $this;
+  }
+  function HashSet_init_$Init$_3(initialCapacity, $this) {
+    HashSet_init_$Init$_2(initialCapacity, 1.0, $this);
     return $this;
   }
   function HashSet_init_$Create$_0(initialCapacity) {
-    return HashSet_init_$Init$_2(initialCapacity, objectCreate(protoOf(HashSet)));
+    return HashSet_init_$Init$_3(initialCapacity, objectCreate(protoOf(HashSet)));
   }
   protoOf(HashSet).add_utx5q5_k$ = function (element) {
     return this.internalMap_1.put_4fpzoq_k$(element, true) == null;
@@ -2966,6 +2987,9 @@ if (typeof String.prototype.endsWith === 'undefined') {
     InternalHashMap.call($this, arrayOfUninitializedElements(initialCapacity), null, new Int32Array(initialCapacity), new Int32Array(computeHashSize(Companion_instance_3, initialCapacity)), 2, 0);
     return $this;
   }
+  function InternalHashMap_init_$Create$_0(initialCapacity) {
+    return InternalHashMap_init_$Init$_0(initialCapacity, objectCreate(protoOf(InternalHashMap)));
+  }
   function InternalHashMap_init_$Init$_1(initialCapacity, loadFactor, $this) {
     InternalHashMap_init_$Init$_0(initialCapacity, $this);
     // Inline function 'kotlin.require' call
@@ -2975,7 +2999,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
     }
     return $this;
   }
-  function InternalHashMap_init_$Create$_0(initialCapacity, loadFactor) {
+  function InternalHashMap_init_$Create$_1(initialCapacity, loadFactor) {
     return InternalHashMap_init_$Init$_1(initialCapacity, loadFactor, objectCreate(protoOf(InternalHashMap)));
   }
   function _get_capacity__a9k9f3($this) {
@@ -3492,17 +3516,25 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function LinkedHashSet_init_$Create$() {
     return LinkedHashSet_init_$Init$(objectCreate(protoOf(LinkedHashSet)));
   }
-  function LinkedHashSet_init_$Init$_0(initialCapacity, loadFactor, $this) {
-    HashSet_init_$Init$_1(initialCapacity, loadFactor, $this);
+  function LinkedHashSet_init_$Init$_0(elements, $this) {
+    HashSet_init_$Init$_1(elements, $this);
     LinkedHashSet.call($this);
     return $this;
   }
-  function LinkedHashSet_init_$Init$_1(initialCapacity, $this) {
-    LinkedHashSet_init_$Init$_0(initialCapacity, 1.0, $this);
+  function LinkedHashSet_init_$Create$_0(elements) {
+    return LinkedHashSet_init_$Init$_0(elements, objectCreate(protoOf(LinkedHashSet)));
+  }
+  function LinkedHashSet_init_$Init$_1(initialCapacity, loadFactor, $this) {
+    HashSet_init_$Init$_2(initialCapacity, loadFactor, $this);
+    LinkedHashSet.call($this);
     return $this;
   }
-  function LinkedHashSet_init_$Create$_0(initialCapacity) {
-    return LinkedHashSet_init_$Init$_1(initialCapacity, objectCreate(protoOf(LinkedHashSet)));
+  function LinkedHashSet_init_$Init$_2(initialCapacity, $this) {
+    LinkedHashSet_init_$Init$_1(initialCapacity, 1.0, $this);
+    return $this;
+  }
+  function LinkedHashSet_init_$Create$_1(initialCapacity) {
+    return LinkedHashSet_init_$Init$_2(initialCapacity, objectCreate(protoOf(LinkedHashSet)));
   }
   protoOf(LinkedHashSet).checkIsMutable_jn1ih0_k$ = function () {
     return this.internalMap_1.checkIsMutable_h5js84_k$();
@@ -6321,7 +6353,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
             tmp_2 = tmp1_elvis_lhs;
           }
           var id = tmp_2;
-          if (!(0 <= id ? id <= (get_phones().get_size_woubt6_k$() - 1 | 0) : false))
+          if (!(0 <= id ? id <= (get_phones().get_size_woubt6_k$() - 1 | 0) : false) || !(canonicalId(id) === id))
             return Unit_instance;
           if (get_owned().add_utx5q5_k$(id)) {
             save();
@@ -6487,10 +6519,19 @@ if (typeof String.prototype.endsWith === 'undefined') {
         destination_0.add_utx5q5_k$(element_0);
       }
     }
-    tmp.addAll_h3ej1q_k$(destination_0);
-    var _iterator__ex2g4s_1 = take(split(savedHistory, charArrayOf([_Char___init__impl__6a9atx(44)])), 20).iterator_jk1svi_k$();
-    $l$loop_1: while (_iterator__ex2g4s_1.hasNext_bitz1p_k$()) {
-      var entry = _iterator__ex2g4s_1.next_20eer_k$();
+    // Inline function 'kotlin.collections.map' call
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination_1 = ArrayList_init_$Create$_0(collectionSizeOrDefault(destination_0, 10));
+    var _iterator__ex2g4s_1 = destination_0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s_1.hasNext_bitz1p_k$()) {
+      var item = _iterator__ex2g4s_1.next_20eer_k$();
+      var tmp$ret$10 = canonicalId(item);
+      destination_1.add_utx5q5_k$(tmp$ret$10);
+    }
+    tmp.addAll_h3ej1q_k$(destination_1);
+    var _iterator__ex2g4s_2 = take(split(savedHistory, charArrayOf([_Char___init__impl__6a9atx(44)])), 20).iterator_jk1svi_k$();
+    $l$loop_1: while (_iterator__ex2g4s_2.hasNext_bitz1p_k$()) {
+      var entry = _iterator__ex2g4s_2.next_20eer_k$();
       var f = split(entry, charArrayOf([_Char___init__impl__6a9atx(58)]));
       if (!(f.get_size_woubt6_k$() === 3))
         continue $l$loop_1;
@@ -6511,7 +6552,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
       }
       var case_0 = tmp_1;
       if ((0 <= id ? id <= (get_phones().get_size_woubt6_k$() - 1 | 0) : false) && (0 <= case_0 ? case_0 <= (get_cases().get_size_woubt6_k$() - 1 | 0) : false) && listOf_0(['0', '1']).contains_aljjnj_k$(f.get_c1px32_k$(2))) {
-        get_history().add_utx5q5_k$(new Drop(id, case_0, f.get_c1px32_k$(2) === '1'));
+        get_history().add_utx5q5_k$(new Drop(canonicalId(id), case_0, f.get_c1px32_k$(2) === '1'));
       }
     }
   }
@@ -6869,7 +6910,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
   var cases;
   function get_ticketsPerCase() {
     _init_properties_Drops_kt__nlf10y();
-    return get_phones().get_size_woubt6_k$() <= 66666 ? 1000000 : 10000000;
+    return get_activePhoneIds().get_size_woubt6_k$() <= 66666 ? 1000000 : 10000000;
   }
   function get_tradeIn(_this__u8e3s4) {
     _init_properties_Drops_kt__nlf10y();
@@ -6926,7 +6967,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
       var message = 'Failed requirement.';
       throw IllegalArgumentException_init_$Create$_0(toString_1(message));
     }
-    var exclusives = get_phones().get_size_woubt6_k$() <= 33000 ? listOf_0([30, 20, 10]) : listOf_0([15, 12, 10]);
+    var exclusives = get_activePhoneIds().get_size_woubt6_k$() <= 33000 ? listOf_0([30, 20, 10]) : listOf_0([15, 12, 10]);
     // Inline function 'kotlin.collections.map' call
     var this_0 = get_indices(weights);
     // Inline function 'kotlin.collections.mapTo' call
@@ -7112,21 +7153,16 @@ if (typeof String.prototype.endsWith === 'undefined') {
           inductionVariable = inductionVariable + 1 | 0;
           var tier = item;
           // Inline function 'kotlin.collections.filter' call
-          var tmp0 = get_indices(get_phones());
+          var tmp0 = get_activePhoneIds();
           // Inline function 'kotlin.collections.filterTo' call
           var destination_0 = ArrayList_init_$Create$();
-          var inductionVariable_0 = tmp0.first_1;
-          var last_0 = tmp0.last_1;
-          if (inductionVariable_0 <= last_0)
-            do {
-              var element = inductionVariable_0;
-              inductionVariable_0 = inductionVariable_0 + 1 | 0;
-              var it = element;
-              if (get_phones().get_c1px32_k$(it).tier_1 === tier) {
-                destination_0.add_utx5q5_k$(element);
-              }
+          var _iterator__ex2g4s = tmp0.iterator_jk1svi_k$();
+          while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+            var element = _iterator__ex2g4s.next_20eer_k$();
+            if (get_phones().get_c1px32_k$(element).tier_1 === tier) {
+              destination_0.add_utx5q5_k$(element);
             }
-             while (!(element === last_0));
+          }
           destination.add_utx5q5_k$(destination_0);
         }
          while (!(item === last));
@@ -7308,6 +7344,11 @@ if (typeof String.prototype.endsWith === 'undefined') {
     return searchNames;
   }
   var searchNames;
+  function get_exactNameIds() {
+    _init_properties_Game_kt__8erhxu();
+    return exactNameIds;
+  }
+  var exactNameIds;
   function get_digitRuns() {
     _init_properties_Game_kt__8erhxu();
     return digitRuns;
@@ -7390,11 +7431,21 @@ if (typeof String.prototype.endsWith === 'undefined') {
           destination_0.add_utx5q5_k$(element_0);
         }
       }
-      tmp_4.addAll_h3ej1q_k$(destination_0);
+      // Inline function 'kotlin.collections.map' call
+      // Inline function 'kotlin.collections.mapTo' call
+      var destination_1 = ArrayList_init_$Create$_0(collectionSizeOrDefault(destination_0, 10));
+      var _iterator__ex2g4s_1 = destination_0.iterator_jk1svi_k$();
+      while (_iterator__ex2g4s_1.hasNext_bitz1p_k$()) {
+        var item = _iterator__ex2g4s_1.next_20eer_k$();
+        var tmp$ret$11 = canonicalId(item);
+        destination_1.add_utx5q5_k$(tmp$ret$11);
+      }
+      tmp_4.addAll_h3ej1q_k$(destination_1);
       if (fields.get_size_woubt6_k$() === 6) {
         restoreExtras(fields.get_c1px32_k$(4), fields.get_c1px32_k$(5));
       }
-      if (legacy) {
+      var migrated = !(fields.get_c1px32_k$(2) === joinToString_1(get_owned(), ',')) || (fields.get_size_woubt6_k$() === 6 && (!(fields.get_c1px32_k$(4) === joinToString_1(get_wishes(), ',')) || !(fields.get_c1px32_k$(5) === encodeHistory())));
+      if (legacy || migrated) {
         save();
       }
     } catch ($p) {
@@ -7511,7 +7562,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
       tmp_2 = destination;
     }
     var models = tmp_2;
-    return title('\u041A\u0435\u0439\u0441\u044B', '\u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0439 \u043A\u0435\u0439\u0441\u044B \u0438 \u0441\u043E\u0431\u0435\u0440\u0438 \u0432\u0441\u0435 ' + get_phones().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.') + ('<div class="showcase"><section class="hero theme' + get_currentCase() + '"><div class="casehead"><span class="tag">\u041A\u0435\u0439\u0441 ' + number(get_currentCase()) + ' / 03<\/span><h2>' + c.name_1 + '<\/h2><\/div><div class="artbox"><i class="corner c1"><\/i><i class="corner c2"><\/i><img class="caseart" src="' + art('case' + get_currentCase()) + '" alt="\u041F\u0438\u043A\u0441\u0435\u043B\u044C\u043D\u044B\u0439 \u043A\u0435\u0439\u0441 ' + c.name_1 + '"><\/div><div class="switch"><button class="arrow" data-act="prev" aria-label="\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u043A\u0435\u0439\u0441">\u2190<\/button><div class="dots">' + dots + '<\/div><button class="arrow" data-act="next" aria-label="\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u043A\u0435\u0439\u0441">\u2192<\/button><\/div><\/section><section class="side"><h3>\u0428\u0430\u043D\u0441\u044B \u0432\u044B\u043F\u0430\u0434\u0435\u043D\u0438\u044F<\/h3><div class="odds">' + odds + '<\/div><details class="exclusive-odds"><summary>\u0422\u0440\u0438 \u0440\u0435\u0434\u0447\u0430\u0439\u0448\u0438\u0435 \u043C\u043E\u0434\u0435\u043B\u0438<\/summary><div class="odds">' + exclusiveOdds + '<\/div><\/details><div class="buybox">' + buy + '<\/div><\/section><\/div>\n        ' + historyPanel() + '<section class="section"><div class="sectionhead"><h2>\u0412\u043D\u0443\u0442\u0440\u0438 \u043A\u0435\u0439\u0441\u0430<\/h2><span class="count">' + get_phones().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439<\/span><\/div>' + tierPicker(get_caseTier()) + catalogPage(models, get_casePage()) + '<\/section>');
+    return title('\u041A\u0435\u0439\u0441\u044B', '\u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0439 \u043A\u0435\u0439\u0441\u044B \u0438 \u0441\u043E\u0431\u0435\u0440\u0438 \u0432\u0441\u0435 ' + get_activePhoneIds().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.') + ('<div class="showcase"><section class="hero theme' + get_currentCase() + '"><div class="casehead"><span class="tag">\u041A\u0435\u0439\u0441 ' + number(get_currentCase()) + ' / 03<\/span><h2>' + c.name_1 + '<\/h2><\/div><div class="artbox"><i class="corner c1"><\/i><i class="corner c2"><\/i><img class="caseart" src="' + art('case' + get_currentCase()) + '" alt="\u041F\u0438\u043A\u0441\u0435\u043B\u044C\u043D\u044B\u0439 \u043A\u0435\u0439\u0441 ' + c.name_1 + '"><\/div><div class="switch"><button class="arrow" data-act="prev" aria-label="\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u043A\u0435\u0439\u0441">\u2190<\/button><div class="dots">' + dots + '<\/div><button class="arrow" data-act="next" aria-label="\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u043A\u0435\u0439\u0441">\u2192<\/button><\/div><\/section><section class="side"><h3>\u0428\u0430\u043D\u0441\u044B \u0432\u044B\u043F\u0430\u0434\u0435\u043D\u0438\u044F<\/h3><div class="odds">' + odds + '<\/div><details class="exclusive-odds"><summary>\u0422\u0440\u0438 \u0440\u0435\u0434\u0447\u0430\u0439\u0448\u0438\u0435 \u043C\u043E\u0434\u0435\u043B\u0438<\/summary><div class="odds">' + exclusiveOdds + '<\/div><\/details><div class="buybox">' + buy + '<\/div><\/section><\/div>\n        ' + historyPanel() + '<section class="section"><div class="sectionhead"><h2>\u0412\u043D\u0443\u0442\u0440\u0438 \u043A\u0435\u0439\u0441\u0430<\/h2><span class="count">' + get_activePhoneIds().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439<\/span><\/div>' + tierPicker(get_caseTier()) + catalogPage(models, get_casePage()) + '<\/section>');
   }
   function catalogPage(ids, page) {
     _init_properties_Game_kt__8erhxu();
@@ -7591,7 +7642,15 @@ if (typeof String.prototype.endsWith === 'undefined') {
       tmp = false;
     }
     if (tmp) {
-      return numberRangeToNumber(1, get_phones().get_size_woubt6_k$()).contains_7q95ev_k$(albumNumber) ? listOf(albumNumber - 1 | 0) : emptyList();
+      var tmp_0;
+      var containsUpper = get_phones().get_size_woubt6_k$() - 1 | 0;
+      var containsArg = albumNumber - 1 | 0;
+      if (0 <= containsArg ? containsArg <= containsUpper : false) {
+        tmp_0 = listOf(canonicalId(albumNumber - 1 | 0));
+      } else {
+        tmp_0 = emptyList();
+      }
+      return tmp_0;
     }
     // Inline function 'kotlin.text.lowercase' call
     // Inline function 'kotlin.js.asDynamic' call
@@ -7606,16 +7665,16 @@ if (typeof String.prototype.endsWith === 'undefined') {
       var _iterator__ex2g4s = words.iterator_jk1svi_k$();
       while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
         var element = _iterator__ex2g4s.next_20eer_k$();
-        var tmp_0;
+        var tmp_1;
         if (element.length === 4) {
           var tmp0 = numberRangeToNumber(1980, 2099);
           // Inline function 'kotlin.ranges.contains' call
           var element_0 = toIntOrNull(element);
-          tmp_0 = (!(element_0 == null) && tmp0.contains_7q95ev_k$(element_0));
+          tmp_1 = (!(element_0 == null) && tmp0.contains_7q95ev_k$(element_0));
         } else {
-          tmp_0 = false;
+          tmp_1 = false;
         }
-        if (tmp_0) {
+        if (tmp_1) {
           tmp$ret$9 = element;
           break $l$block;
         }
@@ -7650,7 +7709,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
     var _iterator__ex2g4s_2 = terms.iterator_jk1svi_k$();
     while (_iterator__ex2g4s_2.hasNext_bitz1p_k$()) {
       var element_2 = _iterator__ex2g4s_2.next_20eer_k$();
-      var tmp_1;
+      var tmp_2;
       // Inline function 'kotlin.text.isNotEmpty' call
       if (charSequenceLength(element_2) > 0) {
         var tmp$ret$18;
@@ -7667,116 +7726,141 @@ if (typeof String.prototype.endsWith === 'undefined') {
           }
           tmp$ret$18 = true;
         }
-        tmp_1 = tmp$ret$18;
+        tmp_2 = tmp$ret$18;
       } else {
-        tmp_1 = false;
+        tmp_2 = false;
       }
-      if (tmp_1) {
+      if (tmp_2) {
         destination_1.add_utx5q5_k$(element_2);
       }
     }
     var modelDigits = destination_1;
     var query = joinToString_1(terms, '');
+    var tmp_3 = get_exactNameIds();
+    // Inline function 'kotlin.collections.orEmpty' call
+    var tmp0_elvis_lhs_0 = tmp_3.get_wei43m_k$(searchable(joinToString_1(words, '', VOID, VOID, VOID, VOID, matchingPhones$lambda)));
+    // Inline function 'kotlin.collections.map' call
+    var this_2 = tmp0_elvis_lhs_0 == null ? emptyList() : tmp0_elvis_lhs_0;
+    // Inline function 'kotlin.collections.mapTo' call
+    var destination_2 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_2, 10));
+    var _iterator__ex2g4s_3 = this_2.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s_3.hasNext_bitz1p_k$()) {
+      var item_0 = _iterator__ex2g4s_3.next_20eer_k$();
+      var tmp$ret$23 = canonicalId(item_0);
+      destination_2.add_utx5q5_k$(tmp$ret$23);
+    }
+    var exact = distinct(destination_2);
     // Inline function 'kotlin.collections.filter' call
     var tmp0_0 = get_ordered();
     // Inline function 'kotlin.collections.filterTo' call
-    var destination_2 = ArrayList_init_$Create$();
-    var _iterator__ex2g4s_3 = tmp0_0.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s_3.hasNext_bitz1p_k$()) {
-      var element_4 = _iterator__ex2g4s_3.next_20eer_k$();
+    var destination_3 = ArrayList_init_$Create$();
+    var _iterator__ex2g4s_4 = tmp0_0.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s_4.hasNext_bitz1p_k$()) {
+      var element_4 = _iterator__ex2g4s_4.next_20eer_k$();
       var phone = get_phones().get_c1px32_k$(element_4);
       var name = get_searchNames().get_c1px32_k$(element_4);
-      var tmp_2;
-      var tmp_3;
+      var tmp_4;
+      var tmp_5;
       if (year == null || phone.year_1.toString() === year) {
-        var tmp_4;
+        var tmp_6;
         if (contains_0(name, query)) {
-          tmp_4 = true;
+          tmp_6 = true;
         } else {
-          var tmp$ret$22;
+          var tmp$ret$26;
           $l$block_2: {
             // Inline function 'kotlin.collections.all' call
-            var tmp_5;
+            var tmp_7;
             if (isInterface(terms, Collection)) {
-              tmp_5 = terms.isEmpty_y1axqb_k$();
+              tmp_7 = terms.isEmpty_y1axqb_k$();
             } else {
-              tmp_5 = false;
+              tmp_7 = false;
             }
-            if (tmp_5) {
-              tmp$ret$22 = true;
+            if (tmp_7) {
+              tmp$ret$26 = true;
               break $l$block_2;
             }
-            var _iterator__ex2g4s_4 = terms.iterator_jk1svi_k$();
-            while (_iterator__ex2g4s_4.hasNext_bitz1p_k$()) {
-              var element_5 = _iterator__ex2g4s_4.next_20eer_k$();
+            var _iterator__ex2g4s_5 = terms.iterator_jk1svi_k$();
+            while (_iterator__ex2g4s_5.hasNext_bitz1p_k$()) {
+              var element_5 = _iterator__ex2g4s_5.next_20eer_k$();
               if (!contains_0(name, element_5)) {
-                tmp$ret$22 = false;
+                tmp$ret$26 = false;
                 break $l$block_2;
               }
             }
-            tmp$ret$22 = true;
+            tmp$ret$26 = true;
           }
-          tmp_4 = tmp$ret$22;
+          tmp_6 = tmp$ret$26;
         }
-        tmp_3 = tmp_4;
+        tmp_5 = tmp_6;
       } else {
-        tmp_3 = false;
+        tmp_5 = false;
       }
-      if (tmp_3) {
-        var tmp$ret$24;
+      if (tmp_5) {
+        var tmp$ret$28;
         $l$block_5: {
           // Inline function 'kotlin.collections.all' call
-          var tmp_6;
+          var tmp_8;
           if (isInterface(modelDigits, Collection)) {
-            tmp_6 = modelDigits.isEmpty_y1axqb_k$();
+            tmp_8 = modelDigits.isEmpty_y1axqb_k$();
           } else {
-            tmp_6 = false;
+            tmp_8 = false;
           }
-          if (tmp_6) {
-            tmp$ret$24 = true;
+          if (tmp_8) {
+            tmp$ret$28 = true;
             break $l$block_5;
           }
-          var _iterator__ex2g4s_5 = modelDigits.iterator_jk1svi_k$();
-          while (_iterator__ex2g4s_5.hasNext_bitz1p_k$()) {
-            var element_6 = _iterator__ex2g4s_5.next_20eer_k$();
+          var _iterator__ex2g4s_6 = modelDigits.iterator_jk1svi_k$();
+          while (_iterator__ex2g4s_6.hasNext_bitz1p_k$()) {
+            var element_6 = _iterator__ex2g4s_6.next_20eer_k$();
             var tmp0_1 = get_digitRuns().findAll$default_xha0o9_k$(name);
-            var tmp$ret$26;
+            var tmp$ret$30;
             $l$block_4: {
               // Inline function 'kotlin.sequences.any' call
-              var _iterator__ex2g4s_6 = tmp0_1.iterator_jk1svi_k$();
-              while (_iterator__ex2g4s_6.hasNext_bitz1p_k$()) {
-                var element_7 = _iterator__ex2g4s_6.next_20eer_k$();
+              var _iterator__ex2g4s_7 = tmp0_1.iterator_jk1svi_k$();
+              while (_iterator__ex2g4s_7.hasNext_bitz1p_k$()) {
+                var element_7 = _iterator__ex2g4s_7.next_20eer_k$();
                 if (element_7.get_value_j01efc_k$() === element_6) {
-                  tmp$ret$26 = true;
+                  tmp$ret$30 = true;
                   break $l$block_4;
                 }
               }
-              tmp$ret$26 = false;
+              tmp$ret$30 = false;
             }
-            if (!tmp$ret$26) {
-              tmp$ret$24 = false;
+            if (!tmp$ret$30) {
+              tmp$ret$28 = false;
               break $l$block_5;
             }
           }
-          tmp$ret$24 = true;
+          tmp$ret$28 = true;
         }
-        tmp_2 = tmp$ret$24;
+        tmp_4 = tmp$ret$28;
       } else {
-        tmp_2 = false;
+        tmp_4 = false;
       }
-      if (tmp_2) {
-        destination_2.add_utx5q5_k$(element_4);
+      if (tmp_4) {
+        destination_3.add_utx5q5_k$(element_4);
       }
     }
-    var matches = destination_2;
+    var matches = destination_3;
     // Inline function 'kotlin.text.isEmpty' call
     if (charSequenceLength(query) === 0)
-      return matches;
+      return distinct(plus(exact, matches));
     // Inline function 'kotlin.collections.sortedBy' call
     // Inline function 'kotlin.comparisons.compareBy' call
-    var tmp_7 = matchingPhones$lambda(query);
-    var tmp$ret$32 = new sam$kotlin_Comparator$0_1(tmp_7);
-    return sortedWith(matches, tmp$ret$32);
+    var tmp_9 = matchingPhones$lambda_0(query);
+    var tmp$ret$36 = new sam$kotlin_Comparator$0_1(tmp_9);
+    var ranked = sortedWith(matches, tmp$ret$36);
+    // Inline function 'kotlin.collections.filterNot' call
+    // Inline function 'kotlin.collections.filterNotTo' call
+    var destination_4 = ArrayList_init_$Create$();
+    var _iterator__ex2g4s_8 = ranked.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s_8.hasNext_bitz1p_k$()) {
+      var element_8 = _iterator__ex2g4s_8.next_20eer_k$();
+      if (!exact.contains_aljjnj_k$(element_8)) {
+        destination_4.add_utx5q5_k$(element_8);
+      }
+    }
+    return plus(exact, destination_4);
   }
   function albumResults() {
     _init_properties_Game_kt__8erhxu();
@@ -7839,8 +7923,8 @@ if (typeof String.prototype.endsWith === 'undefined') {
       destination.add_utx5q5_k$(tmp$ret$0);
     }
     var filters = joinToString_1(destination, '');
-    var desc = get_owned().get_size_woubt6_k$() === get_phones().get_size_woubt6_k$() ? '\u041A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F \u0441\u043E\u0431\u0440\u0430\u043D\u0430 \u0446\u0435\u043B\u0438\u043A\u043E\u043C!' : '\u0421\u043E\u0431\u0440\u0430\u043D\u043E ' + get_owned().get_size_woubt6_k$() + ' \u0438\u0437 ' + get_phones().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.';
-    return title('\u0410\u043B\u044C\u0431\u043E\u043C', desc) + ('<div class="meter"><i style="width:' + (imul(100, get_owned().get_size_woubt6_k$()) / get_phones().get_size_woubt6_k$() | 0) + '%"><\/i><\/div><input type="search" id="search" class="search" placeholder="\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435, \u0433\u043E\u0434 \u0438\u043B\u0438 \u2116 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0438" aria-label="\u041D\u0430\u0439\u0442\u0438 \u0442\u0435\u043B\u0435\u0444\u043E\u043D"><div class="filters">' + filters + '<\/div>' + tierPicker(get_albumTier()) + '<div id="results">' + albumResults() + '<\/div>');
+    var desc = get_owned().get_size_woubt6_k$() === get_activePhoneIds().get_size_woubt6_k$() ? '\u041A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F \u0441\u043E\u0431\u0440\u0430\u043D\u0430 \u0446\u0435\u043B\u0438\u043A\u043E\u043C!' : '\u0421\u043E\u0431\u0440\u0430\u043D\u043E ' + get_owned().get_size_woubt6_k$() + ' \u0438\u0437 ' + get_activePhoneIds().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.';
+    return title('\u0410\u043B\u044C\u0431\u043E\u043C', desc) + ('<div class="meter"><i style="width:' + (imul(100, get_owned().get_size_woubt6_k$()) / get_activePhoneIds().get_size_woubt6_k$() | 0) + '%"><\/i><\/div><input type="search" id="search" class="search" placeholder="\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435, \u0433\u043E\u0434 \u0438\u043B\u0438 \u2116 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0438" aria-label="\u041D\u0430\u0439\u0442\u0438 \u0442\u0435\u043B\u0435\u0444\u043E\u043D"><div class="filters">' + filters + '<\/div>' + tierPicker(get_albumTier()) + '<div id="results">' + albumResults() + '<\/div>');
   }
   function workshop() {
     _init_properties_Game_kt__8erhxu();
@@ -7978,7 +8062,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
     var isNew = get_owned().add_utx5q5_k$(id);
     var tmp;
     if (isNew) {
-      tmp = get_owned().get_size_woubt6_k$() === get_phones().get_size_woubt6_k$() ? '\u041F\u043E\u0441\u043B\u0435\u0434\u043D\u044F\u044F \u043C\u043E\u0434\u0435\u043B\u044C! \u0422\u044B \u0441\u043E\u0431\u0440\u0430\u043B \u0432\u0441\u0435 ' + get_phones().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.' : '\u041D\u043E\u0432\u0430\u044F \u043C\u043E\u0434\u0435\u043B\u044C! \u041C\u043E\u0434\u0435\u043B\u044C \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432 \u0442\u0432\u043E\u0439 \u0430\u043B\u044C\u0431\u043E\u043C.';
+      tmp = get_owned().get_size_woubt6_k$() === get_activePhoneIds().get_size_woubt6_k$() ? '\u041F\u043E\u0441\u043B\u0435\u0434\u043D\u044F\u044F \u043C\u043E\u0434\u0435\u043B\u044C! \u0422\u044B \u0441\u043E\u0431\u0440\u0430\u043B \u0432\u0441\u0435 ' + get_activePhoneIds().get_size_woubt6_k$() + ' \u043C\u043E\u0434\u0435\u043B\u0435\u0439.' : '\u041D\u043E\u0432\u0430\u044F \u043C\u043E\u0434\u0435\u043B\u044C! \u041C\u043E\u0434\u0435\u043B\u044C \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432 \u0442\u0432\u043E\u0439 \u0430\u043B\u044C\u0431\u043E\u043C.';
     } else {
       var credit = creditRubles(toLong(get_tradeIn(get_phones().get_c1px32_k$(id))));
       tmp = '\u0422\u0430\u043A\u0430\u044F \u043C\u043E\u0434\u0435\u043B\u044C \u0443\u0436\u0435 \u0435\u0441\u0442\u044C. \u0412\u044B\u043A\u0443\u043F \u043F\u043E\u0432\u0442\u043E\u0440\u0430 \u043F\u0440\u0438\u043D\u0451\u0441 ' + rubles(credit) + '.';
@@ -8232,7 +8316,12 @@ if (typeof String.prototype.endsWith === 'undefined') {
     var single = get_phonesByTier().get_c1px32_k$(tier).get_size_woubt6_k$() === 1 ? ' solo-tier' : '';
     return '<section class="tier-group r' + tier + single + '"><h3><i class="swatch"><\/i>' + get_tierTitles().get_c1px32_k$(tier) + '<\/h3>' + cards(members) + '<\/section>';
   }
-  function matchingPhones$lambda($query) {
+  function matchingPhones$lambda(it) {
+    _init_properties_Game_kt__8erhxu();
+    var tmp0_elvis_lhs = get_searchAliases().get_wei43m_k$(it);
+    return tmp0_elvis_lhs == null ? it : tmp0_elvis_lhs;
+  }
+  function matchingPhones$lambda_0($query) {
     return function (a, b) {
       // Inline function 'kotlin.comparisons.compareValuesBy' call
       var name = get_searchNames().get_c1px32_k$(a);
@@ -8357,7 +8446,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
       properties_initialized_Game_kt_8p3p0 = true;
       labels = listOf_0(['\u041A\u0435\u0439\u0441\u044B', '\u0410\u043B\u044C\u0431\u043E\u043C', '\u041C\u0430\u0441\u0442\u0435\u0440\u0441\u043A\u0430\u044F', '\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438']);
       icons = listOf_0(["<path d='m3 8 9-5 9 5v10l-9 4-9-4zM3 8l9 5 9-5M12 13v9'/>", "<path d='M3 4h7l2 2 2-2h7v15h-7l-2 2-2-2H3zM12 6v15'/>", "<path d='M14 4a6 6 0 0 0-6 8L3 17a3 3 0 0 0 4 4l6-6a6 6 0 0 0 7-8l-4 4-3-3 4-4z'/>", "<path d='M3 7h5m4 0h9M3 17h10m4 0h4'/><circle cx='10' cy='7' r='2'/><circle cx='15' cy='17' r='2'/>"]);
-      var tmp = get_indices(get_phones());
+      var tmp = get_activePhoneIds();
       // Inline function 'kotlin.comparisons.compareByDescending' call
       var tmp_0 = ordered$lambda;
       // Inline function 'kotlin.comparisons.thenBy' call
@@ -8395,12 +8484,79 @@ if (typeof String.prototype.endsWith === 'undefined') {
         destination.add_utx5q5_k$(tmp$ret$0);
       }
       searchNames = destination;
+      // Inline function 'kotlin.collections.groupBy' call
+      var tmp0 = get_indices(get_phones());
+      // Inline function 'kotlin.collections.groupByTo' call
+      var destination_0 = LinkedHashMap_init_$Create$();
+      var inductionVariable = tmp0.first_1;
+      var last = tmp0.last_1;
+      if (inductionVariable <= last)
+        do {
+          var element = inductionVariable;
+          inductionVariable = inductionVariable + 1 | 0;
+          var it = element;
+          var key = get_searchNames().get_c1px32_k$(it);
+          // Inline function 'kotlin.collections.getOrPut' call
+          var value = destination_0.get_wei43m_k$(key);
+          var tmp_2;
+          if (value == null) {
+            var answer = ArrayList_init_$Create$();
+            destination_0.put_4fpzoq_k$(key, answer);
+            tmp_2 = answer;
+          } else {
+            tmp_2 = value;
+          }
+          var list = tmp_2;
+          list.add_utx5q5_k$(element);
+        }
+         while (!(element === last));
+      exactNameIds = destination_0;
       digitRuns = Regex_init_$Create$_0('\\d+');
       searchAliases = mapOf([to('\u0440\u0435\u0434\u043C\u0438', 'redmi'), to('\u043D\u043E\u0443\u0442', 'note'), to('\u043D\u043E\u0442', 'note'), to('\u043F\u0440\u043E', 'pro'), to('\u043C\u0430\u043A\u0441', 'max'), to('\u0441\u044F\u043E\u043C\u0438', 'xiaomi')]);
     }
   }
   function mainWrapper() {
     main();
+  }
+  function get_mergedAlbumNumbers() {
+    _init_properties_MergedCards_kt__u6sjtx();
+    return mergedAlbumNumbers;
+  }
+  var mergedAlbumNumbers;
+  function get_activePhoneIds() {
+    _init_properties_MergedCards_kt__u6sjtx();
+    return activePhoneIds;
+  }
+  var activePhoneIds;
+  function canonicalId(id) {
+    _init_properties_MergedCards_kt__u6sjtx();
+    var tmp0_safe_receiver = get_mergedAlbumNumbers().get_wei43m_k$(id + 1 | 0);
+    var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver - 1 | 0;
+    return tmp1_elvis_lhs == null ? id : tmp1_elvis_lhs;
+  }
+  var properties_initialized_MergedCards_kt_xzcl5l;
+  function _init_properties_MergedCards_kt__u6sjtx() {
+    if (!properties_initialized_MergedCards_kt_xzcl5l) {
+      properties_initialized_MergedCards_kt_xzcl5l = true;
+      mergedAlbumNumbers = mapOf([to(109, 199), to(5464, 188), to(6459, 4858), to(6574, 6573), to(6578, 6575), to(6582, 6581), to(6584, 6583), to(7652, 7651), to(7787, 7786), to(7799, 7798), to(7804, 7802), to(9351, 9350), to(9353, 9352), to(9358, 9357), to(9359, 9355), to(9362, 9360), to(9365, 9364), to(9367, 9363), to(9368, 9354), to(9370, 9369), to(9373, 9372), to(9375, 9374), to(9380, 9378), to(9801, 9780), to(9802, 9781), to(9803, 9782), to(9804, 9783), to(9805, 9784), to(9806, 9785), to(9809, 9786), to(10703, 10700), to(10727, 10726), to(10779, 10778), to(10781, 10780), to(10784, 10783), to(10785, 10774), to(10787, 9371), to(11164, 11127), to(11166, 11128), to(11167, 11130), to(11169, 11133), to(11170, 11134), to(11171, 6086), to(11172, 11135), to(12217, 12214), to(12220, 12212), to(12226, 12225), to(12231, 12230), to(12234, 12232), to(12606, 12553), to(12843, 12842), to(13140, 13139), to(13640, 58), to(13926, 13923), to(13949, 13893), to(13950, 13894), to(13951, 13895), to(13952, 13896), to(14402, 14399), to(15085, 15018), to(15086, 15019), to(15400, 15399), to(16081, 16011), to(16805, 16804), to(18398, 18397), to(18781, 18780), to(18925, 10), to(22282, 10788), to(24776, 7797), to(24918, 6889), to(24920, 6895), to(24921, 8217), to(24922, 423), to(25180, 14409), to(26376, 11168), to(26385, 9808), to(26450, 8205), to(26451, 8206), to(26453, 6888), to(26455, 6890), to(26459, 26375), to(26462, 8213), to(26463, 6893), to(26464, 8215), to(26469, 4643), to(26470, 6900), to(26471, 8221), to(26472, 8222), to(26473, 6901), to(26474, 6902), to(26475, 4644), to(26478, 6903), to(26479, 4648), to(26480, 16896), to(26482, 26384), to(26483, 8224), to(27527, 27526), to(28808, 11894), to(28809, 10474), to(35631, 9650), to(35632, 11007), to(35633, 11008), to(35634, 9655), to(35635, 11009), to(35657, 11022), to(35659, 11025), to(35660, 11026), to(35661, 11028), to(35662, 9676), to(50056, 11132), to(50386, 24908), to(50623, 13488), to(50627, 13492), to(51455, 11010), to(51665, 12603), to(51669, 26481), to(51679, 26378), to(51680, 26379), to(52589, 5490), to(60359, 5491), to(60371, 1119), to(60385, 365), to(60484, 9850), to(60485, 9851), to(60786, 14470)]);
+      // Inline function 'kotlin.collections.filter' call
+      var tmp0 = get_indices(get_phones());
+      // Inline function 'kotlin.collections.filterTo' call
+      var destination = ArrayList_init_$Create$();
+      var inductionVariable = tmp0.first_1;
+      var last = tmp0.last_1;
+      if (inductionVariable <= last)
+        do {
+          var element = inductionVariable;
+          inductionVariable = inductionVariable + 1 | 0;
+          var it = element;
+          if (canonicalId(it) === it) {
+            destination.add_utx5q5_k$(element);
+          }
+        }
+         while (!(element === last));
+      activePhoneIds = destination;
+    }
   }
   //region block: post-declaration
   protoOf(InternalHashMap).containsAllEntries_m9iqdx_k$ = containsAllEntries;

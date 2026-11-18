@@ -113,7 +113,7 @@ fun adminAction(action: String) {
         "admin-grant" -> if (unlocked) {
             val model = document.getElementById("admin-model")
             val id = (model.value as String).toIntOrNull() ?: return
-            if (id !in phones.indices) return
+            if (id !in phones.indices || canonicalId(id) != id) return
             if (owned.add(id)) {
                 save()
                 updateAdminModels()

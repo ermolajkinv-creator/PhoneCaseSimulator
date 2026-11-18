@@ -12,7 +12,7 @@ val icons = listOf(
     "<path d='M14 4a6 6 0 0 0-6 8L3 17a3 3 0 0 0 4 4l6-6a6 6 0 0 0 7-8l-4 4-3-3 4-4z'/>",
     "<path d='M3 7h5m4 0h9M3 17h10m4 0h4'/><circle cx='10' cy='7' r='2'/><circle cx='15' cy='17' r='2'/>"
 )
-val ordered = phones.indices.sortedWith(compareByDescending<Int> { phones[it].tier }.thenBy { phones[it].name })
+val ordered = activePhoneIds.sortedWith(compareByDescending<Int> { phones[it].tier }.thenBy { phones[it].name })
 private var caseTier = -1
 private var albumTier = -1
 private const val pageSize = 12
@@ -47,9 +47,11 @@ fun restore() {
         if (money < 0 || total < 0) return
         coins = if (legacy) money * rublesPerOldCoin else money
         opened = total
-        owned.addAll(fields[2].split(",").mapNotNull { it.toIntOrNull() }.filter { it in phones.indices })
+        owned.addAll(fields[2].split(",").mapNotNull { it.toIntOrNull() }.filter { it in phones.indices }.map(::canonicalId))
         if (fields.size == 6) restoreExtras(fields[4], fields[5])
-        if (legacy) save()
+        val migrated = fields[2] != owned.joinToString(",") || (fields.size == 6 &&
+            (fields[4] != wishes.joinToString(",") || fields[5] != encodeHistory()))
+        if (legacy || migrated) save()
     } catch (_: Throwable) { storageWarning = true }
 }
 fun save() {
@@ -114,9 +116,9 @@ fun showcase(): String {
     else btn("tab-2","В мастерскую →") + """<p class="hint">Цена — ${rubles(c.cost)}. Не хватает ${rubles(c.cost - coins)}.</p>"""
     val dots = cases.indices.joinToString("") { "<i class='${if (it == currentCase) "on" else ""}'></i>" }
     val models = if (caseTier < 0) ordered else ordered.filter { phones[it].matchesTier(caseTier) }
-    return title("Кейсы", "Открывай кейсы и собери все ${phones.size} моделей.") +
+    return title("Кейсы", "Открывай кейсы и собери все ${activePhoneIds.size} моделей.") +
         """<div class="showcase"><section class="hero theme$currentCase"><div class="casehead"><span class="tag">Кейс ${number(currentCase)} / 03</span><h2>${c.name}</h2></div><div class="artbox"><i class="corner c1"></i><i class="corner c2"></i><img class="caseart" src="${art("case$currentCase")}" alt="Пиксельный кейс ${c.name}"></div><div class="switch"><button class="arrow" data-act="prev" aria-label="Предыдущий кейс">←</button><div class="dots">$dots</div><button class="arrow" data-act="next" aria-label="Следующий кейс">→</button></div></section><section class="side"><h3>Шансы выпадения</h3><div class="odds">$odds</div><details class="exclusive-odds"><summary>Три редчайшие модели</summary><div class="odds">$exclusiveOdds</div></details><div class="buybox">$buy</div></section></div>
-        ${historyPanel()}<section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${phones.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(models, casePage)}</section>"""
+        ${historyPanel()}<section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${activePhoneIds.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(models, casePage)}</section>"""
 }
 fun catalogPage(ids: List<Int>, page: Int): String {
     if (ids.isEmpty()) return """<p class="empty">Телефонов по этому запросу нет.</p>"""
@@ -132,6 +134,7 @@ fun catalogPage(ids: List<Int>, page: Int): String {
 }
 fun searchable(name: String) = name.lowercase().replace("+", "plus").filter { it.isLetterOrDigit() }
 private val searchNames = phones.map { searchable(it.name) }
+private val exactNameIds = phones.indices.groupBy { searchNames[it] }
 private val digitRuns = Regex("""\d+""")
 private val searchAliases = mapOf("редми" to "redmi", "ноут" to "note", "нот" to "note", "про" to "pro", "макс" to "max", "сяоми" to "xiaomi")
 fun matchingPhones(text: String): List<Int> {
@@ -139,21 +142,23 @@ fun matchingPhones(text: String): List<Int> {
     val serial = text.trim().removePrefix("№").removePrefix("#").trim()
     val albumNumber = serial.toIntOrNull()
     if (serial != text.trim() && albumNumber != null) {
-        return if (albumNumber in 1..phones.size) listOf(albumNumber - 1) else emptyList()
+        return if (albumNumber - 1 in phones.indices) listOf(canonicalId(albumNumber - 1)) else emptyList()
     }
     val words = text.lowercase().trim().split(Regex("\\s+"))
     val year = words.firstOrNull { it.length == 4 && it.toIntOrNull() in 1980..2099 }
     val terms = words.filterNot { it == year }.map { searchable(searchAliases[it] ?: it) }
     val modelDigits = terms.filter { term -> term.isNotEmpty() && term.all { it.isDigit() } }
     val query = terms.joinToString("")
+    val exact = exactNameIds[searchable(words.joinToString("") { searchAliases[it] ?: it })]
+        .orEmpty().map(::canonicalId).distinct()
     val matches = ordered.filter {
         val phone = phones[it]
         val name = searchNames[it]
         (year == null || phone.year.toString() == year) && (name.contains(query) || terms.all { name.contains(it) }) &&
             modelDigits.all { digits -> digitRuns.findAll(name).any { it.value == digits } }
     }
-    if (query.isEmpty()) return matches
-    return matches.sortedBy { id ->
+    if (query.isEmpty()) return (exact + matches).distinct()
+    val ranked = matches.sortedBy { id ->
         val name = searchNames[id]
         when {
             name.endsWith(query) -> 0
@@ -161,6 +166,7 @@ fun matchingPhones(text: String): List<Int> {
             else -> 2
         }
     }
+    return exact + ranked.filterNot { it in exact }
 }
 fun albumResults(): String {
     val matches = matchingPhones(searchText)
@@ -181,8 +187,8 @@ fun album(): String {
     val filters = listOf("Все", "Собраны", "Осталось", "Желания").mapIndexed { i, name ->
         btn("filter-$i", name, "filter " + if (i == filter) "active" else "")
     }.joinToString("")
-    val desc = if (owned.size == phones.size) "Коллекция собрана целиком!" else "Собрано ${owned.size} из ${phones.size} моделей."
-    return title("Альбом", desc) + """<div class="meter"><i style="width:${100 * owned.size / phones.size}%"></i></div><input type="search" id="search" class="search" placeholder="Название, год или № карточки" aria-label="Найти телефон"><div class="filters">$filters</div>${tierPicker(albumTier)}<div id="results">${albumResults()}</div>"""
+    val desc = if (owned.size == activePhoneIds.size) "Коллекция собрана целиком!" else "Собрано ${owned.size} из ${activePhoneIds.size} моделей."
+    return title("Альбом", desc) + """<div class="meter"><i style="width:${100 * owned.size / activePhoneIds.size}%"></i></div><input type="search" id="search" class="search" placeholder="Название, год или № карточки" aria-label="Найти телефон"><div class="filters">$filters</div>${tierPicker(albumTier)}<div id="results">${albumResults()}</div>"""
 }
 fun workshop(): String {
     val content = if (job.isEmpty()) {
@@ -259,7 +265,7 @@ fun openCase() {
     opened++
     val isNew = owned.add(id)
     val message = if (isNew) {
-        if (owned.size == phones.size) "Последняя модель! Ты собрал все ${phones.size} моделей." else "Новая модель! Модель добавлена в твой альбом."
+        if (owned.size == activePhoneIds.size) "Последняя модель! Ты собрал все ${activePhoneIds.size} моделей." else "Новая модель! Модель добавлена в твой альбом."
     } else {
         val credit = creditRubles(phones[id].tradeIn.toLong())
         "Такая модель уже есть. Выкуп повтора принёс ${rubles(credit)}."
