@@ -856,7 +856,7 @@ internal fun additionalPhones() = listOf(
     Phone("Samsung Galaxy M53", 1, "Экран — 6,7″. Чип — Mediatek Dimensity 900.", 2022, "GSMArena", 14_300),
     Phone("Motorola Moto G45", 1, "Экран — 6,5″. Чип — Qualcomm SM6375 Snapdragon 6s Gen 3.", 2024, "GSMArena", 13_200),
     Phone("Xiaomi Redmi K50 Ultra", 3, "Экран — 6,67″. Чип — Qualcomm SM8475 Snapdragon 8+ Gen 1.", 2022, "GSMArena", 24_600),
-    Phone("Xiaomi Redmi Note 10 Pro Max", 2, "Экран — 6,67″. Чип — Qualcomm SM7150 Snapdragon 732G.", 2021, "GSMArena", 11_000),
+    Phone("Xiaomi Redmi Note 10 Pro Max", 2, "Модель для Индии. Основная камера на 108 Мп, AMOLED-экран 6,67″ и чип Snapdragon 732G.", 2021, "GSMArena", 11_000),
     Phone("vivo X60 Pro", 3, "Экран — 6,56″. Чип — Qualcomm SM8250-AC Snapdragon 870 5G.", 2021, "GSMArena", 28_400),
     Phone("Oppo A6s Pro", 2, "Экран — 6,57″. Чип — Mediatek Helio G100 Max.", 2026, "GSMArena", 28_000),
     Phone("Oppo F23", 1, "Экран — 6,72″. Чип — Qualcomm SM6375 Snapdragon 695 5G.", 2023, "GSMArena", 17_800),

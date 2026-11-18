@@ -39,7 +39,7 @@ fun restore() {
         val raw = window.localStorage.getItem(saveKey) as? String ?: return
         val fields = raw.split("|")
         val legacy = fields.size == 3
-        if (!legacy && (fields.size != 4 || fields[3] != "RUB")) return
+        if (!legacy && (fields.size !in listOf(4, 6) || fields[3] != "RUB")) return
         val money = fields[0].toLongOrNull() ?: return
         if (legacy && money > Int.MAX_VALUE) return
         val total = fields[1].toIntOrNull() ?: return
@@ -47,11 +47,12 @@ fun restore() {
         coins = if (legacy) money * rublesPerOldCoin else money
         opened = total
         owned.addAll(fields[2].split(",").mapNotNull { it.toIntOrNull() }.filter { it in phones.indices })
+        if (fields.size == 6) restoreExtras(fields[4], fields[5])
         if (legacy) save()
     } catch (_: Throwable) { storageWarning = true }
 }
 fun save() {
-    try { window.localStorage.setItem(saveKey, listOf(coins, opened, owned.joinToString(","), "RUB").joinToString("|")) }
+    try { window.localStorage.setItem(saveKey, listOf(coins, opened, owned.joinToString(","), "RUB", wishes.joinToString(","), encodeHistory()).joinToString("|")) }
     catch (_: Throwable) { storageWarning = true }
 }
 fun art(name: String): String = window.signalArt[name] as String
@@ -101,7 +102,7 @@ fun showcase(): String {
     val dots = cases.indices.joinToString("") { "<i class='${if (it == currentCase) "on" else ""}'></i>" }
     return title("Кейсы", "Открывай кейсы и собери все ${phones.size} моделей.") +
         """<div class="showcase"><section class="hero theme$currentCase"><div class="casehead"><span class="tag">Кейс ${number(currentCase)} / 03</span><h2>${c.name}</h2></div><div class="artbox"><i class="corner c1"></i><i class="corner c2"></i><img class="caseart" src="${art("case$currentCase")}" alt="Пиксельный кейс ${c.name}"></div><div class="switch"><button class="arrow" data-act="prev" aria-label="Предыдущий кейс">←</button><div class="dots">$dots</div><button class="arrow" data-act="next" aria-label="Следующий кейс">→</button></div></section><section class="side"><h3>Шансы выпадения</h3><div class="odds">$odds</div><details class="exclusive-odds"><summary>Три редчайшие модели</summary><div class="odds">$exclusiveOdds</div></details><div class="buybox">$buy</div></section></div>
-        <section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${phones.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(ordered.filter { phones[it].matchesTier(caseTier) }, casePage)}</section>"""
+        ${historyPanel()}<section class="section"><div class="sectionhead"><h2>Внутри кейса</h2><span class="count">${phones.size} моделей</span></div>${tierPicker(caseTier)}${catalogPage(ordered.filter { phones[it].matchesTier(caseTier) }, casePage)}</section>"""
 }
 fun catalogPage(ids: List<Int>, page: Int): String {
     if (ids.isEmpty()) return """<p class="empty">Телефонов по этому запросу нет.</p>"""
@@ -116,11 +117,12 @@ fun catalogPage(ids: List<Int>, page: Int): String {
 }
 fun searchable(name: String) = name.lowercase().replace("+", "plus").filter { it.isLetterOrDigit() }
 private val searchNames = phones.map { searchable(it.name) }
+private val searchAliases = mapOf("редми" to "redmi", "ноут" to "note", "нот" to "note", "про" to "pro", "макс" to "max", "сяоми" to "xiaomi")
 fun matchingPhones(text: String): List<Int> {
     if (text.isBlank()) return ordered
-    val words = text.trim().split(Regex("\\s+"))
+    val words = text.lowercase().trim().split(Regex("\\s+"))
     val year = words.firstOrNull { it.length == 4 && it.toIntOrNull() in 1980..2099 }
-    val terms = words.filterNot { it == year }.map(::searchable)
+    val terms = words.filterNot { it == year }.map { searchable(searchAliases[it] ?: it) }
     val query = terms.joinToString("")
     val matches = ordered.filter {
         val phone = phones[it]
@@ -139,16 +141,20 @@ fun matchingPhones(text: String): List<Int> {
 }
 fun albumResults(): String {
     val ids = matchingPhones(searchText).filter {
-        (filter == 0 || ((it in owned) == (filter == 1))) && phones[it].matchesTier(albumTier)
+        (when (filter) { 1 -> it in owned; 2 -> it !in owned; 3 -> it in wishes; else -> true }) && phones[it].matchesTier(albumTier)
     }
     if (ids.isEmpty() && searchText.isBlank() && albumTier < 0) {
-        val message = if (filter == 1) "Здесь появится первый телефон из кейса." else "Все телефоны уже в альбоме."
+        val message = when (filter) {
+            1 -> "Здесь появится первый телефон из кейса."
+            3 -> "Открой карточку телефона и нажми «Хочу в коллекцию»."
+            else -> "Все телефоны уже в альбоме."
+        }
         return """<p class="empty">$message</p>"""
     }
     return catalogPage(ids, albumPage)
 }
 fun album(): String {
-    val filters = listOf("Все", "Собраны", "Осталось").mapIndexed { i, name ->
+    val filters = listOf("Все", "Собраны", "Осталось", "Желания").mapIndexed { i, name ->
         btn("filter-$i", name, "filter " + if (i == filter) "active" else "")
     }.joinToString("")
     val desc = if (owned.size == phones.size) "Коллекция собрана целиком!" else "Собрано ${owned.size} из ${phones.size} моделей."
@@ -177,7 +183,7 @@ fun showPhone(id: Int, reward: String? = null) {
         """<p class="rank r${p.tier}">№ $rank по редкости · ${chanceText(cases[currentCase].tickets[p.tier])} в любом кейсе</p>"""
     } else ""
     val text = reward ?: ((if (id in owned) "В твоей коллекции. " else "Пока нет в коллекции. ") + p.note)
-    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.yearLabel} · ${p.credit}</small>${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
+    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.yearLabel} · ${p.credit}</small>${wishButton(id)}${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
 }
 private fun showIphoneMemory() {
     val id = phones.indexOfFirst { it.name == "Apple iPhone 12" }
@@ -192,8 +198,8 @@ private fun showIphoneMemory() {
           ${btn("close", "Вернуться в настройки")}
         </section></div>""")
 }
-private fun openModal(markup: String) {
-    previousFocus = document.activeElement
+internal fun openModal(markup: String) {
+    if (!modalOpen) previousFocus = document.activeElement
     val overlay = document.getElementById("overlay")
     overlay.innerHTML = markup
     modalOpen = true
@@ -202,11 +208,12 @@ private fun openModal(markup: String) {
 }
 fun closeModal() {
     if (!modalOpen) return
+    if (revealSpin()) return
     document.getElementById("overlay").innerHTML = ""
     document.getElementById("app").removeAttribute("inert")
     modalOpen = false
     if (previousFocus != null && previousFocus != document.body && previousFocus.isConnected == true) previousFocus.focus()
-    else document.querySelector("[data-act='open'],[data-act='tab-2'].action")?.focus()
+    else document.querySelector("[data-act='open'],[data-act='tab-2'].action,.filter.active")?.focus()
 }
 fun creditRubles(amount: Long): Long {
     val credited = amount.coerceAtMost(Long.MAX_VALUE - coins)
@@ -215,19 +222,21 @@ fun creditRubles(amount: Long): Long {
 }
 fun openCase() {
     val c = cases[currentCase]
-    if (coins < c.cost) return
+    if (modalOpen || coins < c.cost) return
     val id = c.drawPhone()
     coins -= c.cost
     opened++
-    val message = if (owned.add(id)) {
+    val isNew = owned.add(id)
+    val message = if (isNew) {
         if (owned.size == phones.size) "Последняя модель! Ты собрал все ${phones.size} моделей." else "Новая модель! Модель добавлена в твой альбом."
     } else {
         val credit = creditRubles(phones[id].tradeIn.toLong())
         "Такая модель уже есть. Выкуп повтора принёс ${rubles(credit)}."
     }
+    recordDrop(id, currentCase, isNew)
     save()
     render()
-    showPhone(id, message)
+    spinCase(c, id, message)
 }
 fun enterDigit(digit: String) {
     if (job.isEmpty()) return
@@ -254,7 +263,25 @@ fun navigate(to: Int) {
     window.scrollTo(0, 0)
 }
 fun dispatch(action: String) {
-    if (modalOpen) { if (action == "close") closeModal(); return }
+    if (modalOpen) {
+        when {
+            action == "close" -> closeModal()
+            action == "skip-spin" -> revealSpin()
+            action.startsWith("wish-") -> {
+                val id = action.substringAfter('-').toInt()
+                if (!wishes.remove(id)) wishes.add(id)
+                save()
+                val button = document.querySelector("[data-act='wish-$id']")
+                button.textContent = wishLabel(id)
+                button.setAttribute("aria-pressed", (id in wishes).toString())
+                if (tab == 1 && filter == 3) {
+                    albumPage = 0
+                    document.getElementById("results").innerHTML = albumResults()
+                }
+            }
+        }
+        return
+    }
     when {
         action == "settings-memory" && tab == 3 && !adminIsOpen -> showIphoneMemory()
         action.startsWith("admin-") && tab == 3 -> adminAction(action)

@@ -30,3 +30,20 @@ main{padding-top:36px!important;padding-bottom:55px!important}.title{display:fle
 .model-price{display:block;font-weight:650;color:var(--ink);margin-top:4px}.wallet{font-variant-numeric:tabular-nums}
 
 .r5{--rar:#397863;--wash:#dcf0e5}
+
+.drop-history{margin:20px 0 0;padding:14px 18px;border:1px solid #aca69b;border-radius:10px;background:var(--paper)}
+.drop-history summary{cursor:pointer;font-weight:700}.drop-history summary span{font-size:12px;margin-left:5px;color:#615d55}
+.drop-history p,.drop-history ol{margin:12px 0 0}.drop-history ol{list-style:none;padding:0;max-height:320px;overflow:auto}
+.history-row{display:flex;align-items:center;gap:12px;background:none;border:0;border-top:1px solid #dedacf;padding:10px 2px;width:100%;text-align:left;color:var(--ink)}
+.history-row span{flex:1}.history-row small{display:block;color:#655f57}.history-row em{font-size:12px;font-style:normal}
+.wish{display:block;margin:0 0 12px;padding:8px 12px;border:1px solid #9a948b;border-radius:18px;background:transparent;color:var(--ink);font-weight:600}.wish[aria-pressed=true]{background:#f2e3ea;color:#712e4a}
+.spin-modal{width:min(500px,100%);overflow:hidden}.spin-heading,.spin-footer{padding:20px}.spin-heading span{font-size:13px;color:#5b564d}.spin-heading h2{margin:4px 0 0;font-size:30px;letter-spacing:-.045em}
+.reel-window{position:relative;overflow:hidden;background:#e9e5dc;border-block:1px solid #beb7a7;padding:16px 0}
+.reel-window::before,.reel-window::after{content:"";position:absolute;left:50%;z-index:1;transform:translateX(-50%);border:8px solid transparent}
+.reel-window::before{top:0;border-top-color:#252420}.reel-window::after{bottom:0;border-bottom-color:#252420}
+.reel-track{display:flex;width:max-content;gap:8px;margin-left:50%;transform:translateX(var(--stop));animation:reel-spin var(--duration) cubic-bezier(.12,.56,.15,1) both}
+.reel-tile{box-sizing:border-box;width:112px;padding:6px;border:1px solid #a6a093;border-bottom:4px solid var(--rar);border-radius:8px;background:white;text-align:center}
+.reel-tile img{display:block;width:100%;height:86px;object-fit:contain}.reel-tile b{display:block;height:34px;margin-top:4px;font-size:12px;line-height:16px;overflow:hidden}
+@keyframes reel-spin{from{transform:translateX(-56px)}to{transform:translateX(var(--stop))}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media(prefers-reduced-motion:reduce){.reel-track,.modal{animation:none}}

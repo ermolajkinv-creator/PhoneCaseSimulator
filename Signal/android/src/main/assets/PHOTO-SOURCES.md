@@ -7656,7 +7656,7 @@
 | 7650 | Xiaomi Redmi Note 7S | [Helpix](https://helpix.ru/xiaomi/redmi_note_7s/) |
 | 7651 | Xiaomi Redmi Note 8 | [GSMArena](https://www.gsmarena.com/xiaomi_redmi_note_8-9814.php) |
 | 7652 | Xiaomi Redmi Note 8 2019 | [Helpix](https://helpix.ru/xiaomi/redmi_note_8/) |
-| 7653 | Xiaomi Redmi Note 8 pro | [Helpix](https://helpix.ru/xiaomi/redmi_note_8_pro/) |
+| 7653 | Xiaomi Redmi Note 8 Pro | [Helpix](https://helpix.ru/xiaomi/redmi_note_8_pro/) |
 | 7654 | Xiaomi Redmi Note 8T | [Helpix](https://helpix.ru/xiaomi/redmi_note_8t/) |
 | 7655 | Xiaomi Redmi Y3 | [Helpix](https://helpix.ru/xiaomi/redmi_y3/) |
 | 7656 | XOLO Era 4X | [Helpix](https://helpix.ru/xolo/era_4x/) |
