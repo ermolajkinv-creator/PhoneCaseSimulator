@@ -13,12 +13,23 @@ android {
         }
     } else if (providers.gradleProperty("compactArt").orNull == "true") {
         sourceSets.getByName("main").assets.setSrcDirs(listOf(layout.buildDirectory.dir("compact-assets")))
+    } else {
+        sourceSets.getByName("main").assets.setSrcDirs(listOf(layout.buildDirectory.dir("offline-assets")))
+        val prepareOfflineAssets = tasks.register<Exec>("prepareOfflineAssets") {
+            val script = rootProject.file("tools/build-offline.py")
+            inputs.file(script)
+            inputs.dir("src/main/assets")
+            outputs.dir(layout.buildDirectory.dir("offline-assets"))
+            commandLine("python3", script.absolutePath)
+        }
+        tasks.matching { it.name == "preBuild" }.configureEach { dependsOn(prepareOfflineAssets) }
     }
+    androidResources.noCompress += "pack"
     defaultConfig {
         applicationId = "games.signal.collection"
         minSdk = 23
         targetSdk = 32
-        versionCode = 20
-        versionName = "2.4.0"
+        versionCode = 21
+        versionName = "2.5.0"
     }
 }

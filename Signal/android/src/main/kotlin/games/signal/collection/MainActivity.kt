@@ -36,6 +36,11 @@ class MainActivity : Activity() {
             allowContentAccess = false
             blockNetworkLoads = true
         }
+        val offlinePhotos = try {
+            OfflinePhotos(assets.open("photos.idx")) { assets.openFd("photos.pack").createInputStream() }
+        } catch (_: FileNotFoundException) {
+            null
+        }
         val photoCache = try {
             val hashes = assets.open("photo-hashes.bin").use { it.readBytes() }
             val version = packageManager.getPackageInfo(packageName, 0).versionName
@@ -55,10 +60,11 @@ class MainActivity : Activity() {
                 val path = uri.path.orEmpty()
                 if (uri.scheme == "https" && uri.host == "signal.invalid" && photoPath.matches(path)) {
                     val mime = if (path.endsWith(".webp")) "image/webp" else "image/png"
+                    val id = path.removePrefix("/art/phone").removeSuffix(".webp").toIntOrNull()
                     val stream = try {
-                        assets.open(path.removePrefix("/"))
+                        if (id != null && offlinePhotos != null) offlinePhotos.open(id)
+                        else assets.open(path.removePrefix("/"))
                     } catch (_: FileNotFoundException) {
-                        val id = path.removePrefix("/art/phone").removeSuffix(".webp").toIntOrNull()
                         if (id == null || photoCache == null) return null
                         try {
                             photoCache.open(id)

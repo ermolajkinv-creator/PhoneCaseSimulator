@@ -60307,6 +60307,5853 @@
 | 60301 | ZUUM Rubek II | [IMEI.info](https://www.imei.info/phonedatabase/zuum-rubek-ii/) |
 | 60302 | ZYREX ZC599 | [IMEI.info](https://www.imei.info/phonedatabase/zyrex-zc599/) |
 | 60303 | ZYRON DG2 | [IMEI.info](https://www.imei.info/phonedatabase/zyron-dg2/) |
+| 60304 | Honor Magic9 Super | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-magic9-super) |
+| 60305 | Honor Win2 RT | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-win2-rt) |
+| 60306 | OnePlus N6 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oneplus-n6-lite) |
+| 60307 | Oppo A7 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oppo-a7-pro) |
+| 60308 | Ulefone Armor 27T+ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ulefone-armor-27tplus) |
+| 60309 | Xiaomi Poco C95 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaomi-poco-c95-pro) |
+| 60310 | Zuum Sens G Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-sens_g_ultra) |
+| 60311 | HMD Asha 305 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hmd-asha-305-lite) |
+| 60312 | Honor Play 20a | [GSMchoice](https://www.gsmchoice.com/en/catalogue/honor/play20a/) |
+| 60313 | Honor Play20C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-play20c) |
+| 60314 | Honor X6e | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-x6e) |
+| 60315 | Honor X8e | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-x8e) |
+| 60316 | Oukitel WP23S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp23s) |
+| 60317 | Oukitel WP63 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp63) |
+| 60318 | Oukitel WP66 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp66) |
+| 60319 | Oukitel WP68 Air | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp68-air) |
+| 60320 | Samsung Galaxy A08 | [Gadgets 360](https://www.gadgets360.com/samsung-galaxy-a08-price-in-india-137531) |
+| 60321 | Samsung Galaxy A18 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-a18-4g) |
+| 60322 | Zuum Aura X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-aura_x1) |
+| 60323 | Zuum Magno C3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno_c3) |
+| 60324 | Zuum Magno R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno_r) |
+| 60325 | Honor 600 | [Gadgets 360](https://www.gadgets360.com/honor-600-price-in-india-136217) |
+| 60326 | Honor X5d Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honor-x5d-plus) |
+| 60327 | Redmi M100 | [Gadgets 360](https://www.gadgets360.com/redmi-m100-price-in-india-137274) |
+| 60328 | Samsung Galaxy A07s | [Gadgets 360](https://www.gadgets360.com/samsung-galaxy-a07s-price-in-india-137437) |
+| 60329 | Zuum Sens Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-sens_plus) |
+| 60330 | ZTE nubia RedMagic 10SPro+ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-nubia-redmagic-10sproplus) |
+| 60331 | HTC Wildfire E4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-wildfire-e4-plus) |
+| 60332 | itel TS Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-ts-pro) |
+| 60333 | itel Zeno 20 Max | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-zeno-20-max) |
+| 60334 | Meizu Note 22 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meizu-note-22-pro) |
+| 60335 | Oukitel C62 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c62-pro) |
+| 60336 | Ulefone Armor 29 Pro Thermal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ulefone-armor-29-pro-thermal) |
+| 60337 | Ulefone Armor 34+ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ulefone-armor-34plus) |
+| 60338 | Acer one Liquid S162E4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/acer-one-liquid-s162e4) |
+| 60339 | Acer one Liquid S272E4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/acer-one-liquid-s272e4) |
+| 60340 | HTC Wildfire E5 Life | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-wildfire-e5-life) |
+| 60341 | HTC Wildfire E6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-wildfire-e6) |
+| 60342 | HTC Wildfire E6 Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-wildfire-e6-star) |
+| 60343 | itel A100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-a100) |
+| 60344 | Oukitel C2 2025 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c2-2025) |
+| 60345 | Oukitel C3 2025 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c3-2025) |
+| 60346 | Oukitel C5 2025 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c5-2025) |
+| 60347 | Oukitel C59 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c59) |
+| 60348 | Oukitel C60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c60) |
+| 60349 | Oukitel C61 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c61) |
+| 60350 | Oukitel C7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-c7) |
+| 60351 | Oukitel G5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-g5) |
+| 60352 | Oukitel WP58 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp58) |
+| 60353 | Oukitel WP60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp60) |
+| 60354 | Oukitel WP62 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-wp62) |
+| 60355 | Tecno Spark Slim | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-spark-slim) |
+| 60356 | ZTE Blade V80 Design | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-blade-v80-design) |
+| 60357 | Zuum Aura Z3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-aura_z3) |
+| 60358 | Proton Sky | [MobileDokan](https://www.mobiledokan.com/mobile/proton-sky) |
+| 60359 | Philips S6310 Essence 20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/philips-s6310-essence-20) |
+| 60360 | Philips S7710 Omni 10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/philips-s7710-omni-10) |
+| 60361 | Energizer E288s | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energizer-e288s) |
+| 60362 | Energizer Ultimate U6G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energizer-ultimate-u6g) |
+| 60363 | AGM G2 GT | [ZOL](https://detail.zol.com.cn/cell_phone/index1546912.shtml) |
+| 60364 | Asus ROG 7 Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1511492.shtml) |
+| 60365 | Reliance Orbic Fun+ 4G | [DeviceBeast](https://devicebeast.com/devices/reliance-orbic-fun-4g-dual-sim-td-lte-jp-64gb-rc609lp) |
+| 60366 | Asus ROG 7 | [ZOL](https://detail.zol.com.cn/cell_phone/index1511490.shtml) |
+| 60367 | Caterpillar CAT S75 5G NTN | [DeviceBeast](https://devicebeast.com/devices/caterpillar-cat-s75-5g-ntn-dual-sim-td-lte-na-bm1s1b) |
+| 60368 | Kyocera DuraSport UW | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-durasport-uw) |
+| 60369 | Kyocera Easy Smartphone 3 5G | [DeviceBeast](https://devicebeast.com/devices/kyocera-easy-smartphone-3-5g-dual-sim-td-lte-jp-a205kc-kantan-3) |
+| 60370 | VERTU FOLD3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1428066.shtml) |
+| 60371 | Apple iPhone SE 3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1400523.shtml) |
+| 60372 | Samsung Galaxy Watch5 Pro | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxywatch5pro/) |
+| 60373 | Fujitsu Raku-Raku Easy Smartphone | [DeviceBeast](https://devicebeast.com/devices/fujitsu-raku-raku-easy-smartphone-td-lte-jp-f-52b) |
+| 60374 | Kyocera Anshin Smartphone 5G | [DeviceBeast](https://devicebeast.com/devices/kyocera-anshin-smartphone-5g-td-lte-jp-ky-51b) |
+| 60375 | AGM G1 Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1395530.shtml) |
+| 60376 | VinSmart Maestro Plus | [DeviceBeast](https://devicebeast.com/devices/vinsmart-maestro-plus-lte-a-us-32gb-v350u) |
+| 60377 | AGM G1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1395522.shtml) |
+| 60378 | Coolpad Rakuten BIG s | [DeviceBeast](https://devicebeast.com/devices/coolpad-rakuten-big-s-5g-uw-td-lte-jp-3917jr) |
+| 60379 | FIH Cricket Dream 5G | [DeviceBeast](https://devicebeast.com/devices/fih-cricket-dream-5g-td-lte-us-ec211001) |
+| 60380 | Kyocera Balmuda Phone 5G | [DeviceBeast](https://devicebeast.com/devices/kyocera-balmuda-phone-5g-td-lte-jp) |
+| 60381 | Meizu Gree Tosot G7 5G | [DeviceBeast](https://devicebeast.com/devices/meizu-gree-tosot-g7-5g-dual-sim-td-lte-cn-128gb-m172q) |
+| 60382 | Plum Gator 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/plum-gator-7) |
+| 60383 | Reliance Orbic Magic 5G | [DeviceBeast](https://devicebeast.com/devices/reliance-orbic-magic-5g-td-lte-us-r678el) |
+| 60384 | Reliance Orbic Myra | [DeviceBeast](https://devicebeast.com/devices/reliance-orbic-myra-5g-uw-td-lte-us-r678l5) |
+| 60385 | Apple iPhone SE 2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1319322.shtml) |
+| 60386 | OnePlus 8T+ 5G | [DeviceBeast](https://devicebeast.com/devices/oneplus-8t-5g-premium-edition-dual-sim-td-lte-us-256gb-kb2007) |
+| 60387 | Telstra Evoke Pro | [DeviceBeast](https://devicebeast.com/devices/telstra-evoke-pro-td-lte-au) |
+| 60388 | KRETA M7 | [IMEI.info](https://www.imei.info/phonedatabase/kreta-m7/) |
+| 60389 | Smartisan JianGuo R2 | [DeviceBeast](https://devicebeast.com/devices/smartisan-jianguo-r2-top-edition-dual-sim-td-lte-cn-512gb) |
+| 60390 | TCL A1 Alpha 20 | [DeviceBeast](https://devicebeast.com/devices/tcl-a1-alpha-20-dual-sim-lte-emea-5029y) |
+| 60391 | TCL Optus X Go | [DeviceBeast](https://devicebeast.com/devices/tcl-optus-x-go-td-lte-au-5007u) |
+| 60392 | TCL Optus X Sight | [DeviceBeast](https://devicebeast.com/devices/tcl-optus-x-sight-td-lte-au-5002i) |
+| 60393 | Wiko Cricket Ovation | [DeviceBeast](https://devicebeast.com/devices/wiko-cricket-ovation-lte-a-us-u705ac) |
+| 60394 | Wiko Maestro | [DeviceBeast](https://devicebeast.com/devices/wiko-maestro-lte-us-u202aa) |
+| 60395 | Wiko Rakuten Hand | [DeviceBeast](https://devicebeast.com/devices/wiko-rakuten-hand-td-lte-jp-p710) |
+| 60396 | Kyocera Digno 3 for Biz | [DeviceBeast](https://devicebeast.com/devices/kyocera-digno-3-for-biz-td-lte-jp-904kc) |
+| 60397 | Plum Ram 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/plum-ram-9) |
+| 60398 | Allview Young A10 Max | [DeviceBeast](https://devicebeast.com/devices/allview-young-a10-max-dual-sim) |
+| 60399 | M4Tel M4 R2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-r2_plus) |
+| 60400 | QMobile Phantom P1 Pro | [DeviceBeast](https://devicebeast.com/devices/qmobile-phantom-p1-pro-dual-sim-lte) |
+| 60401 | Telstra Essential Pro A5 2019T | [DeviceBeast](https://devicebeast.com/devices/telstra-essential-pro-a5-2019t-lte-a-au) |
+| 60402 | uleFone Note P6000 Plus | [DeviceBeast](https://devicebeast.com/devices/ulefone-note-p6000-plus-dual-sim-lte) |
+| 60403 | Allview X6 Soul Mini | [DeviceBeast](https://devicebeast.com/devices/allview-x6-soul-mini-dual-sim-td-lte-emea) |
+| 60404 | Allview X6 Soul Xtreme | [DeviceBeast](https://devicebeast.com/devices/allview-x6-soul-xtreme-dual-sim-td-lte-emea) |
+| 60405 | Infinix Hot S4 2.0 | [DeviceBeast](https://devicebeast.com/devices/infinix-hot-s4-20-dual-sim-td-lte-apac-64gb-x626b) |
+| 60406 | iQOO Neo 855S Racing | [DeviceBeast](https://devicebeast.com/devices/bbk-iqoo-neo-855s-racing-standard-edition-dual-sim-td-lte-cn-128gb-v1936al) |
+| 60407 | KRETA G25 | [ZOL](https://detail.zol.com.cn/cell_phone/index1307795.shtml) |
+| 60408 | Noa Element N3 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n3-dual-sim-lte) |
+| 60409 | Noa Element P1 | [DeviceBeast](https://devicebeast.com/devices/noa-element-p1-dual-sim-lte) |
+| 60410 | QMobile QSmart LT950 | [DeviceBeast](https://devicebeast.com/devices/qmobile-qsmart-lt950-dual-sim-lte) |
+| 60411 | TCL Optus X Start | [DeviceBeast](https://devicebeast.com/devices/tcl-optus-x-start-td-lte-au) |
+| 60412 | VERTU VISION | [ZOL](https://detail.zol.com.cn/cell_phone/index1298097.shtml) |
+| 60413 | Symphony S250 | [MobileDokan](https://www.mobiledokan.com/mobile/symphony-s250) |
+| 60414 | Tecno T901 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-t901) |
+| 60415 | Telstra Evoke Plus A7 2019T | [DeviceBeast](https://devicebeast.com/devices/telstra-evoke-plus-a7-2019t-lte-au) |
+| 60416 | Allview Young A10 Plus | [DeviceBeast](https://devicebeast.com/devices/allview-young-a10-plus-dual-sim) |
+| 60417 | Bkav Bphone 3 Pro | [DeviceBeast](https://devicebeast.com/devices/bkav-bphone-3-pro-dual-sim-td-lte) |
+| 60418 | Hisense Jingang 4 PRO | [DeviceBeast](https://devicebeast.com/devices/hisense-jingang-4-pro-dual-sim-td-lte-cn-hlte311t) |
+| 60419 | Kyocera DuraForce Pro 2 XLTE E6910 | [DeviceBeast](https://devicebeast.com/devices/kyocera-duraforce-pro-2-xlte-e6910) |
+| 60420 | M4Tel M4 R1 Feel Plus SS4458-R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-r1_feel_plus_ss4458-r) |
+| 60421 | Smartisan JianGuo Pro 2 | [DeviceBeast](https://devicebeast.com/devices/smartisan-jianguo-pro-2-premium-edition-dual-sim-td-lte-cn-256gb) |
+| 60422 | Acorn Micro Phone C5 | [DeviceBeast](https://devicebeast.com/devices/acorn-micro-phone-c5-dual-sim-lte-a-phone-5c) |
+| 60423 | Allview X5 Soul Mini | [DeviceBeast](https://devicebeast.com/devices/allview-x5-soul-mini-dual-sim-td-lte) |
+| 60424 | Bkav Bphone 3 | [DeviceBeast](https://devicebeast.com/devices/bkav-bphone-3-dual-sim-td-lte) |
+| 60425 | Four Mobile S710 Ruby | [DeviceBeast](https://devicebeast.com/devices/four-mobile-s710-ruby-dual-sim-lte) |
+| 60426 | Four Mobile S750 Sapphire | [DeviceBeast](https://devicebeast.com/devices/four-mobile-s750-sapphire-dual-sim-lte) |
+| 60427 | Freetel Samurai Rei 2 | [DeviceBeast](https://devicebeast.com/devices/freetel-samurai-rei-2-dual-sim-lte-ftj17a00) |
+| 60428 | Fujitsu Arrows me F-04K | [DeviceBeast](https://devicebeast.com/devices/fujitsu-arrows-me-f-04k-lte) |
+| 60429 | GiONEE W919 | [DeviceBeast](https://devicebeast.com/devices/gionee-w919-dual-sim-td-lte) |
+| 60430 | GlocalMe Maya System jetfon | [DeviceBeast](https://devicebeast.com/devices/glocalme-maya-system-jetfon-dual-sim-td-lte-g1701) |
+| 60431 | Haier Alpha A3 | [DeviceBeast](https://devicebeast.com/devices/haier-alpha-a3-dual-sim-lte) |
+| 60432 | Hisense Jingang 4 | [DeviceBeast](https://devicebeast.com/devices/hisense-jingang-4-dual-sim-td-lte-cn-hlte213t) |
+| 60433 | KONROW Must | [IMEI.info](https://www.imei.info/phonedatabase/konrow-must/) |
+| 60434 | KT Radger S | [DeviceBeast](https://devicebeast.com/devices/kt-radger-s-lte-kr) |
+| 60435 | Luna V Lite | [DeviceBeast](https://devicebeast.com/devices/luna-v-lite-td-lte-dual-sim) |
+| 60436 | M4Tel M4 B3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-b3) |
+| 60437 | M4Tel M4 SS4453-R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4453-r) |
+| 60438 | Meizu mblu E3 | [DeviceBeast](https://devicebeast.com/devices/meizu-mblu-e3-dual-sim-td-lte-cn-m851q-128gb) |
+| 60439 | Noa Element N1 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n1-dual-sim-lte) |
+| 60440 | Noa Element N10 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n10-dual-sim-lte-a) |
+| 60441 | Noa Element N20 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n20-dual-sim-lte) |
+| 60442 | Noa Element N7 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n7-dual-sim-lte) |
+| 60443 | NUU G2 | [DeviceBeast](https://devicebeast.com/devices/nuu-g2-dual-sim-lte-eu-apac) |
+| 60444 | NUU M4X Lite | [DeviceBeast](https://devicebeast.com/devices/nuu-m4x-lite-dual-sim-lte-id) |
+| 60445 | Positivo Twist S511 | [DeviceBeast](https://devicebeast.com/devices/positivo-twist-s511) |
+| 60446 | Positivo Twist S530 | [DeviceBeast](https://devicebeast.com/devices/positivo-twist-s530) |
+| 60447 | RED Hydrogen One Titanium | [DeviceBeast](https://devicebeast.com/devices/red-hydrogen-one-titanium-dual-sim-td-lte-h1t1000) |
+| 60448 | Smartisan JianGuo 3 | [DeviceBeast](https://devicebeast.com/devices/smartisan-jianguo-3-dual-sim-td-lte-cn-128gb) |
+| 60449 | Smartisan JianGuo R1 | [DeviceBeast](https://devicebeast.com/devices/smartisan-jianguo-r1-premium-edition-dual-sim-td-lte-cn-128gb) |
+| 60450 | Snail MOQI i7s Game Mobile | [DeviceBeast](https://devicebeast.com/devices/snail-moqi-i7s-game-mobile-dual-sim-td-lte) |
+| 60451 | TCL Boost Reo | [DeviceBeast](https://devicebeast.com/devices/tcl-boost-reo-td-lte-au-5033t) |
+| 60452 | TCL Y660 | [DeviceBeast](https://devicebeast.com/devices/tcl-y660-dual-sim-td-lte-v760) |
+| 60453 | Wiko G08 | [DeviceBeast](https://devicebeast.com/devices/wiko-g08-dual-sim-lte-apac-m2165) |
+| 60454 | Allview X5 Soul Pro | [DeviceBeast](https://devicebeast.com/devices/allview-x5-soul-pro-dual-sim-td-lte-emea) |
+| 60455 | Four Mobile S350 Thunder | [DeviceBeast](https://devicebeast.com/devices/four-mobile-s350-thunder-dual-sim-lte) |
+| 60456 | LeEco X850 Le Max 3 | [DeviceBeast](https://devicebeast.com/devices/leeco-x850-le-max-3-dual-sim-td-lte-cn-64gb) |
+| 60457 | Lenovo ZUK Edge 2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1165083.shtml) |
+| 60458 | Lenovo ZUK Z3 Max | [ZOL](https://detail.zol.com.cn/cell_phone/index1174022.shtml) |
+| 60459 | Micromax Yunique 2 Plus | [DeviceBeast](https://devicebeast.com/devices/micromax-yunique-2-plus-dual-sim-td-lte-yu5012) |
+| 60460 | Samsung Galaxy A10 Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1175190.shtml) |
+| 60461 | SMARTISAN U2 Pro | [IMEI.info](https://www.imei.info/phonedatabase/smartisan-u2-pro/) |
+| 60462 | Tecno Mobile Pouvoir L9 Plus | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-pouvoir-l9-plus-dual-sim) |
+| 60463 | Tecno Mobile Spark Plus K9 | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-spark-plus-k9-dual-sim) |
+| 60464 | Telstra Tough Max 2 | [DeviceBeast](https://devicebeast.com/devices/telstra-tough-max-2-lte) |
+| 60465 | Videocon Delite 11+ | [DeviceBeast](https://devicebeast.com/devices/videocon-delite-11-dual-sim-td-lte) |
+| 60466 | Videocon Krypton 22+ V50TF | [DeviceBeast](https://devicebeast.com/devices/videocon-krypton-22-v50tf-dual-sim-td-lte) |
+| 60467 | Xiaomi Max 2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1165765.shtml) |
+| 60468 | AllCall A3 | [DeviceBeast](https://devicebeast.com/devices/allcall-a3-dual-sim-3g) |
+| 60469 | AllCall T9 | [DeviceBeast](https://devicebeast.com/devices/allcall-t9-dual-sim-3g) |
+| 60470 | Blackview P6 | [DeviceBeast](https://devicebeast.com/devices/blackview-p6-dual-sim-lte-a-emea) |
+| 60471 | Bluboo R1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bluboo-r1) |
+| 60472 | Coolpad ivvi V1 | [DeviceBeast](https://devicebeast.com/devices/coolpad-ivvi-v1-dual-sim-lte-32gb) |
+| 60473 | Doro 8020X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doro-8020x) |
+| 60474 | FarEasTone Smart 550 | [DeviceBeast](https://devicebeast.com/devices/fareastone-smart-550-lte) |
+| 60475 | Freetel Ice 3 | [DeviceBeast](https://devicebeast.com/devices/freetel-ice-3-dual-sim-fte171a) |
+| 60476 | Fujitsu Easy smartphone 4 F-04J | [DeviceBeast](https://devicebeast.com/devices/fujitsu-easy-smartphone-4-f-04j) |
+| 60477 | GiONEE F5L | [DeviceBeast](https://devicebeast.com/devices/gionee-f5l-td-lte-dual-sim) |
+| 60478 | GiONEE GN5006 Jingang 3 | [DeviceBeast](https://devicebeast.com/devices/gionee-gn5006-jingang-3-dual-sim-td-lte-cn-gold-steel-2) |
+| 60479 | Google Pixel XXL | [ZOL](https://detail.zol.com.cn/cell_phone/index1170950.shtml) |
+| 60480 | Haier G7s | [ZOL](https://detail.zol.com.cn/cell_phone/index1166380.shtml) |
+| 60481 | Hisense Xiaohaitun2 HLTEM800 | [DeviceBeast](https://devicebeast.com/devices/hisense-xiaohaitun2-hltem800-td-lte-dual-sim) |
+| 60482 | HTC Ocean Harmony | [ZOL](https://detail.zol.com.cn/cell_phone/index1183282.shtml) |
+| 60483 | HTC U12 | [ZOL](https://detail.zol.com.cn/cell_phone/index1176600.shtml) |
+| 60484 | InFocus A1 M500 | [DeviceBeast](https://devicebeast.com/devices/infocus-a1-m500-dual-sim-td-lte) |
+| 60485 | InFocus A1s M505 | [DeviceBeast](https://devicebeast.com/devices/infocus-a1s-m505-dual-sim-td-lte) |
+| 60486 | iNO Mobile S9 | [DeviceBeast](https://devicebeast.com/devices/ino-mobile-s9-lte) |
+| 60487 | Intex Aqua Trend Lite SIM | [DeviceBeast](https://devicebeast.com/devices/intex-aqua-trend-lite-sim-td-lte) |
+| 60488 | ivvi F2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1171664.shtml) |
+| 60489 | K-Touch P1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1169004.shtml) |
+| 60490 | Konka D7 | [ZOL](https://detail.zol.com.cn/cell_phone/index1180244.shtml) |
+| 60491 | Konka KE2 | [DeviceBeast](https://devicebeast.com/devices/konka-ke2-td-lte) |
+| 60492 | Konka R8A | [DeviceBeast](https://devicebeast.com/devices/konka-r8a-td-lte) |
+| 60493 | LEAGOO Kiicia Power | [DeviceBeast](https://devicebeast.com/devices/leagoo-kiicia-power-dual-sim) |
+| 60494 | M4Tel M4 R Ever SS4457-R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-r_ever_ss4457-r) |
+| 60495 | M4Tel M4 SS4450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4450) |
+| 60496 | M4Tel M4 SS4457 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4457) |
+| 60497 | M4Tel M4 SS4458 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4458) |
+| 60498 | M4Tel SS4453 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss4453) |
+| 60499 | MANN M3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1163093.shtml) |
+| 60500 | MANN ZUG 3S | [ZOL](https://detail.zol.com.cn/cell_phone/index1165361.shtml) |
+| 60501 | Meizu m5s note | [DeviceBeast](https://devicebeast.com/devices/meizu-m5s-note-dual-sim-td-lte-64gb-m621c-s) |
+| 60502 | Meizu MX7 | [ZOL](https://detail.zol.com.cn/cell_phone/index1169946.shtml) |
+| 60503 | Microsoft GraalPhone | [ZOL](https://detail.zol.com.cn/cell_phone/index1163668.shtml) |
+| 60504 | Noa Element H10le | [DeviceBeast](https://devicebeast.com/devices/noa-element-h10le-dual-sim-lte) |
+| 60505 | Noa Element H2 | [DeviceBeast](https://devicebeast.com/devices/noa-element-h2-dual-sim-lte) |
+| 60506 | Noa Element H6 | [DeviceBeast](https://devicebeast.com/devices/noa-element-h6-dual-sim-lte) |
+| 60507 | Noa Element H8se | [DeviceBeast](https://devicebeast.com/devices/noa-element-h8se-dual-sim-lte) |
+| 60508 | Noa Element Hummer | [DeviceBeast](https://devicebeast.com/devices/noa-element-hummer-dual-sim-lte) |
+| 60509 | Noa Element N8 | [DeviceBeast](https://devicebeast.com/devices/noa-element-n8-dual-sim-lte) |
+| 60510 | Nokia A1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1141689.shtml) |
+| 60511 | Nokia D1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1163580.shtml) |
+| 60512 | NUU A4L | [DeviceBeast](https://devicebeast.com/devices/nuu-a4l-dual-sim-lte-eu-am) |
+| 60513 | NUU M2 | [DeviceBeast](https://devicebeast.com/devices/nuu-m2-dual-sim-lte-eu-am) |
+| 60514 | OPPO Find 9 | [ZOL](https://detail.zol.com.cn/cell_phone/index389268.shtml) |
+| 60515 | OPPO R6091 | [ZOL](https://detail.zol.com.cn/cell_phone/index1164175.shtml) |
+| 60516 | Philips X598 | [ZOL](https://detail.zol.com.cn/cell_phone/index1176588.shtml) |
+| 60517 | Plum Mobile Gator 4 | [DeviceBeast](https://devicebeast.com/devices/plum-mobile-gator-4) |
+| 60518 | Qihoo 360 Phone N6 1707-A01 | [DeviceBeast](https://devicebeast.com/devices/qihoo-360-phone-n6-1707-a01-dual-sim-td-lte-64gb) |
+| 60519 | Quantum GO2 | [DeviceBeast](https://devicebeast.com/devices/quantum-go2-dual-sim-lte) |
+| 60520 | Quantum MUV UP | [DeviceBeast](https://devicebeast.com/devices/quantum-muv-up-dual-sim-lte) |
+| 60521 | Quantum Sky | [DeviceBeast](https://devicebeast.com/devices/quantum-sky-dual-sim-td-lte) |
+| 60522 | Quantum You | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-you) |
+| 60523 | Quantum You L | [DeviceBeast](https://devicebeast.com/devices/quantum-you-l-dual-sim-lte) |
+| 60524 | Samsung GALAXY C9 | [ZOL](https://detail.zol.com.cn/cell_phone/index1167100.shtml) |
+| 60525 | Samsung Galaxy Stellar 2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1174408.shtml) |
+| 60526 | Samsung GALAXY Z4 | [ZOL](https://detail.zol.com.cn/cell_phone/index1167122.shtml) |
+| 60527 | Sharp S2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1167319.shtml) |
+| 60528 | Smartfren Andromax A2 | [DeviceBeast](https://devicebeast.com/devices/smartfren-andromax-a2-td-lte-dual-sim) |
+| 60529 | Snail MOQI i7 Game Mobile | [DeviceBeast](https://devicebeast.com/devices/snail-moqi-i7-game-mobile-dual-sim-td-lte) |
+| 60530 | Sony Xperia X1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1171700.shtml) |
+| 60531 | TCL 598 | [DeviceBeast](https://devicebeast.com/devices/tcl-598-td-lte-dual-sim) |
+| 60532 | TCL Optus X Smart 4G | [DeviceBeast](https://devicebeast.com/devices/tcl-optus-x-smart-4g-td-lte-au-5056i) |
+| 60533 | Tecno Mobile Pouvoir L9 | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-pouvoir-l9-dual-sim) |
+| 60534 | Telstra 4GX Smart | [DeviceBeast](https://devicebeast.com/devices/telstra-4gx-smart-lte-au-a112) |
+| 60535 | uleFone S8 SIM | [DeviceBeast](https://devicebeast.com/devices/ulefone-s8-sim) |
+| 60536 | UMI Umidigi Z | [DeviceBeast](https://devicebeast.com/devices/umi-umidigi-z-dual-sim-lte-a) |
+| 60537 | verykool Spear s5035 | [DeviceBeast](https://devicebeast.com/devices/verykool-spear-s5035-dual-sim) |
+| 60538 | Vestel Venus 5000 | [DeviceBeast](https://devicebeast.com/devices/vestel-venus-5000-dual-sim-lte-altin-siyah-beyaz-gumus) |
+| 60539 | Vestel Venus E2 | [DeviceBeast](https://devicebeast.com/devices/vestel-venus-e2-dual-sim-lte-altin-siyah) |
+| 60540 | vivo X9s L | [ZOL](https://detail.zol.com.cn/cell_phone/index1175257.shtml) |
+| 60541 | Xiaomi 6 MIX | [ZOL](https://detail.zol.com.cn/cell_phone/index1162500.shtml) |
+| 60542 | Xiaomi A1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1181816.shtml) |
+| 60543 | Xiaomi Note3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1164780.shtml) |
+| 60544 | Yamada Denki EveryPhone AC | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-ac-dual-sim-lte-ep-171ac) |
+| 60545 | Yamada Denki EveryPhone DX | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-dx-dual-sim-lte-ep-171dx) |
+| 60546 | Yamada Denki EveryPhone EN | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-en-dual-sim-lte-ep-171en) |
+| 60547 | Yamada Denki EveryPhone HG | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-hg-dual-sim-lte-ep-171hg) |
+| 60548 | Yamada Denki EveryPhone ME | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-me-dual-sim-lte-ep-171me) |
+| 60549 | Yamada Denki EveryPhone PR | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-pr-dual-sim-lte-ep-172pr) |
+| 60550 | ZTE Z986 | [ZOL](https://detail.zol.com.cn/cell_phone/index1166924.shtml) |
+| 60551 | Changhong L1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1171682.shtml) |
+| 60552 | Four Mobile S310 Storm | [DeviceBeast](https://devicebeast.com/devices/four-mobile-s310-storm-dual-sim-lte) |
+| 60553 | HTC Ocean Lite | [ZOL](https://detail.zol.com.cn/cell_phone/index1158871.shtml) |
+| 60554 | Intex Cloud Style 4G SIM | [DeviceBeast](https://devicebeast.com/devices/intex-cloud-style-4g-sim-td-lte) |
+| 60555 | Newman F9 | [ZOL](https://detail.zol.com.cn/cell_phone/index1179012.shtml) |
+| 60556 | Newman V1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1181080.shtml) |
+| 60557 | Philips E321 | [ZOL](https://detail.zol.com.cn/cell_phone/index1184672.shtml) |
+| 60558 | Yamada Denki EveryPhone BZ | [DeviceBeast](https://devicebeast.com/devices/yamada-denki-everyphone-bz-dual-sim-lte-ep-172bz) |
+| 60559 | Acer Liquid Zest Plus T08 4G | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-zest-plus-t08-4g-lte) |
+| 60560 | Coolpad Fengshang MAX CA A8-931 | [DeviceBeast](https://devicebeast.com/devices/coolpad-fengshang-max-ca-a8-931-dual-sim-td-lte) |
+| 60561 | Coolpad Y91-921 Fengshang Pro 2 | [DeviceBeast](https://devicebeast.com/devices/coolpad-y91-921-fengshang-pro-2-td-lte-dual-sim) |
+| 60562 | Funkertech Funker W5.5 Pro | [DeviceBeast](https://devicebeast.com/devices/funkertech-funker-w55-pro-16gb-4g-lte) |
+| 60563 | Funkertech Funker Z5 Zygnus Pro | [DeviceBeast](https://devicebeast.com/devices/funkertech-funker-z5-zygnus-pro-dual-sim-lte-32gb) |
+| 60564 | Gigabyte GSmart Classic Pro | [DeviceBeast](https://devicebeast.com/devices/gigabyte-gsmart-classic-pro-dual-sim) |
+| 60565 | GiONEE GN9012L Elife S6 Pro | [DeviceBeast](https://devicebeast.com/devices/gionee-gn9012l-elife-s6-pro-dual-sim-td-lte-in) |
+| 60566 | Hisense F3 PRO | [ZOL](https://detail.zol.com.cn/cell_phone/index1146343.shtml) |
+| 60567 | Hyundai Aero Plus | [DeviceBeast](https://devicebeast.com/devices/hyundai-aero-plus-lte-32gb) |
+| 60568 | K-Touch 2A pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1168998.shtml) |
+| 60569 | K-Touch X7 Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index1171188.shtml) |
+| 60570 | K-Touch X7 Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1160366.shtml) |
+| 60571 | Kogan Agora 6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kogan-agora-6-plus) |
+| 60572 | Kyocera DuraForce Pro XLTE E6810 | [DeviceBeast](https://devicebeast.com/devices/kyocera-duraforce-pro-xlte-e6810) |
+| 60573 | LeEco X900+ LeMax | [DeviceBeast](https://devicebeast.com/devices/leeco-x900-lemax-dual-sim-td-lte-64gb) |
+| 60574 | Little Pepper X6 Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1140187.shtml) |
+| 60575 | Meizu Pro 6s M570Q-S | [DeviceBeast](https://devicebeast.com/devices/meizu-pro-6s-m570q-s-dual-sim-td-lte) |
+| 60576 | Plum Mobile Axe Plus 2 Z404 | [DeviceBeast](https://devicebeast.com/devices/plum-mobile-axe-plus-2-z404) |
+| 60577 | Xiaomi Max | [ZOL](https://detail.zol.com.cn/cell_phone/index1144200.shtml) |
+| 60578 | Ant one Q8 | [ZOL](https://detail.zol.com.cn/cell_phone/index1153445.shtml) |
+| 60579 | ARP Mobile AS01M | [DeviceBeast](https://devicebeast.com/devices/arp-mobile-as01m-dual-sim-td-lte) |
+| 60580 | ARP Mobile XC01Q | [DeviceBeast](https://devicebeast.com/devices/arp-mobile-xc01q-lte) |
+| 60581 | Azumi Mobile Speed 5.5 | [DeviceBeast](https://devicebeast.com/devices/azumi-mobile-speed-55-lte) |
+| 60582 | Bird L902 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157918.shtml) |
+| 60583 | BROR T60 | [ZOL](https://detail.zol.com.cn/cell_phone/index1158079.shtml) |
+| 60584 | Bush Mobile Eluma Windows Mobile | [DeviceBeast](https://devicebeast.com/devices/bush-mobile-eluma-windows-mobile-dual-sim) |
+| 60585 | Caterpillar CAT S50c | [DeviceBeast](https://devicebeast.com/devices/caterpillar-cat-s50c-lte) |
+| 60586 | Changhong A200 | [ZOL](https://detail.zol.com.cn/cell_phone/index1142899.shtml) |
+| 60587 | Cherry Mobile Flare Mate | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-flare-mate-dual-sim-lte) |
+| 60588 | COMIO i1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1150126.shtml) |
+| 60589 | Coolpad ivvi i3 Play i3p-02 | [DeviceBeast](https://devicebeast.com/devices/coolpad-ivvi-i3-play-i3p-02-dual-sim-lte) |
+| 60590 | Coolpad Sky 3 | [DeviceBeast](https://devicebeast.com/devices/coolpad-sky-3-dual-sim-lte-eu) |
+| 60591 | Coship Moly PcPhone W6 | [DeviceBeast](https://devicebeast.com/devices/coship-moly-pcphone-w6-dual-sim-td-lte) |
+| 60592 | Coship Moly W5 | [DeviceBeast](https://devicebeast.com/devices/coship-moly-w5-lte-us) |
+| 60593 | Covia Beez X5 | [DeviceBeast](https://devicebeast.com/devices/covia-beez-x5-lte-dual-sim) |
+| 60594 | Firefly Mobile Aurii Envy | [DeviceBeast](https://devicebeast.com/devices/firefly-mobile-aurii-envy-dual-sim-lte-32gb) |
+| 60595 | Firefly Mobile Intense Desire | [DeviceBeast](https://devicebeast.com/devices/firefly-mobile-intense-desire-dual-sim-lte) |
+| 60596 | Freetel Raijin | [DeviceBeast](https://devicebeast.com/devices/freetel-raijin-dual-sim-lte-ftj162e-arsenal-power-one) |
+| 60597 | GiONEE GN3003 F103B | [DeviceBeast](https://devicebeast.com/devices/gionee-gn3003-f103b-dual-sim-td-lte) |
+| 60598 | GiONEE GN5001S Jingang | [DeviceBeast](https://devicebeast.com/devices/gionee-gn5001s-jingang-td-lte) |
+| 60599 | GiONEE GN9012 Elife S8 Lite | [DeviceBeast](https://devicebeast.com/devices/gionee-gn9012-elife-s8-lite-dual-sim-td-lte-32gb) |
+| 60600 | GiONEE W909 Cheonjian | [DeviceBeast](https://devicebeast.com/devices/gionee-w909-cheonjian-dual-sim-td-lte) |
+| 60601 | Haier I502 | [ZOL](https://detail.zol.com.cn/cell_phone/index1167033.shtml) |
+| 60602 | Hanmac Bon7 | [DeviceBeast](https://devicebeast.com/devices/hanmac-bon7-dual-sim-td-lte) |
+| 60603 | Hisense Amazing A1 | [DeviceBeast](https://devicebeast.com/devices/hisense-amazing-a1-dual-sim-td-lte) |
+| 60604 | Hisense E51 | [ZOL](https://detail.zol.com.cn/cell_phone/index1143476.shtml) |
+| 60605 | Hisense E75 | [ZOL](https://detail.zol.com.cn/cell_phone/index1143466.shtml) |
+| 60606 | Hisense HS-E76 | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e76-dual-sim-td-lte) |
+| 60607 | Hisense Infinity Faith 1 F31 | [DeviceBeast](https://devicebeast.com/devices/hisense-infinity-faith-1-f31-td-lte-dual-sim) |
+| 60608 | imoo Get | [DeviceBeast](https://devicebeast.com/devices/bbk-imoo-get-td-lte-cn-m1000) |
+| 60609 | K-Touch C5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1160468.shtml) |
+| 60610 | K-Touch H2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1159737.shtml) |
+| 60611 | K-Touch K5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1159732.shtml) |
+| 60612 | K-Touch X9 | [ZOL](https://detail.zol.com.cn/cell_phone/index1160482.shtml) |
+| 60613 | Kodak Ektra Smartphone | [DeviceBeast](https://devicebeast.com/devices/kodak-ektra-smartphone-lte) |
+| 60614 | Konka R3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1145613.shtml) |
+| 60615 | Kyocera Hydro REACH C6743 | [DeviceBeast](https://devicebeast.com/devices/kyocera-hydro-reach-c6743-td-lte-us) |
+| 60616 | LeEco X652 Le3 | [DeviceBeast](https://devicebeast.com/devices/leeco-x652-le3-td-lte-dual-sim-32gb-lex652) |
+| 60617 | LYF F1S Future One | [DeviceBeast](https://devicebeast.com/devices/lyf-f1s-future-one-dual-sim-td-lte) |
+| 60618 | M4Tel M4 Excite SS4455 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-excite_ss4455) |
+| 60619 | M4Tel M4 SS4451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4451) |
+| 60620 | M4Tel M4 SS4452 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4452) |
+| 60621 | M4Tel M4 SS4456 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss4456) |
+| 60622 | Meizu U680D Meilan U10 | [DeviceBeast](https://devicebeast.com/devices/meizu-u680d-meilan-u10-dual-sim-td-lte-16gb) |
+| 60623 | Microsoft Windows Phone | [ZOL](https://detail.zol.com.cn/cell_phone/index1137551.shtml) |
+| 60624 | MyPhone Luna 2 | [DeviceBeast](https://devicebeast.com/devices/myphone-luna-2-dual-sim-lte) |
+| 60625 | Navon Mizu D450 | [DeviceBeast](https://devicebeast.com/devices/navon-mizu-d450-dual-sim) |
+| 60626 | Navon T452 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-t452) |
+| 60627 | Obi Worldphone MV1 | [DeviceBeast](https://devicebeast.com/devices/obi-worldphone-mv1-lte-dual-sim) |
+| 60628 | Orange Dive 50 | [DeviceBeast](https://devicebeast.com/devices/orange-dive-50-lte-dual-sim) |
+| 60629 | Orange Rise 51 | [DeviceBeast](https://devicebeast.com/devices/orange-rise-51-lte) |
+| 60630 | Polytron 4G550 Zap 6 Note | [DeviceBeast](https://devicebeast.com/devices/polytron-4g550-zap-6-note-lte-dual-sim) |
+| 60631 | Polytron P520 Prime 7s | [DeviceBeast](https://devicebeast.com/devices/polytron-p520-prime-7s-lte-dual-sim) |
+| 60632 | Protruly D8 Darling VR Phone | [DeviceBeast](https://devicebeast.com/devices/protruly-d8-darling-vr-phone-dual-sim-td-lte) |
+| 60633 | Qihoo 360 Phone Q5 1515-A01 | [DeviceBeast](https://devicebeast.com/devices/qihoo-360-phone-q5-1515-a01-dual-sim-td-lte) |
+| 60634 | Quantum Fly | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-fly) |
+| 60635 | Samsung Galaxy Express 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-express-3) |
+| 60636 | Smartfren Andromax E2 | [DeviceBeast](https://devicebeast.com/devices/smartfren-andromax-e2-td-lte-dual-sim) |
+| 60637 | Smartfren Andromax R2 | [DeviceBeast](https://devicebeast.com/devices/smartfren-andromax-r2-td-lte-dual-sim) |
+| 60638 | TCL 310M | [DeviceBeast](https://devicebeast.com/devices/tcl-310m-dual-sim-td-lte) |
+| 60639 | TCL 550 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157809.shtml) |
+| 60640 | TCL Optus X Sleek 4G | [DeviceBeast](https://devicebeast.com/devices/tcl-optus-x-sleek-4g-td-lte-au-5080q) |
+| 60641 | Tecno Mobile W5 | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-w5-dual-sim-lte) |
+| 60642 | Tesla Smartphone 3.1 Lite | [DeviceBeast](https://devicebeast.com/devices/tesla-smartphone-31-lite-dual-sim) |
+| 60643 | Tesla Smartphone 3.2 Lite | [DeviceBeast](https://devicebeast.com/devices/tesla-smartphone-32-lite-dual-sim-lte) |
+| 60644 | UMI Touch Windows Mobile | [DeviceBeast](https://devicebeast.com/devices/umi-touch-windows-mobile-dual-sim-lte) |
+| 60645 | UMI Umidigi London | [DeviceBeast](https://devicebeast.com/devices/umi-umidigi-london-dual-sim) |
+| 60646 | uphone U7 | [ZOL](https://detail.zol.com.cn/cell_phone/index1149739.shtml) |
+| 60647 | Videocon Delite 11 V50MA | [DeviceBeast](https://devicebeast.com/devices/videocon-delite-11-v50ma-dual-sim-td-lte-v503630) |
+| 60648 | Wiko K-Kool 3G M1130 | [DeviceBeast](https://devicebeast.com/devices/wiko-k-kool-3g-m1130) |
+| 60649 | Xiaomi MIX | [ZOL](https://detail.zol.com.cn/cell_phone/index1158429.shtml) |
+| 60650 | Xiaomi Note2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1099553.shtml) |
+| 60651 | Zopo Speed 8 ZP955 | [DeviceBeast](https://devicebeast.com/devices/zopo-speed-8-zp955-dual-sim-lte) |
+| 60652 | ZTE BA520 | [ZOL](https://detail.zol.com.cn/cell_phone/index1178467.shtml) |
+| 60653 | Changhong A818 | [ZOL](https://detail.zol.com.cn/cell_phone/index1173546.shtml) |
+| 60654 | Funkertech Funker W6.0 Pro 2 | [DeviceBeast](https://devicebeast.com/devices/funkertech-funker-w60-pro-2-dual-sim-lte) |
+| 60655 | Gionee F100B | [ZOL](https://detail.zol.com.cn/cell_phone/index1184329.shtml) |
+| 60656 | GiONEE M5 Plus | [DeviceBeast](https://devicebeast.com/devices/gionee-m5-plus-td-lte-gn8001-64gb) |
+| 60657 | Konka U2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1170474.shtml) |
+| 60658 | lephone V9 | [DeviceBeast](https://devicebeast.com/devices/lephone-v9-td-lte-dual-sim) |
+| 60659 | Leway M5 | [DeviceBeast](https://devicebeast.com/devices/leway-m5-lte) |
+| 60660 | Newman F518 | [ZOL](https://detail.zol.com.cn/cell_phone/index1178472.shtml) |
+| 60661 | Newman X6 | [ZOL](https://detail.zol.com.cn/cell_phone/index1174060.shtml) |
+| 60662 | Philips E132X | [ZOL](https://detail.zol.com.cn/cell_phone/index1141952.shtml) |
+| 60663 | Philips E133X | [ZOL](https://detail.zol.com.cn/cell_phone/index1160455.shtml) |
+| 60664 | ZTE L518 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138863.shtml) |
+| 60665 | ZTE L550 | [ZOL](https://detail.zol.com.cn/cell_phone/index1154001.shtml) |
+| 60666 | ZTE L788 | [ZOL](https://detail.zol.com.cn/cell_phone/index1143253.shtml) |
+| 60667 | ZTE L928 | [ZOL](https://detail.zol.com.cn/cell_phone/index1153324.shtml) |
+| 60668 | ZTE S158 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157494.shtml) |
+| 60669 | Cherry Mobile Cosmos One Plus | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-cosmos-one-plus-dual-sim-td-lte) |
+| 60670 | Coolpad Fengshang C+ | [DeviceBeast](https://devicebeast.com/devices/coolpad-fengshang-c-dual-sim-lte-a) |
+| 60671 | Coolpad Fengshang PRO | [DeviceBeast](https://devicebeast.com/devices/coolpad-fengshang-pro-dual-sim-td-lte) |
+| 60672 | Coolpad ivvi Xiaogu Pro SK3-01 | [DeviceBeast](https://devicebeast.com/devices/coolpad-ivvi-xiaogu-pro-sk3-01-dual-sim-td-lte) |
+| 60673 | Doogee X5 Pro | [DeviceBeast](https://devicebeast.com/devices/doogee-x5-pro-lte-dual-sim) |
+| 60674 | Doov L5 Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index516064.shtml) |
+| 60675 | GiONEE S5.1 Pro GN9007 | [DeviceBeast](https://devicebeast.com/devices/gionee-s51-pro-gn9007-dual-sim-td-lte) |
+| 60676 | GPLUS FW502 | [DeviceBeast](https://devicebeast.com/devices/gplus-fw502-lte) |
+| 60677 | GPLUS M55 | [DeviceBeast](https://devicebeast.com/devices/gplus-m55-dual-sim-lte) |
+| 60678 | GPLUS M712 | [DeviceBeast](https://devicebeast.com/devices/gplus-m712-lte) |
+| 60679 | InnJoo Note Pro | [DeviceBeast](https://devicebeast.com/devices/innjoo-note-pro-dual-sim) |
+| 60680 | Kyocera Torque G02 WiMAX2+ KYV35 | [DeviceBeast](https://devicebeast.com/devices/kyocera-torque-g02-wimax2-kyv35) |
+| 60681 | Kyocera Urbano V02 WiMAX2+ KYV34 | [DeviceBeast](https://devicebeast.com/devices/kyocera-urbano-v02-wimax2-kyv34) |
+| 60682 | LeTV X800+ Le1 Pro | [DeviceBeast](https://devicebeast.com/devices/letv-x800-le1-pro-dual-sim-lte-32gb) |
+| 60683 | Telstra Tough Max | [DeviceBeast](https://devicebeast.com/devices/telstra-tough-max-lte) |
+| 60684 | ViewSonic ViewPhone A8+ | [DeviceBeast](https://devicebeast.com/devices/viewsonic-viewphone-a8-dual-sim) |
+| 60685 | AGM A1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1109920.shtml) |
+| 60686 | AGM MINI | [ZOL](https://detail.zol.com.cn/cell_phone/index1109932.shtml) |
+| 60687 | Blu D750L Studio X 5.0 | [DeviceBeast](https://devicebeast.com/devices/blu-d750l-studio-x-50-dual-sim) |
+| 60688 | Boss Phone 7 | [DeviceBeast](https://devicebeast.com/devices/boss-phone-7-dual-sim-lte) |
+| 60689 | BungBungame Wolf 2 | [DeviceBeast](https://devicebeast.com/devices/bungbungame-wolf-2) |
+| 60690 | Casper V6 | [DeviceBeast](https://devicebeast.com/devices/casper-v6-lte) |
+| 60691 | Casper V6x | [DeviceBeast](https://devicebeast.com/devices/casper-v6x-lte) |
+| 60692 | Cherry Mobile Alpha Luxe | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-alpha-luxe-dual-sim) |
+| 60693 | Cherry Mobile Alpha Neon | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-alpha-neon-dual-sim) |
+| 60694 | Cherry Mobile Alpha Prime 5 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-alpha-prime-5-lte) |
+| 60695 | Cherry Mobile Cosmos S2 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-cosmos-s2-dual-sim-lte) |
+| 60696 | Cherry Mobile Flare S3 Power | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-flare-s3-power) |
+| 60697 | Cherry Mobile MAIA Fone i4 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-maia-fone-i4-dual-sim) |
+| 60698 | Cherry Mobile Omega 4G | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-omega-4g-dual-sim-lte) |
+| 60699 | Cherry Mobile One G1 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-one-g1-dual-sim-lte) |
+| 60700 | Colors Mobile Xfactor Trend T-50 | [DeviceBeast](https://devicebeast.com/devices/colors-mobile-xfactor-trend-t-50-dual-sim) |
+| 60701 | Condor PKT-407 Griffe W1 | [DeviceBeast](https://devicebeast.com/devices/condor-pkt-407-griffe-w1-dual-sim) |
+| 60702 | Coolpad 5263 | [ZOL](https://detail.zol.com.cn/cell_phone/index1115518.shtml) |
+| 60703 | Coolpad 5360 | [DeviceBeast](https://devicebeast.com/devices/coolpad-5360-dual-sim-td-lte) |
+| 60704 | Coolpad 5956 | [DeviceBeast](https://devicebeast.com/devices/coolpad-5956-dual-sim-td-lte) |
+| 60705 | Coolpad 7605 | [DeviceBeast](https://devicebeast.com/devices/coolpad-7605-dual-sim-td-lte) |
+| 60706 | Coolpad 8690 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8690-td-lte) |
+| 60707 | Coolpad 8692-A00 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8692-a00-dual-sim-td-lte-8692-m02) |
+| 60708 | Coolpad 8707 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8707-dual-sim-td-lte) |
+| 60709 | Coolpad Fengshang Y82-520 | [DeviceBeast](https://devicebeast.com/devices/coolpad-fengshang-y82-520-td-lte-dual-sim) |
+| 60710 | Coolpad ivvi SK1-01 | [DeviceBeast](https://devicebeast.com/devices/coolpad-ivvi-sk1-01-dual-sim-td-lte) |
+| 60711 | Coolpad Y76 | [DeviceBeast](https://devicebeast.com/devices/coolpad-y76-dual-sim-td-lte) |
+| 60712 | Coolpad Y80-C | [DeviceBeast](https://devicebeast.com/devices/coolpad-y80-c-td-lte) |
+| 60713 | Coolpad ZX1001 | [DeviceBeast](https://devicebeast.com/devices/coolpad-zx1001-td-lte) |
+| 60714 | Doogee Dagger DG550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doogee-dagger-dg550) |
+| 60715 | Doov S5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1100618.shtml) |
+| 60716 | Elephone Vowney Windows Mobile | [DeviceBeast](https://devicebeast.com/devices/elephone-vowney-windows-mobile-dual-sim-lte) |
+| 60717 | Fly IQ4516 Tornado | [DeviceBeast](https://devicebeast.com/devices/fly-iq4516-tornado-dual-sim) |
+| 60718 | Funkertech Funker Z1 Zygnus | [DeviceBeast](https://devicebeast.com/devices/funkertech-funker-z1-zygnus-dual-sim-lte-8gb) |
+| 60719 | GiONEE Elife E8 GN9008 | [DeviceBeast](https://devicebeast.com/devices/gionee-elife-e8-gn9008-dual-sim-td-lte-64gb) |
+| 60720 | GiONEE Elife S6 GN9010 | [DeviceBeast](https://devicebeast.com/devices/gionee-elife-s6-gn9010-dual-sim-td-lte) |
+| 60721 | GiONEE Elife S7 GN9006 | [DeviceBeast](https://devicebeast.com/devices/gionee-elife-s7-gn9006-dual-sim-td-lte-32gb) |
+| 60722 | GiONEE M3S Marathon | [DeviceBeast](https://devicebeast.com/devices/gionee-m3s-marathon-td-lte-dual-sim) |
+| 60723 | GiONEE M4 Marathon | [DeviceBeast](https://devicebeast.com/devices/gionee-m4-marathon-dual-sim-td-lte) |
+| 60724 | GiONEE M5 | [DeviceBeast](https://devicebeast.com/devices/gionee-m5-td-lte) |
+| 60725 | GiONEE M5 Marathon | [DeviceBeast](https://devicebeast.com/devices/gionee-m5-marathon-dual-sim-td-lte) |
+| 60726 | GiONEE M5L | [DeviceBeast](https://devicebeast.com/devices/gionee-m5l-td-lte-dual-sim) |
+| 60727 | GiONEE V381 | [DeviceBeast](https://devicebeast.com/devices/gionee-v381-td-lte) |
+| 60728 | Hanmac Knight | [DeviceBeast](https://devicebeast.com/devices/hanmac-knight-dual-sim-td-lte) |
+| 60729 | HAUS Omega | [DeviceBeast](https://devicebeast.com/devices/haus-omega-lte) |
+| 60730 | Hisense D1-M | [DeviceBeast](https://devicebeast.com/devices/hisense-d1-m-td-lte) |
+| 60731 | Hisense D2-M | [DeviceBeast](https://devicebeast.com/devices/hisense-d2-m-td-lte) |
+| 60732 | Hisense HS-E20T Xiaodao | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e20t-xiaodao-dual-sim-td-lte) |
+| 60733 | Hisense HS-E50T | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e50t-dual-sim-td-lte) |
+| 60734 | Hisense HS-E613T | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e613t-dual-sim-td-lte) |
+| 60735 | Hisense HS-E622M | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e622m-dual-sim-td-lte) |
+| 60736 | Hisense HS-E70T | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e70t-dual-sim-td-lte) |
+| 60737 | Hisense HS-E71M | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e71m-dual-sim-td-lte) |
+| 60738 | Hisense HS-E71T | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-e71t-dual-sim-td-lte) |
+| 60739 | Hisense I631M | [ZOL](https://detail.zol.com.cn/cell_phone/index1162310.shtml) |
+| 60740 | Hisense I632T | [ZOL](https://detail.zol.com.cn/cell_phone/index1162302.shtml) |
+| 60741 | Hisense M10-M | [DeviceBeast](https://devicebeast.com/devices/hisense-m10-m-td-lte) |
+| 60742 | Hisense M20-T | [ZOL](https://detail.zol.com.cn/cell_phone/index1160376.shtml) |
+| 60743 | HTC One M9e | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-one-m9e) |
+| 60744 | i-mobile IQ X LUCUS | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x-lucus-dual-sim-lte) |
+| 60745 | Imi Messi 2 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-messi-2-4g) |
+| 60746 | iMI Messi Top | [DeviceBeast](https://devicebeast.com/devices/imi-messi-top-lte-dual-sim) |
+| 60747 | InnJoo 2 | [DeviceBeast](https://devicebeast.com/devices/innjoo-2-dual-sim-lte) |
+| 60748 | iOcean Rock M6752 | [DeviceBeast](https://devicebeast.com/devices/iocean-rock-m6752-dual-sim-td-lte) |
+| 60749 | ivvi K1 mini | [ZOL](https://detail.zol.com.cn/cell_phone/index395806.shtml) |
+| 60750 | K-Touch 5703A | [DeviceBeast](https://devicebeast.com/devices/k-touch-5703a-dual-sim) |
+| 60751 | Konka L550 | [ZOL](https://detail.zol.com.cn/cell_phone/index1162335.shtml) |
+| 60752 | Konka R2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1137307.shtml) |
+| 60753 | Koobee M5 | [DeviceBeast](https://devicebeast.com/devices/koobee-m5-dual-sim-td-lte) |
+| 60754 | Kyocera Hydro AIR C6745 | [DeviceBeast](https://devicebeast.com/devices/kyocera-hydro-air-c6745-lte) |
+| 60755 | LANIX Ilium L500 | [DeviceBeast](https://devicebeast.com/devices/lanix-ilium-l500-lte) |
+| 60756 | Little Pepper 6 | [ZOL](https://detail.zol.com.cn/cell_phone/index394633.shtml) |
+| 60757 | Little Pepper S1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1101732.shtml) |
+| 60758 | Little Pepper S3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1117181.shtml) |
+| 60759 | Little Pepper X3 | [ZOL](https://detail.zol.com.cn/cell_phone/index400728.shtml) |
+| 60760 | Lovme T6 | [ZOL](https://detail.zol.com.cn/cell_phone/index400788.shtml) |
+| 60761 | M4Tel SS4045 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss4045) |
+| 60762 | M4Tel SS4350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss4350) |
+| 60763 | Macoox EX1 | [DeviceBeast](https://devicebeast.com/devices/macoox-ex1-dual-sim-lte) |
+| 60764 | Microsoft Lumia 435 DTV | [DeviceBeast](https://devicebeast.com/devices/microsoft-lumia-435-dtv-dual-sim) |
+| 60765 | Mouse Computer MADOSMA Q501 | [DeviceBeast](https://devicebeast.com/devices/mouse-computer-madosma-q501) |
+| 60766 | MyPhone Infinity 2 | [DeviceBeast](https://devicebeast.com/devices/myphone-infinity-2-dual-sim-lte) |
+| 60767 | MyPhone My36 | [DeviceBeast](https://devicebeast.com/devices/myphone-my36-dual-sim-lte) |
+| 60768 | MyPhone Uno | [DeviceBeast](https://devicebeast.com/devices/myphone-uno-dual-sim) |
+| 60769 | Navon Mizu M505 | [DeviceBeast](https://devicebeast.com/devices/navon-mizu-m505-lte-dual-sim) |
+| 60770 | Newman CM810 Button phone | [DeviceBeast](https://devicebeast.com/devices/newman-cm810-button-phone-dual-sim-td-lte) |
+| 60771 | Newman K3-S | [ZOL](https://detail.zol.com.cn/cell_phone/index1157266.shtml) |
+| 60772 | NUU Z8 | [DeviceBeast](https://devicebeast.com/devices/nuu-z8-td-lte-dual-sim) |
+| 60773 | One Five F1 | [DeviceBeast](https://devicebeast.com/devices/one-five-f1-lte-dual-sim) |
+| 60774 | One Five F1L | [DeviceBeast](https://devicebeast.com/devices/one-five-f1l-lte-dual-sim) |
+| 60775 | Overmax Vertis 5021 Aim | [DeviceBeast](https://devicebeast.com/devices/overmax-vertis-5021-aim-dual-sim-lte) |
+| 60776 | PPTV Phone KING 7 | [DeviceBeast](https://devicebeast.com/devices/pptv-phone-king-7-dual-sim-lte-16gb) |
+| 60777 | PPTV PP King 7 | [ZOL](https://detail.zol.com.cn/cell_phone/index1099981.shtml) |
+| 60778 | Q-Mobile Noir W1 | [DeviceBeast](https://devicebeast.com/devices/q-mobile-noir-w1-dual-sim) |
+| 60779 | QiKU Phone Q Terra 8692-A00 | [DeviceBeast](https://devicebeast.com/devices/qiku-phone-q-terra-8692-a00-lte-a) |
+| 60780 | Quantum Go | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-go) |
+| 60781 | Samsung GALAXY J3 | [ZOL](https://detail.zol.com.cn/cell_phone/index396031.shtml) |
+| 60782 | Saygus Vphone V2 | [DeviceBeast](https://devicebeast.com/devices/saygus-vphone-v2) |
+| 60783 | Silent Circle Blackphone 2 BP2 | [DeviceBeast](https://devicebeast.com/devices/silent-circle-blackphone-2-bp2-td-lte-row) |
+| 60784 | Smartfren Andromax Qi | [DeviceBeast](https://devicebeast.com/devices/smartfren-andromax-qi-td-lte-dual-sim) |
+| 60785 | Smartisan T2 SM801 | [DeviceBeast](https://devicebeast.com/devices/smartisan-t2-sm801-td-lte-32gb) |
+| 60786 | Sonim XP7 XP7700 | [DeviceBeast](https://devicebeast.com/devices/sonim-xp7-xp7700-lte) |
+| 60787 | sonim XP7700 | [ZOL](https://detail.zol.com.cn/cell_phone/index401707.shtml) |
+| 60788 | SUGAR 2C | [ZOL](https://detail.zol.com.cn/cell_phone/index1098763.shtml) |
+| 60789 | Sugar S | [DeviceBeast](https://devicebeast.com/devices/sugar-s-lte) |
+| 60790 | Symphony H120 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-h120) |
+| 60791 | TCL i709M | [DeviceBeast](https://devicebeast.com/devices/tcl-i709m-dual-sim-td-lte) |
+| 60792 | TCL idol3 | [ZOL](https://detail.zol.com.cn/cell_phone/index397531.shtml) |
+| 60793 | TCL P608L | [DeviceBeast](https://devicebeast.com/devices/tcl-p608l-dual-sim-td-lte) |
+| 60794 | Tonino Lamborghini 88 Tauri TL88 | [DeviceBeast](https://devicebeast.com/devices/tonino-lamborghini-88-tauri-tl88) |
+| 60795 | TrueSmart M821H 4G HD Voice | [DeviceBeast](https://devicebeast.com/devices/truesmart-m821h-4g-hd-voice-dual-sim-td-lte-china-mobile-n1) |
+| 60796 | Uniscope U W2015 | [DeviceBeast](https://devicebeast.com/devices/uniscope-u-w2015-dual-sim-td-lte) |
+| 60797 | Uniscope U66 | [DeviceBeast](https://devicebeast.com/devices/uniscope-u66-td-lte-dual-sim) |
+| 60798 | Uniscope US828v | [DeviceBeast](https://devicebeast.com/devices/uniscope-us828v-dual-sim-td-lte) |
+| 60799 | uphone U5B | [ZOL](https://detail.zol.com.cn/cell_phone/index405396.shtml) |
+| 60800 | UPQ Phone A01X | [DeviceBeast](https://devicebeast.com/devices/upq-phone-a01x-lte-dual-sim) |
+| 60801 | VAIO Phone | [DeviceBeast](https://devicebeast.com/devices/vaio-phone-dual-sim-lte-16gb-va-10j) |
+| 60802 | Vertu Signature Touch VM-03 | [DeviceBeast](https://devicebeast.com/devices/vertu-signature-touch-vm-03-td-lte) |
+| 60803 | VKworld Discovery S2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vkworld-discovery-s2) |
+| 60804 | VKWorld VK605S | [DeviceBeast](https://devicebeast.com/devices/vkworld-vk605s-lte-dual-sim) |
+| 60805 | Zopo Focus ZP720 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zopo-focus-zp720) |
+| 60806 | Zopo Magic ZP920 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zopo-magic-zp920) |
+| 60807 | Acer Liquid M220 Plus | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-m220-plus-dual-sim) |
+| 60808 | Coolpad 8106 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8106-td-lte) |
+| 60809 | Coolpad 8713 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8713-dual-sim-td-lte) |
+| 60810 | Elephone Precious G7 | [DeviceBeast](https://devicebeast.com/devices/elephone-precious-g7-dual-sim) |
+| 60811 | Haier A110 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157894.shtml) |
+| 60812 | Haier A210 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157875.shtml) |
+| 60813 | Haier M311 | [ZOL](https://detail.zol.com.cn/cell_phone/index1160484.shtml) |
+| 60814 | Haier M313 | [ZOL](https://detail.zol.com.cn/cell_phone/index1143928.shtml) |
+| 60815 | Haier M316 | [ZOL](https://detail.zol.com.cn/cell_phone/index1154823.shtml) |
+| 60816 | Haier M317 | [ZOL](https://detail.zol.com.cn/cell_phone/index1145895.shtml) |
+| 60817 | Haier M318 | [ZOL](https://detail.zol.com.cn/cell_phone/index1143890.shtml) |
+| 60818 | Haier M369 | [ZOL](https://detail.zol.com.cn/cell_phone/index1158937.shtml) |
+| 60819 | Haier M512 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157903.shtml) |
+| 60820 | K-Touch E2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1158085.shtml) |
+| 60821 | K-Touch T2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1158094.shtml) |
+| 60822 | Konka C621 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138770.shtml) |
+| 60823 | Konka K66 | [ZOL](https://detail.zol.com.cn/cell_phone/index1162333.shtml) |
+| 60824 | Newman C360 | [ZOL](https://detail.zol.com.cn/cell_phone/index1153257.shtml) |
+| 60825 | Newman C5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1154812.shtml) |
+| 60826 | Newman C9 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157363.shtml) |
+| 60827 | Newman D1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157362.shtml) |
+| 60828 | Newman D618 | [ZOL](https://detail.zol.com.cn/cell_phone/index1154817.shtml) |
+| 60829 | Newman F516 | [ZOL](https://detail.zol.com.cn/cell_phone/index1145584.shtml) |
+| 60830 | Newman L8 | [ZOL](https://detail.zol.com.cn/cell_phone/index1154815.shtml) |
+| 60831 | Newman V6 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157320.shtml) |
+| 60832 | Newman V9 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157317.shtml) |
+| 60833 | Orange Klif | [DeviceBeast](https://devicebeast.com/devices/orange-klif-dual-sim-4022d) |
+| 60834 | Orange Nura 2 Gris | [DeviceBeast](https://devicebeast.com/devices/orange-nura-2-gris-td-lte) |
+| 60835 | Pepsi P1S | [DeviceBeast](https://devicebeast.com/devices/pepsi-p1s-dual-sim-td-lte) |
+| 60836 | Philips E350 | [ZOL](https://detail.zol.com.cn/cell_phone/index400608.shtml) |
+| 60837 | Sonim XP6 XP6700 | [DeviceBeast](https://devicebeast.com/devices/sonim-xp6-xp6700-lte-na) |
+| 60838 | SOYES H1 | [ZOL](https://detail.zol.com.cn/cell_phone/index399529.shtml) |
+| 60839 | Telstra ZTE 4GX Buzz | [DeviceBeast](https://devicebeast.com/devices/telstra-zte-4gx-buzz-lte) |
+| 60840 | uphone U3A | [ZOL](https://detail.zol.com.cn/cell_phone/index405400.shtml) |
+| 60841 | ZTE A620 | [ZOL](https://detail.zol.com.cn/cell_phone/index1100199.shtml) |
+| 60842 | ZTE CV16 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138879.shtml) |
+| 60843 | ZTE CV18 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157717.shtml) |
+| 60844 | ZTE CV19 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138861.shtml) |
+| 60845 | ZTE L580 | [ZOL](https://detail.zol.com.cn/cell_phone/index395377.shtml) |
+| 60846 | ZTE L588 | [ZOL](https://detail.zol.com.cn/cell_phone/index1100497.shtml) |
+| 60847 | ZTE L610 | [ZOL](https://detail.zol.com.cn/cell_phone/index1145869.shtml) |
+| 60848 | ZTE U288G | [ZOL](https://detail.zol.com.cn/cell_phone/index511516.shtml) |
+| 60849 | ZTE V16 | [ZOL](https://detail.zol.com.cn/cell_phone/index398735.shtml) |
+| 60850 | ZTE V18 | [ZOL](https://detail.zol.com.cn/cell_phone/index404327.shtml) |
+| 60851 | Prestigio MultiPhone PSP5504 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-psp5504-duo) |
+| 60852 | Acer Liquid Jade Plus | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-jade-plus) |
+| 60853 | Acer Liquid Z500 Plus | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-z500-plus) |
+| 60854 | ConCorde SmartPhone 6500 PLUS | [DeviceBeast](https://devicebeast.com/devices/concorde-smartphone-6500-plus-dual-sim) |
+| 60855 | GFive G6 Plus | [DeviceBeast](https://devicebeast.com/devices/gfive-g6-plus-dual-sim) |
+| 60856 | Starmobile Turbo | [DeviceBeast](https://devicebeast.com/devices/starmobile-turbo-dual-sim) |
+| 60857 | Vodafone 990N Smart 4 Max | [DeviceBeast](https://devicebeast.com/devices/vodafone-990n-smart-4-max-lte-a) |
+| 60858 | Acer Liquid Z150 Z5 | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-z150-z5) |
+| 60859 | Advan S4K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s4k) |
+| 60860 | Akortek Dark Evo P60 | [DeviceBeast](https://devicebeast.com/devices/akortek-dark-evo-p60) |
+| 60861 | Axioo Picophone M2 | [DeviceBeast](https://devicebeast.com/devices/axioo-picophone-m2) |
+| 60862 | Bush Mobile Windows Phone | [DeviceBeast](https://devicebeast.com/devices/bush-mobile-windows-phone) |
+| 60863 | Cherry Mobile Alpha Style | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-alpha-style-dual-sim) |
+| 60864 | Cherry Mobile Fuze Q390 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-fuze-q390) |
+| 60865 | Cherry Mobile Rover | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-rover) |
+| 60866 | Cherry Mobile Selfie | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-selfie-dual-sim) |
+| 60867 | Coolpad 5316 | [DeviceBeast](https://devicebeast.com/devices/coolpad-5316-dual-sim-td-lte) |
+| 60868 | Coolpad 5892-C00 | [DeviceBeast](https://devicebeast.com/devices/coolpad-5892-c00-td-lte) |
+| 60869 | Coolpad 7620L | [DeviceBeast](https://devicebeast.com/devices/coolpad-7620l-td-lte) |
+| 60870 | Coolpad Dashen F2 8675-FHD | [DeviceBeast](https://devicebeast.com/devices/coolpad-dashen-f2-8675-fhd-dual-sim-td-lte) |
+| 60871 | Coolpad Dashen F2 8675-W00 | [DeviceBeast](https://devicebeast.com/devices/coolpad-dashen-f2-8675-w00-dual-sim-td-lte) |
+| 60872 | Coolpad F2 | [DeviceBeast](https://devicebeast.com/devices/coolpad-f2-td-lte) |
+| 60873 | Coolpad V1-C Bodun | [DeviceBeast](https://devicebeast.com/devices/coolpad-v1-c-bodun-td-lte) |
+| 60874 | Disney Mobile Magic2 M7009 | [DeviceBeast](https://devicebeast.com/devices/disney-mobile-magic2-m7009-td-lte) |
+| 60875 | Explay Joy TV | [GSMchoice](https://www.gsmchoice.com/en/catalogue/explay/joytv/) |
+| 60876 | FPT F35 | [DeviceBeast](https://devicebeast.com/devices/fpt-f35-dual-sim) |
+| 60877 | GiONEE Elife E7L | [DeviceBeast](https://devicebeast.com/devices/gionee-elife-e7l-td-lte-16gb) |
+| 60878 | GiONEE Elife S5.1 GN9005 | [DeviceBeast](https://devicebeast.com/devices/gionee-elife-s51-gn9005-td-lte) |
+| 60879 | GiONEE Fenghua 3 | [DeviceBeast](https://devicebeast.com/devices/gionee-fenghua-3-td-lte) |
+| 60880 | GiONEE M2 Marathon | [DeviceBeast](https://devicebeast.com/devices/gionee-m2-marathon) |
+| 60881 | GiONEE Tianjian T1 | [DeviceBeast](https://devicebeast.com/devices/gionee-tianjian-t1) |
+| 60882 | Gresso Regal R1 | [DeviceBeast](https://devicebeast.com/devices/gresso-regal-r1) |
+| 60883 | GrunMobile Luft U452 | [DeviceBeast](https://devicebeast.com/devices/grunmobile-luft-u452-dual-sim) |
+| 60884 | Hisense HS-X8C | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-x8c-td-lte) |
+| 60885 | Hisense HS-X8U | [DeviceBeast](https://devicebeast.com/devices/hisense-hs-x8u-td-lte) |
+| 60886 | i-mobile IQ 1.3 DTV | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-13-dtv-dual-sim) |
+| 60887 | i-mobile IQ X LEON | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x-leon-dual-sim-lte) |
+| 60888 | i-mobile IQ X OKU 1079 | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x-oku-1079) |
+| 60889 | i-mobile IQ X Slim IQ1089 | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x-slim-iq1089) |
+| 60890 | iNew I4000S | [DeviceBeast](https://devicebeast.com/devices/inew-i4000s) |
+| 60891 | InFocus IN265 Open Chan Magic | [DeviceBeast](https://devicebeast.com/devices/infocus-in265-open-chan-magic) |
+| 60892 | InFocus M210 | [DeviceBeast](https://devicebeast.com/devices/infocus-m210) |
+| 60893 | Kogan Agora 4G | [DeviceBeast](https://devicebeast.com/devices/kogan-agora-4g-lte-a) |
+| 60894 | Koobee Muse M2 | [DeviceBeast](https://devicebeast.com/devices/koobee-muse-m2-td-lte) |
+| 60895 | Koobee Star S1 | [DeviceBeast](https://devicebeast.com/devices/koobee-star-s1) |
+| 60896 | Kyocera Hydro Life C6530 | [DeviceBeast](https://devicebeast.com/devices/kyocera-hydro-life-c6530) |
+| 60897 | Kyocera Hydro VIBE C6725 | [DeviceBeast](https://devicebeast.com/devices/kyocera-hydro-vibe-c6725) |
+| 60898 | Kyocera Torque XT E6715 | [DeviceBeast](https://devicebeast.com/devices/kyocera-torque-xt-e6715) |
+| 60899 | Lava Xolo 8X-1000 | [DeviceBeast](https://devicebeast.com/devices/lava-xolo-8x-1000) |
+| 60900 | Little Pepper 4G mini | [ZOL](https://detail.zol.com.cn/cell_phone/index1138691.shtml) |
+| 60901 | Lumigon T2 HD | [DeviceBeast](https://devicebeast.com/devices/lumigon-t2-hd-128gb) |
+| 60902 | M4Tel SS1060 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss1060) |
+| 60903 | MANN ZUG 5 | [ZOL](https://detail.zol.com.cn/cell_phone/index375871.shtml) |
+| 60904 | Meizu MX4 M461 | [DeviceBeast](https://devicebeast.com/devices/meizu-mx4-m461-td-lte-64gb) |
+| 60905 | Micromax A350 Knight | [DeviceBeast](https://devicebeast.com/devices/micromax-a350-knight) |
+| 60906 | MyPhone Rio | [DeviceBeast](https://devicebeast.com/devices/myphone-rio-dual-sim) |
+| 60907 | Navon Mizu M500 | [DeviceBeast](https://devicebeast.com/devices/navon-mizu-m500-dual-sim) |
+| 60908 | Neo M1 | [DeviceBeast](https://devicebeast.com/devices/neo-m1) |
+| 60909 | Orange Infinity X2 mini | [DeviceBeast](https://devicebeast.com/devices/orange-infinity-x2-mini) |
+| 60910 | Orange Nura | [DeviceBeast](https://devicebeast.com/devices/orange-nura-lte) |
+| 60911 | PiPO Platinum T8 | [DeviceBeast](https://devicebeast.com/devices/pipo-platinum-t8) |
+| 60912 | PiPO Smart T4 | [DeviceBeast](https://devicebeast.com/devices/pipo-smart-t4) |
+| 60913 | Polaroid JSRTECH I7B WinPro 5.0 | [DeviceBeast](https://devicebeast.com/devices/polaroid-jsrtech-i7b-winpro-50) |
+| 60914 | Silent Circle Blackphone BP1 | [DeviceBeast](https://devicebeast.com/devices/silent-circle-blackphone-bp1-lte) |
+| 60915 | Smartfren Andromax V3s | [DeviceBeast](https://devicebeast.com/devices/smartfren-andromax-v3s-td-lte-dual-sim) |
+| 60916 | TCL EOS S838M | [DeviceBeast](https://devicebeast.com/devices/tcl-eos-s838m-td-lte) |
+| 60917 | TCL Flame | [DeviceBeast](https://devicebeast.com/devices/tcl-flame) |
+| 60918 | TCL Joy J928 | [DeviceBeast](https://devicebeast.com/devices/tcl-joy-j928) |
+| 60919 | TCL P55U | [DeviceBeast](https://devicebeast.com/devices/tcl-p55u-td-lte) |
+| 60920 | TCL P688L | [ZOL](https://detail.zol.com.cn/cell_phone/index385582.shtml) |
+| 60921 | TCL P728M Memeda | [DeviceBeast](https://devicebeast.com/devices/tcl-p728m-memeda-td-lte) |
+| 60922 | Tecno Mobile S7 | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-s7) |
+| 60923 | UMI ZERO 2 | [DeviceBeast](https://devicebeast.com/devices/umi-zero-2-td-lte-dual-sim) |
+| 60924 | uphone U5C | [ZOL](https://detail.zol.com.cn/cell_phone/index405404.shtml) |
+| 60925 | VEB V3 | [ZOL](https://detail.zol.com.cn/cell_phone/index381188.shtml) |
+| 60926 | Vertu Aster VM-01 | [DeviceBeast](https://devicebeast.com/devices/vertu-aster-vm-01-lte-a) |
+| 60927 | vivo Y22iL | [ZOL](https://detail.zol.com.cn/cell_phone/index387311.shtml) |
+| 60928 | Walton Primo E1 | [MobileDokan](https://www.mobiledokan.com/mobile/walton-primo-e1) |
+| 60929 | Wiko Wax JLS36C | [DeviceBeast](https://devicebeast.com/devices/wiko-wax-jls36c-lte) |
+| 60930 | Yota Phone 2 YD201 | [DeviceBeast](https://devicebeast.com/devices/yota-phone-2-yd201) |
+| 60931 | Zopo ZP999 Lion Heart | [DeviceBeast](https://devicebeast.com/devices/zopo-zp999-lion-heart-dual-sim-lte) |
+| 60932 | BlackBerry P9983 | [ZOL](https://detail.zol.com.cn/cell_phone/index385619.shtml) |
+| 60933 | Changhong GA718 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157905.shtml) |
+| 60934 | Changhong GA888C | [ZOL](https://detail.zol.com.cn/cell_phone/index1157920.shtml) |
+| 60935 | Changhong GA889 | [ZOL](https://detail.zol.com.cn/cell_phone/index1162277.shtml) |
+| 60936 | Changhong GA988 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157919.shtml) |
+| 60937 | Cherry Mobile Cosmos One | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-cosmos-one) |
+| 60938 | Coolpad 5891Q | [ZOL](https://detail.zol.com.cn/cell_phone/index374110.shtml) |
+| 60939 | Coolpad 9970L | [DeviceBeast](https://devicebeast.com/devices/coolpad-9970l-td-lte) |
+| 60940 | Kyocera Marvera 2 KYY09 | [DeviceBeast](https://devicebeast.com/devices/kyocera-marvera-2-kyy09) |
+| 60941 | MANN ZUG S | [ZOL](https://detail.zol.com.cn/cell_phone/index374263.shtml) |
+| 60942 | MAXVI X850 | [IMEI.info](https://www.imei.info/phonedatabase/maxvi-x850/) |
+| 60943 | Pantech Pop Up Note | [DeviceBeast](https://devicebeast.com/devices/pantech-pop-up-note-lte-a-im-a920s) |
+| 60944 | Samsung Gear S | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/gears/) |
+| 60945 | TCL f200 | [ZOL](https://detail.zol.com.cn/cell_phone/index393369.shtml) |
+| 60946 | uphone U5+ | [ZOL](https://detail.zol.com.cn/cell_phone/index405398.shtml) |
+| 60947 | Prestigio MultiPhone PAP4055 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-pap4055-duo) |
+| 60948 | Lava Iris Pro | [DeviceBeast](https://devicebeast.com/devices/lava-iris-pro) |
+| 60949 | Tecno Mobile Phantom A+ | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-phantom-a) |
+| 60950 | Changjiang N7300 | [DeviceBeast](https://devicebeast.com/devices/changjiang-n7300) |
+| 60951 | Cherry Mobile Burst 2.0 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-burst-20) |
+| 60952 | Cherry Mobile Cosmos Z | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-cosmos-z) |
+| 60953 | Cherry Mobile Cruize | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-cruize) |
+| 60954 | Cherry Mobile Omega HD | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-omega-hd) |
+| 60955 | Coolpad 8736 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8736-td-lte) |
+| 60956 | Coolpad 8920 | [DeviceBeast](https://devicebeast.com/devices/coolpad-8920-td-lte) |
+| 60957 | Dell Venue 7 HSPA 3730 | [DeviceBeast](https://devicebeast.com/devices/dell-venue-7-hspa-3730) |
+| 60958 | Disney Mobile Magic1 M7007 | [DeviceBeast](https://devicebeast.com/devices/disney-mobile-magic1-m7007) |
+| 60959 | Faea F2S | [DeviceBeast](https://devicebeast.com/devices/faea-f2s) |
+| 60960 | Gaoxinqi F1 | [DeviceBeast](https://devicebeast.com/devices/gaoxinqi-f1) |
+| 60961 | GiONEE W601 | [DeviceBeast](https://devicebeast.com/devices/gionee-w601) |
+| 60962 | i-mobile IQ X | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x) |
+| 60963 | iNew i6000 Advanced | [DeviceBeast](https://devicebeast.com/devices/inew-i6000-advanced) |
+| 60964 | Jiayu G4 Flagship | [DeviceBeast](https://devicebeast.com/devices/jiayu-g4-flagship) |
+| 60965 | Kogan Agora 5.0 | [DeviceBeast](https://devicebeast.com/devices/kogan-agora-50) |
+| 60966 | Kyocera Digno R 202k | [DeviceBeast](https://devicebeast.com/devices/kyocera-digno-r-202k-td-lte) |
+| 60967 | M4Tel M4 SS1080 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-m4-ss1080) |
+| 60968 | M4Tel SS880 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss880) |
+| 60969 | Media-Droid Imperius Aero Slim MT7014 | [DeviceBeast](https://devicebeast.com/devices/media-droid-imperius-aero-slim-mt7014) |
+| 60970 | Media-Droid Imperius N3XT MT7008 | [DeviceBeast](https://devicebeast.com/devices/media-droid-imperius-n3xt-mt7008) |
+| 60971 | Meitu 1S | [ZOL](https://detail.zol.com.cn/cell_phone/index366602.shtml) |
+| 60972 | Meizu MX M035 | [DeviceBeast](https://devicebeast.com/devices/meizu-mx-m035) |
+| 60973 | Meizu MX3 M055 | [DeviceBeast](https://devicebeast.com/devices/meizu-mx3-m055-64gb) |
+| 60974 | Mogu M5 | [DeviceBeast](https://devicebeast.com/devices/mogu-m5) |
+| 60975 | NEC Medias W N-05E | [DeviceBeast](https://devicebeast.com/devices/nec-medias-w-n-05e) |
+| 60976 | Neo N003 | [DeviceBeast](https://devicebeast.com/devices/neo-n003) |
+| 60977 | Newman K2 Basic | [DeviceBeast](https://devicebeast.com/devices/newman-k2-basic-16gb) |
+| 60978 | O2 Super K1 | [DeviceBeast](https://devicebeast.com/devices/o2-super-k1) |
+| 60979 | O2 Super K2 | [DeviceBeast](https://devicebeast.com/devices/o2-super-k2) |
+| 60980 | O2 Super K3 | [DeviceBeast](https://devicebeast.com/devices/o2-super-k3) |
+| 60981 | Owen V9 | [DeviceBeast](https://devicebeast.com/devices/owen-v9) |
+| 60982 | Pantech Vega Q PTL21 | [DeviceBeast](https://devicebeast.com/devices/pantech-vega-q-ptl21) |
+| 60983 | Sugar Swarovski SS129 | [DeviceBeast](https://devicebeast.com/devices/sugar-swarovski-ss129-32gb) |
+| 60984 | TCL S606 | [DeviceBeast](https://devicebeast.com/devices/tcl-s606) |
+| 60985 | Tecno Mobile D7 | [DeviceBeast](https://devicebeast.com/devices/tecno-mobile-d7) |
+| 60986 | UMI S1 | [DeviceBeast](https://devicebeast.com/devices/umi-s1) |
+| 60987 | Uniscope U558D | [DeviceBeast](https://devicebeast.com/devices/uniscope-u558d) |
+| 60988 | Zopo ZP990 Captain | [DeviceBeast](https://devicebeast.com/devices/zopo-zp990-captain) |
+| 60989 | Acer Liquid Z120 Z2 | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-z120-z2) |
+| 60990 | Axioo Picophone 2 GBC | [DeviceBeast](https://devicebeast.com/devices/axioo-picophone-2-gbc) |
+| 60991 | Casio Terrain NE-201A1A | [DeviceBeast](https://devicebeast.com/devices/casio-terrain-ne-201a1a) |
+| 60992 | Cherry Mobile Flame 2.0 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-flame-20) |
+| 60993 | Coolpad 5952 | [DeviceBeast](https://devicebeast.com/devices/coolpad-5952) |
+| 60994 | i-mobile IQ X BLIZ IQ1058 | [DeviceBeast](https://devicebeast.com/devices/i-mobile-iq-x-bliz-iq1058) |
+| 60995 | Meitu MeituKiss | [DeviceBeast](https://devicebeast.com/devices/meitu-meitukiss) |
+| 60996 | THL A2 | [DeviceBeast](https://devicebeast.com/devices/thl-a2) |
+| 60997 | Willcom Aquos Phone es WX04SH | [DeviceBeast](https://devicebeast.com/devices/willcom-aquos-phone-es-wx04sh) |
+| 60998 | ZTE L530g | [ZOL](https://detail.zol.com.cn/cell_phone/index389027.shtml) |
+| 60999 | Prestigio MultiPhone PAP4020 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-pap4020-duo) |
+| 61000 | Prestigio MultiPhone PAP4300 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-pap4300-duo) |
+| 61001 | Prestigio MultiPhone PAP4500 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-pap4500-duo) |
+| 61002 | Zopo Field ZP300+ | [DeviceBeast](https://devicebeast.com/devices/zopo-field-zp300) |
+| 61003 | Zopo Shining ZP200+ | [DeviceBeast](https://devicebeast.com/devices/zopo-shining-zp200) |
+| 61004 | Acer Liquid C AT390 | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-c-at390) |
+| 61005 | Casio GzOne Type-L CAL21 | [DeviceBeast](https://devicebeast.com/devices/casio-gzone-type-l-cal21) |
+| 61006 | Cherry Mobile Titan W500 | [DeviceBeast](https://devicebeast.com/devices/cherry-mobile-titan-w500) |
+| 61007 | Coolpad 8950 MagView II | [DeviceBeast](https://devicebeast.com/devices/coolpad-8950-magview-ii) |
+| 61008 | Emobile GS03 | [DeviceBeast](https://devicebeast.com/devices/emobile-gs03) |
+| 61009 | Gaoxinqi H01 | [DeviceBeast](https://devicebeast.com/devices/gaoxinqi-h01) |
+| 61010 | Kyocera Digno S KYL21 | [DeviceBeast](https://devicebeast.com/devices/kyocera-digno-s-kyl21) |
+| 61011 | M4Tel SS550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m4tel-ss550) |
+| 61012 | Meizu MX M030 | [DeviceBeast](https://devicebeast.com/devices/meizu-mx-m030) |
+| 61013 | Meizu MX2 M040 | [DeviceBeast](https://devicebeast.com/devices/meizu-mx2-m040-16gb) |
+| 61014 | Micromax A90S Pixel | [DeviceBeast](https://devicebeast.com/devices/micromax-a90s-pixel) |
+| 61015 | NEC Medias CH 101N | [DeviceBeast](https://devicebeast.com/devices/nec-medias-ch-101n) |
+| 61016 | Pantech Burst P9070 | [DeviceBeast](https://devicebeast.com/devices/pantech-burst-p9070) |
+| 61017 | Pantech Vega S5 IM-A840S | [DeviceBeast](https://devicebeast.com/devices/pantech-vega-s5-im-a840s) |
+| 61018 | THL V9 HD | [DeviceBeast](https://devicebeast.com/devices/thl-v9-hd) |
+| 61019 | Yangtze River N7300 | [DeviceBeast](https://devicebeast.com/devices/yangtze-river-n7300) |
+| 61020 | Zopo Pilot ZP100 | [DeviceBeast](https://devicebeast.com/devices/zopo-pilot-zp100) |
+| 61021 | Zopo ZP500 Libero | [DeviceBeast](https://devicebeast.com/devices/zopo-zp500-libero) |
+| 61022 | Acer Liquid Z110 Z1 | [DeviceBeast](https://devicebeast.com/devices/acer-liquid-z110-z1) |
+| 61023 | Coolpad HD 9960 | [DeviceBeast](https://devicebeast.com/devices/coolpad-hd-9960) |
+| 61024 | Prestigio MultiPhone PAP3500 DUO | [DeviceBeast](https://devicebeast.com/devices/prestigio-multiphone-pap3500-duo) |
+| 61025 | NEC Medias WP N-06C | [DeviceBeast](https://devicebeast.com/devices/nec-medias-wp-n-06c) |
+| 61026 | Panasonic Sweety 003P | [DeviceBeast](https://devicebeast.com/devices/panasonic-sweety-003p) |
+| 61027 | Pantech Vega Racer SKY IM-A760S | [DeviceBeast](https://devicebeast.com/devices/pantech-vega-racer-sky-im-a760s) |
+| 61028 | Toshiba Regza T-01C | [DeviceBeast](https://devicebeast.com/devices/toshiba-regza-t-01c) |
+| 61029 | ViewSonic V430 | [DeviceBeast](https://devicebeast.com/devices/viewsonic-v430) |
+| 61030 | Vizio Via Phone VPHN1044 | [DeviceBeast](https://devicebeast.com/devices/vizio-via-phone-vphn1044) |
+| 61031 | BlackBerry 9900 | [ZOL](https://detail.zol.com.cn/cell_phone/index183205.shtml) |
+| 61032 | Gigabyte GSmart G1317D Rola | [DeviceBeast](https://devicebeast.com/devices/gigabyte-gsmart-g1317d-rola) |
+| 61033 | NGM Vanity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-vanity) |
+| 61034 | Optimus San Francisco | [DeviceBeast](https://devicebeast.com/devices/optimus-san-francisco) |
+| 61035 | TMN Smart A7 | [DeviceBeast](https://devicebeast.com/devices/tmn-smart-a7) |
+| 61036 | Umeox A603 Discovery | [DeviceBeast](https://devicebeast.com/devices/umeox-a603-discovery) |
+| 61037 | Vertu Constellation T | [DeviceBeast](https://devicebeast.com/devices/vertu-constellation-t) |
+| 61038 | WellcoM A86 | [DeviceBeast](https://devicebeast.com/devices/wellcom-a86) |
+| 61039 | LG KF301 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/kf301/) |
+| 61040 | Telstra HTC 7 Mozart | [DeviceBeast](https://devicebeast.com/devices/telstra-htc-7-mozart) |
+| 61041 | Cincinnati Bell Blaze | [DeviceBeast](https://devicebeast.com/devices/cincinnati-bell-blaze) |
+| 61042 | Cincinnati Bell Huawei U8100 | [DeviceBeast](https://devicebeast.com/devices/cincinnati-bell-huawei-u8100) |
+| 61043 | M3Mobile M3 Orange AlphaNumeric M3-20 | [DeviceBeast](https://devicebeast.com/devices/m3mobile-m3-orange-alphanumeric-m3-20) |
+| 61044 | M3Mobile M3 Orange QWERTY M3-20 | [DeviceBeast](https://devicebeast.com/devices/m3mobile-m3-orange-qwerty-m3-20) |
+| 61045 | M3Mobile M3 Sky MC-7700 | [DeviceBeast](https://devicebeast.com/devices/m3mobile-m3-sky-mc-7700) |
+| 61046 | M3Mobile M3 T MC-6700S | [DeviceBeast](https://devicebeast.com/devices/m3mobile-m3-t-mc-6700s) |
+| 61047 | Orange San Francisco B05 | [DeviceBeast](https://devicebeast.com/devices/orange-san-francisco-b05) |
+| 61048 | VEON S303 | [IMEI.info](https://www.imei.info/phonedatabase/veon-s303/) |
+| 61049 | CompuLab Exeda | [DeviceBeast](https://devicebeast.com/devices/compulab-exeda) |
+| 61050 | Mobinnova ICE 5420 | [DeviceBeast](https://devicebeast.com/devices/mobinnova-ice-5420) |
+| 61051 | NDrive S400 | [DeviceBeast](https://devicebeast.com/devices/ndrive-s400) |
+| 61052 | Telstra HTC Touch Pro2 T7381 | [DeviceBeast](https://devicebeast.com/devices/telstra-htc-touch-pro2-t7381) |
+| 61053 | WayteQ X-Phone | [DeviceBeast](https://devicebeast.com/devices/wayteq-x-phone) |
+| 61054 | Palm Treo 500 | [DeviceBeast](https://devicebeast.com/devices/palm-treo-500) |
+| 61055 | Dopod C750 | [DeviceBeast](https://devicebeast.com/devices/dopod-c750) |
+| 61056 | Dopod S505 | [DeviceBeast](https://devicebeast.com/devices/dopod-s505) |
+| 61057 | Dopod S700 | [DeviceBeast](https://devicebeast.com/devices/dopod-s700) |
+| 61058 | Dopod Touch Diamond S900 | [DeviceBeast](https://devicebeast.com/devices/dopod-touch-diamond-s900) |
+| 61059 | Dopod Touch T3238 | [DeviceBeast](https://devicebeast.com/devices/dopod-touch-t3238) |
+| 61060 | Emobile Emonster lite S12HT | [DeviceBeast](https://devicebeast.com/devices/emobile-emonster-lite-s12ht) |
+| 61061 | Emobile Emonster S11HT | [DeviceBeast](https://devicebeast.com/devices/emobile-emonster-s11ht) |
+| 61062 | Emobile Touch Diamond S21HT | [DeviceBeast](https://devicebeast.com/devices/emobile-touch-diamond-s21ht) |
+| 61063 | ICD Velocity Mobile 103 | [DeviceBeast](https://devicebeast.com/devices/icd-velocity-mobile-103) |
+| 61064 | MOBIADO Stealth | [IMEI.info](https://www.imei.info/phonedatabase/mobiado-stealth/) |
+| 61065 | O2 XDA Atmos | [DeviceBeast](https://devicebeast.com/devices/o2-xda-atmos) |
+| 61066 | O2 XDA Mantle | [DeviceBeast](https://devicebeast.com/devices/o2-xda-mantle) |
+| 61067 | Opticon H16 | [DeviceBeast](https://devicebeast.com/devices/opticon-h16) |
+| 61068 | Opticon H19 | [DeviceBeast](https://devicebeast.com/devices/opticon-h19) |
+| 61069 | Pharos Traveler 117 | [DeviceBeast](https://devicebeast.com/devices/pharos-traveler-117) |
+| 61070 | Pharos Traveler 127 | [DeviceBeast](https://devicebeast.com/devices/pharos-traveler-127) |
+| 61071 | QiGi i3 | [DeviceBeast](https://devicebeast.com/devices/qigi-i3) |
+| 61072 | TechFaith i5 | [DeviceBeast](https://devicebeast.com/devices/techfaith-i5) |
+| 61073 | TechFaith Moffett | [DeviceBeast](https://devicebeast.com/devices/techfaith-moffett) |
+| 61074 | Verzio Envii | [DeviceBeast](https://devicebeast.com/devices/verzio-envii) |
+| 61075 | Vodafone VPA Touch | [DeviceBeast](https://devicebeast.com/devices/vodafone-vpa-touch) |
+| 61076 | Airo A25 | [DeviceBeast](https://devicebeast.com/devices/airo-a25) |
+| 61077 | Amoi N810 | [DeviceBeast](https://devicebeast.com/devices/amoi-n810) |
+| 61078 | BBK S200 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-s200/) |
+| 61079 | Dopod 710 Plus | [DeviceBeast](https://devicebeast.com/devices/dopod-710-plus) |
+| 61080 | Dopod C500 | [DeviceBeast](https://devicebeast.com/devices/dopod-c500) |
+| 61081 | Dopod CHT 9100 | [DeviceBeast](https://devicebeast.com/devices/dopod-cht-9100) |
+| 61082 | Dopod D802 | [DeviceBeast](https://devicebeast.com/devices/dopod-d802) |
+| 61083 | Dopod E616 | [DeviceBeast](https://devicebeast.com/devices/dopod-e616) |
+| 61084 | Dopod E806c | [DeviceBeast](https://devicebeast.com/devices/dopod-e806c) |
+| 61085 | Dopod S500 | [DeviceBeast](https://devicebeast.com/devices/dopod-s500) |
+| 61086 | iDO P890 | [DeviceBeast](https://devicebeast.com/devices/ido-p890) |
+| 61087 | izenMobile KRMA | [DeviceBeast](https://devicebeast.com/devices/izenmobile-krma) |
+| 61088 | Mobile Compia M3 Plus MC-6500S | [DeviceBeast](https://devicebeast.com/devices/mobile-compia-m3-plus-mc-6500s) |
+| 61089 | Motorola W156 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/motorola/w156/) |
+| 61090 | NDrive S300 | [DeviceBeast](https://devicebeast.com/devices/ndrive-s300) |
+| 61091 | Nokia 8600 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_8600) |
+| 61092 | Okwap K728 | [DeviceBeast](https://devicebeast.com/devices/okwap-k728) |
+| 61093 | Orange M650 | [DeviceBeast](https://devicebeast.com/devices/orange-m650) |
+| 61094 | Orange SPV E600 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-e600) |
+| 61095 | Orange SPV E650 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-e650) |
+| 61096 | ORSIO g735 | [IMEI.info](https://www.imei.info/phonedatabase/orsio-g735/) |
+| 61097 | Pantech DUO C810 | [DeviceBeast](https://devicebeast.com/devices/pantech-duo-c810) |
+| 61098 | ROVERPC G6 | [IMEI.info](https://www.imei.info/phonedatabase/roverpc-g6/) |
+| 61099 | ROVERPC Q6 | [IMEI.info](https://www.imei.info/phonedatabase/roverpc-q6/) |
+| 61100 | TORQ P175 | [DeviceBeast](https://devicebeast.com/devices/torq-p175) |
+| 61101 | Vodafone v1415 | [DeviceBeast](https://devicebeast.com/devices/vodafone-v1415) |
+| 61102 | Vodafone VPA Compact V | [DeviceBeast](https://devicebeast.com/devices/vodafone-vpa-compact-v) |
+| 61103 | Audiovox XV6700 | [DeviceBeast](https://devicebeast.com/devices/audiovox-xv6700) |
+| 61104 | BBK K028 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-k028/) |
+| 61105 | BBK K029 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-k029/) |
+| 61106 | BBK K068 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-k068/) |
+| 61107 | Cingular 8100 | [DeviceBeast](https://devicebeast.com/devices/cingular-8100) |
+| 61108 | Dopod 310 | [DeviceBeast](https://devicebeast.com/devices/dopod-310) |
+| 61109 | Hyundai A200 | [DeviceBeast](https://devicebeast.com/devices/hyundai-a200) |
+| 61110 | i-teq Bond | [DeviceBeast](https://devicebeast.com/devices/i-teq-bond) |
+| 61111 | KYOCERA KE301 | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-ke301/) |
+| 61112 | Okwap K868 | [DeviceBeast](https://devicebeast.com/devices/okwap-k868) |
+| 61113 | Orange SPV C100 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-c100) |
+| 61114 | Orange SPV C700 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-c700) |
+| 61115 | Orange SPV M3100 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-m3100) |
+| 61116 | Qtek 9600 | [DeviceBeast](https://devicebeast.com/devices/qtek-9600) |
+| 61117 | Swisscom XPA S200 | [DeviceBeast](https://devicebeast.com/devices/swisscom-xpa-s200) |
+| 61118 | Tatung M1A | [DeviceBeast](https://devicebeast.com/devices/tatung-m1a) |
+| 61119 | UBiQUiO 401 | [DeviceBeast](https://devicebeast.com/devices/ubiquio-401) |
+| 61120 | UBiQUiO 501 | [DeviceBeast](https://devicebeast.com/devices/ubiquio-501) |
+| 61121 | UTStarcom PPC6700 | [DeviceBeast](https://devicebeast.com/devices/utstarcom-ppc6700) |
+| 61122 | Vodafone v1240 | [DeviceBeast](https://devicebeast.com/devices/vodafone-v1240) |
+| 61123 | Vodafone VPA Compact II | [DeviceBeast](https://devicebeast.com/devices/vodafone-vpa-compact-ii) |
+| 61124 | Vodafone VPA Compact IV | [DeviceBeast](https://devicebeast.com/devices/vodafone-vpa-compact-iv) |
+| 61125 | VOXTEL 1iD | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-1id/) |
+| 61126 | VOXTEL 2iD | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-2id/) |
+| 61127 | VOXTEL V-700 | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-v-700/) |
+| 61128 | CyberBank POZ B300 | [DeviceBeast](https://devicebeast.com/devices/cyberbank-poz-b300) |
+| 61129 | CyberBank POZ X501 | [DeviceBeast](https://devicebeast.com/devices/cyberbank-poz-x501) |
+| 61130 | Daxian CU928 | [DeviceBeast](https://devicebeast.com/devices/daxian-cu928) |
+| 61131 | Dopod 585 | [DeviceBeast](https://devicebeast.com/devices/dopod-585) |
+| 61132 | Dopod 699 | [DeviceBeast](https://devicebeast.com/devices/dopod-699) |
+| 61133 | Dopod 818 | [DeviceBeast](https://devicebeast.com/devices/dopod-818) |
+| 61134 | Dopod 828+ | [DeviceBeast](https://devicebeast.com/devices/dopod-828) |
+| 61135 | E-TEN InfoTouch M500 | [DeviceBeast](https://devicebeast.com/devices/e-ten-infotouch-m500) |
+| 61136 | Everex E900 | [DeviceBeast](https://devicebeast.com/devices/everex-e900) |
+| 61137 | FLY V25 | [IMEI.info](https://www.imei.info/phonedatabase/fly-v25/) |
+| 61138 | FLY V30 | [IMEI.info](https://www.imei.info/phonedatabase/fly-v30/) |
+| 61139 | HYUNDAI H-MP728 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-h-mp728/) |
+| 61140 | I-Mate PDA2 Pocket PC | [DeviceBeast](https://devicebeast.com/devices/i-mate-pda2-pocket-pc) |
+| 61141 | Krome Mega M900i | [DeviceBeast](https://devicebeast.com/devices/krome-mega-m900i) |
+| 61142 | Mobile Compia M2 | [DeviceBeast](https://devicebeast.com/devices/mobile-compia-m2) |
+| 61143 | Nokia 6155i | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_6155i) |
+| 61144 | Orange SPV C550 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-c550) |
+| 61145 | Orange SPV M2500 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-m2500) |
+| 61146 | Orange SPV M3000 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-m3000) |
+| 61147 | Orange SPV M500 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-m500) |
+| 61148 | Qtek 8200 | [DeviceBeast](https://devicebeast.com/devices/qtek-8200) |
+| 61149 | Silicon-i i800 | [DeviceBeast](https://devicebeast.com/devices/silicon-i-i800) |
+| 61150 | SOUTEC V76 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-v76/) |
+| 61151 | Vodafone v1620 | [DeviceBeast](https://devicebeast.com/devices/vodafone-v1620) |
+| 61152 | Vodafone VDA | [DeviceBeast](https://devicebeast.com/devices/vodafone-vda) |
+| 61153 | VOXTEL 3iD | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-3id/) |
+| 61154 | Dopod 535 | [DeviceBeast](https://devicebeast.com/devices/dopod-535) |
+| 61155 | Dopod 700 | [DeviceBeast](https://devicebeast.com/devices/dopod-700) |
+| 61156 | E-TEN InfoTouch P300B | [DeviceBeast](https://devicebeast.com/devices/e-ten-infotouch-p300b) |
+| 61157 | EMOL EL 909 | [IMEI.info](https://www.imei.info/phonedatabase/emol-el-909/) |
+| 61158 | EMOL EL 928 | [IMEI.info](https://www.imei.info/phonedatabase/emol-el-928/) |
+| 61159 | ENOL E200 | [IMEI.info](https://www.imei.info/phonedatabase/enol-e200/) |
+| 61160 | FLY FT20 | [IMEI.info](https://www.imei.info/phonedatabase/fly-ft20/) |
+| 61161 | FLY SC24 | [IMEI.info](https://www.imei.info/phonedatabase/fly-sc24/) |
+| 61162 | FLY V11 | [IMEI.info](https://www.imei.info/phonedatabase/fly-v11/) |
+| 61163 | FLY V15 | [IMEI.info](https://www.imei.info/phonedatabase/fly-v15/) |
+| 61164 | Hyundai A100 | [DeviceBeast](https://devicebeast.com/devices/hyundai-a100) |
+| 61165 | Krome Intellekt iQ200 | [DeviceBeast](https://devicebeast.com/devices/krome-intellekt-iq200) |
+| 61166 | Krome Intellekt iQ700 | [DeviceBeast](https://devicebeast.com/devices/krome-intellekt-iq700) |
+| 61167 | MiTAC Mio 8870 Digi-Walker | [DeviceBeast](https://devicebeast.com/devices/mitac-mio-8870-digi-walker) |
+| 61168 | Orange SPV C500 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-c500) |
+| 61169 | Orange SPV M2000 | [DeviceBeast](https://devicebeast.com/devices/orange-spv-m2000) |
+| 61170 | PalmOne Treo 650 | [DeviceBeast](https://devicebeast.com/devices/palmone-treo-650-cdma) |
+| 61171 | Psion Teklogix 7530 | [DeviceBeast](https://devicebeast.com/devices/psion-teklogix-7530) |
+| 61172 | UBIQUAM U-105 | [IMEI.info](https://www.imei.info/phonedatabase/ubiquam-u-105/) |
+| 61173 | VOXTEL BD-20 | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-bd-20/) |
+| 61174 | VOXTEL SC-10 | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-sc-10/) |
+| 61175 | BENQ 830C | [IMEI.info](https://www.imei.info/phonedatabase/benq-830c/) |
+| 61176 | CyberBank Triton 0880 | [DeviceBeast](https://devicebeast.com/devices/cyberbank-triton-0880) |
+| 61177 | Kyocera 7135 | [DeviceBeast](https://devicebeast.com/devices/kyocera-7135) |
+| 61178 | Palm Tungsten W | [DeviceBeast](https://devicebeast.com/devices/palm-tungsten-w) |
+| 61179 | PalmOne Treo 600 | [DeviceBeast](https://devicebeast.com/devices/palmone-treo-600-cdma) |
+| 61180 | Qtek 2060 | [DeviceBeast](https://devicebeast.com/devices/qtek-2060) |
+| 61181 | VK Mobile VG300 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vg300/) |
+| 61182 | ZETTA A10 | [IMEI.info](https://www.imei.info/phonedatabase/zetta-a10/) |
+| 61183 | Dopod 515 | [DeviceBeast](https://devicebeast.com/devices/dopod-515) |
+| 61184 | Dopod 686 | [DeviceBeast](https://devicebeast.com/devices/dopod-686) |
+| 61185 | Handspring Treo 270 | [DeviceBeast](https://devicebeast.com/devices/handspring-treo-270) |
+| 61186 | Siemens SX56 | [DeviceBeast](https://devicebeast.com/devices/siemens-sx56) |
+| 61187 | VK Mobile VG207 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vg207/) |
+| 61188 | Kyocera QCP 6035 | [DeviceBeast](https://devicebeast.com/devices/kyocera-qcp-6035) |
+| 61189 | BOSCH 510 | [IMEI.info](https://www.imei.info/phonedatabase/bosch-510/) |
+| 61190 | Huawei Mate 8 Small | [ZOL](https://detail.zol.com.cn/cell_phone/index1110121.shtml) |
+| 61191 | Walton Primo GH9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-gh9) |
+| 61192 | Accent Speed X2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-speed-x2-plus) |
+| 61193 | Acteck Dream Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/acteck-dream-plus) |
+| 61194 | Adcom A430 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/adcom-a430-plus) |
+| 61195 | Advan G1 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-g1-pro) |
+| 61196 | ADVAN i7 Plus | [IMEI.info](https://www.imei.info/phonedatabase/advan-i7-plus/) |
+| 61197 | Advan S5F Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5f-plus) |
+| 61198 | Advan S5X Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5x-plus) |
+| 61199 | AGM G1S Pro | [ZOL](https://detail.zol.com.cn/cell_phone/index1413591.shtml) |
+| 61200 | AGM Mobile AGM H5 PRO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/agm-mobile-agm-h5-pro) |
+| 61201 | AGM X2 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/agm-x2-pro) |
+| 61202 | ANYCOOL I9+++ | [IMEI.info](https://www.imei.info/phonedatabase/anycool-i9plusplusplus/) |
+| 61203 | AOSD S8 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aosd-s8-plus) |
+| 61204 | Aplus P500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aplus-p500) |
+| 61205 | Aplus Ultra Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aplus-ultra-mini) |
+| 61206 | Aplus Ultra Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aplus-ultra-pro) |
+| 61207 | Appletree T6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/appletree-t6-plus) |
+| 61208 | Asus ZenFone 5 Selfie Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asus-zenfone-5-selfie-pro) |
+| 61209 | Attila I8 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/attila-i8-plus) |
+| 61210 | Avio Sen Pro One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-sen-pro-one) |
+| 61211 | B MOBILE BM65 Pro | [IMEI.info](https://www.imei.info/phonedatabase/b-mobile-bm65-pro/) |
+| 61212 | Beeline Pro 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beeline-pro-6) |
+| 61213 | Benten A99 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/benten-a99-plus) |
+| 61214 | Beyond Gen 11 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beyond-gen-11-plus) |
+| 61215 | Billion-Capture Billion Capture Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/billion-capture-billion-capture-plus) |
+| 61216 | Blu C6L MAX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blu-c6l-max) |
+| 61217 | BluSens Smart Beauty Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-beauty-plus) |
+| 61218 | Bundy Access 5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bundy-access-5-plus) |
+| 61219 | Bundy Access 6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bundy-access-6-plus) |
+| 61220 | Cherry Mobile Flare Y3 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-flare-y3-pro) |
+| 61221 | Cherry Mobile Flare Y6 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-flare-y6-pro) |
+| 61222 | Chuwi Hi9 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/chuwi-hi9-plus) |
+| 61223 | CKK-mobile CKK mobile DUKE6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-duke6-plus) |
+| 61224 | CKTEL V10 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cktel-v10-plus) |
+| 61225 | CKTEL V2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cktel-v2-plus) |
+| 61226 | CKTEL V20 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cktel-v20-plus) |
+| 61227 | CloudFone Excite 401DX Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-excite-401dx-plus) |
+| 61228 | CloudFone Geo 401Q Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-geo-401q-plus) |
+| 61229 | CloudFone Thrill Boost 2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-thrill-boost-2-plus) |
+| 61230 | CMF by Nothing Phone 2 Pro | [Gadgets 360](https://www.gadgets360.com/cmf-by-nothing-phone-2-pro-price-in-india-131826) |
+| 61231 | Colors Mobile P85 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-p85-plus) |
+| 61232 | Colors Mobile P85 Plus Selfie Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-p85-plus-selfie-pro) |
+| 61233 | Colors Mobile X40 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x40-plus) |
+| 61234 | Creev Mark V Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/creev-mark-v-plus) |
+| 61235 | CROSSCALL Odyssey Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/crosscall-crosscall-odyssey-plus) |
+| 61236 | Cubit Topaz 3G Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cubit-topaz-3g-plus) |
+| 61237 | Digicel DL1 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl1-plus) |
+| 61238 | DOOGEE T40 Pro | [IMEI.info](https://www.imei.info/phonedatabase/doogee-t40-pro/) |
+| 61239 | DPA H3 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dpa-h3-plus) |
+| 61240 | DTAC Happy Phone 4-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtac-happy-phone-4-0-plus) |
+| 61241 | Duoqin Qin3 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/duoqin-qin3-pro) |
+| 61242 | Duoqin Qin3 Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/duoqin-qin3-ultra) |
+| 61243 | Energy Sistem Max 3 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energy-sistem-max-3-plus) |
+| 61244 | Energy Sistem Pro HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energy-sistem-pro-hd) |
+| 61245 | Ergo F242 Turbo | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f242turbo/) |
+| 61246 | Eurostar Onyx 1 Plus LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eurostar-onyx-1-plus-lte) |
+| 61247 | Evolio M5 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-m5-pro) |
+| 61248 | ExMobile Chat 3 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-3-plus) |
+| 61249 | ExMobile Chat 4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-4-plus) |
+| 61250 | ExMobile Chat 9 Max | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-9-max) |
+| 61251 | F2-Mobile F2 Mobile F80S Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/f2-mobile-f2-mobile-f80s-plus) |
+| 61252 | Funker Smart Pro A822 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-smart-pro-a822) |
+| 61253 | G-Plus B916 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-b916) |
+| 61254 | G-Plus BE31 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-be31) |
+| 61255 | G-Plus E3 Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-e3-mini) |
+| 61256 | G-Plus G928 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-g928) |
+| 61257 | G-PLUS Gionee E3T | [PhoneCopy](https://www.phonecopy.com/en/phones/view/g-plus_gionee_e3t) |
+| 61258 | G-PLUS Gionee M12 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/g-plus_gionee_m12) |
+| 61259 | G-PLUS Gionee Pioneer P1 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/g-plus_gionee_pioneer_p1) |
+| 61260 | G-Plus GN181 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gn181) |
+| 61261 | G-Plus GN800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gn800) |
+| 61262 | G-Plus GN810 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gn810) |
+| 61263 | G-Plus GN858 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gn858) |
+| 61264 | G-Plus Gplus M55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gplus-m55) |
+| 61265 | G-Plus M600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-m600) |
+| 61266 | G-Plus M857 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-m857) |
+| 61267 | GFive A7+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/a7plus/) |
+| 61268 | GFive U707+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/u707plus/) |
+| 61269 | GLX Maad Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/glx-maad-plus) |
+| 61270 | GMango MS6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gmango-ms6-plus) |
+| 61271 | Gmate 6577 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gmate-gmate-6577-plus) |
+| 61272 | Gomax Eagle Eye Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-eagle-eye-pro) |
+| 61273 | GTel A718 Xplora Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a718-xplora-plus) |
+| 61274 | GTel A727 Infinity Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a727-infinity-pro) |
+| 61275 | GTel A770 SL8 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a770-sl8-pro) |
+| 61276 | Hero H7500 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-h7500-plus) |
+| 61277 | Hi-Tech Air A3I Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-air-a3i-plus) |
+| 61278 | Hi-Tech Amaze S5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-amaze-s5-plus) |
+| 61279 | Highscreen Power Five Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/highscreen-power-five-pro) |
+| 61280 | HiSense H11 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-h11-pro) |
+| 61281 | HiSense y82 pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-y82-pro) |
+| 61282 | Hiya Kolab Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hiya-kolab-pro) |
+| 61283 | HKPhone Revo Max 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkphone-revo-max-8) |
+| 61284 | Hocom Lica Plus 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hocom-lica-plus-2) |
+| 61285 | Hocom Ultra 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hocom-ultra-5) |
+| 61286 | Honor 5A Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index1145597.shtml) |
+| 61287 | Honor Play 8T Pro | [GSMchoice](https://www.gsmchoice.com/en/catalogue/honor/play-8t-pro/) |
+| 61288 | Honor V8 Max | [ZOL](https://detail.zol.com.cn/cell_phone/index1148529.shtml) |
+| 61289 | Hotwav A26 Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-a26-ultra) |
+| 61290 | Hotwav Cosmos V19 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v19-plus) |
+| 61291 | Hotwav IP6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-ip6-plus) |
+| 61292 | Hotwav Venus R8 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-r8-plus) |
+| 61293 | HSL Yuva Y501 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hsl-yuva-y501-plus) |
+| 61294 | Huawei Honor X10 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/huawei-honor-x10-pro) |
+| 61295 | Hyundai L503Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-l503plus) |
+| 61296 | Hyundai Q5I Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-q5i-plus) |
+| 61297 | Hyundai Ultra Active | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-active) |
+| 61298 | Hyundai Ultra Charm | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-charm) |
+| 61299 | Hyundai Ultra Energy Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-energy-lite) |
+| 61300 | Hyundai Ultra Latitude | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-latitude) |
+| 61301 | Hyundai Ultra Live II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-live-ii) |
+| 61302 | Hyundai Ultra Touch | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-touch) |
+| 61303 | Hyundai Ultra Wave | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-ultra-wave) |
+| 61304 | i.Robot i-Robot Ecanus Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/irobot-i-robot-ecanus-plus) |
+| 61305 | iHunt ALIEN X PRO 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-alien-x-pro-2021) |
+| 61306 | iHunt P22000 Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-p22000-ultra) |
+| 61307 | iHunt S20 Plus Apex 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-s20-plus-apex-2021) |
+| 61308 | iHunt S20 Ultra Apex 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-s20-ultra-apex-2021) |
+| 61309 | iHunt S21_Plus_2021_EEA | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-s21-plus-2021-eea) |
+| 61310 | iHunt S30 ULTRA APEX 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-s30-ultra-apex-2021) |
+| 61311 | iHunt S60 Discovery Plus 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-s60-discovery-plus-2021) |
+| 61312 | iHUNT Titan P13000 Pro | [IMEI.info](https://www.imei.info/phonedatabase/ihunt-titan-p13000-pro/) |
+| 61313 | iHunt Titan P4000 Pro 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-titan-p4000-pro-2021) |
+| 61314 | iHunt Titan P6000 Pro 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-titan-p6000-pro-2021) |
+| 61315 | iLife Spark 4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilife-spark-4-plus) |
+| 61316 | iLike X3 Pro Slim | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilike-x3-pro-slim) |
+| 61317 | Imi Goals 4G Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-goals-4g-plus) |
+| 61318 | Imi Newton 6-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-newton-6-0-plus) |
+| 61319 | IMO Q4 Pro 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-q4-pro-2021) |
+| 61320 | Imobily I30 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imobily-i30-pro) |
+| 61321 | Infone Extreme 5-5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-5-5-plus) |
+| 61322 | Infone Extreme 7 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-7-plus) |
+| 61323 | Inovo I-401 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i-401-plus) |
+| 61324 | iOne Max Find 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ione-max-find-5-0) |
+| 61325 | iOne Max One 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ione-max-one-5-5) |
+| 61326 | iOne Max Plus 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ione-max-plus-5-5) |
+| 61327 | Iris I-S4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iris-i-s4-plus) |
+| 61328 | Iris VOX4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iris-vox4-plus) |
+| 61329 | iStar I7 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/istar-i7-plus) |
+| 61330 | iStar I8 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/istar-i8-plus) |
+| 61331 | iStar Mate 8 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/istar-mate-8-plus) |
+| 61332 | itel S17 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-s17-pro) |
+| 61333 | itel S21 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-s21-pro) |
+| 61334 | itel S22 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-s22-pro) |
+| 61335 | itel Selfie Pro it1511 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-selfie-pro-it1511) |
+| 61336 | Itel Vision 1 Pro L6502 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/itel_vision_1_pro_l6502) |
+| 61337 | iTouch HD88 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itouch-hd88-plus) |
+| 61338 | K-Touch T780 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-t780-plus) |
+| 61339 | K-TOUCH W700+ | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-w700plus/) |
+| 61340 | Karbonn Rebel Pro | [Gadgets 360](https://www.gadgets360.com/karbonn-rebel-pro-price-in-india-137974) |
+| 61341 | KGTEL Nova 10 Pro 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kgtel-nova-10-pro-4g) |
+| 61342 | Kiano Elegance 5-5 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kiano-elegance-5-5-pro) |
+| 61343 | KN-Mobile KN Mobile H60 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h60-plus) |
+| 61344 | Komu K2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k2-plus) |
+| 61345 | Komu K2 Plus Neo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k2-plus-neo) |
+| 61346 | Kruger-Matz Flow 5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-flow-5-plus) |
+| 61347 | Kruger-Matz Live 5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-live-5-plus) |
+| 61348 | L-Max Crystal 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-crystal-1) |
+| 61349 | L-Max Daimon 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-daimon-1) |
+| 61350 | L-Max Daimon 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-daimon-2) |
+| 61351 | L-Max Daimon 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-daimon-3) |
+| 61352 | L-Max Daimon 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-daimon-4) |
+| 61353 | L-Max Daimon 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-daimon-6) |
+| 61354 | L-Max Ester 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-ester-1) |
+| 61355 | L-Max Ester 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-ester-2) |
+| 61356 | L-Max Mega Plus 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-mega-plus-1) |
+| 61357 | L-Max Mega Plus 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-mega-plus-2) |
+| 61358 | L-Max Mega Plus 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-mega-plus-3) |
+| 61359 | L-Max Sapphire 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-2) |
+| 61360 | L-Max Sapphire 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-3) |
+| 61361 | L-Max Sapphire 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-4) |
+| 61362 | L-Max Sapphire 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-5) |
+| 61363 | L-Max Sapphire 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-6) |
+| 61364 | L-Max Sapphire 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-sapphire-8) |
+| 61365 | L-Max Zenon 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/l-max-zenon-1) |
+| 61366 | Logic X5 Lite Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logic-x5-lite-plus) |
+| 61367 | Logicom Cosmo M2 Pro | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/cosmo-m2-pro/) |
+| 61368 | Logicom L-ITE 502 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-ite-502-plus) |
+| 61369 | Logicom Vision X3 Max | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/vision-x3-max/) |
+| 61370 | Malata N501 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-n501-plus) |
+| 61371 | Maximus MAX 903i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maximus-max-903i) |
+| 61372 | Maximus Vjoy Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maximus-vjoy-plus) |
+| 61373 | MeanIT Q1 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meanit-q1-plus) |
+| 61374 | MegaFon SIM Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-sim-plus) |
+| 61375 | Meizu PRO 6 edge | [ZOL](https://detail.zol.com.cn/cell_phone/index1161814.shtml) |
+| 61376 | Meizu Pro 7s | [DeviceBeast](https://devicebeast.com/devices/meizu-pro-7s-dual-sim-td-lte-cn-128gb-m792q-l-m792c-l) |
+| 61377 | MGT Bright 5-5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mgt-bright-5-5-plus) |
+| 61378 | Mione I6S Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-i6s-plus) |
+| 61379 | Mione I7S Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-i7s-plus) |
+| 61380 | Mione Mix 9 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-mix-9-pro) |
+| 61381 | Mobicel IX PRO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicell-ix-pro) |
+| 61382 | Mobicel P11 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-p11-plus) |
+| 61383 | Mobicel RX Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-rx-plus) |
+| 61384 | Mobilink Jazz X JS7 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobilink-jazz-x-js7-pro) |
+| 61385 | Motorola Moto X Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index402875.shtml) |
+| 61386 | MPai MP-I9200 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpai-mpai-mp-i9200-plus) |
+| 61387 | MTS Smart Turbo 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-turbo-4g) |
+| 61388 | MTT M-T-T Smart Max 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtt-m-t-t-smart-max-4g) |
+| 61389 | MXNEC S807 Max | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s807-max) |
+| 61390 | Netway N7 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/netway-n7-plus) |
+| 61391 | NEX Start 8 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-start-8-plus) |
+| 61392 | Ninetology Z1 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-z1-plus) |
+| 61393 | Nipda Tsunami IP6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-tsunami-ip6-plus) |
+| 61394 | Nova N14 Edge | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-n14-edge) |
+| 61395 | Novo Borneo Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/novo-borneo-pro) |
+| 61396 | NZONE S7 PRO 5G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nzone-s7-pro-5g) |
+| 61397 | NZONE S7 PRO+ 5G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nzone-s7-pro-plus-5g) |
+| 61398 | Ooredoo Smart 12 4G Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ooredoo-smart-12-4g-plus) |
+| 61399 | OPhone Newton Edge | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ophone-ophone-newton-edge) |
+| 61400 | OPlus 8-37Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-8-37z) |
+| 61401 | OPlus 8-98 Android | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-8-98-android) |
+| 61402 | OPlus Presto 700 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-presto-700-lte) |
+| 61403 | OPlus Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-ultra) |
+| 61404 | OPlus Ultra 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-ultra-3) |
+| 61405 | OPlus Velocity LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oplus-oplus-velocity-lte) |
+| 61406 | Phicomm Clue Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-clue-plus) |
+| 61407 | Phicomm Energy 3 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-energy-3-plus) |
+| 61408 | Phonemax Venus Plus Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phonemax-venus-plus-pro) |
+| 61409 | Piranha IQ Pro G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/piranha-iq-pro-g) |
+| 61410 | Polaroid Pro 4611 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro-4611) |
+| 61411 | Polaroid Pro G150 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro-g150) |
+| 61412 | Polaroid Pro V400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro-v400) |
+| 61413 | Quantum MUV Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-muv-pro) |
+| 61414 | Reeder S19 Max | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reeder-s19-max) |
+| 61415 | Reliance Jive Pro Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reliance-jive-pro-plus) |
+| 61416 | RLG Uhuru Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-uhuru-pro) |
+| 61417 | Samsung Galaxy A5 HSPA | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya5hspa/) |
+| 61418 | Samsung Galaxy A8+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya8plus/) |
+| 61419 | Samsung Galaxy Note Edge SCL24 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynoteedgescl24/) |
+| 61420 | Samsung Galaxy On5 2016 4G+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyon520164gplus/) |
+| 61421 | Samsung Galaxy S III Neo+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxysiiineoplus/) |
+| 61422 | Samsung Galaxy S10+ SD855 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-s10-plus-sd855) |
+| 61423 | Samsung Galaxy S6 Edge Avengers | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxys6edgeavengers/) |
+| 61424 | Samsung GALAXY S7 Edge Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index1135541.shtml) |
+| 61425 | Samsung GALAXY S7 Plus | [ZOL](https://detail.zol.com.cn/cell_phone/index1135456.shtml) |
+| 61426 | Samsung Galaxy S8+ SD835 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-s8-sd835) |
+| 61427 | SKY DEVICES Platinum 5.0 Plus | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-platinum-50-plus/) |
+| 61428 | Sky-Devices Elite MAX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-max) |
+| 61429 | Sky-Devices Sky 5-0 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-5-0-pro) |
+| 61430 | Sky-Devices Sky Devices Elite Photo Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-devices-elite-photo-pro) |
+| 61431 | Sky-Devices Sky Elite 5-0L Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-5-0l-plus) |
+| 61432 | Sky-Devices Sky Elite 5-5L Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-5-5l-plus) |
+| 61433 | Sky-Devices Sky Elite 6-0L Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-6-0l-plus) |
+| 61434 | Sky-Devices Sky Fuego 5-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-fuego-5-0-plus) |
+| 61435 | Smartisan Nut Pro 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smartisan-nut-pro-2) |
+| 61436 | Solone SL-KA4 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-sl-ka4-plus) |
+| 61437 | Sony Xperia Edge | [ZOL](https://detail.zol.com.cn/cell_phone/index1162212.shtml) |
+| 61438 | Sony Xperia Z6 Ultra | [ZOL](https://detail.zol.com.cn/cell_phone/index1116867.shtml) |
+| 61439 | SparX Ultra 11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sparx-ultra-11) |
+| 61440 | SparX Ultra 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sparx-ultra-8) |
+| 61441 | SPC Zeus 2 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-zeus-2-pro) |
+| 61442 | Spinup A1 Plus Four | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spinup-a1-plus-four) |
+| 61443 | Spinup A1 Plus One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spinup-a1-plus-one) |
+| 61444 | Spinup A1 Plus Three | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spinup-a1-plus-three) |
+| 61445 | Star S5A Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-s5a-plus) |
+| 61446 | STK Sync 5Z Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stk-sync-5z-plus) |
+| 61447 | Stonex Stx Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-stx-ultra) |
+| 61448 | Stonex STX Ultra 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-stx-ultra-2) |
+| 61449 | Symphony P7 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-p7-pro) |
+| 61450 | Symphony Z60 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-z60-plus) |
+| 61451 | T-Max Innocent i451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/t-max-innocent-i451) |
+| 61452 | Tecno L9 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-l9-plus) |
+| 61453 | Tecno WX3 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-wx3-pro) |
+| 61454 | Telego Wise 2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telego-wise-2-plus) |
+| 61455 | Telma F1 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telma-f1-plus) |
+| 61456 | Tmovi Yeah Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tmovi-yeah-plus) |
+| 61457 | True Smart 4G M1 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-m1-plus) |
+| 61458 | True Smart 4G Max 4-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-max-4-0) |
+| 61459 | True Smart 4G Max 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-max-5-0) |
+| 61460 | True Smart 4G Max 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-max-5-5) |
+| 61461 | True Smart 4G Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-plus) |
+| 61462 | True Smart 4G Speedy 4-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-speedy-4-0-plus) |
+| 61463 | True Smart 4G Speedy 4-0 Plus V03 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-speedy-4-0-plus-v03) |
+| 61464 | True Smart 4G Speedy 5-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-speedy-5-0-plus) |
+| 61465 | True Smart A2 5-0 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-a2-5-0-plus) |
+| 61466 | Turbo-X E3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-e3) |
+| 61467 | Turbo-X Epsilon | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-epsilon) |
+| 61468 | Turbo-X G400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g400) |
+| 61469 | Turbo-X G410 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g410) |
+| 61470 | Turbo-X G510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g510) |
+| 61471 | Turbo-X G510S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g510s) |
+| 61472 | Turbo-X Lambda | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-lambda) |
+| 61473 | Turbo-X O | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-o) |
+| 61474 | Turbo-X Y | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-y) |
+| 61475 | Turbo-X Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-z) |
+| 61476 | Umeox A502+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/umeox/a502plus/) |
+| 61477 | Unihertz Tank 2 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-2-pro) |
+| 61478 | Unihertz Tank 3 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-3-pro) |
+| 61479 | Unihertz Tank 4 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-4-pro) |
+| 61480 | VC Cactus Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-cactus-pro) |
+| 61481 | Vexia Zippers 5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vexia-zippers-5-plus) |
+| 61482 | Vipro Pro 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vipro-pro-1) |
+| 61483 | Vortex HD65 PLUS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vortex-hd65-plus) |
+| 61484 | Walton NEXG N71 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-nexg-n71-plus) |
+| 61485 | Winds 3G Note Max | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-3g-note-max) |
+| 61486 | Winds Grace II Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-grace-ii-plus) |
+| 61487 | Winds Grace V Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-grace-v-plus) |
+| 61488 | Winds Note Max II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-max-ii) |
+| 61489 | X-TIGI A20S Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-tigi-a20s-pro) |
+| 61490 | Xgody 9T Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-9t-pro) |
+| 61491 | Xgody A90 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-a90-pro) |
+| 61492 | Xgody K20 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-k20-pro) |
+| 61493 | Xgody K30 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-k30_pro) |
+| 61494 | Xgody S20+ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-s20-plus) |
+| 61495 | Xiaomi edge | [ZOL](https://detail.zol.com.cn/cell_phone/index1147452.shtml) |
+| 61496 | Xplay IPH7 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xplay-iph7-plus) |
+| 61497 | Zero Metal Plus M70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zero-metal-plus-m70) |
+| 61498 | ZTE Z999 plus | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_z999_plus) |
+| 61499 | 3GO Droxio A47 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-a47) |
+| 61500 | 3GO Droxio B50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-b50) |
+| 61501 | 3GO Droxio B51 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-b51) |
+| 61502 | 3GO Droxio Eliantus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-eliantus) |
+| 61503 | 3GO Droxio Kentia | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-kentia) |
+| 61504 | 3GO Droxio Senna | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/3go-droxio-senna) |
+| 61505 | Accent Cameleon A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-cameleon-a1) |
+| 61506 | Accent Cameleon H2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-cameleon-h2) |
+| 61507 | Accent Fast 7 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-fast-7-4g) |
+| 61508 | Accent Neon | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-neon) |
+| 61509 | Accent Speed M2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-speed-m2) |
+| 61510 | Accent Speed X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-speed-x1) |
+| 61511 | Accent Speed X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-speed-x2) |
+| 61512 | Accent Speed Y2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-speed-y2) |
+| 61513 | Accent Xeon S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accent-xeon-s) |
+| 61514 | AccessGo Access GO A4E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accessgo-access-go-a4e) |
+| 61515 | AccessGo Gotune 3I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accessgo-gotune-3i) |
+| 61516 | AccessGo Gotune 5S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accessgo-gotune-5s) |
+| 61517 | Admet AD601 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/admet-ad601) |
+| 61518 | Admiral 410 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/admiral-410) |
+| 61519 | Admiral 506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/admiral-506) |
+| 61520 | Admiral 513 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/admiral-513) |
+| 61521 | Advan I4D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-i4d) |
+| 61522 | Advan i5C Duo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-i5c-duo) |
+| 61523 | Advan i6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-i6) |
+| 61524 | Advan i6C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-i6c) |
+| 61525 | Advan S45C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s45c) |
+| 61526 | Advan S4D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s4d) |
+| 61527 | Advan S4J | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s4j) |
+| 61528 | Advan S4P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s4p) |
+| 61529 | Advan S4Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s4q) |
+| 61530 | Advan S50A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s50a) |
+| 61531 | Advan S5G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5g) |
+| 61532 | Advan S5L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5l) |
+| 61533 | Advan S5M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5m) |
+| 61534 | Advan S5Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5q) |
+| 61535 | Advan S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s6) |
+| 61536 | Advan S6A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s6a) |
+| 61537 | Advan Vandroid T2i II Capacitive | [PhoneCopy](https://www.phonecopy.com/en/phones/view/advan_vandroid_t2i_ii_capacitive) |
+| 61538 | Advance Hollogram HL 5534 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advance-hollogram-hl-5534) |
+| 61539 | Advance Hollogram HL5446 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advance-hollogram-hl5446) |
+| 61540 | AEG AX500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aeg-ax500) |
+| 61541 | AEG AX505 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aeg-ax505) |
+| 61542 | AEG AX700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aeg-ax700) |
+| 61543 | AG-mobile AG Chrome | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ag-mobile-ag-chrome) |
+| 61544 | AG-mobile AG E4010 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ag-mobile-ag-e4010) |
+| 61545 | AG-mobile AG Style | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ag-mobile-ag-style) |
+| 61546 | AGM G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/agm-g3) |
+| 61547 | AGM Mobile AGM H5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/agm-mobile-agm-h5) |
+| 61548 | Airis TM420M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm420m) |
+| 61549 | Airis TM421M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm421m) |
+| 61550 | Airis TM45DM | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm45dm) |
+| 61551 | Airis TM45Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm45q) |
+| 61552 | Airis TM485M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm485m) |
+| 61553 | Airis TM50Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm50q) |
+| 61554 | Airis TM50QS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm50qs) |
+| 61555 | Airis TM50QZ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm50qz) |
+| 61556 | Airis TM51Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm51q) |
+| 61557 | Airis TM520 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm520) |
+| 61558 | Airis TM520m | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm520m) |
+| 61559 | Airis TM54QM | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm54qm) |
+| 61560 | Airis TM55Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm55q) |
+| 61561 | Airis TM55QZ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm55qz) |
+| 61562 | Airis TM55S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm55s) |
+| 61563 | Airis TM55SW | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm55sw) |
+| 61564 | Airis TM570 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm570) |
+| 61565 | Airis TM5HL | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm5hl) |
+| 61566 | Airis TM60D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm60d) |
+| 61567 | Airis TM60I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm60i) |
+| 61568 | Airis TM6SI | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm6si) |
+| 61569 | Akai Glory 03 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-glory-03) |
+| 61570 | Akai Glory G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-glory-g3) |
+| 61571 | Akai Glory L3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-glory-l3) |
+| 61572 | Akai Hero | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-hero) |
+| 61573 | Akai N8800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-n8800) |
+| 61574 | Akai X6 Metal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-x6-metal) |
+| 61575 | Alcatel 1060 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/alcatel/1060/) |
+| 61576 | Alcatel One Touch 4033D | [GSMchoice](https://www.gsmchoice.com/en/catalogue/alcatel/onetouch4033d/) |
+| 61577 | ALCATEL One Touch 888 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-888/) |
+| 61578 | Alcatel One touch 903 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_903) |
+| 61579 | Alcatel One Touch 996 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_996) |
+| 61580 | Alcatel One Touch S'Pop Hello Kitty | [GSMchoice](https://www.gsmchoice.com/en/catalogue/alcatel/onetouchspophellokitty/) |
+| 61581 | Alcatel One touch Scribe | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_scribe) |
+| 61582 | Alcatel Vodafone 355 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/alcatel/vodafone355/) |
+| 61583 | Alco 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/alco-9) |
+| 61584 | Aligator RX460 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aligator-rx460) |
+| 61585 | Aligator S4040 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aligator-s4040) |
+| 61586 | Aligator S4080 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aligator-s4080) |
+| 61587 | Aligator S5060 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aligator-s5060) |
+| 61588 | Aligator S5500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aligator-s5500) |
+| 61589 | Allview Soul X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/allview-soul-x5) |
+| 61590 | Amgoo AM407 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-am407) |
+| 61591 | Amgoo AM513 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-amgoo-am513) |
+| 61592 | Amgoo AM526 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-am526) |
+| 61593 | AMOI Clever Gem S52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amoi-amoi-clever-gem-s52) |
+| 61594 | AMOI N806 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amoi-amoi-n806) |
+| 61595 | AMOI N890 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amoi-amoi-n890) |
+| 61596 | Amosta 3G5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amosta-3g5) |
+| 61597 | Andromax A26C4H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/andromax-a26c4h) |
+| 61598 | Andromax AD683G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/andromax-ad683g) |
+| 61599 | Andromax AD683J | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/andromax-ad683j) |
+| 61600 | Andromax AD686G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/andromax-ad686g) |
+| 61601 | Andromax B26D2H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/andromax-b26d2h) |
+| 61602 | Angage A310 Gold | [GSMchoice](https://www.gsmchoice.com/en/catalogue/angage/a310-gold/) |
+| 61603 | Angage Maxx | [GSMchoice](https://www.gsmchoice.com/en/catalogue/angage/maxx/) |
+| 61604 | AOSD Q33 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aosd-q33) |
+| 61605 | AOSD Q55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aosd-q55) |
+| 61606 | Appletree Note 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/appletree-note-5) |
+| 61607 | Aqua Mobile Jazz S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aqua-mobile-jazz-s1) |
+| 61608 | AraTop AS-07 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aratop-as-07) |
+| 61609 | Argom E400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/argom-e400) |
+| 61610 | Argom E500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/argom-e500) |
+| 61611 | Arise AR42 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/arise-ar42) |
+| 61612 | Artel ADI5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/artel-adi5) |
+| 61613 | Asiafone AF9877 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9877) |
+| 61614 | Asiafone AF9900 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9900) |
+| 61615 | Asiafone AF9908 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9908) |
+| 61616 | Asiafone AF9909 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9909) |
+| 61617 | Asiafone AF9919 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9919) |
+| 61618 | Asiafone Asiadroid AF10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af10) |
+| 61619 | Asiafone Asiadroid AF15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af15) |
+| 61620 | Asiafone Asiadroid AF19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af19) |
+| 61621 | Asiafone Asiadroid AF92 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af92) |
+| 61622 | Asiafone Asiadroid AF93 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af93) |
+| 61623 | Asiafone Asiadroid AF99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af99) |
+| 61624 | ASK SP509 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ask-sp509-3g) |
+| 61625 | ASK SP511 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ask-sp511-4g) |
+| 61626 | ASK SP554 HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ask-sp554-hd) |
+| 61627 | Assistant AP-108G Cetus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/assistant-ap-108g-cetus) |
+| 61628 | Astarry Sun 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/astarry-sun-1) |
+| 61629 | Astarry Sun 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/astarry-sun-4) |
+| 61630 | Aston Infinite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aston-infinite) |
+| 61631 | Aston Thunder | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aston-thunder) |
+| 61632 | Astro Genesis Phab | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/astro-genesis-phab) |
+| 61633 | Astro S450RX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/astro-s450rx) |
+| 61634 | Astro S500 RX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/astro-s500-rx) |
+| 61635 | Asus ZenFone Pegasus 4A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asus-zenfone-pegasus-4a) |
+| 61636 | Attila M8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/attila-m8) |
+| 61637 | Attila S7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/attila-s7) |
+| 61638 | Attila S8 Mix | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/attila-s8-mix) |
+| 61639 | Aux V936 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aux-v936) |
+| 61640 | Avenzo AV114 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avenzo-av114) |
+| 61641 | Avenzo AV115 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avenzo-av115) |
+| 61642 | Avenzo Xirius 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avenzo-xirius-5) |
+| 61643 | Avio S21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-s21) |
+| 61644 | Avio S22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-s22) |
+| 61645 | Avio Sen S3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-sen-s3) |
+| 61646 | Avio Sen S4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-sen-s4) |
+| 61647 | Avio Sen S51 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-sen-s51) |
+| 61648 | Avvio L800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avvio-l800) |
+| 61649 | Axioo AX7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-ax7) |
+| 61650 | Axioo M5C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-m5c) |
+| 61651 | Axioo Picophone 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-picophone-4) |
+| 61652 | Axioo Picophone M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-picophone-m1) |
+| 61653 | Axioo Picophone M2 M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-picophone-m2-m) |
+| 61654 | Axioo Picophone M4N | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-picophone-m4n) |
+| 61655 | Axioo Picophone M4S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/axioo-picophone-m4s) |
+| 61656 | Azumi Iro A5Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/azumi-iro-a5q) |
+| 61657 | AZUMI Iro A6Q | [IMEI.info](https://www.imei.info/phonedatabase/azumi-iro-a6q/) |
+| 61658 | Azumi KL40TV | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/azumi-kl40tv) |
+| 61659 | Azumi Mega Taicho | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/azumi-mega-taicho) |
+| 61660 | Bauhn AAP553G-315 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-aap553g-315) |
+| 61661 | Bauhn AHD5-114 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-ahd5-114) |
+| 61662 | Bauhn ASP 5000H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-asp-5000h) |
+| 61663 | Bauhn ASP-4500Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-asp-4500z) |
+| 61664 | Bauhn Sphere B5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-sphere-b5) |
+| 61665 | BB-mobile Techno X595BT | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bb-mobile-bb-mobile-techno-x595bt) |
+| 61666 | be SC030S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/be-be-sc030s) |
+| 61667 | be Social SC010 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/be-be-social-sc010) |
+| 61668 | be UN020S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/be-be-un020s) |
+| 61669 | Beeline A239S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beeline-a239s) |
+| 61670 | Beeline E700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beeline-e700) |
+| 61671 | Beeline Fast HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beeline-fast-hd) |
+| 61672 | Beeline Smart | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beeline-smart) |
+| 61673 | Beex Flare | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beex-flare) |
+| 61674 | Beex Luna | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beex-luna) |
+| 61675 | Beex M5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beex-m5) |
+| 61676 | Beex M50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beex-m50) |
+| 61677 | Beex Magnum | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beex-magnum) |
+| 61678 | Bellphone BP138 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bellphone-bp138) |
+| 61679 | Bellphone BP326 Forte | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bellphone-bp326-forte) |
+| 61680 | Benten A668 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/benten-a668) |
+| 61681 | Beyond B988 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beyond-b988) |
+| 61682 | BGH A7G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bgh-a7g) |
+| 61683 | BGH Joy Smart A6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bgh-joy-smart-a6) |
+| 61684 | BGH Joy V6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bgh-joy-v6) |
+| 61685 | Bitel B8407 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8407) |
+| 61686 | Bitel B8411 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8411) |
+| 61687 | Bitel B8416 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8416) |
+| 61688 | Bitel B8601 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8601) |
+| 61689 | Bitel B8604 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8604) |
+| 61690 | Bitel B9504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b9504) |
+| 61691 | Bitel S8402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-s8402) |
+| 61692 | Bitel S8402L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-s8402l) |
+| 61693 | Bitel S8501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-s8501) |
+| 61694 | Blackview Link 8 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackview/link-8/) |
+| 61695 | Blackview Zeno 6 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackview/zeno-6/) |
+| 61696 | BlackZone C3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/c3/) |
+| 61697 | BlackZone C99 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/c99/) |
+| 61698 | BlackZone S12 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/s12/) |
+| 61699 | BlackZone S16 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/s16/) |
+| 61700 | BlackZone Warrior | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/warrior/) |
+| 61701 | BLU J6L | [IMEI.info](https://www.imei.info/phonedatabase/blu-j6l/) |
+| 61702 | BLU Studio Selfie 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blu-studio-selfie-3) |
+| 61703 | BLU V91 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blu-v91) |
+| 61704 | BLU Vivo XL6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blu-vivo-xl6) |
+| 61705 | BlueBo B9502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bluebo-b9502) |
+| 61706 | Bluego G509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bluego-g509) |
+| 61707 | Bluego G559T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bluego-g559t) |
+| 61708 | Blumix Mate 9I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blumix-mate-9i) |
+| 61709 | BluSens Smart Beauty | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-beauty) |
+| 61710 | BluSens Smart Elegance | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-elegance) |
+| 61711 | BluSens Smart Elegance 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-elegance-3) |
+| 61712 | BluSens Smart Studio 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-studio-2) |
+| 61713 | BluSens Smart Studio 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-studio-4) |
+| 61714 | BluSens Smart Studio 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-studio-5) |
+| 61715 | BluSens Smart Studio DC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/blusens-blusens-smart-studio-dc) |
+| 61716 | Bmobile AX1030 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bmobile-ax1030) |
+| 61717 | Bmobile AX540 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bmobile-ax540) |
+| 61718 | BMobile B55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bmobile-b55) |
+| 61719 | Bogo BO-LFSPSL6QCI | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bogo-bo-lfspsl6qci) |
+| 61720 | Boltt Ace 5G | [Gadgets 360](https://www.gadgets360.com/boltt-ace-5g-price-in-india-137317) |
+| 61721 | Boost Pulse Glide | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-pulse-glide) |
+| 61722 | Boost Pulse Retro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-pulse-retro) |
+| 61723 | Boost Shaker Beat | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-shaker-beat) |
+| 61724 | Boost Shaker Slim | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-shaker-slim) |
+| 61725 | Boost View 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-view-5-0) |
+| 61726 | Bouygues Telecom BS 451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bouygues-telecom-bs-451) |
+| 61727 | Bouygues Telecom Ultym 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bouygues-telecom-ultym-5) |
+| 61728 | Boway U5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boway-u5) |
+| 61729 | bq 4501G Fox Easy | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/4501gfoxeasy/) |
+| 61730 | bq 5000G Velvet Easy | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5000gvelveteasy/) |
+| 61731 | bq 5004G Fox | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5004gfox/) |
+| 61732 | bq 5011G Fox View | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5011gfoxview/) |
+| 61733 | bq 5047l | [PhoneCopy](https://www.phonecopy.com/en/phones/view/bq_5047l) |
+| 61734 | bq 5300G Velvet | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5300gvelvet/) |
+| 61735 | bq 5514G Strike Power | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5514gstrikepower/) |
+| 61736 | bq 5514L Strike Power 4G | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/5514lstrikepower4g/) |
+| 61737 | bq 6010G Practic | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/6010gpractic/) |
+| 61738 | bq U2 Lite | [GSMchoice](https://www.gsmchoice.com/en/catalogue/bq/u2lite/) |
+| 61739 | Brandcode B11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b11) |
+| 61740 | Brandcode B38S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b38s) |
+| 61741 | Brandcode B4S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b4s) |
+| 61742 | Brandcode B6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b6s) |
+| 61743 | Brandcode B77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b77) |
+| 61744 | Brandcode B7S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b7s) |
+| 61745 | Brandcode B8800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brandcode-b8800) |
+| 61746 | Brava DM-992 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brava-dm-992) |
+| 61747 | Brigmton BPhone 450QC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brigmton-bphone-450qc) |
+| 61748 | Brondi 501 SZ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-501-sz) |
+| 61749 | Brondi 510 S HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-510-s-hd) |
+| 61750 | Brondi 620 SZ | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-620-sz) |
+| 61751 | Brondi 730 4G HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-730-4g-hd) |
+| 61752 | Brondi AMICO SMARTPHONE S NERO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-amico-smartphone-s-nero) |
+| 61753 | Brondi AMICO SMARTPHONE XS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-amico-smartphone-xs) |
+| 61754 | Brondi AMICO VERO 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-amico-vero-4g) |
+| 61755 | Brondi Caesar | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-caesar) |
+| 61756 | Brondi Gladiator | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-gladiator) |
+| 61757 | Brondi Gladiator 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-gladiator-2) |
+| 61758 | Brondi Gladiator 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-gladiator-3) |
+| 61759 | Brondi Gladiator 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-gladiator-4) |
+| 61760 | Brondi Glory | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-glory) |
+| 61761 | Brondi Glory 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-glory-4) |
+| 61762 | Brondi Luxury 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-luxury-3) |
+| 61763 | Brondi Luxury 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-luxury-4) |
+| 61764 | Brondi Luxury 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-luxury-5) |
+| 61765 | BS-MOBILE BS Mobile Billie G2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bs-mobile-bs-mobile-billie-g2) |
+| 61766 | BS-MOBILE BS Mobile Empire | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bs-mobile-bs-mobile-empire) |
+| 61767 | BSNL Champion Penta PS650 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bsnl-champion-penta-ps650) |
+| 61768 | BSNL Champion PS501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bsnl-champion-ps501) |
+| 61769 | Bush Spira D1 5-5 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-d1-5-5-4g) |
+| 61770 | Bush Spira D3 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-d3-5) |
+| 61771 | Bush Spira D3 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-d3-5-5) |
+| 61772 | Bush Spira D4 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-d4-5-5) |
+| 61773 | Bush Spira D5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-d5-5) |
+| 61774 | Bush Spira E3X 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-e3x-5-5) |
+| 61775 | Bush Spira E4X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bush-spira-e4x) |
+| 61776 | Byond Phablet P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/byond-phablet-p1) |
+| 61777 | Callbar A3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/callbar-a3) |
+| 61778 | Callbar A45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/callbar-a45) |
+| 61779 | Callbar T61 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/callbar-t61) |
+| 61780 | Camfone S2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/camfone-s2) |
+| 61781 | carrefour CMB501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/carrefour-carrefour-cmb501) |
+| 61782 | Casper Via G1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/casper-via-g1) |
+| 61783 | Casper Via V9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/casper-via-v9) |
+| 61784 | CCE SK402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sk402) |
+| 61785 | CCE SK412 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sk412) |
+| 61786 | CCE SM70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sm70) |
+| 61787 | CCIT 7500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-7500) |
+| 61788 | CCIT 9500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-9500) |
+| 61789 | CCIT A5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-a5) |
+| 61790 | CCIT A66 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-a66) |
+| 61791 | CCIT A920 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-a920) |
+| 61792 | CCIT B7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-b7) |
+| 61793 | CCIT Huge 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-huge-500) |
+| 61794 | CCIT ONE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-one) |
+| 61795 | CCIT R928 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-r928) |
+| 61796 | CCIT Vogue 402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-vogue-402) |
+| 61797 | CECT KA08 Mini | [IMEI.info](https://www.imei.info/phonedatabase/cect-ka08-mini/) |
+| 61798 | Celkon Mobiles AR50 RahmanIshq | [PhoneCopy](https://www.phonecopy.com/en/phones/view/celkon_mobiles_ar50_rahmanishq) |
+| 61799 | Cell-C Cell C Extreme | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cell-c-cell-c-extreme) |
+| 61800 | Cell-C Cell C Summit | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cell-c-cell-c-summit) |
+| 61801 | Cellacom T703 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellacom-t703) |
+| 61802 | CellAllure Amazing II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-amazing-ii) |
+| 61803 | CellAllure CAPHG10-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg10-01) |
+| 61804 | CellAllure CAPHG16-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg16-01) |
+| 61805 | CellAllure CAPHG17-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg17-01) |
+| 61806 | CellAllure CAPHG18-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg18-01) |
+| 61807 | CellAllure CAPHG20-02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg20-02) |
+| 61808 | CellAllure CAPHG22-02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg22-02) |
+| 61809 | CellAllure CAPHG41-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-caphg41-01) |
+| 61810 | CellAllure Cool 5-5 X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-cool-5-5-x) |
+| 61811 | CellAllure Smart III 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellallure-smart-iii-5-0) |
+| 61812 | CG Blaze 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cg-blaze-4g) |
+| 61813 | CG Eon Curve | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cg-eon-curve) |
+| 61814 | Changhong Ghong V12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changhong-changhong-ghong-v12) |
+| 61815 | Changhong S06 | [ZOL](https://detail.zol.com.cn/cell_phone/index1172581.shtml) |
+| 61816 | Changjiang G22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changjiang-g22) |
+| 61817 | Changjiang N5300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changjiang-n5300) |
+| 61818 | Changjiang P5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changjiang-changjiang-p5) |
+| 61819 | Cherry Mobile Aqua S9 Infinity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-aqua-s9-infinity) |
+| 61820 | Cherry Mobile Flare J2 Prime | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-flare-j2-prime) |
+| 61821 | Cherry Mobile Flare J8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-flare-j8) |
+| 61822 | Chilli S05 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/chilli-s05) |
+| 61823 | Citycall I599 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/citycall-citycall-i599) |
+| 61824 | Citycall I980 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/citycall-citycall-i980) |
+| 61825 | Citycall K10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/citycall-citycall-k10) |
+| 61826 | Citycall K9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/citycall-citycall-k9) |
+| 61827 | CKK-mobile CKK mobile Athena | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-athena) |
+| 61828 | CKK-mobile CKK mobile N2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-n2) |
+| 61829 | CKK-mobile CKK mobile N5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-n5) |
+| 61830 | CKK-mobile CKK mobile S9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-s9) |
+| 61831 | CKTEL H728 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cktel-h728) |
+| 61832 | CKTEL H828 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cktel-h828) |
+| 61833 | Cloud Mobile Typhoon C6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloud-mobile-typhoon-c6) |
+| 61834 | CloudFone PS1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-ps1) |
+| 61835 | CloudFone Specp D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-specp-d) |
+| 61836 | Clout X425 Shavit | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/clout-x425-shavit) |
+| 61837 | Colorovo Citytone Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colorovo-citytone-lite) |
+| 61838 | Colors Mobile E15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-e15) |
+| 61839 | Colors Mobile P70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-p70) |
+| 61840 | Colors Mobile X Factor | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x-factor) |
+| 61841 | Colors Mobile X55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x55) |
+| 61842 | Colors Mobile X65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x65) |
+| 61843 | Colors Mobile X80 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x80) |
+| 61844 | Colors Mobile Xfactor Star 3G X30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-star-3g-x30) |
+| 61845 | Colors Mobile Xfactor Star 4-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-star-4-0) |
+| 61846 | Colors Mobile Xfactor Star CG | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-star-cg) |
+| 61847 | Colors Mobile Xfactor Wave X22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-wave-x22) |
+| 61848 | Colors Mobile Xfactor Wave X27 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-wave-x27) |
+| 61849 | Colors Mobile Xfactor X75 Bold | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-xfactor-x75-bold) |
+| 61850 | ConCorde Smartphone 5000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/concorde-smartphone-5000) |
+| 61851 | ConCorde Smartphone Spirit | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/concorde-smartphone-spirit) |
+| 61852 | Condor PGN-506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn-506) |
+| 61853 | Condor PGN511 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn511) |
+| 61854 | Condor PGN513 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn513) |
+| 61855 | Condor PGN516 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn516) |
+| 61856 | Condor PGN518 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn518) |
+| 61857 | Condor PGN521 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn521) |
+| 61858 | Condor PGN607 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn607) |
+| 61859 | Condor PGN611 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn611) |
+| 61860 | Condor PGN612 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pgn612) |
+| 61861 | Condor PKT411 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-pkt411) |
+| 61862 | Condor SP414 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/condor-sp414) |
+| 61863 | ConnSpeed AS125 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as125) |
+| 61864 | ConnSpeed AS126 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as126) |
+| 61865 | ConnSpeed AS127 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as127) |
+| 61866 | ConnSpeed AS128 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as128) |
+| 61867 | ConnSpeed AS131 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as131) |
+| 61868 | ConnSpeed AS135 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as135) |
+| 61869 | ConnSpeed AS136 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as136) |
+| 61870 | ConnSpeed AS9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as9) |
+| 61871 | ConnSpeed SMB1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-smb1) |
+| 61872 | ConnSpeed T50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-t50) |
+| 61873 | Contigo ES42 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/contigo-es42) |
+| 61874 | Coolpad 8288 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/coolpad/8288/) |
+| 61875 | Coolpad D508 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/coolpad/d508/) |
+| 61876 | Coolpad D510 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/coolpad/d510/) |
+| 61877 | Coolpad N900 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/coolpad/n900/) |
+| 61878 | Coolpad S100 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/coolpad/s100/) |
+| 61879 | Coradir CS400 Classic | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/coradir-cs400-classic) |
+| 61880 | Cosmote Smart Xceed | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cosmote-smart-xceed) |
+| 61881 | Covia CP-F40S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/covia-cp-f40s) |
+| 61882 | Creev Mark V Prime | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/creev-mark-v-prime) |
+| 61883 | Cricket Wave FTU18A00 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cricket-wave-ftu18a00) |
+| 61884 | Croma CRCB2094 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/croma-crcb2094) |
+| 61885 | Croma CRCB2129 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/croma-crcb2129) |
+| 61886 | Cross A10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a10) |
+| 61887 | Cross A2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a2) |
+| 61888 | Cross A20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a20) |
+| 61889 | Cross A26 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a26) |
+| 61890 | Cross A5B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a5b) |
+| 61891 | Cross A7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a7) |
+| 61892 | Cross A7S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a7s) |
+| 61893 | CSL Spice Dream Uno Mi-498 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/csl_spice_dream_uno_mi-498) |
+| 61894 | Ctroniq Wiz 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ctroniq-wiz-5) |
+| 61895 | CUBE1 G44 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cube1-cube1-g44) |
+| 61896 | CUBE1 G503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cube1-cube1-g503) |
+| 61897 | CUBE1 S700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cube1-cube1-s700) |
+| 61898 | Cubit AIO3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cubit-aio3) |
+| 61899 | Cubit Lush 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cubit-lush-3) |
+| 61900 | Cyrus Andromaxx-D E1000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-andromaxx-d-e1000) |
+| 61901 | Cyrus Cerry | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cerry) |
+| 61902 | Cyrus Cerry H1401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cerry-h1401) |
+| 61903 | Cyrus CS27 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cs27) |
+| 61904 | Cyrus CS35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cs35) |
+| 61905 | Cyrus CYR0027 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cyr0027) |
+| 61906 | Cyrus Glory G1000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-glory-g1000) |
+| 61907 | Dakele DKL01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dakele-dkl01) |
+| 61908 | Dakele MC002 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dakele-mc002) |
+| 61909 | Danew Konnect 501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/danew-konnect-501) |
+| 61910 | Danew Konnect 502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/danew-konnect-502) |
+| 61911 | Dany N982 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dany-n982) |
+| 61912 | Dapeng A7 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dapeng-a7-3g) |
+| 61913 | Dapeng A75 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dapeng-a75) |
+| 61914 | DAXIAN DK35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/daxian-dk35) |
+| 61915 | DCODE Cygnal 4 Lite | [IMEI.info](https://www.imei.info/phonedatabase/dcode-cygnal-4-lite/) |
+| 61916 | Desay TS1018 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/desay-desay-ts1018) |
+| 61917 | Dex GS501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dex-dex-gs501) |
+| 61918 | DEXP Ixion G155 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dexp-ixion-g155) |
+| 61919 | DEXP Ixion XL 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dexp-ixion-xl-5) |
+| 61920 | Dialog Q143L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dialog-q143l) |
+| 61921 | Digicel DL1000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl1000) |
+| 61922 | Digicel DL750 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl750) |
+| 61923 | Digicel DL755 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl755) |
+| 61924 | Digicel DL800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl800) |
+| 61925 | Digicel DL810 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl810) |
+| 61926 | Digicel DL900 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl900) |
+| 61927 | Digicel DL910 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-dl910) |
+| 61928 | Digicel S430 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digicel-s430) |
+| 61929 | Digimac 2X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/digimac-2x) |
+| 61930 | Dimo Diox D5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dimo-diox-d5) |
+| 61931 | Dimo Soren 2S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dimo-soren-2s) |
+| 61932 | Ding Guide A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-guide-a1) |
+| 61933 | Ding Guide E6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-guide-e6) |
+| 61934 | Ding Guide S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-guide-s1) |
+| 61935 | Ding SK1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-sk1) |
+| 61936 | Ding SK5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-sk5) |
+| 61937 | Ding SK7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-sk7) |
+| 61938 | DISCOVERY G86 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/discovery-discovery-g86) |
+| 61939 | DND B1000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dnd-b1000) |
+| 61940 | DNS S4502M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dns-s4502m) |
+| 61941 | DNS S4703 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dns-s4703) |
+| 61942 | Do-Mobile Do Mate 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/do-mobile-do-mate-1) |
+| 61943 | Do-Mobile Do S2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/do-mobile-do-s2) |
+| 61944 | DoCoMo Arrows Me F-11D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/docomo-arrows-me-f-11d) |
+| 61945 | DoCoMo Regza T-01D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/docomo-regza-t-01d) |
+| 61946 | DoCoMo Regza T-02D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/docomo-regza-t-02d) |
+| 61947 | DOK D203 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dok-d203) |
+| 61948 | DOK D205 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dok-d205) |
+| 61949 | DOK D207 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dok-d207) |
+| 61950 | Doogee N90 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doogee-n90) |
+| 61951 | Doov A10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doov-a10) |
+| 61952 | DOOV L1 | [IMEI.info](https://www.imei.info/phonedatabase/doov-l1/) |
+| 61953 | DOOV L3 | [IMEI.info](https://www.imei.info/phonedatabase/doov-l3/) |
+| 61954 | Doppio SL514 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doppio-sl514) |
+| 61955 | Doro Aurora A10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doro-aurora_a10) |
+| 61956 | Douzo Silk D5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/douzo-silk-d5) |
+| 61957 | DPA H2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dpa-h2) |
+| 61958 | DPA H3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dpa-h3) |
+| 61959 | DPA Zeta | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dpa-zeta) |
+| 61960 | DTAC Phone Joey Jet 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtac-phone-joey-jet-2) |
+| 61961 | DTAC Phone T3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtac-phone-t3) |
+| 61962 | DTC GT10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtc-gt10) |
+| 61963 | DTC GT19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtc-gt19) |
+| 61964 | DTC GT21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtc-gt21) |
+| 61965 | DTC GT6F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtc-gt6f) |
+| 61966 | DTC GT6X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dtc-gt6x) |
+| 61967 | Duoqin Qin3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/duoqin-qin3) |
+| 61968 | Dynamic G7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dynamic-g7) |
+| 61969 | E-tel I7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/e-tel-i7) |
+| 61970 | E-tel M3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/e-tel-m3) |
+| 61971 | Easypix EasyPhone EP5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/easypix-easyphone-ep5) |
+| 61972 | Ebest T5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ebest-t5) |
+| 61973 | ECHO Horizon Lite | [IMEI.info](https://www.imei.info/phonedatabase/echo-horizon-lite/) |
+| 61974 | Echo Java | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-java) |
+| 61975 | Echo Look | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-look) |
+| 61976 | Echo Note | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-note) |
+| 61977 | Echo Power | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-power) |
+| 61978 | Eko G60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eko-g60) |
+| 61979 | Eko Omega Q57 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eko-omega-q57) |
+| 61980 | Eko Star 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eko-star-5-5) |
+| 61981 | Eko Star G50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eko-star-g50) |
+| 61982 | Ekophone Ekotek 4-20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ekophone-ekotek-4-20) |
+| 61983 | Ekophone Rogue | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ekophone-rogue) |
+| 61984 | Elco ET4518 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/elco-et4518) |
+| 61985 | Element ES-A771 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/element-es-a771) |
+| 61986 | Element ESF651 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/element-esf651) |
+| 61987 | Elephone P3000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/elephone-p3000) |
+| 61988 | Elite Evo Air | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/elite-evo-air) |
+| 61989 | Elite Evo E50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/elite-evo-e50) |
+| 61990 | Eliya DOMO M7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-domo-m7) |
+| 61991 | Eliya S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s6) |
+| 61992 | Eliya S7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s7) |
+| 61993 | Eliya S828 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s828) |
+| 61994 | Eliya S850 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s850) |
+| 61995 | Eliya S860 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s860) |
+| 61996 | Eliya S868 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s868) |
+| 61997 | Eliya S898 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s898) |
+| 61998 | Eliya S968 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s968) |
+| 61999 | Energy Sistem Neo HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energy-sistem-neo-hd) |
+| 62000 | Energy Sistem Neo Quad | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/energy-sistem-neo-quad) |
+| 62001 | Enet I6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/enet-i6s) |
+| 62002 | Enet N3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/enet-n3) |
+| 62003 | Enet N6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/enet-n6) |
+| 62004 | Enet P7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/enet-p7) |
+| 62005 | Enet Smart X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/enet-smart-x) |
+| 62006 | Engel Smart Thin 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/engel-smart-thin-5) |
+| 62007 | Ephone E19 Quad Core | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ephone-e19-quad-core) |
+| 62008 | Ephone E61 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ephone-e61) |
+| 62009 | Ephone X6 Panda | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ephone-x6-panda) |
+| 62010 | Ergo A503 Optima | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-a503-optima) |
+| 62011 | Ergo A553 Power | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-a553-power) |
+| 62012 | Ergo A555 Universe | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-a555-universe) |
+| 62013 | Ergo B500 First | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-b500-first) |
+| 62014 | Ergo B501 Maximum | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/b501maximum/) |
+| 62015 | Ergo E281 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/e281/) |
+| 62016 | Ergo F180 Start | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f180start/) |
+| 62017 | Ergo F182 Point | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f182point/) |
+| 62018 | Ergo F183 Beat | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f183beat/) |
+| 62019 | Ergo F185 Speak | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f185speak/) |
+| 62020 | Ergo F240 Pulse | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f240pulse/) |
+| 62021 | Ergo F241 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f241/) |
+| 62022 | Ergo F241 Talk | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f241talk/) |
+| 62023 | Ergo F280 Strong | [GSMchoice](https://www.gsmchoice.com/en/catalogue/ergo/f280strong/) |
+| 62024 | Ergo F500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-f500) |
+| 62025 | Ergo Prime B400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ergo-prime-b400) |
+| 62026 | Essentiel B Connect 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/essentiel-b-connect-5) |
+| 62027 | Essentiel B Connect 502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/essentiel-b-connect-502) |
+| 62028 | Essentiel B Connect 503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/essentiel-b-connect-503) |
+| 62029 | Essentiel B Connect 551 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/essentiel-b-connect-551) |
+| 62030 | EStar X40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/estar-estar-x40) |
+| 62031 | EStar X45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/estar-estar-x45) |
+| 62032 | Eurostar Onyx 3S LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eurostar-onyx-3s-lte) |
+| 62033 | Eurostar Onyx-2 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eurostar-onyx-2-lte) |
+| 62034 | Evercoss A28A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a28a) |
+| 62035 | Evercoss A28M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a28m) |
+| 62036 | Evercoss A28T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a28t) |
+| 62037 | Evercoss A54 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a54) |
+| 62038 | Evercoss A5A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5a) |
+| 62039 | Evercoss A66B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a66b) |
+| 62040 | Evercoss A74A Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a74a-star) |
+| 62041 | Evercoss A74J | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a74j) |
+| 62042 | Evercoss A74R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a74r) |
+| 62043 | Evercoss A7A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7a) |
+| 62044 | Evercoss A7B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7b) |
+| 62045 | Evercoss A7D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7d) |
+| 62046 | Evercoss A7E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7e) |
+| 62047 | Evercoss A7F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7f) |
+| 62048 | Evercoss A7G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7g) |
+| 62049 | Evercoss A7K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7k) |
+| 62050 | Evercoss A7L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7l) |
+| 62051 | Evercoss A7N | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7n) |
+| 62052 | Evercoss A7S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7s) |
+| 62053 | Evercoss A7S Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7s-star) |
+| 62054 | Evercoss A7T Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7t-star) |
+| 62055 | Evercoss A7Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a7z) |
+| 62056 | Evercoss AT1A Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-at1a-star) |
+| 62057 | Evercoss M6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-m6) |
+| 62058 | Evercoss P4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-p4) |
+| 62059 | Evercoss R40A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-r40a) |
+| 62060 | Evercoss R40H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-r40h) |
+| 62061 | Evercoss S55A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-s55a) |
+| 62062 | Evercoss Tera S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-tera-s6) |
+| 62063 | Evercoss U6B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-u6b) |
+| 62064 | Evertek Everallure | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-everallure) |
+| 62065 | Evertek Everglory | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-everglory) |
+| 62066 | Evertek EverMellow D45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-evermellow-d45) |
+| 62067 | Evertek EverMellow D50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-evermellow-d50) |
+| 62068 | Evertek Evermiracle | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-evermiracle) |
+| 62069 | Evertek EverSlim Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-everslim-mini) |
+| 62070 | Evertek Everstar Q50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-everstar-q50) |
+| 62071 | Evertek V4 Nano | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-v4-nano) |
+| 62072 | Evolio M4 Magic | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-m4-magic) |
+| 62073 | Evolio M6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-m6) |
+| 62074 | Evolio Onyx | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-onyx) |
+| 62075 | Evolio S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-s5) |
+| 62076 | Evolio S623 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-s623) |
+| 62077 | Evolio StrongPhone Q5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-strongphone-q5) |
+| 62078 | Evolve FX420 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolve-fx420) |
+| 62079 | Evolve FX520 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolve-fx520) |
+| 62080 | Evolveo EasyPhone | [GSMchoice](https://www.gsmchoice.com/en/catalogue/evolveo/easyphone/) |
+| 62081 | Evolveo EasyPhone EB | [GSMchoice](https://www.gsmchoice.com/en/catalogue/evolveo/easyphoneeb/) |
+| 62082 | Evolveo EasyPhone FD | [GSMchoice](https://www.gsmchoice.com/en/catalogue/evolveo/easyphonefd/) |
+| 62083 | Evolveo EasyPhone XD | [GSMchoice](https://www.gsmchoice.com/en/catalogue/evolveo/easyphonexd/) |
+| 62084 | Evolveo StrongPhone Z3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/evolveo/strongphone-z3/) |
+| 62085 | Exmart Exlife L1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmart-exlife-l1) |
+| 62086 | Exmart Expower P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmart-expower-p1) |
+| 62087 | ExMobile Chat 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-1) |
+| 62088 | ExMobile Chat 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-2) |
+| 62089 | ExMobile Chat 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-3) |
+| 62090 | ExMobile Chat 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-6) |
+| 62091 | ExMobile Chat 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-7) |
+| 62092 | ExMobile Chat 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-chat-9) |
+| 62093 | ExMobile EX-S30I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-ex-s30i) |
+| 62094 | ExMobile EX69I Ola | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-ex69i-ola) |
+| 62095 | ExMobile ExNote | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-exnote) |
+| 62096 | ExMobile Volte 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-volte-3) |
+| 62097 | ExMobile Volte 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-volte-5) |
+| 62098 | ExMobile Volte 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-volte-6) |
+| 62099 | F2-Mobile F2 Mobile F48 Sports | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/f2-mobile-f2-mobile-f48-sports) |
+| 62100 | F2-Mobile F2 Mobile F80 Piabella | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/f2-mobile-f2-mobile-f80-piabella) |
+| 62101 | FarEastone Smart 401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fareastone-smart-401) |
+| 62102 | FarEastone Smart 403 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fareastone-smart-403) |
+| 62103 | FarEastone Smart 505 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fareastone-smart-505) |
+| 62104 | Feiteng H7100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/feiteng-h7100) |
+| 62105 | Feiteng H9500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/feiteng-h9500) |
+| 62106 | Feiteng H9503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/feiteng-h9503) |
+| 62107 | Fero J1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-j1) |
+| 62108 | Fero Pace | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-pace) |
+| 62109 | Fero Pace 2 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-pace-2-lite) |
+| 62110 | Fero X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-x1) |
+| 62111 | Fero Y1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-y1) |
+| 62112 | Fero Zoom LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fero-zoom-lte) |
+| 62113 | FIGO F55L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/figo-f55l) |
+| 62114 | FIGO M405B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/figo-m405b) |
+| 62115 | Firefly Allure 64 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/firefly-allure-64-lte) |
+| 62116 | Firefly Aurii Virtuoso | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/firefly-aurii-virtuoso) |
+| 62117 | Firefly Intense Power | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/firefly-intense-power) |
+| 62118 | Fise M42842 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/fise_m42842) |
+| 62119 | Five-Star Five Star B56 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/five-star-five-star-b56) |
+| 62120 | Fnac 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fnac-4) |
+| 62121 | Fnac 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fnac-5) |
+| 62122 | Fnac 5 HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fnac-5-hd) |
+| 62123 | Fondi T602B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fondi-t602b) |
+| 62124 | FOSSIBOT F123 | [IMEI.info](https://www.imei.info/phonedatabase/fossibot-f123/) |
+| 62125 | Four S185 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/four-s185) |
+| 62126 | Four S300I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/four-s300i) |
+| 62127 | Four S710 Ruby | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/four-s710-ruby) |
+| 62128 | Fourel Easysmart M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fourel-easysmart-m1) |
+| 62129 | Fox Speed X100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fox-speed-x100) |
+| 62130 | FOXXD A56 | [IMEI.info](https://www.imei.info/phonedatabase/foxxd-a56/) |
+| 62131 | FPT F10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f10) |
+| 62132 | FPT F22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f22) |
+| 62133 | FPT F52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f52) |
+| 62134 | FPT F54 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f54) |
+| 62135 | FPT F80 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f80) |
+| 62136 | FPT F83 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f83) |
+| 62137 | FPT F86 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f86) |
+| 62138 | FPT HD V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-hd-v) |
+| 62139 | FPT IV | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-iv) |
+| 62140 | FPT Life 4 Music | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-life-4-music) |
+| 62141 | FPT Life 4-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-life-4-5) |
+| 62142 | FPT Life 4-7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-life-4-7) |
+| 62143 | FPT Life 5 Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-life-5-star) |
+| 62144 | FPT S400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-s400) |
+| 62145 | FPT S450 Young | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-s450-young) |
+| 62146 | FPT S500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-s500) |
+| 62147 | FPT V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-v) |
+| 62148 | FPT VI | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-vi) |
+| 62149 | FPT X459 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-x459) |
+| 62150 | FPT X502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-x502) |
+| 62151 | FPT X506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-x506) |
+| 62152 | Freelander I30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/freelander-i30) |
+| 62153 | Fujitsu Arrows ef FJL21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-arrows-ef-fjl21) |
+| 62154 | Fujitsu Arrows Kiss F-03E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-arrows-kiss-f-03e) |
+| 62155 | Fujitsu Arrows Mu F-07D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-arrows-mu-f-07d) |
+| 62156 | Fujitsu Arrows U | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-arrows-u) |
+| 62157 | Fujitsu Arrows Z ISW13F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-arrows-z-isw13f) |
+| 62158 | Fujitsu F-52B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fujitsu-f-52b) |
+| 62159 | Funker R452 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-r452) |
+| 62160 | Funker R454 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-r454) |
+| 62161 | Funker R502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-r502) |
+| 62162 | Funker R504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-r504) |
+| 62163 | Funker R604 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-r604) |
+| 62164 | Funker S454 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-s454) |
+| 62165 | Funker S555 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-s555) |
+| 62166 | Funker X504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-x504) |
+| 62167 | Funker X504P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/funker-x504p) |
+| 62168 | Fusion5 Gen III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fusion5-gen-iii) |
+| 62169 | G-Tide E12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-e12) |
+| 62170 | G-Tide E60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-e60) |
+| 62171 | G-Tide E68 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-e68) |
+| 62172 | G-Tide E69 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-e69) |
+| 62173 | G-Tide Extreme 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-extreme-4g) |
+| 62174 | G-TIDE Extreme 6 | [IMEI.info](https://www.imei.info/phonedatabase/g-tide-extreme-6/) |
+| 62175 | G-Tide S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-s1) |
+| 62176 | G-Tide V4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-v4) |
+| 62177 | Gaba A3 Dzire | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-a3-dzire) |
+| 62178 | Gaba A555 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-a555) |
+| 62179 | Gaba A57 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-a57) |
+| 62180 | Gaba A75 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-a75) |
+| 62181 | Gaba Fortune | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-fortune) |
+| 62182 | Gaba Fortune9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gaba-fortune9) |
+| 62183 | Genesis GP501S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genesis-gp501s) |
+| 62184 | Genesis GP505 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genesis-gp505) |
+| 62185 | Genx E1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genx-e1) |
+| 62186 | Genx H2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genx-h2) |
+| 62187 | Genx X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genx-x3) |
+| 62188 | GFive A77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-gfive-a77) |
+| 62189 | GFive Bravo | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/bravo/) |
+| 62190 | GFive C2 ECO | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/c2eco/) |
+| 62191 | GFive C2 Rock | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/c2rock/) |
+| 62192 | GFive E670 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-e670) |
+| 62193 | GFive ECO | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/eco/) |
+| 62194 | GFive Gpower 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-gpower-5) |
+| 62195 | GFive i1x | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/i1x/) |
+| 62196 | GFive President Classic 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-classic-1) |
+| 62197 | GFive President Classic 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-classic-5) |
+| 62198 | GFive President Classic 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-classic-9) |
+| 62199 | GFive President G12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-g12) |
+| 62200 | GFive President G7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-g7) |
+| 62201 | GFive President Gold 10 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/presidentgold10/) |
+| 62202 | GFive President Gpower 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-gpower-1) |
+| 62203 | GFive President Tango 7 T7100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-tango-7-t7100) |
+| 62204 | GFive President XHero 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-xhero-7) |
+| 62205 | GFive Rebon | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/rebon/) |
+| 62206 | GFive Tango | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/tango/) |
+| 62207 | GFive W3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/w3/) |
+| 62208 | Ghia Sveglio 55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ghia-sveglio-55) |
+| 62209 | Ghia Sveglio H1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ghia-sveglio-h1) |
+| 62210 | Ginger G4001 Booster | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g4001-booster) |
+| 62211 | Ginger G5001 Batman | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g5001-batman) |
+| 62212 | Ginger G5001 Mate7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g5001-mate7) |
+| 62213 | Ginger G5001 Space | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g5001-space) |
+| 62214 | Ginger G5001 Space 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g5001-space-7) |
+| 62215 | Ginger G5001 Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-g5001-star) |
+| 62216 | Ginger Uranus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ginger-uranus) |
+| 62217 | GIONEE Elife S5.5L | [IMEI.info](https://www.imei.info/phonedatabase/gionee-elife-s55l/) |
+| 62218 | GLX Spark | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/glx-spark) |
+| 62219 | GMango 6XA | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gmango-6xa) |
+| 62220 | Gmate S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gmate-gmate-s5) |
+| 62221 | GNet G704S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gnet-gnet-g704s) |
+| 62222 | GNext GN38 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gnext-gn38) |
+| 62223 | Goldberg Discovery ZL1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/goldberg-discovery-zl1) |
+| 62224 | GoldVish ECLIPSE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/goldvish-goldvish-eclipse) |
+| 62225 | Gomax Infinite G6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-g6) |
+| 62226 | Gomax Infinite GV1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-gv1) |
+| 62227 | Gomax Infinite Hardy 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-hardy-1) |
+| 62228 | Gomax Infinite-G66 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-g66) |
+| 62229 | Gomax Sleek 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-sleek-1) |
+| 62230 | Gomax Swift L1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-swift-l1) |
+| 62231 | GoMobile Go Onyx LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go-onyx-lte) |
+| 62232 | GoMobile GO1402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go1402) |
+| 62233 | GoMobile GO504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go504) |
+| 62234 | GoMobile GO960 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go960) |
+| 62235 | GoMobile Onyx Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-onyx-mini) |
+| 62236 | Good One R9 4Generation | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/good-one-r9-4generation) |
+| 62237 | Gooweel GW6000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gooweel-gw6000) |
+| 62238 | Gosco S4023 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gosco-s4023) |
+| 62239 | GPhone A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gphone-a1) |
+| 62240 | GPhone A4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gphone-a4) |
+| 62241 | GPhone Bold 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gphone-bold-2) |
+| 62242 | GPhone Bold 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gphone-bold-3) |
+| 62243 | Gradiente GC500SF | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gradiente-gc500sf) |
+| 62244 | Gright W500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gright-gright-w500) |
+| 62245 | Growing GMD4312 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/growing-gmd4312) |
+| 62246 | Growing GMQ5012 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/growing-gmq5012) |
+| 62247 | Growing GMQ5712 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/growing-gmq5712) |
+| 62248 | GTel A704I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a704i) |
+| 62249 | GTel A706 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a706) |
+| 62250 | GTel A714 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a714) |
+| 62251 | GTel A717 Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a717-mini) |
+| 62252 | GTel A728 XP2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-a728-xp2) |
+| 62253 | GTel X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gtel-x5) |
+| 62254 | Guophone X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/guophone-x3) |
+| 62255 | Haier D7000 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/haier/d7000/) |
+| 62256 | Haipai HP-H868 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-hp-h868) |
+| 62257 | Haipai I9220 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-i9220) |
+| 62258 | Haipai I9389 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-i9389) |
+| 62259 | Haipai N7102 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-n7102) |
+| 62260 | Haipai S5 Quad Core | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-s5-quad-core) |
+| 62261 | Hasee E50 S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hasee-e50-s1) |
+| 62262 | Hasee F60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hasee-f60) |
+| 62263 | Hasee HN205506 | [ZOL](https://detail.zol.com.cn/cell_phone/index1153096.shtml) |
+| 62264 | Hero A800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-a800) |
+| 62265 | Hero H3088 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-h3088) |
+| 62266 | Hero H5000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-h5000) |
+| 62267 | Hero H5500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-h5500) |
+| 62268 | Hero JY139 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-jy139) |
+| 62269 | Hi-Tech Air A8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-air-a8) |
+| 62270 | Hi-Tech Amaze S400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-amaze-s400) |
+| 62271 | Hi-Tech Amaze S411 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-amaze-s411) |
+| 62272 | Hi-Tech Amaze S500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-amaze-s500) |
+| 62273 | HIKe 818 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hike-hike-818) |
+| 62274 | HIKe 828 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hike-hike-828) |
+| 62275 | HIKe Pandora QI | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hike-hike-pandora-qi) |
+| 62276 | Himax M20I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-m20i) |
+| 62277 | Himax M21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-m21) |
+| 62278 | Himax M23S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-m23s) |
+| 62279 | Himax Polymer 2X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-polymer-2x) |
+| 62280 | Himax Polymer-Li | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-polymer-li) |
+| 62281 | Himax Pure S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-pure-s) |
+| 62282 | Himax Y11S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/himax-y11s) |
+| 62283 | HiSense H12 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-h12-lite) |
+| 62284 | HiSense Hali | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-hali) |
+| 62285 | Hisense HS-E260T | [ZOL](https://detail.zol.com.cn/cell_phone/index1160474.shtml) |
+| 62286 | HISENSE HS-ET919 | [IMEI.info](https://www.imei.info/phonedatabase/hisense-hs-et919/) |
+| 62287 | HiSense Infinity Faith | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-infinity-faith) |
+| 62288 | HiSense U989 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hisense-u989) |
+| 62289 | Hiya Kolab C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hiya-kolab-c) |
+| 62290 | Hiya Kolab S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hiya-kolab-s) |
+| 62291 | Hiya N6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hiya-n6) |
+| 62292 | HKC K3528 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkc-k3528) |
+| 62293 | HKPhone Racer | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkphone-racer) |
+| 62294 | HKPhone Revo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkphone-revo) |
+| 62295 | HKPhone Revo HD4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkphone-revo-hd4) |
+| 62296 | Hocom Classic 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hocom-classic-3) |
+| 62297 | Hocom Classic 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hocom-classic-4) |
+| 62298 | Honor X3 | [ZOL](https://detail.zol.com.cn/cell_phone/index1140558.shtml) |
+| 62299 | HONPhone C360 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-c360) |
+| 62300 | HONPhone HON-C980 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-hon-c980) |
+| 62301 | HONPhone V10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-v10) |
+| 62302 | HONPhone V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-v8) |
+| 62303 | HONPhone Z-me | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-z-me) |
+| 62304 | HONPhone Z1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-z1) |
+| 62305 | HONPhone Z9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/honphone-z9) |
+| 62306 | Hosin T50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hosin-t50) |
+| 62307 | Hotwav Cosmos V13 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v13) |
+| 62308 | Hotwav Cosmos V19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v19) |
+| 62309 | Hotwav Cosmos V22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v22) |
+| 62310 | Hotwav Cosmos V5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v5) |
+| 62311 | Hotwav Cosmos V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v8) |
+| 62312 | Hotwav Cosmos V8 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v8-lite) |
+| 62313 | Hotwav Cosmos V8-2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v8-2) |
+| 62314 | Hotwav Cosmos V9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v9) |
+| 62315 | Hotwav Fone M9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-fone-m9) |
+| 62316 | Hotwav I8009 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-i8009) |
+| 62317 | Hotwav IP7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-ip7) |
+| 62318 | Hotwav IP7S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-ip7s) |
+| 62319 | Hotwav Venus DA2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-da2) |
+| 62320 | Hotwav Venus R12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-r12) |
+| 62321 | Hotwav Venus R18 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-r18) |
+| 62322 | Hotwav Venus R2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-r2) |
+| 62323 | Hotwav Venus X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x1) |
+| 62324 | Hotwav Venus X14 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x14) |
+| 62325 | Hotwav Venus X16 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x16) |
+| 62326 | Hotwav Venus X19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x19) |
+| 62327 | Hotwav Venus X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x5) |
+| 62328 | Hotwav Venus X6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x6) |
+| 62329 | HPL Platinum A65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hpl-platinum-a65) |
+| 62330 | HSL Yuva Y300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hsl-yuva-y300) |
+| 62331 | HTC 10 Mini | [ZOL](https://detail.zol.com.cn/cell_phone/index1141694.shtml) |
+| 62332 | HTC Hecate | [ZOL](https://detail.zol.com.cn/cell_phone/index1146732.shtml) |
+| 62333 | HTC Nexus T50 | [ZOL](https://detail.zol.com.cn/cell_phone/index1137999.shtml) |
+| 62334 | HTM H10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-h10) |
+| 62335 | HTM L400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-l400) |
+| 62336 | HTM Z1 H39LW | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-z1-h39lw) |
+| 62337 | HTM Z1-H39L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-z1-h39l) |
+| 62338 | Huadoo W506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/huadoo-w506) |
+| 62339 | Huawei B199 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/huawei-b199) |
+| 62340 | Huawei Mate S2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1141601.shtml) |
+| 62341 | Huawei Mate XT Ultimate Design | [Gadgets 360](https://www.gadgets360.com/huawei-huawei-mate-xt-ultimate-design-price-in-india-128256) |
+| 62342 | Hugiga HWA600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hugiga-hwa600) |
+| 62343 | Hugiga HWA830 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hugiga-hwa830) |
+| 62344 | Hugiga HWA890 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hugiga-hwa890) |
+| 62345 | Hummer H88 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hummer-h88) |
+| 62346 | Hyundai E475 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-e475) |
+| 62347 | Hyundai e501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-e501) |
+| 62348 | Hyundai E535 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-e535) |
+| 62349 | Hyundai E553 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-e553) |
+| 62350 | Hyundai E602 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-e602) |
+| 62351 | Hyundai H10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-h10) |
+| 62352 | Hyundai HP5080 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-hp5080) |
+| 62353 | Hyundai Leopard V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-leopard-v) |
+| 62354 | Hyundai SP Quad 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-sp-quad-6) |
+| 62355 | Hyundai Tiger V2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-tiger-v2) |
+| 62356 | i-Cherry C118 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c118) |
+| 62357 | i-Cherry C121 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c121) |
+| 62358 | i-Cherry C135 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c135) |
+| 62359 | i-Cherry C217 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c217) |
+| 62360 | i-Cherry C220 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c220) |
+| 62361 | i-Cherry C228 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c228) |
+| 62362 | i-Cherry C230 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c230) |
+| 62363 | i-Cherry C251 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c251) |
+| 62364 | i-Cherry C252 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c252) |
+| 62365 | i-Cherry C75 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c75) |
+| 62366 | i-Cherry C82 Horn | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c82-horn) |
+| 62367 | i-Cherry C87 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c87) |
+| 62368 | i-Cherry X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-x1) |
+| 62369 | I-INN Mini Smartlet | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-mini-smartlet) |
+| 62370 | I-INN Mini Smartlet 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-mini-smartlet-2) |
+| 62371 | I-INN MiniSmartlet 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-minismartlet-3) |
+| 62372 | I-INN Smarlet 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-smarlet-2) |
+| 62373 | I-INN Smartlet 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-smartlet-3) |
+| 62374 | I-INN Smartlet Six 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-inn-smartlet-six-2) |
+| 62375 | i-Joy Eccooqtium | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-eccooqtium) |
+| 62376 | i-Joy ECCOOQTIUM5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-eccooqtium5) |
+| 62377 | i-Joy Elektra L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-elektra-l) |
+| 62378 | i-Joy Elektra XXL | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-elektra-xxl) |
+| 62379 | i-Joy I-Call 400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-i-call-400) |
+| 62380 | i-Joy i-Call 450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-i-call-450) |
+| 62381 | i-Joy i-Call 701 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-joy-i-call-701) |
+| 62382 | I-Onik I423 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-onik-i423) |
+| 62383 | I-Onik I543 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-onik-i543) |
+| 62384 | I-Onik I544 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-onik-i544) |
+| 62385 | I-Onik I643 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-onik-i643) |
+| 62386 | I-Tel Mobiles Android X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-tel-mobiles-android-x1) |
+| 62387 | I-Tel Mobiles Android X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-tel-mobiles-android-x3) |
+| 62388 | I-Tel Mobiles Petrus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-tel-mobiles-petrus) |
+| 62389 | i.Robot i-Robot Phyros Note | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/irobot-i-robot-phyros-note) |
+| 62390 | i.Robot i-Robot Solar-A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/irobot-i-robot-solar-a1) |
+| 62391 | iBall 3G 7345Q-800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iball-3g-7345q-800) |
+| 62392 | iBall Andi 3G Gem | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iball-andi-3g-gem) |
+| 62393 | iBall Andi Cobalt 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iball-andi-cobalt-6) |
+| 62394 | iBall Cuddle A4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iball-cuddle-a4) |
+| 62395 | iBall Slide 3G Q1035 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iball-slide-3g-q1035) |
+| 62396 | iBold IBSD40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ibold-ibsd40) |
+| 62397 | iBold XL5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ibold-xl5) |
+| 62398 | iCall 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icall-7) |
+| 62399 | iCall MX1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icall-mx1) |
+| 62400 | iCell Elite W17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-elite-w17) |
+| 62401 | iCell Power-W21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-power-w21) |
+| 62402 | iCell Spark W8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-spark-w8) |
+| 62403 | iCell Ultimate W12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-ultimate-w12) |
+| 62404 | iCell Vision-W20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-vision-w20) |
+| 62405 | iCell W14 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/icell-w14) |
+| 62406 | iDroid Apache G6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-apache-g6) |
+| 62407 | iDroid Balr X7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-balr-x7) |
+| 62408 | iDroid Royal V4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-royal-v4) |
+| 62409 | iDroid Royal V7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-royal-v7) |
+| 62410 | iDroid Royal V7X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-royal-v7x) |
+| 62411 | iDroid Simu | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-simu) |
+| 62412 | iDroid Tango 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/idroid-tango-2) |
+| 62413 | iGet Star P450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iget-star-p450) |
+| 62414 | iGet Star P500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iget-star-p500) |
+| 62415 | IGlo A209 2G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a209-2g) |
+| 62416 | IGlo A209 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a209-3g) |
+| 62417 | IGlo A309 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a309-3g) |
+| 62418 | IGlo A309M 2G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a309m-2g) |
+| 62419 | iGlo A903B | [GSMchoice](https://www.gsmchoice.com/en/catalogue/iglo/a903b/) |
+| 62420 | IGlo A908 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a908) |
+| 62421 | IGlo A910 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a910) |
+| 62422 | IGlo A999 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iglo-a999-3g) |
+| 62423 | iGlo Q200 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/iglo/q200/) |
+| 62424 | iGlo S100 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/iglo/s100/) |
+| 62425 | iHunt LIKE HI10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-like-hi10) |
+| 62426 | iHunt Note 20 Apex 2021 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-note-20-apex-2021) |
+| 62427 | iHunt One Love | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-one-love) |
+| 62428 | iHunt Rainbow 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-rainbow-3) |
+| 62429 | iHunt X300 Elite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-x300-elite) |
+| 62430 | IIIF150 H2022 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iiif150-h2022) |
+| 62431 | IIIF150 R2022 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iiif150-r2022) |
+| 62432 | Ikon Y10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ikon-y10) |
+| 62433 | Iku K40I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iku-k40i) |
+| 62434 | iLA 7P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ila-7p) |
+| 62435 | iLife Amaze 605 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilife-amaze-605) |
+| 62436 | iLife Itell S500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilife-itell-s500) |
+| 62437 | iLike X5 Metal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilike-x5-metal) |
+| 62438 | Ilovfa F503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilovfa-f503) |
+| 62439 | iMan i8800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iman-i8800) |
+| 62440 | IMatch I21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imatch-i21) |
+| 62441 | Imi Hope 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-hope-4g) |
+| 62442 | Imi Messi 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-messi-3) |
+| 62443 | Imi Messi Top S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-messi-top-s) |
+| 62444 | Imi Vin 2 Premium | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-vin-2-premium) |
+| 62445 | Imi Vin 3S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-vin-3s) |
+| 62446 | Imi Vin 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-vin-5) |
+| 62447 | IMO Feel 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-5) |
+| 62448 | IMO Feel 5S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-5s) |
+| 62449 | IMO Feel 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-6) |
+| 62450 | IMO Feel 8 Metal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-8-metal) |
+| 62451 | IMO Feel A2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-a2) |
+| 62452 | IMO Feel A6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-a6) |
+| 62453 | IMO Feel S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-feel-s) |
+| 62454 | IMO I580 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-i580) |
+| 62455 | IMO Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-q) |
+| 62456 | IMO Q2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-q2) |
+| 62457 | IMO Q8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-q8) |
+| 62458 | IMO S50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s50) |
+| 62459 | IMO S70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s70) |
+| 62460 | IMO S87 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s87) |
+| 62461 | IMO S90 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s90) |
+| 62462 | IMO Vioss | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-vioss) |
+| 62463 | IMO W6800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-w6800) |
+| 62464 | IMO Wisdom 5 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-wisdom-5-lte) |
+| 62465 | Imose Ankara S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imose-ankara-s1) |
+| 62466 | Inco Bloom | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-bloom) |
+| 62467 | Inco Bloom 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-bloom-2) |
+| 62468 | Inco Colossus III S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-colossus-iii-s) |
+| 62469 | Inco Eco 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-eco-2) |
+| 62470 | Inco Flex | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-flex) |
+| 62471 | Inco Flex 2S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-flex-2s) |
+| 62472 | Inco Hebe- | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-hebe) |
+| 62473 | Inco Plain 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-plain-2) |
+| 62474 | Inco Storm II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inco-storm-ii) |
+| 62475 | iNew L3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inew-l3) |
+| 62476 | Infiniton INPHO-5300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infiniton-inpho-5300) |
+| 62477 | Infiniton INPHO-N6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infiniton-inpho-n6) |
+| 62478 | Infiniton Pawn 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infiniton-pawn-4g) |
+| 62479 | Infiniton T5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infiniton-t5) |
+| 62480 | Infinity YAAK | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infinity-yaak) |
+| 62481 | Infone Extreme 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-3) |
+| 62482 | Infone Extreme 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-5) |
+| 62483 | Infone Extreme Boeing 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-boeing-2) |
+| 62484 | Infone Extreme Maxi | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-maxi) |
+| 62485 | Infone I950Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-i950q) |
+| 62486 | Infone X-cite Candy | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-x-cite-candy) |
+| 62487 | Infone X-Cite Gorilla 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-x-cite-gorilla-3) |
+| 62488 | Infone X-Cite Gorilla 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-x-cite-gorilla-8) |
+| 62489 | Infone X-Cite Slim | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-x-cite-slim) |
+| 62490 | Inhon Papilio G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inhon-papilio-g3) |
+| 62491 | InnJoo Maze | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/innjoo-maze) |
+| 62492 | InnJoo Voto | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/innjoo-voto) |
+| 62493 | ino 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ino-ino-3) |
+| 62494 | ino S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ino-ino-s5) |
+| 62495 | ino Scout 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ino-ino-scout-2) |
+| 62496 | ino Scout 2S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ino-ino-scout-2s) |
+| 62497 | Inovo I-05 Big | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i-05-big) |
+| 62498 | Inovo I-402 SAEP | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i-402-saep) |
+| 62499 | Inovo I458 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i458) |
+| 62500 | Inovo I471 SE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i471-se) |
+| 62501 | Inovo I481 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i481) |
+| 62502 | Inovo I512 Oishii | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i512-oishii) |
+| 62503 | Inovo I516 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i516) |
+| 62504 | Inovo I516 X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i516-x5) |
+| 62505 | Inovo I551 Grand | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i551-grand) |
+| 62506 | Inovo I581 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i581) |
+| 62507 | Inovo I615 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i615) |
+| 62508 | Inovo I628 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i628) |
+| 62509 | Invens Royal R6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/invens-royal-r6) |
+| 62510 | iPro I5S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-i5s) |
+| 62511 | iPro Sense Golly | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-sense-golly) |
+| 62512 | Iris Vox Vero | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iris-vox-vero) |
+| 62513 | IRULU U2S | [IMEI.info](https://www.imei.info/phonedatabase/irulu-u2s/) |
+| 62514 | iSA A19S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/isa-a19s) |
+| 62515 | iStar I-T2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/istar-i-t2) |
+| 62516 | It-Works It Works M4029Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/it-works-it-works-m4029q) |
+| 62517 | It-Works It Works SA501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/it-works-it-works-sa501) |
+| 62518 | itel S22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-s22) |
+| 62519 | ITEL S32 | [IMEI.info](https://www.imei.info/phonedatabase/itel-s32/) |
+| 62520 | itel S32LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itel-s32lte) |
+| 62521 | iTouch F9800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itouch-f9800) |
+| 62522 | iTouch V5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/itouch-v5) |
+| 62523 | IUNI U0001 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iuni-u0001) |
+| 62524 | IUSAI US6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iusai-us6) |
+| 62525 | iView 600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iview-600) |
+| 62526 | Jeasung X8-G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jeasung-x8-g) |
+| 62527 | JFone Alpha 3G S408 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jfone-alpha-3g-s408) |
+| 62528 | JFone Omega DTV501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jfone-omega-dtv501) |
+| 62529 | JFone S406 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jfone-s406) |
+| 62530 | Jiake JK10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jiake-jk10) |
+| 62531 | Jiake S700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jiake-s700) |
+| 62532 | Jio Bharat J1 4G | [Gadgets 360](https://www.gadgets360.com/jio-bharat-j1-4g-price-in-india-127321) |
+| 62533 | Jivi AI3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jivi-ai3) |
+| 62534 | Jovi V50 Lite 5G | [GSMchoice](https://www.gsmchoice.com/en/catalogue/jovi/v50-lite-5g/) |
+| 62535 | JXD L503 | [IMEI.info](https://www.imei.info/phonedatabase/jxd-l503/) |
+| 62536 | JXD P200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jxd-p200) |
+| 62537 | JXD P200S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jxd-p200s) |
+| 62538 | JXD S700B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jxd-s700b) |
+| 62539 | K-Touch C960T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-c960t) |
+| 62540 | K-Touch C966E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-c966e) |
+| 62541 | K-Touch C988T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-c988t) |
+| 62542 | K-Touch E688 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-e688) |
+| 62543 | K-Touch KIS 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-kis-1) |
+| 62544 | K-Touch L930I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-l930i) |
+| 62545 | K-Touch Q4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-q4) |
+| 62546 | K-Touch S5T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-s5t) |
+| 62547 | K-Touch SmartPro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-smartpro) |
+| 62548 | K-Touch T60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-t60) |
+| 62549 | K-Touch T91 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-t91) |
+| 62550 | K-Touch T96 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-t96) |
+| 62551 | K-Touch Tou Ch 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-tou-ch-2) |
+| 62552 | K-Touch Tou CH3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-tou-ch3) |
+| 62553 | K-Touch V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-v8) |
+| 62554 | K-Touch W658 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-w658) |
+| 62555 | K-Touch W68 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-w68) |
+| 62556 | K-Touch W95 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-w95) |
+| 62557 | K-Touch W98 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-w98) |
+| 62558 | Kagoo K01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-k01) |
+| 62559 | Kagoo K02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-k02) |
+| 62560 | Kagoo K157 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-k157) |
+| 62561 | Kagoo K158 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-k158) |
+| 62562 | Kagoo KO4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-ko4) |
+| 62563 | Kagoo KO9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kagoo-ko9) |
+| 62564 | Kata I3L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kata-i3l) |
+| 62565 | Kata M2L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kata-m2l) |
+| 62566 | KDDI A01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kddi-a01) |
+| 62567 | KDDI IS04 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kddi-is04) |
+| 62568 | KDDI IS06 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kddi-is06) |
+| 62569 | Kenbo GW502S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenbo-gw502s) |
+| 62570 | Kenbo Hero K1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenbo-hero-k1) |
+| 62571 | Kenbo KBGW502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenbo-kbgw502) |
+| 62572 | Kenbo O21S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenbo-o21s) |
+| 62573 | Kenbo O31 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenbo-o31) |
+| 62574 | Kenxinda Proofings W9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenxinda-proofings-w9) |
+| 62575 | KGTEL R10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kgtel-r10) |
+| 62576 | KGTEL X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kgtel-x5) |
+| 62577 | Kimfly E28 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kimfly-e28) |
+| 62578 | Kimfly E29 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kimfly-e29) |
+| 62579 | KingCom Android 451Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingcom-android-451q) |
+| 62580 | KingZone A3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingzone-a3) |
+| 62581 | KingZone A5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingzone-a5) |
+| 62582 | KingZone A5i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingzone-a5i) |
+| 62583 | KingZone C5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingzone-c5) |
+| 62584 | KN-Mobile KN Mobile A10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-a10) |
+| 62585 | KN-Mobile KN Mobile H01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h01) |
+| 62586 | KN-Mobile KN Mobile H03 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h03) |
+| 62587 | KN-Mobile KN Mobile H04S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h04s) |
+| 62588 | KN-Mobile KN Mobile H55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h55) |
+| 62589 | KN-Mobile KN Mobile H60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-h60) |
+| 62590 | KN-Mobile KN Mobile Q55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-q55) |
+| 62591 | KN-Mobile KN Mobile QT-A02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-qt-a02) |
+| 62592 | Kocaso Flash One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kocaso-flash-one) |
+| 62593 | Kogan Agora Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kogan-agora-lite) |
+| 62594 | Komu Color | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-color) |
+| 62595 | Komu Energy | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-energy) |
+| 62596 | Komu K-Style | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k-style) |
+| 62597 | Komu K30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k30) |
+| 62598 | Komu K3D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k3d) |
+| 62599 | Komu K45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k45) |
+| 62600 | Komu K5 Octa | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k5-octa) |
+| 62601 | Komu K50N | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k50n) |
+| 62602 | Komu K60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k60) |
+| 62603 | Komu K70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k70) |
+| 62604 | Komu K8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-k8) |
+| 62605 | Komu Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-mini) |
+| 62606 | Komu Robo 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-robo-2) |
+| 62607 | Komu X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/komu-x1) |
+| 62608 | Konrow Cool Smart | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/konrow-cool-smart) |
+| 62609 | Konrow Just 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/konrow-just-5) |
+| 62610 | Konrow Link 50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/konrow-link-50) |
+| 62611 | Konrow Steelfin 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/konrow-steelfin-1) |
+| 62612 | Koobee Halo H9L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/koobee-halo-h9l) |
+| 62613 | Kraun 5004DX2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-5004dx2) |
+| 62614 | Kraun 5004DX4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-5004dx4) |
+| 62615 | Kraun KSmart 5008DX8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-ksmart-5008dx8) |
+| 62616 | Kraun KSmart 5016DX8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-ksmart-5016dx8) |
+| 62617 | Kraun KSmart 6008DX4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-ksmart-6008dx4) |
+| 62618 | Kraun KSmart 6016DX4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-ksmart-6016dx4) |
+| 62619 | KRETA W2021 | [ZOL](https://detail.zol.com.cn/cell_phone/index1356730.shtml) |
+| 62620 | Kruger-Matz DRIVE 6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-drive-6s) |
+| 62621 | Kruger-Matz DRIVE 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-drive-8) |
+| 62622 | Kruger-Matz DRIVE 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-drive-9) |
+| 62623 | Kruger-Matz Flow 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-flow-5) |
+| 62624 | Kruger-Matz FLOW 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-flow-7) |
+| 62625 | Kruger-Matz FLOW 7S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-flow-7s) |
+| 62626 | Kruger-Matz FLOW 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-flow-9) |
+| 62627 | Kruger-Matz LIVE 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-live-8) |
+| 62628 | Kruger-Matz LIVE 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-live-9) |
+| 62629 | Kruger-Matz LIVE 9S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-live-9s) |
+| 62630 | Kruger-Matz MOVE 8 mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kruger-matz-move-8-mini) |
+| 62631 | Kyocera Digno Rafre | [GSMchoice](https://www.gsmchoice.com/en/catalogue/kyocera/dignorafre/) |
+| 62632 | Kyocera KC-01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-kc-01) |
+| 62633 | Kyocera Qua phone | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-qua-phone) |
+| 62634 | Kyocera Urbano L02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-urbano-l02) |
+| 62635 | Kyocera Urbano L03 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-urbano-l03) |
+| 62636 | Kyocera Urbano Progresso | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-urbano-progresso) |
+| 62637 | Kyoto KY06 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyoto-ky06) |
+| 62638 | Kyoto SM16 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyoto-sm16) |
+| 62639 | Kyoto SM23 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyoto-sm23) |
+| 62640 | KZEN Bold B1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kzen-bold-b1) |
+| 62641 | KZEN Hard Rock | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kzen-hard-rock) |
+| 62642 | KZEN Majesty M3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kzen-majesty-m3) |
+| 62643 | KZEN W306 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kzen-w306) |
+| 62644 | KZEN W503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kzen-w503) |
+| 62645 | Laiq Dubai | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/laiq-dubai) |
+| 62646 | Laiq Glow | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/laiq-glow) |
+| 62647 | Lanix Ilium Alpha 5T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lanix-ilium-alpha-5t) |
+| 62648 | LANIX Ilium M7V | [IMEI.info](https://www.imei.info/phonedatabase/lanix-ilium-m7v/) |
+| 62649 | Lanix X550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lanix-x550) |
+| 62650 | LANIX X770 | [IMEI.info](https://www.imei.info/phonedatabase/lanix-x770/) |
+| 62651 | Lark Bjorn SP-500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lark-bjorn-sp-500) |
+| 62652 | Lark Cumulus 5 HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lark-cumulus-5-hd) |
+| 62653 | Lava iris 80 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lava-iris-80) |
+| 62654 | Lazer X40I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lazer-x40i) |
+| 62655 | Lazer X4508 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lazer-x4508) |
+| 62656 | Lazer X50D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lazer-x50d) |
+| 62657 | Leader Mars 11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leader-mars-11) |
+| 62658 | Leader Mars 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leader-mars-5) |
+| 62659 | Leader Phone LP Prado | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leader-phone-lp-prado) |
+| 62660 | Leagoo Z20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leagoo-z20) |
+| 62661 | Lenosed Discover X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lenosed-discover-x) |
+| 62662 | Lenovo Erazer M20 5G | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lenovo/erazer-m20-5g/) |
+| 62663 | Lenovo l38111 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/lenovo_l38111) |
+| 62664 | Lenovo SoftBank 503LV | [ZOL](https://detail.zol.com.cn/cell_phone/index1149593.shtml) |
+| 62665 | Leotec Itrium 2Y150 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leotec-itrium-2y150) |
+| 62666 | Leotec Titanium 2T355 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leotec-titanium-2t355) |
+| 62667 | Lephone TD506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lephone-td506) |
+| 62668 | LEXAND S5A4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lexand-s5a4) |
+| 62669 | LG G5 Lite | [ZOL](https://detail.zol.com.cn/cell_phone/index1138684.shtml) |
+| 62670 | LG GM360 Snap | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/gm360snap/) |
+| 62671 | LG GT500s | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/gt500s/) |
+| 62672 | LG H735 | [ZOL](https://detail.zol.com.cn/cell_phone/index402323.shtml) |
+| 62673 | LG it V36 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lg-it-v36) |
+| 62674 | LG Joy TV | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/joytv/) |
+| 62675 | LG K10 Novo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lg-k10-novo) |
+| 62676 | LG KizON | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/kizon/) |
+| 62677 | LG V20s | [ZOL](https://detail.zol.com.cn/cell_phone/index1159708.shtml) |
+| 62678 | LG V5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1157529.shtml) |
+| 62679 | LG Versace Unique | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/versaceunique/) |
+| 62680 | LG Wine Smart Jazz | [GSMchoice](https://www.gsmchoice.com/en/catalogue/lg/winesmartjazz/) |
+| 62681 | Liven I4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/liven-i4) |
+| 62682 | Logic X4P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logic-x4p) |
+| 62683 | Logic X5 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logic-x5-lite) |
+| 62684 | Logicom E884 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/e884/) |
+| 62685 | Logicom EZY 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-ezy-2) |
+| 62686 | Logicom L-Egant One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-egant-one) |
+| 62687 | Logicom L-Ement 500L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-ement-500l) |
+| 62688 | Logicom L-ITE 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-ite-500) |
+| 62689 | Logicom L-ITE 552 HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-ite-552-hd) |
+| 62690 | Logicom Orion E1 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/orion-e1/) |
+| 62691 | Logicom Posh S85 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/posh-s85/) |
+| 62692 | Logicom S504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-s504) |
+| 62693 | Logicom Xtrem 60 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/xtrem-60/) |
+| 62694 | LP A7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-a7) |
+| 62695 | LP Arena | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-arena) |
+| 62696 | LP Infinity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-infinity) |
+| 62697 | LP S100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-s100) |
+| 62698 | LP S200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-s200) |
+| 62699 | LP San Siro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-san-siro) |
+| 62700 | LP Veyron | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-veyron) |
+| 62701 | Lvtel V11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lvtel-lvtel-v11) |
+| 62702 | Lvtel V51 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lvtel-v51) |
+| 62703 | Macoox MC-X9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/macoox-mc-x9) |
+| 62704 | Magnus Infinity G11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/magnus-infinity-g11) |
+| 62705 | Majestic Ares 23 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-ares-23) |
+| 62706 | Majestic Ares 63 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-ares-63-lte) |
+| 62707 | Majestic Calipso 37 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-calipso-37) |
+| 62708 | Majestic Crono 22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-crono-22) |
+| 62709 | Majestic Crono 54 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-crono-54) |
+| 62710 | Majestic EOS 25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-eos-25) |
+| 62711 | Majestic Nyx 20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-nyx-20) |
+| 62712 | Majestic Pluto 26M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-pluto-26m) |
+| 62713 | Majestic Zefiro 38 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-zefiro-38) |
+| 62714 | Majestic Zeus 21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-zeus-21) |
+| 62715 | Malata i11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-i11) |
+| 62716 | Malata I60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-i60) |
+| 62717 | Malata S450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-s450) |
+| 62718 | Malata S501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-s501) |
+| 62719 | Malata S521 Elite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-s521-elite) |
+| 62720 | Malata Z8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/malata-z8) |
+| 62721 | Marshal ME-367 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/marshal-me-367) |
+| 62722 | Massgo VI2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/massgo-vi2) |
+| 62723 | Massgo VI5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/massgo-vi5) |
+| 62724 | Masstel Athena X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-athena-x2) |
+| 62725 | Masstel M18 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m18) |
+| 62726 | Masstel M200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m200) |
+| 62727 | Masstel M25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m25) |
+| 62728 | Masstel M305 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m305) |
+| 62729 | Masstel M310 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m310) |
+| 62730 | Masstel M315 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m315) |
+| 62731 | Masstel M330 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m330) |
+| 62732 | Masstel M360 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m360) |
+| 62733 | Masstel M401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m401) |
+| 62734 | Masstel M402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m402) |
+| 62735 | Masstel M420 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m420) |
+| 62736 | Masstel M450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m450) |
+| 62737 | Masstel M451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m451) |
+| 62738 | Masstel M500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m500) |
+| 62739 | Masstel M501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m501) |
+| 62740 | Masstel N400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n400) |
+| 62741 | Masstel N400S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n400s) |
+| 62742 | Masstel N410 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n410) |
+| 62743 | Masstel N416 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n416) |
+| 62744 | Masstel N456 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n456) |
+| 62745 | Masstel N460 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n460) |
+| 62746 | Masstel N470 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n470) |
+| 62747 | Masstel N510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n510) |
+| 62748 | Masstel N520 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n520) |
+| 62749 | Masstel N526 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n526) |
+| 62750 | Masstel N536 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n536) |
+| 62751 | Masstel N550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n550) |
+| 62752 | Masstel N560 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n560) |
+| 62753 | Masstel N590 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n590) |
+| 62754 | Masstel Star 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-star-500) |
+| 62755 | Master Phone 6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-phone-6s) |
+| 62756 | Master SmartPhone 402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-smartphone-402) |
+| 62757 | Master SmartPhone 450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-smartphone-450) |
+| 62758 | Master SmartPhone 451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-smartphone-451) |
+| 62759 | Master SmartPhone 501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-smartphone-501) |
+| 62760 | Master SmartPhone 501B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/master-smartphone-501b) |
+| 62761 | Matrix Gravity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/matrix-gravity) |
+| 62762 | Maximus Aura A88 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maximus-aura-a88) |
+| 62763 | Maximus iCube | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maximus-icube) |
+| 62764 | Maximus max15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maximus-max15) |
+| 62765 | Maxtron Diamond | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-diamond) |
+| 62766 | Maxtron Pluto | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-pluto) |
+| 62767 | Maxtron V17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-v17) |
+| 62768 | Maxtron V2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-v2) |
+| 62769 | Maxtron Ventus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-ventus) |
+| 62770 | Maxwest Astro 6r | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxwest-astro-6r) |
+| 62771 | Maxx AX354 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/maxx/ax354/) |
+| 62772 | Maxx MX157 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/maxx/mx157/) |
+| 62773 | MBO R7I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mbo-r7i) |
+| 62774 | MeanIT MG481 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meanit-mg481) |
+| 62775 | MeanIT MG580 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meanit-mg580) |
+| 62776 | MeanIT MG940A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meanit-mg940a) |
+| 62777 | Media-Droid MediaDroid Imperius Aero MT7005 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/media-droid-mediadroid-imperius-aero-mt7005) |
+| 62778 | Meeg 103 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meeg-103) |
+| 62779 | Meeg 210R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meeg-210r) |
+| 62780 | MegaFon MFLoginPh | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-mfloginph) |
+| 62781 | MegaFon MS3B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-ms3b) |
+| 62782 | MegaFon SP-A10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-sp-a10) |
+| 62783 | Meizu L681Q | [ZOL](https://detail.zol.com.cn/cell_phone/index1143774.shtml) |
+| 62784 | Meizu ME5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1099749.shtml) |
+| 62785 | Meizu MX Quad core | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meizu-mx-quad-core) |
+| 62786 | Meizu Polestar Phone | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meizu-polestar-phone) |
+| 62787 | Meo Smart A25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meo-smart-a25) |
+| 62788 | Meo Smart A65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meo-smart-a65) |
+| 62789 | Meo Smart A68 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meo-smart-a68) |
+| 62790 | Meo Starshine 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meo-starshine-5) |
+| 62791 | MGT Clever | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mgt-clever) |
+| 62792 | Microkey E12 Galaxy | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/microkey-microkey-e12-galaxy) |
+| 62793 | Microkey E12 Titanium | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/microkey-microkey-e12-titanium) |
+| 62794 | Microkey E9 Titanium | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/microkey-microkey-e9-titanium) |
+| 62795 | Micromax SuperFone Aisha A44 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/micromax_superfone_aisha_a44) |
+| 62796 | Microsoft Surface Phone | [DeviceBeast](https://devicebeast.com/devices/microsoft-surface-phone-128gb) |
+| 62797 | Mifaso X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mifaso-x2) |
+| 62798 | Miia MP-400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/miia-mp-400) |
+| 62799 | Mijue G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mijue-g3) |
+| 62800 | Mijue M3000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mijue-m3000) |
+| 62801 | Mijue M500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mijue-m500) |
+| 62802 | Mione 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-8) |
+| 62803 | Mione Mix 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-mix-1) |
+| 62804 | Mione Mix 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-mix-9) |
+| 62805 | Mione N66 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-n66) |
+| 62806 | Mione R2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mione-r2) |
+| 62807 | Miray MPM-S3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/miray-mpm-s3) |
+| 62808 | Mitashi AN01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mitashi-an01) |
+| 62809 | Mito A120 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a120) |
+| 62810 | Mito A15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a15) |
+| 62811 | Mito A160 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a160) |
+| 62812 | Mito A17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a17) |
+| 62813 | Mito A210 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a210) |
+| 62814 | Mito A230 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a230) |
+| 62815 | Mito A260 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a260) |
+| 62816 | Mito A33 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a33) |
+| 62817 | Mito A39 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a39) |
+| 62818 | Mito A50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a50) |
+| 62819 | Mito A55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a55) |
+| 62820 | Mito A70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a70) |
+| 62821 | Mito A700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a700) |
+| 62822 | Mito A73 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a73) |
+| 62823 | Mito A77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a77) |
+| 62824 | Mito A82 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a82) |
+| 62825 | Mito A900 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a900) |
+| 62826 | Mito A91 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a91) |
+| 62827 | Mito A95 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a95) |
+| 62828 | Mito A990 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a990) |
+| 62829 | Mito Fantasy 2 A250 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-2-a250) |
+| 62830 | Mito Fantasy 2 A75 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-2-a75) |
+| 62831 | Mito Fantasy A363 Card | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-a363-card) |
+| 62832 | Mito Fantasy Card A65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-card-a65) |
+| 62833 | Mito Fantasy Lite A810 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-lite-a810) |
+| 62834 | Mito Fantasy Mini A99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-mini-a99) |
+| 62835 | Mito Fantasy Power A68 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-power-a68) |
+| 62836 | Mito Fantasy Text A500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-fantasy-text-a500) |
+| 62837 | Mito T777 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-t777) |
+| 62838 | Mito W1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-w1) |
+| 62839 | Mito Z3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-z3) |
+| 62840 | Mito Z5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-z5) |
+| 62841 | Mivo MV 450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-mv-450) |
+| 62842 | Mivo MV400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-mv400) |
+| 62843 | Mivo MV500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-mv500) |
+| 62844 | Mivo MV510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-mv510) |
+| 62845 | Mivo Neo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-neo) |
+| 62846 | Mivo Royal 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mivo-royal-5) |
+| 62847 | MIXC G7106 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mixc-g7106) |
+| 62848 | MIXC G7108 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mixc-g7108) |
+| 62849 | MIXC M20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mixc-m20) |
+| 62850 | MLais M4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-m4) |
+| 62851 | MLais M52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-m52) |
+| 62852 | MLais MX20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-mx20) |
+| 62853 | MLais MX36 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-mx36) |
+| 62854 | MLais MX58 Air | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-mx58-air) |
+| 62855 | MLais MX86 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mlais-mlais-mx86) |
+| 62856 | MLS Color 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-color-4g) |
+| 62857 | MLS IQ0705 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq0705) |
+| 62858 | MLS IQ1040 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1040) |
+| 62859 | MLS iQ1055 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1055) |
+| 62860 | MLS IQ1388 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1388) |
+| 62861 | MLS IQ1401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1401) |
+| 62862 | MLS IQ1450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1450) |
+| 62863 | MLS IQ1452 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1452) |
+| 62864 | MLS IQ1517 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1517) |
+| 62865 | MLS IQ1570 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1570) |
+| 62866 | MLS IQ1850 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1850) |
+| 62867 | MLS IQ5017 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq5017) |
+| 62868 | MLS IQE100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iqe100) |
+| 62869 | MLS IQS71 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iqs71) |
+| 62870 | MLS IQW553 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iqw553) |
+| 62871 | MLS Join | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-join) |
+| 62872 | Mobell Nova F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-f) |
+| 62873 | Mobell Nova F Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-f-mini) |
+| 62874 | Mobell Nova F2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-f2) |
+| 62875 | Mobell Nova F3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-f3) |
+| 62876 | Mobell Nova F7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-f7) |
+| 62877 | Mobell Nova I7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-i7) |
+| 62878 | Mobell Nova P2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-p2) |
+| 62879 | Mobell Nova S2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-s2) |
+| 62880 | Mobell Nova U | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-u) |
+| 62881 | Mobell Paladin | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-paladin) |
+| 62882 | Mobell S58 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-s58) |
+| 62883 | Mobell S59 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-s59) |
+| 62884 | Mobell S85 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-s85) |
+| 62885 | Mobicel RX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-rx) |
+| 62886 | Mobicel Saphire | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-saphire) |
+| 62887 | MOBICEL Titan | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-titan/) |
+| 62888 | Mobicel X7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-x7) |
+| 62889 | Mobicell XV19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicell-xv19) |
+| 62890 | Mobiola MS45A4000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms45a4000) |
+| 62891 | Mobiola MS50A4500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms50a4500) |
+| 62892 | Mobiola MS50L1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms50l1) |
+| 62893 | Mobiola MS50X6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms50x6) |
+| 62894 | Mobiola MS55X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms55x5) |
+| 62895 | Mobiola Polys MS45L1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-polys-ms45l1) |
+| 62896 | Mobistel Cynus E4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobistel-cynus-e4) |
+| 62897 | Mobistel Cynus E6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobistel-cynus-e6) |
+| 62898 | Mobistel Cynus E8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobistel-cynus-e8) |
+| 62899 | Mobistel Cynus F10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobistel-cynus-f10) |
+| 62900 | Mobitel 404 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobitel-404) |
+| 62901 | Mobitel SQ 40E31T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobitel-sq-40e31t) |
+| 62902 | MobiWire Aquila | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiwire-aquila) |
+| 62903 | MobiWire Kiona | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiwire-kiona) |
+| 62904 | MobiWire Kohana | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiwire-kohana) |
+| 62905 | Mobiwire Smart V25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiwire-smart-v25) |
+| 62906 | Mobo FreeSpeed | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobo-freespeed) |
+| 62907 | Mobo MB505 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobo-mb505) |
+| 62908 | MODECOM Q503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/modecom-modecom-q503) |
+| 62909 | MODIO M93 | [IMEI.info](https://www.imei.info/phonedatabase/modio-m93/) |
+| 62910 | Moii E505 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e505) |
+| 62911 | Moii E588 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e588) |
+| 62912 | Moii E801 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e801) |
+| 62913 | Moii E896 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e896) |
+| 62914 | Moii E990 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e990) |
+| 62915 | Moii E991 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e991) |
+| 62916 | Moii E996 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e996) |
+| 62917 | Monix Ginger G5001 Bond | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/monix-ginger-g5001-bond) |
+| 62918 | Moto M2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moto-m2) |
+| 62919 | Motorola Moto Z 2018 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/motorola-moto-z-2018) |
+| 62920 | Motorola RAZR2 V8 LE | [GSMchoice](https://www.gsmchoice.com/en/catalogue/motorola/razr2v8le/) |
+| 62921 | Motorola V6 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/motorola/v6/) |
+| 62922 | Movic ED1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movic-ed1) |
+| 62923 | MOVIC Hero 7 | [IMEI.info](https://www.imei.info/phonedatabase/movic-hero-7/) |
+| 62924 | Movic K3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movic-k3) |
+| 62925 | Movic T6001 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movic-t6001) |
+| 62926 | Movitel M8407 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movitel-m8407) |
+| 62927 | Movitel M8409 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movitel-m8409) |
+| 62928 | Movitel M8412 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movitel-m8412) |
+| 62929 | MPai S720C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpai-mpai-s720c) |
+| 62930 | MPIE 909T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpie-909t) |
+| 62931 | MPIE MG6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpie-mg6) |
+| 62932 | MPIE S15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpie-s15) |
+| 62933 | MPIE X800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mpie-x800) |
+| 62934 | MTN S820 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtn-s820) |
+| 62935 | MTN Smart S720I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtn-smart-s720i) |
+| 62936 | MTN Steppa 2 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtn-steppa-2-lte) |
+| 62937 | MTO MK318 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mto-mk318) |
+| 62938 | MTO MK319 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mto-mk319) |
+| 62939 | MTO MK394 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mto-mk394) |
+| 62940 | MTO MK399 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mto-mk399) |
+| 62941 | MTO MK419 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mto-mk419) |
+| 62942 | MTS 972 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-972) |
+| 62943 | MTS 982 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-982) |
+| 62944 | MTS 982O | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-982o) |
+| 62945 | MTS Smart Race 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-race-4g) |
+| 62946 | MTS Smart Run 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-run-4g) |
+| 62947 | MTS Smart Start 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-start-2) |
+| 62948 | MTS Smart Start 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-start-3) |
+| 62949 | MTS Smart Surf 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-smart-surf-4g) |
+| 62950 | MTT M-T-T Master 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtt-m-t-t-master-4g) |
+| 62951 | Multilaser MS4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-ms4) |
+| 62952 | Multilaser MS50M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-ms50m) |
+| 62953 | Multilaser NB021 22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-nb021-22) |
+| 62954 | Multilaser P3304 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-p3304) |
+| 62955 | Multilaser P9012 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-p9012) |
+| 62956 | Multilaser Titanium | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-titanium) |
+| 62957 | MXNEC S809 Smart | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s809-smart) |
+| 62958 | MXNEC S903 Upgrade | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s903-upgrade) |
+| 62959 | MXNEC S904 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s904) |
+| 62960 | MXNEC S904 Top | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s904-top) |
+| 62961 | Mycell Iron 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mycell-mycell-iron-1) |
+| 62962 | myPhone Hammer Energy 2 | [IMEI.info](https://www.imei.info/phonedatabase/myphone-hammer-energy-2/) |
+| 62963 | MyPhone my29s | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myphone-my29s) |
+| 62964 | MyPhone myA17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myphone-mya17) |
+| 62965 | MyPhone myNX1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myphone-mynx1) |
+| 62966 | MyPhone myXi1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myphone-myxi1) |
+| 62967 | Myria 502M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myria-502m) |
+| 62968 | Myria GW-4013BK | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myria-gw-4013bk) |
+| 62969 | Myria MY9053 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myria-my9053) |
+| 62970 | Myria MY9054 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myria-my9054) |
+| 62971 | Myria MY9063 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/myria-my9063) |
+| 62972 | MySaga C1 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/c1/) |
+| 62973 | MySaga C2 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/c2/) |
+| 62974 | MySaga C3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/c3/) |
+| 62975 | MySaga C4 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/c4/) |
+| 62976 | MySaga D1 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/d1/) |
+| 62977 | MySaga D2 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/mysaga/d2/) |
+| 62978 | MyWigo MWG459 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mywigo-mwg459) |
+| 62979 | MyWigo MWG579 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mywigo-mwg579) |
+| 62980 | Navon D405 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-d405) |
+| 62981 | Navon D450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-d450) |
+| 62982 | Navon D504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-d504) |
+| 62983 | Navon M505 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-m505-4g) |
+| 62984 | Navon Supreme Fine | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-supreme-fine) |
+| 62985 | Navon T400 3G 2017 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/navon-t400-3g-2017) |
+| 62986 | NEO N002 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/neo-neo-n002) |
+| 62987 | NEO N002I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/neo-neo-n002i) |
+| 62988 | Neoson Aphone R11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/neoson-aphone-r11) |
+| 62989 | Neoson X901 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/neoson-x901) |
+| 62990 | Neuimage NIM-601Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/neuimage-nim-601q) |
+| 62991 | Nevir NVR-S45 S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nevir-nvr-s45-s1) |
+| 62992 | Newman Newsmy N1 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/newman_newsmy_n1) |
+| 62993 | Newsmy N2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/newsmy-n2) |
+| 62994 | Newsmy NM860 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/newsmy-nm860) |
+| 62995 | Newsmy T600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/newsmy-t600) |
+| 62996 | NEX Slam 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-slam-1) |
+| 62997 | NEX Slam 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-slam-7) |
+| 62998 | NEX Slam 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-slam-8) |
+| 62999 | NEX Smart 11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-smart-11) |
+| 63000 | NEX Smart 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-smart-6) |
+| 63001 | NEX Smart 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-smart-7) |
+| 63002 | NEX Smart 9A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-smart-9a) |
+| 63003 | NEX Start 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-start-2) |
+| 63004 | NEX Start 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-start-9) |
+| 63005 | NEX Start Mingalaba 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-start-mingalaba-1) |
+| 63006 | Nexian Mi240 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi240) |
+| 63007 | Nexian MI430 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi430) |
+| 63008 | Nexian MI432 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi432) |
+| 63009 | Nexian Mi530 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi530) |
+| 63010 | NGM Dynamic Now | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-dynamic-now) |
+| 63011 | NGM Dynamic Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-dynamic-star) |
+| 63012 | NGM E407 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-e407) |
+| 63013 | NGM E553 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-e553) |
+| 63014 | NGM Forward Art | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-forward-art) |
+| 63015 | NGM Forward Young | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-forward-young) |
+| 63016 | NGM Legend XL | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-legend-xl) |
+| 63017 | NGM Spirit | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-spirit) |
+| 63018 | NGM Wilco | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-wilco) |
+| 63019 | ngs Odysea 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngs-ngs-odysea-4) |
+| 63020 | Ninetology I7520 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-i7520) |
+| 63021 | Ninetology i9480 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-i9480) |
+| 63022 | Ninetology I9503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-i9503) |
+| 63023 | Ninetology Q1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-q1) |
+| 63024 | Nipda Depression | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-depression) |
+| 63025 | Nipda Depression F10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-depression-f10) |
+| 63026 | Nipda Depression Z5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-depression-z5) |
+| 63027 | Nipda Hurricane A8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-hurricane-a8) |
+| 63028 | Nipda Hurricane C6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-hurricane-c6) |
+| 63029 | Nipda Hurricane V11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-hurricane-v11) |
+| 63030 | Nipda Pacific T8 2016 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-pacific-t8-2016) |
+| 63031 | Nipda Pacific-A58 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-pacific-a58) |
+| 63032 | Nipda Tornado 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-tornado-1) |
+| 63033 | Nipda Tsunami | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-tsunami) |
+| 63034 | Nipda Tsunami-F9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-tsunami-f9) |
+| 63035 | Nipda Typhoon A7 2016 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-typhoon-a7-2016) |
+| 63036 | Nipda Typhoon G12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-typhoon-g12) |
+| 63037 | Nipda Typhoon T2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nipda-typhoon-t2) |
+| 63038 | No1 phone X2i | [GSMchoice](https://www.gsmchoice.com/en/catalogue/no1phone/x2i/) |
+| 63039 | Noa Element H9 | [DeviceBeast](https://devicebeast.com/devices/noa-element-h9-dual-sim-td-lte) |
+| 63040 | Noblex N451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/noblex-n451) |
+| 63041 | NOKIA 120 4G | [IMEI.info](https://www.imei.info/phonedatabase/nokia-120-4g/) |
+| 63042 | Nokia D1C | [ZOL](https://detail.zol.com.cn/cell_phone/index1156461.shtml) |
+| 63043 | Nous NS5003 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nous-ns5003) |
+| 63044 | Nous NS6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nous-ns6) |
+| 63045 | Nova N12I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-n12i) |
+| 63046 | Nova N14 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-n14) |
+| 63047 | Nova N7 New | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-n7-new) |
+| 63048 | Nova Play 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-play-1) |
+| 63049 | Nova Wow 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-wow-1) |
+| 63050 | Noxx Spitze Veloce | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/noxx-spitze-veloce) |
+| 63051 | NTT SH-03F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ntt-sh-03f) |
+| 63052 | Nuqleo Quadrant | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuqleo-quadrant) |
+| 63053 | NUU Mobile A4L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-a4l) |
+| 63054 | NUU Mobile G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-g3) |
+| 63055 | NUU-mobile NUU A3L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-a3l) |
+| 63056 | NUU-mobile Nuu mobile A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-a1) |
+| 63057 | NUU-mobile Nuu mobile A3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-a3) |
+| 63058 | NUU-mobile NUU Mobile A4L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-a4l) |
+| 63059 | NUU-mobile NUU Mobile G3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-g3) |
+| 63060 | NUU-mobile NUU Mobile N5L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-n5l) |
+| 63061 | NUU-mobile Nuu mobile X5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-mobile-x5) |
+| 63062 | NUU-mobile NUU NU-3S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-nu-3s) |
+| 63063 | NUU-mobile NUU NU5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuu-mobile-nuu-nu5) |
+| 63064 | Nyx Fly II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-fly-ii) |
+| 63065 | Nyx Noba II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-noba-ii) |
+| 63066 | Nyx Orbis | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-orbis) |
+| 63067 | Nyx Rex | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-rex) |
+| 63068 | Nyx Shade | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-shade) |
+| 63069 | Nyx Sky | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-sky) |
+| 63070 | Nyx Sky HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-sky-hd) |
+| 63071 | Nyx Zeuz HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-zeuz-hd) |
+| 63072 | Obee OS500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/obee-os500) |
+| 63073 | Obee OS818 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/obee-os818) |
+| 63074 | OGO Grand | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ogo-ogo-grand) |
+| 63075 | Okapia Style X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/okapia-style-x) |
+| 63076 | OKWU M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/okwu-okwu-m1) |
+| 63077 | Olive Smart V-S300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/olive-smart-v-s300) |
+| 63078 | Omega OASS50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/omega-oass50) |
+| 63079 | OneClick Pop II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oneclick-pop-ii) |
+| 63080 | OneClick Pop III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oneclick-pop-iii) |
+| 63081 | OneClick X Music II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oneclick-x-music-ii) |
+| 63082 | OneClick X-Music 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oneclick-x-music-3) |
+| 63083 | Onix S405 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/onix-s405) |
+| 63084 | Onix S501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/onix-s501) |
+| 63085 | ONN K7 Sunny | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/onn-k7-sunny) |
+| 63086 | Ooredoo Smart 12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ooredoo-smart-12) |
+| 63087 | OpelMobile S55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/opelmobile-s55) |
+| 63088 | OpelMobile SMARTKIDS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/opelmobile-smartkids) |
+| 63089 | OPhone OZE 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ophone-ophone-oze-4) |
+| 63090 | Oppo R15 Dream Mirror | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oppo-r15-dream-mirror) |
+| 63091 | Optimus San Remo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/optimus-san-remo) |
+| 63092 | ORRO FS5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-fs5) |
+| 63093 | ORRO G209 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-g209) |
+| 63094 | ORRO I9296 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-i9296) |
+| 63095 | ORRO N630 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-n630) |
+| 63096 | ORRO N710 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-n710) |
+| 63097 | Oukitel U19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/oukitel-u19) |
+| 63098 | Overmax Vertis 4004 You | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/overmax-vertis-4004-you) |
+| 63099 | Own One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-one) |
+| 63100 | Own S3010D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s3010d) |
+| 63101 | Own S3015 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s3015) |
+| 63102 | Own S4035 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s4035-4g) |
+| 63103 | Own S5010 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s5010) |
+| 63104 | Own S5030 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s5030) |
+| 63105 | PCD 508 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pcd-508) |
+| 63106 | PCD 509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pcd-509) |
+| 63107 | PCD E400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pcd-e400) |
+| 63108 | PCD PH4001 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pcd-ph4001) |
+| 63109 | Phicomm C6051 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-c6051) |
+| 63110 | Phicomm Clue C230 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-clue-c230) |
+| 63111 | Phicomm EX780L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-ex780l) |
+| 63112 | PHICOMM i508 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/phicomm_i508) |
+| 63113 | Phicomm I803WA | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-i803wa) |
+| 63114 | Phicomm I813WA | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phicomm-i813wa) |
+| 63115 | Philco PH501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/philco-ph501) |
+| 63116 | Philco Phone 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/philco-phone-500) |
+| 63117 | PHILIPS T7250 | [IMEI.info](https://www.imei.info/phonedatabase/philips-t7250/) |
+| 63118 | Phoenix A10 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/phoenix/a10/) |
+| 63119 | Phoenix Rock X Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phoenix-rock-x-mini) |
+| 63120 | PiPO N1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pipo-n1) |
+| 63121 | Pixcom KMC100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixcom-kmc100) |
+| 63122 | Pixcom PGM398 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixcom-pgm398) |
+| 63123 | Point-of-View Point of View MOB-5045 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/point-of-view-point-of-view-mob-5045) |
+| 63124 | Polaroid G150 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-g150) |
+| 63125 | Polaroid P5006A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-p5006a) |
+| 63126 | Polaroid P5526A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-p5526a) |
+| 63127 | Polaroid PRO400B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro400b) |
+| 63128 | Polaroid PRO4324POE01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro4324poe01) |
+| 63129 | Polaroid PRO5023PVE02 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro5023pve02) |
+| 63130 | Polaroid PRO5044PEE01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro5044pee01) |
+| 63131 | Polaroid PROF700PR002 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-prof700pr002) |
+| 63132 | Polaroid PSPC502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pspc502) |
+| 63133 | Polaroid PSPC550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pspc550) |
+| 63134 | Polaroid PSPT400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pspt400) |
+| 63135 | Polaroid PST-H116 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pst-h116) |
+| 63136 | Polytron 4G450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-4g450) |
+| 63137 | Polytron 4G500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-4g500) |
+| 63138 | Polytron 4G502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-4g502) |
+| 63139 | Polytron 4G551 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-4g551) |
+| 63140 | Polytron L501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-l501) |
+| 63141 | Polytron P520 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-p520) |
+| 63142 | Polytron R2406 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2406) |
+| 63143 | Polytron R2457 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2457) |
+| 63144 | Polytron R2502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2502) |
+| 63145 | Polytron R2508 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2508) |
+| 63146 | Polytron R2509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2509) |
+| 63147 | Polytron R3450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r3450) |
+| 63148 | Polytron W6450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-w6450) |
+| 63149 | Polytron W6500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-w6500) |
+| 63150 | Polytron W7451 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-w7451) |
+| 63151 | Polytron W7550 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-w7550-lite) |
+| 63152 | Polytron W8480 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-w8480) |
+| 63153 | Pomp P8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pomp-p8) |
+| 63154 | Poptel K1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/poptel-k1) |
+| 63155 | Poptel K2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/poptel-k2) |
+| 63156 | Poptel P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/poptel-p1) |
+| 63157 | Poptel P2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/poptel-p2) |
+| 63158 | Positivo S408 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s408) |
+| 63159 | Positivo S430 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s430) |
+| 63160 | Positivo S455 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s455) |
+| 63161 | Positivo S510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s510) |
+| 63162 | Positivo S520 S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s520-s) |
+| 63163 | Positivo S530 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-s530) |
+| 63164 | Positivo YPY S400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-ypy-s400) |
+| 63165 | Positivo YPY S460 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-ypy-s460) |
+| 63166 | Positivo YPY S500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-ypy-s500) |
+| 63167 | Poya Servo M8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/poya-servo-m8) |
+| 63168 | PRESTIGIO Grace 3868 4G | [IMEI.info](https://www.imei.info/phonedatabase/prestigio-grace-3868-4g/) |
+| 63169 | PRESTIGIO Wize 3761 3G | [IMEI.info](https://www.imei.info/phonedatabase/prestigio-wize-3761-3g/) |
+| 63170 | PRIMUX Alpha 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-alpha-2) |
+| 63171 | PRIMUX Alpha 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-alpha-4) |
+| 63172 | PRIMUX Beta | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-beta) |
+| 63173 | PRIMUX Beta 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-beta-3) |
+| 63174 | PRIMUX Ioxphone | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-ioxphone) |
+| 63175 | PRIMUX Kappa P501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-kappa-p501) |
+| 63176 | PRIMUX Nova | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-nova) |
+| 63177 | PRIMUX Omega | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega) |
+| 63178 | PRIMUX Omega 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega-2) |
+| 63179 | PRIMUX Omega 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega-3) |
+| 63180 | PRIMUX Omega 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega-5) |
+| 63181 | PRIMUX Omega 7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega-7) |
+| 63182 | PRIMUX Omega X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-omega-x) |
+| 63183 | PRIMUX Sigma | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-sigma) |
+| 63184 | PRIMUX Zeta | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-zeta) |
+| 63185 | PRIMUX Zeta 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-zeta-2) |
+| 63186 | Prince PC998 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prince-pc998) |
+| 63187 | Privileg F600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/privileg-f600) |
+| 63188 | Privileg JK4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/privileg-jk4) |
+| 63189 | Privileg SM29 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/privileg-sm29) |
+| 63190 | Privileg SM3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/sm3/) |
+| 63191 | Privileg SM30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/privileg-sm30) |
+| 63192 | Privileg SM36 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/privileg-sm36) |
+| 63193 | Privileg SM6 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/sm6/) |
+| 63194 | Privileg SM7 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/sm7/) |
+| 63195 | Privileg TV1000 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/tv1000/) |
+| 63196 | Privileg TV2000 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/tv2000/) |
+| 63197 | Privileg TV5 mini | [GSMchoice](https://www.gsmchoice.com/en/catalogue/privileg/tv5mini/) |
+| 63198 | Prixton C18 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prixton-c18) |
+| 63199 | Prixton C55Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prixton-c55q) |
+| 63200 | Prixton C64Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prixton-c64q) |
+| 63201 | Proline XV-402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/proline-xv-402) |
+| 63202 | PULID F19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pulid-pulid-f19) |
+| 63203 | PULID F23 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pulid-pulid-f23) |
+| 63204 | Pulsare 786 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pulsare-786) |
+| 63205 | Puncher Dhoom I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/puncher-dhoom-i) |
+| 63206 | Puncher Dhoom II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/puncher-dhoom-ii) |
+| 63207 | Puncher F3 Magic | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/puncher-f3-magic) |
+| 63208 | Puncher UK5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/puncher-uk5) |
+| 63209 | Puncher UK9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/puncher-uk9) |
+| 63210 | QBell QPhone 5-1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbell-qphone-5-1) |
+| 63211 | QBell QPhone 5-2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbell-qphone-5-2) |
+| 63212 | QBell QPhone 5-3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbell-qphone-5-3) |
+| 63213 | QBell QPhone 5-4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbell-qphone-5-4) |
+| 63214 | Qbex Flix | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-flix) |
+| 63215 | Qbex HS011 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-hs011) |
+| 63216 | Qbex I753 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-i753) |
+| 63217 | Qbex QBA769 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-qba769) |
+| 63218 | Qbex W509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-w509) |
+| 63219 | Qbex W510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qbex-w510) |
+| 63220 | Qilive 45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-45) |
+| 63221 | Qilive 5-3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-5-3) |
+| 63222 | Qilive 50 QC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-50-qc) |
+| 63223 | Qilive 5033F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-5033f) |
+| 63224 | Qilive Q-4094 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-q-4094) |
+| 63225 | Qilive Q.4034 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4034/) |
+| 63226 | Qilive Q.4046 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4046/) |
+| 63227 | Qilive Q.4514 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4514/) |
+| 63228 | Qilive Q.4688 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4688/) |
+| 63229 | Qilive Q.4868 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4868/) |
+| 63230 | Qilive Q.4926 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4926/) |
+| 63231 | Qilive Q10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-q10) |
+| 63232 | Qilive Q10 Rugged | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-q10-rugged) |
+| 63233 | QILIVE Q3 | [IMEI.info](https://www.imei.info/phonedatabase/qilive-q3/) |
+| 63234 | Qilive Smartphone Q4 5.0 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/smartphoneq45.0/) |
+| 63235 | Qnet Jomax | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-jomax) |
+| 63236 | Qnet Luxgen | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-luxgen) |
+| 63237 | Qnet Mobile Stark K1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-mobile-stark-k1) |
+| 63238 | Qnet Passion P5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-passion-p5) |
+| 63239 | Qnet Passion P6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-passion-p6) |
+| 63240 | Qrea R-36 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qrea-r-36) |
+| 63241 | QSmart EIII | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-eiii) |
+| 63242 | QSmart MB5011 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-mb5011) |
+| 63243 | QSmart Q-Smart MB5013 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-q-smart-mb5013) |
+| 63244 | QSmart Q-Smart QS470 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-q-smart-qs470) |
+| 63245 | QSmart Q-Smart QS550T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-q-smart-qs550t) |
+| 63246 | QSmart QS550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-qs550) |
+| 63247 | QSmart S25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-s25) |
+| 63248 | QSmart S32 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-s32) |
+| 63249 | QSmart S53 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-s53) |
+| 63250 | Quadro SQ-50E85F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quadro-sq-50e85f) |
+| 63251 | Quantum F16 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-f16) |
+| 63252 | Quantum MUV | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-muv) |
+| 63253 | Quantum Q-Titano AK47 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quantum-q-titano-ak47) |
+| 63254 | Quatro F1453 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quatro-f1453) |
+| 63255 | Qube B2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qube-b2) |
+| 63256 | Qubo Chiara | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qubo-chiara) |
+| 63257 | Qubo Oriel | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qubo-oriel) |
+| 63258 | Que Ace 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/que-ace-5-0) |
+| 63259 | Que st Q5000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/que-st-q5000) |
+| 63260 | Qumo Quest 457 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qumo-quest-457) |
+| 63261 | Quo QSP-501QS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/quo-qsp-501qs) |
+| 63262 | Rage Polo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rage-polo) |
+| 63263 | Reach Q882 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reach-q882) |
+| 63264 | Reach RD61 3E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reach-rd61-3e) |
+| 63265 | Realme 3 MT6771 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/realme-3-mt6771) |
+| 63266 | Redmi 3A | [ZOL](https://detail.zol.com.cn/cell_phone/index1140196.shtml) |
+| 63267 | Reeder S919 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reeder-s919) |
+| 63268 | Reliance Orison | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/reliance-orison) |
+| 63269 | Revo K850 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/revo-k850) |
+| 63270 | Revo S557 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/revo-s557) |
+| 63271 | Rivo Phantom RX298 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rivo-phantom-rx298) |
+| 63272 | Rivo Rhythm RX300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rivo-rhythm-rx300) |
+| 63273 | Rivo Rhythm RX350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rivo-rhythm-rx350) |
+| 63274 | Rivo Rhythm RX550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rivo-rhythm-rx550) |
+| 63275 | RLG Fusion lgnite 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-fusion-lgnite-2) |
+| 63276 | RLG L8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-l8) |
+| 63277 | RLG Uhuru Accu | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-uhuru-accu) |
+| 63278 | RLG Viva EX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-viva-ex) |
+| 63279 | Robot Phone | [Gadgets 360](https://www.gadgets360.com/robot-phone-price-in-india-137238) |
+| 63280 | ROCKER I900 | [IMEI.info](https://www.imei.info/phonedatabase/rocker-i900/) |
+| 63281 | Rokea R840 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rokea-r840) |
+| 63282 | Rokea RS40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rokea-rs40) |
+| 63283 | RoyalStar W102 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/royalstar-w102) |
+| 63284 | ROYQUEEN Regal RQ540 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/royqueen-royqueen-regal-rq540) |
+| 63285 | RugGear RG880i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ruggear-rg880i) |
+| 63286 | Runbo X5-King | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/runbo-x5-king) |
+| 63287 | Runbo X5-W | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/runbo-x5-w) |
+| 63288 | S-Color IPH7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-color-iph7) |
+| 63289 | S-Color S Color S-V1I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-color-s-color-s-v1i) |
+| 63290 | S-Color S-V10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-color-s-v10) |
+| 63291 | S-Color T66 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-color-t66) |
+| 63292 | S-TELL C255I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-c255i) |
+| 63293 | S-TELL C560 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-c560) |
+| 63294 | S-TELL M457 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m457) |
+| 63295 | S-TELL M460 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m460) |
+| 63296 | S-TELL M461 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m461) |
+| 63297 | S-TELL M556 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m556) |
+| 63298 | S-TELL M572 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m572) |
+| 63299 | S-TELL M573 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m573) |
+| 63300 | S-TELL M621 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m621) |
+| 63301 | S-TELL P790 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-p790) |
+| 63302 | Samsung Beyonce | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/beyonce/) |
+| 63303 | Samsung Galaxy A3 HSPA | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya3hspa/) |
+| 63304 | Samsung Galaxy A82 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya82/) |
+| 63305 | Samsung Galaxy A9s | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya9s/) |
+| 63306 | Samsung Galaxy Ace 2 La Fleur | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyace2lafleur/) |
+| 63307 | Samsung Galaxy Ace Dear I619 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyacedeari619/) |
+| 63308 | Samsung Galaxy Fame S6818 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyfames6818/) |
+| 63309 | Samsung Galaxy J7 Metal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-j7-metal) |
+| 63310 | Samsung Galaxy J7 Top | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-j7-top) |
+| 63311 | Samsung Galaxy Mega I9208 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxymegai9208/) |
+| 63312 | Samsung Galaxy Nexus Telus | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynexustelus/) |
+| 63313 | Samsung GALAXY Note 3 N9006 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynote3n9006/) |
+| 63314 | Samsung Galaxy Note 3 Neo LTE-A | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynote3neoltea/) |
+| 63315 | Samsung GALAXY Note 6 Lite | [ZOL](https://detail.zol.com.cn/cell_phone/index1144400.shtml) |
+| 63316 | Samsung Galaxy Note FE Exynos | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-note-fe-exynos) |
+| 63317 | Samsung Galaxy Note II N7108 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynoteiin7108/) |
+| 63318 | Samsung Galaxy Note3 Lite 4G N7509V | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxynote3lite4gn7509v/) |
+| 63319 | Samsung Galaxy Note9 Exynos | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-note9-exynos) |
+| 63320 | Samsung Galaxy S III La Fleur | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxysiiilafleur/) |
+| 63321 | Samsung Galaxy S III mini La Fleur | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxysiiiminilafleur/) |
+| 63322 | Samsung Galaxy S IV | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxysiv/) |
+| 63323 | Samsung Galaxy S10 5G SD855 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-s10-5g-sd855) |
+| 63324 | Samsung Galaxy S3 Mini VE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-s3-mini-ve) |
+| 63325 | Samsung Galaxy S4 VE | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxys4ve/) |
+| 63326 | Samsung GALAXY S6 Mini | [ZOL](https://detail.zol.com.cn/cell_phone/index1136421.shtml) |
+| 63327 | Samsung Galaxy S9 SD845 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/samsung-galaxy-s9-sd845) |
+| 63328 | Samsung Galaxy Watch6 40mm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxywatch640mm/) |
+| 63329 | Samsung Galaxy Watch6 44mm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxywatch644mm/) |
+| 63330 | Samsung Galaxy Watch8 40mm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxy-watch8-40mm/) |
+| 63331 | Samsung Galaxy Watch8 44mm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxy-watch8-44mm/) |
+| 63332 | Samsung Galaxy Wide9 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxy-wide9/) |
+| 63333 | Samsung Legend | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/legend/) |
+| 63334 | Samsung Nexus S 4G | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/nexuss4g/) |
+| 63335 | Samsung Wave 575 Hello Kitty | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/wave575hellokitty/) |
+| 63336 | Samsung Wave Y Young S5380D | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/waveyyoungs5380d/) |
+| 63337 | Samsung Xcover B550 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/xcoverb550/) |
+| 63338 | Samsung Z5 | [ZOL](https://detail.zol.com.cn/cell_phone/index1139119.shtml) |
+| 63339 | Samsung ZEQ9000 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/zeq9000/) |
+| 63340 | Sanno V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sanno-v8) |
+| 63341 | Sansui C31 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sansui-c31) |
+| 63342 | Sansui Play | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sansui-play) |
+| 63343 | Santin Marconi | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/santin-marconi) |
+| 63344 | Santin N3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/santin-n3) |
+| 63345 | Seatel L2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-l2) |
+| 63346 | Seatel L3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-l3) |
+| 63347 | Seatel T5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-t5) |
+| 63348 | Seatel V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-v8) |
+| 63349 | Seatel V9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-v9) |
+| 63350 | Selfix Q5 Urban | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/selfix-q5-urban) |
+| 63351 | Sencor Element P400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sencor-element-p400) |
+| 63352 | Sencor Element P501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sencor-element-p501) |
+| 63353 | Sencor Element P503 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sencor-element-p503-lte) |
+| 63354 | Sencor Element P5503 LTE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sencor-element-p5503-lte) |
+| 63355 | Sensonic Quickfone N1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sensonic-quickfone-n1) |
+| 63356 | Senwa Inizio S5018 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/senwa-inizio-s5018) |
+| 63357 | Senwa V705B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/senwa-v705b) |
+| 63358 | Serioux S-X401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/serioux-s-x401) |
+| 63359 | Serioux Whisper X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/serioux-whisper-x2) |
+| 63360 | Seuic AUTOID Q7 Cold | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seuic-autoid_q7_cold) |
+| 63361 | Seuic AUTOID Q7 Grip | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seuic-autoid_q7_grip) |
+| 63362 | SFR Staraddict II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-staraddict-ii) |
+| 63363 | SFR Staraddict III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-staraddict-iii) |
+| 63364 | SFR Starshine 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starshine-4) |
+| 63365 | SFR StarXtrem 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starxtrem-4) |
+| 63366 | SFR StarXtrem 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starxtrem-5) |
+| 63367 | SFR Starxtrem II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starxtrem-ii) |
+| 63368 | SHARP Aquos Famiredo | [IMEI.info](https://www.imei.info/phonedatabase/sharp-aquos-famiredo/) |
+| 63369 | Sharp Sense3 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sharp-sense3-lite) |
+| 63370 | Shenzhen I402 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/shenzhen-i402) |
+| 63371 | Shenzhen Q5501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/shenzhen-q5501) |
+| 63372 | Sigma mobile X-treme PQ25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sigma-mobile-x-treme-pq25) |
+| 63373 | Simvalley SP-120 DC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-sp-120-dc) |
+| 63374 | Simvalley SP-121 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-sp-121) |
+| 63375 | Simvalley SPX-12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-spx-12) |
+| 63376 | Simvalley SPX-24-HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-spx-24-hd) |
+| 63377 | Simvalley SPX-34 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-spx-34) |
+| 63378 | Simvalley SPX-6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-spx-6) |
+| 63379 | SingTech E11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/singtech-e11) |
+| 63380 | SingTech H30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/singtech-h30) |
+| 63381 | SingTech I-Crystal | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/singtech-i-crystal) |
+| 63382 | Siragon SP-7000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/siragon-sp-7000) |
+| 63383 | SK-Networks SK Networks EG929 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sk-networks-sk-networks-eg929) |
+| 63384 | SK-Networks SK Networks EG950 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sk-networks-sk-networks-eg950) |
+| 63385 | SK-Networks SK Networks EG98 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sk-networks-sk-networks-eg98) |
+| 63386 | SK-Networks SK WA960 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sk-networks-sk-wa960) |
+| 63387 | SKG AD-574 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-ad-574) |
+| 63388 | SKG Modern S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-modern-s1) |
+| 63389 | SKG Modern S10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-modern-s10) |
+| 63390 | SKG Modern S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-modern-s5) |
+| 63391 | SKG Modern S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-modern-s6) |
+| 63392 | SKK Aura Desire | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-aura-desire) |
+| 63393 | SKK Aura Stream HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-aura-stream-hd) |
+| 63394 | SKK Centaur | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-centaur) |
+| 63395 | SKK Chronos Ace Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-chronos-ace-lite) |
+| 63396 | SKK Chronos Byte | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-chronos-byte) |
+| 63397 | SKK Griffin | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-griffin) |
+| 63398 | SKK Griffin 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-griffin-2) |
+| 63399 | SKK Marian V1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-marian-v1) |
+| 63400 | SKK Phoenix G1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-phoenix-g1) |
+| 63401 | SKK Steel | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-steel) |
+| 63402 | SKY DEVICES Elite A55 | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-elite-a55/) |
+| 63403 | Sky Devices Elite D55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-d55) |
+| 63404 | Sky Devices Elite D65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-d65) |
+| 63405 | Sky Devices Elite G63 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-g63) |
+| 63406 | SKY DEVICES Platinum 5.0M | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-platinum-50m/) |
+| 63407 | SKY DEVICES Platinum D5 | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-platinum-d5/) |
+| 63408 | SKY DEVICES SKY 5.5Q | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-sky-55q/) |
+| 63409 | Sky IM-A850 SLK | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-im-a850-slk) |
+| 63410 | Sky Nano | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-nano) |
+| 63411 | Sky-Devices Elite B63 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-b63) |
+| 63412 | Sky-Devices Elite C63 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-c63) |
+| 63413 | Sky-Devices Elite D63 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-d63) |
+| 63414 | Sky-Devices Elite N55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-elite-n55) |
+| 63415 | Sky-Devices Sky 5-0LT | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-5-0lt) |
+| 63416 | Sky-Devices Sky 5-0Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-5-0q) |
+| 63417 | Sky-Devices Sky 5-0S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-5-0s) |
+| 63418 | Sky-Devices Sky A830 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-a830) |
+| 63419 | Sky-Devices Sky A860 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-a860) |
+| 63420 | Sky-Devices Sky A880S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-a880s) |
+| 63421 | Sky-Devices Sky A890 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-a890) |
+| 63422 | Sky-Devices Sky Elite 4-0S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-4-0s) |
+| 63423 | Sky-Devices Sky Elite 4-5P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-4-5p) |
+| 63424 | Sky-Devices Sky Elite 5-0M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-5-0m) |
+| 63425 | Sky-Devices Sky Elite 5-0T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-5-0t) |
+| 63426 | Sky-Devices Sky Fuego 4-0T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-fuego-4-0t) |
+| 63427 | SMART Coral T2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smart-smart-coral-t2) |
+| 63428 | SMART I8813 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smart-smart-i8813) |
+| 63429 | SMART T710 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smart-smart-t710) |
+| 63430 | SmartFren A16C3H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smartfren-smartfren-a16c3h) |
+| 63431 | SmartFren AD682H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smartfren-smartfren-ad682h) |
+| 63432 | SmartFren New Andromax-I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/smartfren-smartfren-new-andromax-i) |
+| 63433 | SoftBank 201K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/softbank-softbank-201k) |
+| 63434 | SoftBank 202F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/softbank-softbank-202f) |
+| 63435 | SoftBank 202K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/softbank-softbank-202k) |
+| 63436 | SoftBank 301F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/softbank-softbank-301f) |
+| 63437 | Solo Aspire 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solo-aspire-2) |
+| 63438 | Solo Aspire 2 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solo-aspire-2-lite) |
+| 63439 | Solo Aspire 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solo-aspire-3) |
+| 63440 | Solone A47 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-a47) |
+| 63441 | Solone Elite L5501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-elite-l5501) |
+| 63442 | Solone S4001 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-s4001) |
+| 63443 | Solone SL-A50 Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-sl-a50-mini) |
+| 63444 | Solone SL-SA4C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/solone-sl-sa4c) |
+| 63445 | Sony Xperia Z6 Mini | [ZOL](https://detail.zol.com.cn/cell_phone/index1116858.shtml) |
+| 63446 | Sowa S6600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sowa-s6600) |
+| 63447 | SPC APOLO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-apolo) |
+| 63448 | SPC Calipso4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-calipso4) |
+| 63449 | SPC Discovery 2 | [IMEI.info](https://www.imei.info/phonedatabase/spc-discovery-2/) |
+| 63450 | SPC Discovery 2 SE | [IMEI.info](https://www.imei.info/phonedatabase/spc-discovery-2-se/) |
+| 63451 | SPC L52F | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-l52f) |
+| 63452 | SPC Zeus 2 Elite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-zeus-2-elite) |
+| 63453 | Spectrum Carbono 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spectrum-carbono-5) |
+| 63454 | Spectrum Cuarzo 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spectrum-cuarzo-6) |
+| 63455 | Speed MT-6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/speed-mt-6) |
+| 63456 | Speed Nexa | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/speed-nexa) |
+| 63457 | Speed Rave S100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/speed-rave-s100) |
+| 63458 | SpeedUp S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/speedup-s6) |
+| 63459 | Star B6000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b6000) |
+| 63460 | Star B79 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b79) |
+| 63461 | Star B92M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b92m) |
+| 63462 | Star B93 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b93) |
+| 63463 | Star B93M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b93m) |
+| 63464 | Star B94M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b94m) |
+| 63465 | Star B9500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b9500) |
+| 63466 | Star F9002 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-f9002) |
+| 63467 | Star F9006 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-f9006) |
+| 63468 | Star G9000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-g9000) |
+| 63469 | Star G92 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-g92) |
+| 63470 | Star I9220 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-i9220) |
+| 63471 | Star I93 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-i93) |
+| 63472 | Star Kingelon G9000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-kingelon-g9000) |
+| 63473 | Star Kingelon K1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-kingelon-k1) |
+| 63474 | Star L55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-l55) |
+| 63475 | Star N5D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n5d) |
+| 63476 | Star N8000D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n8000d) |
+| 63477 | Star N8800 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n8800) |
+| 63478 | Star N900 S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n900-s5) |
+| 63479 | Star N9000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9000) |
+| 63480 | Star N9202 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9202) |
+| 63481 | Star N9389 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9389) |
+| 63482 | Star N9589 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9589) |
+| 63483 | Star N9599 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9599) |
+| 63484 | Star N9599T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9599t) |
+| 63485 | Star N9600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9600) |
+| 63486 | Star N9700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-n9700) |
+| 63487 | Star S6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-s6) |
+| 63488 | Star S7189 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-s7189) |
+| 63489 | Star S7589 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-s7589) |
+| 63490 | Star S9500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-s9500) |
+| 63491 | Star U650 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-u650) |
+| 63492 | Star U89 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-u89) |
+| 63493 | Star U930 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-u930) |
+| 63494 | Star U9501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-u9501) |
+| 63495 | Star V980 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-v980) |
+| 63496 | Star W500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-w500) |
+| 63497 | Star X19i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-x19i) |
+| 63498 | Star X920 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-x920) |
+| 63499 | Starmobile Bright | [PhoneCopy](https://www.phonecopy.com/en/phones/view/starmobile_bright) |
+| 63500 | StarTimes Planet Note | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/startimes-planet-note) |
+| 63501 | StarTimes Solar 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/startimes-solar-5) |
+| 63502 | STK Evo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stk-evo) |
+| 63503 | Stonex Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-mini) |
+| 63504 | Stonex One | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-one) |
+| 63505 | Stonex STX EVO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-stx-evo) |
+| 63506 | Stonex Stx S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stonex-stx-s) |
+| 63507 | Storex SPhone DC40G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/storex-sphone-dc40g) |
+| 63508 | Storex SPhone QC50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/storex-sphone-qc50) |
+| 63509 | Strawberry Flame | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-flame) |
+| 63510 | Strawberry Miracle III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-miracle-iii) |
+| 63511 | Strawberry Spark | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-spark) |
+| 63512 | Strawberry ST138 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-st138) |
+| 63513 | Strawberry ST168 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-st168) |
+| 63514 | Strawberry ST312 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-st312) |
+| 63515 | Strawberry ST9009 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-st9009) |
+| 63516 | Stream B3 Maxi | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/stream-b3-maxi) |
+| 63517 | Sunpillar SP680 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunpillar-sp680) |
+| 63518 | Sunpillar SP680A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunpillar-sp680a) |
+| 63519 | Sunpillar SP680B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunpillar-sp680b) |
+| 63520 | Sunpillar SP680C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunpillar-sp680c) |
+| 63521 | Sunstech uSUN200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunstech-usun200) |
+| 63522 | Sunstech uSUN300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunstech-usun300) |
+| 63523 | Suntouch Amara CX300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/suntouch-amara-cx300) |
+| 63524 | Suntouch Hyperium LX9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/suntouch-hyperium-lx9) |
+| 63525 | Swees X464 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swees-x464) |
+| 63526 | Swees X465 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swees-x465) |
+| 63527 | Swipe All In One | [PhoneCopy](https://www.phonecopy.com/en/phones/view/swipe_all_in_one) |
+| 63528 | Swiss-Mobility Swiss Mobility GEN6010 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swiss-mobility-swiss-mobility-gen6010) |
+| 63529 | Swiss-Mobility Swiss Mobility GEN610 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swiss-mobility-swiss-mobility-gen610) |
+| 63530 | Swiss-Mobility Swiss Mobility ZEI403 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swiss-mobility-swiss-mobility-zei403) |
+| 63531 | Swiss-Mobility Swiss Mobility ZEI500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/swiss-mobility-swiss-mobility-zei500) |
+| 63532 | Switel Alpha S45D | [GSMchoice](https://www.gsmchoice.com/en/catalogue/switel/alphas45d/) |
+| 63533 | Switel Basel M135 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/switel/baselm135/) |
+| 63534 | Switel Champ S5003D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-champ-s5003d) |
+| 63535 | Switel eSmart E2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-esmart-e2) |
+| 63536 | Switel eSmart H1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-esmart-h1) |
+| 63537 | Switel eSmart M2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-esmart-m2) |
+| 63538 | Switel eSmart M3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-esmart-m3) |
+| 63539 | Switel London M17D | [GSMchoice](https://www.gsmchoice.com/en/catalogue/switel/londonm17d/) |
+| 63540 | Switel Magic 2 S4015D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-magic-2-s4015d) |
+| 63541 | Switel Magic S40D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-magic-s40d) |
+| 63542 | Switel Mambo S4018D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-mambo-s4018d) |
+| 63543 | Switel S53D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-s53d) |
+| 63544 | Switel Spark S5002D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-spark-s5002d) |
+| 63545 | Switel Speed S55D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-speed-s55d) |
+| 63546 | Switel Star S4019D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-star-s4019d) |
+| 63547 | SYH Forward f2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-forward-f2) |
+| 63548 | SYH Leader 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-leader-5) |
+| 63549 | SYH Leader 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-leader-6) |
+| 63550 | SYH Leader L5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-leader-l5) |
+| 63551 | SYH V5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-v5) |
+| 63552 | SYH Young Y31 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y31) |
+| 63553 | SYH Young Y32 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y32) |
+| 63554 | SYH Young Y33 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y33) |
+| 63555 | SYH Young Y38 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y38) |
+| 63556 | SYH Young Y51 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y51) |
+| 63557 | SYH Young Y52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y52) |
+| 63558 | SYH Young Y55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/syh-young-y55) |
+| 63559 | Symphony innova 40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-innova-40) |
+| 63560 | Symphony innova10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-innova10) |
+| 63561 | Symphony V150 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-v150) |
+| 63562 | Symphony Z45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/symphony-z45) |
+| 63563 | Szenio 40DC II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-40dc-ii) |
+| 63564 | Szenio Syreni 45DC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-45dc) |
+| 63565 | Szenio Syreni 50 QHD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-50-qhd) |
+| 63566 | Szenio Syreni 50DC | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-50dc) |
+| 63567 | Szenio Syreni 50DC II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-50dc-ii) |
+| 63568 | Szenio Syreni 550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-550) |
+| 63569 | Szenio Syreni 61QHD II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-61qhd-ii) |
+| 63570 | Szenio Syreni 62FHD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/szenio-syreni-62fhd) |
+| 63571 | Tasen T183 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tasen-t183) |
+| 63572 | Tasen X131 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tasen-x131) |
+| 63573 | TCL 40T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tcl-40t) |
+| 63574 | TCL idol 4 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138984.shtml) |
+| 63575 | TCL idol 4S | [ZOL](https://detail.zol.com.cn/cell_phone/index1138986.shtml) |
+| 63576 | TCL POP 4 | [ZOL](https://detail.zol.com.cn/cell_phone/index1139024.shtml) |
+| 63577 | TCL POP 4S | [ZOL](https://detail.zol.com.cn/cell_phone/index1139027.shtml) |
+| 63578 | Techmade Techsmart 452 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/techmade-techsmart-452) |
+| 63579 | Techmade Techsmart 470 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/techmade-techsmart-470) |
+| 63580 | Techmade Techsmart 502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/techmade-techsmart-502) |
+| 63581 | Techmade Techsmart T4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/techmade-techsmart-t4) |
+| 63582 | Teclast P10 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-p10-4g) |
+| 63583 | Teclast P80 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-p80-3g) |
+| 63584 | Teclast P98 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-p98-4g) |
+| 63585 | Teclast X16HD 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-x16hd-3g) |
+| 63586 | Teclast X70 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-x70-3g) |
+| 63587 | Teclast X98 Air 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teclast-x98-air-3g) |
+| 63588 | Tecmobile You 40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecmobile-you-40) |
+| 63589 | Tecno Phantom N9 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/tecno_phantom_n9) |
+| 63590 | Tecno Pop 4 Air | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-pop-4-air) |
+| 63591 | Tecno Spark 3 KB8 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/tecno_spark_3_kb8) |
+| 63592 | Tecno Spark 4 Lite KC8s | [PhoneCopy](https://www.phonecopy.com/en/phones/view/tecno_spark_4_lite_kc8s) |
+| 63593 | Tecno W3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-w3) |
+| 63594 | Tecno WX3 P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecno-wx3-p) |
+| 63595 | Teknosa Preo P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teknosa-preo-p1) |
+| 63596 | Teknosa Preo P2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/teknosa-preo-p2) |
+| 63597 | Telcel Nyx Lux | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telcel-nyx-lux) |
+| 63598 | Telcel PCD E501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telcel-pcd-e501) |
+| 63599 | TELEFUNKEN TE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telefunken-telefunken-te) |
+| 63600 | Telego G401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telego-g401) |
+| 63601 | Telego Wise 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telego-wise-1) |
+| 63602 | Telenor Infinity A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-infinity-a) |
+| 63603 | Telenor Infinity K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-infinity-k) |
+| 63604 | Telenor K510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-k510) |
+| 63605 | Telenor Smart Zoom | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-smart-zoom) |
+| 63606 | TELSDA T6198 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telsda-t6198) |
+| 63607 | Tengda MG7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tengda-mg7) |
+| 63608 | Tengda P850 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tengda-p850) |
+| 63609 | Tengo Emerge 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tengo-emerge-500) |
+| 63610 | Tengo Motive 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tengo-motive-500) |
+| 63611 | TESLA Explr 9 | [IMEI.info](https://www.imei.info/phonedatabase/tesla-explr-9/) |
+| 63612 | Tesla SmartPhone 9-1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tesla-smartphone-9-1) |
+| 63613 | Tesla X9320 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tesla-x9320) |
+| 63614 | Thomson Every 35 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/every35/) |
+| 63615 | Thomson Every 40 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/every40/) |
+| 63616 | Thomson TLink 22 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink22/) |
+| 63617 | Thomson TLink 355 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink355/) |
+| 63618 | Thomson TLink 405 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink405/) |
+| 63619 | Thomson TLink 410 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink410/) |
+| 63620 | Thomson TLink 535 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink535/) |
+| 63621 | Thomson X-view3 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/xview3/) |
+| 63622 | Tianyu U86 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tianyu-u86) |
+| 63623 | Tiger S52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tiger-s52) |
+| 63624 | Titan 5R | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/titan-5r) |
+| 63625 | Titan Glory 19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/titan-glory-19) |
+| 63626 | Titan MB9500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/titan-mb9500) |
+| 63627 | Titan Q5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/titan-q5) |
+| 63628 | Tooky A6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-a6) |
+| 63629 | Tooky A9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-a9) |
+| 63630 | Tooky T1981 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-t1981) |
+| 63631 | Tooky T86 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-t86) |
+| 63632 | Torque DROIDZ Wave | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/torque-droidz-wave) |
+| 63633 | Touchkon M509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/touchkon-m509) |
+| 63634 | Treq TR-5401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/treq-tr-5401) |
+| 63635 | Treq Tune Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/treq-tune-z) |
+| 63636 | Treq Tune Z3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/treq-tune-z3) |
+| 63637 | Trevi 0PH5Q200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-0ph5q200) |
+| 63638 | Trevi Phablet 4-5S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-4-5s) |
+| 63639 | Trevi Phablet 4C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-4c) |
+| 63640 | Trevi Phablet 4S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-4s) |
+| 63641 | Trevi Phablet 5 S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-5-s) |
+| 63642 | Trevi Phablet 5Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-5q) |
+| 63643 | Trevi Phablet 6 S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-6-s) |
+| 63644 | Trevi Smartphone 4B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-smartphone-4b) |
+| 63645 | Trident A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trident-a1) |
+| 63646 | TRIDENT SI93 | [IMEI.info](https://www.imei.info/phonedatabase/trident-si93/) |
+| 63647 | TRIDENT W-T3 | [IMEI.info](https://www.imei.info/phonedatabase/trident-w-t3/) |
+| 63648 | Trio Jump Evo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trio-jump-evo) |
+| 63649 | Tronton T7 Thin | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tronton-t7-thin) |
+| 63650 | True Smart 4-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4-0) |
+| 63651 | True Smart 4G 5-5 Enterprise | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-5-5-enterprise) |
+| 63652 | True Smart 4G Gen C 4-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-gen-c-4-0) |
+| 63653 | True Smart 4G Gen C 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-gen-c-5-0) |
+| 63654 | True Smart 4G HD Voice | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-hd-voice) |
+| 63655 | True Smart 4G M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-m1) |
+| 63656 | True Smart 4G Octa 5-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-octa-5-5) |
+| 63657 | True Smart 4G Speedy 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-4g-speedy-5) |
+| 63658 | True Smart 5-0 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-5-0) |
+| 63659 | True Smart 5-0 Slim | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-5-0-slim) |
+| 63660 | TSM TP3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tsm-tp3) |
+| 63661 | Turing Phone | [DeviceBeast](https://devicebeast.com/devices/turing-phone-64gb) |
+| 63662 | Twinovo T108 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twinovo-t108) |
+| 63663 | Twinovo T118 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twinovo-t118) |
+| 63664 | Twinovo T27 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twinovo-t27) |
+| 63665 | TWM A6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-a6s) |
+| 63666 | TWM Amazing A4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-amazing-a4) |
+| 63667 | TWM Amazing A4C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-amazing-a4c) |
+| 63668 | TWM Amazing A50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-amazing-a50) |
+| 63669 | TWM Amazing A5S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-amazing-a5s) |
+| 63670 | TWZ A2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a2) |
+| 63671 | TWZ A45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a45) |
+| 63672 | TWZ A459 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a459) |
+| 63673 | TWZ A49 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a49) |
+| 63674 | TWZ A55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a55) |
+| 63675 | TWZ A559 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a559) |
+| 63676 | TWZ A567 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a567) |
+| 63677 | TWZ A99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-a99) |
+| 63678 | TWZ AA8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-aa8) |
+| 63679 | TWZ Circle 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-circle-1) |
+| 63680 | TWZ Circle 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-circle-5) |
+| 63681 | TWZ Circle 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-circle-8) |
+| 63682 | TWZ Circle 9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-circle-9) |
+| 63683 | TWZ QQ3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-qq3) |
+| 63684 | TWZ Y52 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-y52) |
+| 63685 | Ufone Ule 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ufone-ufone-ule-1) |
+| 63686 | Ufone Ule 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ufone-ufone-ule-4) |
+| 63687 | UHAPPY U580 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uhappy-uhappy-u580) |
+| 63688 | Uimi F6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uimi-f6) |
+| 63689 | Uimi UIMI3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uimi-uimi3) |
+| 63690 | Ultimate UM400 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ultimate-um400) |
+| 63691 | Umeox X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/umeox-x1) |
+| 63692 | Umeox X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/umeox-x2) |
+| 63693 | UMX U673C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/umx-u673c) |
+| 63694 | Unihertz Shark 5G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-shark-5g) |
+| 63695 | Unihertz Start24 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-start24) |
+| 63696 | Unihertz Tank 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-2) |
+| 63697 | Unihertz Tank 3S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-3s) |
+| 63698 | Unihertz Tank Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unihertz-tank-mini) |
+| 63699 | Uniscope MHL XC1S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uniscope-mhl-xc1s) |
+| 63700 | Uniscope U1201 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uniscope-u1201) |
+| 63701 | Uniscope US989 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uniscope-us989) |
+| 63702 | Uniscope XC2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uniscope-xc2) |
+| 63703 | Unusual 40Y | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unusual-40y) |
+| 63704 | Unusual 45Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unusual-45z) |
+| 63705 | USmart S5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/usmart-s5) |
+| 63706 | Utime U100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/utime-u100) |
+| 63707 | VAIO F1 | [ZOL](https://detail.zol.com.cn/cell_phone/index1138589.shtml) |
+| 63708 | VARGO IVARGO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vargo-ivargo) |
+| 63709 | VC Cactus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-cactus) |
+| 63710 | VC Camellia | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-camellia) |
+| 63711 | VC Cherry | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-cherry) |
+| 63712 | VC Lavender II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-lavender-ii) |
+| 63713 | VC Maple | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-maple) |
+| 63714 | VC Sakura | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-sakura) |
+| 63715 | VC Sakura II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-sakura-ii) |
+| 63716 | VC Sunflower | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-sunflower) |
+| 63717 | VC Violet II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vc-violet-ii) |
+| 63718 | Vedaee iNew U9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vedaee-inew-u9) |
+| 63719 | Venera 617 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/venera-617) |
+| 63720 | Venera 819 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/venera-819) |
+| 63721 | Vexia Zippers 4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vexia-zippers-4) |
+| 63722 | VG V628 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v628) |
+| 63723 | VG V629 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v629-3g) |
+| 63724 | VG V637 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v637) |
+| 63725 | VG V663 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v663) |
+| 63726 | VG V666 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v666-3g) |
+| 63727 | VG V667 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v667) |
+| 63728 | VG V668 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vg-v668) |
+| 63729 | VGO-Tel VGO Tel Ocean 6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vgo-tel-vgo-tel-ocean-6) |
+| 63730 | VGO-Tel VGO Tel Ocean 9L | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vgo-tel-vgo-tel-ocean-9l) |
+| 63731 | Viettel Easy 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-easy-5) |
+| 63732 | Viettel I8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-i8) |
+| 63733 | Viettel V8502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-v8502) |
+| 63734 | Viettel V8506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-v8506) |
+| 63735 | ViewSonic V450 HD | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viewsonic-v450-hd) |
+| 63736 | Vinus V8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vinus-v8) |
+| 63737 | Vinus V8 Note | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vinus-v8-note) |
+| 63738 | Vinus VS8000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vinus-vs8000) |
+| 63739 | VIPRO C1 | [IMEI.info](https://www.imei.info/phonedatabase/vipro-c1/) |
+| 63740 | Vivax Fly V550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivax-fly-v550) |
+| 63741 | Vivax Fun S20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivax-fun-s20) |
+| 63742 | Vivax Fun S500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivax-fun-s500) |
+| 63743 | Vivax Fun S501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivax-fun-s501) |
+| 63744 | Vivax Smart Fly V500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivax-smart-fly-v500) |
+| 63745 | Vivo V19 1933 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vivo_v19_1933) |
+| 63746 | Vivo X3t | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivo-x3t) |
+| 63747 | Vivo Y5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vivo-y5) |
+| 63748 | Vivo Y6e 5G | [Gadgets 360](https://www.gadgets360.com/vivo-y6e-5g-price-in-india-136810) |
+| 63749 | Viwa A7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viwa-a7) |
+| 63750 | Viwa X55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viwa-x55) |
+| 63751 | VKworld VK6050S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vkworld-vk6050s) |
+| 63752 | Voice Xtreme X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/voice-xtreme-x3) |
+| 63753 | Vonino Jax S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vonino-jax-s) |
+| 63754 | Vonino Volt S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vonino-volt-s) |
+| 63755 | Vonino Volt X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vonino-volt-x) |
+| 63756 | Vorago Cell-300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vorago-cell-300) |
+| 63757 | VORTEX A24 | [IMEI.info](https://www.imei.info/phonedatabase/vortex-a24/) |
+| 63758 | Vortex CG65 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vortex-cg65) |
+| 63759 | Vortex HD67 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vortex-hd67) |
+| 63760 | Vovo V3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vovo-v3) |
+| 63761 | Vovo V6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vovo-v6) |
+| 63762 | Vox V10 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/vox/v10/) |
+| 63763 | Vox V20 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/vox/v20/) |
+| 63764 | Vox V93 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/vox/v93/) |
+| 63765 | Vsun H3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vsun-h3) |
+| 63766 | Vsun Hexa | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vsun-hexa) |
+| 63767 | Vsun V9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vsun-v9) |
+| 63768 | Vsun V9I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vsun-v9i) |
+| 63769 | Vulcan VP5003A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vulcan-vp5003a) |
+| 63770 | Walton F3i | [PhoneCopy](https://www.phonecopy.com/en/phones/view/walton_f3i) |
+| 63771 | Walton NEXG N6 Lite | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-nexg-n6-lite) |
+| 63772 | Walton NEXG N71 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-nexg-n71) |
+| 63773 | Walton NEXG N72 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-nexg-n72) |
+| 63774 | Walton NEXG N74 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-nexg-n74) |
+| 63775 | Walton ORBIT Y13 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-orbit-y13) |
+| 63776 | Walton Orbit Y70 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-orbit-y70) |
+| 63777 | Walton Primo D10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-d10) |
+| 63778 | Walton Primo GH10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-gh10) |
+| 63779 | Walton Primo HM7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-hm7) |
+| 63780 | Walton Primo RX7 mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-rx7-mini) |
+| 63781 | Walton RM4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-rm4) |
+| 63782 | Walton XANON X20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-xanon-x20) |
+| 63783 | Walton XANON X90 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-xanon-x90) |
+| 63784 | Walton zenx 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-zenx-2) |
+| 63785 | Wammy Neo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wammy-neo) |
+| 63786 | Wammy Neo Youth | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wammy-neo-youth) |
+| 63787 | Wammy Passion Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wammy-passion-z) |
+| 63788 | Wammy Titan | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wammy-titan) |
+| 63789 | WE A1 | [IMEI.info](https://www.imei.info/phonedatabase/we-a1/) |
+| 63790 | WE Magnum | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/we-magnum) |
+| 63791 | WellcoM A99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wellcom-a99) |
+| 63792 | WENTTO F81i | [IMEI.info](https://www.imei.info/phonedatabase/wentto-f81i/) |
+| 63793 | Wham WG39 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wham-wg39) |
+| 63794 | Wham WG50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wham-wg50) |
+| 63795 | Wickedleak Titan | [PhoneCopy](https://www.phonecopy.com/en/phones/view/wickedleak_titan) |
+| 63796 | Wickedleak Wammy Passion Y | [PhoneCopy](https://www.phonecopy.com/en/phones/view/wickedleak_wammy_passion_y) |
+| 63797 | Wiko View 4 W-V830 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/wiko_view_4_w-v830) |
+| 63798 | Win4Buy WG2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/win4buy-wg2) |
+| 63799 | Win4Buy WG4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/win4buy-wg4) |
+| 63800 | Winds 3G Note Grace | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-3g-note-grace) |
+| 63801 | Winds 3G Note Legend | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-3g-note-legend) |
+| 63802 | Winds Genius III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-genius-iii) |
+| 63803 | Winds Genius V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-genius-v) |
+| 63804 | Winds Grace II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-grace-ii) |
+| 63805 | Winds Mobile Prime II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-mobile-prime-ii) |
+| 63806 | Winds Note Ace 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-ace-2) |
+| 63807 | Winds Note Grace | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-grace) |
+| 63808 | Winds Note Grace 2S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-grace-2s) |
+| 63809 | Winds Note Grace III | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-grace-iii) |
+| 63810 | Winds Note Grace V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-grace-v) |
+| 63811 | Winds Note Smart II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-smart-ii) |
+| 63812 | Winds Note Wonder | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winds-note-wonder) |
+| 63813 | Wing Hero 40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-hero-40) |
+| 63814 | Wing M40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-m40) |
+| 63815 | Wing M50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-m50) |
+| 63816 | Wing V50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-v50) |
+| 63817 | Wingfone M4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wingfone-m4) |
+| 63818 | Wings Mobile W7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wings-mobile-w7) |
+| 63819 | Wink City SE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wink-city-se) |
+| 63820 | Wink Glory SE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wink-glory-se) |
+| 63821 | Wink Share | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wink-share) |
+| 63822 | Winnovo K43FO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winnovo-k43fo) |
+| 63823 | Wintouch M62 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wintouch-m62) |
+| 63824 | Wintouch Q74 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wintouch-q74) |
+| 63825 | Wolder miSmart Smile W1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolder-mismart-smile-w1) |
+| 63826 | Wolder miSmart Wave 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolder-mismart-wave-8) |
+| 63827 | Wolder miSmart Wink 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolder-mismart-wink-2) |
+| 63828 | Wolder MiSmart Xenior | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolder-mismart-xenior) |
+| 63829 | Wolfgang AT AS43d3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolfgang-at-as43d3) |
+| 63830 | Wolfgang AT-AS45Q1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wolfgang-at-as45q1) |
+| 63831 | Woo SP5042 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/woo-sp5042) |
+| 63832 | Woo SP5043 Casiopea | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/woo-sp5043-casiopea) |
+| 63833 | Woo SP5048G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/woo-sp5048g) |
+| 63834 | Worldtech WT-P500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/worldtech-wt-p500) |
+| 63835 | Woxter Zielo Q40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/woxter-zielo-q40) |
+| 63836 | X-BO O6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bo-o6) |
+| 63837 | X-BO O7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bo-o7) |
+| 63838 | X-BO Super 10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bo-super-10) |
+| 63839 | X-BO Super A5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bo-super-a5) |
+| 63840 | X-BO V11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bo-v11) |
+| 63841 | X-BQ N9200S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bq-n9200s) |
+| 63842 | X-BQ P10S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bq-p10s) |
+| 63843 | X-BQ P11S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bq-p11s) |
+| 63844 | X-BQ P15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-bq-p15) |
+| 63845 | X-TIGI A10S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-tigi-a10s) |
+| 63846 | X-TIGI A20S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-tigi-a20s) |
+| 63847 | X-TIGI Inspire 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/x-tigi-x-tigi-inspire-3) |
+| 63848 | XGODY Mate 20 | [IMEI.info](https://www.imei.info/phonedatabase/xgody-mate-20/) |
+| 63849 | Xgody Note 10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-note-10) |
+| 63850 | Xgody Note 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-note-8) |
+| 63851 | XGODY S14 | [IMEI.info](https://www.imei.info/phonedatabase/xgody-s14/) |
+| 63852 | Xgody S9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-s9) |
+| 63853 | Xgody Symbol X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-symbol-x) |
+| 63854 | Xgody V40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-v40) |
+| 63855 | Xgody X10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-x10) |
+| 63856 | Xgody X13 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-x13) |
+| 63857 | Xgody X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-x3) |
+| 63858 | Xgody X60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xgody-x60) |
+| 63859 | XIAOLAJIAO 6P | [IMEI.info](https://www.imei.info/phonedatabase/xiaolajiao-6p/) |
+| 63860 | XIAOLAJIAO Note5x | [IMEI.info](https://www.imei.info/phonedatabase/xiaolajiao-note5x/) |
+| 63861 | Xiaolajiao R15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaolajiao-r15) |
+| 63862 | Xiaolajiao S11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaolajiao-s11) |
+| 63863 | Xiaolajiao S9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaolajiao-s9) |
+| 63864 | Xiaolajiao T33S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaolajiao-t33s) |
+| 63865 | Xiaolajiao V11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaolajiao-v11) |
+| 63866 | Xiaomi Blade 20 z6250cc | [PhoneCopy](https://www.phonecopy.com/en/phones/view/xiaomi_blade_20_z6250cc) |
+| 63867 | Xiaomi Note 7s | [PhoneCopy](https://www.phonecopy.com/en/phones/view/xiaomi_note_7s) |
+| 63868 | Xiaomi Redmi Note 4 SD625 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xiaomi-redmi-note-4-sd625) |
+| 63869 | Xoro Era 2X | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xoro-era-2x) |
+| 63870 | Xplay P9I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xplay-p9i) |
+| 63871 | Xplore Atheros XP7450 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xplore-atheros-xp7450) |
+| 63872 | Xplore Atheros XP7503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xplore-atheros-xp7503) |
+| 63873 | Xplore Atheros XP7550 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xplore-atheros-xp7550) |
+| 63874 | Yes MPY43 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yes-mpy43) |
+| 63875 | Yes MPY47 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yes-mpy47) |
+| 63876 | Yes MPY54 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yes-mpy54) |
+| 63877 | Yoo-Call Yoo Call S30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yoo-call-yoo-call-s30) |
+| 63878 | YU Yuphoria YU 6000 | [IMEI.info](https://www.imei.info/phonedatabase/yu-yuphoria-yu-6000/) |
+| 63879 | Yusun LA-M1-1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yusun-la-m1-1) |
+| 63880 | Yusun LA5-W | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yusun-la5-w) |
+| 63881 | Yusun T50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yusun-t50) |
+| 63882 | Yxtel H1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yxtel-h1) |
+| 63883 | Zen Atom | [GSMchoice](https://www.gsmchoice.com/en/catalogue/zen/atom/) |
+| 63884 | Zenek Cocodrilo Z501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zenek-cocodrilo-z501) |
+| 63885 | Zenek Z401 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zenek-z401) |
+| 63886 | ZH-K Mobile Odyssey Victory | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zh-k-mobile-odyssey-victory) |
+| 63887 | ZH-K Mobile Spark 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zh-k-mobile-spark-3) |
+| 63888 | Zhem 500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zhem-500) |
+| 63889 | ZIGO Eon 32I | [IMEI.info](https://www.imei.info/phonedatabase/zigo-eon-32i/) |
+| 63890 | Zigo Eon 42I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zigo-eon-42i) |
+| 63891 | Zigo Nebula 6-9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zigo-nebula-6-9) |
+| 63892 | Zonda ZA945 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zonda-za945) |
+| 63893 | Zonda ZA950 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zonda-za950) |
+| 63894 | Zonda ZA990 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zonda-za990) |
+| 63895 | ZTE B2015 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_b2015) |
+| 63896 | ZTE B2017g | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_b2017g) |
+| 63897 | ZTE Blade D2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1139944.shtml) |
+| 63898 | ZTE Blade S6 Lux | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-blade-s6-lux) |
+| 63899 | ZTE E7L | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_e7l) |
+| 63900 | ZTE Kis T3 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_kis_t3) |
+| 63901 | ZTE N988 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_n988) |
+| 63902 | ZTE Russia Telecom V8 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_russia_telecom_v8) |
+| 63903 | ZTE Small Fresh 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-small-fresh-3) |
+| 63904 | ZTE Small Fresh 5s | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-small-fresh-5s) |
+| 63905 | ZTE T790 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_t790) |
+| 63906 | ZTE Vision R2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zte-vision-r2) |
+| 63907 | Zuum Akus P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-akus-p1) |
+| 63908 | Zuum Akus Z1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-akus-z1) |
+| 63909 | Zuum Aura M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-aura-m1) |
+| 63910 | Zuum AURA M2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-aura-m2) |
+| 63911 | Zuum Gravity M | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-gravity-m) |
+| 63912 | Zuum M50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-m50) |
+| 63913 | Zuum Magno C2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno-c2) |
+| 63914 | Zuum Magno P1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno-p1) |
+| 63915 | Zuum Magno P3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno-p3) |
+| 63916 | Zuum MAGNO P4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-magno-p4) |
+| 63917 | Zuum SENS G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-sens-g) |
+| 63918 | Zuum Stellar C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-c) |
+| 63919 | Zuum STELLAR M4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-m4) |
+| 63920 | Zuum Stellar M5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-m5) |
+| 63921 | Zuum Stellar M6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-m6) |
+| 63922 | Zuum Stellar P7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-p7) |
+| 63923 | Zuum Stellar P8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-stellar-p8) |
+| 63924 | ZYQ J77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-j77) |
+| 63925 | ZYQ Q UP C5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q-up-c5) |
+| 63926 | ZYQ Q-Boss P99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q-boss-p99) |
+| 63927 | ZYQ Q-HI S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q-hi-s1) |
+| 63928 | ZYQ Q-Hot | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q-hot) |
+| 63929 | ZYQ Q-YOU | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q-you) |
+| 63930 | ZYQ Q2624 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q2624) |
+| 63931 | ZYQ Q2626 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q2626) |
+| 63932 | ZYQ Q2688 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q2688) |
+| 63933 | ZYQ Q2728 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q2728) |
+| 63934 | ZYQ Q3022 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q3022) |
+| 63935 | ZYQ Q328 M9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyq-q328-m9) |
+| 63936 | Zyrex ZA-957 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyrex-za-957) |
+| 63937 | Zyrex ZA977 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyrex-za977) |
+| 63938 | Zyrex ZA989 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyrex-za989) |
+| 63939 | 3GNET G2288 | [IMEI.info](https://www.imei.info/phonedatabase/3gnet-g2288/) |
+| 63940 | 3GNET G998 | [IMEI.info](https://www.imei.info/phonedatabase/3gnet-g998/) |
+| 63941 | 5 STAR MOBILE 5star BD130 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-5star-bd130/) |
+| 63942 | 5 STAR MOBILE BD18 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd18/) |
+| 63943 | 5 STAR MOBILE BD21 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd21/) |
+| 63944 | 5 STAR MOBILE BD22 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd22/) |
+| 63945 | 5 STAR MOBILE BD27 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd27/) |
+| 63946 | 5 STAR MOBILE BD31 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd31/) |
+| 63947 | 5 STAR MOBILE BD36 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd36/) |
+| 63948 | 5 STAR MOBILE BD5108 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd5108/) |
+| 63949 | 5 STAR MOBILE BD65 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-bd65/) |
+| 63950 | 5 STAR MOBILE ZX6 | [IMEI.info](https://www.imei.info/phonedatabase/5-star-mobile-zx6/) |
+| 63951 | AccessGo Gotune 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/accessgo-gotune-3) |
+| 63952 | Acer Tembo M900 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/acer_tembo_m900) |
+| 63953 | ADDTEL T608 | [IMEI.info](https://www.imei.info/phonedatabase/addtel-t608/) |
+| 63954 | ADOC SC01 | [IMEI.info](https://www.imei.info/phonedatabase/adoc-sc01/) |
+| 63955 | ADOC SC04 | [IMEI.info](https://www.imei.info/phonedatabase/adoc-sc04/) |
+| 63956 | ADVAN 1702 | [IMEI.info](https://www.imei.info/phonedatabase/advan-1702/) |
+| 63957 | ADVAN Hammer R3E | [IMEI.info](https://www.imei.info/phonedatabase/advan-hammer-r3e/) |
+| 63958 | ADVAN Hammer R3F | [IMEI.info](https://www.imei.info/phonedatabase/advan-hammer-r3f/) |
+| 63959 | Advan S35H | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s35h) |
+| 63960 | Advan S3C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s3c) |
+| 63961 | Advan S50D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s50d) |
+| 63962 | Advan S5J plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5j-plus) |
+| 63963 | Advan S5P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-s5p) |
+| 63964 | Advan Vandroid S5-A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/advan-vandroid-s5-a) |
+| 63965 | AEG AX350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aeg-ax350) |
+| 63966 | AG-mobile AG Chrome Ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ag-mobile-ag-chrome-ultra) |
+| 63967 | AGETEL AG28 | [IMEI.info](https://www.imei.info/phonedatabase/agetel-ag28/) |
+| 63968 | AiEK E1 | [IMEI.info](https://www.imei.info/phonedatabase/aiek-e1/) |
+| 63969 | AiEK V9 | [IMEI.info](https://www.imei.info/phonedatabase/aiek-v9/) |
+| 63970 | Airis TM360 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm360) |
+| 63971 | Airis TM36DM | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/airis-tm36dm) |
+| 63972 | AIRMAX A7 | [IMEI.info](https://www.imei.info/phonedatabase/airmax-a7/) |
+| 63973 | AK Mobile AK620 | [IMEI.info](https://www.imei.info/phonedatabase/ak-mobile-ak620/) |
+| 63974 | AK Mobile AK770 | [IMEI.info](https://www.imei.info/phonedatabase/ak-mobile-ak770/) |
+| 63975 | AK Mobile AK860 | [IMEI.info](https://www.imei.info/phonedatabase/ak-mobile-ak860/) |
+| 63976 | AK Mobile AK870 | [IMEI.info](https://www.imei.info/phonedatabase/ak-mobile-ak870/) |
+| 63977 | Akai Glory O5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-glory-o5) |
+| 63978 | Akai K35N | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/akai-k35n) |
+| 63979 | ALCATEL 1016D | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-1016d/) |
+| 63980 | Alcatel 1035D Flip Phone | [FoneArena](https://www.fonearena.com/alcatel-one-touch-1035d-flip-phone_6987.html) |
+| 63981 | ALCATEL 1040 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-1040/) |
+| 63982 | ALCATEL 1051 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-1051/) |
+| 63983 | ALCATEL 2001X | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-2001x/) |
+| 63984 | ALCATEL 2051x | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-2051x/) |
+| 63985 | ALCATEL 3082T | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-3082t/) |
+| 63986 | ALCATEL ELLE No 1 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-elle-no-12/) |
+| 63987 | ALCATEL MD02 Mandarina Duck | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-md02-mandarina-duck/) |
+| 63988 | ALCATEL One touch 117 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-117/) |
+| 63989 | ALCATEL One Touch 132A | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-132a/) |
+| 63990 | ALCATEL One Touch 217A | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-217a/) |
+| 63991 | ALCATEL ONE TOUCH 228 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-228/) |
+| 63992 | ALCATEL ONE TOUCH 233 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-233/) |
+| 63993 | ALCATEL ONE TOUCH 292 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-292/) |
+| 63994 | ALCATEL One Touch 362 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-362/) |
+| 63995 | ALCATEL One Touch 639 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-one-touch-639/) |
+| 63996 | Alcatel One touch 768t | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_768t) |
+| 63997 | Alcatel One Touch 808 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_808) |
+| 63998 | Alcatel One Touch 875t | [PhoneCopy](https://www.phonecopy.com/en/phones/view/alcatel_one_touch_875t) |
+| 63999 | ALCATEL ONETOUCH A392CC | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-onetouch-a392cc/) |
+| 64000 | ALCATEL OT E-201A | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-ot-e-201a/) |
+| 64001 | ALCATEL OT-20.67X | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-ot-2067x/) |
+| 64002 | ALCATEL S By Sfr 3440 | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-s-by-sfr-3440/) |
+| 64003 | ALCATEL X060S | [IMEI.info](https://www.imei.info/phonedatabase/alcatel-x060s/) |
+| 64004 | Aldo AL888 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aldo-al888) |
+| 64005 | Aldo AS8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/aldo-as8) |
+| 64006 | ALDO F16 | [IMEI.info](https://www.imei.info/phonedatabase/aldo-f16/) |
+| 64007 | ALFATEL H2 | [IMEI.info](https://www.imei.info/phonedatabase/alfatel-h2/) |
+| 64008 | ALIGATOR R20 eXtremo | [IMEI.info](https://www.imei.info/phonedatabase/aligator-r20-extremo/) |
+| 64009 | ALIGATOR V500 | [IMEI.info](https://www.imei.info/phonedatabase/aligator-v500/) |
+| 64010 | ALIGATOR V550 | [IMEI.info](https://www.imei.info/phonedatabase/aligator-v550/) |
+| 64011 | ALLCALL A69 | [IMEI.info](https://www.imei.info/phonedatabase/allcall-a69/) |
+| 64012 | ALLVIEW D1 Flip | [IMEI.info](https://www.imei.info/phonedatabase/allview-d1-flip/) |
+| 64013 | ALWAYS C-101 | [IMEI.info](https://www.imei.info/phonedatabase/always-c-101/) |
+| 64014 | ALWAYS C-201 | [IMEI.info](https://www.imei.info/phonedatabase/always-c-201/) |
+| 64015 | ALWAYS C-301 | [IMEI.info](https://www.imei.info/phonedatabase/always-c-301/) |
+| 64016 | AMAQ Q19 | [IMEI.info](https://www.imei.info/phonedatabase/amaq-q19/) |
+| 64017 | Amgoo AM501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-amgoo-am501) |
+| 64018 | Amgoo AM503 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-amgoo-am503) |
+| 64019 | Amgoo AM506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/amgoo-amgoo-am506) |
+| 64020 | AMGOO AM83Z | [IMEI.info](https://www.imei.info/phonedatabase/amgoo-am83z/) |
+| 64021 | AMI D17 Cairo | [IMEI.info](https://www.imei.info/phonedatabase/ami-d17-cairo/) |
+| 64022 | AMI F31 Dubai | [IMEI.info](https://www.imei.info/phonedatabase/ami-f31-dubai/) |
+| 64023 | Amoi 6711 | [DeviceBeast](https://devicebeast.com/devices/amoi-6711) |
+| 64024 | AMOI A208 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a208/) |
+| 64025 | AMOI A518 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a518/) |
+| 64026 | AMOI A610 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a610/) |
+| 64027 | AMOI A636 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a636/) |
+| 64028 | AMOI A655 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a655/) |
+| 64029 | AMOI A670 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-a670/) |
+| 64030 | AMOI D8 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-d8/) |
+| 64031 | AMOI D80 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-d80/) |
+| 64032 | AMOI D86 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-d86/) |
+| 64033 | AMOI DA6 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-da6/) |
+| 64034 | AMOI F16 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-f16/) |
+| 64035 | AMOI F201 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-f201/) |
+| 64036 | AMOI F520 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-f520/) |
+| 64037 | AMOI F56 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-f56/) |
+| 64038 | AMOI F80 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-f80/) |
+| 64039 | AMOI GSM6316 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-gsm6316/) |
+| 64040 | AMOI H632 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-h632/) |
+| 64041 | AMOI H9 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-h9/) |
+| 64042 | AMOI M6 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-m6/) |
+| 64043 | AMOI N3 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-n3/) |
+| 64044 | AMOI S660 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-s660/) |
+| 64045 | AMOI WMA8505 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-wma8505/) |
+| 64046 | AMOI WMA9507 | [IMEI.info](https://www.imei.info/phonedatabase/amoi-wma9507/) |
+| 64047 | AnexTEK SP310 | [DeviceBeast](https://devicebeast.com/devices/anextek-sp310) |
+| 64048 | ANGAGE A2163 | [IMEI.info](https://www.imei.info/phonedatabase/angage-a2163/) |
+| 64049 | ANGAGE A2173 | [IMEI.info](https://www.imei.info/phonedatabase/angage-a2173/) |
+| 64050 | Angage A313 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/angage/a313/) |
+| 64051 | ANGAGE A5360 | [IMEI.info](https://www.imei.info/phonedatabase/angage-a5360/) |
+| 64052 | ANGAGE A6130 | [IMEI.info](https://www.imei.info/phonedatabase/angage-a6130/) |
+| 64053 | ANGAGE Elite | [IMEI.info](https://www.imei.info/phonedatabase/angage-elite/) |
+| 64054 | Angage Magic | [GSMchoice](https://www.gsmchoice.com/en/catalogue/angage/magic/) |
+| 64055 | ANGAGE Power | [IMEI.info](https://www.imei.info/phonedatabase/angage-power/) |
+| 64056 | ANGAGE Pure | [IMEI.info](https://www.imei.info/phonedatabase/angage-pure/) |
+| 64057 | ANGAGE Saga | [IMEI.info](https://www.imei.info/phonedatabase/angage-saga/) |
+| 64058 | ANGAGE Striker | [IMEI.info](https://www.imei.info/phonedatabase/angage-striker/) |
+| 64059 | ANKA A1 | [IMEI.info](https://www.imei.info/phonedatabase/anka-a1/) |
+| 64060 | ANOKING W360 | [IMEI.info](https://www.imei.info/phonedatabase/anoking-w360/) |
+| 64061 | ANYCOOL F838 | [IMEI.info](https://www.imei.info/phonedatabase/anycool-f838/) |
+| 64062 | ANYCOOL GC338 | [IMEI.info](https://www.imei.info/phonedatabase/anycool-gc338/) |
+| 64063 | ANYCOOL I929 | [IMEI.info](https://www.imei.info/phonedatabase/anycool-i929/) |
+| 64064 | ANYDATA AML-110 Chameleon | [IMEI.info](https://www.imei.info/phonedatabase/anydata-aml-110-chameleon/) |
+| 64065 | AOLE 658 | [IMEI.info](https://www.imei.info/phonedatabase/aole-658/) |
+| 64066 | APBW A88Q | [IMEI.info](https://www.imei.info/phonedatabase/apbw-a88q/) |
+| 64067 | APBW C200Q | [IMEI.info](https://www.imei.info/phonedatabase/apbw-c200q/) |
+| 64068 | AQUA G500 | [IMEI.info](https://www.imei.info/phonedatabase/aqua-g500/) |
+| 64069 | ARCOA A288 | [IMEI.info](https://www.imei.info/phonedatabase/arcoa-a288/) |
+| 64070 | ARCOA A289 | [IMEI.info](https://www.imei.info/phonedatabase/arcoa-a289/) |
+| 64071 | ARCOA A568 | [IMEI.info](https://www.imei.info/phonedatabase/arcoa-a568/) |
+| 64072 | ARES 815OC | [IMEI.info](https://www.imei.info/phonedatabase/ares-815oc/) |
+| 64073 | Argom E310 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/argom-e310) |
+| 64074 | ARIMA 2700 | [IMEI.info](https://www.imei.info/phonedatabase/arima-2700/) |
+| 64075 | Asiafone AF79 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af79) |
+| 64076 | Asiafone AF9190 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-af9190) |
+| 64077 | Asiafone Asiadroid AF75 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af75) |
+| 64078 | Asiafone Asiadroid AF77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af77) |
+| 64079 | Asiafone Asiadroid AF78 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asiafone-asiadroid-af78) |
+| 64080 | ASPERA F24 | [IMEI.info](https://www.imei.info/phonedatabase/aspera-f24/) |
+| 64081 | Asus ZenFone 5 Selfie | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/asus-zenfone-5-selfie) |
+| 64082 | AT MOBILE Cricket | [IMEI.info](https://www.imei.info/phonedatabase/at-mobile-cricket/) |
+| 64083 | AT MOBILE Spider | [IMEI.info](https://www.imei.info/phonedatabase/at-mobile-spider/) |
+| 64084 | ATMAN S9 | [IMEI.info](https://www.imei.info/phonedatabase/atman-s9/) |
+| 64085 | AU BY KDDI Exilim W53CA | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-exilim-w53ca/) |
+| 64086 | AU BY KDDI G'zOne CA002 | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-gzone-ca002/) |
+| 64087 | AU BY KDDI G'zOne TYPE-XX | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-gzone-type-xx/) |
+| 64088 | AU BY KDDI G'zOne W62CA | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-gzone-w62ca/) |
+| 64089 | AU BY KDDI W51CA | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-w51ca/) |
+| 64090 | AU BY KDDI W61CA | [IMEI.info](https://www.imei.info/phonedatabase/au-by-kddi-w61ca/) |
+| 64091 | AUX C90 | [IMEI.info](https://www.imei.info/phonedatabase/aux-c90/) |
+| 64092 | AUX F820 | [IMEI.info](https://www.imei.info/phonedatabase/aux-f820/) |
+| 64093 | AUX F823 | [IMEI.info](https://www.imei.info/phonedatabase/aux-f823/) |
+| 64094 | AUX M282+ | [IMEI.info](https://www.imei.info/phonedatabase/aux-m282plus/) |
+| 64095 | AUX M732 | [IMEI.info](https://www.imei.info/phonedatabase/aux-m732/) |
+| 64096 | AUX Q68 | [IMEI.info](https://www.imei.info/phonedatabase/aux-q68/) |
+| 64097 | AUX T7100 | [IMEI.info](https://www.imei.info/phonedatabase/aux-t7100/) |
+| 64098 | Avio FS42 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/avio-fs42) |
+| 64099 | AVROCK D95 | [IMEI.info](https://www.imei.info/phonedatabase/avrock-d95/) |
+| 64100 | AVROCK P3000 | [IMEI.info](https://www.imei.info/phonedatabase/avrock-p3000/) |
+| 64101 | AVROCK S1000 | [IMEI.info](https://www.imei.info/phonedatabase/avrock-s1000/) |
+| 64102 | AVROCK S3000 | [IMEI.info](https://www.imei.info/phonedatabase/avrock-s3000/) |
+| 64103 | AVVIO 361 | [IMEI.info](https://www.imei.info/phonedatabase/avvio-361/) |
+| 64104 | AVVIO 362 | [IMEI.info](https://www.imei.info/phonedatabase/avvio-362/) |
+| 64105 | AZUMI AC24 Lite | [IMEI.info](https://www.imei.info/phonedatabase/azumi-ac24-lite/) |
+| 64106 | AZUMI AL3 | [IMEI.info](https://www.imei.info/phonedatabase/azumi-al3/) |
+| 64107 | Azumi Kl32 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/azumi-kl32) |
+| 64108 | Azumi Tairu | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/azumi-tairu) |
+| 64109 | B MOBILE C228 | [IMEI.info](https://www.imei.info/phonedatabase/b-mobile-c228/) |
+| 64110 | B MOBILE C40 | [IMEI.info](https://www.imei.info/phonedatabase/b-mobile-c40/) |
+| 64111 | B MOBILE K373 | [IMEI.info](https://www.imei.info/phonedatabase/b-mobile-k373/) |
+| 64112 | Base Varia | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/base-varia) |
+| 64113 | BASICOM DH011 | [IMEI.info](https://www.imei.info/phonedatabase/basicom-dh011/) |
+| 64114 | BASICOM DZ115 | [IMEI.info](https://www.imei.info/phonedatabase/basicom-dz115/) |
+| 64115 | BASICOM KB8201 | [IMEI.info](https://www.imei.info/phonedatabase/basicom-kb8201/) |
+| 64116 | BASICOM S9 | [IMEI.info](https://www.imei.info/phonedatabase/basicom-s9/) |
+| 64117 | BASICOM V10 | [IMEI.info](https://www.imei.info/phonedatabase/basicom-v10/) |
+| 64118 | Bauhn AAP5-815 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bauhn-aap5-815) |
+| 64119 | BAYI A89 | [IMEI.info](https://www.imei.info/phonedatabase/bayi-a89/) |
+| 64120 | BBK I267 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-i267/) |
+| 64121 | BBK i268 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-i268/) |
+| 64122 | BBK I270 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-i270/) |
+| 64123 | BBK I399 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-i399/) |
+| 64124 | BBK I531 | [IMEI.info](https://www.imei.info/phonedatabase/bbk-i531/) |
+| 64125 | BDBAL B388 | [IMEI.info](https://www.imei.info/phonedatabase/bdbal-b388/) |
+| 64126 | BEAFON C220 | [IMEI.info](https://www.imei.info/phonedatabase/beafon-c220/) |
+| 64127 | BEAFON C245 | [IMEI.info](https://www.imei.info/phonedatabase/beafon-c245/) |
+| 64128 | BEAFON SL595 | [IMEI.info](https://www.imei.info/phonedatabase/beafon-sl595/) |
+| 64129 | BEAFON SL605 | [IMEI.info](https://www.imei.info/phonedatabase/beafon-sl605/) |
+| 64130 | BEAFON SL640 | [IMEI.info](https://www.imei.info/phonedatabase/beafon-sl640/) |
+| 64131 | BEAFON SL645 Plus | [IMEI.info](https://www.imei.info/phonedatabase/beafon-sl645-plus/) |
+| 64132 | BEAUCOM BU801 | [IMEI.info](https://www.imei.info/phonedatabase/beaucom-bu801/) |
+| 64133 | BEAUCOM P319 | [IMEI.info](https://www.imei.info/phonedatabase/beaucom-p319/) |
+| 64134 | BEDOVE Q3 | [IMEI.info](https://www.imei.info/phonedatabase/bedove-q3/) |
+| 64135 | BELUGA B850 | [IMEI.info](https://www.imei.info/phonedatabase/beluga-b850/) |
+| 64136 | BENCO C23 | [IMEI.info](https://www.imei.info/phonedatabase/benco-c23/) |
+| 64137 | BENGAL BG02 | [IMEI.info](https://www.imei.info/phonedatabase/bengal-bg02/) |
+| 64138 | BENGAL BG212 | [IMEI.info](https://www.imei.info/phonedatabase/bengal-bg212/) |
+| 64139 | BENGAL BG213 | [IMEI.info](https://www.imei.info/phonedatabase/bengal-bg213/) |
+| 64140 | BENGAL BG214 | [IMEI.info](https://www.imei.info/phonedatabase/bengal-bg214/) |
+| 64141 | BENQ M555 | [IMEI.info](https://www.imei.info/phonedatabase/benq-m555/) |
+| 64142 | BENQ-SIEMENS AL21 | [IMEI.info](https://www.imei.info/phonedatabase/benq-siemens-al21/) |
+| 64143 | BENQ-SIEMENS S82 | [IMEI.info](https://www.imei.info/phonedatabase/benq-siemens-s82/) |
+| 64144 | Beyond B51 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/beyond-b51-plus) |
+| 64145 | BFB F2050 | [IMEI.info](https://www.imei.info/phonedatabase/bfb-f2050/) |
+| 64146 | BFOUR W999 | [IMEI.info](https://www.imei.info/phonedatabase/bfour-w999/) |
+| 64147 | BIRD A510 | [IMEI.info](https://www.imei.info/phonedatabase/bird-a510/) |
+| 64148 | BIRD A9 | [IMEI.info](https://www.imei.info/phonedatabase/bird-a9/) |
+| 64149 | BIRD D755 | [IMEI.info](https://www.imei.info/phonedatabase/bird-d755/) |
+| 64150 | BIRD E895 | [IMEI.info](https://www.imei.info/phonedatabase/bird-e895/) |
+| 64151 | BIRD G100 | [IMEI.info](https://www.imei.info/phonedatabase/bird-g100/) |
+| 64152 | BIRD G200 | [IMEI.info](https://www.imei.info/phonedatabase/bird-g200/) |
+| 64153 | BIRD S2000 | [IMEI.info](https://www.imei.info/phonedatabase/bird-s2000/) |
+| 64154 | BIRD S3220 | [IMEI.info](https://www.imei.info/phonedatabase/bird-s3220/) |
+| 64155 | BIRD SC01 | [IMEI.info](https://www.imei.info/phonedatabase/bird-sc01/) |
+| 64156 | BIRD SC10 | [IMEI.info](https://www.imei.info/phonedatabase/bird-sc10/) |
+| 64157 | BIRD V500 | [IMEI.info](https://www.imei.info/phonedatabase/bird-v500/) |
+| 64158 | Bitel B8403 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8403) |
+| 64159 | Bitel B8602 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bitel-b8602) |
+| 64160 | BLACKBERRY 8700v | [IMEI.info](https://www.imei.info/phonedatabase/blackberry-8700v/) |
+| 64161 | BlackBerry Hamburg | [ZOL](https://detail.zol.com.cn/cell_phone/index1143412.shtml) |
+| 64162 | BlackBerry Vienna | [ZOL](https://detail.zol.com.cn/cell_phone/index1115759.shtml) |
+| 64163 | BLACKPHONE F220 | [IMEI.info](https://www.imei.info/phonedatabase/blackphone-f220/) |
+| 64164 | BlackZone Elevate | [GSMchoice](https://www.gsmchoice.com/en/catalogue/blackzone/elevate/) |
+| 64165 | BLEU 456X | [IMEI.info](https://www.imei.info/phonedatabase/bleu-456x/) |
+| 64166 | BLOOM S226 | [IMEI.info](https://www.imei.info/phonedatabase/bloom-s226/) |
+| 64167 | BLOOM S305 | [IMEI.info](https://www.imei.info/phonedatabase/bloom-s305/) |
+| 64168 | BLOOM+ B800 | [IMEI.info](https://www.imei.info/phonedatabase/bloomplus-b800/) |
+| 64169 | BLOOM+ T1 | [IMEI.info](https://www.imei.info/phonedatabase/bloomplus-t1/) |
+| 64170 | BLOOM+ Z7 | [IMEI.info](https://www.imei.info/phonedatabase/bloomplus-z7/) |
+| 64171 | BLU Diva Flip | [IMEI.info](https://www.imei.info/phonedatabase/blu-diva-flip/) |
+| 64172 | BLU Joy Flex | [IMEI.info](https://www.imei.info/phonedatabase/blu-joy-flex/) |
+| 64173 | BLU Tank Mini | [IMEI.info](https://www.imei.info/phonedatabase/blu-tank-mini/) |
+| 64174 | BLU Zoey Flex 3G | [IMEI.info](https://www.imei.info/phonedatabase/blu-zoey-flex-3g/) |
+| 64175 | BlueBo B3000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bluebo-b3000) |
+| 64176 | BLUEPAD E68 | [IMEI.info](https://www.imei.info/phonedatabase/bluepad-e68/) |
+| 64177 | Bmobile AX530 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/bmobile-ax530) |
+| 64178 | BMOBILE C210 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c210/) |
+| 64179 | BMOBILE C212 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c212/) |
+| 64180 | BMOBILE C220 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c220/) |
+| 64181 | BMOBILE C225 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c225/) |
+| 64182 | BMOBILE C230 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c230/) |
+| 64183 | BMOBILE C240 | [IMEI.info](https://www.imei.info/phonedatabase/bmobile-c240/) |
+| 64184 | BOCOIN 3380 | [IMEI.info](https://www.imei.info/phonedatabase/bocoin-3380/) |
+| 64185 | BOCOIN Q670 | [IMEI.info](https://www.imei.info/phonedatabase/bocoin-q670/) |
+| 64186 | BONTEL 2720 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-2720/) |
+| 64187 | BONTEL 5300 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-5300/) |
+| 64188 | BONTEL 5710 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-5710/) |
+| 64189 | BONTEL 8100 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-8100/) |
+| 64190 | BONTEL 8200 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-8200/) |
+| 64191 | BONTEL 911 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-911/) |
+| 64192 | BONTEL S3 | [IMEI.info](https://www.imei.info/phonedatabase/bontel-s3/) |
+| 64193 | Boost Moova Shuffle | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/boost-moova-shuffle) |
+| 64194 | BOWAY BW1088 | [IMEI.info](https://www.imei.info/phonedatabase/boway-bw1088/) |
+| 64195 | BOWAY BW1188 | [IMEI.info](https://www.imei.info/phonedatabase/boway-bw1188/) |
+| 64196 | BOWAY BW1788 | [IMEI.info](https://www.imei.info/phonedatabase/boway-bw1788/) |
+| 64197 | BOWAY F1 | [IMEI.info](https://www.imei.info/phonedatabase/boway-f1/) |
+| 64198 | BOWAY F33 | [IMEI.info](https://www.imei.info/phonedatabase/boway-f33/) |
+| 64199 | BOWAY N31 | [IMEI.info](https://www.imei.info/phonedatabase/boway-n31/) |
+| 64200 | BQ 1800L | [IMEI.info](https://www.imei.info/phonedatabase/bq-1800l/) |
+| 64201 | BQ 1810 Pixel | [IMEI.info](https://www.imei.info/phonedatabase/bq-1810-pixel/) |
+| 64202 | BQ 2427 Boom L | [IMEI.info](https://www.imei.info/phonedatabase/bq-2427-boom-l/) |
+| 64203 | BQ 2433 Dream DUO | [IMEI.info](https://www.imei.info/phonedatabase/bq-2433-dream-duo/) |
+| 64204 | BQ 2445 | [IMEI.info](https://www.imei.info/phonedatabase/bq-2445/) |
+| 64205 | BQ Fantasy Duo | [IMEI.info](https://www.imei.info/phonedatabase/bq-fantasy-duo/) |
+| 64206 | BQ SHELL DUO | [IMEI.info](https://www.imei.info/phonedatabase/bq-shell-duo/) |
+| 64207 | Brava DM-994 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brava-dm-994-plus) |
+| 64208 | BRONDI Amico Comfort | [IMEI.info](https://www.imei.info/phonedatabase/brondi-amico-comfort/) |
+| 64209 | BRONDI Amico Mio | [IMEI.info](https://www.imei.info/phonedatabase/brondi-amico-mio/) |
+| 64210 | BRONDI Amico Prezioso | [IMEI.info](https://www.imei.info/phonedatabase/brondi-amico-prezioso/) |
+| 64211 | BRONDI Amico Sincero | [IMEI.info](https://www.imei.info/phonedatabase/brondi-amico-sincero/) |
+| 64212 | BRONDI Fox | [IMEI.info](https://www.imei.info/phonedatabase/brondi-fox/) |
+| 64213 | Brondi Glory 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-glory-3) |
+| 64214 | Brondi Luxury | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/brondi-luxury) |
+| 64215 | BRONDI Stone Nero | [IMEI.info](https://www.imei.info/phonedatabase/brondi-stone-nero/) |
+| 64216 | BRONDI Stone+ | [IMEI.info](https://www.imei.info/phonedatabase/brondi-stoneplus/) |
+| 64217 | BRONDI Window+ | [IMEI.info](https://www.imei.info/phonedatabase/brondi-windowplus/) |
+| 64218 | BUNDY MOBILE Duo | [IMEI.info](https://www.imei.info/phonedatabase/bundy-mobile-duo/) |
+| 64219 | BUNDY MOBILE Flap | [IMEI.info](https://www.imei.info/phonedatabase/bundy-mobile-flap/) |
+| 64220 | BY2 V202 | [IMEI.info](https://www.imei.info/phonedatabase/by2-v202/) |
+| 64221 | BYOND BY222 | [IMEI.info](https://www.imei.info/phonedatabase/byond-by222/) |
+| 64222 | Callbar A35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/callbar-a35) |
+| 64223 | CAPITEL C5068 | [IMEI.info](https://www.imei.info/phonedatabase/capitel-c5068/) |
+| 64224 | CAPITEL C6088 | [IMEI.info](https://www.imei.info/phonedatabase/capitel-c6088/) |
+| 64225 | CARLVO A23 | [IMEI.info](https://www.imei.info/phonedatabase/carlvo-a23/) |
+| 64226 | CASIO 830CA | [IMEI.info](https://www.imei.info/phonedatabase/casio-830ca/) |
+| 64227 | CASIO W21CAII | [IMEI.info](https://www.imei.info/phonedatabase/casio-w21caii/) |
+| 64228 | CASIO W31ca | [IMEI.info](https://www.imei.info/phonedatabase/casio-w31ca/) |
+| 64229 | CASIO W41CA | [IMEI.info](https://www.imei.info/phonedatabase/casio-w41ca/) |
+| 64230 | CAYON N220 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-n220/) |
+| 64231 | CAYON V133 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-v133/) |
+| 64232 | CAYON V137 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-v137/) |
+| 64233 | CAYON V151 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-v151/) |
+| 64234 | CAYON V153 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-v153/) |
+| 64235 | CAYON V701 | [IMEI.info](https://www.imei.info/phonedatabase/cayon-v701/) |
+| 64236 | CCE SK351 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sk351) |
+| 64237 | CCE SK352 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sk352) |
+| 64238 | CCE SM55 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cce-sm55) |
+| 64239 | CCIT A3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ccit-a3) |
+| 64240 | CCPO A189 | [IMEI.info](https://www.imei.info/phonedatabase/ccpo-a189/) |
+| 64241 | CCPO A518 | [IMEI.info](https://www.imei.info/phonedatabase/ccpo-a518/) |
+| 64242 | CCPO A600 | [IMEI.info](https://www.imei.info/phonedatabase/ccpo-a600/) |
+| 64243 | CCPO V520 | [IMEI.info](https://www.imei.info/phonedatabase/ccpo-v520/) |
+| 64244 | CECT 1128 | [IMEI.info](https://www.imei.info/phonedatabase/cect-1128/) |
+| 64245 | CECT 178 | [IMEI.info](https://www.imei.info/phonedatabase/cect-178/) |
+| 64246 | CECT 3290 | [IMEI.info](https://www.imei.info/phonedatabase/cect-3290/) |
+| 64247 | CECT 616 | [IMEI.info](https://www.imei.info/phonedatabase/cect-616/) |
+| 64248 | CECT 6619 | [IMEI.info](https://www.imei.info/phonedatabase/cect-6619/) |
+| 64249 | CECT 6688 | [IMEI.info](https://www.imei.info/phonedatabase/cect-6688/) |
+| 64250 | CECT 818 | [IMEI.info](https://www.imei.info/phonedatabase/cect-818/) |
+| 64251 | CECT 929 | [IMEI.info](https://www.imei.info/phonedatabase/cect-929/) |
+| 64252 | CECT 966 | [IMEI.info](https://www.imei.info/phonedatabase/cect-966/) |
+| 64253 | CECT A706 | [IMEI.info](https://www.imei.info/phonedatabase/cect-a706/) |
+| 64254 | CECT A900 | [IMEI.info](https://www.imei.info/phonedatabase/cect-a900/) |
+| 64255 | CECT C28 | [IMEI.info](https://www.imei.info/phonedatabase/cect-c28/) |
+| 64256 | CECT CF16 | [IMEI.info](https://www.imei.info/phonedatabase/cect-cf16/) |
+| 64257 | CECT E68 | [IMEI.info](https://www.imei.info/phonedatabase/cect-e68/) |
+| 64258 | CECT i889 | [IMEI.info](https://www.imei.info/phonedatabase/cect-i889/) |
+| 64259 | CECT K868 | [IMEI.info](https://www.imei.info/phonedatabase/cect-k868/) |
+| 64260 | CECT N105 | [IMEI.info](https://www.imei.info/phonedatabase/cect-n105/) |
+| 64261 | CECT P717 | [IMEI.info](https://www.imei.info/phonedatabase/cect-p717/) |
+| 64262 | CECT Q300 | [IMEI.info](https://www.imei.info/phonedatabase/cect-q300/) |
+| 64263 | CECT Q610 | [IMEI.info](https://www.imei.info/phonedatabase/cect-q610/) |
+| 64264 | CECT Q638 | [IMEI.info](https://www.imei.info/phonedatabase/cect-q638/) |
+| 64265 | CECT Q658 | [IMEI.info](https://www.imei.info/phonedatabase/cect-q658/) |
+| 64266 | CECT QS518 | [IMEI.info](https://www.imei.info/phonedatabase/cect-qs518/) |
+| 64267 | CECT S60 | [IMEI.info](https://www.imei.info/phonedatabase/cect-s60/) |
+| 64268 | CECT T868 | [IMEI.info](https://www.imei.info/phonedatabase/cect-t868/) |
+| 64269 | CECT T878 | [IMEI.info](https://www.imei.info/phonedatabase/cect-t878/) |
+| 64270 | CECT TY296 | [IMEI.info](https://www.imei.info/phonedatabase/cect-ty296/) |
+| 64271 | CECT TY303 | [IMEI.info](https://www.imei.info/phonedatabase/cect-ty303/) |
+| 64272 | CECT TY788 | [IMEI.info](https://www.imei.info/phonedatabase/cect-ty788/) |
+| 64273 | CECT U8 | [IMEI.info](https://www.imei.info/phonedatabase/cect-u8/) |
+| 64274 | CECT V608 | [IMEI.info](https://www.imei.info/phonedatabase/cect-v608/) |
+| 64275 | CECT V668 | [IMEI.info](https://www.imei.info/phonedatabase/cect-v668/) |
+| 64276 | CECT V678A | [IMEI.info](https://www.imei.info/phonedatabase/cect-v678a/) |
+| 64277 | CECT V88 | [IMEI.info](https://www.imei.info/phonedatabase/cect-v88/) |
+| 64278 | CELKON C289 | [IMEI.info](https://www.imei.info/phonedatabase/celkon-c289/) |
+| 64279 | CELKON C329 | [IMEI.info](https://www.imei.info/phonedatabase/celkon-c329/) |
+| 64280 | CELKON C70MM | [IMEI.info](https://www.imei.info/phonedatabase/celkon-c70mm/) |
+| 64281 | Celkon C770M | [FoneArena](https://www.fonearena.com/celkon-c770m_2161.html) |
+| 64282 | CELKON Charm Eye 6 | [IMEI.info](https://www.imei.info/phonedatabase/celkon-charm-eye-6/) |
+| 64283 | CELLACOM M232 | [IMEI.info](https://www.imei.info/phonedatabase/cellacom-m232/) |
+| 64284 | Cellacom T701 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellacom-t701) |
+| 64285 | Cellacom T702A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellacom-t702a) |
+| 64286 | Cellacom T702C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cellacom-t702c) |
+| 64287 | CELLALLURE Binestar | [IMEI.info](https://www.imei.info/phonedatabase/cellallure-binestar/) |
+| 64288 | CELLECOR C9+ | [IMEI.info](https://www.imei.info/phonedatabase/cellecor-c9plus/) |
+| 64289 | CELLECOR E2 | [IMEI.info](https://www.imei.info/phonedatabase/cellecor-e2/) |
+| 64290 | CELLECOR R1 | [IMEI.info](https://www.imei.info/phonedatabase/cellecor-r1/) |
+| 64291 | CELLECOR X9 Plus | [IMEI.info](https://www.imei.info/phonedatabase/cellecor-x9-plus/) |
+| 64292 | CELLECOR Z60 | [IMEI.info](https://www.imei.info/phonedatabase/cellecor-z60/) |
+| 64293 | CELPHY B1 | [IMEI.info](https://www.imei.info/phonedatabase/celphy-b1/) |
+| 64294 | CELPHY B2 | [IMEI.info](https://www.imei.info/phonedatabase/celphy-b2/) |
+| 64295 | CHANGHONG A2 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-a2/) |
+| 64296 | CHANGHONG A320 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-a320/) |
+| 64297 | CHANGHONG A338 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-a338/) |
+| 64298 | CHANGHONG A366 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-a366/) |
+| 64299 | Changhong C600 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changhong-changhong-c600) |
+| 64300 | CHANGHONG DG318 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-dg318/) |
+| 64301 | CHANGHONG GH2818 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-gh2818/) |
+| 64302 | CHANGHONG K219 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-k219/) |
+| 64303 | CHANGHONG K228 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-k228/) |
+| 64304 | CHANGHONG L128 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-l128/) |
+| 64305 | CHANGHONG L158 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-l158/) |
+| 64306 | CHANGHONG L168 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-l168/) |
+| 64307 | CHANGHONG L178 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-l178/) |
+| 64308 | CHANGHONG L198 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-l198/) |
+| 64309 | CHANGHONG M628 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-m628/) |
+| 64310 | CHANGHONG M688 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-m688/) |
+| 64311 | CHANGHONG M698 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-m698/) |
+| 64312 | CHANGHONG M819 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-m819/) |
+| 64313 | CHANGHONG M839 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-m839/) |
+| 64314 | CHANGHONG Q6 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-q6/) |
+| 64315 | CHANGHONG S818 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-s818/) |
+| 64316 | CHANGHONG WQ18 | [IMEI.info](https://www.imei.info/phonedatabase/changhong-wq18/) |
+| 64317 | Changhong Z-ME | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/changhong-changhong-z-me) |
+| 64318 | CHEACOMM 208 | [IMEI.info](https://www.imei.info/phonedatabase/cheacomm-208/) |
+| 64319 | CHEACOMM 228 | [IMEI.info](https://www.imei.info/phonedatabase/cheacomm-228/) |
+| 64320 | CHEACOMM 308 | [IMEI.info](https://www.imei.info/phonedatabase/cheacomm-308/) |
+| 64321 | CHEACOMM JMS-110 | [IMEI.info](https://www.imei.info/phonedatabase/cheacomm-jms-110/) |
+| 64322 | Cherry Mobile Flare J6S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cherry-mobile-flare-j6s) |
+| 64323 | Chilli A222 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/chilli-a222) |
+| 64324 | CHINO-E SG669 | [IMEI.info](https://www.imei.info/phonedatabase/chino-e-sg669/) |
+| 64325 | CIRO K3 | [IMEI.info](https://www.imei.info/phonedatabase/ciro-k3/) |
+| 64326 | CITYCALL 2700 | [IMEI.info](https://www.imei.info/phonedatabase/citycall-2700/) |
+| 64327 | CITYCALL Diamond | [IMEI.info](https://www.imei.info/phonedatabase/citycall-diamond/) |
+| 64328 | CITYCALL M350 | [IMEI.info](https://www.imei.info/phonedatabase/citycall-m350/) |
+| 64329 | CITYCALL M8+ | [IMEI.info](https://www.imei.info/phonedatabase/citycall-m8plus/) |
+| 64330 | CITYCALL M908 | [IMEI.info](https://www.imei.info/phonedatabase/citycall-m908/) |
+| 64331 | CITYCALL M96 | [IMEI.info](https://www.imei.info/phonedatabase/citycall-m96/) |
+| 64332 | CKING E300 | [IMEI.info](https://www.imei.info/phonedatabase/cking-e300/) |
+| 64333 | CKK-mobile CKK mobile S17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-s17) |
+| 64334 | CKK-mobile CKK mobile S7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ckk-mobile-ckk-mobile-s7) |
+| 64335 | CLEVER F01 | [IMEI.info](https://www.imei.info/phonedatabase/clever-f01/) |
+| 64336 | CLICKS Communicator | [IMEI.info](https://www.imei.info/phonedatabase/clicks-communicator/) |
+| 64337 | CloudFone ICE 2GS | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cloudfone-ice-2gs) |
+| 64338 | CLUB MOBILE 4 Plus | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-4-plus/) |
+| 64339 | CLUB MOBILE A1000 Plus | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-a1000-plus/) |
+| 64340 | CLUB MOBILE A20 | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-a20/) |
+| 64341 | CLUB MOBILE M10 | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-m10/) |
+| 64342 | CLUB MOBILE Magic 2 Plus | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-magic-2-plus/) |
+| 64343 | CLUB MOBILE Music 3000 Plus | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-music-3000-plus/) |
+| 64344 | CLUB MOBILE Power 999 | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-power-999/) |
+| 64345 | CLUB MOBILE Value 3000 Plus | [IMEI.info](https://www.imei.info/phonedatabase/club-mobile-value-3000-plus/) |
+| 64346 | Colors F-25 | [FoneArena](https://www.fonearena.com/colors-f-25_4925.html) |
+| 64347 | Colors Mobile CG301 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-cg301) |
+| 64348 | Colors Mobile X17 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/colors-mobile-x17) |
+| 64349 | Colors X-7n | [FoneArena](https://www.fonearena.com/colors-x-7n_4924.html) |
+| 64350 | COLORS X5 | [IMEI.info](https://www.imei.info/phonedatabase/colors-x5/) |
+| 64351 | Colors Z1 | [FoneArena](https://www.fonearena.com/colors-z1_5198.html) |
+| 64352 | COMIO S66 | [IMEI.info](https://www.imei.info/phonedatabase/comio-s66/) |
+| 64353 | CONCORD TR-90 | [IMEI.info](https://www.imei.info/phonedatabase/concord-tr-90/) |
+| 64354 | CONDOR F-FLIP | [IMEI.info](https://www.imei.info/phonedatabase/condor-f-flip/) |
+| 64355 | CONDOR F-flip Lite | [IMEI.info](https://www.imei.info/phonedatabase/condor-f-flip-lite/) |
+| 64356 | ConnSpeed AS123 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as123) |
+| 64357 | ConnSpeed AS5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as5) |
+| 64358 | ConnSpeed AS7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/connspeed-as7) |
+| 64359 | COOCO C180 | [IMEI.info](https://www.imei.info/phonedatabase/cooco-c180/) |
+| 64360 | CoolPAD 838G2 | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-838g2/) |
+| 64361 | CoolPAD Belleza | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-belleza/) |
+| 64362 | CoolPAD D518 | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-d518/) |
+| 64363 | CoolPAD F61T | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-f61t/) |
+| 64364 | CoolPAD V18 | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-v18/) |
+| 64365 | CoolPAD V66 | [IMEI.info](https://www.imei.info/phonedatabase/coolpad-v66/) |
+| 64366 | COOVEI F189 | [IMEI.info](https://www.imei.info/phonedatabase/coovei-f189/) |
+| 64367 | COPICEL E918 | [IMEI.info](https://www.imei.info/phonedatabase/copicel-e918/) |
+| 64368 | CORN E1272 | [IMEI.info](https://www.imei.info/phonedatabase/corn-e1272/) |
+| 64369 | CORN F02 | [IMEI.info](https://www.imei.info/phonedatabase/corn-f02/) |
+| 64370 | CORN Flip K | [IMEI.info](https://www.imei.info/phonedatabase/corn-flip-k/) |
+| 64371 | Cosmote Smart Share | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cosmote-smart-share) |
+| 64372 | Cross A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a1) |
+| 64373 | Cross A11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a11) |
+| 64374 | Cross A6T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cross-a6t) |
+| 64375 | CRYPTOPHONE 300 | [IMEI.info](https://www.imei.info/phonedatabase/cryptophone-300/) |
+| 64376 | CSL DS303 | [IMEI.info](https://www.imei.info/phonedatabase/csl-ds303/) |
+| 64377 | CSL M30i | [IMEI.info](https://www.imei.info/phonedatabase/csl-m30i/) |
+| 64378 | CTRONIQ F1 | [IMEI.info](https://www.imei.info/phonedatabase/ctroniq-f1/) |
+| 64379 | CXTEL F5 | [IMEI.info](https://www.imei.info/phonedatabase/cxtel-f5/) |
+| 64380 | Cyrus CS19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cs19) |
+| 64381 | Cyrus CS20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/cyrus-cs20) |
+| 64382 | DAEWOO DW850 | [IMEI.info](https://www.imei.info/phonedatabase/daewoo-dw850/) |
+| 64383 | DAEWOO DW930 | [IMEI.info](https://www.imei.info/phonedatabase/daewoo-dw930/) |
+| 64384 | DAEWOO K900 | [IMEI.info](https://www.imei.info/phonedatabase/daewoo-k900/) |
+| 64385 | Danew K504 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/danew-k504) |
+| 64386 | DARAGO 225 | [IMEI.info](https://www.imei.info/phonedatabase/darago-225/) |
+| 64387 | DARAGO D16 | [IMEI.info](https://www.imei.info/phonedatabase/darago-d16/) |
+| 64388 | DARAGO D40 | [IMEI.info](https://www.imei.info/phonedatabase/darago-d40/) |
+| 64389 | DARAGO D999 | [IMEI.info](https://www.imei.info/phonedatabase/darago-d999/) |
+| 64390 | DARAGO F50 | [IMEI.info](https://www.imei.info/phonedatabase/darago-f50/) |
+| 64391 | DARAGO K83I | [IMEI.info](https://www.imei.info/phonedatabase/darago-k83i/) |
+| 64392 | DAXIAN A333 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-a333/) |
+| 64393 | DAXIAN C3 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-c3/) |
+| 64394 | DAXIAN CX8600 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-cx8600/) |
+| 64395 | DAXIAN CX8800 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-cx8800/) |
+| 64396 | DAXIAN CY111 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-cy111/) |
+| 64397 | DAXIAN D2800 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-d2800/) |
+| 64398 | DAXIAN D718 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-d718/) |
+| 64399 | DAXIAN D8508 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-d8508/) |
+| 64400 | DAXIAN D8800 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-d8800/) |
+| 64401 | DAXIAN M7 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-m7/) |
+| 64402 | DAXIAN T188 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-t188/) |
+| 64403 | DAXIAN TC168 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-tc168/) |
+| 64404 | DAXIAN X500 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-x500/) |
+| 64405 | DAXIAN X580 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-x580/) |
+| 64406 | DAXIAN X808 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-x808/) |
+| 64407 | DAXIAN X8802 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-x8802/) |
+| 64408 | DAXIAN X938 | [IMEI.info](https://www.imei.info/phonedatabase/daxian-x938/) |
+| 64409 | DBTEL 2037 | [IMEI.info](https://www.imei.info/phonedatabase/dbtel-2037/) |
+| 64410 | DBTEL 5689C | [IMEI.info](https://www.imei.info/phonedatabase/dbtel-5689c/) |
+| 64411 | DBTEL 8038C | [IMEI.info](https://www.imei.info/phonedatabase/dbtel-8038c/) |
+| 64412 | Desay TS808 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/desay-desay-ts808) |
+| 64413 | Dialog K35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dialog-k35) |
+| 64414 | DIGICEL Coral 300 | [IMEI.info](https://www.imei.info/phonedatabase/digicel-coral-300/) |
+| 64415 | DIGIDRAGON 6130 | [IMEI.info](https://www.imei.info/phonedatabase/digidragon-6130/) |
+| 64416 | DIGIT Bolt | [IMEI.info](https://www.imei.info/phonedatabase/digit-bolt/) |
+| 64417 | DIM A600 | [IMEI.info](https://www.imei.info/phonedatabase/dim-a600/) |
+| 64418 | Ding Heat 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ding-ding-heat-8) |
+| 64419 | Disney Mobile DM001C Princess | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/disney-mobile-dm001c-princess) |
+| 64420 | DNS S3501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/dns-s3501) |
+| 64421 | DoCoMo L852i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/docomo-l852i) |
+| 64422 | DOEASY V18 | [IMEI.info](https://www.imei.info/phonedatabase/doeasy-v18/) |
+| 64423 | Doogee Titans2 DG700 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doogee-titans2-dg700) |
+| 64424 | DOOV S620 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s620/) |
+| 64425 | DOOV S630 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s630/) |
+| 64426 | DOOV S680 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s680/) |
+| 64427 | DOOV S808 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s808/) |
+| 64428 | DOOV S818 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s818/) |
+| 64429 | DOOV S828 | [IMEI.info](https://www.imei.info/phonedatabase/doov-s828/) |
+| 64430 | Dopod C800 | [FoneArena](https://www.fonearena.com/dopod-c800_493.html) |
+| 64431 | DORO 6041 | [IMEI.info](https://www.imei.info/phonedatabase/doro-6041/) |
+| 64432 | DORO 6520 | [IMEI.info](https://www.imei.info/phonedatabase/doro-6520/) |
+| 64433 | DORO 6821 | [IMEI.info](https://www.imei.info/phonedatabase/doro-6821/) |
+| 64434 | DORO 6881 | [IMEI.info](https://www.imei.info/phonedatabase/doro-6881/) |
+| 64435 | DORO 7081 | [IMEI.info](https://www.imei.info/phonedatabase/doro-7081/) |
+| 64436 | Doro 8028 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/doro-8028) |
+| 64437 | DORO Liberto 650 | [IMEI.info](https://www.imei.info/phonedatabase/doro-liberto-650/) |
+| 64438 | DORO PhoneEasy 410S GSM | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-410s-gsm/) |
+| 64439 | DORO PhoneEasy 606 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-606/) |
+| 64440 | DORO PhoneEasy 607 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-607/) |
+| 64441 | DORO PhoneEasy 609 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-609/) |
+| 64442 | DORO PhoneEasy 618 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-618/) |
+| 64443 | DORO PhoneEasy 620 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-620/) |
+| 64444 | DORO PhoneEasy 624 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-624/) |
+| 64445 | DORO PhoneEasy 632 | [IMEI.info](https://www.imei.info/phonedatabase/doro-phoneeasy-632/) |
+| 64446 | DOX TECHNOLOGIES V400 | [IMEI.info](https://www.imei.info/phonedatabase/dox-technologies-v400/) |
+| 64447 | DTC Selfie Flip F1 | [IMEI.info](https://www.imei.info/phonedatabase/dtc-selfie-flip-f1/) |
+| 64448 | E-TACHI E21 | [IMEI.info](https://www.imei.info/phonedatabase/e-tachi-e21/) |
+| 64449 | E-TEL E14 | [IMEI.info](https://www.imei.info/phonedatabase/e-tel-e14/) |
+| 64450 | E-TEL T40 Slim | [IMEI.info](https://www.imei.info/phonedatabase/e-tel-t40-slim/) |
+| 64451 | E28 E2800+ | [IMEI.info](https://www.imei.info/phonedatabase/e28-e2800plus/) |
+| 64452 | EASTCOM EG309 | [IMEI.info](https://www.imei.info/phonedatabase/eastcom-eg309/) |
+| 64453 | Ebest W58sx | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ebest-w58sx) |
+| 64454 | ECHO Clap Plus 2 | [IMEI.info](https://www.imei.info/phonedatabase/echo-clap-plus-2/) |
+| 64455 | Echo Horizon Lite Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-horizon-lite-plus) |
+| 64456 | ECHO Pop | [IMEI.info](https://www.imei.info/phonedatabase/echo-pop/) |
+| 64457 | Echo Studio | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/echo-studio) |
+| 64458 | ECOTEL E11 | [IMEI.info](https://www.imei.info/phonedatabase/ecotel-e11/) |
+| 64459 | ECOTEL E13 | [IMEI.info](https://www.imei.info/phonedatabase/ecotel-e13/) |
+| 64460 | ECOTEL E15 | [IMEI.info](https://www.imei.info/phonedatabase/ecotel-e15/) |
+| 64461 | EGLTEL 616 | [IMEI.info](https://www.imei.info/phonedatabase/egltel-616/) |
+| 64462 | EGLTEL 777 | [IMEI.info](https://www.imei.info/phonedatabase/egltel-777/) |
+| 64463 | EKO DEVICES Pocket P180 | [IMEI.info](https://www.imei.info/phonedatabase/eko-devices-pocket-p180/) |
+| 64464 | ELITE eML1 | [IMEI.info](https://www.imei.info/phonedatabase/elite-eml1/) |
+| 64465 | ELITEK FN1106 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-fn1106/) |
+| 64466 | ELITEK FN1108 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-fn1108/) |
+| 64467 | ELITEK FN1218 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-fn1218/) |
+| 64468 | ELITEK FN8686 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-fn8686/) |
+| 64469 | ELITEK HX17 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-hx17/) |
+| 64470 | ELITEK ZY158 | [IMEI.info](https://www.imei.info/phonedatabase/elitek-zy158/) |
+| 64471 | ELIYA I306 | [IMEI.info](https://www.imei.info/phonedatabase/eliya-i306/) |
+| 64472 | Eliya S1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/eliya-s1) |
+| 64473 | ELSON EL510 | [IMEI.info](https://www.imei.info/phonedatabase/elson-el510/) |
+| 64474 | ELSON MP500 | [IMEI.info](https://www.imei.info/phonedatabase/elson-mp500/) |
+| 64475 | EMOL PX 30 | [IMEI.info](https://www.imei.info/phonedatabase/emol-px-30/) |
+| 64476 | EMOL PX 70 | [IMEI.info](https://www.imei.info/phonedatabase/emol-px-70/) |
+| 64477 | EMPORIA Active Glam | [IMEI.info](https://www.imei.info/phonedatabase/emporia-active-glam/) |
+| 64478 | EMPORIA ClickGPS V32 | [IMEI.info](https://www.imei.info/phonedatabase/emporia-clickgps-v32/) |
+| 64479 | EMPORIA F88 | [IMEI.info](https://www.imei.info/phonedatabase/emporia-f88/) |
+| 64480 | EMPORIA MD212 | [IMEI.info](https://www.imei.info/phonedatabase/emporia-md212/) |
+| 64481 | EMPORIA One | [IMEI.info](https://www.imei.info/phonedatabase/emporia-one/) |
+| 64482 | EMPORIA Solid | [IMEI.info](https://www.imei.info/phonedatabase/emporia-solid/) |
+| 64483 | EMPORIA TOUCHsmart.3 | [IMEI.info](https://www.imei.info/phonedatabase/emporia-touchsmart3/) |
+| 64484 | EMPORIA V170 Life Plus | [IMEI.info](https://www.imei.info/phonedatabase/emporia-v170-life-plus/) |
+| 64485 | EMPORIA V188 | [IMEI.info](https://www.imei.info/phonedatabase/emporia-v188/) |
+| 64486 | ENERGIZER E12 | [IMEI.info](https://www.imei.info/phonedatabase/energizer-e12/) |
+| 64487 | Energizer Energy E242s 4G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/energizer_energy_e242s_4g) |
+| 64488 | ENIX C201 | [IMEI.info](https://www.imei.info/phonedatabase/enix-c201/) |
+| 64489 | ENIX D170 | [IMEI.info](https://www.imei.info/phonedatabase/enix-d170/) |
+| 64490 | ENIX D60 | [IMEI.info](https://www.imei.info/phonedatabase/enix-d60/) |
+| 64491 | ENOL E310 | [IMEI.info](https://www.imei.info/phonedatabase/enol-e310/) |
+| 64492 | ENSPIRE 2210 | [IMEI.info](https://www.imei.info/phonedatabase/enspire-2210/) |
+| 64493 | ENSPIRE 2318 | [IMEI.info](https://www.imei.info/phonedatabase/enspire-2318/) |
+| 64494 | ERGO E282 | [IMEI.info](https://www.imei.info/phonedatabase/ergo-e282/) |
+| 64495 | ERICSSON T18 | [IMEI.info](https://www.imei.info/phonedatabase/ericsson-t18/) |
+| 64496 | ERICSSON T29 | [IMEI.info](https://www.imei.info/phonedatabase/ericsson-t29/) |
+| 64497 | ERICSSON TH688 | [IMEI.info](https://www.imei.info/phonedatabase/ericsson-th688/) |
+| 64498 | ESCOLLS Flip 2 | [IMEI.info](https://www.imei.info/phonedatabase/escolls-flip-2/) |
+| 64499 | Essentiel B Pixis | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/essentiel-b-pixis) |
+| 64500 | ESTAR A28 | [IMEI.info](https://www.imei.info/phonedatabase/estar-a28/) |
+| 64501 | ESTAR Digni Flip | [IMEI.info](https://www.imei.info/phonedatabase/estar-digni-flip/) |
+| 64502 | ESTAR Stone 4G | [IMEI.info](https://www.imei.info/phonedatabase/estar-stone-4g/) |
+| 64503 | EStar X35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/estar-estar-x35) |
+| 64504 | ETEL E3000 | [IMEI.info](https://www.imei.info/phonedatabase/etel-e3000/) |
+| 64505 | ETEL Ipro 1 | [IMEI.info](https://www.imei.info/phonedatabase/etel-ipro-1/) |
+| 64506 | ETEL Ipro 2 | [IMEI.info](https://www.imei.info/phonedatabase/etel-ipro-2/) |
+| 64507 | Evercoss A11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a11) |
+| 64508 | Evercoss A28S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a28s) |
+| 64509 | Evercoss A5C | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5c) |
+| 64510 | Evercoss A5P Star | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5p-star) |
+| 64511 | Evercoss A5T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5t) |
+| 64512 | Evercoss A5V | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5v) |
+| 64513 | Evercoss A5Z | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evercoss-a5z) |
+| 64514 | EVERCOSS M06 | [IMEI.info](https://www.imei.info/phonedatabase/evercoss-m06/) |
+| 64515 | EVERCOSS N2C | [IMEI.info](https://www.imei.info/phonedatabase/evercoss-n2c/) |
+| 64516 | EVERCOSS S5 | [IMEI.info](https://www.imei.info/phonedatabase/evercoss-s5/) |
+| 64517 | Evertek Eversmart | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evertek-eversmart) |
+| 64518 | EVERTEK Pebble | [IMEI.info](https://www.imei.info/phonedatabase/evertek-pebble/) |
+| 64519 | Evolio StrongPhone G4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/evolio-strongphone-g4) |
+| 64520 | EVOLVE Gladiator RG400 | [IMEI.info](https://www.imei.info/phonedatabase/evolve-gladiator-rg400/) |
+| 64521 | EVOLVE GX602 | [IMEI.info](https://www.imei.info/phonedatabase/evolve-gx602/) |
+| 64522 | EVOLVE GX730 Phantom | [IMEI.info](https://www.imei.info/phonedatabase/evolve-gx730-phantom/) |
+| 64523 | ExMobile EX XMini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/exmobile-ex-xmini) |
+| 64524 | F2-Mobile F2 Mobile Quantum S8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/f2-mobile-f2-mobile-quantum-s8) |
+| 64525 | FAMOUS FONES Rugged | [IMEI.info](https://www.imei.info/phonedatabase/famous-fones-rugged/) |
+| 64526 | FAYWA Dabang | [IMEI.info](https://www.imei.info/phonedatabase/faywa-dabang/) |
+| 64527 | FAYWA F2 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-f2/) |
+| 64528 | FAYWA F666 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-f666/) |
+| 64529 | FAYWA G1 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-g1/) |
+| 64530 | FAYWA G28 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-g28/) |
+| 64531 | FAYWA J2 Classic | [IMEI.info](https://www.imei.info/phonedatabase/faywa-j2-classic/) |
+| 64532 | FAYWA Prime 3 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-prime-3/) |
+| 64533 | FAYWA Smart 3 | [IMEI.info](https://www.imei.info/phonedatabase/faywa-smart-3/) |
+| 64534 | FERO K9 | [IMEI.info](https://www.imei.info/phonedatabase/fero-k9/) |
+| 64535 | FIC GT118A | [IMEI.info](https://www.imei.info/phonedatabase/fic-gt118a/) |
+| 64536 | FIC GT128 | [IMEI.info](https://www.imei.info/phonedatabase/fic-gt128/) |
+| 64537 | FLAMEFOX Stone | [IMEI.info](https://www.imei.info/phonedatabase/flamefox-stone/) |
+| 64538 | Fly DS159A | [FoneArena](https://www.fonearena.com/fly-ds159a_2961.html) |
+| 64539 | Fly DS181 | [FoneArena](https://www.fonearena.com/fly-ds181_2939.html) |
+| 64540 | Fly DS222+ | [FoneArena](https://www.fonearena.com/fly-ds222+_2994.html) |
+| 64541 | Fly GC169 | [FoneArena](https://www.fonearena.com/fly-gc169_2977.html) |
+| 64542 | Fly MC202 | [FoneArena](https://www.fonearena.com/fly-mc202_2985.html) |
+| 64543 | FLY MV120 | [IMEI.info](https://www.imei.info/phonedatabase/fly-mv120/) |
+| 64544 | Fly MV122 | [FoneArena](https://www.fonearena.com/fly-mv122_2956.html) |
+| 64545 | Fly MV242i | [FoneArena](https://www.fonearena.com/fly-mv242i_2988.html) |
+| 64546 | Fly MV245 | [FoneArena](https://www.fonearena.com/fly-mv245_2976.html) |
+| 64547 | Fly MV247 | [FoneArena](https://www.fonearena.com/fly-mv247_2965.html) |
+| 64548 | Fly MV266 | [FoneArena](https://www.fonearena.com/fly-mv266_2975.html) |
+| 64549 | FLY SL500 | [IMEI.info](https://www.imei.info/phonedatabase/fly-sl500/) |
+| 64550 | FLY Z600 | [IMEI.info](https://www.imei.info/phonedatabase/fly-z600/) |
+| 64551 | Fondi G312 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fondi-g312) |
+| 64552 | FORME G1 | [IMEI.info](https://www.imei.info/phonedatabase/forme-g1/) |
+| 64553 | FORME H80 | [IMEI.info](https://www.imei.info/phonedatabase/forme-h80/) |
+| 64554 | FORME N78 | [IMEI.info](https://www.imei.info/phonedatabase/forme-n78/) |
+| 64555 | FORME S800 | [IMEI.info](https://www.imei.info/phonedatabase/forme-s800/) |
+| 64556 | FORME T33 | [IMEI.info](https://www.imei.info/phonedatabase/forme-t33/) |
+| 64557 | FOSSIBOT F117 | [IMEI.info](https://www.imei.info/phonedatabase/fossibot-f117/) |
+| 64558 | Four S40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/four-s40) |
+| 64559 | FOX MOBILES Sultan | [IMEI.info](https://www.imei.info/phonedatabase/fox-mobiles-sultan/) |
+| 64560 | FPT F11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f11) |
+| 64561 | FPT F12 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f12) |
+| 64562 | FPT F2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f2) |
+| 64563 | FPT F20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f20) |
+| 64564 | FPT F8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f8) |
+| 64565 | FPT F81 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/fpt-f81) |
+| 64566 | FROMPRO E18 | [IMEI.info](https://www.imei.info/phonedatabase/frompro-e18/) |
+| 64567 | FUJITSU FOMA F882IES | [IMEI.info](https://www.imei.info/phonedatabase/fujitsu-foma-f882ies/) |
+| 64568 | FUNKER C85 | [IMEI.info](https://www.imei.info/phonedatabase/funker-c85/) |
+| 64569 | FUNKER E100 Max Audio | [IMEI.info](https://www.imei.info/phonedatabase/funker-e100-max-audio/) |
+| 64570 | G-BEST F800 | [IMEI.info](https://www.imei.info/phonedatabase/g-best-f800/) |
+| 64571 | G-BEST M24 | [IMEI.info](https://www.imei.info/phonedatabase/g-best-m24/) |
+| 64572 | G-BEST M26 | [IMEI.info](https://www.imei.info/phonedatabase/g-best-m26/) |
+| 64573 | G-BEST M29 | [IMEI.info](https://www.imei.info/phonedatabase/g-best-m29/) |
+| 64574 | G-PHONE GP23 | [IMEI.info](https://www.imei.info/phonedatabase/g-phone-gp23/) |
+| 64575 | G-PHONE GP24 | [IMEI.info](https://www.imei.info/phonedatabase/g-phone-gp24/) |
+| 64576 | G-PHONE GP35 | [IMEI.info](https://www.imei.info/phonedatabase/g-phone-gp35/) |
+| 64577 | G-PHONE GP36 | [IMEI.info](https://www.imei.info/phonedatabase/g-phone-gp36/) |
+| 64578 | G-Plus GN100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-gn100) |
+| 64579 | G-Plus N930 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-plus-n930-plus) |
+| 64580 | G-TIDE G160 | [IMEI.info](https://www.imei.info/phonedatabase/g-tide-g160/) |
+| 64581 | G-Tide G19 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-g19) |
+| 64582 | G-TIDE G666 | [IMEI.info](https://www.imei.info/phonedatabase/g-tide-g666/) |
+| 64583 | G-Tide M1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-m1) |
+| 64584 | G-Tide V7 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/g-tide-v7) |
+| 64585 | GAIX A8 | [IMEI.info](https://www.imei.info/phonedatabase/gaix-a8/) |
+| 64586 | GAMMA M10 | [IMEI.info](https://www.imei.info/phonedatabase/gamma-m10/) |
+| 64587 | GAOXINQI N82 | [IMEI.info](https://www.imei.info/phonedatabase/gaoxinqi-n82/) |
+| 64588 | GAOXINQI N91 | [IMEI.info](https://www.imei.info/phonedatabase/gaoxinqi-n91/) |
+| 64589 | GAOXINQI R008 | [IMEI.info](https://www.imei.info/phonedatabase/gaoxinqi-r008/) |
+| 64590 | GDL G400 | [IMEI.info](https://www.imei.info/phonedatabase/gdl-g400/) |
+| 64591 | GDL G602 | [IMEI.info](https://www.imei.info/phonedatabase/gdl-g602/) |
+| 64592 | GENERAL MOBILE FB1907 | [IMEI.info](https://www.imei.info/phonedatabase/general-mobile-fb1907/) |
+| 64593 | Genesis GP-353 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/genesis-gp-353) |
+| 64594 | GENUS G313 | [IMEI.info](https://www.imei.info/phonedatabase/genus-g313/) |
+| 64595 | GENUS GQ533 | [IMEI.info](https://www.imei.info/phonedatabase/genus-gq533/) |
+| 64596 | GEO PHONE R10 | [IMEI.info](https://www.imei.info/phonedatabase/geo-phone-r10/) |
+| 64597 | GEO PHONE R11 | [IMEI.info](https://www.imei.info/phonedatabase/geo-phone-r11/) |
+| 64598 | GEO PHONE R12 | [IMEI.info](https://www.imei.info/phonedatabase/geo-phone-r12/) |
+| 64599 | GEO PHONE R44 | [IMEI.info](https://www.imei.info/phonedatabase/geo-phone-r44/) |
+| 64600 | GERTEC MP35P | [IMEI.info](https://www.imei.info/phonedatabase/gertec-mp35p/) |
+| 64601 | GETEK GK-A1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/getek-gk-a1) |
+| 64602 | GETEK GK370 | [IMEI.info](https://www.imei.info/phonedatabase/getek-gk370/) |
+| 64603 | GETEK GK729 | [IMEI.info](https://www.imei.info/phonedatabase/getek-gk729/) |
+| 64604 | GFIVE 530 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-530/) |
+| 64605 | GFIVE 7310I | [IMEI.info](https://www.imei.info/phonedatabase/gfive-7310i/) |
+| 64606 | GFIVE 7610 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-7610/) |
+| 64607 | GFIVE 8250 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-8250/) |
+| 64608 | GFive A56 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-gfive-a56) |
+| 64609 | GFive Big Bird | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/bigbird/) |
+| 64610 | GFIVE C6120 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-c6120/) |
+| 64611 | GFIVE C6233 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-c6233/) |
+| 64612 | GFIVE Commando | [IMEI.info](https://www.imei.info/phonedatabase/gfive-commando/) |
+| 64613 | GFive DISCO | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/disco/) |
+| 64614 | GFive E100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-e100) |
+| 64615 | GFive Elite | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/elite/) |
+| 64616 | GFive Elite 1 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/elite1/) |
+| 64617 | GFive Falak | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/falak/) |
+| 64618 | GFIVE G119 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-g119/) |
+| 64619 | GFive G601 | [FoneArena](https://www.fonearena.com/gfive-g601_1851.html) |
+| 64620 | GFive Gold | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/gold/) |
+| 64621 | GFIVE Golden | [IMEI.info](https://www.imei.info/phonedatabase/gfive-golden/) |
+| 64622 | GFIVE H300 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-h300/) |
+| 64623 | GFIVE H500 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-h500/) |
+| 64624 | GFIVE H600 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-h600/) |
+| 64625 | GFIVE L131 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-l131/) |
+| 64626 | GFive Pearl | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/pearl/) |
+| 64627 | GFive President X Hero 1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gfive-president-x-hero-1) |
+| 64628 | GFive Star | [GSMchoice](https://www.gsmchoice.com/en/catalogue/gfive/star/) |
+| 64629 | GFIVE T325I | [IMEI.info](https://www.imei.info/phonedatabase/gfive-t325i/) |
+| 64630 | GFIVE T366I | [IMEI.info](https://www.imei.info/phonedatabase/gfive-t366i/) |
+| 64631 | GFIVE TIGER | [IMEI.info](https://www.imei.info/phonedatabase/gfive-tiger/) |
+| 64632 | GFIVE U550 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-u550/) |
+| 64633 | GFIVE U707 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-u707/) |
+| 64634 | GFIVE U808 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-u808/) |
+| 64635 | GFIVE U900 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-u900/) |
+| 64636 | GFIVE X5 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-x5/) |
+| 64637 | GFIVE X8 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-x8/) |
+| 64638 | GFIVE X9 | [IMEI.info](https://www.imei.info/phonedatabase/gfive-x9/) |
+| 64639 | Gigabyte GSmart MS808 | [DeviceBeast](https://devicebeast.com/devices/gigabyte-gsmart-ms808) |
+| 64640 | Gigabyte GSmart S1204 | [DeviceBeast](https://devicebeast.com/devices/gigabyte-gsmart-s1204) |
+| 64641 | GIGABYTE V5200 | [IMEI.info](https://www.imei.info/phonedatabase/gigabyte-v5200/) |
+| 64642 | GILD 6700 | [IMEI.info](https://www.imei.info/phonedatabase/gild-6700/) |
+| 64643 | GILD T33I | [IMEI.info](https://www.imei.info/phonedatabase/gild-t33i/) |
+| 64644 | GILD V22 | [IMEI.info](https://www.imei.info/phonedatabase/gild-v22/) |
+| 64645 | GILD V99 | [IMEI.info](https://www.imei.info/phonedatabase/gild-v99/) |
+| 64646 | GINEEK G13 | [IMEI.info](https://www.imei.info/phonedatabase/gineek-g13/) |
+| 64647 | GINGER G10 | [IMEI.info](https://www.imei.info/phonedatabase/ginger-g10/) |
+| 64648 | GIONEE A15 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-a15/) |
+| 64649 | GIONEE A326+ | [IMEI.info](https://www.imei.info/phonedatabase/gionee-a326plus/) |
+| 64650 | GIONEE A808 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-a808/) |
+| 64651 | GIONEE A809 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-a809/) |
+| 64652 | GIONEE D100 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-d100/) |
+| 64653 | GIONEE E2 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-e2/) |
+| 64654 | GIONEE GN303B | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn303b/) |
+| 64655 | GIONEE GN516 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn516/) |
+| 64656 | GIONEE GN600 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn600/) |
+| 64657 | GIONEE GN606 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn606/) |
+| 64658 | GIONEE GN635 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn635/) |
+| 64659 | GIONEE GN636 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn636/) |
+| 64660 | GIONEE GN658 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn658/) |
+| 64661 | GIONEE GN728 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn728/) |
+| 64662 | GIONEE GN768 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-gn768/) |
+| 64663 | GIONEE L698 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-l698/) |
+| 64664 | Gionee Long L800 | [FoneArena](https://www.fonearena.com/gionee-long-l800_6951.html) |
+| 64665 | GIONEE M506 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-m506/) |
+| 64666 | GIONEE S108 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-s108/) |
+| 64667 | GIONEE S120 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-s120/) |
+| 64668 | GIONEE S320 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-s320/) |
+| 64669 | GIONEE S70 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-s70/) |
+| 64670 | GIONEE TD100 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-td100/) |
+| 64671 | GIONEE V39 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-v39/) |
+| 64672 | GIONEE V5300 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-v5300/) |
+| 64673 | GIONEE V7000 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-v7000/) |
+| 64674 | GIONEE V806 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-v806/) |
+| 64675 | GIONEE V830 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-v830/) |
+| 64676 | GIONEE W360 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-w360/) |
+| 64677 | GIONEE W800E | [IMEI.info](https://www.imei.info/phonedatabase/gionee-w800e/) |
+| 64678 | GIONEE W808 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-w808/) |
+| 64679 | GIONEE Z6 | [IMEI.info](https://www.imei.info/phonedatabase/gionee-z6/) |
+| 64680 | GIVA I10 | [IMEI.info](https://www.imei.info/phonedatabase/giva-i10/) |
+| 64681 | GIVA V21 | [IMEI.info](https://www.imei.info/phonedatabase/giva-v21/) |
+| 64682 | GLX A202 | [IMEI.info](https://www.imei.info/phonedatabase/glx-a202/) |
+| 64683 | GLX Leon | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/glx-leon) |
+| 64684 | GLX M9 | [IMEI.info](https://www.imei.info/phonedatabase/glx-m9/) |
+| 64685 | GLX Mini505 | [IMEI.info](https://www.imei.info/phonedatabase/glx-mini505/) |
+| 64686 | GLX Shine | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/glx-shine) |
+| 64687 | GLX W22 | [IMEI.info](https://www.imei.info/phonedatabase/glx-w22/) |
+| 64688 | GNet F22 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gnet-gnet-f22) |
+| 64689 | GNINE K25 | [IMEI.info](https://www.imei.info/phonedatabase/gnine-k25/) |
+| 64690 | GNINE K900 | [IMEI.info](https://www.imei.info/phonedatabase/gnine-k900/) |
+| 64691 | Gomax Infinite G81 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-g81) |
+| 64692 | Gomax Infinite GS6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomax-infinite-gs6) |
+| 64693 | GoMobile GO775 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go775) |
+| 64694 | GoMobile GO778 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go778) |
+| 64695 | GoMobile GO779 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gomobile-go779) |
+| 64696 | Gooweel M5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gooweel-m5-plus) |
+| 64697 | GOSCO FS1812 | [IMEI.info](https://www.imei.info/phonedatabase/gosco-fs1812/) |
+| 64698 | GoSmart G313D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/gosmart-g313d) |
+| 64699 | GPLUS G903 | [IMEI.info](https://www.imei.info/phonedatabase/gplus-g903/) |
+| 64700 | GPLUS G907 | [IMEI.info](https://www.imei.info/phonedatabase/gplus-g907/) |
+| 64701 | GPLUS G908 | [IMEI.info](https://www.imei.info/phonedatabase/gplus-g908/) |
+| 64702 | GPLUS KD885 | [IMEI.info](https://www.imei.info/phonedatabase/gplus-kd885/) |
+| 64703 | GRADIENTE Neo S 105R | [IMEI.info](https://www.imei.info/phonedatabase/gradiente-neo-s-105r/) |
+| 64704 | Greentel G11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/greentel-g11) |
+| 64705 | Greentel G5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/greentel-g5) |
+| 64706 | GRESSO 007 | [IMEI.info](https://www.imei.info/phonedatabase/gresso-007/) |
+| 64707 | GRESSO 4Sim | [IMEI.info](https://www.imei.info/phonedatabase/gresso-4sim/) |
+| 64708 | GRESSO Avantgarde Sol | [IMEI.info](https://www.imei.info/phonedatabase/gresso-avantgarde-sol/) |
+| 64709 | GRESSO Meridian M1 | [IMEI.info](https://www.imei.info/phonedatabase/gresso-meridian-m1/) |
+| 64710 | GRESSO Turbo 2 | [IMEI.info](https://www.imei.info/phonedatabase/gresso-turbo-2/) |
+| 64711 | GRESSO Ultra Slim | [IMEI.info](https://www.imei.info/phonedatabase/gresso-ultra-slim/) |
+| 64712 | GRUNDIG A115 | [IMEI.info](https://www.imei.info/phonedatabase/grundig-a115/) |
+| 64713 | GRUNDIG B700 | [IMEI.info](https://www.imei.info/phonedatabase/grundig-b700/) |
+| 64714 | GRUNDIG CD601 | [IMEI.info](https://www.imei.info/phonedatabase/grundig-cd601/) |
+| 64715 | GRUNDIG E660 | [IMEI.info](https://www.imei.info/phonedatabase/grundig-e660/) |
+| 64716 | GRUNDIG G700i | [IMEI.info](https://www.imei.info/phonedatabase/grundig-g700i/) |
+| 64717 | H-MOBILE T10 | [IMEI.info](https://www.imei.info/phonedatabase/h-mobile-t10/) |
+| 64718 | HAIER C2076 | [IMEI.info](https://www.imei.info/phonedatabase/haier-c2076/) |
+| 64719 | HAIER C230 | [IMEI.info](https://www.imei.info/phonedatabase/haier-c230/) |
+| 64720 | Haier Z1000m | [GSMchoice](https://www.gsmchoice.com/en/catalogue/haier/z1000m/) |
+| 64721 | Haier Z1000zm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/haier/z1000zm/) |
+| 64722 | HAIER Z1100 | [IMEI.info](https://www.imei.info/phonedatabase/haier-z1100/) |
+| 64723 | HAIER Z3000d | [IMEI.info](https://www.imei.info/phonedatabase/haier-z3000d/) |
+| 64724 | HAIER Z6100 | [IMEI.info](https://www.imei.info/phonedatabase/haier-z6100/) |
+| 64725 | HAINUO HN2288 | [IMEI.info](https://www.imei.info/phonedatabase/hainuo-hn2288/) |
+| 64726 | HAINUO HN888 | [IMEI.info](https://www.imei.info/phonedatabase/hainuo-hn888/) |
+| 64727 | HAINUO K788 | [IMEI.info](https://www.imei.info/phonedatabase/hainuo-k788/) |
+| 64728 | Haipai X720D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haipai-x720d) |
+| 64729 | HALIMA T-1 Sky | [IMEI.info](https://www.imei.info/phonedatabase/halima-t-1-sky/) |
+| 64730 | HALIMA T-2 Magic | [IMEI.info](https://www.imei.info/phonedatabase/halima-t-2-magic/) |
+| 64731 | HALLO Classic | [IMEI.info](https://www.imei.info/phonedatabase/hallo-classic/) |
+| 64732 | HANTEL 118 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-118/) |
+| 64733 | HANTEL HN519 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-hn519/) |
+| 64734 | HANTEL HT158 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht158/) |
+| 64735 | HANTEL HT602 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht602/) |
+| 64736 | HANTEL HT6228 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht6228/) |
+| 64737 | HANTEL HT623 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht623/) |
+| 64738 | HANTEL HT6520 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht6520/) |
+| 64739 | HANTEL HT658 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht658/) |
+| 64740 | HANTEL HT696 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht696/) |
+| 64741 | HANTEL HT706 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht706/) |
+| 64742 | HANTEL HT8088 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht8088/) |
+| 64743 | HANTEL HT898 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ht898/) |
+| 64744 | HANTEL LS28 | [IMEI.info](https://www.imei.info/phonedatabase/hantel-ls28/) |
+| 64745 | Haus JS405 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/haus-js405) |
+| 64746 | HC HICELL C1 | [IMEI.info](https://www.imei.info/phonedatabase/hc-hicell-c1/) |
+| 64747 | HEDY M268 | [IMEI.info](https://www.imei.info/phonedatabase/hedy-m268/) |
+| 64748 | HELLO TECH J10 | [IMEI.info](https://www.imei.info/phonedatabase/hello-tech-j10/) |
+| 64749 | Hero A8 QWERTY | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-a8-qwerty) |
+| 64750 | Hero H200 QWERTY | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hero-h200-qwerty) |
+| 64751 | Hi-Tech Amaze S330 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-amaze-s330) |
+| 64752 | HI-TECH Micra 115 | [IMEI.info](https://www.imei.info/phonedatabase/hi-tech-micra-115/) |
+| 64753 | Hi-Tech S300I Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hi-tech-s300i-plus) |
+| 64754 | HIKING X9 | [IMEI.info](https://www.imei.info/phonedatabase/hiking-x9/) |
+| 64755 | HISENSE C3700 | [IMEI.info](https://www.imei.info/phonedatabase/hisense-c3700/) |
+| 64756 | HITACHI W61H | [IMEI.info](https://www.imei.info/phonedatabase/hitachi-w61h/) |
+| 64757 | HITACHI WOO Ketai H001 | [IMEI.info](https://www.imei.info/phonedatabase/hitachi-woo-ketai-h001/) |
+| 64758 | HITECH HT11 | [IMEI.info](https://www.imei.info/phonedatabase/hitech-ht11/) |
+| 64759 | HITECH Kick 565 | [IMEI.info](https://www.imei.info/phonedatabase/hitech-kick-565/) |
+| 64760 | HITECH X2 | [IMEI.info](https://www.imei.info/phonedatabase/hitech-x2/) |
+| 64761 | HKPhone Zip 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hkphone-zip-3g) |
+| 64762 | HMD Nokia 300 Charge | [Gadgets 360](https://www.gadgets360.com/hmd-nokia-300-charge-price-in-india-137315) |
+| 64763 | HONEY BD H42 | [IMEI.info](https://www.imei.info/phonedatabase/honey-bd-h42/) |
+| 64764 | HONO H3 | [IMEI.info](https://www.imei.info/phonedatabase/hono-h3/) |
+| 64765 | HOPE S15 | [IMEI.info](https://www.imei.info/phonedatabase/hope-s15/) |
+| 64766 | HOSIN A100 | [IMEI.info](https://www.imei.info/phonedatabase/hosin-a100/) |
+| 64767 | HOSIN I99+ | [IMEI.info](https://www.imei.info/phonedatabase/hosin-i99plus/) |
+| 64768 | HOSIN S18 | [IMEI.info](https://www.imei.info/phonedatabase/hosin-s18/) |
+| 64769 | HOT PEPPER Jalapeno | [IMEI.info](https://www.imei.info/phonedatabase/hot-pepper-jalapeno/) |
+| 64770 | HOTLINE Royal Flip | [IMEI.info](https://www.imei.info/phonedatabase/hotline-royal-flip/) |
+| 64771 | Hotwav Cosmos V15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-cosmos-v15) |
+| 64772 | Hotwav Venus X3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hotwav-venus-x3) |
+| 64773 | HSL Yuva Y501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hsl-yuva-y501) |
+| 64774 | HTC Wildfire E ultra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-wildfire-e-ultra) |
+| 64775 | HTC X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htc-x2) |
+| 64776 | HTM A6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-a6) |
+| 64777 | HTM H501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/htm-h501) |
+| 64778 | Huawei Nova Flip S | [Gadgets 360](https://www.gadgets360.com/huawei-nova-flip-s-price-in-india-134709) |
+| 64779 | Huella C50S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/huella-c50s) |
+| 64780 | HUGIGA HGW950 | [IMEI.info](https://www.imei.info/phonedatabase/hugiga-hgw950/) |
+| 64781 | HUGIGA K18 | [IMEI.info](https://www.imei.info/phonedatabase/hugiga-k18/) |
+| 64782 | HUGIGA V8 | [IMEI.info](https://www.imei.info/phonedatabase/hugiga-v8/) |
+| 64783 | HX T88 | [IMEI.info](https://www.imei.info/phonedatabase/hx-t88/) |
+| 64784 | HYUNDAI D265 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-d265/) |
+| 64785 | HYUNDAI D275 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-d275/) |
+| 64786 | HYUNDAI D275D | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-d275d/) |
+| 64787 | Hyundai D350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/hyundai-d350) |
+| 64788 | HYUNDAI HD518 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-hd518/) |
+| 64789 | HYUNDAI I728 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-i728/) |
+| 64790 | HYUNDAI I789 | [IMEI.info](https://www.imei.info/phonedatabase/hyundai-i789/) |
+| 64791 | HZTEL S300 | [IMEI.info](https://www.imei.info/phonedatabase/hztel-s300/) |
+| 64792 | I KALL K19 | [IMEI.info](https://www.imei.info/phonedatabase/i-kall-k19/) |
+| 64793 | I KALL K24 | [IMEI.info](https://www.imei.info/phonedatabase/i-kall-k24/) |
+| 64794 | i-Cherry C115 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c115) |
+| 64795 | i-Cherry C131 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c131) |
+| 64796 | i-Cherry C201 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c201) |
+| 64797 | i-Cherry C216 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c216) |
+| 64798 | i-Cherry C221 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c221) |
+| 64799 | i-Cherry C99 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/i-cherry-c99) |
+| 64800 | I-Mate Centurion | [DeviceBeast](https://devicebeast.com/devices/i-mate-centurion) |
+| 64801 | i-mobile 200 Hitz | [IMEI.info](https://www.imei.info/phonedatabase/i-mobile-200-hitz/) |
+| 64802 | i-mobile 504 | [IMEI.info](https://www.imei.info/phonedatabase/i-mobile-504/) |
+| 64803 | i-mobile 900 | [IMEI.info](https://www.imei.info/phonedatabase/i-mobile-900/) |
+| 64804 | i-mobile Hitz 120 | [IMEI.info](https://www.imei.info/phonedatabase/i-mobile-hitz-120/) |
+| 64805 | i-mobile iDEA 802 | [IMEI.info](https://www.imei.info/phonedatabase/i-mobile-idea-802/) |
+| 64806 | i.Robot i-Robot Solar A1 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/irobot-i-robot-solar-a1-plus) |
+| 64807 | IAIR D22 | [IMEI.info](https://www.imei.info/phonedatabase/iair-d22/) |
+| 64808 | iBALL FAB 2.8H | [IMEI.info](https://www.imei.info/phonedatabase/iball-fab-28h/) |
+| 64809 | iBALL Planet 3G See N Talk | [IMEI.info](https://www.imei.info/phonedatabase/iball-planet-3g-see-n-talk/) |
+| 64810 | Iball Shaan i162 | [FoneArena](https://www.fonearena.com/iball-shaan-i162_3924.html) |
+| 64811 | iBold IBSD35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ibold-ibsd35) |
+| 64812 | Ibrit VI51 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ibrit-vi51) |
+| 64813 | ICD Velocity Mobile 83 | [DeviceBeast](https://devicebeast.com/devices/icd-velocity-mobile-83) |
+| 64814 | ICELL I670 | [IMEI.info](https://www.imei.info/phonedatabase/icell-i670/) |
+| 64815 | ICELL I9600 | [IMEI.info](https://www.imei.info/phonedatabase/icell-i9600/) |
+| 64816 | ICON i101 | [IMEI.info](https://www.imei.info/phonedatabase/icon-i101/) |
+| 64817 | ICON I73 | [IMEI.info](https://www.imei.info/phonedatabase/icon-i73/) |
+| 64818 | ICON I89 | [IMEI.info](https://www.imei.info/phonedatabase/icon-i89/) |
+| 64819 | IFINEX E2 | [IMEI.info](https://www.imei.info/phonedatabase/ifinex-e2/) |
+| 64820 | IFINEX M400 | [IMEI.info](https://www.imei.info/phonedatabase/ifinex-m400/) |
+| 64821 | IFINEX M66+ | [IMEI.info](https://www.imei.info/phonedatabase/ifinex-m66plus/) |
+| 64822 | iGlo L803 | [IMEI.info](https://www.imei.info/phonedatabase/iglo-l803/) |
+| 64823 | iHUNT i1 3G | [IMEI.info](https://www.imei.info/phonedatabase/ihunt-i1-3g/) |
+| 64824 | iHunt Like 3 Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ihunt-like-3-pro) |
+| 64825 | iHUNT Primo 4G | [IMEI.info](https://www.imei.info/phonedatabase/ihunt-primo-4g/) |
+| 64826 | IKU S2 | [IMEI.info](https://www.imei.info/phonedatabase/iku-s2/) |
+| 64827 | IKU S5 | [IMEI.info](https://www.imei.info/phonedatabase/iku-s5/) |
+| 64828 | Iku Zeus Z55I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iku-zeus-z55i) |
+| 64829 | iLife Itell S280 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilife-itell-s280) |
+| 64830 | iLike X5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ilike-x5-plus) |
+| 64831 | IMAM C3 | [IMEI.info](https://www.imei.info/phonedatabase/imam-c3/) |
+| 64832 | IMAM I104 | [IMEI.info](https://www.imei.info/phonedatabase/imam-i104/) |
+| 64833 | IMAX MX2413 | [IMEI.info](https://www.imei.info/phonedatabase/imax-mx2413/) |
+| 64834 | IMAX MX2802 | [IMEI.info](https://www.imei.info/phonedatabase/imax-mx2802/) |
+| 64835 | Imi Vin 3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imi-vin-3) |
+| 64836 | IMO Discovery II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-discovery-ii) |
+| 64837 | IMO G98 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-g98) |
+| 64838 | IMO S67 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s67) |
+| 64839 | IMO S79 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-s79) |
+| 64840 | IMO X2 Normandy | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/imo-x2-normandy) |
+| 64841 | IMOSI P12 | [IMEI.info](https://www.imei.info/phonedatabase/imosi-p12/) |
+| 64842 | INFINITI I5 | [IMEI.info](https://www.imei.info/phonedatabase/infiniti-i5/) |
+| 64843 | Infinity JIB3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infinity-jib3g) |
+| 64844 | InFocus Hero Selfie C2 | [IMEI.info](https://www.imei.info/phonedatabase/infocus-hero-selfie-c2/) |
+| 64845 | Infone Extreme Mega | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-mega) |
+| 64846 | Infone Extreme Novel | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-extreme-novel) |
+| 64847 | Infone X-Cite SE | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/infone-x-cite-se) |
+| 64848 | Inovacel S23 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovacel-s23) |
+| 64849 | Inovacel S23B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovacel-s23b) |
+| 64850 | Inovalley GSM25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovalley-gsm25) |
+| 64851 | Inovo I471 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i471) |
+| 64852 | Inovo I552 Mango | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/inovo-i552-mango) |
+| 64853 | Insys C3-S350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/insys-insys-c3-s350) |
+| 64854 | Intex ARC 02+ | [FoneArena](https://www.fonearena.com/intex-arc-02+_3036.html) |
+| 64855 | INTEX Glitter | [IMEI.info](https://www.imei.info/phonedatabase/intex-glitter/) |
+| 64856 | INTEX Neo Smart | [IMEI.info](https://www.imei.info/phonedatabase/intex-neo-smart/) |
+| 64857 | Intex Platinum Matrix | [FoneArena](https://www.fonearena.com/intex-platinum-matrix_5257.html) |
+| 64858 | Intex Pride+ | [FoneArena](https://www.fonearena.com/intex-pride+_5242.html) |
+| 64859 | Intex Turbo+ 4G | [FoneArena](https://www.fonearena.com/intex-turbo+-4g_8487.html) |
+| 64860 | Intex V.DO Magic | [FoneArena](https://www.fonearena.com/intex-v.do-magic_1477.html) |
+| 64861 | Intex V.DO Nano Plus | [FoneArena](https://www.fonearena.com/intex-v.do-nano-plus_1481.html) |
+| 64862 | Intex V.DO Slim | [FoneArena](https://www.fonearena.com/intex-v.do-slim_1478.html) |
+| 64863 | Invens Diamond D5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/invens-diamond-d5) |
+| 64864 | iOcean W180 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iocean-w180) |
+| 64865 | ION MP1821 | [IMEI.info](https://www.imei.info/phonedatabase/ion-mp1821/) |
+| 64866 | IPRO A11 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-a11/) |
+| 64867 | IPRO A12 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-a12/) |
+| 64868 | IPRO A15 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-a15/) |
+| 64869 | IPRO Flip 2.4 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-flip-24/) |
+| 64870 | iPro I9355A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-i9355a) |
+| 64871 | IPRO M12 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-m12/) |
+| 64872 | iPro Sense 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-sense-5) |
+| 64873 | IPRO V7 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-v7/) |
+| 64874 | IPRO W2 | [IMEI.info](https://www.imei.info/phonedatabase/ipro-w2/) |
+| 64875 | iPro Wave 3-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-wave-3-5) |
+| 64876 | iPro Zeus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ipro-zeus) |
+| 64877 | IRIS I-450 | [IMEI.info](https://www.imei.info/phonedatabase/iris-i-450/) |
+| 64878 | Iris I-S3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/iris-i-s3) |
+| 64879 | iStar I-T60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/istar-i-t60) |
+| 64880 | ISUPER I-318 | [IMEI.info](https://www.imei.info/phonedatabase/isuper-i-318/) |
+| 64881 | ISWAG Duo Shark | [IMEI.info](https://www.imei.info/phonedatabase/iswag-duo-shark/) |
+| 64882 | ITEL IT5230 | [IMEI.info](https://www.imei.info/phonedatabase/itel-it5230/) |
+| 64883 | ITEL IT6331 | [IMEI.info](https://www.imei.info/phonedatabase/itel-it6331/) |
+| 64884 | Itel it9300 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/itel_it9300) |
+| 64885 | Itel Muzik 450L | [Gadgets 360](https://www.gadgets360.com/itel-muzik-450l-price-in-india-137524) |
+| 64886 | ITEL Value 100 | [IMEI.info](https://www.imei.info/phonedatabase/itel-value-100/) |
+| 64887 | IVA MOBILE V9 | [IMEI.info](https://www.imei.info/phonedatabase/iva-mobile-v9/) |
+| 64888 | IWOO I526 | [IMEI.info](https://www.imei.info/phonedatabase/iwoo-i526/) |
+| 64889 | IXPERIA X5 | [IMEI.info](https://www.imei.info/phonedatabase/ixperia-x5/) |
+| 64890 | IYOU 8300 | [IMEI.info](https://www.imei.info/phonedatabase/iyou-8300/) |
+| 64891 | J-MAX Double Bull | [IMEI.info](https://www.imei.info/phonedatabase/j-max-double-bull/) |
+| 64892 | J-MAX Excalibur | [IMEI.info](https://www.imei.info/phonedatabase/j-max-excalibur/) |
+| 64893 | J-MAX J-95 | [IMEI.info](https://www.imei.info/phonedatabase/j-max-j-95/) |
+| 64894 | Jazz Digit 4G Defender | [PhoneCopy](https://www.phonecopy.com/en/phones/view/jazz_digit_4g_defender) |
+| 64895 | Jazz Digit 4G Elite | [PhoneCopy](https://www.phonecopy.com/en/phones/view/jazz_digit_4g_elite) |
+| 64896 | Jazz Digit 4G Music | [PhoneCopy](https://www.phonecopy.com/en/phones/view/jazz_digit_4g_music) |
+| 64897 | Jesy J9 Quad Core | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jesy-j9-quad-core) |
+| 64898 | JINPENG A1906 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-a1906/) |
+| 64899 | JINPENG E1191 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-e1191/) |
+| 64900 | JINPENG E2533 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-e2533/) |
+| 64901 | JINPENG S1858 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-s1858/) |
+| 64902 | JINPENG S2000 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-s2000/) |
+| 64903 | JINPENG S4177 | [IMEI.info](https://www.imei.info/phonedatabase/jinpeng-s4177/) |
+| 64904 | Jivi JV N2244 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jivi-jv-n2244) |
+| 64905 | JOY JD301 | [IMEI.info](https://www.imei.info/phonedatabase/joy-jd301/) |
+| 64906 | JUGATE CSJ-9 | [IMEI.info](https://www.imei.info/phonedatabase/jugate-csj-9/) |
+| 64907 | JUST5 Mode1 MD02P | [IMEI.info](https://www.imei.info/phonedatabase/just5-mode1-md02p/) |
+| 64908 | JWD VTR4000 | [IMEI.info](https://www.imei.info/phonedatabase/jwd-vtr4000/) |
+| 64909 | JXD J88 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/jxd-j88) |
+| 64910 | K-TOUCH C216 | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-c216/) |
+| 64911 | K-Touch C666T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-c666t) |
+| 64912 | K-TOUCH DT08 | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-dt08/) |
+| 64913 | K-Touch E508 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-e508) |
+| 64914 | K-Touch E620 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-e620) |
+| 64915 | K-TOUCH E76 | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-e76/) |
+| 64916 | K-TOUCH M500 | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-m500/) |
+| 64917 | K-TOUCH M606 | [IMEI.info](https://www.imei.info/phonedatabase/k-touch-m606/) |
+| 64918 | K-Touch N2 | [ZOL](https://detail.zol.com.cn/cell_phone/index1173753.shtml) |
+| 64919 | K-Touch U81T | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/k-touch-u81t) |
+| 64920 | KALIHO K102 | [IMEI.info](https://www.imei.info/phonedatabase/kaliho-k102/) |
+| 64921 | KALIHO K105 | [IMEI.info](https://www.imei.info/phonedatabase/kaliho-k105/) |
+| 64922 | KALIHO K23-B | [IMEI.info](https://www.imei.info/phonedatabase/kaliho-k23-b/) |
+| 64923 | KALIHO N3210 | [IMEI.info](https://www.imei.info/phonedatabase/kaliho-n3210/) |
+| 64924 | Karbonn K1 Star | [FoneArena](https://www.fonearena.com/karbonn-k1-star_3947.html) |
+| 64925 | Karbonn K102 | [FoneArena](https://www.fonearena.com/karbonn-k102_2537.html) |
+| 64926 | Karbonn K130 Fun | [FoneArena](https://www.fonearena.com/karbonn-k130-fun_7420.html) |
+| 64927 | Karbonn K15+ | [FoneArena](https://www.fonearena.com/karbonn-k15+_2585.html) |
+| 64928 | Karbonn K2 Star | [FoneArena](https://www.fonearena.com/karbonn-k2-star_4629.html) |
+| 64929 | KARBONN K200 | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-k200/) |
+| 64930 | Karbonn K32 Star | [FoneArena](https://www.fonearena.com/karbonn-k32-star_5184.html) |
+| 64931 | KARBONN K500 | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-k500/) |
+| 64932 | KARBONN K505 | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-k505/) |
+| 64933 | Karbonn K54 | [FoneArena](https://www.fonearena.com/karbonn-k54_2556.html) |
+| 64934 | KARBONN K7 Selfie | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-k7-selfie/) |
+| 64935 | Karbonn K70 | [FoneArena](https://www.fonearena.com/karbonn-k70_4586.html) |
+| 64936 | KARBONN KD100 | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-kd100/) |
+| 64937 | KARBONN Kphone 3 | [IMEI.info](https://www.imei.info/phonedatabase/karbonn-kphone-3/) |
+| 64938 | Kata B1S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kata-b1s) |
+| 64939 | KAZAM Life C4 | [IMEI.info](https://www.imei.info/phonedatabase/kazam-life-c4/) |
+| 64940 | KDDI Prismoid | [IMEI.info](https://www.imei.info/phonedatabase/kddi-prismoid/) |
+| 64941 | KDI I929 | [IMEI.info](https://www.imei.info/phonedatabase/kdi-i929/) |
+| 64942 | KECHAO C9 | [IMEI.info](https://www.imei.info/phonedatabase/kechao-c9/) |
+| 64943 | KECHAODA K112 | [IMEI.info](https://www.imei.info/phonedatabase/kechaoda-k112/) |
+| 64944 | KECHAODA K61 | [IMEI.info](https://www.imei.info/phonedatabase/kechaoda-k61/) |
+| 64945 | KECHAODA K700 | [IMEI.info](https://www.imei.info/phonedatabase/kechaoda-k700/) |
+| 64946 | KECHAODA K9 Plus | [IMEI.info](https://www.imei.info/phonedatabase/kechaoda-k9-plus/) |
+| 64947 | KECHAODA K92 | [IMEI.info](https://www.imei.info/phonedatabase/kechaoda-k92/) |
+| 64948 | KENXINDA A99 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-a99/) |
+| 64949 | KENXINDA D88 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-d88/) |
+| 64950 | KENXINDA K100 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-k100/) |
+| 64951 | KENXINDA KXD-020 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-kxd-020/) |
+| 64952 | Kenxinda Proofings W8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kenxinda-proofings-w8) |
+| 64953 | KENXINDA T838 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-t838/) |
+| 64954 | KENXINDA T88 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-t88/) |
+| 64955 | KENXINDA T99 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-t99/) |
+| 64956 | KENXINDA U660 | [IMEI.info](https://www.imei.info/phonedatabase/kenxinda-u660/) |
+| 64957 | KGTEL K1272 | [IMEI.info](https://www.imei.info/phonedatabase/kgtel-k1272/) |
+| 64958 | KGTEL K1510 | [IMEI.info](https://www.imei.info/phonedatabase/kgtel-k1510/) |
+| 64959 | KGTEL K3900 | [IMEI.info](https://www.imei.info/phonedatabase/kgtel-k3900/) |
+| 64960 | KGTEL K8800 | [IMEI.info](https://www.imei.info/phonedatabase/kgtel-k8800/) |
+| 64961 | KGTEL KT200 | [IMEI.info](https://www.imei.info/phonedatabase/kgtel-kt200/) |
+| 64962 | KIDCOMMS P110 | [IMEI.info](https://www.imei.info/phonedatabase/kidcomms-p110/) |
+| 64963 | KINGBOND D38 | [IMEI.info](https://www.imei.info/phonedatabase/kingbond-d38/) |
+| 64964 | Kingstar A11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kingstar-a11) |
+| 64965 | KINGSTAR Hero 5 | [IMEI.info](https://www.imei.info/phonedatabase/kingstar-hero-5/) |
+| 64966 | KINGSTAR Hero 7 | [IMEI.info](https://www.imei.info/phonedatabase/kingstar-hero-7/) |
+| 64967 | KINGSTAR Style 1 | [IMEI.info](https://www.imei.info/phonedatabase/kingstar-style-1/) |
+| 64968 | KINGTEL K999 | [IMEI.info](https://www.imei.info/phonedatabase/kingtel-k999/) |
+| 64969 | KIVI WF-2 Aikon | [IMEI.info](https://www.imei.info/phonedatabase/kivi-wf-2-aikon/) |
+| 64970 | KN-Mobile KN Mobile QT A06 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kn-mobile-kn-mobile-qt-a06) |
+| 64971 | KONKA 6690 | [IMEI.info](https://www.imei.info/phonedatabase/konka-6690/) |
+| 64972 | KONKA A06 | [IMEI.info](https://www.imei.info/phonedatabase/konka-a06/) |
+| 64973 | KONKA A26 | [IMEI.info](https://www.imei.info/phonedatabase/konka-a26/) |
+| 64974 | KONKA A36 | [IMEI.info](https://www.imei.info/phonedatabase/konka-a36/) |
+| 64975 | KONKA C618 | [IMEI.info](https://www.imei.info/phonedatabase/konka-c618/) |
+| 64976 | KONKA C635L | [IMEI.info](https://www.imei.info/phonedatabase/konka-c635l/) |
+| 64977 | KONKA C818 | [IMEI.info](https://www.imei.info/phonedatabase/konka-c818/) |
+| 64978 | KONKA C926 | [IMEI.info](https://www.imei.info/phonedatabase/konka-c926/) |
+| 64979 | KONKA K08A | [IMEI.info](https://www.imei.info/phonedatabase/konka-k08a/) |
+| 64980 | KONKA K15 | [IMEI.info](https://www.imei.info/phonedatabase/konka-k15/) |
+| 64981 | KONKA K17 | [IMEI.info](https://www.imei.info/phonedatabase/konka-k17/) |
+| 64982 | KONKA K6288 | [IMEI.info](https://www.imei.info/phonedatabase/konka-k6288/) |
+| 64983 | KONKA L77 | [IMEI.info](https://www.imei.info/phonedatabase/konka-l77/) |
+| 64984 | KONKA U11 | [IMEI.info](https://www.imei.info/phonedatabase/konka-u11/) |
+| 64985 | KONKA U2001 | [IMEI.info](https://www.imei.info/phonedatabase/konka-u2001/) |
+| 64986 | KONKA U3 | [IMEI.info](https://www.imei.info/phonedatabase/konka-u3/) |
+| 64987 | KONKA X6 | [IMEI.info](https://www.imei.info/phonedatabase/konka-x6/) |
+| 64988 | KOOBEE K7 | [IMEI.info](https://www.imei.info/phonedatabase/koobee-k7/) |
+| 64989 | Kraun KSmart 5304DX4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kraun-ksmart-5304dx4) |
+| 64990 | KUH K98 | [IMEI.info](https://www.imei.info/phonedatabase/kuh-k98/) |
+| 64991 | KXD M3 | [IMEI.info](https://www.imei.info/phonedatabase/kxd-m3/) |
+| 64992 | Kyocera DuraShock | [GSMchoice](https://www.gsmchoice.com/en/catalogue/kyocera/durashock/) |
+| 64993 | Kyocera Gratina 2 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/kyocera/gratina2/) |
+| 64994 | Kyocera Honey Bee 101K | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyocera-honey-bee-101k) |
+| 64995 | KYOCERA K322 | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-k322/) |
+| 64996 | KYOCERA KX16 Candid | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-kx16-candid/) |
+| 64997 | KYOCERA KX20 Clik | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-kx20-clik/) |
+| 64998 | KYOCERA KZ860 | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-kz860/) |
+| 64999 | KYOCERA NS01 | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-ns01/) |
+| 65000 | KYOCERA S2300 Torino | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-s2300-torino/) |
+| 65001 | KYOCERA S2720PP | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-s2720pp/) |
+| 65002 | KYOCERA Safe Junior K001 | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-safe-junior-k001/) |
+| 65003 | KYOCERA W61K | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-w61k/) |
+| 65004 | KYOCERA W62K | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-w62k/) |
+| 65005 | KYOCERA W64K | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-w64k/) |
+| 65006 | KYOCERA WX340K | [IMEI.info](https://www.imei.info/phonedatabase/kyocera-wx340k/) |
+| 65007 | Kyoto F320 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyoto-f320) |
+| 65008 | Kyoto SM07 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/kyoto-sm07) |
+| 65009 | Land Rover Explore R | [GSMchoice](https://www.gsmchoice.com/en/catalogue/landrover/explorer/) |
+| 65010 | LANDBYTE LT1024 | [IMEI.info](https://www.imei.info/phonedatabase/landbyte-lt1024/) |
+| 65011 | LANDBYTE LT1040 | [IMEI.info](https://www.imei.info/phonedatabase/landbyte-lt1040/) |
+| 65012 | LANDBYTE LT2010 | [IMEI.info](https://www.imei.info/phonedatabase/landbyte-lt2010/) |
+| 65013 | LANDBYTE LT2050 | [IMEI.info](https://www.imei.info/phonedatabase/landbyte-lt2050/) |
+| 65014 | LATTE Chrome 202 | [IMEI.info](https://www.imei.info/phonedatabase/latte-chrome-202/) |
+| 65015 | LATTE Chrome 301 | [IMEI.info](https://www.imei.info/phonedatabase/latte-chrome-301/) |
+| 65016 | LAVA ARC 1+ | [IMEI.info](https://www.imei.info/phonedatabase/lava-arc-1plus/) |
+| 65017 | LAVA ARC 11i | [IMEI.info](https://www.imei.info/phonedatabase/lava-arc-11i/) |
+| 65018 | Lava ARC 8c | [FoneArena](https://www.fonearena.com/lava-arc-8c_3656.html) |
+| 65019 | Lava KKT 220 | [FoneArena](https://www.fonearena.com/lava-kkt-220_4759.html) |
+| 65020 | Lava KKT-1 | [FoneArena](https://www.fonearena.com/lava-kkt-1_988.html) |
+| 65021 | Lava KKT-12 | [FoneArena](https://www.fonearena.com/lava-kkt-12_990.html) |
+| 65022 | Lava KKT11 | [FoneArena](https://www.fonearena.com/lava-kkt11_1312.html) |
+| 65023 | LAVA KKT22 | [IMEI.info](https://www.imei.info/phonedatabase/lava-kkt22/) |
+| 65024 | Lava KKT23c | [FoneArena](https://www.fonearena.com/lava-kkt23c_1303.html) |
+| 65025 | Lava KKT26 | [FoneArena](https://www.fonearena.com/lava-kkt26_1304.html) |
+| 65026 | LAVA KKT29 | [IMEI.info](https://www.imei.info/phonedatabase/lava-kkt29/) |
+| 65027 | Lazer X35E | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lazer-x35e) |
+| 65028 | Lazer X45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lazer-x45) |
+| 65029 | Leader Phone G1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/leader-phone-g1) |
+| 65030 | LECOM 8200 | [IMEI.info](https://www.imei.info/phonedatabase/lecom-8200/) |
+| 65031 | LECOM L900 | [IMEI.info](https://www.imei.info/phonedatabase/lecom-l900/) |
+| 65032 | LEMON 818 | [IMEI.info](https://www.imei.info/phonedatabase/lemon-818/) |
+| 65033 | Lemon B479i | [FoneArena](https://www.fonearena.com/lemon-b479i_4170.html) |
+| 65034 | LEMON B509 | [IMEI.info](https://www.imei.info/phonedatabase/lemon-b509/) |
+| 65035 | Lemon Duo 329 | [FoneArena](https://www.fonearena.com/lemon-duo-329_3244.html) |
+| 65036 | Lemon Duo 818 | [FoneArena](https://www.fonearena.com/lemon-duo-818_3238.html) |
+| 65037 | LEMON Lemo 210 | [IMEI.info](https://www.imei.info/phonedatabase/lemon-lemo-210/) |
+| 65038 | LEMON Lemo 244 | [IMEI.info](https://www.imei.info/phonedatabase/lemon-lemo-244/) |
+| 65039 | Lemon S469 | [FoneArena](https://www.fonearena.com/lemon-s469_3282.html) |
+| 65040 | Lemon S501 | [FoneArena](https://www.fonearena.com/lemon-s501_5326.html) |
+| 65041 | Lemon Trio 320 | [FoneArena](https://www.fonearena.com/lemon-trio-320_3241.html) |
+| 65042 | LENOVO Beacon 08 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-beacon-08/) |
+| 65043 | LENOVO E600 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-e600/) |
+| 65044 | LENOVO G828 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-g828/) |
+| 65045 | LENOVO G860 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-g860/) |
+| 65046 | LENOVO G901 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-g901/) |
+| 65047 | LENOVO G910 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-g910/) |
+| 65048 | LENOVO I307 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-i307/) |
+| 65049 | LENOVO TD60T | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-td60t/) |
+| 65050 | LENOVO V508 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v508/) |
+| 65051 | LENOVO V510 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v510/) |
+| 65052 | LENOVO V517 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v517/) |
+| 65053 | LENOVO V520 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v520/) |
+| 65054 | LENOVO V610 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v610/) |
+| 65055 | LENOVO V830 | [IMEI.info](https://www.imei.info/phonedatabase/lenovo-v830/) |
+| 65056 | Lephone C03 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lephone-c03) |
+| 65057 | LEPHONE C1 | [IMEI.info](https://www.imei.info/phonedatabase/lephone-c1/) |
+| 65058 | LEPHONE H88 | [IMEI.info](https://www.imei.info/phonedatabase/lephone-h88/) |
+| 65059 | LEPHONE X8 | [IMEI.info](https://www.imei.info/phonedatabase/lephone-x8/) |
+| 65060 | LESOM L40 | [IMEI.info](https://www.imei.info/phonedatabase/lesom-l40/) |
+| 65061 | LEXIBOOK GSM20 | [IMEI.info](https://www.imei.info/phonedatabase/lexibook-gsm20/) |
+| 65062 | LIANKE P100 | [IMEI.info](https://www.imei.info/phonedatabase/lianke-p100/) |
+| 65063 | Likuid L1 Forst Android | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/likuid-l1-forst-android) |
+| 65064 | LINNEX LE101 | [IMEI.info](https://www.imei.info/phonedatabase/linnex-le101/) |
+| 65065 | LINNEX LE28 | [IMEI.info](https://www.imei.info/phonedatabase/linnex-le28/) |
+| 65066 | LITETEL A15 | [IMEI.info](https://www.imei.info/phonedatabase/litetel-a15/) |
+| 65067 | LOBSTER 575 | [IMEI.info](https://www.imei.info/phonedatabase/lobster-575/) |
+| 65068 | LOGIC F1 | [IMEI.info](https://www.imei.info/phonedatabase/logic-f1/) |
+| 65069 | LOGIC F2 | [IMEI.info](https://www.imei.info/phonedatabase/logic-f2/) |
+| 65070 | LOGIC F3 | [IMEI.info](https://www.imei.info/phonedatabase/logic-f3/) |
+| 65071 | LOGIC M8+ | [IMEI.info](https://www.imei.info/phonedatabase/logic-m8plus/) |
+| 65072 | Logic X1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logic-x1) |
+| 65073 | LOGICOM Fleep 450 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-fleep-450/) |
+| 65074 | LOGICOM Fleep XL | [IMEI.info](https://www.imei.info/phonedatabase/logicom-fleep-xl/) |
+| 65075 | LOGICOM L-310 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-l-310/) |
+| 65076 | LOGICOM L-311 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-l-311/) |
+| 65077 | Logicom L-Ement 350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/logicom-l-ement-350) |
+| 65078 | LOGICOM Le Fleep | [IMEI.info](https://www.imei.info/phonedatabase/logicom-le-fleep/) |
+| 65079 | LOGICOM Le Fleep 178 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-le-fleep-178/) |
+| 65080 | LOGICOM LE FLEEP 190 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-le-fleep-190/) |
+| 65081 | Logicom Posh 186 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/logicom/posh-186/) |
+| 65082 | LOGICOM Xtrem 30 | [IMEI.info](https://www.imei.info/phonedatabase/logicom-xtrem-30/) |
+| 65083 | LONGTEL E9 | [IMEI.info](https://www.imei.info/phonedatabase/longtel-e9/) |
+| 65084 | LP Terra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lp-terra) |
+| 65085 | Lumitel L8301 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/lumitel-l8301) |
+| 65086 | LVIX L1 Sleek | [IMEI.info](https://www.imei.info/phonedatabase/lvix-l1-sleek/) |
+| 65087 | M-HORSE B1000 | [IMEI.info](https://www.imei.info/phonedatabase/m-horse-b1000/) |
+| 65088 | M-Tech A2 infinity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m-tech-a2-infinity) |
+| 65089 | M-Tech A4 Infinity | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m-tech-a4-infinity) |
+| 65090 | M-Tech Dezire Pro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/m-tech-dezire-pro) |
+| 65091 | M-TECH Force | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-force/) |
+| 65092 | M-TECH G24 | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-g24/) |
+| 65093 | M-TECH M36 | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-m36/) |
+| 65094 | M-TECH Maple | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-maple/) |
+| 65095 | M-TECH MT01 | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-mt01/) |
+| 65096 | M-TECH Raga | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-raga/) |
+| 65097 | M-TECH Super Star | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-super-star/) |
+| 65098 | M-TECH Tiger | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-tiger/) |
+| 65099 | M-TECH V9 | [IMEI.info](https://www.imei.info/phonedatabase/m-tech-v9/) |
+| 65100 | MAGICON MG 27 | [IMEI.info](https://www.imei.info/phonedatabase/magicon-mg-27/) |
+| 65101 | MAGICON MG9090 | [IMEI.info](https://www.imei.info/phonedatabase/magicon-mg9090/) |
+| 65102 | Majestic Elios 24 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/majestic-elios-24) |
+| 65103 | MALATA A16 | [IMEI.info](https://www.imei.info/phonedatabase/malata-a16/) |
+| 65104 | MALATA K5 | [IMEI.info](https://www.imei.info/phonedatabase/malata-k5/) |
+| 65105 | MALATA K530 | [IMEI.info](https://www.imei.info/phonedatabase/malata-k530/) |
+| 65106 | MALATA M3328 | [IMEI.info](https://www.imei.info/phonedatabase/malata-m3328/) |
+| 65107 | MALATA MT120 | [IMEI.info](https://www.imei.info/phonedatabase/malata-mt120/) |
+| 65108 | MALATA MT739 | [IMEI.info](https://www.imei.info/phonedatabase/malata-mt739/) |
+| 65109 | MANGO MF1 | [IMEI.info](https://www.imei.info/phonedatabase/mango-mf1/) |
+| 65110 | MARCEL Axino C01 | [IMEI.info](https://www.imei.info/phonedatabase/marcel-axino-c01/) |
+| 65111 | MARCEL Axino D51 | [IMEI.info](https://www.imei.info/phonedatabase/marcel-axino-d51/) |
+| 65112 | MARCEL Axino T01I | [IMEI.info](https://www.imei.info/phonedatabase/marcel-axino-t01i/) |
+| 65113 | Masstel C105I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-c105i) |
+| 65114 | Masstel M11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m11) |
+| 65115 | Masstel M120 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m120) |
+| 65116 | Masstel M15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m15) |
+| 65117 | Masstel M220 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m220) |
+| 65118 | Masstel M351 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m351) |
+| 65119 | Masstel M390 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-m390) |
+| 65120 | Masstel N500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/masstel-n500) |
+| 65121 | MASTONE E166 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-e166/) |
+| 65122 | MASTONE F18 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-f18/) |
+| 65123 | MASTONE M518 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-m518/) |
+| 65124 | MASTONE M588 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-m588/) |
+| 65125 | MASTONE M628 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-m628/) |
+| 65126 | MASTONE M800 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-m800/) |
+| 65127 | MASTONE M9 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-m9/) |
+| 65128 | MASTONE N68 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-n68/) |
+| 65129 | MASTONE T18 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-t18/) |
+| 65130 | MASTONE T20 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-t20/) |
+| 65131 | MASTONE V980 | [IMEI.info](https://www.imei.info/phonedatabase/mastone-v980/) |
+| 65132 | MAXCOM Comfort MM815 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-comfort-mm815/) |
+| 65133 | MAXCOM Comfort MM817 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-comfort-mm817/) |
+| 65134 | MAXCOM Comfort MM818 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-comfort-mm818/) |
+| 65135 | MAXCOM Comfort MM827 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-comfort-mm827/) |
+| 65136 | MAXCOM Comfort MM835 4G | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-comfort-mm835-4g/) |
+| 65137 | MAXCOM MM334 4G VoLTE | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-mm334-4g-volte/) |
+| 65138 | MAXCOM MM724 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-mm724/) |
+| 65139 | MAXCOM MM824 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-mm824/) |
+| 65140 | MAXCOM MM831 | [IMEI.info](https://www.imei.info/phonedatabase/maxcom-mm831/) |
+| 65141 | MAXFONE M28 | [IMEI.info](https://www.imei.info/phonedatabase/maxfone-m28/) |
+| 65142 | MAXFONE M58 | [IMEI.info](https://www.imei.info/phonedatabase/maxfone-m58/) |
+| 65143 | MAXFONE V1 | [IMEI.info](https://www.imei.info/phonedatabase/maxfone-v1/) |
+| 65144 | MAXFONE Z303 | [IMEI.info](https://www.imei.info/phonedatabase/maxfone-z303/) |
+| 65145 | MAXIMUS A13 | [IMEI.info](https://www.imei.info/phonedatabase/maximus-a13/) |
+| 65146 | MAXIMUS M19 | [IMEI.info](https://www.imei.info/phonedatabase/maximus-m19/) |
+| 65147 | MAXIMUS M40 | [IMEI.info](https://www.imei.info/phonedatabase/maximus-m40/) |
+| 65148 | MAXIMUS M84 | [IMEI.info](https://www.imei.info/phonedatabase/maximus-m84/) |
+| 65149 | MAXKING Spark | [IMEI.info](https://www.imei.info/phonedatabase/maxking-spark/) |
+| 65150 | Maxtron B10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-b10) |
+| 65151 | MAXTRON C28 | [IMEI.info](https://www.imei.info/phonedatabase/maxtron-c28/) |
+| 65152 | Maxtron Lucra | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-lucra) |
+| 65153 | Maxtron MG-251 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-mg-251) |
+| 65154 | Maxtron V3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxtron-v3) |
+| 65155 | MAXWEST 3G Flip | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-3g-flip/) |
+| 65156 | MAXWEST Neo Clam | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-neo-clam/) |
+| 65157 | MAXWEST Neo Flip JR | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-neo-flip-jr/) |
+| 65158 | MAXWEST Neo Flip Plus | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-neo-flip-plus/) |
+| 65159 | MAXWEST UNO CLAM 3G | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-uno-clam-3g/) |
+| 65160 | MAXWEST Uno Flip | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-uno-flip/) |
+| 65161 | MAXWEST Uno Flip Plus | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-uno-flip-plus/) |
+| 65162 | MAXWEST UNO JR | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-uno-jr/) |
+| 65163 | MAXWEST Uno M3 | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-uno-m3/) |
+| 65164 | MAXWEST Vice 3GS | [IMEI.info](https://www.imei.info/phonedatabase/maxwest-vice-3gs/) |
+| 65165 | Maxx AX47 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/maxx-ax47) |
+| 65166 | Maxx Dynamo-MX422 | [FoneArena](https://www.fonearena.com/maxx-dynamo-mx422_4659.html) |
+| 65167 | Maxx GC 343 | [FoneArena](https://www.fonearena.com/maxx-gc-343_1347.html) |
+| 65168 | Maxx MSD7-MX437 | [FoneArena](https://www.fonearena.com/maxx-msd7-mx437_4298.html) |
+| 65169 | Maxx MT280 | [FoneArena](https://www.fonearena.com/maxx-mt280_3783.html) |
+| 65170 | Maxx MX 118 | [FoneArena](https://www.fonearena.com/maxx-mx-118_1339.html) |
+| 65171 | Maxx MX188 - Buzz | [FoneArena](https://www.fonearena.com/maxx-mx188---buzz_2065.html) |
+| 65172 | Maxx MX241-PLAY | [FoneArena](https://www.fonearena.com/maxx-mx241-play_4117.html) |
+| 65173 | Maxx MX28-ARC Plus | [FoneArena](https://www.fonearena.com/maxx-mx28-arc-plus_4259.html) |
+| 65174 | Maxx MX316 | [FoneArena](https://www.fonearena.com/maxx-mx316_2110.html) |
+| 65175 | Maxx MX349 | [FoneArena](https://www.fonearena.com/maxx-mx349_2058.html) |
+| 65176 | Maxx MX504 | [FoneArena](https://www.fonearena.com/maxx-mx504_3791.html) |
+| 65177 | MBO 8160 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mbo-8160) |
+| 65178 | MC MOBILE 700 | [IMEI.info](https://www.imei.info/phonedatabase/mc-mobile-700/) |
+| 65179 | Media-Droid MediaDroid Imperius Mini MT7015 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/media-droid-mediadroid-imperius-mini-mt7015) |
+| 65180 | MegaFon MS3A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-ms3a) |
+| 65181 | MegaFon SP-A5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-sp-a5) |
+| 65182 | MegaFon U8180 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/megafon-u8180) |
+| 65183 | MEILING ML800 | [IMEI.info](https://www.imei.info/phonedatabase/meiling-ml800/) |
+| 65184 | MEMOBILE Metal 100 | [IMEI.info](https://www.imei.info/phonedatabase/memobile-metal-100/) |
+| 65185 | MEMOBILE Power Master | [IMEI.info](https://www.imei.info/phonedatabase/memobile-power-master/) |
+| 65186 | Meu AN200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meu-an200) |
+| 65187 | Meu AN351 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/meu-an351) |
+| 65188 | Mi-Fone A303 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mi-fone-a303) |
+| 65189 | MICRONEX MX-33 | [IMEI.info](https://www.imei.info/phonedatabase/micronex-mx-33/) |
+| 65190 | MICRONEX MX-56 | [IMEI.info](https://www.imei.info/phonedatabase/micronex-mx-56/) |
+| 65191 | MINT F1CR | [IMEI.info](https://www.imei.info/phonedatabase/mint-f1cr/) |
+| 65192 | MINT M171 | [IMEI.info](https://www.imei.info/phonedatabase/mint-m171/) |
+| 65193 | MITO 666 | [IMEI.info](https://www.imei.info/phonedatabase/mito-666/) |
+| 65194 | Mito 677 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-677) |
+| 65195 | Mito A38 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a38) |
+| 65196 | Mito A390 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a390) |
+| 65197 | Mito A660 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mito-a660) |
+| 65198 | MKTEL M9 | [IMEI.info](https://www.imei.info/phonedatabase/mktel-m9/) |
+| 65199 | MLS IQ1855 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq1855) |
+| 65200 | MLS IQ3500 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq3500) |
+| 65201 | MLS IQ9506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mls-iq9506) |
+| 65202 | MMD X198 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mmd-x198) |
+| 65203 | MMD Z45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mmd-z45) |
+| 65204 | MMOBILE Facile Duo | [IMEI.info](https://www.imei.info/phonedatabase/mmobile-facile-duo/) |
+| 65205 | MOBA 712 | [IMEI.info](https://www.imei.info/phonedatabase/moba-712/) |
+| 65206 | MOBA 750 | [IMEI.info](https://www.imei.info/phonedatabase/moba-750/) |
+| 65207 | Mobell Nova P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-nova-p) |
+| 65208 | Mobell S18 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobell-s18) |
+| 65209 | MOBICEL A1 | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-a1/) |
+| 65210 | MOBICEL Gyro | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-gyro/) |
+| 65211 | MOBICEL H1 | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-h1/) |
+| 65212 | MOBICEL H4 | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-h4/) |
+| 65213 | MOBICEL K1 | [IMEI.info](https://www.imei.info/phonedatabase/mobicel-k1/) |
+| 65214 | Mobicel Metro | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-metro) |
+| 65215 | Mobicel MX3 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-mx3-plus) |
+| 65216 | Mobicel VX21 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobicel-vx21) |
+| 65217 | MOBIFY Ambar 3G | [IMEI.info](https://www.imei.info/phonedatabase/mobify-ambar-3g/) |
+| 65218 | MOBILEMAPPER 10 | [IMEI.info](https://www.imei.info/phonedatabase/mobilemapper-10/) |
+| 65219 | MOBIOLA MB3200 | [IMEI.info](https://www.imei.info/phonedatabase/mobiola-mb3200/) |
+| 65220 | MOBIOLA MB610 | [IMEI.info](https://www.imei.info/phonedatabase/mobiola-mb610/) |
+| 65221 | Mobiola MS50B11000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobiola-ms50b11000) |
+| 65222 | Mobitel 202 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mobitel-202) |
+| 65223 | MOBIWIRE Koi | [IMEI.info](https://www.imei.info/phonedatabase/mobiwire-koi/) |
+| 65224 | MOBO 858 | [IMEI.info](https://www.imei.info/phonedatabase/mobo-858/) |
+| 65225 | MOBO M7 | [IMEI.info](https://www.imei.info/phonedatabase/mobo-m7/) |
+| 65226 | MOBULAA M1701 | [IMEI.info](https://www.imei.info/phonedatabase/mobulaa-m1701/) |
+| 65227 | Moii E501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e501) |
+| 65228 | Moii E502 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e502) |
+| 65229 | Moii E598 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e598) |
+| 65230 | Moii E893 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/moii-e893) |
+| 65231 | Motorola W206 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/motorola/w206/) |
+| 65232 | MOVIL LOGIX 10ML_012G | [IMEI.info](https://www.imei.info/phonedatabase/movil-logix-10ml-012g/) |
+| 65233 | Movistar G0775 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movistar-g0775) |
+| 65234 | MOVISTAR NEON | [IMEI.info](https://www.imei.info/phonedatabase/movistar-neon/) |
+| 65235 | MOVISUN Aplo K32 | [IMEI.info](https://www.imei.info/phonedatabase/movisun-aplo-k32/) |
+| 65236 | Movitel M8410 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/movitel-m8410) |
+| 65237 | MPARTY LT2 | [IMEI.info](https://www.imei.info/phonedatabase/mparty-lt2/) |
+| 65238 | MTC 733 | [IMEI.info](https://www.imei.info/phonedatabase/mtc-733/) |
+| 65239 | MTN Smart S720 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtn-smart-s720) |
+| 65240 | MTR M101 | [IMEI.info](https://www.imei.info/phonedatabase/mtr-m101/) |
+| 65241 | MTS 950 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-950) |
+| 65242 | MTS Bravo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mts-bravo) |
+| 65243 | MTT F21 | [IMEI.info](https://www.imei.info/phonedatabase/mtt-f21/) |
+| 65244 | MTT M-T-T Smartfun | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mtt-m-t-t-smartfun) |
+| 65245 | MTT Sport | [IMEI.info](https://www.imei.info/phonedatabase/mtt-sport/) |
+| 65246 | MULTILASER Flip Up | [IMEI.info](https://www.imei.info/phonedatabase/multilaser-flip-up/) |
+| 65247 | MULTILASER Flip Vita 3G | [IMEI.info](https://www.imei.info/phonedatabase/multilaser-flip-vita-3g/) |
+| 65248 | MULTILASER Flip Vita Lite | [IMEI.info](https://www.imei.info/phonedatabase/multilaser-flip-vita-lite/) |
+| 65249 | Multilaser MS1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-ms1) |
+| 65250 | Multilaser MS2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-ms2) |
+| 65251 | Multilaser Orion | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/multilaser-orion) |
+| 65252 | MUPHONE M6800 | [IMEI.info](https://www.imei.info/phonedatabase/muphone-m6800/) |
+| 65253 | MXNEC S903 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mxnec-s903-plus) |
+| 65254 | MYCELL M109 | [IMEI.info](https://www.imei.info/phonedatabase/mycell-m109/) |
+| 65255 | MYCELL P10 | [IMEI.info](https://www.imei.info/phonedatabase/mycell-p10/) |
+| 65256 | MYFON 110N | [IMEI.info](https://www.imei.info/phonedatabase/myfon-110n/) |
+| 65257 | MYFON A4 | [IMEI.info](https://www.imei.info/phonedatabase/myfon-a4/) |
+| 65258 | MYMAX Deluxe M8110 | [IMEI.info](https://www.imei.info/phonedatabase/mymax-deluxe-m8110/) |
+| 65259 | myPhone Rumba | [IMEI.info](https://www.imei.info/phonedatabase/myphone-rumba/) |
+| 65260 | myPhone Rumba 2 | [IMEI.info](https://www.imei.info/phonedatabase/myphone-rumba-2/) |
+| 65261 | myPhone Twist 2 | [IMEI.info](https://www.imei.info/phonedatabase/myphone-twist-2/) |
+| 65262 | MYRIA Endura | [IMEI.info](https://www.imei.info/phonedatabase/myria-endura/) |
+| 65263 | MyWigo 419 Turia | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mywigo-419-turia) |
+| 65264 | MyWigo MWG359 Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/mywigo-mwg359-mini) |
+| 65265 | NAMO M500 | [IMEI.info](https://www.imei.info/phonedatabase/namo-m500/) |
+| 65266 | NAOMICASE F15 | [IMEI.info](https://www.imei.info/phonedatabase/naomicase-f15/) |
+| 65267 | NEC 515 HDM | [IMEI.info](https://www.imei.info/phonedatabase/nec-515-hdm/) |
+| 65268 | NEC 535 | [IMEI.info](https://www.imei.info/phonedatabase/nec-535/) |
+| 65269 | NEC CASIO Foma N902IS | [IMEI.info](https://www.imei.info/phonedatabase/nec-casio-foma-n902is/) |
+| 65270 | NEC e535 | [IMEI.info](https://www.imei.info/phonedatabase/nec-e535/) |
+| 65271 | NEC Foma N701I | [IMEI.info](https://www.imei.info/phonedatabase/nec-foma-n701i/) |
+| 65272 | NEC N508 | [IMEI.info](https://www.imei.info/phonedatabase/nec-n508/) |
+| 65273 | NEC N530i | [IMEI.info](https://www.imei.info/phonedatabase/nec-n530i/) |
+| 65274 | NEC N650i | [IMEI.info](https://www.imei.info/phonedatabase/nec-n650i/) |
+| 65275 | NEC N728 | [IMEI.info](https://www.imei.info/phonedatabase/nec-n728/) |
+| 65276 | NEC Vodafone 802n | [IMEI.info](https://www.imei.info/phonedatabase/nec-vodafone-802n/) |
+| 65277 | NEWGEN N511 | [IMEI.info](https://www.imei.info/phonedatabase/newgen-n511/) |
+| 65278 | NEWGEN N521 | [IMEI.info](https://www.imei.info/phonedatabase/newgen-n521/) |
+| 65279 | NEWGEN S340 | [IMEI.info](https://www.imei.info/phonedatabase/newgen-s340/) |
+| 65280 | NEWMAN F15 | [IMEI.info](https://www.imei.info/phonedatabase/newman-f15/) |
+| 65281 | NEWMAN L50 | [IMEI.info](https://www.imei.info/phonedatabase/newman-l50/) |
+| 65282 | NEWMAN Niuman R19 | [IMEI.info](https://www.imei.info/phonedatabase/newman-niuman-r19/) |
+| 65283 | NEWMIND F15 | [IMEI.info](https://www.imei.info/phonedatabase/newmind-f15/) |
+| 65284 | Newsmy D118 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/newsmy-d118) |
+| 65285 | Newsmy K2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/newsmy-k2) |
+| 65286 | NEWSMY T10 | [IMEI.info](https://www.imei.info/phonedatabase/newsmy-t10/) |
+| 65287 | NEX Slam 5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-slam-5) |
+| 65288 | NEX Smart 8 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nex-smart-8) |
+| 65289 | Nexcom NC Amaris | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexcom-nc-amaris) |
+| 65290 | Nexian A850 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-a850) |
+| 65291 | Nexian A893 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-a893) |
+| 65292 | Nexian MI230 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi230) |
+| 65293 | Nexian MI320 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nexian-mi320) |
+| 65294 | Nextel V-35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nextel-v-35) |
+| 65295 | NGM Action | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ngm-action) |
+| 65296 | NGM DG689 | [IMEI.info](https://www.imei.info/phonedatabase/ngm-dg689/) |
+| 65297 | NGM Drive | [IMEI.info](https://www.imei.info/phonedatabase/ngm-drive/) |
+| 65298 | NGM Facile Chat | [IMEI.info](https://www.imei.info/phonedatabase/ngm-facile-chat/) |
+| 65299 | NGM Facile Loop | [IMEI.info](https://www.imei.info/phonedatabase/ngm-facile-loop/) |
+| 65300 | NGM Idea | [IMEI.info](https://www.imei.info/phonedatabase/ngm-idea/) |
+| 65301 | NGM Loris | [IMEI.info](https://www.imei.info/phonedatabase/ngm-loris/) |
+| 65302 | NGM Soap | [IMEI.info](https://www.imei.info/phonedatabase/ngm-soap/) |
+| 65303 | NIAMIA Cad 3 | [IMEI.info](https://www.imei.info/phonedatabase/niamia-cad-3/) |
+| 65304 | Ninetology i5300 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-i5300) |
+| 65305 | Ninetology I5351 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ninetology-i5351) |
+| 65306 | NINTAUS NIN525 | [IMEI.info](https://www.imei.info/phonedatabase/nintaus-nin525/) |
+| 65307 | NIUMAN F518+ | [IMEI.info](https://www.imei.info/phonedatabase/niuman-f518plus/) |
+| 65308 | No1 phone 5c Smartphone | [GSMchoice](https://www.gsmchoice.com/en/catalogue/no1phone/5csmartphone/) |
+| 65309 | No1 phone M3 Smartphone | [GSMchoice](https://www.gsmchoice.com/en/catalogue/no1phone/m3smartphone/) |
+| 65310 | No1 phone X2 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/no1phone/x2/) |
+| 65311 | NOAIN 5320 | [IMEI.info](https://www.imei.info/phonedatabase/noain-5320/) |
+| 65312 | NOAIN 6208 | [IMEI.info](https://www.imei.info/phonedatabase/noain-6208/) |
+| 65313 | NOAIN 6730 | [IMEI.info](https://www.imei.info/phonedatabase/noain-6730/) |
+| 65314 | NOCOO K328 | [IMEI.info](https://www.imei.info/phonedatabase/nocoo-k328/) |
+| 65315 | Nokia 2060 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_2060) |
+| 65316 | Nokia 2710c | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_2710c) |
+| 65317 | NOKIA 3129 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-3129/) |
+| 65318 | Nokia 5630d | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_5630d) |
+| 65319 | Nokia 5802 XpressMusic | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_5802_xpressmusic) |
+| 65320 | NOKIA 6066 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-6066/) |
+| 65321 | NOKIA 6112 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-6112/) |
+| 65322 | NOKIA 6175i | [IMEI.info](https://www.imei.info/phonedatabase/nokia-6175i/) |
+| 65323 | NOKIA 6206 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-6206/) |
+| 65324 | NOKIA 6650d | [IMEI.info](https://www.imei.info/phonedatabase/nokia-6650d/) |
+| 65325 | Nokia 6788i | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_6788i) |
+| 65326 | Nokia 800 Though | [PhoneCopy](https://www.phonecopy.com/en/phones/view/hmd_global_nokia_800_though) |
+| 65327 | NOKIA 804NK | [IMEI.info](https://www.imei.info/phonedatabase/nokia-804nk/) |
+| 65328 | NOKIA 8877 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-8877/) |
+| 65329 | NOKIA 8887 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-8887/) |
+| 65330 | NOKIA Asha 206 | [IMEI.info](https://www.imei.info/phonedatabase/nokia-asha-206/) |
+| 65331 | Nokia Catalina | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_catalina) |
+| 65332 | Nokia Supreme | [PhoneCopy](https://www.phonecopy.com/en/phones/view/nokia_supreme) |
+| 65333 | NOMI I246 | [IMEI.info](https://www.imei.info/phonedatabase/nomi-i246/) |
+| 65334 | NONY S322 | [IMEI.info](https://www.imei.info/phonedatabase/nony-s322/) |
+| 65335 | NORDMENDE Flip 50S | [IMEI.info](https://www.imei.info/phonedatabase/nordmende-flip-50s/) |
+| 65336 | NORDMENDE Lite 410 3G | [IMEI.info](https://www.imei.info/phonedatabase/nordmende-lite-410-3g/) |
+| 65337 | NORDMENDE Lite 500 F | [IMEI.info](https://www.imei.info/phonedatabase/nordmende-lite-500-f/) |
+| 65338 | NORDMENDE LITE400F | [IMEI.info](https://www.imei.info/phonedatabase/nordmende-lite400f/) |
+| 65339 | NOTO-TECH JC618S | [IMEI.info](https://www.imei.info/phonedatabase/noto-tech-jc618s/) |
+| 65340 | Nova N6 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nova-n6-plus) |
+| 65341 | NOVEY 118 | [IMEI.info](https://www.imei.info/phonedatabase/novey-118/) |
+| 65342 | NOVEY A20R | [IMEI.info](https://www.imei.info/phonedatabase/novey-a20r/) |
+| 65343 | NOVEY A30R | [IMEI.info](https://www.imei.info/phonedatabase/novey-a30r/) |
+| 65344 | NOVEY A70R | [IMEI.info](https://www.imei.info/phonedatabase/novey-a70r/) |
+| 65345 | NOVEY A80R | [IMEI.info](https://www.imei.info/phonedatabase/novey-a80r/) |
+| 65346 | NOVEY M350 | [IMEI.info](https://www.imei.info/phonedatabase/novey-m350/) |
+| 65347 | NOVEY N880 | [IMEI.info](https://www.imei.info/phonedatabase/novey-n880/) |
+| 65348 | NOVEY S70R | [IMEI.info](https://www.imei.info/phonedatabase/novey-s70r/) |
+| 65349 | NOVEY X22 | [IMEI.info](https://www.imei.info/phonedatabase/novey-x22/) |
+| 65350 | NOVEY X70 | [IMEI.info](https://www.imei.info/phonedatabase/novey-x70/) |
+| 65351 | NOVEY Z320 | [IMEI.info](https://www.imei.info/phonedatabase/novey-z320/) |
+| 65352 | Noxx V-58 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/noxx-v-58) |
+| 65353 | Nuqleo Fusion | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nuqleo-fusion) |
+| 65354 | NUU F1 | [IMEI.info](https://www.imei.info/phonedatabase/nuu-f1/) |
+| 65355 | NUU F4L | [IMEI.info](https://www.imei.info/phonedatabase/nuu-f4l/) |
+| 65356 | Nyx Fly Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-fly-mini) |
+| 65357 | Nyx Tik X2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/nyx-tik-x2) |
+| 65358 | O-NINE J1 | [IMEI.info](https://www.imei.info/phonedatabase/o-nine-j1/) |
+| 65359 | O2 Xda Venn | [IMEI.info](https://www.imei.info/phonedatabase/o2-xda-venn/) |
+| 65360 | Obee OS323 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/obee-os323) |
+| 65361 | OCTENN T-1201 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t-1201/) |
+| 65362 | OCTENN T1100 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t1100/) |
+| 65363 | OCTENN T1109 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t1109/) |
+| 65364 | OCTENN T1115 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t1115/) |
+| 65365 | OCTENN T1170 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t1170/) |
+| 65366 | OCTENN T14C | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t14c/) |
+| 65367 | OCTENN T15C | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t15c/) |
+| 65368 | OCTENN T2450 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t2450/) |
+| 65369 | OCTENN T2468 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t2468/) |
+| 65370 | OCTENN T25 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t25/) |
+| 65371 | OCTENN T29 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t29/) |
+| 65372 | OCTENN T3240 | [IMEI.info](https://www.imei.info/phonedatabase/octenn-t3240/) |
+| 65373 | OKING S15 Mini | [IMEI.info](https://www.imei.info/phonedatabase/oking-s15-mini/) |
+| 65374 | OKWAP 510 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-510/) |
+| 65375 | OKWAP 710 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-710/) |
+| 65376 | OKWAP 910 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-910/) |
+| 65377 | OKWAP A263 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a263/) |
+| 65378 | OKWAP A267 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a267/) |
+| 65379 | OKWAP A268 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a268/) |
+| 65380 | OKWAP A279 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a279/) |
+| 65381 | OKWAP A316 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a316/) |
+| 65382 | OKWAP A375 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a375/) |
+| 65383 | OKWAP A730 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-a730/) |
+| 65384 | OKWAP C316 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-c316/) |
+| 65385 | OKWAP I885 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-i885/) |
+| 65386 | OKWAP I900 | [IMEI.info](https://www.imei.info/phonedatabase/okwap-i900/) |
+| 65387 | Ola Lavorum 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ola-lavorum-3g) |
+| 65388 | Ola Lavorum II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ola-lavorum-ii) |
+| 65389 | OLIVETTI Olicard 200 | [IMEI.info](https://www.imei.info/phonedatabase/olivetti-olicard-200/) |
+| 65390 | Omega S30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/omega-s30) |
+| 65391 | OMES M281 | [IMEI.info](https://www.imei.info/phonedatabase/omes-m281/) |
+| 65392 | OMES TC01 | [IMEI.info](https://www.imei.info/phonedatabase/omes-tc01/) |
+| 65393 | OMES TC02 | [IMEI.info](https://www.imei.info/phonedatabase/omes-tc02/) |
+| 65394 | OMES TC05 | [IMEI.info](https://www.imei.info/phonedatabase/omes-tc05/) |
+| 65395 | OMES TC06 | [IMEI.info](https://www.imei.info/phonedatabase/omes-tc06/) |
+| 65396 | OMES TC19 | [IMEI.info](https://www.imei.info/phonedatabase/omes-tc19/) |
+| 65397 | ONIDA F930 | [IMEI.info](https://www.imei.info/phonedatabase/onida-f930/) |
+| 65398 | ONIDA G460 | [IMEI.info](https://www.imei.info/phonedatabase/onida-g460/) |
+| 65399 | ONIDA G590 | [IMEI.info](https://www.imei.info/phonedatabase/onida-g590/) |
+| 65400 | Onida I9 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/onida-i9) |
+| 65401 | OPEL MOBILE Flip XL | [IMEI.info](https://www.imei.info/phonedatabase/opel-mobile-flip-xl/) |
+| 65402 | OPEL MOBILE FlipPhone | [IMEI.info](https://www.imei.info/phonedatabase/opel-mobile-flipphone/) |
+| 65403 | OPEL MOBILE FlipPhone 2 | [IMEI.info](https://www.imei.info/phonedatabase/opel-mobile-flipphone-2/) |
+| 65404 | OPEL MOBILE FlipPhone 4 | [IMEI.info](https://www.imei.info/phonedatabase/opel-mobile-flipphone-4/) |
+| 65405 | OPEL MOBILE FlipPhone Plus | [IMEI.info](https://www.imei.info/phonedatabase/opel-mobile-flipphone-plus/) |
+| 65406 | OPPO A115 | [IMEI.info](https://www.imei.info/phonedatabase/oppo-a115/) |
+| 65407 | OPPO A520 | [IMEI.info](https://www.imei.info/phonedatabase/oppo-a520/) |
+| 65408 | OPPO U539 | [IMEI.info](https://www.imei.info/phonedatabase/oppo-u539/) |
+| 65409 | OPSSON A5 | [IMEI.info](https://www.imei.info/phonedatabase/opsson-a5/) |
+| 65410 | OPSSON U82 | [IMEI.info](https://www.imei.info/phonedatabase/opsson-u82/) |
+| 65411 | ORANGE Berlin | [IMEI.info](https://www.imei.info/phonedatabase/orange-berlin/) |
+| 65412 | Orange W6 3G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/orange_w6_3g) |
+| 65413 | ORRO G20 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-g20) |
+| 65414 | ORRO G30 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-g30) |
+| 65415 | ORRO G50 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-g50) |
+| 65416 | ORRO G60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/orro-orro-g60) |
+| 65417 | ORRO Q2 | [IMEI.info](https://www.imei.info/phonedatabase/orro-q2/) |
+| 65418 | ORRO Q4 | [IMEI.info](https://www.imei.info/phonedatabase/orro-q4/) |
+| 65419 | OTEETO M17 Pro Max | [IMEI.info](https://www.imei.info/phonedatabase/oteeto-m17-pro-max/) |
+| 65420 | OUKI OK115 | [IMEI.info](https://www.imei.info/phonedatabase/ouki-ok115/) |
+| 65421 | OWN F1010D | [IMEI.info](https://www.imei.info/phonedatabase/own-f1010d/) |
+| 65422 | OWN F1015D | [IMEI.info](https://www.imei.info/phonedatabase/own-f1015d/) |
+| 65423 | Own One Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-one-plus) |
+| 65424 | Own S3000 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s3000) |
+| 65425 | Own S4010 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-s4010) |
+| 65426 | Own Smart Value | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/own-smart-value) |
+| 65427 | PAGARIA P2189 | [IMEI.info](https://www.imei.info/phonedatabase/pagaria-p2189/) |
+| 65428 | PAGARIA P2790 | [IMEI.info](https://www.imei.info/phonedatabase/pagaria-p2790/) |
+| 65429 | PALMSSION B610D | [IMEI.info](https://www.imei.info/phonedatabase/palmssion-b610d/) |
+| 65430 | PANASONIC 820P | [IMEI.info](https://www.imei.info/phonedatabase/panasonic-820p/) |
+| 65431 | PANASONIC 842P | [IMEI.info](https://www.imei.info/phonedatabase/panasonic-842p/) |
+| 65432 | PANASONIC GD88 | [IMEI.info](https://www.imei.info/phonedatabase/panasonic-gd88/) |
+| 65433 | PANASONIC GU87 | [IMEI.info](https://www.imei.info/phonedatabase/panasonic-gu87/) |
+| 65434 | PANASONIC W61P | [IMEI.info](https://www.imei.info/phonedatabase/panasonic-w61p/) |
+| 65435 | PANTECH Noble I | [IMEI.info](https://www.imei.info/phonedatabase/pantech-noble-i/) |
+| 65436 | PANTECH Pluto | [IMEI.info](https://www.imei.info/phonedatabase/pantech-pluto/) |
+| 65437 | PANTECH UML290 | [IMEI.info](https://www.imei.info/phonedatabase/pantech-uml290/) |
+| 65438 | PCD ADR1105AR | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pcd-adr1105ar) |
+| 65439 | PCD U40 | [IMEI.info](https://www.imei.info/phonedatabase/pcd-u40/) |
+| 65440 | PEACE M786 | [IMEI.info](https://www.imei.info/phonedatabase/peace-m786/) |
+| 65441 | PEACE P1I | [IMEI.info](https://www.imei.info/phonedatabase/peace-p1i/) |
+| 65442 | PEACE PP10 | [IMEI.info](https://www.imei.info/phonedatabase/peace-pp10/) |
+| 65443 | PEAQ PMP 122 4G | [IMEI.info](https://www.imei.info/phonedatabase/peaq-pmp-122-4g/) |
+| 65444 | Philco PH350B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/philco-ph350b) |
+| 65445 | PHILIPS 822 | [IMEI.info](https://www.imei.info/phonedatabase/philips-822/) |
+| 65446 | PHILIPS E135X | [IMEI.info](https://www.imei.info/phonedatabase/philips-e135x/) |
+| 65447 | PHILIPS E171L | [IMEI.info](https://www.imei.info/phonedatabase/philips-e171l/) |
+| 65448 | PHILIPS E186A | [IMEI.info](https://www.imei.info/phonedatabase/philips-e186a/) |
+| 65449 | PHILIPS E207L | [IMEI.info](https://www.imei.info/phonedatabase/philips-e207l/) |
+| 65450 | PHILIPS E256S | [IMEI.info](https://www.imei.info/phonedatabase/philips-e256s/) |
+| 65451 | PHILIPS E6810 | [IMEI.info](https://www.imei.info/phonedatabase/philips-e6810/) |
+| 65452 | PHILIPS Xenium E2106 | [IMEI.info](https://www.imei.info/phonedatabase/philips-xenium-e2106/) |
+| 65453 | PHOENIX 53 V | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-53-v/) |
+| 65454 | PHOENIX CG-09-a | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-cg-09-a/) |
+| 65455 | PHOENIX CG-11 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-cg-11/) |
+| 65456 | PHOENIX DA 20 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-da-20/) |
+| 65457 | Phoenix DA12 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/phoenix/da12/) |
+| 65458 | Phoenix DA15 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/phoenix/da15/) |
+| 65459 | PHOENIX J 9 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-j-9/) |
+| 65460 | PHOENIX J31 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-j31/) |
+| 65461 | PHOENIX J37 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-j37/) |
+| 65462 | PHOENIX M36 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m36/) |
+| 65463 | PHOENIX M37 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m37/) |
+| 65464 | PHOENIX M37-a | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m37-a/) |
+| 65465 | PHOENIX M38 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m38/) |
+| 65466 | PHOENIX M38-a | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m38-a/) |
+| 65467 | PHOENIX M51 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-m51/) |
+| 65468 | PHOENIX MOBILE Nano M55 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-mobile-nano-m55/) |
+| 65469 | PHOENIX R 22 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-r-22/) |
+| 65470 | PHOENIX S 16-au | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-s-16-au/) |
+| 65471 | PHOENIX S 18 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-s-18/) |
+| 65472 | PHOENIX SC-09-B | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-sc-09-b/) |
+| 65473 | PHOENIX T 38 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-t-38/) |
+| 65474 | PHOENIX T 58 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-t-58/) |
+| 65475 | PHOENIX V 50a | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v-50a/) |
+| 65476 | PHOENIX V-73 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v-73/) |
+| 65477 | PHOENIX V3 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v3/) |
+| 65478 | PHOENIX V38 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v38/) |
+| 65479 | PHOENIX V6 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v6/) |
+| 65480 | PHOENIX V9 | [IMEI.info](https://www.imei.info/phonedatabase/phoenix-v9/) |
+| 65481 | PHONELINE F33 | [IMEI.info](https://www.imei.info/phonedatabase/phoneline-f33/) |
+| 65482 | PhoneOne M203 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/phoneone-m203) |
+| 65483 | Pixcom KM10 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixcom-km10) |
+| 65484 | Pixcom KM60 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixcom-km60) |
+| 65485 | Pixcom PGM205 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixcom-pgm205) |
+| 65486 | Pixel F599 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixel-f599) |
+| 65487 | Pixel P11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/pixel-p11) |
+| 65488 | PLUM Flipper 2022 | [IMEI.info](https://www.imei.info/phonedatabase/plum-flipper-2022/) |
+| 65489 | PLUM Polka | [IMEI.info](https://www.imei.info/phonedatabase/plum-polka/) |
+| 65490 | Polaroid PRO4020PR001 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polaroid-pro4020pr001) |
+| 65491 | Polytron PW1100S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-pw1100s) |
+| 65492 | Polytron R2506 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/polytron-r2506) |
+| 65493 | POSITIVO P51 | [IMEI.info](https://www.imei.info/phonedatabase/positivo-p51/) |
+| 65494 | Positivo YPY S350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/positivo-ypy-s350) |
+| 65495 | PRIDE R818 | [IMEI.info](https://www.imei.info/phonedatabase/pride-r818/) |
+| 65496 | Prime K928I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prime-k928i) |
+| 65497 | PRIMO 401 | [IMEI.info](https://www.imei.info/phonedatabase/primo-401/) |
+| 65498 | PRIMO 414 | [IMEI.info](https://www.imei.info/phonedatabase/primo-414/) |
+| 65499 | PRIMUX Delta | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-delta) |
+| 65500 | PRIMUX Evo | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/primux-primux-evo) |
+| 65501 | Prince i688 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prince-i688) |
+| 65502 | Prince i800d | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prince-i800d) |
+| 65503 | Prince PC889 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prince-pc889) |
+| 65504 | Prixton C52Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prixton-c52q) |
+| 65505 | Prixton KDI W360 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/prixton-kdi-w360) |
+| 65506 | PROLINK PHS101 | [IMEI.info](https://www.imei.info/phonedatabase/prolink-phs101/) |
+| 65507 | PROLINK PHS301 | [IMEI.info](https://www.imei.info/phonedatabase/prolink-phs301/) |
+| 65508 | PROTON E19 | [IMEI.info](https://www.imei.info/phonedatabase/proton-e19/) |
+| 65509 | PULID D1108 | [IMEI.info](https://www.imei.info/phonedatabase/pulid-d1108/) |
+| 65510 | PULID D1169 | [IMEI.info](https://www.imei.info/phonedatabase/pulid-d1169/) |
+| 65511 | PULID D138 | [IMEI.info](https://www.imei.info/phonedatabase/pulid-d138/) |
+| 65512 | PULID D236 | [IMEI.info](https://www.imei.info/phonedatabase/pulid-d236/) |
+| 65513 | PULID D2858 | [IMEI.info](https://www.imei.info/phonedatabase/pulid-d2858/) |
+| 65514 | QFX S24 | [IMEI.info](https://www.imei.info/phonedatabase/qfx-s24/) |
+| 65515 | Qilive 40 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qilive-40) |
+| 65516 | Qilive Q.4415 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/qilive/q.4415/) |
+| 65517 | QMOBILE E790 | [IMEI.info](https://www.imei.info/phonedatabase/qmobile-e790/) |
+| 65518 | QMOBILE Flip Pro | [IMEI.info](https://www.imei.info/phonedatabase/qmobile-flip-pro/) |
+| 65519 | QMOBILE Prince | [IMEI.info](https://www.imei.info/phonedatabase/qmobile-prince/) |
+| 65520 | QMOBILE SL 50i | [IMEI.info](https://www.imei.info/phonedatabase/qmobile-sl-50i/) |
+| 65521 | Qnet Mobile Q77 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qnet-mobile-q77) |
+| 65522 | Qool QDA Icon | [DeviceBeast](https://devicebeast.com/devices/qool-qda-icon) |
+| 65523 | QQMEE L35 | [IMEI.info](https://www.imei.info/phonedatabase/qqmee-l35/) |
+| 65524 | QQMEE M21 | [IMEI.info](https://www.imei.info/phonedatabase/qqmee-m21/) |
+| 65525 | QQMEE Q116 | [IMEI.info](https://www.imei.info/phonedatabase/qqmee-q116/) |
+| 65526 | QSmart Fly 01 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-fly-01) |
+| 65527 | QSmart QS05 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/qsmart-qs05) |
+| 65528 | QUBA M10 | [IMEI.info](https://www.imei.info/phonedatabase/quba-m10/) |
+| 65529 | QUBO Gea | [IMEI.info](https://www.imei.info/phonedatabase/qubo-gea/) |
+| 65530 | QUBO Neo 2 | [IMEI.info](https://www.imei.info/phonedatabase/qubo-neo-2/) |
+| 65531 | QUBO P219RD | [IMEI.info](https://www.imei.info/phonedatabase/qubo-p219rd/) |
+| 65532 | QUMANN QSB 08s | [IMEI.info](https://www.imei.info/phonedatabase/qumann-qsb-08s/) |
+| 65533 | R-WAY RW858 | [IMEI.info](https://www.imei.info/phonedatabase/r-way-rw858/) |
+| 65534 | RAGE Bravo X1 | [IMEI.info](https://www.imei.info/phonedatabase/rage-bravo-x1/) |
+| 65535 | RAGE GC240 | [IMEI.info](https://www.imei.info/phonedatabase/rage-gc240/) |
+| 65536 | RAGE JOY | [IMEI.info](https://www.imei.info/phonedatabase/rage-joy/) |
+| 65537 | Rage OPS 35D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rage-ops-35d) |
+| 65538 | RAGE RD310 | [IMEI.info](https://www.imei.info/phonedatabase/rage-rd310/) |
+| 65539 | RAGE Storm 2 | [IMEI.info](https://www.imei.info/phonedatabase/rage-storm-2/) |
+| 65540 | RANGS S100 | [IMEI.info](https://www.imei.info/phonedatabase/rangs-s100/) |
+| 65541 | RAYO Flip | [IMEI.info](https://www.imei.info/phonedatabase/rayo-flip/) |
+| 65542 | REXPOWER C17 | [IMEI.info](https://www.imei.info/phonedatabase/rexpower-c17/) |
+| 65543 | REXPOWER C68A | [IMEI.info](https://www.imei.info/phonedatabase/rexpower-c68a/) |
+| 65544 | RING N104 | [IMEI.info](https://www.imei.info/phonedatabase/ring-n104/) |
+| 65545 | RIVIERA R12 | [IMEI.info](https://www.imei.info/phonedatabase/riviera-r12/) |
+| 65546 | RIVO Advance A500 | [IMEI.info](https://www.imei.info/phonedatabase/rivo-advance-a500/) |
+| 65547 | RIVO Jaguar J515 | [IMEI.info](https://www.imei.info/phonedatabase/rivo-jaguar-j515/) |
+| 65548 | Rivo W619 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rivo-w619) |
+| 65549 | RLG Viva 1S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/rlg-viva-1s) |
+| 65550 | ROCKER I700 | [IMEI.info](https://www.imei.info/phonedatabase/rocker-i700/) |
+| 65551 | ROCKER Virat | [IMEI.info](https://www.imei.info/phonedatabase/rocker-virat/) |
+| 65552 | ROCKER Zune | [IMEI.info](https://www.imei.info/phonedatabase/rocker-zune/) |
+| 65553 | ROCKTEL W13 | [IMEI.info](https://www.imei.info/phonedatabase/rocktel-w13/) |
+| 65554 | ROCKTEL W17 | [IMEI.info](https://www.imei.info/phonedatabase/rocktel-w17/) |
+| 65555 | ROCKTEL W6 | [IMEI.info](https://www.imei.info/phonedatabase/rocktel-w6/) |
+| 65556 | RugGear RG220EX | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ruggear-rg220ex) |
+| 65557 | Runbo X5 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/runbo-x5-plus) |
+| 65558 | RYTE R103 | [IMEI.info](https://www.imei.info/phonedatabase/ryte-r103/) |
+| 65559 | S MOBILE F14 | [IMEI.info](https://www.imei.info/phonedatabase/s-mobile-f14/) |
+| 65560 | S SMOOTH FLIP 3G | [IMEI.info](https://www.imei.info/phonedatabase/s-smooth-flip-3g/) |
+| 65561 | S SMOOTH Power | [IMEI.info](https://www.imei.info/phonedatabase/s-smooth-power/) |
+| 65562 | S SMOOTH Snap X | [IMEI.info](https://www.imei.info/phonedatabase/s-smooth-snap-x/) |
+| 65563 | S-COLOR S10 | [IMEI.info](https://www.imei.info/phonedatabase/s-color-s10/) |
+| 65564 | S-TELL M200 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/s-tell-m200) |
+| 65565 | S2TEL R55 | [IMEI.info](https://www.imei.info/phonedatabase/s2tel-r55/) |
+| 65566 | SAGA N91 | [IMEI.info](https://www.imei.info/phonedatabase/saga-n91/) |
+| 65567 | SAGEM RD 750 | [IMEI.info](https://www.imei.info/phonedatabase/sagem-rd-750/) |
+| 65568 | SAGETEL F18 | [IMEI.info](https://www.imei.info/phonedatabase/sagetel-f18/) |
+| 65569 | SAGETEL G900 | [IMEI.info](https://www.imei.info/phonedatabase/sagetel-g900/) |
+| 65570 | SAGETEL V10 | [IMEI.info](https://www.imei.info/phonedatabase/sagetel-v10/) |
+| 65571 | SAGETEL V90 | [IMEI.info](https://www.imei.info/phonedatabase/sagetel-v90/) |
+| 65572 | SAIET Candy | [IMEI.info](https://www.imei.info/phonedatabase/saiet-candy/) |
+| 65573 | SAIET Focus | [IMEI.info](https://www.imei.info/phonedatabase/saiet-focus/) |
+| 65574 | SAIET Link | [IMEI.info](https://www.imei.info/phonedatabase/saiet-link/) |
+| 65575 | SAIET Link 4 | [IMEI.info](https://www.imei.info/phonedatabase/saiet-link-4/) |
+| 65576 | SAIET Pronto Flip | [IMEI.info](https://www.imei.info/phonedatabase/saiet-pronto-flip/) |
+| 65577 | SAIET Scudotre | [IMEI.info](https://www.imei.info/phonedatabase/saiet-scudotre/) |
+| 65578 | SAIET Scudotre+ | [IMEI.info](https://www.imei.info/phonedatabase/saiet-scudotreplus/) |
+| 65579 | SAIET Sicuro | [IMEI.info](https://www.imei.info/phonedatabase/saiet-sicuro/) |
+| 65580 | SAIET Vanto | [IMEI.info](https://www.imei.info/phonedatabase/saiet-vanto/) |
+| 65581 | SAIET Vision 4G | [IMEI.info](https://www.imei.info/phonedatabase/saiet-vision-4g/) |
+| 65582 | SALORA SM507 | [IMEI.info](https://www.imei.info/phonedatabase/salora-sm507/) |
+| 65583 | SAMGLE 3310 X 3G | [IMEI.info](https://www.imei.info/phonedatabase/samgle-3310-x-3g/) |
+| 65584 | SAMGLE 912 | [IMEI.info](https://www.imei.info/phonedatabase/samgle-912/) |
+| 65585 | SAMGLE O | [IMEI.info](https://www.imei.info/phonedatabase/samgle-o/) |
+| 65586 | SAMSOTEL S2 | [IMEI.info](https://www.imei.info/phonedatabase/samsotel-s2/) |
+| 65587 | Samsung AMOLED Beam | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/amoledbeam/) |
+| 65588 | Samsung Duoz | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/duoz/) |
+| 65589 | Samsung Galaxy A7 HSPA | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxya7hspa/) |
+| 65590 | Samsung Galaxy M08 | [Gadgets 360](https://www.gadgets360.com/samsung-galaxy-m08-price-in-india-137694) |
+| 65591 | Samsung Galaxy S4 LTE+ | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxys4lteplus/) |
+| 65592 | Samsung Galaxy View2 2019 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyview22019/) |
+| 65593 | Samsung Galaxy Watch9 44mm | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxy-watch9-44mm/) |
+| 65594 | Samsung Galaxy Y Hello Kitty | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyyhellokitty/) |
+| 65595 | Samsung Galaxy Z Flip Thom Browne | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyzflipthombrowne/) |
+| 65596 | Samsung Galaxy Z Flip3 Olympic Games | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyzflip3olympicgames/) |
+| 65597 | Samsung Galaxy Z Flip5 Retro | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/galaxyzflip5retro/) |
+| 65598 | Samsung Knack | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/knack/) |
+| 65599 | Samsung SHW-M110S Galaxy S | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/shwm110sgalaxys/) |
+| 65600 | Samsung Victory 4G LTE | [GSMchoice](https://www.gsmchoice.com/en/catalogue/samsung/victory4glte/) |
+| 65601 | SANCUP C600 | [IMEI.info](https://www.imei.info/phonedatabase/sancup-c600/) |
+| 65602 | SANMENG S168 | [IMEI.info](https://www.imei.info/phonedatabase/sanmeng-s168/) |
+| 65603 | SANSEI S1822 | [IMEI.info](https://www.imei.info/phonedatabase/sansei-s1822/) |
+| 65604 | SANSUI ELECTRIC F919 | [IMEI.info](https://www.imei.info/phonedatabase/sansui-electric-f919/) |
+| 65605 | SANSUI S181 | [IMEI.info](https://www.imei.info/phonedatabase/sansui-s181/) |
+| 65606 | Santin Q727 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/santin-q727) |
+| 65607 | SANYO Katana DLX | [IMEI.info](https://www.imei.info/phonedatabase/sanyo-katana-dlx/) |
+| 65608 | SANYO W64SA | [IMEI.info](https://www.imei.info/phonedatabase/sanyo-w64sa/) |
+| 65609 | SAREGAMA CARVAAN Don Lite | [IMEI.info](https://www.imei.info/phonedatabase/saregama-carvaan-don-lite/) |
+| 65610 | SAST A898 | [IMEI.info](https://www.imei.info/phonedatabase/sast-a898/) |
+| 65611 | SCHOK Classic II | [IMEI.info](https://www.imei.info/phonedatabase/schok-classic-ii/) |
+| 65612 | SCHOK Flip | [IMEI.info](https://www.imei.info/phonedatabase/schok-flip/) |
+| 65613 | SCHOK SV20 | [IMEI.info](https://www.imei.info/phonedatabase/schok-sv20/) |
+| 65614 | Seatel C1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-c1) |
+| 65615 | Seatel F1 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-f1) |
+| 65616 | Seatel L12A | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seatel-l12a) |
+| 65617 | SED 6033 | [IMEI.info](https://www.imei.info/phonedatabase/sed-6033/) |
+| 65618 | SED 6310 | [IMEI.info](https://www.imei.info/phonedatabase/sed-6310/) |
+| 65619 | SED 8180 | [IMEI.info](https://www.imei.info/phonedatabase/sed-8180/) |
+| 65620 | SED 838 Photar | [IMEI.info](https://www.imei.info/phonedatabase/sed-838-photar/) |
+| 65621 | SED 860 | [IMEI.info](https://www.imei.info/phonedatabase/sed-860/) |
+| 65622 | SED AK606 | [IMEI.info](https://www.imei.info/phonedatabase/sed-ak606/) |
+| 65623 | SED HT616 | [IMEI.info](https://www.imei.info/phonedatabase/sed-ht616/) |
+| 65624 | SED HT818 | [IMEI.info](https://www.imei.info/phonedatabase/sed-ht818/) |
+| 65625 | SED SA200 | [IMEI.info](https://www.imei.info/phonedatabase/sed-sa200/) |
+| 65626 | SED SA300 | [IMEI.info](https://www.imei.info/phonedatabase/sed-sa300/) |
+| 65627 | SED V628 | [IMEI.info](https://www.imei.info/phonedatabase/sed-v628/) |
+| 65628 | SED V68 | [IMEI.info](https://www.imei.info/phonedatabase/sed-v68/) |
+| 65629 | SED X550 | [IMEI.info](https://www.imei.info/phonedatabase/sed-x550/) |
+| 65630 | SED Y870 | [IMEI.info](https://www.imei.info/phonedatabase/sed-y870/) |
+| 65631 | SEGO Super 4G Ultra | [IMEI.info](https://www.imei.info/phonedatabase/sego-super-4g-ultra/) |
+| 65632 | Sendtel S7054 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sendtel-s7054) |
+| 65633 | Sendtel Wise plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sendtel-wise-plus) |
+| 65634 | Sensonic Quickfone Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sensonic-quickfone-mini) |
+| 65635 | SENWA Dynamic Plus | [IMEI.info](https://www.imei.info/phonedatabase/senwa-dynamic-plus/) |
+| 65636 | Senwa S605 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/senwa-s605) |
+| 65637 | SERVO S06 | [IMEI.info](https://www.imei.info/phonedatabase/servo-s06/) |
+| 65638 | Seuic AUTOID 10-DPM | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/seuic-autoid_10-dpm) |
+| 65639 | SFR Starnaute | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starnaute) |
+| 65640 | SFR Starshine II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-starshine-ii) |
+| 65641 | SFR Startext | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-startext) |
+| 65642 | SFR Startrail II | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-startrail-ii) |
+| 65643 | SFR Startrail iii | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sfr-startrail-iii) |
+| 65644 | SHARP 007SH Hybrid | [IMEI.info](https://www.imei.info/phonedatabase/sharp-007sh-hybrid/) |
+| 65645 | Sharp Aquos 101SH The Hybrid | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sharp_aquos_101sh_the_hybrid) |
+| 65646 | SHARP Aquos Full Touch 931SH | [IMEI.info](https://www.imei.info/phonedatabase/sharp-aquos-full-touch-931sh/) |
+| 65647 | Sharp Aquos Phone SL IS15SH | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sharp_aquos_phone_sl_is15sh) |
+| 65648 | Sharp Aquos WX04SH | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sharp_aquos_wx04sh) |
+| 65649 | SHARP FullFace 2 | [IMEI.info](https://www.imei.info/phonedatabase/sharp-fullface-2/) |
+| 65650 | SHARP SH700i | [IMEI.info](https://www.imei.info/phonedatabase/sharp-sh700i/) |
+| 65651 | SHARP The Premium 820SH | [IMEI.info](https://www.imei.info/phonedatabase/sharp-the-premium-820sh/) |
+| 65652 | SICO Senior Phone | [IMEI.info](https://www.imei.info/phonedatabase/sico-senior-phone/) |
+| 65653 | SICT F16 | [IMEI.info](https://www.imei.info/phonedatabase/sict-f16/) |
+| 65654 | Sigma Mobile S3500 3G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sigma_mobile_s3500_3g) |
+| 65655 | SIMIX X102 | [IMEI.info](https://www.imei.info/phonedatabase/simix-x102/) |
+| 65656 | Simvalley SP-80 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/simvalley-sp-80) |
+| 65657 | SINGTECH F7 | [IMEI.info](https://www.imei.info/phonedatabase/singtech-f7/) |
+| 65658 | SINGTECH F8 | [IMEI.info](https://www.imei.info/phonedatabase/singtech-f8/) |
+| 65659 | SINGTECH F8 Plus | [IMEI.info](https://www.imei.info/phonedatabase/singtech-f8-plus/) |
+| 65660 | SINGTECH F9 | [IMEI.info](https://www.imei.info/phonedatabase/singtech-f9/) |
+| 65661 | SINGTECH M1 | [IMEI.info](https://www.imei.info/phonedatabase/singtech-m1/) |
+| 65662 | SingTech SGT-SMA2 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/singtech-sgt-sma2-plus) |
+| 65663 | SK W15 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sk-w15) |
+| 65664 | SKG N-78 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skg-n-78) |
+| 65665 | SKK Charm 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-charm-2) |
+| 65666 | SKK Krayon | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/skk-krayon) |
+| 65667 | SKY DEVICES Sky Flip 2 | [IMEI.info](https://www.imei.info/phonedatabase/sky-devices-sky-flip-2/) |
+| 65668 | SKY F2 Prime | [IMEI.info](https://www.imei.info/phonedatabase/sky-f2-prime/) |
+| 65669 | SKY F4G | [IMEI.info](https://www.imei.info/phonedatabase/sky-f4g/) |
+| 65670 | SKY FlipMax | [IMEI.info](https://www.imei.info/phonedatabase/sky-flipmax/) |
+| 65671 | Sky-Devices Sky Elite 5-0P | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sky-devices-sky-elite-5-0p) |
+| 65672 | SKYONN F23 | [IMEI.info](https://www.imei.info/phonedatabase/skyonn-f23/) |
+| 65673 | SKYWORTH S6188 | [IMEI.info](https://www.imei.info/phonedatabase/skyworth-s6188/) |
+| 65674 | SMADL D50 | [IMEI.info](https://www.imei.info/phonedatabase/smadl-d50/) |
+| 65675 | SMADL S800 | [IMEI.info](https://www.imei.info/phonedatabase/smadl-s800/) |
+| 65676 | SMARCENT B7 | [IMEI.info](https://www.imei.info/phonedatabase/smarcent-b7/) |
+| 65677 | SMARTEC F1 | [IMEI.info](https://www.imei.info/phonedatabase/smartec-f1/) |
+| 65678 | SMTEL KR11 | [IMEI.info](https://www.imei.info/phonedatabase/smtel-kr11/) |
+| 65679 | SMTEL T3 | [IMEI.info](https://www.imei.info/phonedatabase/smtel-t3/) |
+| 65680 | SNAPFON Ezflip | [IMEI.info](https://www.imei.info/phonedatabase/snapfon-ezflip/) |
+| 65681 | SNEXIAN Bold 3K | [IMEI.info](https://www.imei.info/phonedatabase/snexian-bold-3k/) |
+| 65682 | SNEXIAN Bold 555 | [IMEI.info](https://www.imei.info/phonedatabase/snexian-bold-555/) |
+| 65683 | SNEXIAN Bold 9 | [IMEI.info](https://www.imei.info/phonedatabase/snexian-bold-9/) |
+| 65684 | SNEXIAN Rock R7 Flip | [IMEI.info](https://www.imei.info/phonedatabase/snexian-rock-r7-flip/) |
+| 65685 | SNEXIAN Rock R8 | [IMEI.info](https://www.imei.info/phonedatabase/snexian-rock-r8/) |
+| 65686 | SNEXIAN Splender | [IMEI.info](https://www.imei.info/phonedatabase/snexian-splender/) |
+| 65687 | Sony Ericsson MT506 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sony_ericsson_mt506) |
+| 65688 | Sony Ericsson P802 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sony_ericsson_p802) |
+| 65689 | Sony Ericsson Xperia Pro MT16i | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sony_ericsson_xperia_pro_mt16i) |
+| 65690 | SOUTEC A3 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-a3/) |
+| 65691 | SOUTEC A619 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-a619/) |
+| 65692 | SOUTEC F16 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-f16/) |
+| 65693 | SOUTEC M68 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-m68/) |
+| 65694 | SOUTEC Q30 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-q30/) |
+| 65695 | SOUTEC Q70 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-q70/) |
+| 65696 | SOUTEC SC9188 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-sc9188/) |
+| 65697 | SOUTEC SC9288 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-sc9288/) |
+| 65698 | SOUTEC SC9388 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-sc9388/) |
+| 65699 | SOUTEC V330 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-v330/) |
+| 65700 | SOUTEC V796 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-v796/) |
+| 65701 | SOUTEC V816 | [IMEI.info](https://www.imei.info/phonedatabase/soutec-v816/) |
+| 65702 | SOYEA V8 | [IMEI.info](https://www.imei.info/phonedatabase/soyea-v8/) |
+| 65703 | SPC jasper | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/spc-jasper) |
+| 65704 | SPC Titan | [IMEI.info](https://www.imei.info/phonedatabase/spc-titan/) |
+| 65705 | SPC Titan 2 | [IMEI.info](https://www.imei.info/phonedatabase/spc-titan-2/) |
+| 65706 | SPC Titan View | [IMEI.info](https://www.imei.info/phonedatabase/spc-titan-view/) |
+| 65707 | Spice BOSS Delite 3 M-5163 | [FoneArena](https://www.fonearena.com/spice-boss-delite-3-m-5163_3987.html) |
+| 65708 | Spice Boss Endura M-5035 | [FoneArena](https://www.fonearena.com/spice-boss-endura-m-5035_4148.html) |
+| 65709 | Spice Boss Entertainer M-5405 | [FoneArena](https://www.fonearena.com/spice-m-5405_3750.html) |
+| 65710 | SPICE Boss Power M-5374 | [IMEI.info](https://www.imei.info/phonedatabase/spice-boss-power-m-5374/) |
+| 65711 | Spice Boss Trendy 3 M-5620 | [FoneArena](https://www.fonearena.com/spice-boss-trendy-3-m-5620_3964.html) |
+| 65712 | SPICE Desert Sand | [IMEI.info](https://www.imei.info/phonedatabase/spice-desert-sand/) |
+| 65713 | Spice Dura 2 M-5398 | [FoneArena](https://www.fonearena.com/spice-m-5398_3182.html) |
+| 65714 | SPICE M-5369 | [IMEI.info](https://www.imei.info/phonedatabase/spice-m-5369/) |
+| 65715 | Spice S-950 | [FoneArena](https://www.fonearena.com/spice-s-950_1063.html) |
+| 65716 | SPICE X-2 | [IMEI.info](https://www.imei.info/phonedatabase/spice-x-2/) |
+| 65717 | SQ SQ9800 | [IMEI.info](https://www.imei.info/phonedatabase/sq-sq9800/) |
+| 65718 | Star B68m | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-b68m) |
+| 65719 | Star G510 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-g510) |
+| 65720 | Star W007 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-w007) |
+| 65721 | Star X20i | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/star-x20i) |
+| 65722 | STARMOBILE UNO F301 | [IMEI.info](https://www.imei.info/phonedatabase/starmobile-uno-f301/) |
+| 65723 | Storex DC35G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/storex-dc35g) |
+| 65724 | Strawberry Pearl | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-pearl) |
+| 65725 | STRAWBERRY S1272 | [IMEI.info](https://www.imei.info/phonedatabase/strawberry-s1272/) |
+| 65726 | Strawberry S8805 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-s8805) |
+| 65727 | STRAWBERRY SB414 | [IMEI.info](https://www.imei.info/phonedatabase/strawberry-sb414/) |
+| 65728 | Strawberry ST808 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/strawberry-st808) |
+| 65729 | STYLO Yebo | [IMEI.info](https://www.imei.info/phonedatabase/stylo-yebo/) |
+| 65730 | SUCOM S5627 | [IMEI.info](https://www.imei.info/phonedatabase/sucom-s5627/) |
+| 65731 | SUNSKY S58 | [IMEI.info](https://www.imei.info/phonedatabase/sunsky-s58/) |
+| 65732 | Sunsky S810 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunsky-s810) |
+| 65733 | Sunstech uSUN250 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/sunstech-usun250) |
+| 65734 | SUNUP SU520 | [IMEI.info](https://www.imei.info/phonedatabase/sunup-su520/) |
+| 65735 | SUNUP WM777 | [IMEI.info](https://www.imei.info/phonedatabase/sunup-wm777/) |
+| 65736 | SUPERINWORLD I8 | [IMEI.info](https://www.imei.info/phonedatabase/superinworld-i8/) |
+| 65737 | SUPERINWORLD S2 | [IMEI.info](https://www.imei.info/phonedatabase/superinworld-s2/) |
+| 65738 | SUZUKI Time SP-54G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/suzuki-suzuki-time-sp-54g) |
+| 65739 | Switel Bravo M170 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/switel/bravom170/) |
+| 65740 | Switel Mapa M270 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/switel/mapam270/) |
+| 65741 | Switel Trophy S4530D | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/switel-trophy-s4530d) |
+| 65742 | SYMPHONY B68 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-b68/) |
+| 65743 | SYMPHONY BL46 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-bl46/) |
+| 65744 | SYMPHONY BL95 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-bl95/) |
+| 65745 | SYMPHONY D40 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-d40/) |
+| 65746 | SYMPHONY D40I | [IMEI.info](https://www.imei.info/phonedatabase/symphony-d40i/) |
+| 65747 | SYMPHONY D41 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-d41/) |
+| 65748 | SYMPHONY EX72 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-ex72/) |
+| 65749 | SYMPHONY L100 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-l100/) |
+| 65750 | SYMPHONY T49 | [IMEI.info](https://www.imei.info/phonedatabase/symphony-t49/) |
+| 65751 | T-MAX T20 | [IMEI.info](https://www.imei.info/phonedatabase/t-max-t20/) |
+| 65752 | T-SOURCE T206 | [IMEI.info](https://www.imei.info/phonedatabase/t-source-t206/) |
+| 65753 | TANGWEI F1 | [IMEI.info](https://www.imei.info/phonedatabase/tangwei-f1/) |
+| 65754 | TANGWEI W03 | [IMEI.info](https://www.imei.info/phonedatabase/tangwei-w03/) |
+| 65755 | TCL 2688 | [IMEI.info](https://www.imei.info/phonedatabase/tcl-2688/) |
+| 65756 | TCL 4052R | [IMEI.info](https://www.imei.info/phonedatabase/tcl-4052r/) |
+| 65757 | TCL 5188 | [IMEI.info](https://www.imei.info/phonedatabase/tcl-5188/) |
+| 65758 | TCL 5288 | [IMEI.info](https://www.imei.info/phonedatabase/tcl-5288/) |
+| 65759 | TCL Cellutel99 | [IMEI.info](https://www.imei.info/phonedatabase/tcl-cellutel99/) |
+| 65760 | TCL My Flip 2 | [IMEI.info](https://www.imei.info/phonedatabase/tcl-my-flip-2/) |
+| 65761 | TECH 4U Tango mini | [IMEI.info](https://www.imei.info/phonedatabase/tech-4u-tango-mini/) |
+| 65762 | Tecmobile You 25 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tecmobile-you-25) |
+| 65763 | TECNO T402 | [IMEI.info](https://www.imei.info/phonedatabase/tecno-t402/) |
+| 65764 | TECNO T800 | [IMEI.info](https://www.imei.info/phonedatabase/tecno-t800/) |
+| 65765 | TEESSO T186 | [IMEI.info](https://www.imei.info/phonedatabase/teesso-t186/) |
+| 65766 | Telcel Lanix Ilium X100 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telcel-lanix-ilium-x100) |
+| 65767 | TELEFONO T1 | [IMEI.info](https://www.imei.info/phonedatabase/telefono-t1/) |
+| 65768 | TELEFUNKEN S540 | [IMEI.info](https://www.imei.info/phonedatabase/telefunken-s540/) |
+| 65769 | TELEFUNKEN S560 | [IMEI.info](https://www.imei.info/phonedatabase/telefunken-s560/) |
+| 65770 | TELEFUNKEN T-Free 3-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telefunken-telefunken-t-free-3-5) |
+| 65771 | TELEFUNKEN TM 25.1 Classy | [IMEI.info](https://www.imei.info/phonedatabase/telefunken-tm-251-classy/) |
+| 65772 | Telego Wise 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telego-wise-2) |
+| 65773 | Telenor One Touch | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-one-touch) |
+| 65774 | Telenor Touch Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/telenor-touch-mini) |
+| 65775 | TELME C151 | [IMEI.info](https://www.imei.info/phonedatabase/telme-c151/) |
+| 65776 | TELME X200 | [IMEI.info](https://www.imei.info/phonedatabase/telme-x200/) |
+| 65777 | TELSDA A607 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-a607/) |
+| 65778 | TELSDA GW1618+ | [IMEI.info](https://www.imei.info/phonedatabase/telsda-gw1618plus/) |
+| 65779 | TELSDA H618 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-h618/) |
+| 65780 | TELSDA KQ208 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-kq208/) |
+| 65781 | TELSDA T019 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t019/) |
+| 65782 | TELSDA T083 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t083/) |
+| 65783 | TELSDA T091 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t091/) |
+| 65784 | TELSDA T122 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t122/) |
+| 65785 | TELSDA T202 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t202/) |
+| 65786 | TELSDA T501 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t501/) |
+| 65787 | TELSDA T6588 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t6588/) |
+| 65788 | TELSDA T6B | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t6b/) |
+| 65789 | TELSDA T812 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t812/) |
+| 65790 | TELSDA T828 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-t828/) |
+| 65791 | TELSDA TD3 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-td3/) |
+| 65792 | TELSDA Telsda T920 | [IMEI.info](https://www.imei.info/phonedatabase/telsda-telsda-t920/) |
+| 65793 | TELSTRA Easy Call 5 | [IMEI.info](https://www.imei.info/phonedatabase/telstra-easy-call-5/) |
+| 65794 | TELSTRA F850 | [IMEI.info](https://www.imei.info/phonedatabase/telstra-f850/) |
+| 65795 | TELSTRA Flip 3 | [IMEI.info](https://www.imei.info/phonedatabase/telstra-flip-3/) |
+| 65796 | TELSTRA Tough 4 | [IMEI.info](https://www.imei.info/phonedatabase/telstra-tough-4/) |
+| 65797 | TENDAK F996 | [IMEI.info](https://www.imei.info/phonedatabase/tendak-f996/) |
+| 65798 | Tengo DCore 350 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tengo-dcore-350) |
+| 65799 | TENSILE T4 | [IMEI.info](https://www.imei.info/phonedatabase/tensile-t4/) |
+| 65800 | THIMFONE N5S | [IMEI.info](https://www.imei.info/phonedatabase/thimfone-n5s/) |
+| 65801 | Thomson Serea 350 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/serea350/) |
+| 65802 | Thomson Serea 405 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/serea405/) |
+| 65803 | Thomson Serea 65 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/serea65/) |
+| 65804 | Thomson TLink 15 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink15/) |
+| 65805 | Thomson TLink 24 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink24/) |
+| 65806 | Thomson TLink 28 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink28/) |
+| 65807 | Thomson TLink 360 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink360/) |
+| 65808 | Thomson TLink 361 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink361/) |
+| 65809 | Thomson TLink 475 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/thomson/tlink475/) |
+| 65810 | Tianyu E650 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tianyu-e650) |
+| 65811 | TIANYU General Mobile G777 | [IMEI.info](https://www.imei.info/phonedatabase/tianyu-general-mobile-g777/) |
+| 65812 | TIANYU Q720 | [IMEI.info](https://www.imei.info/phonedatabase/tianyu-q720/) |
+| 65813 | TIANYU S550 | [IMEI.info](https://www.imei.info/phonedatabase/tianyu-s550/) |
+| 65814 | Tiger KF-617 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tiger-kf-617) |
+| 65815 | TINMO F8000 | [IMEI.info](https://www.imei.info/phonedatabase/tinmo-f8000/) |
+| 65816 | TINNO E205 | [IMEI.info](https://www.imei.info/phonedatabase/tinno-e205/) |
+| 65817 | TINNO U102AA | [IMEI.info](https://www.imei.info/phonedatabase/tinno-u102aa/) |
+| 65818 | TITANIC T-10 | [IMEI.info](https://www.imei.info/phonedatabase/titanic-t-10/) |
+| 65819 | TITANIC T-105 | [IMEI.info](https://www.imei.info/phonedatabase/titanic-t-105/) |
+| 65820 | TITANIC T-200 | [IMEI.info](https://www.imei.info/phonedatabase/titanic-t-200/) |
+| 65821 | TITANIC T-300 | [IMEI.info](https://www.imei.info/phonedatabase/titanic-t-300/) |
+| 65822 | TKEXUN G9000 | [IMEI.info](https://www.imei.info/phonedatabase/tkexun-g9000/) |
+| 65823 | TMB A1 | [IMEI.info](https://www.imei.info/phonedatabase/tmb-a1/) |
+| 65824 | TMOVI Flip 911 3.5G | [IMEI.info](https://www.imei.info/phonedatabase/tmovi-flip-911-35g/) |
+| 65825 | Tooky A110 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-a110) |
+| 65826 | Tooky A81 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tooky-a81) |
+| 65827 | TOPLUX AG300 | [IMEI.info](https://www.imei.info/phonedatabase/toplux-ag300/) |
+| 65828 | TOPLUX CG260 | [IMEI.info](https://www.imei.info/phonedatabase/toplux-cg260/) |
+| 65829 | TORK T20 Ultra | [IMEI.info](https://www.imei.info/phonedatabase/tork-t20-ultra/) |
+| 65830 | TORQ CT169 | [IMEI.info](https://www.imei.info/phonedatabase/torq-ct169/) |
+| 65831 | TORQ CT312 | [IMEI.info](https://www.imei.info/phonedatabase/torq-ct312/) |
+| 65832 | Torque DROIDZ Sky 3G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/torque-droidz-sky-3g) |
+| 65833 | TOSHIBA 832T | [IMEI.info](https://www.imei.info/phonedatabase/toshiba-832t/) |
+| 65834 | TOSHIBA 910T | [IMEI.info](https://www.imei.info/phonedatabase/toshiba-910t/) |
+| 65835 | TOSHIBA V410T | [IMEI.info](https://www.imei.info/phonedatabase/toshiba-v410t/) |
+| 65836 | TOSHIBA W62T | [IMEI.info](https://www.imei.info/phonedatabase/toshiba-w62t/) |
+| 65837 | Tracer GS4 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/tracer-gs4) |
+| 65838 | Treq Tune | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/treq-tune) |
+| 65839 | Trevi Phablet 4-5Q | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/trevi-phablet-4-5q) |
+| 65840 | TRIDENT T89 | [IMEI.info](https://www.imei.info/phonedatabase/trident-t89/) |
+| 65841 | TRIDENT TR8900 | [IMEI.info](https://www.imei.info/phonedatabase/trident-tr8900/) |
+| 65842 | TRIDENT W-T10 | [IMEI.info](https://www.imei.info/phonedatabase/trident-w-t10/) |
+| 65843 | TRIGIANTS G618 | [IMEI.info](https://www.imei.info/phonedatabase/trigiants-g618/) |
+| 65844 | TRIORAIL TR-S68 | [IMEI.info](https://www.imei.info/phonedatabase/triorail-tr-s68/) |
+| 65845 | True Smart 3-5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/true-smart-3-5) |
+| 65846 | Turbo-X G310 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g310) |
+| 65847 | Turbo-X G310S | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-g310s) |
+| 65848 | Turbo-X I 4G | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-i-4g) |
+| 65849 | Turbo-X WMega 2 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turbo-x-wmega-2) |
+| 65850 | Turkcell T11 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/turkcell-t11) |
+| 65851 | TWM Amazing A3 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twm-amazing-a3) |
+| 65852 | TWZ TA5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/twz-ta5) |
+| 65853 | Ufone Ule 2 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/ufone-ufone-ule-2-plus) |
+| 65854 | Umeox X527 | [GSMchoice](https://www.gsmchoice.com/en/catalogue/umeox/x527/) |
+| 65855 | UNI N25 | [IMEI.info](https://www.imei.info/phonedatabase/uni-n25/) |
+| 65856 | UNIFONE J300 Turbo | [IMEI.info](https://www.imei.info/phonedatabase/unifone-j300-turbo/) |
+| 65857 | UNIFONE M509 Curve | [IMEI.info](https://www.imei.info/phonedatabase/unifone-m509-curve/) |
+| 65858 | Uniscope US969 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/uniscope-us969) |
+| 65859 | UNISTAR A206 | [IMEI.info](https://www.imei.info/phonedatabase/unistar-a206/) |
+| 65860 | UNIWA F109 | [IMEI.info](https://www.imei.info/phonedatabase/uniwa-f109/) |
+| 65861 | UNIWA MS004 | [IMEI.info](https://www.imei.info/phonedatabase/uniwa-ms004/) |
+| 65862 | UNNECTO Bolt F1R | [IMEI.info](https://www.imei.info/phonedatabase/unnecto-bolt-f1r/) |
+| 65863 | UNONU F3G | [IMEI.info](https://www.imei.info/phonedatabase/unonu-f3g/) |
+| 65864 | UNONU Q5L | [IMEI.info](https://www.imei.info/phonedatabase/unonu-q5l/) |
+| 65865 | UNONU U10L | [IMEI.info](https://www.imei.info/phonedatabase/unonu-u10l/) |
+| 65866 | UNONU U13 | [IMEI.info](https://www.imei.info/phonedatabase/unonu-u13/) |
+| 65867 | UNONU UF1L | [IMEI.info](https://www.imei.info/phonedatabase/unonu-uf1l/) |
+| 65868 | Unusual 35Y | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/unusual-35y) |
+| 65869 | USHA SHRIRAM NJ-4 Orbit-1 | [IMEI.info](https://www.imei.info/phonedatabase/usha-shriram-nj-4-orbit-1/) |
+| 65870 | UTIME G17E | [IMEI.info](https://www.imei.info/phonedatabase/utime-g17e/) |
+| 65871 | UTIME G73 | [IMEI.info](https://www.imei.info/phonedatabase/utime-g73/) |
+| 65872 | UTSTARCOM C1161 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-c1161/) |
+| 65873 | UTSTARCOM DV007 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-dv007/) |
+| 65874 | UTSTARCOM G3300 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-g3300/) |
+| 65875 | UTSTARCOM S540 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-s540/) |
+| 65876 | UTSTARCOM T66 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-t66/) |
+| 65877 | UTSTARCOM UT754 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-ut754/) |
+| 65878 | UTSTARCOM UT828 | [IMEI.info](https://www.imei.info/phonedatabase/utstarcom-ut828/) |
+| 65879 | VANTEC VT-G110 | [IMEI.info](https://www.imei.info/phonedatabase/vantec-vt-g110/) |
+| 65880 | VCALL V128TT | [IMEI.info](https://www.imei.info/phonedatabase/vcall-v128tt/) |
+| 65881 | VCALL V869 | [IMEI.info](https://www.imei.info/phonedatabase/vcall-v869/) |
+| 65882 | VEGA V13 | [IMEI.info](https://www.imei.info/phonedatabase/vega-v13/) |
+| 65883 | VELL-COM E66 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-e66/) |
+| 65884 | VELL-COM K5 Mini | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-k5-mini/) |
+| 65885 | VELL-COM M-5000 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-m-5000/) |
+| 65886 | VELL-COM T340 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-t340/) |
+| 65887 | VELL-COM VE-06 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-ve-06/) |
+| 65888 | VELL-COM VE-23 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-ve-23/) |
+| 65889 | VELL-COM Vlife V2 | [IMEI.info](https://www.imei.info/phonedatabase/vell-com-vlife-v2/) |
+| 65890 | VELOCITY A68 | [IMEI.info](https://www.imei.info/phonedatabase/velocity-a68/) |
+| 65891 | VENERA Ego C212 | [IMEI.info](https://www.imei.info/phonedatabase/venera-ego-c212/) |
+| 65892 | Venera Prime 812 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/venera-prime-812) |
+| 65893 | Venera Prime 901 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/venera-prime-901) |
+| 65894 | VENUS F6 | [IMEI.info](https://www.imei.info/phonedatabase/venus-f6/) |
+| 65895 | Vertu Ascent Ti Ferrari | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vertu_ascent_ti_ferrari) |
+| 65896 | Vertu Ascent Ti Ferrari Nero Assoluto | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vertu_ascent_ti_ferrari_nero_assoluto) |
+| 65897 | Vertu Ascent X 2010 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vertu_ascent_x_2010) |
+| 65898 | Vertu Boucheron 150 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vertu_boucheron_150) |
+| 65899 | VERTU Constellation F Ayxta | [IMEI.info](https://www.imei.info/phonedatabase/vertu-constellation-f-ayxta/) |
+| 65900 | Vertu Signature Diamonds | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vertu_signature_diamonds) |
+| 65901 | VERYKOOL I220 | [IMEI.info](https://www.imei.info/phonedatabase/verykool-i220/) |
+| 65902 | VERYKOOL I300 | [IMEI.info](https://www.imei.info/phonedatabase/verykool-i300/) |
+| 65903 | VERYKOOL I330 | [IMEI.info](https://www.imei.info/phonedatabase/verykool-i330/) |
+| 65904 | VIDA A221 | [IMEI.info](https://www.imei.info/phonedatabase/vida-a221/) |
+| 65905 | Vida Atom 3G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vida_atom_3g) |
+| 65906 | VIDA R221 | [IMEI.info](https://www.imei.info/phonedatabase/vida-r221/) |
+| 65907 | Videocon Dost V1560 | [FoneArena](https://www.fonearena.com/videocon-dost-v1560_3798.html) |
+| 65908 | VIDEOCON V1292 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1292/) |
+| 65909 | Videocon V1302 | [FoneArena](https://www.fonearena.com/videocon-v1302_1021.html) |
+| 65910 | VIDEOCON V1305 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1305/) |
+| 65911 | VIDEOCON V1310 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1310/) |
+| 65912 | Videocon V1401 | [FoneArena](https://www.fonearena.com/videocon-v1401_1020.html) |
+| 65913 | Videocon V1403 | [FoneArena](https://www.fonearena.com/videocon-v1403_1019.html) |
+| 65914 | Videocon V1405 | [FoneArena](https://www.fonearena.com/videocon-v1405_1018.html) |
+| 65915 | VIDEOCON V1410 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1410/) |
+| 65916 | VIDEOCON V1424 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1424/) |
+| 65917 | VIDEOCON V1428 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1428/) |
+| 65918 | Videocon V1515 | [FoneArena](https://www.fonearena.com/videocon-v1515_2879.html) |
+| 65919 | Videocon V1534 | [FoneArena](https://www.fonearena.com/videocon-v1534_3741.html) |
+| 65920 | VIDEOCON V1608 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1608/) |
+| 65921 | VIDEOCON V1635 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-v1635/) |
+| 65922 | VIDEOCON VC1605 | [IMEI.info](https://www.imei.info/phonedatabase/videocon-vc1605/) |
+| 65923 | Viettel I6 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-i6) |
+| 65924 | Viettel I67 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-i67) |
+| 65925 | Viettel V8405 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-v8405) |
+| 65926 | Viettel V8409 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-v8409) |
+| 65927 | Viettel V8411 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/viettel-v8411) |
+| 65928 | VILLAON Pock 1 | [IMEI.info](https://www.imei.info/phonedatabase/villaon-pock-1/) |
+| 65929 | VILLAON V112 | [IMEI.info](https://www.imei.info/phonedatabase/villaon-v112/) |
+| 65930 | VIMOQ M9010 | [IMEI.info](https://www.imei.info/phonedatabase/vimoq-m9010/) |
+| 65931 | VITA E5320 | [IMEI.info](https://www.imei.info/phonedatabase/vita-e5320/) |
+| 65932 | VITA TV28a | [IMEI.info](https://www.imei.info/phonedatabase/vita-tv28a/) |
+| 65933 | VITELCOM VM 4 | [IMEI.info](https://www.imei.info/phonedatabase/vitelcom-vm-4/) |
+| 65934 | VK Mobile VG110 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vg110/) |
+| 65935 | VK Mobile VG310 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vg310/) |
+| 65936 | VK Mobile VK310 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vk310/) |
+| 65937 | VK Mobile VK330 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vk330/) |
+| 65938 | VK Mobile VK518 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vk518/) |
+| 65939 | VK Mobile VK550 | [IMEI.info](https://www.imei.info/phonedatabase/vk-mobile-vk550/) |
+| 65940 | VKworld Diamond Z2 | [IMEI.info](https://www.imei.info/phonedatabase/vkworld-diamond-z2/) |
+| 65941 | VNUS Trust 1 | [IMEI.info](https://www.imei.info/phonedatabase/vnus-trust-1/) |
+| 65942 | VodaCom Vibe 4G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/vodacom_vibe_4g) |
+| 65943 | VODAFONE 125 | [IMEI.info](https://www.imei.info/phonedatabase/vodafone-125/) |
+| 65944 | VODAFONE 227 FM | [IMEI.info](https://www.imei.info/phonedatabase/vodafone-227-fm/) |
+| 65945 | Voice V700 Plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/voice-v700-plus) |
+| 65946 | Voice Xtreme V10I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/voice-xtreme-v10i) |
+| 65947 | VOTO B5800 | [IMEI.info](https://www.imei.info/phonedatabase/voto-b5800/) |
+| 65948 | VOX DV10 | [IMEI.info](https://www.imei.info/phonedatabase/vox-dv10/) |
+| 65949 | VOX V12 | [IMEI.info](https://www.imei.info/phonedatabase/vox-v12/) |
+| 65950 | VOX V3000 | [IMEI.info](https://www.imei.info/phonedatabase/vox-v3000/) |
+| 65951 | VOX V9 | [IMEI.info](https://www.imei.info/phonedatabase/vox-v9/) |
+| 65952 | VOXTEL V-380 | [IMEI.info](https://www.imei.info/phonedatabase/voxtel-v-380/) |
+| 65953 | VOZZ F1 | [IMEI.info](https://www.imei.info/phonedatabase/vozz-f1/) |
+| 65954 | Vsun D3B | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/vsun-d3b) |
+| 65955 | VTION U1920 | [IMEI.info](https://www.imei.info/phonedatabase/vtion-u1920/) |
+| 65956 | WALTON Olvio ML20 | [IMEI.info](https://www.imei.info/phonedatabase/walton-olvio-ml20/) |
+| 65957 | WALTON Olvio Q39 | [IMEI.info](https://www.imei.info/phonedatabase/walton-olvio-q39/) |
+| 65958 | Walton Primo HM5 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/walton-primo-hm5) |
+| 65959 | WANWAYTECH G19S | [IMEI.info](https://www.imei.info/phonedatabase/wanwaytech-g19s/) |
+| 65960 | WANWAYTECH GS05 | [IMEI.info](https://www.imei.info/phonedatabase/wanwaytech-gs05/) |
+| 65961 | WELLPHONE W221 | [IMEI.info](https://www.imei.info/phonedatabase/wellphone-w221/) |
+| 65962 | WENTTO F40 | [IMEI.info](https://www.imei.info/phonedatabase/wentto-f40/) |
+| 65963 | WESTERN D31 | [IMEI.info](https://www.imei.info/phonedatabase/western-d31/) |
+| 65964 | WESTERN D38 | [IMEI.info](https://www.imei.info/phonedatabase/western-d38/) |
+| 65965 | WIDETEL WT-V9 | [IMEI.info](https://www.imei.info/phonedatabase/widetel-wt-v9/) |
+| 65966 | WIKO F100 | [IMEI.info](https://www.imei.info/phonedatabase/wiko-f100/) |
+| 65967 | WIKO F300 | [IMEI.info](https://www.imei.info/phonedatabase/wiko-f300/) |
+| 65968 | WILEYFOX K4 | [IMEI.info](https://www.imei.info/phonedatabase/wileyfox-k4/) |
+| 65969 | Wing Hero 35 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-hero-35) |
+| 65970 | Wing M45 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/wing-m45) |
+| 65971 | WINMAX MH36 | [IMEI.info](https://www.imei.info/phonedatabase/winmax-mh36/) |
+| 65972 | WINMAX MH41 | [IMEI.info](https://www.imei.info/phonedatabase/winmax-mh41/) |
+| 65973 | Winmax W204 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/winmax-w204) |
+| 65974 | WINMAX WX43 | [IMEI.info](https://www.imei.info/phonedatabase/winmax-wx43/) |
+| 65975 | WINSTAR M660 | [IMEI.info](https://www.imei.info/phonedatabase/winstar-m660/) |
+| 65976 | WINSTAR W27 | [IMEI.info](https://www.imei.info/phonedatabase/winstar-w27/) |
+| 65977 | WINTEL Bang | [IMEI.info](https://www.imei.info/phonedatabase/wintel-bang/) |
+| 65978 | WISHWAY C102 | [IMEI.info](https://www.imei.info/phonedatabase/wishway-c102/) |
+| 65979 | WISHWAY C107 | [IMEI.info](https://www.imei.info/phonedatabase/wishway-c107/) |
+| 65980 | WYNNCOM L410 | [IMEI.info](https://www.imei.info/phonedatabase/wynncom-l410/) |
+| 65981 | WYNNCOM W365 | [IMEI.info](https://www.imei.info/phonedatabase/wynncom-w365/) |
+| 65982 | WYNNCOM Y25 | [IMEI.info](https://www.imei.info/phonedatabase/wynncom-y25/) |
+| 65983 | WYNNCOM Y36 | [IMEI.info](https://www.imei.info/phonedatabase/wynncom-y36/) |
+| 65984 | X MOBILE Music Party | [IMEI.info](https://www.imei.info/phonedatabase/x-mobile-music-party/) |
+| 65985 | X MOBILE X1 Lite | [IMEI.info](https://www.imei.info/phonedatabase/x-mobile-x1-lite/) |
+| 65986 | X-TIGI TG3320 | [IMEI.info](https://www.imei.info/phonedatabase/x-tigi-tg3320/) |
+| 65987 | XCITE 215 | [IMEI.info](https://www.imei.info/phonedatabase/xcite-215/) |
+| 65988 | XILLION A105 Star | [IMEI.info](https://www.imei.info/phonedatabase/xillion-a105-star/) |
+| 65989 | XINYI D921 | [IMEI.info](https://www.imei.info/phonedatabase/xinyi-d921/) |
+| 65990 | Xion XI-CE501 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/xion-xi-ce501) |
+| 65991 | XMOBILE S100 Plus Lite | [IMEI.info](https://www.imei.info/phonedatabase/xmobile-s100-plus-lite/) |
+| 65992 | XMOBILE X Flip | [IMEI.info](https://www.imei.info/phonedatabase/xmobile-x-flip/) |
+| 65993 | XTELECOM X9118 Bandshine | [IMEI.info](https://www.imei.info/phonedatabase/xtelecom-x9118-bandshine/) |
+| 65994 | XTOUCH CS4 | [IMEI.info](https://www.imei.info/phonedatabase/xtouch-cs4/) |
+| 65995 | XTOUCH XSlider | [IMEI.info](https://www.imei.info/phonedatabase/xtouch-xslider/) |
+| 65996 | XTRA X10 | [IMEI.info](https://www.imei.info/phonedatabase/xtra-x10/) |
+| 65997 | YBZ PHONE C2-05 | [IMEI.info](https://www.imei.info/phonedatabase/ybz-phone-c2-05/) |
+| 65998 | YEPEN Y99 | [IMEI.info](https://www.imei.info/phonedatabase/yepen-y99/) |
+| 65999 | Yes MPY33 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yes-mpy33) |
+| 66000 | YIBAINIAN EZ618A | [IMEI.info](https://www.imei.info/phonedatabase/yibainian-ez618a/) |
+| 66001 | YIBAINIAN EZ618F | [IMEI.info](https://www.imei.info/phonedatabase/yibainian-ez618f/) |
+| 66002 | YICHEER C188 | [IMEI.info](https://www.imei.info/phonedatabase/yicheer-c188/) |
+| 66003 | YICHEER LS3168 | [IMEI.info](https://www.imei.info/phonedatabase/yicheer-ls3168/) |
+| 66004 | YICHEER LS3258 | [IMEI.info](https://www.imei.info/phonedatabase/yicheer-ls3258/) |
+| 66005 | YICHEER YC520 | [IMEI.info](https://www.imei.info/phonedatabase/yicheer-yc520/) |
+| 66006 | YINGTAI F8 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-f8/) |
+| 66007 | YINGTAI T09 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t09/) |
+| 66008 | YINGTAI T15A | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t15a/) |
+| 66009 | YINGTAI T22 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t22/) |
+| 66010 | YINGTAI T25 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t25/) |
+| 66011 | YINGTAI T31 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t31/) |
+| 66012 | YINGTAI T32 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t32/) |
+| 66013 | YINGTAI T40 | [IMEI.info](https://www.imei.info/phonedatabase/yingtai-t40/) |
+| 66014 | YINGTAILONG A-813TV | [IMEI.info](https://www.imei.info/phonedatabase/yingtailong-a-813tv/) |
+| 66015 | YINGTAILONG A5 | [IMEI.info](https://www.imei.info/phonedatabase/yingtailong-a5/) |
+| 66016 | YINGTAILONG SIMA9000 | [IMEI.info](https://www.imei.info/phonedatabase/yingtailong-sima9000/) |
+| 66017 | YUCUP G1 | [IMEI.info](https://www.imei.info/phonedatabase/yucup-g1/) |
+| 66018 | Yxtel G906 plus | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/yxtel-g906-plus) |
+| 66019 | YXTEL W298 | [IMEI.info](https://www.imei.info/phonedatabase/yxtel-w298/) |
+| 66020 | YXTEL W889 | [IMEI.info](https://www.imei.info/phonedatabase/yxtel-w889/) |
+| 66021 | ZEETELL Maharaja | [IMEI.info](https://www.imei.info/phonedatabase/zeetell-maharaja/) |
+| 66022 | ZEETELL Raja | [IMEI.info](https://www.imei.info/phonedatabase/zeetell-raja/) |
+| 66023 | ZEETELL ZEE2 | [IMEI.info](https://www.imei.info/phonedatabase/zeetell-zee2/) |
+| 66024 | ZEN Atom 101 | [IMEI.info](https://www.imei.info/phonedatabase/zen-atom-101/) |
+| 66025 | ZEN B50 | [IMEI.info](https://www.imei.info/phonedatabase/zen-b50/) |
+| 66026 | Zen M4 | [FoneArena](https://www.fonearena.com/zen-m4_3608.html) |
+| 66027 | ZEN M72I | [IMEI.info](https://www.imei.info/phonedatabase/zen-m72i/) |
+| 66028 | ZEN M72S | [IMEI.info](https://www.imei.info/phonedatabase/zen-m72s/) |
+| 66029 | ZEN M72S Star | [IMEI.info](https://www.imei.info/phonedatabase/zen-m72s-star/) |
+| 66030 | ZEN S15 | [IMEI.info](https://www.imei.info/phonedatabase/zen-s15/) |
+| 66031 | Zen Shine M72 | [FoneArena](https://www.fonearena.com/zen-shine-m72_3605.html) |
+| 66032 | ZEN X35 | [IMEI.info](https://www.imei.info/phonedatabase/zen-x35/) |
+| 66033 | ZEN Z12 | [IMEI.info](https://www.imei.info/phonedatabase/zen-z12/) |
+| 66034 | ZENX Z8 | [IMEI.info](https://www.imei.info/phonedatabase/zenx-z8/) |
+| 66035 | ZH-K Mobile Odyssey J10 Mini | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zh-k-mobile-odyssey-j10-mini) |
+| 66036 | ZHONGYI K808 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-k808/) |
+| 66037 | ZHONGYI ZY100 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-zy100/) |
+| 66038 | ZHONGYI ZY18 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-zy18/) |
+| 66039 | ZHONGYI ZY408 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-zy408/) |
+| 66040 | ZHONGYI ZY568 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-zy568/) |
+| 66041 | ZHONGYI ZY658 | [IMEI.info](https://www.imei.info/phonedatabase/zhongyi-zy658/) |
+| 66042 | ZICE Z3310 | [IMEI.info](https://www.imei.info/phonedatabase/zice-z3310/) |
+| 66043 | ZIGO B338 | [IMEI.info](https://www.imei.info/phonedatabase/zigo-b338/) |
+| 66044 | Zigo Eon 33I | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zigo-eon-33i) |
+| 66045 | ZIGO G360 | [IMEI.info](https://www.imei.info/phonedatabase/zigo-g360/) |
+| 66046 | ZIKOM Z-166 | [IMEI.info](https://www.imei.info/phonedatabase/zikom-z-166/) |
+| 66047 | ZIKOM Z100 | [IMEI.info](https://www.imei.info/phonedatabase/zikom-z100/) |
+| 66048 | ZIKOM Z300 | [IMEI.info](https://www.imei.info/phonedatabase/zikom-z300/) |
+| 66049 | ZIOX Primo | [IMEI.info](https://www.imei.info/phonedatabase/ziox-primo/) |
+| 66050 | ZIOX Starz Flash | [IMEI.info](https://www.imei.info/phonedatabase/ziox-starz-flash/) |
+| 66051 | ZIOX X7 | [IMEI.info](https://www.imei.info/phonedatabase/ziox-x7/) |
+| 66052 | ZIOX X82 | [IMEI.info](https://www.imei.info/phonedatabase/ziox-x82/) |
+| 66053 | ZIOX Z12 | [IMEI.info](https://www.imei.info/phonedatabase/ziox-z12/) |
+| 66054 | Zonda ZA509 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zonda-za509) |
+| 66055 | Zonda ZA705 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zonda-za705) |
+| 66056 | ZONDA ZMNG1870 | [IMEI.info](https://www.imei.info/phonedatabase/zonda-zmng1870/) |
+| 66057 | ZONDA ZMW5050 | [IMEI.info](https://www.imei.info/phonedatabase/zonda-zmw5050/) |
+| 66058 | ZONDA ZMW5060 | [IMEI.info](https://www.imei.info/phonedatabase/zonda-zmw5060/) |
+| 66059 | ZOOM 5350 | [IMEI.info](https://www.imei.info/phonedatabase/zoom-5350/) |
+| 66060 | ZOOM Q3 | [IMEI.info](https://www.imei.info/phonedatabase/zoom-q3/) |
+| 66061 | ZORA Z112 | [IMEI.info](https://www.imei.info/phonedatabase/zora-z112/) |
+| 66062 | ZTC 1000 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-1000/) |
+| 66063 | ZTC 618 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-618/) |
+| 66064 | ZTC 626 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-626/) |
+| 66065 | ZTC 686+ | [IMEI.info](https://www.imei.info/phonedatabase/ztc-686plus/) |
+| 66066 | ZTC 688 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-688/) |
+| 66067 | ZTC 808+ | [IMEI.info](https://www.imei.info/phonedatabase/ztc-808plus/) |
+| 66068 | ZTC 828+ | [IMEI.info](https://www.imei.info/phonedatabase/ztc-828plus/) |
+| 66069 | ZTC C205 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-c205/) |
+| 66070 | ZTC C230 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-c230/) |
+| 66071 | ZTC C232 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-c232/) |
+| 66072 | ZTC C340 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-c340/) |
+| 66073 | ZTC C350 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-c350/) |
+| 66074 | ZTC G626 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-g626/) |
+| 66075 | ZTC Q82 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-q82/) |
+| 66076 | ZTC U1 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-u1/) |
+| 66077 | ZTC V13 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-v13/) |
+| 66078 | ZTC Z808 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-z808/) |
+| 66079 | ZTC ZT2288 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt2288/) |
+| 66080 | ZTC ZT3158 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt3158/) |
+| 66081 | ZTC ZT328 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt328/) |
+| 66082 | ZTC ZT3328 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt3328/) |
+| 66083 | ZTC ZT509 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt509/) |
+| 66084 | ZTC ZT5676 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt5676/) |
+| 66085 | ZTC ZT5677 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt5677/) |
+| 66086 | ZTC ZT5681 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt5681/) |
+| 66087 | ZTC ZT6199 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt6199/) |
+| 66088 | ZTC ZT6628 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt6628/) |
+| 66089 | ZTC ZT698 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt698/) |
+| 66090 | ZTC ZT819 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt819/) |
+| 66091 | ZTC ZT8191 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt8191/) |
+| 66092 | ZTC ZT8380 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt8380/) |
+| 66093 | ZTC ZT8920 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt8920/) |
+| 66094 | ZTC ZT8950 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt8950/) |
+| 66095 | ZTC ZT989 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt989/) |
+| 66096 | ZTC ZT999 | [IMEI.info](https://www.imei.info/phonedatabase/ztc-zt999/) |
+| 66097 | ZTE 289 | [IMEI.info](https://www.imei.info/phonedatabase/zte-289/) |
+| 66098 | ZTE 840Z | [IMEI.info](https://www.imei.info/phonedatabase/zte-840z/) |
+| 66099 | ZTE A80 | [IMEI.info](https://www.imei.info/phonedatabase/zte-a80/) |
+| 66100 | ZTE BKav C85 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/bkav_c85) |
+| 66101 | ZTE C361 | [IMEI.info](https://www.imei.info/phonedatabase/zte-c361/) |
+| 66102 | ZTE CV26 | [ZOL](https://detail.zol.com.cn/cell_phone/index1160427.shtml) |
+| 66103 | ZTE Dixon XK1 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/dixon_xk1) |
+| 66104 | ZTE F280 | [IMEI.info](https://www.imei.info/phonedatabase/zte-f280/) |
+| 66105 | ZTE G450B | [IMEI.info](https://www.imei.info/phonedatabase/zte-g450b/) |
+| 66106 | ZTE GX930 | [IMEI.info](https://www.imei.info/phonedatabase/zte-gx930/) |
+| 66107 | ZTE HEALTH L588 | [IMEI.info](https://www.imei.info/phonedatabase/zte-health-l588/) |
+| 66108 | ZTE IKU Mobile V400 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/iku_mobile_v400) |
+| 66109 | ZTE L660 | [ZOL](https://detail.zol.com.cn/cell_phone/index1160434.shtml) |
+| 66110 | ZTE Lanix U340 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/lanix_u340) |
+| 66111 | ZTE Mango Akabuto 4G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/mango_akabuto_4g) |
+| 66112 | ZTE R621J | [IMEI.info](https://www.imei.info/phonedatabase/zte-r621j/) |
+| 66113 | ZTE Remaxx Mobile R2471 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/remaxx_mobile_r2471) |
+| 66114 | ZTE SGINO INO CP168 4G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/sgino_ino_cp168_4g) |
+| 66115 | ZTE Smart 2.4s | [PhoneCopy](https://www.phonecopy.com/en/phones/view/smart_2.4s) |
+| 66116 | ZTE T3 | [PhoneCopy](https://www.phonecopy.com/en/phones/view/zte_t3) |
+| 66117 | ZTE Telecom R109 | [IMEI.info](https://www.imei.info/phonedatabase/zte-telecom-r109/) |
+| 66118 | ZTE Telestra Flip 3 | [IMEI.info](https://www.imei.info/phonedatabase/zte-telestra-flip-3/) |
+| 66119 | ZTE Tigo Kitochi 4G Smart | [PhoneCopy](https://www.phonecopy.com/en/phones/view/tigo_kitochi_4g_smart) |
+| 66120 | ZTE TNM Smart 4G | [PhoneCopy](https://www.phonecopy.com/en/phones/view/tnm_smart_4g) |
+| 66121 | ZTE U720 | [IMEI.info](https://www.imei.info/phonedatabase/zte-u720/) |
+| 66122 | ZTE W851 | [IMEI.info](https://www.imei.info/phonedatabase/zte-w851/) |
+| 66123 | ZTE Yuanhang 3D | [Gadgets 360](https://www.gadgets360.com/zte-yuanhang-3d-price-in-india-126733) |
+| 66124 | ZTT H738B | [IMEI.info](https://www.imei.info/phonedatabase/ztt-h738b/) |
+| 66125 | ZTT P007 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p007/) |
+| 66126 | ZTT P131 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p131/) |
+| 66127 | ZTT P138 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p138/) |
+| 66128 | ZTT P168 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p168/) |
+| 66129 | ZTT P263 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p263/) |
+| 66130 | ZTT P363 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p363/) |
+| 66131 | ZTT P563 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p563/) |
+| 66132 | ZTT P663 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p663/) |
+| 66133 | ZTT P7200 phone 1 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p7200-phone-1/) |
+| 66134 | ZTT P7200+ | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p7200plus/) |
+| 66135 | ZTT P7400 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p7400/) |
+| 66136 | ZTT P7600 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-p7600/) |
+| 66137 | ZTT Q500 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-q500/) |
+| 66138 | ZTT S283 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-s283/) |
+| 66139 | ZTT S801 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-s801/) |
+| 66140 | ZTT T100 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t100/) |
+| 66141 | ZTT T200 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t200/) |
+| 66142 | ZTT T288 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t288/) |
+| 66143 | ZTT T288+ | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t288plus/) |
+| 66144 | ZTT T300 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t300/) |
+| 66145 | ZTT T400 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-t400/) |
+| 66146 | ZTT W320 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-w320/) |
+| 66147 | ZTT ZTC163 | [IMEI.info](https://www.imei.info/phonedatabase/ztt-ztc163/) |
+| 66148 | Zuum Aura Pro JLO | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zuum-aura-pro-jlo) |
+| 66149 | ZUUM Brix R | [IMEI.info](https://www.imei.info/phonedatabase/zuum-brix-r/) |
+| 66150 | Zyrex ZA966 | [DevicesFAQ](https://www.devicesfaq.com/en/characteristics/zyrex-za966) |
 
 Фотографии PhoneArena получены из [архива sameerbanchhor на Hugging Face](https://huggingface.co/datasets/sameerbanchhor/manufacture_devices_dataset). Для этих моделей в карточке указан год анонса.
 

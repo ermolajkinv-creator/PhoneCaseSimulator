@@ -2,8 +2,9 @@ package signal
 
 import kotlin.random.Random
 
-// A tenfold increase keeps the three individual prizes strictly rarest in large albums.
-val ticketsPerCase: Int get() = if (phones.size <= 65_000) 1_000_000 else 10_000_000
+// The one-million-ticket table preserves the published odds while enough tickets
+// remain to make every ordinary model more likely than the three exclusive cards.
+val ticketsPerCase: Int get() = if (phones.size <= 1_000_000 / 15) 1_000_000 else 10_000_000
 const val oldTier = 0
 // The original card files and archive use stable catalogue codes.
 const val catalogFoldableTier = 6
