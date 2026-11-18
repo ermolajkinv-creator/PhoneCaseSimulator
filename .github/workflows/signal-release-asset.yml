@@ -1,0 +1,18 @@
+name: Attach Signal 1.7.1 APK
+on:
+  push:
+    branches: [signal-release-v1.7.1]
+    paths: [.github/workflows/signal-release-asset.yml]
+permissions:
+  contents: write
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and attach the signed APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl --fail --location --retry 3 --output Signal-5000.apk "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/downloads/Signal-5000.apk"
+          echo '053680b481cefce260a24641e445be4c29b76cc002dbc6266b89ff361d8e52c3  Signal-5000.apk' | sha256sum --check
+          gh release upload v1.7.1 Signal-5000.apk --repo "$GITHUB_REPOSITORY"
