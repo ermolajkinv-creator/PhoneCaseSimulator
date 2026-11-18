@@ -1,0 +1,21 @@
+name: Attach Signal 1.9.0 APK
+on:
+  push:
+    branches: [signal-release-v1.9.0]
+    paths: [.github/workflows/signal-release-asset.yml]
+permissions:
+  contents: write
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and attach signed offline game
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for part in Signal.part-00 Signal.part-01 Signal.part-02 Signal.part-03; do
+            curl --fail --location --retry 3 --output "$part" "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/downloads/$part"
+          done
+          cat Signal.part-* > Signal-20000.apk
+          echo '785cf1a4dfe0d239edb503bcd305558d994f6503e3485aff4cc9676332bed5b5  Signal-20000.apk' | sha256sum --check
+          gh release upload v1.9.0 Signal-20000.apk --repo "$GITHUB_REPOSITORY"
