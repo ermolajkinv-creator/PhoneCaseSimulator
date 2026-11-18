@@ -41,7 +41,7 @@ private fun checkPassword() {
 private fun modelOptions(query: String): String = matchingPhones(query).joinToString("") { id ->
     val phone = phones[id]
     val mark = if (id in owned) " · в альбоме" else ""
-    """<option value="$id">${phone.name} · ${phone.year}$mark</option>"""
+    """<option value="$id">${phone.name} · ${phone.yearLabel}$mark</option>"""
 }
 
 fun updateAdminModels() {

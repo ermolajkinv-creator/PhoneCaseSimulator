@@ -80,7 +80,7 @@ fun cards(ids: List<Int>): String = ids.joinToString("", prefix = "<div class='g
     val check = if (id in owned) """<span class="ownership" aria-label="В коллекции">✓</span>""" else ""
     """<button class="albumcard r${p.tier}" data-act="phone-$id"><div class="thumb"><span class="num">№ ${number(id)}</span>$check<img class="phone" decoding="async" src="${art("phone$id")}" alt=""></div><div class="cardbody"><b>${p.name}</b>${rarity(p)}<small class="model-price">${rubles(p.price)}</small></div></button>"""
 }
-private val tierTitles = listOf("Старые", "Обычные", "Редкие", "Эпические", "Легендарные", "Флагманские", "Раскладушки", "Эксклюзивные", "Мифические", "Ультраредкие")
+private val tierTitles = listOf("Старые", "Обычные", "Редкие", "Эпические", "Легендарные", "Субфлагманы", "Флагманские", "Раскладушки", "Эксклюзивные", "Мифические", "Ультраредкие")
 private fun tierPicker(selected: Int): String {
     val options = tiers.indices.reversed().joinToString("") { i ->
         """<option value="$i" ${if (selected == i) "selected" else ""}>${tierTitles[i]}</option>"""
@@ -177,7 +177,7 @@ fun showPhone(id: Int, reward: String? = null) {
         """<p class="rank r${p.tier}">№ $rank по редкости · ${chanceText(cases[currentCase].tickets[p.tier])} в любом кейсе</p>"""
     } else ""
     val text = reward ?: ((if (id in owned) "В твоей коллекции. " else "Пока нет в коллекции. ") + p.note)
-    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.year} · ${p.credit}</small>${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
+    openModal("""<div class="modalbg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="model-title"><div class="rewardpic r${p.tier}"><img src="${art("phone$id")}" alt="${p.name}"><button class="close" data-act="close" aria-label="Закрыть">×</button></div><div class="modalbody">${rarity(p)}<h2 id="model-title">${p.name}</h2>$rankLine<p>Оценка модели — <b>${rubles(p.price)}</b><br>Выкуп повтора — ${rubles(p.tradeIn)}</p><p>$text</p><small class="credit">${p.yearLabel} · ${p.credit}</small>${btn("close", if (reward == null) "Закрыть" else "Продолжить")}</div></section></div>""")
 }
 private fun showIphoneMemory() {
     val id = phones.indexOfFirst { it.name == "Apple iPhone 12" }
