@@ -1,0 +1,25 @@
+name: Publish Signal 2.2.0
+on:
+  push:
+    branches: [signal-release-v2.2.0]
+    paths: [.github/workflows/attach-signal-22.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and attach the signed offline update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for part in update-000 update-001 update-002 update-003; do
+            curl -fsSL --retry 3 "https://github.com/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/distribution/$part" -o "$part"
+          done
+          cat update-* > update.zst
+          gh release download v2.1.0 -p Signal-2.1.0.apk --repo "$GITHUB_REPOSITORY"
+          zstd -q -d --long=29 --patch-from=Signal-2.1.0.apk update.zst -o Signal-2.2.0.apk
+          echo '672cf53cdc152c6505b12f828204d2dc479acc491647bbb00b47b2f0e7cbadf0  Signal-2.2.0.apk' | sha256sum -c
+          gh release upload v2.2.0 Signal-2.2.0.apk --repo "$GITHUB_REPOSITORY"
+          gh release edit v2.2.0 --draft=false --latest --repo "$GITHUB_REPOSITORY"
