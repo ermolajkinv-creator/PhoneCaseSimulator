@@ -135,6 +135,12 @@ fun catalogPage(ids: List<Int>, page: Int): String {
 fun searchable(name: String) = name.lowercase().replace("+", "plus").filter { it.isLetterOrDigit() }
 private val searchNames = phones.map { searchable(it.name) }
 private val exactNameIds = phones.indices.groupBy { searchNames[it] }
+// Historical names players use for the first two Redmi generations.
+private val redmiSearchNames = mapOf(
+    "redmi1" to "xiaomiredmi", "xiaomiredmi1" to "xiaomiredmi",
+    "hongmi" to "xiaomiredmi", "redrice" to "xiaomiredmi", "xiaomiredrice" to "xiaomiredmi",
+    "hm1s" to "xiaomiredmi1s", "hongmi1s" to "xiaomiredmi1s"
+)
 private val digitRuns = Regex("""\d+""")
 private val searchAliases = mapOf("редми" to "redmi", "ноут" to "note", "нот" to "note", "про" to "pro", "макс" to "max", "сяоми" to "xiaomi")
 fun matchingPhones(text: String): List<Int> {
@@ -149,7 +155,8 @@ fun matchingPhones(text: String): List<Int> {
     val terms = words.filterNot { it == year }.map { searchable(searchAliases[it] ?: it) }
     val modelDigits = terms.filter { term -> term.isNotEmpty() && term.all { it.isDigit() } }
     val query = terms.joinToString("")
-    val exact = exactNameIds[searchable(words.joinToString("") { searchAliases[it] ?: it })]
+    val fullQuery = searchable(words.joinToString("") { searchAliases[it] ?: it })
+    val exact = exactNameIds[redmiSearchNames[fullQuery] ?: fullQuery]
         .orEmpty().map(::canonicalId).distinct()
     val matches = ordered.filter {
         val phone = phones[it]

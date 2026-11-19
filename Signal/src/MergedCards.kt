@@ -61,14 +61,17 @@ private val mergedAlbumNumbers = mapOf(
     13951 to 13895, // Huawei Honor 6
     13952 to 13896, // Huawei Honor 6 Plus
     14402 to 14399, // Samsung Galaxy Ace Style SM-G310HN
+    14591 to 14593, // Xiaomi Hongmi (Redmi) 1s
     15085 to 15018, // Huawei Honor 3
     15086 to 15019, // Huawei Honor 3C
     15400 to 15399, // Oppo R1 R829T
+    15721 to 15722, // Xiaomi Red Rice (Hongmi, Redmi)
     16081 to 16011, // Huawei Honor 2
     16805 to 16804, // Apple iPhone 4 Verizon
     18398 to 18397, // Samsung S3650 Corby
     18781 to 18780, // Samsung i8510 INNOV8
     18925 to 10, // Apple iPhone
+    20477 to 15722, // Xiaomi Hongmi
     22282 to 10788, // Asus Zenfone Go 5.0 LTE T500
     24776 to 7797, // Asus Zenfone Max M1 ZB555KL
     24918 to 6889, // HUAWEI Honor 20 Pro
@@ -121,6 +124,7 @@ private val mergedAlbumNumbers = mapOf(
     51679 to 26378, // Huawei Honor Bee 2
     51680 to 26379, // Huawei Honor Holly 4
     52589 to 5490, // PHILIPS S6210 Essence 10
+    53471 to 14593, // Xiaomi HM 1S
     60359 to 5491, // Philips S6310 Essence 20
     60371 to 1119, // Apple iPhone SE 3
     60385 to 365, // Apple iPhone SE 2

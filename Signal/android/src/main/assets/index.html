@@ -7349,6 +7349,11 @@ if (typeof String.prototype.endsWith === 'undefined') {
     return exactNameIds;
   }
   var exactNameIds;
+  function get_redmiSearchNames() {
+    _init_properties_Game_kt__8erhxu();
+    return redmiSearchNames;
+  }
+  var redmiSearchNames;
   function get_digitRuns() {
     _init_properties_Game_kt__8erhxu();
     return digitRuns;
@@ -7736,11 +7741,13 @@ if (typeof String.prototype.endsWith === 'undefined') {
     }
     var modelDigits = destination_1;
     var query = joinToString_1(terms, '');
+    var fullQuery = searchable(joinToString_1(words, '', VOID, VOID, VOID, VOID, matchingPhones$lambda));
     var tmp_3 = get_exactNameIds();
+    var tmp0_elvis_lhs_0 = get_redmiSearchNames().get_wei43m_k$(fullQuery);
     // Inline function 'kotlin.collections.orEmpty' call
-    var tmp0_elvis_lhs_0 = tmp_3.get_wei43m_k$(searchable(joinToString_1(words, '', VOID, VOID, VOID, VOID, matchingPhones$lambda)));
+    var tmp0_elvis_lhs_1 = tmp_3.get_wei43m_k$(tmp0_elvis_lhs_0 == null ? fullQuery : tmp0_elvis_lhs_0);
     // Inline function 'kotlin.collections.map' call
-    var this_2 = tmp0_elvis_lhs_0 == null ? emptyList() : tmp0_elvis_lhs_0;
+    var this_2 = tmp0_elvis_lhs_1 == null ? emptyList() : tmp0_elvis_lhs_1;
     // Inline function 'kotlin.collections.mapTo' call
     var destination_2 = ArrayList_init_$Create$_0(collectionSizeOrDefault(this_2, 10));
     var _iterator__ex2g4s_3 = this_2.iterator_jk1svi_k$();
@@ -8511,6 +8518,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
         }
          while (!(element === last));
       exactNameIds = destination_0;
+      redmiSearchNames = mapOf([to('redmi1', 'xiaomiredmi'), to('xiaomiredmi1', 'xiaomiredmi'), to('hongmi', 'xiaomiredmi'), to('redrice', 'xiaomiredmi'), to('xiaomiredrice', 'xiaomiredmi'), to('hm1s', 'xiaomiredmi1s'), to('hongmi1s', 'xiaomiredmi1s')]);
       digitRuns = Regex_init_$Create$_0('\\d+');
       searchAliases = mapOf([to('\u0440\u0435\u0434\u043C\u0438', 'redmi'), to('\u043D\u043E\u0443\u0442', 'note'), to('\u043D\u043E\u0442', 'note'), to('\u043F\u0440\u043E', 'pro'), to('\u043C\u0430\u043A\u0441', 'max'), to('\u0441\u044F\u043E\u043C\u0438', 'xiaomi')]);
     }
@@ -8538,7 +8546,7 @@ if (typeof String.prototype.endsWith === 'undefined') {
   function _init_properties_MergedCards_kt__u6sjtx() {
     if (!properties_initialized_MergedCards_kt_xzcl5l) {
       properties_initialized_MergedCards_kt_xzcl5l = true;
-      mergedAlbumNumbers = mapOf([to(109, 199), to(5464, 188), to(6459, 4858), to(6574, 6573), to(6578, 6575), to(6582, 6581), to(6584, 6583), to(7652, 7651), to(7787, 7786), to(7799, 7798), to(7804, 7802), to(9351, 9350), to(9353, 9352), to(9358, 9357), to(9359, 9355), to(9362, 9360), to(9365, 9364), to(9367, 9363), to(9368, 9354), to(9370, 9369), to(9373, 9372), to(9375, 9374), to(9380, 9378), to(9801, 9780), to(9802, 9781), to(9803, 9782), to(9804, 9783), to(9805, 9784), to(9806, 9785), to(9809, 9786), to(10703, 10700), to(10727, 10726), to(10779, 10778), to(10781, 10780), to(10784, 10783), to(10785, 10774), to(10787, 9371), to(11164, 11127), to(11166, 11128), to(11167, 11130), to(11169, 11133), to(11170, 11134), to(11171, 6086), to(11172, 11135), to(12217, 12214), to(12220, 12212), to(12226, 12225), to(12231, 12230), to(12234, 12232), to(12606, 12553), to(12843, 12842), to(13140, 13139), to(13640, 58), to(13926, 13923), to(13949, 13893), to(13950, 13894), to(13951, 13895), to(13952, 13896), to(14402, 14399), to(15085, 15018), to(15086, 15019), to(15400, 15399), to(16081, 16011), to(16805, 16804), to(18398, 18397), to(18781, 18780), to(18925, 10), to(22282, 10788), to(24776, 7797), to(24918, 6889), to(24920, 6895), to(24921, 8217), to(24922, 423), to(25180, 14409), to(26376, 11168), to(26385, 9808), to(26450, 8205), to(26451, 8206), to(26453, 6888), to(26455, 6890), to(26459, 26375), to(26462, 8213), to(26463, 6893), to(26464, 8215), to(26469, 4643), to(26470, 6900), to(26471, 8221), to(26472, 8222), to(26473, 6901), to(26474, 6902), to(26475, 4644), to(26478, 6903), to(26479, 4648), to(26480, 16896), to(26482, 26384), to(26483, 8224), to(27527, 27526), to(28808, 11894), to(28809, 10474), to(35631, 9650), to(35632, 11007), to(35633, 11008), to(35634, 9655), to(35635, 11009), to(35657, 11022), to(35659, 11025), to(35660, 11026), to(35661, 11028), to(35662, 9676), to(50056, 11132), to(50386, 24908), to(50623, 13488), to(50627, 13492), to(51455, 11010), to(51665, 12603), to(51669, 26481), to(51679, 26378), to(51680, 26379), to(52589, 5490), to(60359, 5491), to(60371, 1119), to(60385, 365), to(60484, 9850), to(60485, 9851), to(60786, 14470)]);
+      mergedAlbumNumbers = mapOf([to(109, 199), to(5464, 188), to(6459, 4858), to(6574, 6573), to(6578, 6575), to(6582, 6581), to(6584, 6583), to(7652, 7651), to(7787, 7786), to(7799, 7798), to(7804, 7802), to(9351, 9350), to(9353, 9352), to(9358, 9357), to(9359, 9355), to(9362, 9360), to(9365, 9364), to(9367, 9363), to(9368, 9354), to(9370, 9369), to(9373, 9372), to(9375, 9374), to(9380, 9378), to(9801, 9780), to(9802, 9781), to(9803, 9782), to(9804, 9783), to(9805, 9784), to(9806, 9785), to(9809, 9786), to(10703, 10700), to(10727, 10726), to(10779, 10778), to(10781, 10780), to(10784, 10783), to(10785, 10774), to(10787, 9371), to(11164, 11127), to(11166, 11128), to(11167, 11130), to(11169, 11133), to(11170, 11134), to(11171, 6086), to(11172, 11135), to(12217, 12214), to(12220, 12212), to(12226, 12225), to(12231, 12230), to(12234, 12232), to(12606, 12553), to(12843, 12842), to(13140, 13139), to(13640, 58), to(13926, 13923), to(13949, 13893), to(13950, 13894), to(13951, 13895), to(13952, 13896), to(14402, 14399), to(14591, 14593), to(15085, 15018), to(15086, 15019), to(15400, 15399), to(15721, 15722), to(16081, 16011), to(16805, 16804), to(18398, 18397), to(18781, 18780), to(18925, 10), to(20477, 15722), to(22282, 10788), to(24776, 7797), to(24918, 6889), to(24920, 6895), to(24921, 8217), to(24922, 423), to(25180, 14409), to(26376, 11168), to(26385, 9808), to(26450, 8205), to(26451, 8206), to(26453, 6888), to(26455, 6890), to(26459, 26375), to(26462, 8213), to(26463, 6893), to(26464, 8215), to(26469, 4643), to(26470, 6900), to(26471, 8221), to(26472, 8222), to(26473, 6901), to(26474, 6902), to(26475, 4644), to(26478, 6903), to(26479, 4648), to(26480, 16896), to(26482, 26384), to(26483, 8224), to(27527, 27526), to(28808, 11894), to(28809, 10474), to(35631, 9650), to(35632, 11007), to(35633, 11008), to(35634, 9655), to(35635, 11009), to(35657, 11022), to(35659, 11025), to(35660, 11026), to(35661, 11028), to(35662, 9676), to(50056, 11132), to(50386, 24908), to(50623, 13488), to(50627, 13492), to(51455, 11010), to(51665, 12603), to(51669, 26481), to(51679, 26378), to(51680, 26379), to(52589, 5490), to(53471, 14593), to(60359, 5491), to(60371, 1119), to(60385, 365), to(60484, 9850), to(60485, 9851), to(60786, 14470)]);
       // Inline function 'kotlin.collections.filter' call
       var tmp0 = get_indices(get_phones());
       // Inline function 'kotlin.collections.filterTo' call
