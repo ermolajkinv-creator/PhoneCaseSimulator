@@ -5,9 +5,9 @@ import kotlin.random.Random
 external val document: dynamic
 external val window: dynamic
 
-val labels = listOf("Кейсы", "Альбом", "Мастерская", "Настройки")
+val labels = listOf("Главное", "Альбом", "Мастерская", "Настройки")
 val icons = listOf(
-    "<path d='m3 8 9-5 9 5v10l-9 4-9-4zM3 8l9 5 9-5M12 13v9'/>",
+    "<path d='M3 11l9-8 9 8M5 10v11h5v-7h4v7h5V10'/>",
     "<path d='M3 4h7l2 2 2-2h7v15h-7l-2 2-2-2H3zM12 6v15'/>",
     "<path d='M14 4a6 6 0 0 0-6 8L3 17a3 3 0 0 0 4 4l6-6a6 6 0 0 0 7-8l-4 4-3-3 4-4z'/>",
     "<path d='M3 7h5m4 0h9M3 17h10m4 0h4'/><circle cx='10' cy='7' r='2'/><circle cx='15' cy='17' r='2'/>"
@@ -24,7 +24,9 @@ private const val rublesPerOldCoin = 190
 var coins = 47_500L
 var opened = 0
 val owned = mutableSetOf<Int>()
-private const val mainMenu = -1
+private const val mainMenu = 0
+private const val casesScreen = 4
+private const val quizTab = 5
 var tab = mainMenu
 var currentCase = 0
 var filter = 0
@@ -71,20 +73,24 @@ fun btn(action: String, label: String, css: String = "action") =
     """<button class="$css" data-act="$action">$label</button>"""
 
 private fun menuScreen() = """
-    <main class="menu-screen">
-      <div class="menu-content">
-        <p class="menu-caption">Главное меню</p>
-        <h1><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал</h1>
-        <button class="menu-case" data-act="tab-0" aria-label="Кейсы">
+    <div class="home-modes">
+      <h1>Главное</h1>
+      <div class="mode-grid">
+        <button class="menu-case" data-act="cases" aria-label="Кейсы">
           <span class="menu-art"><img src="${art("case0")}" alt=""></span>
           <span class="menu-label">Кейсы <span aria-hidden="true">→</span></span>
         </button>
+        <button class="menu-case quiz-tile" data-act="quiz" aria-label="Угадай телефон">
+          <span class="menu-art"><img src="${art("phone7")}" alt=""></span>
+          <span class="menu-label">Угадай телефон <span aria-hidden="true">→</span></span>
+        </button>
       </div>
-    </main>"""
+    </div>"""
 
 fun header(): String {
+    val selectedTab = if (tab == casesScreen || tab == quizTab) mainMenu else tab
     val nav = labels.mapIndexed { i, label ->
-        """<button class="${if (i == tab) "sel" else ""}" aria-current="${if (i == tab) "page" else "false"}" data-act="tab-$i">${icon(i)}$label</button>"""
+        """<button class="${if (i == selectedTab) "sel" else ""}" aria-current="${if (i == selectedTab) "page" else "false"}" data-act="tab-$i">${icon(i)}$label</button>"""
     }.joinToString("")
     return """<header><div class="wrap bar"><button class="brand menu-back" data-act="menu" aria-label="В главное меню" title="Главное меню"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>Сигнал <small>В меню</small></button><nav aria-label="Разделы">$nav</nav><div class="wallet" aria-label="Баланс: ${rubles(coins)}">${rubles(coins)}</div></div></header>"""
 }
@@ -208,11 +214,14 @@ fun workshop(): String {
         """<section class="servicebox"><h2>Ремонт прошивки</h2><p class="sub">Введи четырёхзначный код с дисплея.</p>$content<p class="hint" role="status">$jobMessage</p></section>"""
 }
 fun render() {
-    if (tab == mainMenu) {
-        document.getElementById("app").innerHTML = menuScreen()
-        return
+    val view = when (tab) {
+        casesScreen -> showcase()
+        quizTab -> quizScreen()
+        1 -> album()
+        2 -> workshop()
+        3 -> settings()
+        else -> menuScreen()
     }
-    val view = when (tab) { 1 -> album(); 2 -> workshop(); 3 -> settings(); else -> showcase() }
     val warning = if (storageWarning) """<p class="hint">Хранилище недоступно. Прогресс сохранится только до закрытия игры.</p>""" else ""
     document.getElementById("app").innerHTML = header() + """<main class="wrap">$view$warning</main>"""
     if (tab == 1) document.getElementById("search").value = searchText
@@ -329,6 +338,9 @@ fun dispatch(action: String) {
     }
     when {
         action == "menu" -> navigate(mainMenu)
+        action == "cases" -> navigate(casesScreen)
+        action == "quiz" -> navigate(quizTab)
+        tab == quizTab && action.startsWith("quiz-") -> quizAction(action)
         action == "settings-memory" && tab == 3 && !adminIsOpen -> showIphoneMemory()
         action.startsWith("admin-") && tab == 3 -> adminAction(action)
         action == "open" -> openCase()
@@ -396,9 +408,7 @@ fun main() {
             modalOpen -> { closeModal(); true }
             tab == 3 && adminIsOpen -> { navigate(3); true }
             tab == mainMenu -> false
-            tab == 0 -> { navigate(mainMenu); true }
-            tab in labels.indices -> { navigate(0); true }
-            else -> false
+            else -> { navigate(mainMenu); true }
         }
     }
 }
